@@ -42,6 +42,20 @@
       "scorekaart_totaal": 25,
       "scorekaart_max": 45,
       "peildatum": "2026-03-17"
+    },
+    {
+      "ticker": "ADYEN",
+      "naam": "Adyen N.V.",
+      "sector": "Financiële Technologie",
+      "exchange": "Euronext Amsterdam (AEX)",
+      "koers": 911.50,
+      "valuta": "EUR",
+      "fair_value_basis": 952,
+      "upside_pct": 4.4,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 33,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-18"
     }
   ]
 }
