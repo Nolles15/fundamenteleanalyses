@@ -56,6 +56,20 @@
       "scorekaart_totaal": 33,
       "scorekaart_max": 45,
       "peildatum": "2026-03-18"
+    },
+    {
+      "ticker": "WIPRO",
+      "naam": "Wipro Limited",
+      "sector": "Informatietechnologie",
+      "exchange": "NSE/BSE India (ADR: WIT)",
+      "koers": 194.30,
+      "valuta": "INR",
+      "fair_value_basis": 198,
+      "upside_pct": 1.9,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 23,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-18"
     }
   ]
 }

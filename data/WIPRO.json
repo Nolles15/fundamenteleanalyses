@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "ticker": "WIPRO",
+    "exchange": "NSE/BSE India (ADR: WIT op NYSE)",
+    "naam": "Wipro Limited",
+    "sector": "Informatietechnologie",
+    "segment": "IT-dienstverlening & Consulting (offshore IT outsourcing)",
+    "koers": 194.30,
+    "valuta": "INR",
+    "peildatum": "2026-03-18",
+    "marktkapitalisatie": "~₹2,00,431 Crore (~$23,6 mrd USD)"
+  },
+  "executive_summary": {
+    "kernthese": "Wipro Limited is een gevestigde Indiase IT-dienstverlener (~240.000 medewerkers) die grote multinationale ondernemingen bedient op het gebied van cloudmigratie, digitale transformatie, cybersecurity en data-analytics. Het bedrijf heeft de afgelopen twee jaar te kampen gehad met een lichte omzetdaling door macro-onzekerheid en verlies van klanten. Onder nieuwe CEO Srini Pallia wordt een AI-first strategie uitgerold. De waardering is aantrekkelijk (P/E ~15x, FCF-yield ~7,7%) maar DCF-basiswaarde geeft nauwelijks opwaarts potentieel op huidige niveaus.",
+    "oordeel": "HOLD",
+    "koers": 194.30,
+    "valuta": "INR",
+    "fair_value_basis": 198,
+    "upside_pct": 1.9,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 164, "upside_pct": -15.6 },
+      { "scenario": "Basis",         "fair_value": 198, "upside_pct": 1.9 },
+      { "scenario": "Optimistisch",  "fair_value": 263, "upside_pct": 35.4 }
+    ],
+    "grootste_kans": "AI-gedreven omzetgroei bij enterprise-klanten versnelt onder CEO Pallia; marge-expansie boven 18% en herwaardering richting sector-peers.",
+    "grootste_risico": "Structurele omzetdaling door AI-automatisering van IT-diensten en aanhoudend verlies van marktaandeel aan TCS en Infosys."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Wipro biedt IT-outsourcing, cloudservices, digitale transformatie, cybersecurity en data/AI-diensten aan grote multinationale ondernemingen. Het bedrijf werkt via offshore delivery vanuit India met ~240.000 medewerkers wereldwijd.",
+    "personeel": 240000,
+    "landen": 65,
+    "segmenten": [
+      { "naam": "BFSI", "omzet_pct": 30, "beschrijving": "Banking, Financial Services & Insurance" },
+      { "naam": "Consumer Business", "omzet_pct": 16, "beschrijving": "Retail, FMCG, e-commerce" },
+      { "naam": "Energy, Manufacturing & Resources", "omzet_pct": 16, "beschrijving": "Olie & gas, nutsbedrijven, productie" },
+      { "naam": "Health & Life Sciences", "omzet_pct": 13, "beschrijving": "Pharma, ziekenhuizen; groeiend segment" },
+      { "naam": "Technology & Communicatie", "omzet_pct": 14, "beschrijving": "Telecom, media" },
+      { "naam": "Overig", "omzet_pct": 11, "beschrijving": "Overheid, onderwijs, etc." }
+    ],
+    "aandeelhouders": [
+      { "naam": "Premji-groep (Hasham Traders, Azim Premji Trust, Rishad Premji)", "pct": 72.67, "type": "Controlerend" },
+      { "naam": "Foreign Portfolio Investors", "pct": 8.16, "type": "Institutioneel" },
+      { "naam": "Domestic Institutional Investors", "pct": 5.86, "type": "Institutioneel" },
+      { "naam": "Publiek / overig", "pct": 13.31, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "INR Mrd (milliard)",
+    "resultatenrekening": [
+      { "jaar": 2021, "omzet": 619.4, "omzet_groei_pct": null, "ebitda": 150.7, "ebitda_marge_pct": 24.3, "nettowinst": 107.9, "nettomarge_pct": 17.4, "eps": 9.54 },
+      { "jaar": 2022, "omzet": 790.9, "omzet_groei_pct": 27.7, "ebitda": 171.2, "ebitda_marge_pct": 21.6, "nettowinst": 122.2, "nettomarge_pct": 15.4, "eps": 11.15 },
+      { "jaar": 2023, "omzet": 904.9, "omzet_groei_pct": 14.4, "ebitda": 173.0, "ebitda_marge_pct": 19.1, "nettowinst": 113.5, "nettomarge_pct": 12.5, "eps": 10.34 },
+      { "jaar": 2024, "omzet": 897.6, "omzet_groei_pct": -0.8, "ebitda": 170.2, "ebitda_marge_pct": 19.0, "nettowinst": 110.5, "nettomarge_pct": 12.3, "eps": 10.41 },
+      { "jaar": 2025, "omzet": 890.9, "omzet_groei_pct": -0.7, "ebitda": 180.9, "ebitda_marge_pct": 20.3, "nettowinst": 131.4, "nettomarge_pct": 14.7, "eps": 12.52 }
+    ],
+    "kasstromen": [
+      { "jaar": 2021, "fcf": 128.0, "fcf_per_aandeel": 12.4 },
+      { "jaar": 2022, "fcf": 90.6,  "fcf_per_aandeel": 8.6 },
+      { "jaar": 2023, "fcf": 115.8, "fcf_per_aandeel": 11.0 },
+      { "jaar": 2024, "fcf": 165.7, "fcf_per_aandeel": 15.7 },
+      { "jaar": 2025, "fcf": 154.7, "fcf_per_aandeel": 15.0 }
+    ],
+    "balans": [
+      { "jaar": 2021, "nettoschuld": -200, "eigen_vermogen": 554.6, "debt_ebitda": 0.69 },
+      { "jaar": 2022, "nettoschuld": -150, "eigen_vermogen": 658.7, "debt_ebitda": 1.03 },
+      { "jaar": 2023, "nettoschuld": -180, "eigen_vermogen": 777.3, "debt_ebitda": 1.01 },
+      { "jaar": 2024, "nettoschuld": -280, "eigen_vermogen": 746.7, "debt_ebitda": 0.97 },
+      { "jaar": 2025, "nettoschuld": -341, "eigen_vermogen": 825.8, "debt_ebitda": 1.06 }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2025,
+      "roce_pct": null,
+      "roe_pct": 16.7,
+      "roic_pct": 13.0,
+      "roa_pct": 10.8
+    },
+    "waardering": {
+      "pe": 15.5,
+      "ev_ebitda": 10.5,
+      "p_fcf": 13.0,
+      "fcf_yield_pct": 7.7,
+      "p_b": 2.4,
+      "ev_omzet": 2.3,
+      "dividendrendement_pct": 3.0
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "Wipro geniet een smalle moat door redelijke overstapkosten via langlopende outsourcingcontracten en structureel kostenvoordeel als Indiase offshore speler. Er zijn echter geen echte netwerkeffecten of dominante immateriële activa. De moat is kwetsbaar voor AI-disruptie die het headcount-gebaseerde businessmodel kan ondermijnen.",
+    "categorieen": [
+      { "naam": "Immateriële activa",  "oordeel": "BEPERKT", "score": 2, "toelichting": "Geen dominante patenten of merken; waarde zit in knowhow en bankvergunningen" },
+      { "naam": "Overstapkosten",      "oordeel": "AANWEZIG", "score": 3, "toelichting": "Langlopende IT-outsourcingcontracten (3-7 jaar) creëren overstapkosten, zij het minder sterk dan bij softwarebedrijven" },
+      { "naam": "Netwerkeffecten",     "oordeel": "AFWEZIG", "score": 1, "toelichting": "Bilaterale leverancier-klant relatie; geen netwerkeffecten" },
+      { "naam": "Kostenvoordeel",      "oordeel": "AANWEZIG", "score": 3, "toelichting": "Offshore delivery vanuit India biedt ~40-60% kostenvoordeel t.o.v. westerse IT-dienstverleners" },
+      { "naam": "Efficiënte schaal",   "oordeel": "BEPERKT", "score": 2, "toelichting": "Markt groot genoeg voor TCS, Infosys, HCL én Wipro; geen dominante marktpositie" }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      { "functie": "Executive Chairman", "naam": "Rishad Premji", "achtergrond": "Zoon van oprichter Azim Premji; sterke langetermijnoriëntatie; LSB-opleiding; jarenlang betrokken bij strategie en M&A" },
+      { "functie": "CEO & MD", "naam": "Srini Pallia", "achtergrond": "Intern opgeklommen Wipro-veteraan (>25 jaar); benoemd april 2024 na vertrek Delaporte; AI-first strategie; track record als CEO nog beperkt" },
+      { "functie": "CFO", "naam": "Apala Acharyya", "achtergrond": "Interne benoeming; verantwoordelijk voor financieel rapportering en capital allocation" }
+    ],
+    "capital_allocation": "Genereus dividendbeleid (~$1,3B uitkering FY2025 incl. speciale dividend). Overnamestrategie Delaporte-periode (>$3B acquisities FY2022-2023) was teleurstellend. Pallia focust op organische AI-groei.",
+    "toelichting": "Premji-familiestructuur biedt langetermijnoriëntatie en is positief voor afstemming belangen. De overnamestrategie onder Delaporte (Capco, Rizing) leverde niet de verwachte groei. Nieuwe CEO Pallia is intern en kent de cultuur maar moet zijn executiecapaciteit nog bewijzen. Oordeel: neutraal."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 131.0,
+      "wacc_pct": 12.0,
+      "groei_fase1_pct": 6.0,
+      "terminal_groei_pct": 3.0
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch",      "fcf_groei_pct": 3.0,  "wacc_pct": 13.0, "fair_value": 164, "upside_pct": -15.6 },
+      { "scenario": "Basis",             "fcf_groei_pct": 6.0,  "wacc_pct": 12.0, "fair_value": 198, "upside_pct": 1.9 },
+      { "scenario": "Optimistisch",      "fcf_groei_pct": 10.0, "wacc_pct": 11.0, "fair_value": 263, "upside_pct": 35.4 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 6.0, "wacc_pct": 12.0, "fair_value": 198, "upside_pct": 1.9 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [10.0, 10.5, 11.0, 11.5, 12.0, 13.0],
+      "groei_range": [0.0, 2.0, 4.0, 6.0, 8.0, 10.0],
+      "matrix": [
+        [176, 161, 148, 137, 127, 112],
+        [197, 180, 166, 153, 141, 122],
+        [222, 203, 186, 171, 158, 136],
+        [252, 230, 210, 193, 198, 153],
+        [290, 264, 241, 221, 203, 173],
+        [337, 306, 279, 256, 235, 199]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham",                "score": 3, "max": 5, "oordeel": "Gedeeltelijk — P/E ~15x OK, P/B 2,4x te hoog, dividend aanwezig" },
+      { "framework": "Buffett / Munger",       "score": 2, "max": 5, "oordeel": "Voldoet niet — geen wide moat, ROIC marginaal boven WACC" },
+      { "framework": "Peter Lynch",            "score": 2, "max": 5, "oordeel": "Neutraal — Stalwart, PEG 2,2x onaantrekkelijk, beperkt groeiverhaal" },
+      { "framework": "Phil Fisher",            "score": 2, "max": 5, "oordeel": "Gemiddeld — R&D aanwezig maar beperkt; management mediocre; marges herstellen" },
+      { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "Gemiddeld — earnings yield 8,2% aantrekkelijk; ROIC 13% onvoldoende" },
+      { "framework": "Moat",                   "score": 2, "max": 5, "oordeel": "Narrow Moat — overstapkosten + kostenvoordeel, geen netwerkeffecten" },
+      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "Neutraal — Premji-familie positief; Delaporte-periode negatief" },
+      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Neutraal — ₹198 basiswaarde vs. koers ₹194,30; nauwelijks korting" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "Neutraal — identiek aan basis (geen IPO-correctie van toepassing)" }
+    ],
+    "totaal": 23,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "Wipro is een gevestigde Indiase IT-dienstverlener op een 52-weekse bodemkoers. De waardering is aantrekkelijk (P/E ~15x, FCF-yield ~7,7%) maar de DCF-basiswaarde geeft nauwelijks opwaarts potentieel bij de huidige koers van ₹194,30. Het bedrijf heeft een Narrow Moat, neutraal management-oordeel en teleurstellend groeitraject (omzetdaling twee jaar op rij). HOLD bij huidige niveaus; sterke KOOP bij zwakheid richting ₹155-₹165. De voornaamste onzekerheid is of AI-automatisering het IT-servicemodel structureel ondermijnt."
+  }
+}
