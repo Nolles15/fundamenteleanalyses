@@ -352,6 +352,27 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 16px 18px;
+      position: relative;
+    }
+    .metric-card[data-tip]:hover::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%; transform: translateX(-50%);
+      background: var(--text-1); color: #fff;
+      font-size: 12px; font-weight: 400; line-height: 1.4;
+      padding: 7px 11px; border-radius: 6px;
+      white-space: nowrap; max-width: 260px; white-space: normal;
+      pointer-events: none; z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .metric-card[data-tip]:hover::before {
+      content: '';
+      position: absolute;
+      bottom: calc(100% + 3px); left: 50%; transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: var(--text-1);
+      pointer-events: none; z-index: 100;
     }
     .metric-label {
       font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
@@ -361,6 +382,7 @@
       font-size: 22px; font-weight: 800; color: var(--text-1);
       letter-spacing: -0.5px; font-variant-numeric: tabular-nums;
     }
+    .metric-value.metric-null { font-size: 16px; color: var(--text-3); font-weight: 500; }
     .metric-sub { font-size: 11px; color: var(--text-3); margin-top: 3px; }
 
     /* ─── KANS / RISICO ─── */
@@ -1016,17 +1038,35 @@ function renderOverzicht(d) {
   const fin = d.financieel;
   const m   = d.meta;
 
+  const w = fin.waardering;
+  const ri = fin.rendementsindicatoren;
+  function mv(val, suffix) {
+    if (val == null) return { v: '–', cls: 'metric-null' };
+    return { v: `${val}${suffix}`, cls: '' };
+  }
   const metrics = [
-    { label: 'Koers',      value: `${m.valuta} ${fmt(es.koers)}`,           sub: m.peildatum },
-    { label: 'Fair Value', value: `${m.valuta} ${fmt(es.fair_value_basis)}`, sub: 'basisscenario' },
-    { label: 'Upside',     value: `+${es.upside_pct}%`,                     sub: 'basisscenario' },
-    { label: 'P/E',        value: `${fin.waardering.pe}×`,                  sub: '' },
-    { label: 'EV/EBITDA',  value: `${fin.waardering.ev_ebitda}×`,           sub: '' },
-    { label: 'FCF Yield',  value: `${fin.waardering.fcf_yield_pct}%`,       sub: '' },
-    fin.waardering.dividendrendement_pct
-      ? { label: 'Dividend', value: `${fin.waardering.dividendrendement_pct}%`, sub: 'rendement' }
+    { label: 'Koers',      ...mv(`${m.valuta} ${fmt(es.koers)}`, ''), sub: m.peildatum,
+      tip: 'Huidige aandelenkoers op de peildatum.' },
+    { label: 'Fair Value', ...mv(`${m.valuta} ${fmt(es.fair_value_basis)}`, ''), sub: 'basisscenario',
+      tip: 'Geschatte intrinsieke waarde op basis van het DCF basisscenario.' },
+    { label: 'Upside',     ...mv(`+${es.upside_pct}`, '%'), sub: 'basisscenario',
+      tip: 'Verwacht koerspotentieel tot de fair value (basisscenario).' },
+    { label: 'P/E',        ...mv(w.pe, '×'), sub: '',
+      tip: 'Koers-winstverhouding. Hoe vaak betaal je de jaarwinst. Lager is goedkoper; < 15 geldt als aantrekkelijk.' },
+    { label: 'EV/EBITDA',  ...mv(w.ev_ebitda, '×'), sub: '',
+      tip: 'Ondernemingswaarde gedeeld door operationele winst (EBITDA). Maatstaf voor totale bedrijfswaardering, ongeacht schulden of belastingen. Lager = goedkoper.' },
+    { label: 'FCF Yield',  ...mv(w.fcf_yield_pct, '%'), sub: '',
+      tip: 'Vrije kasstroom als percentage van de marktwaarde. Hoge FCF Yield betekent veel cash per betaalde euro; > 8% is aantrekkelijk.' },
+    w.p_b != null
+      ? { label: 'P/B', ...mv(w.p_b, '×'), sub: '',
+          tip: 'Koers-boekwaardeverhouding. Vergelijkt marktwaarde met boekhoudkundige waarde. < 1 kan wijzen op onderwaardering.' }
       : null,
-    { label: 'ROIC', value: `${fin.rendementsindicatoren.roic_pct}%`, sub: fin.rendementsindicatoren.jaar },
+    w.dividendrendement_pct != null
+      ? { label: 'Dividend', ...mv(w.dividendrendement_pct, '%'), sub: 'rendement',
+          tip: 'Jaarlijks dividend als percentage van de huidige koers.' }
+      : null,
+    { label: 'ROIC', ...mv(ri.roic_pct, '%'), sub: ri.jaar,
+      tip: 'Return on Invested Capital. Meet hoe efficiënt het bedrijf ingezet kapitaal omzet in winst. > 15% is sterk.' },
   ].filter(Boolean);
 
   el.innerHTML = `
@@ -1040,9 +1080,9 @@ function renderOverzicht(d) {
 
     <p class="section-subtitle">Kerncijfers</p>
     <div class="metrics-grid">
-      ${metrics.map(mc => `<div class="metric-card">
+      ${metrics.map(mc => `<div class="metric-card"${mc.tip ? ` data-tip="${mc.tip}"` : ''}>
         <div class="metric-label">${mc.label}</div>
-        <div class="metric-value">${mc.value}</div>
+        <div class="metric-value${mc.cls ? ' ' + mc.cls : ''}">${mc.v}</div>
         ${mc.sub ? `<div class="metric-sub">${mc.sub}</div>` : ''}
       </div>`).join('')}
     </div>
