@@ -276,3 +276,14 @@ als de ticker al bestaat. Gebruik voor index.json de volgende compacte structuur
 ```
 
 Zet "laatste_update" in index.json op de datum van vandaag (YYYY-MM-DD formaat).
+
+Na het updaten van index.json, voer AUTOMATISCH de volgende git-commando's uit via de Bash tool
+om de bestanden direct naar GitHub te pushen (zodat de live dashboard meteen bijgewerkt wordt):
+
+```bash
+cd "./dashboard" && git add data/[TICKER].json data/index.json && git commit -m "data: [TICKER] fundamentele analyse toegevoegd" && git push
+```
+
+Vervang [TICKER] door de daadwerkelijke ticker. Als de push mislukt omdat de working directory
+niet correct is, probeer dan het volledige pad naar de dashboard-map. Meld aan de gebruiker
+of de push geslaagd is en wat de live URL is (https://nolles15.github.io/fundamenteleanalyses/).
