@@ -385,6 +385,42 @@
     .metric-value.metric-null { font-size: 16px; color: var(--text-3); font-weight: 500; }
     .metric-sub { font-size: 11px; color: var(--text-3); margin-top: 3px; }
 
+    /* ─── INLINE TOOLTIP (voor tabel-termen) ─── */
+    .tip {
+      position: relative; display: inline-block;
+      border-bottom: 1px dotted var(--text-3); cursor: help;
+    }
+    .tip::after {
+      content: attr(data-tip);
+      position: absolute; bottom: calc(100% + 6px); left: 0;
+      background: var(--text-1); color: #fff;
+      font-size: 12px; font-weight: 400; line-height: 1.5;
+      padding: 7px 11px; border-radius: 6px;
+      white-space: normal; width: max-content; max-width: 280px;
+      pointer-events: none; z-index: 200;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+      opacity: 0; transition: opacity 0.15s; text-transform: none; letter-spacing: 0;
+    }
+    .tip:hover::after { opacity: 1; }
+
+    /* ─── ANALYSE BLOK ─── */
+    .analyse-block {
+      background: var(--surface-2); border-radius: var(--radius-sm);
+      padding: 14px 18px; font-size: 14px; color: var(--text-2);
+      line-height: 1.7; margin-bottom: 24px;
+      border-left: 3px solid var(--border);
+    }
+
+    /* ─── IPO CORRECTIE CALLOUT ─── */
+    .ipo-callout {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 13px 16px;
+      font-size: 13px; color: var(--text-2); line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .ipo-callout strong { color: var(--text-1); font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 4px; }
+
     /* ─── KANS / RISICO ─── */
     .kans-risico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
     @media (max-width: 640px) { .kans-risico-grid { grid-template-columns: 1fr; } }
@@ -1152,6 +1188,12 @@ function renderOverzicht(d) {
 // ──────────────────────────────────────────────
 // TAB: FINANCIEEL
 // ──────────────────────────────────────────────
+function tip(label, uitleg) {
+  return uitleg ? `<span class="tip" data-tip="${uitleg}">${label}</span>` : label;
+}
+function nullOrVal(val, suffix) {
+  return val != null ? val + suffix : nullCell();
+}
 function renderFinancieel(d) {
   const el = document.getElementById('content-financieel');
   if (el.dataset.rendered) return;
@@ -1168,15 +1210,26 @@ function renderFinancieel(d) {
       <td>${r.ebitda_marge_pct != null ? r.ebitda_marge_pct + '%' : nullCell()}</td>
       <td>${r.nettowinst != null ? fmt(r.nettowinst) : nullCell()}</td>
       <td class="${r.nettomarge_pct > 15 ? 'td-pos' : ''}">${r.nettomarge_pct != null ? r.nettomarge_pct + '%' : nullCell()}</td>
-      <td>${r.eps != null ? '$' + r.eps : nullCell()}</td>
+      <td>${r.eps != null ? r.eps : nullCell()}</td>
     </tr>`).join('');
 
   const balansRows = fin.balans.map(b => `
     <tr>
       <td>${b.jaar}</td>
-      <td>${fmt(b.nettoschuld)}</td>
+      <td class="${b.nettoschuld < 0 ? 'td-pos' : ''}">${fmt(b.nettoschuld)}</td>
       <td>${fmt(b.eigen_vermogen)}</td>
-      <td class="${b.debt_ebitda < 1 ? 'td-pos' : b.debt_ebitda > 3 ? 'td-neg' : ''}">${b.debt_ebitda}×</td>
+      <td class="${b.debt_ebitda != null && b.debt_ebitda < 1 ? 'td-pos' : b.debt_ebitda > 3 ? 'td-neg' : ''}">${b.debt_ebitda != null ? b.debt_ebitda + '×' : nullCell()}</td>
+    </tr>`).join('');
+
+  // Kasstroomoverzicht tabel
+  const ksRows = fin.kasstromen.map(k => `
+    <tr>
+      <td>${k.jaar}</td>
+      <td>${k.cfo != null ? fmt(k.cfo) : nullCell()}</td>
+      <td>${k.capex != null ? fmt(k.capex) : nullCell()}</td>
+      <td class="${k.fcf > 0 ? 'td-pos' : k.fcf < 0 ? 'td-neg' : ''}">${k.fcf != null ? fmt(k.fcf) : nullCell()}</td>
+      <td>${k.fcf_per_aandeel != null ? k.fcf_per_aandeel : nullCell()}</td>
+      <td>${k.dividend_uitbetaald != null ? fmt(k.dividend_uitbetaald) : nullCell()}</td>
     </tr>`).join('');
 
   const w  = fin.waardering;
@@ -1184,18 +1237,36 @@ function renderFinancieel(d) {
   const segmenten    = profiel ? profiel.segmenten : [];
   const aandeelhouders = profiel ? profiel.aandeelhouders : [];
 
+  // Historische waardering tabel
+  const wh = fin.waardering_historisch;
+  const whTable = wh ? `
+    <p class="section-subtitle">Waarderingsratio's (historisch)</p>
+    <div class="data-table-wrap" style="margin-bottom:${fin.waardering_analyse ? '12px' : '28px'}">
+      <table>
+        <thead><tr><th>Ratio</th>${wh.kolommen.map(k => `<th>${k}</th>`).join('')}</tr></thead>
+        <tbody>${wh.rijen.map(r => `<tr><td>${r.ratio}</td>${r.waarden.map(v => `<td>${v}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table>
+    </div>
+    ${fin.waardering_analyse ? `<div class="analyse-block">${fin.waardering_analyse}</div>` : ''}` : '';
+
   el.innerHTML = `
     <p class="section-subtitle">Resultatenrekening (${fin.valuta_label})</p>
     <div class="data-table-wrap">
       <table>
         <thead><tr>
-          <th>Jaar</th><th>Omzet</th><th>Groei</th>
-          <th>EBITDA</th><th>EBITDA%</th>
-          <th>Nettow.</th><th>Nettomarge</th><th>EPS</th>
+          <th>Jaar</th>
+          <th>${tip('Omzet', 'Totale netto-omzet van de onderneming.')}</th>
+          <th>${tip('Groei', 'Omzetgroei ten opzichte van het voorgaande jaar.')}</th>
+          <th>${tip('EBITDA', 'Winst vóór rente, belastingen, afschrijvingen en amortisatie. Maatstaf voor operationele winstgevendheid.')}</th>
+          <th>${tip('EBITDA%', 'EBITDA als percentage van de omzet (EBITDA-marge).')}</th>
+          <th>${tip('Nettow.', 'Nettowinst (of -verlies) na rente en belastingen.')}</th>
+          <th>${tip('Nettomarge', 'Nettowinst als percentage van de omzet.')}</th>
+          <th>${tip('EPS', 'Earnings Per Share: winst per aandeel (verwaterd).')}</th>
         </tr></thead>
         <tbody>${tableRows}</tbody>
       </table>
     </div>
+    ${fin.resultatenrekening_analyse ? `<div class="analyse-block">${fin.resultatenrekening_analyse}</div>` : ''}
 
     <div class="chart-row">
       <div class="chart-card">
@@ -1208,42 +1279,72 @@ function renderFinancieel(d) {
       </div>
     </div>
 
-    <p class="section-subtitle">Balanskenmerken (${fin.valuta_label})</p>
-    <div class="data-table-wrap" style="margin-bottom:28px">
+    <p class="section-subtitle">Kasstroomoverzicht (${fin.valuta_label})</p>
+    <div class="data-table-wrap" style="margin-bottom:${fin.kasstromen_analyse ? '12px' : '28px'}">
       <table>
         <thead><tr>
-          <th>Jaar</th><th>Nettoschuld</th><th>Eigen vermogen</th><th>Debt/EBITDA</th>
+          <th>Jaar</th>
+          <th>${tip('CFO', 'Cash Flow from Operations: kasstroom uit bedrijfsactiviteiten.')}</th>
+          <th>${tip('CAPEX', 'Capital Expenditures: investeringen in vaste activa.')}</th>
+          <th>${tip('FCF', 'Free Cash Flow = CFO minus CAPEX. Beschikbare kasstroom na investeringen.')}</th>
+          <th>${tip('FCF/aandeel', 'Free Cash Flow per aandeel (verwaterd).')}</th>
+          <th>${tip('Dividend', 'Totaal uitgekeerd dividend aan aandeelhouders.')}</th>
+        </tr></thead>
+        <tbody>${ksRows}</tbody>
+      </table>
+    </div>
+    ${fin.kasstromen_analyse ? `<div class="analyse-block">${fin.kasstromen_analyse}</div>` : ''}
+
+    <p class="section-subtitle">Balanskenmerken (${fin.valuta_label})</p>
+    <div class="data-table-wrap" style="margin-bottom:${fin.balans_analyse ? '12px' : '28px'}">
+      <table>
+        <thead><tr>
+          <th>Jaar</th>
+          <th>${tip('Nettoschuld', 'Totale schulden minus liquide middelen. Negatief = nettokaspositie.')}</th>
+          <th>${tip('Eigen vermogen', 'Boekwaarde van het eigen vermogen (activa minus schulden).')}</th>
+          <th>${tip('Debt/EBITDA', 'Nettoschuld gedeeld door EBITDA. Maatstaf voor schuldenlast. < 2× is gezond.')}</th>
         </tr></thead>
         <tbody>${balansRows}</tbody>
       </table>
     </div>
+    ${fin.balans_analyse ? `<div class="analyse-block">${fin.balans_analyse}</div>` : ''}
 
     <div class="two-col">
       <div>
         <p class="section-subtitle">Rendementsindicatoren (${ri.jaar})</p>
-        <div class="data-table-wrap">
+        <div class="data-table-wrap" style="margin-bottom:${fin.rendementsindicatoren_analyse ? '12px' : '0'}">
           <table><tbody>
-            <tr><td>ROCE</td><td class="td-pos">${ri.roce_pct}%</td></tr>
-            <tr><td>ROE</td><td class="td-pos">${ri.roe_pct}%</td></tr>
-            <tr><td>ROIC</td><td class="td-pos">${ri.roic_pct}%</td></tr>
-            <tr><td>ROA</td><td>${ri.roa_pct}%</td></tr>
+            <tr><td>${tip('ROCE', 'Return on Capital Employed. Winst vóór rente & belasting als % van ingezet vermogen. > WACC = waardecreatie.')}</td><td class="${ri.roce_pct > 10 ? 'td-pos' : ''}">${nullOrVal(ri.roce_pct, '%')}</td></tr>
+            <tr><td>${tip('ROE', 'Return on Equity. Nettowinst als % van eigen vermogen. > 15% is sterk.')}</td><td class="${ri.roe_pct > 10 ? 'td-pos' : ri.roe_pct < 0 ? 'td-neg' : ''}">${nullOrVal(ri.roe_pct, '%')}</td></tr>
+            <tr><td>${tip('ROIC', 'Return on Invested Capital. Meet hoe efficiënt geïnvesteerd kapitaal in winst wordt omgezet. > WACC = economische waardecreatie.')}</td><td class="${ri.roic_pct > 10 ? 'td-pos' : ri.roic_pct < 0 ? 'td-neg' : ''}">${nullOrVal(ri.roic_pct, '%')}</td></tr>
+            <tr><td>${tip('ROA', 'Return on Assets. Nettowinst als % van totale activa. Maatstaf voor efficiëntie van het totale vermogen.')}</td><td>${nullOrVal(ri.roa_pct, '%')}</td></tr>
           </tbody></table>
         </div>
+        ${fin.rendementsindicatoren_analyse ? `<div class="analyse-block" style="margin-top:12px">${fin.rendementsindicatoren_analyse}</div>` : ''}
       </div>
       <div>
         <p class="section-subtitle">Waardering (huidig)</p>
         <div class="data-table-wrap">
           <table><tbody>
-            <tr><td>P/E</td><td>${w.pe}×</td></tr>
-            <tr><td>EV/EBITDA</td><td>${w.ev_ebitda}×</td></tr>
-            <tr><td>P/FCF</td><td>${w.p_fcf}×</td></tr>
-            <tr><td>FCF Yield</td><td class="td-pos">${w.fcf_yield_pct}%</td></tr>
-            ${w.dividendrendement_pct ? `<tr><td>Dividendrendement</td><td class="td-pos">${w.dividendrendement_pct}%</td></tr>` : ''}
-            <tr><td>P/B</td><td>${w.p_b}×</td></tr>
+            <tr><td>${tip('P/E', 'Koers-winstverhouding. Hoe vaak betaal je de jaarwinst. < 15× is aantrekkelijk.')}</td><td>${w.pe != null ? w.pe + '×' : nullCell()}</td></tr>
+            <tr><td>${tip('EV/EBITDA', 'Ondernemingswaarde gedeeld door EBITDA. Populaire overnamewaarde maatstaf. < 8× is aantrekkelijk.')}</td><td>${w.ev_ebitda != null ? w.ev_ebitda + '×' : nullCell()}</td></tr>
+            <tr><td>${tip('P/FCF', 'Koers gedeeld door vrije kasstroom per aandeel. < 15× is aantrekkelijk.')}</td><td>${w.p_fcf != null ? w.p_fcf + '×' : nullCell()}</td></tr>
+            <tr><td>${tip('FCF Yield', 'Vrije kasstroom als % van marktwaarde. > 6% is aantrekkelijk.')}</td><td class="${w.fcf_yield_pct > 6 ? 'td-pos' : ''}">${w.fcf_yield_pct != null ? w.fcf_yield_pct + '%' : nullCell()}</td></tr>
+            ${w.dividendrendement_pct ? `<tr><td>${tip('Dividend', 'Jaarlijks dividend als % van de huidige koers.')}</td><td class="td-pos">${w.dividendrendement_pct}%</td></tr>` : ''}
+            <tr><td>${tip('P/B', 'Koers-boekwaardeverhouding. Marktwaarde vs boekhoudkundige waarde. < 1× kan wijzen op onderwaardering.')}</td><td class="${w.p_b < 1 ? 'td-pos' : ''}">${w.p_b != null ? w.p_b + '×' : nullCell()}</td></tr>
+            ${w.ev_omzet != null ? `<tr><td>${tip('EV/Omzet', 'Ondernemingswaarde gedeeld door omzet. Nuttig bij verlieslatende bedrijven.')}</td><td>${w.ev_omzet}×</td></tr>` : ''}
           </tbody></table>
         </div>
       </div>
     </div>
+
+    ${whTable}
+
+    ${fin.ipo_correctie ? `
+    <div class="ipo-callout">
+      <strong>IPO-correctiecheck</strong>
+      ${fin.ipo_correctie}
+    </div>` : ''}
 
     ${segmenten.length || aandeelhouders.length ? `
     <div class="two-col">

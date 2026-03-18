@@ -70,12 +70,22 @@ je niet kon verifiëren.
         "eps": [GETAL OF null]
       }
     ],
+    "resultatenrekening_analyse": "[2-4 zinnen over omzettrend, winstvolatiliteit, bijzondere posten en context]",
     "kasstromen": [
-      { "jaar": [YYYY], "fcf": [GETAL OF null], "fcf_per_aandeel": [GETAL OF null] }
+      {
+        "jaar": [YYYY],
+        "cfo": [GETAL OF null],
+        "capex": [GETAL OF null],
+        "fcf": [GETAL OF null],
+        "fcf_per_aandeel": [GETAL OF null],
+        "dividend_uitbetaald": [GETAL OF null]
+      }
     ],
+    "kasstromen_analyse": "[2-4 zinnen over FCF-kwaliteit, CAPEX-intensiteit, dividendbeleid en risico's]",
     "balans": [
       { "jaar": [YYYY], "nettoschuld": [GETAL], "eigen_vermogen": [GETAL], "debt_ebitda": [GETAL OF null] }
     ],
+    "balans_analyse": "[2-3 zinnen over balanssterkte, nettoschuld, boekwaarde en P/B context]",
     "rendementsindicatoren": {
       "jaar": [YYYY],
       "roce_pct": [GETAL OF null],
@@ -83,6 +93,7 @@ je niet kon verifiëren.
       "roic_pct": [GETAL OF null],
       "roa_pct": [GETAL OF null]
     },
+    "rendementsindicatoren_analyse": "[2-3 zinnen over ROIC vs WACC, trend in rendementen, waardecreatie]",
     "waardering": {
       "pe": [GETAL OF null],
       "ev_ebitda": [GETAL OF null],
@@ -91,7 +102,17 @@ je niet kon verifiëren.
       "p_b": [GETAL OF null],
       "ev_omzet": [GETAL OF null],
       "dividendrendement_pct": [GETAL OF null]
-    }
+    },
+    "waardering_historisch": {
+      "kolommen": ["Huidig ([JAAR])", "[JAAR-1]", "[JAAR-2 of 'record']"],
+      "rijen": [
+        { "ratio": "P/E",      "waarden": ["[WAARDE]", "[WAARDE]", "[WAARDE]"] },
+        { "ratio": "P/B",      "waarden": ["[WAARDE]", "[WAARDE]", "[WAARDE]"] },
+        { "ratio": "EV/EBITDA","waarden": ["[WAARDE]", "[WAARDE]", "[WAARDE]"] }
+      ]
+    },
+    "waardering_analyse": "[2-4 zinnen over historische waardering, huidige multiples in context, wat de koers inprijst]",
+    "ipo_correctie": "[Toelichting of IPO-correctie van toepassing is. null als niet relevant (beursgenoteerd >5 jaar zonder bijzonderheden)]"
   },
   "moat": {
     "oordeel": "[WIDE MOAT|NARROW MOAT|NO MOAT]",

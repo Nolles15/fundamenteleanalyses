@@ -50,18 +50,21 @@
       { "jaar": 2024, "omzet": 3435, "omzet_groei_pct": -3.2,  "ebitda": 299, "ebitda_marge_pct": 8.7,  "nettowinst": 70,   "nettomarge_pct": null, "eps": 1.01  },
       { "jaar": 2025, "omzet": 3198, "omzet_groei_pct": -6.9,  "ebitda": 28,  "ebitda_marge_pct": 0.9,  "nettowinst": -250, "nettomarge_pct": null, "eps": -3.60 }
     ],
+    "resultatenrekening_analyse": "De enorme winstvolatiliteit is kenmerkend voor een cyclische papierproducent. 2022 was een recordjaar door naoorlogse vraaginhaalslagen, hoge papier- en pulpprijzen en gunstige EUR/PLN. Sindsdien is er een scherpe normalisatie opgetreden, versneld door de Rottneros-verliezen in 2025 (nettoverlies Rottneros: SEK -452 mln = ~PLN -181 mln). De gecombineerde impact resulteerde in een groepsbrede nettoverlies in 2025 van naar schatting PLN -250 mln.",
     "kasstromen": [
-      { "jaar": 2021, "fcf": 130,  "fcf_per_aandeel": 1.87  },
-      { "jaar": 2022, "fcf": 400,  "fcf_per_aandeel": 5.76  },
-      { "jaar": 2023, "fcf": 150,  "fcf_per_aandeel": 2.16  },
-      { "jaar": 2024, "fcf": -180, "fcf_per_aandeel": -2.59 }
+      { "jaar": 2021, "cfo": 250, "capex": 120, "fcf": 130,  "fcf_per_aandeel": 1.87,  "dividend_uitbetaald": 30  },
+      { "jaar": 2022, "cfo": 550, "capex": 150, "fcf": 400,  "fcf_per_aandeel": 5.76,  "dividend_uitbetaald": 120 },
+      { "jaar": 2023, "cfo": 350, "capex": 200, "fcf": 150,  "fcf_per_aandeel": 2.16,  "dividend_uitbetaald": 100 },
+      { "jaar": 2024, "cfo": 220, "capex": 400, "fcf": -180, "fcf_per_aandeel": -2.59, "dividend_uitbetaald": 80  }
     ],
+    "kasstromen_analyse": "In 2024 was de FCF negatief door een CAPEX-sprint van >PLN 400 mln (investeringen in nieuwe productiecapaciteit: verpakkingen, pellets, energie). Dit is een bewuste keuze van management om te investeren in de toekomst terwijl de papiermarkt zwak is. In 2025 zal de FCF wederom zeer negatief zijn door de operationele verliezen. De keerzijde: als de investeringen niet renderen of de markt niet herstelt, verslechtert de financiële positie verder.",
     "balans": [
       { "jaar": 2021, "nettoschuld": -100, "eigen_vermogen": 1400, "debt_ebitda": null },
       { "jaar": 2022, "nettoschuld": -300, "eigen_vermogen": 1800, "debt_ebitda": null },
       { "jaar": 2023, "nettoschuld": -250, "eigen_vermogen": 1900, "debt_ebitda": null },
       { "jaar": 2024, "nettoschuld": -142, "eigen_vermogen": 1700, "debt_ebitda": null }
     ],
+    "balans_analyse": "De balans van Arctic Paper was tot 2024 relatief solide, met een nettokaspositie van PLN -142 mln (dwz. meer kassa dan schuld). De boekwaarde per aandeel bedroeg in 2024 ~PLN 24,5, terwijl de huidige koers ~PLN 8 is. Dit resulteert in een P/B van slechts 0,33× — historisch laag en suggereert dat de markt de activa significant afprijst.",
     "rendementsindicatoren": {
       "jaar": 2024,
       "roce_pct": null,
@@ -69,6 +72,7 @@
       "roic_pct": 3.0,
       "roa_pct": 2.3
     },
+    "rendementsindicatoren_analyse": "ROIC is de sleutelmaatstaf voor waardecreatie. In normale jaren (2021, 2023) ligt ROIC rond 8%, wat waarschijnlijk rond of licht boven de WACC van ca. 9–10% ligt — geen brede moat. In het recordjaar 2022 was de ROIC uitzonderlijk hoog. In 2025 is de ROIC vrijwel zeker diep negatief door de verliezen bij Rottneros.",
     "waardering": {
       "pe": null,
       "ev_ebitda": null,
@@ -77,7 +81,17 @@
       "p_b": 0.33,
       "ev_omzet": 0.20,
       "dividendrendement_pct": 0.0
-    }
+    },
+    "waardering_historisch": {
+      "kolommen": ["Huidig (2026)", "2023", "2022 (record)"],
+      "rijen": [
+        { "ratio": "P/E",      "waarden": ["N/A (verlies 2025)", "~3×",   "~1,4×"] },
+        { "ratio": "P/B",      "waarden": ["~0,33× (l)",         "~0,4×", "~0,5×"] },
+        { "ratio": "EV/EBITDA","waarden": [">20× (2025E)",       "~3–4×", "~1–2×"] }
+      ]
+    },
+    "waardering_analyse": "De huidige koers van PLN 8 is uitzonderlijk laag in historisch perspectief. In normale jaren (2021–2023) handelde Arctic Paper op 3–4× EV/EBITDA; de huidige >20× reflecteert het verliesjaar 2025E en niet de genormaliseerde winstcapaciteit. Zodra het bedrijf terugkeert naar een EBITDA van PLN 250–300 mln, comprimeren de multiples aanzienlijk. De P/B van 0,33× suggereert dat de markt uitgaat van permanente waardevernietiging of significante balanserosie — een risico dat niet onterecht is bij aanhoudende verliezen.",
+    "ipo_correctie": "Arctic Paper is al sinds 2010 beursgenoteerd (>15 jaar), zodat een standaard IPO-correctie niet van toepassing is. Er zijn geen aanwijzingen gevonden van pre-IPO financial engineering die de historische cijfers vertekent. De kapitaalstructuur was bij de IPO relatief normaal."
   },
   "moat": {
     "oordeel": "NO MOAT",
