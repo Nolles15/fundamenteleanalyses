@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aandelenanalyse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #EEEEED;
+      --surface:     #FFFFFF;
+      --surface-2:   #E9E9E7;
+      --text-1:      #0A0A0A;
+      --text-2:      #555555;
+      --text-3:      #999999;
+      --accent:      #0A0A0A;
+      --accent-bg:   #EEEEED;
+      --buy:         #166534;
+      --buy-bg:      #F0FDF4;
+      --buy-border:  #BBF7D0;
+      --hold:        #854D0E;
+      --hold-bg:     #FFFBEB;
+      --hold-border: #FDE68A;
+      --pass:        #991B1B;
+      --pass-bg:     #FEF2F2;
+      --pass-border: #FECACA;
+      --border:      #E2E2E0;
+      --chart-1:     #0A0A0A;
+      --chart-2:     #777777;
+      --chart-3:     #166534;
+      --chart-4:     #555555;
+      --radius:      16px;
+      --radius-sm:   10px;
+      --shadow:      0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.04);
+      --shadow-lg:   0 8px 32px rgba(0,0,0,0.10);
+      --transition:  0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      --font:        'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+
+    html { font-size: 16px; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-1);
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HEADER ─── */
+    #main-header {
+      background: rgba(255,255,255,0.94);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 1320px; margin: 0 auto;
+      padding: 18px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; }
+    .brand-icon {
+      font-size: 16px; color: var(--accent);
+      width: 40px; height: 40px;
+      background: var(--text-1);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-weight: 700;
+    }
+    .brand-title {
+      font-size: 17px; font-weight: 700;
+      color: var(--text-1); letter-spacing: -0.3px;
+    }
+    .brand-subtitle { font-size: 12px; color: var(--text-3); margin-top: 1px; }
+    .header-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+    .pill {
+      font-size: 12px; font-weight: 600;
+      padding: 4px 12px; border-radius: 20px; white-space: nowrap;
+    }
+    .pill-total { background: var(--surface-2); color: var(--text-2); }
+    .pill-buy   { background: var(--text-1); color: #fff; }
+    .pill-hold  { background: var(--hold-bg); color: var(--hold); border: 1px solid var(--hold-border); }
+    .pill-pass  { background: var(--pass-bg); color: var(--pass); border: 1px solid var(--pass-border); }
+
+    /* ─── GRID VIEW ─── */
+    #grid-view { transition: opacity var(--transition); }
+    #grid-view.fading { opacity: 0; pointer-events: none; }
+    .container { max-width: 1320px; margin: 0 auto; padding: 40px 32px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+    }
+    .empty-state {
+      grid-column: 1 / -1; text-align: center;
+      padding: 80px 24px; color: var(--text-3);
+    }
+    .empty-state h2 { font-size: 22px; font-weight: 700; color: var(--text-2); margin-bottom: 8px; }
+    .empty-state p { font-size: 14px; }
+
+    /* ─── COMPANY CARD ─── */
+    .company-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      box-shadow: var(--shadow);
+      display: flex; flex-direction: column; gap: 20px;
+      /* staggered entry */
+      animation: cardIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .company-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 12px 40px rgba(0,0,0,0.10);
+      border-color: var(--border);
+    }
+    /* sentiment stripe at top */
+    .company-card[data-oordeel="KOOP"] { border-top: 3px solid var(--text-1); }
+    .company-card[data-oordeel="HOLD"] { border-top: 3px solid var(--hold); }
+    .company-card[data-oordeel="PASS"] { border-top: 3px solid var(--pass); }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .grid > .company-card:nth-child(1) { animation-delay: 0.04s; }
+    .grid > .company-card:nth-child(2) { animation-delay: 0.10s; }
+    .grid > .company-card:nth-child(3) { animation-delay: 0.16s; }
+    .grid > .company-card:nth-child(4) { animation-delay: 0.22s; }
+    .grid > .company-card:nth-child(5) { animation-delay: 0.28s; }
+    .grid > .company-card:nth-child(6) { animation-delay: 0.34s; }
+    .card-top {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+    }
+    .card-ticker-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+    .card-ticker {
+      font-size: 17px; font-weight: 800; color: var(--text-1);
+      letter-spacing: -0.3px;
+    }
+    .card-exchange {
+      font-size: 11px; color: var(--text-3); font-weight: 600;
+      background: var(--surface-2); padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .card-oordeel-badge {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.4px;
+      padding: 4px 11px; border-radius: 20px; white-space: nowrap;
+      flex-shrink: 0; border: 1px solid;
+    }
+    .badge-KOOP { background: var(--text-1); color: #fff; border-color: var(--text-1); }
+    .badge-HOLD { background: var(--hold-bg); color: var(--hold); border-color: var(--hold-border); }
+    .badge-PASS { background: var(--pass-bg); color: var(--pass); border-color: var(--pass-border); }
+    .card-naam { font-size: 14px; font-weight: 600; color: var(--text-1); line-height: 1.3; }
+    .card-sector { font-size: 12px; color: var(--text-3); margin-top: 3px; }
+
+    /* upside block */
+    .card-upside-block {
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-2);
+    }
+    .card-upside-pct {
+      font-size: 38px; font-weight: 800;
+      line-height: 1; letter-spacing: -2px;
+      margin-bottom: 6px;
+      font-variant-numeric: tabular-nums;
+    }
+    .upside-positive { color: var(--text-1); }
+    .upside-negative { color: var(--pass); }
+    .upside-neutral  { color: var(--text-2); }
+    .card-upside-meta { font-size: 13px; color: var(--text-2); font-weight: 500; }
+    .card-koers-meta  { font-size: 12px; color: var(--text-3); margin-top: 3px; }
+
+    .card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 12px; color: var(--text-3);
+      padding-top: 4px; border-top: 1px solid var(--surface-2);
+    }
+    .card-arrow { color: var(--text-3); font-size: 14px; }
+
+    /* update badge */
+    .update-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 700;
+      padding: 3px 9px; border-radius: 20px;
+      background: #FFFBEB; color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+    .update-pulse {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: #D97706;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* ─── DETAIL VIEW ─── */
+    #detail-view {
+      position: fixed; inset: 0; z-index: 200;
+      background: var(--bg);
+      display: flex; flex-direction: column;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.28s ease;
+    }
+    #detail-view.visible { opacity: 1; pointer-events: all; }
+
+    .detail-header {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      display: flex; align-items: stretch;
+      flex-shrink: 0;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 500; color: var(--text-2);
+      background: none; border: none; cursor: pointer;
+      padding: 18px 0; margin-right: 24px;
+      transition: color var(--transition);
+      font-family: var(--font);
+    }
+    .back-btn:hover { color: var(--text-1); }
+    .back-arrow { font-size: 18px; line-height: 1; }
+    .detail-company-header {
+      flex: 1; display: flex; align-items: center; gap: 18px;
+      padding: 16px 0; overflow: hidden;
+    }
+    .detail-ticker { font-size: 22px; font-weight: 800; flex-shrink: 0; letter-spacing: -0.5px; }
+    .detail-sep { color: var(--border); font-size: 18px; flex-shrink: 0; }
+    .detail-naam {
+      font-size: 15px; font-weight: 500; color: var(--text-2);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .detail-price-info {
+      margin-left: auto; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+    }
+    .detail-koers {
+      font-size: 17px; font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .detail-arrow { color: var(--text-3); font-size: 14px; }
+    .detail-fv {
+      font-size: 15px; font-weight: 500; color: var(--text-2);
+      font-variant-numeric: tabular-nums;
+    }
+    .detail-upside {
+      font-size: 13px; font-weight: 700;
+      padding: 4px 10px; border-radius: 20px;
+    }
+    .detail-pdf-btn {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 13px; font-weight: 600; color: var(--text-2);
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); cursor: pointer;
+      padding: 8px 14px; margin-left: 16px;
+      transition: background var(--transition), color var(--transition);
+      font-family: var(--font);
+    }
+    .detail-pdf-btn:hover { background: var(--surface); color: var(--text-1); }
+
+    /* ─── TABS ─── */
+    .tab-bar {
+      display: flex; gap: 4px; align-items: center;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 28px;
+      overflow-x: auto; flex-shrink: 0;
+      scrollbar-width: none;
+    }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      font-size: 13px; font-weight: 600; color: var(--text-3);
+      background: none; border: none; cursor: pointer;
+      padding: 8px 14px; margin: 9px 0;
+      border-radius: var(--radius-sm);
+      border-bottom: none;
+      transition: color var(--transition), background var(--transition);
+      white-space: nowrap; font-family: var(--font);
+      line-height: 1;
+    }
+    .tab-btn:hover { color: var(--text-2); background: var(--surface-2); }
+    .tab-btn.active {
+      color: var(--text-1);
+      background: var(--surface-2);
+      font-weight: 700;
+    }
+
+    /* ─── DETAIL CONTENT ─── */
+    .detail-body { flex: 1; overflow-y: auto; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .content-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 36px 32px 60px;
+    }
+    .section-title {
+      font-size: 20px; font-weight: 700;
+      color: var(--text-1); margin-bottom: 24px;
+      letter-spacing: -0.3px;
+    }
+    .section-subtitle {
+      font-size: 10.5px; font-weight: 700; letter-spacing: 1.1px;
+      text-transform: uppercase; color: var(--text-3);
+      margin-bottom: 14px;
+      margin-top: 32px;
+    }
+    .section-subtitle:first-child { margin-top: 0; }
+
+    /* ─── KERNTHESE ─── */
+    .kernthese {
+      font-size: 17px; font-weight: 500; font-style: normal;
+      color: var(--text-1); line-height: 1.75;
+      padding: 40px 44px 40px 44px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 32px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .kernthese::before {
+      content: '\201C';
+      position: absolute; top: -18px; left: 18px;
+      font-size: 160px; line-height: 1;
+      color: var(--text-1);
+      font-style: normal; font-weight: 800;
+      opacity: 0.04;
+      pointer-events: none; user-select: none;
+    }
+
+    /* ─── METRICS GRID ─── */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px; margin-bottom: 28px;
+    }
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+    }
+    .metric-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; color: var(--text-3); margin-bottom: 6px;
+    }
+    .metric-value {
+      font-size: 22px; font-weight: 800; color: var(--text-1);
+      letter-spacing: -0.5px; font-variant-numeric: tabular-nums;
+    }
+    .metric-sub { font-size: 11px; color: var(--text-3); margin-top: 3px; }
+
+    /* ─── KANS / RISICO ─── */
+    .kans-risico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+    @media (max-width: 640px) { .kans-risico-grid { grid-template-columns: 1fr; } }
+    .kans-card, .risico-card {
+      background: var(--surface); border-radius: var(--radius-sm);
+      padding: 18px 20px; border: 1px solid var(--border);
+    }
+    .kans-card   { border-top: 3px solid var(--buy); }
+    .risico-card { border-top: 3px solid var(--pass); }
+    .kr-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .kans-card   .kr-label { color: var(--buy);  }
+    .risico-card .kr-label { color: var(--pass); }
+    .kr-text { font-size: 14px; color: var(--text-1); line-height: 1.55; }
+
+    /* ─── CHART CARDS ─── */
+    .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 28px; }
+    @media (max-width: 860px) { .chart-row { grid-template-columns: 1fr; } }
+    .chart-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow);
+    }
+    .chart-title { font-size: 13px; font-weight: 700; color: var(--text-1); margin-bottom: 18px; }
+    .chart-wrap { position: relative; }
+
+    /* ─── DATA TABLES ─── */
+    .data-table-wrap {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden; margin-bottom: 28px;
+      box-shadow: var(--shadow);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead th {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.4px;
+      text-transform: uppercase; color: var(--text-3);
+      padding: 12px 16px; text-align: right;
+      background: var(--surface-2); border-bottom: 1px solid var(--border);
+    }
+    thead th:first-child { text-align: left; }
+    tbody td {
+      padding: 11px 16px; text-align: right;
+      border-bottom: 1px solid var(--surface-2);
+      font-size: 13px; color: var(--text-1);
+      font-variant-numeric: tabular-nums;
+    }
+    tbody td:first-child {
+      font-size: 13px; font-weight: 600;
+      text-align: left; color: var(--text-1);
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: var(--surface-2); }
+    .td-pos { color: var(--buy); font-weight: 600; }
+    .td-neg { color: var(--pass); }
+    .td-null { color: var(--text-3); }
+
+    /* ─── UPDATE BANNER ─── */
+    .detail-update-banner {
+      background: #FFFBEB; border: 1px solid #FDE68A;
+      border-radius: var(--radius-sm); padding: 12px 18px; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+      font-size: 13px; color: #78350F;
+    }
+    .detail-update-banner strong { color: #451A03; }
+
+    /* ─── MOAT ─── */
+    .moat-list { display: flex; flex-direction: column; gap: 10px; }
+    .moat-item {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 14px 18px;
+      display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start;
+    }
+    .moat-naam { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+    .moat-toelichting { font-size: 12px; color: var(--text-2); line-height: 1.4; }
+    .moat-badge {
+      font-size: 11px; font-weight: 700; padding: 3px 10px;
+      border-radius: 20px; white-space: nowrap;
+    }
+    .moat-STERK    { background: var(--buy-bg);   color: var(--buy);  }
+    .moat-AANWEZIG { background: var(--accent-bg); color: var(--accent); }
+    .moat-BEPERKT  { background: var(--hold-bg);   color: var(--hold); }
+    .moat-AFWEZIG  { background: var(--pass-bg);   color: var(--pass); }
+
+    /* ─── MANAGEMENT ─── */
+    .persons-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 10px; margin-bottom: 20px;
+    }
+    .person-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px 18px;
+    }
+    .person-functie {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; color: var(--text-3); margin-bottom: 4px;
+    }
+    .person-naam { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .person-bg { font-size: 12px; color: var(--text-2); line-height: 1.4; }
+    .text-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 18px 20px; margin-bottom: 20px;
+    }
+    .text-card p { font-size: 14px; color: var(--text-1); line-height: 1.65; }
+
+    /* ─── FAIR VALUE SCENARIOS ─── */
+    .scenario-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 10px; margin-bottom: 28px;
+    }
+    .scenario-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 18px 20px; text-align: center;
+    }
+    .scenario-name { font-size: 12px; color: var(--text-3); margin-bottom: 10px; font-weight: 600; }
+    .scenario-fv { font-size: 28px; font-weight: 800; color: var(--text-1); margin-bottom: 6px; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; }
+    .scenario-upside { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .scenario-params { font-size: 11px; color: var(--text-3); margin-top: 8px; line-height: 1.4; }
+
+    /* ─── HEATMAP ─── */
+    .heatmap-wrap {
+      overflow-x: auto; background: var(--surface);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; box-shadow: var(--shadow);
+    }
+    .heatmap-title { font-size: 13px; font-weight: 700; color: var(--text-1); margin-bottom: 10px; }
+    .heatmap-axis-label { font-size: 11px; color: var(--text-3); margin-bottom: 10px; }
+    table.heatmap th, table.heatmap td { padding: 8px 12px; text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; }
+    table.heatmap thead th { background: var(--surface-2); text-transform: none; font-size: 12px; }
+    table.heatmap tbody td:first-child { font-size: 11px; font-weight: 700; color: var(--text-3); text-align: right; white-space: nowrap; }
+    table.heatmap tbody td { border-radius: 4px; transition: filter 0.1s; }
+    table.heatmap tbody td:hover { filter: brightness(0.92); }
+
+    /* ─── SCOREKAART ─── */
+    .score-table-wrap {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden; margin-bottom: 28px;
+    }
+    .score-row {
+      display: grid; grid-template-columns: 1fr auto auto auto;
+      gap: 14px; align-items: center;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--surface-2);
+      transition: background var(--transition);
+    }
+    .score-row:last-child { border-bottom: none; }
+    .score-row.score-row-clickable { cursor: pointer; }
+    .score-row.score-row-clickable:hover { background: var(--surface-2); }
+    .score-fw { font-size: 14px; font-weight: 600; }
+    .score-oordeel { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+    .score-dots { display: flex; gap: 4px; }
+    .score-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .score-dot.filled { background: var(--accent); }
+    .score-dot.empty  { background: var(--surface-2); border: 1px solid var(--border); }
+    .score-num {
+      font-size: 13px; font-weight: 700; min-width: 38px; text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .score-drill-icon { font-size: 14px; color: var(--text-3); }
+    .score-total-row {
+      padding: 14px 20px; background: var(--surface-2);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .score-total-label { font-size: 13px; font-weight: 700; }
+    .score-total-value { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .eindoordeel-banner {
+      border-radius: var(--radius); padding: 28px 32px; margin-bottom: 28px; text-align: center;
+    }
+    .eo-KOOP { background: var(--buy-bg);  color: var(--buy);  border: 1px solid var(--buy-border); }
+    .eo-HOLD { background: var(--hold-bg); color: var(--hold); border: 1px solid var(--hold-border); }
+    .eo-PASS { background: var(--pass-bg); color: var(--pass); border: 1px solid var(--pass-border); }
+    .eo-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .eo-oordeel { font-size: 48px; font-weight: 800; margin-bottom: 14px; letter-spacing: -2px; }
+    .eo-samenvatting { font-size: 14px; line-height: 1.65; max-width: 620px; margin: 0 auto; }
+
+    /* ─── SCORE PANEL BACKDROP ─── */
+    #score-panel-backdrop {
+      position: fixed; inset: 0; z-index: 399;
+      background: rgba(17, 24, 39, 0.25);
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease;
+      backdrop-filter: blur(2px);
+    }
+    #score-panel-backdrop.visible { opacity: 1; pointer-events: all; }
+
+    /* ─── SCORE PANEL (side drawer) ─── */
+    #score-panel {
+      position: fixed; right: 0; top: 0; bottom: 0; z-index: 400;
+      width: 440px; max-width: 100vw;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      box-shadow: -12px 0 48px rgba(0,0,0,0.14);
+      display: flex; flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    #score-panel.visible { transform: translateX(0); }
+    .score-panel-header {
+      padding: 20px 24px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .score-panel-close {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--surface-2); border: none; cursor: pointer;
+      font-size: 16px; display: flex; align-items: center; justify-content: center;
+      color: var(--text-2); transition: background var(--transition);
+    }
+    .score-panel-close:hover { background: var(--border); }
+    .score-panel-body { flex: 1; overflow-y: auto; padding: 24px; }
+    .panel-framework {
+      font-size: 20px; font-weight: 800; letter-spacing: -0.3px; margin-bottom: 6px;
+    }
+    .panel-categorie {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.8px;
+      text-transform: uppercase; color: var(--accent);
+      background: var(--accent-bg); padding: 3px 10px; border-radius: 20px;
+      display: inline-block; margin-bottom: 20px;
+    }
+    .indicator-table-wrap {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 20px;
+    }
+    .indicator-table { width: 100%; border-collapse: collapse; }
+    .indicator-table thead th {
+      background: var(--surface-2); font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.4px; color: var(--text-3);
+      padding: 10px 14px; text-align: left;
+    }
+    .indicator-table tbody td {
+      padding: 10px 14px; font-size: 13px; text-align: left;
+      border-bottom: 1px solid var(--surface-2); font-variant-numeric: initial;
+    }
+    .indicator-table tbody tr:last-child td { border-bottom: none; }
+    .indicator-table tbody tr:hover td { background: var(--surface-2); }
+    .ind-waarde { font-weight: 600; color: var(--text-1); }
+    .ind-beoordeling { color: var(--text-2); font-size: 12px; }
+    .panel-verdict {
+      border-radius: var(--radius-sm); padding: 20px;
+      background: var(--buy-bg); border: 1px solid var(--buy-border);
+    }
+    .panel-verdict.verdict-hold { background: var(--hold-bg); border-color: var(--hold-border); }
+    .panel-verdict.verdict-pass { background: var(--pass-bg); border-color: var(--pass-border); }
+    .panel-verdict-score {
+      font-size: 13px; font-weight: 700; color: var(--buy);
+      margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.3px;
+    }
+    .panel-verdict.verdict-hold .panel-verdict-score { color: var(--hold); }
+    .panel-verdict.verdict-pass .panel-verdict-score { color: var(--pass); }
+    .panel-verdict-text { font-size: 14px; line-height: 1.65; color: var(--text-1); }
+
+    /* ─── PDF MODAL ─── */
+    #pdf-overlay {
+      position: fixed; inset: 0; z-index: 500;
+      background: rgba(0,0,0,0.4);
+      display: none; align-items: center; justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+    #pdf-overlay.visible { display: flex; }
+    #pdf-modal {
+      background: var(--surface); border-radius: var(--radius);
+      padding: 32px; width: 440px; max-width: calc(100vw - 48px);
+      box-shadow: var(--shadow-lg);
+    }
+    .pdf-modal-title { font-size: 18px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.3px; }
+    .pdf-modal-sub { font-size: 13px; color: var(--text-2); margin-bottom: 24px; }
+    .pdf-chapters { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .pdf-chapter-label {
+      display: flex; align-items: center; gap: 12px;
+      cursor: pointer; padding: 12px 16px;
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      transition: border-color var(--transition), background var(--transition);
+      font-size: 14px; font-weight: 500;
+    }
+    .pdf-chapter-label:hover { border-color: var(--accent); background: var(--accent-bg); }
+    .pdf-chapter-label input[type=checkbox] {
+      width: 16px; height: 16px; accent-color: var(--accent);
+      cursor: pointer; flex-shrink: 0;
+    }
+    .pdf-actions { display: flex; gap: 10px; justify-content: flex-end; }
+    .pdf-btn-cancel {
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      background: var(--surface-2); border: 1px solid var(--border);
+      font-size: 14px; font-weight: 600; color: var(--text-2);
+      cursor: pointer; font-family: var(--font);
+      transition: background var(--transition);
+    }
+    .pdf-btn-cancel:hover { background: var(--border); }
+    .pdf-btn-print {
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      background: var(--accent); border: none;
+      font-size: 14px; font-weight: 700; color: #fff;
+      cursor: pointer; font-family: var(--font);
+      transition: opacity var(--transition);
+    }
+    .pdf-btn-print:hover { opacity: 0.88; }
+
+    /* ─── MISC ─── */
+    .donut-legend { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+    .donut-legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+    .donut-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 28px; }
+    @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+    #error-banner {
+      display: none; text-align: center;
+      padding: 60px 24px; max-width: 500px; margin: 80px auto;
+    }
+    #error-banner h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; color: var(--text-1); }
+    #error-banner p  { font-size: 14px; color: var(--text-2); line-height: 1.6; }
+    #error-banner code {
+      display: block; margin-top: 16px; padding: 12px 16px;
+      background: var(--surface-2); border-radius: var(--radius-sm);
+      font-size: 13px; color: var(--text-1); text-align: left;
+      font-family: monospace;
+    }
+    .loading { text-align: center; padding: 80px; color: var(--text-3); font-size: 14px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      .header-inner { padding: 14px 20px; }
+      .container { padding: 24px 20px; }
+      .content-inner { padding: 24px 20px 48px; }
+      .detail-header { padding: 0 20px; }
+      .tab-bar { padding: 0 20px; }
+      .detail-naam { display: none; }
+      .detail-price-info { display: none; }
+      #score-panel { width: 100vw; }
+    }
+
+    /* ─── PRINT ─── */
+    @media print {
+      #main-header, .back-btn, .tab-bar, #pdf-overlay,
+      #score-panel, .detail-pdf-btn, .detail-price-info { display: none !important; }
+      #detail-view {
+        position: static !important; overflow: visible !important; opacity: 1 !important;
+      }
+      .detail-header { position: static !important; }
+      .detail-body { overflow: visible !important; }
+      #grid-view { display: none !important; }
+      .tab-panel { display: none !important; }
+      .tab-panel[data-print-include="1"] { display: block !important; }
+      .tab-panel[data-print-include="1"] ~ .tab-panel[data-print-include="1"] { page-break-before: always; }
+      .chart-wrap canvas { max-height: 180px !important; }
+      body { background: white !important; }
+      .chart-card, .data-table-wrap, .heatmap-wrap, .score-table-wrap, .eindoordeel-banner {
+        box-shadow: none !important; border: 1px solid #ccc !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M9 1L17 9L9 17L1 9L9 1Z" fill="#ffffff" opacity="0.25"/>
+            <path d="M9 1L17 9L9 17L1 9L9 1Z" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Aandelenanalyse</h1>
+          <p class="brand-subtitle" id="last-updated">Persoonlijk beleggingsonderzoek</p>
+        </div>
+      </div>
+      <div class="header-pills" id="portfolio-stats"></div>
+    </div>
+  </header>
+
+  <!-- GRID VIEW -->
+  <main id="grid-view">
+    <div class="container">
+      <div id="error-banner">
+        <h2>Server niet bereikbaar</h2>
+        <p>Start de lokale server om het dashboard te laden. Open <strong>start.bat</strong> of voer het volgende uit:</p>
+        <code>python -m http.server 8080</code>
+      </div>
+      <div class="grid" id="company-grid">
+        <div class="loading">Analyses laden…</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- DETAIL VIEW -->
+  <div id="detail-view">
+    <div class="detail-header" id="detail-header">
+      <button class="back-btn" id="back-btn">
+        <span class="back-arrow">←</span> Terug
+      </button>
+      <div class="detail-company-header" id="detail-company-header"></div>
+    </div>
+    <div class="tab-bar" id="tab-bar"></div>
+    <div class="detail-body">
+      <div id="tab-overzicht"   class="tab-panel"><div class="content-inner" id="content-overzicht"></div></div>
+      <div id="tab-financieel"  class="tab-panel"><div class="content-inner" id="content-financieel"></div></div>
+      <div id="tab-moat"        class="tab-panel"><div class="content-inner" id="content-moat"></div></div>
+      <div id="tab-fairvalue"   class="tab-panel"><div class="content-inner" id="content-fairvalue"></div></div>
+      <div id="tab-scorekaart"  class="tab-panel"><div class="content-inner" id="content-scorekaart"></div></div>
+    </div>
+  </div>
+
+  <!-- SCORE PANEL BACKDROP -->
+  <div id="score-panel-backdrop"></div>
+
+  <!-- SCORE PANEL (side drawer) -->
+  <div id="score-panel">
+    <div class="score-panel-header">
+      <div id="score-panel-title" style="font-size:14px;font-weight:600;color:var(--text-2)">Framework detail</div>
+      <button class="score-panel-close" id="score-panel-close">✕</button>
+    </div>
+    <div class="score-panel-body" id="score-panel-content"></div>
+  </div>
+
+  <!-- PDF MODAL -->
+  <div id="pdf-overlay">
+    <div id="pdf-modal">
+      <div class="pdf-modal-title">Exporteren als PDF</div>
+      <div class="pdf-modal-sub">Selecteer de hoofdstukken die je wilt opnemen:</div>
+      <div class="pdf-chapters">
+        <label class="pdf-chapter-label"><input type="checkbox" name="pdf-chapter" value="overzicht" checked> Overzicht &amp; Executive Summary</label>
+        <label class="pdf-chapter-label"><input type="checkbox" name="pdf-chapter" value="financieel"> Financieel</label>
+        <label class="pdf-chapter-label"><input type="checkbox" name="pdf-chapter" value="moat"> Moat &amp; Management</label>
+        <label class="pdf-chapter-label"><input type="checkbox" name="pdf-chapter" value="fairvalue"> Fair Value &amp; DCF</label>
+        <label class="pdf-chapter-label"><input type="checkbox" name="pdf-chapter" value="scorekaart"> Scorekaart</label>
+      </div>
+      <div class="pdf-actions">
+        <button class="pdf-btn-cancel" id="pdf-cancel-btn">Annuleren</button>
+        <button class="pdf-btn-print" id="pdf-print-btn">↓ Afdrukken / PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ──────────────────────────────────────────────
+// STATE
+// ──────────────────────────────────────────────
+let currentData = null;
+let activeTab = 'overzicht';
+const chartInstances = {};
+
+const TABS = [
+  { id: 'overzicht',  label: 'Overzicht' },
+  { id: 'financieel', label: 'Financieel' },
+  { id: 'moat',       label: 'Moat & Management' },
+  { id: 'fairvalue',  label: 'Fair Value' },
+  { id: 'scorekaart', label: 'Scorekaart' },
+];
+
+const CHART_COLORS = {
+  blue:  '#0A0A0A', gold:  '#888888', green: '#166534',
+  purple:'#444444', red:   '#991B1B', gray:  '#CCCCCA',
+};
+
+// ──────────────────────────────────────────────
+// INIT
+// ──────────────────────────────────────────────
+async function init() {
+  try {
+    const res = await fetch('data/index.json');
+    if (!res.ok) throw new Error('index not found');
+    const data = await res.json();
+    renderHeader(data);
+    renderGrid(data.companies);
+    if (data.laatste_update) {
+      document.getElementById('last-updated').textContent =
+        'Bijgewerkt ' + formatDate(data.laatste_update);
+    }
+  } catch(e) {
+    document.getElementById('company-grid').innerHTML = '';
+    document.getElementById('error-banner').style.display = 'block';
+  }
+}
+
+// ──────────────────────────────────────────────
+// HEADER STATS
+// ──────────────────────────────────────────────
+function renderHeader(data) {
+  const companies = data.companies || [];
+  const koop = companies.filter(c => c.oordeel === 'KOOP').length;
+  const hold = companies.filter(c => c.oordeel === 'HOLD').length;
+  const pass = companies.filter(c => c.oordeel === 'PASS').length;
+  const el = document.getElementById('portfolio-stats');
+  el.innerHTML = `
+    <span class="pill pill-total">${companies.length} ${companies.length === 1 ? 'analyse' : 'analyses'}</span>
+    ${koop ? `<span class="pill pill-buy">${koop} KOOP</span>` : ''}
+    ${hold ? `<span class="pill pill-hold">${hold} HOLD</span>` : ''}
+    ${pass ? `<span class="pill pill-pass">${pass} PASS</span>` : ''}
+  `;
+}
+
+// ──────────────────────────────────────────────
+// COMPANY GRID
+// ──────────────────────────────────────────────
+function renderGrid(companies) {
+  const grid = document.getElementById('company-grid');
+  if (!companies || !companies.length) {
+    grid.innerHTML = `<div class="empty-state">
+      <h2>Nog geen analyses</h2>
+      <p>Voer een fundamentele analyse uit en exporteer naar JSON om te beginnen.</p>
+    </div>`;
+    return;
+  }
+  grid.innerHTML = companies.map(c => companyCardHTML(c)).join('');
+  grid.querySelectorAll('.company-card').forEach(card => {
+    card.addEventListener('click', () => openCompany(card.dataset.ticker));
+  });
+}
+
+function companyCardHTML(c) {
+  const upside = c.upside_pct;
+  const upSign = upside > 0 ? '+' : '';
+  const upClass = upside > 10 ? 'upside-positive' : upside < -5 ? 'upside-negative' : 'upside-neutral';
+
+  return `
+  <div class="company-card" data-ticker="${c.ticker}" data-oordeel="${c.oordeel}">
+    <div class="card-top">
+      <div>
+        <div class="card-ticker-row">
+          <span class="card-ticker">${c.ticker}</span>
+          <span class="card-exchange">${c.exchange}</span>
+        </div>
+        <div class="card-naam">${c.naam}</div>
+        <div class="card-sector">${c.sector}</div>
+      </div>
+      <span class="card-oordeel-badge badge-${c.oordeel}">${c.oordeel}</span>
+    </div>
+
+    <div class="card-upside-block">
+      <div class="card-upside-pct ${upClass}">${upSign}${upside}%</div>
+      <div class="card-upside-meta">upside naar ${c.valuta} ${fmt(c.fair_value_basis)}</div>
+      <div class="card-koers-meta">koers ${c.valuta} ${fmt(c.koers)}</div>
+    </div>
+
+    <div class="card-footer">
+      <span>Peildatum ${formatDate(c.peildatum)}</span>
+      ${c.update_beschikbaar
+        ? `<span class="update-badge"><span class="update-pulse"></span>Nieuwe data</span>`
+        : `<span class="card-arrow">→</span>`}
+    </div>
+  </div>`;
+}
+
+// ──────────────────────────────────────────────
+// OPEN COMPANY DETAIL
+// ──────────────────────────────────────────────
+async function openCompany(ticker) {
+  destroyCharts();
+  closeScorePanel();
+  const gv = document.getElementById('grid-view');
+  gv.classList.add('fading');
+
+  try {
+    const res = await fetch(`data/${ticker}.json`);
+    if (!res.ok) throw new Error('not found');
+    currentData = await res.json();
+  } catch(e) {
+    gv.classList.remove('fading');
+    alert('Kon ' + ticker + '.json niet laden. Zorg dat het bestand in data/ staat.');
+    return;
+  }
+
+  buildDetailHeader(currentData);
+  buildTabBar();
+  switchTab('overzicht');
+
+  const dv = document.getElementById('detail-view');
+  dv.classList.add('visible');
+  setTimeout(() => gv.classList.remove('fading'), 300);
+}
+
+function closeDetail() {
+  document.getElementById('detail-view').classList.remove('visible');
+  closeScorePanel();
+  destroyCharts();
+  currentData = null;
+}
+
+document.getElementById('back-btn').addEventListener('click', closeDetail);
+
+// ──────────────────────────────────────────────
+// DETAIL HEADER
+// ──────────────────────────────────────────────
+function buildDetailHeader(d) {
+  const m  = d.meta;
+  const es = d.executive_summary;
+  const upside = es.upside_pct;
+  const upSign = upside > 0 ? '+' : '';
+  const upClass = upside > 5 ? 'badge-KOOP' : upside < -5 ? 'badge-PASS' : 'badge-HOLD';
+
+  document.getElementById('detail-company-header').innerHTML = `
+    <span class="detail-ticker">${m.ticker}</span>
+    <span class="detail-sep">|</span>
+    <span class="detail-naam">${m.naam}</span>
+    <div class="detail-price-info">
+      <span class="detail-koers">${m.valuta} ${fmt(es.koers)}</span>
+      <span class="detail-arrow">→</span>
+      <span class="detail-fv">${m.valuta} ${fmt(es.fair_value_basis)}</span>
+      <span class="detail-upside card-oordeel-badge ${upClass}">${upSign}${upside}%</span>
+    </div>
+    <button class="detail-pdf-btn" id="pdf-open-btn" onclick="openPdfModal()">↓ PDF</button>
+  `;
+}
+
+// ──────────────────────────────────────────────
+// TAB BAR
+// ──────────────────────────────────────────────
+function buildTabBar() {
+  const bar = document.getElementById('tab-bar');
+  bar.innerHTML = TABS.map(t =>
+    `<button class="tab-btn${t.id === 'overzicht' ? ' active' : ''}"
+             data-tab="${t.id}">${t.label}</button>`
+  ).join('');
+  bar.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+}
+
+function switchTab(tabId) {
+  activeTab = tabId;
+  closeScorePanel();
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tabId);
+  });
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'tab-' + tabId);
+  });
+
+  if (!currentData) return;
+  const renders = {
+    overzicht:  renderOverzicht,
+    financieel: renderFinancieel,
+    moat:       renderMoat,
+    fairvalue:  renderFairValue,
+    scorekaart: renderScorekaart,
+  };
+  if (renders[tabId]) renders[tabId](currentData);
+}
+
+// ──────────────────────────────────────────────
+// TAB: OVERZICHT
+// ──────────────────────────────────────────────
+function renderOverzicht(d) {
+  const el = document.getElementById('content-overzicht');
+  if (el.dataset.rendered) return;
+  const es  = d.executive_summary;
+  const fin = d.financieel;
+  const m   = d.meta;
+
+  const metrics = [
+    { label: 'Koers',      value: `${m.valuta} ${fmt(es.koers)}`,           sub: m.peildatum },
+    { label: 'Fair Value', value: `${m.valuta} ${fmt(es.fair_value_basis)}`, sub: 'basisscenario' },
+    { label: 'Upside',     value: `+${es.upside_pct}%`,                     sub: 'basisscenario' },
+    { label: 'P/E',        value: `${fin.waardering.pe}×`,                  sub: '' },
+    { label: 'EV/EBITDA',  value: `${fin.waardering.ev_ebitda}×`,           sub: '' },
+    { label: 'FCF Yield',  value: `${fin.waardering.fcf_yield_pct}%`,       sub: '' },
+    fin.waardering.dividendrendement_pct
+      ? { label: 'Dividend', value: `${fin.waardering.dividendrendement_pct}%`, sub: 'rendement' }
+      : null,
+    { label: 'ROIC', value: `${fin.rendementsindicatoren.roic_pct}%`, sub: fin.rendementsindicatoren.jaar },
+  ].filter(Boolean);
+
+  el.innerHTML = `
+    ${d.update_beschikbaar ? `
+    <div class="detail-update-banner">
+      <span>⚡</span>
+      <span><strong>Nieuwe data beschikbaar</strong> — ${(d.update_reden || []).join(' · ')} Overweeg een nieuwe analyse.</span>
+    </div>` : ''}
+    <p class="section-subtitle">${m.sector} · ${m.exchange}</p>
+    <div class="kernthese">${es.kernthese}</div>
+
+    <p class="section-subtitle">Kerncijfers</p>
+    <div class="metrics-grid">
+      ${metrics.map(mc => `<div class="metric-card">
+        <div class="metric-label">${mc.label}</div>
+        <div class="metric-value">${mc.value}</div>
+        ${mc.sub ? `<div class="metric-sub">${mc.sub}</div>` : ''}
+      </div>`).join('')}
+    </div>
+
+    <p class="section-subtitle">Kans &amp; Risico</p>
+    <div class="kans-risico-grid">
+      <div class="kans-card">
+        <div class="kr-label">Grootste kans</div>
+        <div class="kr-text">${es.grootste_kans}</div>
+      </div>
+      <div class="risico-card">
+        <div class="kr-label">Grootste risico</div>
+        <div class="kr-text">${es.grootste_risico}</div>
+      </div>
+    </div>
+
+    <p class="section-subtitle">Fair Value Scenario's</p>
+    <div class="chart-card" style="margin-bottom:0">
+      <div class="chart-title">Koers vs. Berekende Waarde (${m.valuta})</div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="chart-scenarios"></canvas>
+      </div>
+    </div>
+  `;
+  el.dataset.rendered = '1';
+
+  const scenarios = es.fair_value_scenarios;
+  setTimeout(() => {
+    const ctx = document.getElementById('chart-scenarios');
+    if (!ctx) return;
+    chartInstances['scenarios'] = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: scenarios.map(s => s.scenario),
+        datasets: [
+          {
+            label: 'Fair Value',
+            data: scenarios.map(s => s.fair_value),
+            backgroundColor: scenarios.map(s => s.upside_pct > 0 ? CHART_COLORS.green + '28' : CHART_COLORS.red + '28'),
+            borderColor:     scenarios.map(s => s.upside_pct > 0 ? CHART_COLORS.green : CHART_COLORS.red),
+            borderWidth: 1.5, borderRadius: 8,
+          },
+          {
+            label: 'Huidige koers',
+            data: new Array(scenarios.length).fill(es.koers),
+            type: 'line', borderColor: CHART_COLORS.gold,
+            borderWidth: 2, borderDash: [4, 3], pointRadius: 0, fill: false,
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.dataset.label === 'Huidige koers'
+            ? `Koers: ${m.valuta} ${ctx.raw}` : `Fair Value: ${m.valuta} ${ctx.raw}` } }
+        },
+        scales: {
+          x: { grid: { display: false }, border: { display: false } },
+          y: { grid: { color: '#F0EDE6' }, border: { display: false }, ticks: { callback: v => m.valuta + ' ' + v } }
+        }
+      }
+    });
+  }, 50);
+}
+
+// ──────────────────────────────────────────────
+// TAB: FINANCIEEL
+// ──────────────────────────────────────────────
+function renderFinancieel(d) {
+  const el = document.getElementById('content-financieel');
+  if (el.dataset.rendered) return;
+  const fin    = d.financieel;
+  const profiel = d.bedrijfsprofiel;
+
+  const rekening = fin.resultatenrekening;
+  const tableRows = rekening.map(r => `
+    <tr>
+      <td>${r.jaar}</td>
+      <td>${r.omzet ? fmt(r.omzet) : nullCell()}</td>
+      <td class="${r.omzet_groei_pct > 0 ? 'td-pos' : r.omzet_groei_pct < 0 ? 'td-neg' : ''}">${r.omzet_groei_pct != null ? (r.omzet_groei_pct > 0 ? '+' : '') + r.omzet_groei_pct + '%' : nullCell()}</td>
+      <td>${r.ebitda ? fmt(r.ebitda) : nullCell()}</td>
+      <td>${r.ebitda_marge_pct != null ? r.ebitda_marge_pct + '%' : nullCell()}</td>
+      <td>${r.nettowinst != null ? fmt(r.nettowinst) : nullCell()}</td>
+      <td class="${r.nettomarge_pct > 15 ? 'td-pos' : ''}">${r.nettomarge_pct != null ? r.nettomarge_pct + '%' : nullCell()}</td>
+      <td>${r.eps != null ? '$' + r.eps : nullCell()}</td>
+    </tr>`).join('');
+
+  const balansRows = fin.balans.map(b => `
+    <tr>
+      <td>${b.jaar}</td>
+      <td>${fmt(b.nettoschuld)}</td>
+      <td>${fmt(b.eigen_vermogen)}</td>
+      <td class="${b.debt_ebitda < 1 ? 'td-pos' : b.debt_ebitda > 3 ? 'td-neg' : ''}">${b.debt_ebitda}×</td>
+    </tr>`).join('');
+
+  const w  = fin.waardering;
+  const ri = fin.rendementsindicatoren;
+  const segmenten    = profiel ? profiel.segmenten : [];
+  const aandeelhouders = profiel ? profiel.aandeelhouders : [];
+
+  el.innerHTML = `
+    <p class="section-subtitle">Resultatenrekening (${fin.valuta_label})</p>
+    <div class="data-table-wrap">
+      <table>
+        <thead><tr>
+          <th>Jaar</th><th>Omzet</th><th>Groei</th>
+          <th>EBITDA</th><th>EBITDA%</th>
+          <th>Nettow.</th><th>Nettomarge</th><th>EPS</th>
+        </tr></thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>
+
+    <div class="chart-row">
+      <div class="chart-card">
+        <div class="chart-title">Omzet &amp; EBITDA (${fin.valuta_label})</div>
+        <div class="chart-wrap" style="height:220px"><canvas id="chart-omzet"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Free Cash Flow (${fin.valuta_label})</div>
+        <div class="chart-wrap" style="height:220px"><canvas id="chart-fcf"></canvas></div>
+      </div>
+    </div>
+
+    <p class="section-subtitle">Balanskenmerken (${fin.valuta_label})</p>
+    <div class="data-table-wrap" style="margin-bottom:28px">
+      <table>
+        <thead><tr>
+          <th>Jaar</th><th>Nettoschuld</th><th>Eigen vermogen</th><th>Debt/EBITDA</th>
+        </tr></thead>
+        <tbody>${balansRows}</tbody>
+      </table>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <p class="section-subtitle">Rendementsindicatoren (${ri.jaar})</p>
+        <div class="data-table-wrap">
+          <table><tbody>
+            <tr><td>ROCE</td><td class="td-pos">${ri.roce_pct}%</td></tr>
+            <tr><td>ROE</td><td class="td-pos">${ri.roe_pct}%</td></tr>
+            <tr><td>ROIC</td><td class="td-pos">${ri.roic_pct}%</td></tr>
+            <tr><td>ROA</td><td>${ri.roa_pct}%</td></tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div>
+        <p class="section-subtitle">Waardering (huidig)</p>
+        <div class="data-table-wrap">
+          <table><tbody>
+            <tr><td>P/E</td><td>${w.pe}×</td></tr>
+            <tr><td>EV/EBITDA</td><td>${w.ev_ebitda}×</td></tr>
+            <tr><td>P/FCF</td><td>${w.p_fcf}×</td></tr>
+            <tr><td>FCF Yield</td><td class="td-pos">${w.fcf_yield_pct}%</td></tr>
+            ${w.dividendrendement_pct ? `<tr><td>Dividendrendement</td><td class="td-pos">${w.dividendrendement_pct}%</td></tr>` : ''}
+            <tr><td>P/B</td><td>${w.p_b}×</td></tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+
+    ${segmenten.length || aandeelhouders.length ? `
+    <div class="two-col">
+      ${segmenten.length ? `<div>
+        <p class="section-subtitle">Omzetverdeling per segment</p>
+        <div class="chart-card" style="margin-bottom:0">
+          <div class="chart-wrap" style="height:200px"><canvas id="chart-segmenten"></canvas></div>
+        </div>
+      </div>` : ''}
+      ${aandeelhouders.length ? `<div>
+        <p class="section-subtitle">Aandeelhoudersstructuur</p>
+        <div class="chart-card" style="margin-bottom:0">
+          <div class="chart-wrap" style="height:180px"><canvas id="chart-aandeelhouders"></canvas></div>
+          <div class="donut-legend" id="donut-legend-ah"></div>
+        </div>
+      </div>` : ''}
+    </div>` : ''}
+  `;
+  el.dataset.rendered = '1';
+
+  const jaarLabels = rekening.map(r => String(r.jaar));
+  const omzetData  = rekening.map(r => r.omzet || 0);
+  const ebitdaData = rekening.map(r => r.ebitda || 0);
+  const fcfData    = fin.kasstromen.map(r => r.fcf || 0);
+  const fcfLabels  = fin.kasstromen.map(r => String(r.jaar));
+
+  setTimeout(() => {
+    const c1 = document.getElementById('chart-omzet');
+    if (c1) {
+      chartInstances['omzet'] = new Chart(c1, {
+        data: {
+          labels: jaarLabels,
+          datasets: [
+            { type: 'bar', label: 'Omzet', data: omzetData, backgroundColor: CHART_COLORS.blue + '20', borderColor: CHART_COLORS.blue, borderWidth: 1.5, borderRadius: 5, order: 2 },
+            { type: 'bar', label: 'EBITDA', data: ebitdaData, backgroundColor: CHART_COLORS.gold + '30', borderColor: CHART_COLORS.gold, borderWidth: 1.5, borderRadius: 5, order: 1 },
+          ]
+        },
+        options: chartOpts()
+      });
+    }
+    const c2 = document.getElementById('chart-fcf');
+    if (c2) {
+      chartInstances['fcf'] = new Chart(c2, {
+        type: 'bar',
+        data: {
+          labels: fcfLabels,
+          datasets: [{ label: 'FCF', data: fcfData,
+            backgroundColor: fcfData.map(v => v > 0 ? CHART_COLORS.green + '30' : CHART_COLORS.red + '30'),
+            borderColor: fcfData.map(v => v > 0 ? CHART_COLORS.green : CHART_COLORS.red),
+            borderWidth: 1.5, borderRadius: 5 }]
+        },
+        options: chartOpts()
+      });
+    }
+    if (segmenten.length) {
+      const c3 = document.getElementById('chart-segmenten');
+      if (c3) {
+        const segColors = [CHART_COLORS.blue, CHART_COLORS.gold, CHART_COLORS.green, CHART_COLORS.purple];
+        chartInstances['segmenten'] = new Chart(c3, {
+          type: 'doughnut',
+          data: { labels: segmenten.map(s => s.naam), datasets: [{ data: segmenten.map(s => s.omzet_pct), backgroundColor: segColors, borderWidth: 0 }] },
+          options: donutOpts()
+        });
+      }
+    }
+    if (aandeelhouders.length) {
+      const c4 = document.getElementById('chart-aandeelhouders');
+      if (c4) {
+        const ahColors = [CHART_COLORS.blue, CHART_COLORS.gold, CHART_COLORS.green, CHART_COLORS.gray];
+        chartInstances['ah'] = new Chart(c4, {
+          type: 'doughnut',
+          data: { labels: aandeelhouders.map(a => a.naam), datasets: [{ data: aandeelhouders.map(a => a.pct), backgroundColor: ahColors, borderWidth: 0 }] },
+          options: donutOpts()
+        });
+        const legend = document.getElementById('donut-legend-ah');
+        if (legend) {
+          legend.innerHTML = aandeelhouders.map((a, i) => `
+            <div class="donut-legend-item">
+              <div class="donut-dot" style="background:${ahColors[i]}"></div>
+              <span>${a.naam} — <strong>${a.pct}%</strong></span>
+            </div>`).join('');
+        }
+      }
+    }
+  }, 50);
+}
+
+// ──────────────────────────────────────────────
+// TAB: MOAT & MANAGEMENT
+// ──────────────────────────────────────────────
+function renderMoat(d) {
+  const el = document.getElementById('content-moat');
+  if (el.dataset.rendered) return;
+  const moat = d.moat;
+  const mgmt = d.management;
+
+  const moatColor = moat.oordeel === 'WIDE MOAT' ? 'var(--buy)' : moat.oordeel === 'NARROW MOAT' ? 'var(--hold)' : 'var(--pass)';
+  const moatBg    = moat.oordeel === 'WIDE MOAT' ? 'var(--buy-bg)' : moat.oordeel === 'NARROW MOAT' ? 'var(--hold-bg)' : 'var(--pass-bg)';
+  const moatBrd   = moat.oordeel === 'WIDE MOAT' ? 'var(--buy-border)' : moat.oordeel === 'NARROW MOAT' ? 'var(--hold-border)' : 'var(--pass-border)';
+
+  el.innerHTML = `
+    <div class="two-col">
+      <div>
+        <p class="section-subtitle">Economische slotgracht (Moat)</p>
+        <div style="background:${moatBg};color:${moatColor};border:1px solid ${moatBrd};border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:14px">
+          <span style="font-size:24px">⬟</span>
+          <div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:3px;opacity:0.7">Eindoordeel</div>
+            <div style="font-size:20px;font-weight:800;letter-spacing:-0.3px">${moat.oordeel}</div>
+          </div>
+        </div>
+        <div class="text-card" style="margin-bottom:16px"><p>${moat.toelichting}</p></div>
+        <div class="chart-card" style="margin-bottom:0">
+          <div class="chart-title">Moat Categorieën</div>
+          <div class="chart-wrap" style="height:200px"><canvas id="chart-moat"></canvas></div>
+        </div>
+      </div>
+      <div>
+        <p class="section-subtitle">Categorieën</p>
+        <div class="moat-list">
+          ${moat.categorieen.map(cat => `
+          <div class="moat-item">
+            <div>
+              <div class="moat-naam">${cat.naam}</div>
+              <div class="moat-toelichting">${cat.toelichting}</div>
+            </div>
+            <span class="moat-badge moat-${cat.oordeel}">${cat.oordeel}</span>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>
+
+    <p class="section-subtitle" style="margin-top:8px">Managementteam</p>
+    <div class="persons-grid">
+      ${mgmt.personen.map(p => `
+      <div class="person-card">
+        <div class="person-functie">${p.functie}</div>
+        <div class="person-naam">${p.naam}</div>
+        <div class="person-bg">${p.achtergrond}</div>
+      </div>`).join('')}
+    </div>
+
+    <p class="section-subtitle">Capital Allocation</p>
+    <div class="text-card"><p>${mgmt.capital_allocation}</p></div>
+
+    <p class="section-subtitle">Oordeel management</p>
+    <div class="text-card">
+      <p><strong style="color:var(--${mgmt.oordeel === 'STERK' ? 'buy' : mgmt.oordeel === 'NEUTRAAL' ? 'hold' : 'pass'})">${mgmt.oordeel}</strong> — ${mgmt.toelichting}</p>
+    </div>
+  `;
+  el.dataset.rendered = '1';
+
+  setTimeout(() => {
+    const c = document.getElementById('chart-moat');
+    if (!c) return;
+    chartInstances['moat'] = new Chart(c, {
+      type: 'bar',
+      data: {
+        labels: moat.categorieen.map(cat => cat.naam),
+        datasets: [{
+          label: 'Score (0–5)',
+          data: moat.categorieen.map(cat => cat.score),
+          backgroundColor: moat.categorieen.map(cat =>
+            cat.oordeel === 'STERK' ? CHART_COLORS.green + '30' :
+            cat.oordeel === 'AANWEZIG' ? CHART_COLORS.gold + '30' : CHART_COLORS.red + '20'
+          ),
+          borderColor: moat.categorieen.map(cat =>
+            cat.oordeel === 'STERK' ? CHART_COLORS.green :
+            cat.oordeel === 'AANWEZIG' ? CHART_COLORS.gold : CHART_COLORS.red
+          ),
+          borderWidth: 1.5, borderRadius: 5,
+        }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `Score: ${c.raw}/5` } } },
+        scales: {
+          x: { min: 0, max: 5, grid: { color: '#F0EDE6' }, border: { display: false }, ticks: { stepSize: 1 } },
+          y: { grid: { display: false }, border: { display: false } }
+        }
+      }
+    });
+  }, 50);
+}
+
+// ──────────────────────────────────────────────
+// TAB: FAIR VALUE
+// ──────────────────────────────────────────────
+function renderFairValue(d) {
+  const el = document.getElementById('content-fairvalue');
+  if (el.dataset.rendered) return;
+  const fv  = d.fair_value;
+  const m   = d.meta;
+  const koers = d.executive_summary.koers;
+  const dcf   = fv.dcf;
+  const sens  = fv.gevoeligheid;
+
+  const scenarioCards = fv.scenarios.map(s => {
+    const isPos = s.upside_pct > 0;
+    const upSign = s.upside_pct > 0 ? '+' : '';
+    return `<div class="scenario-card" style="border-top:3px solid ${isPos ? 'var(--buy)' : 'var(--pass)'}">
+      <div class="scenario-name">${s.scenario}</div>
+      <div class="scenario-fv">${m.valuta} ${fmt(s.fair_value)}</div>
+      <div class="scenario-upside" style="color:${isPos ? 'var(--buy)' : 'var(--pass)'}">${upSign}${s.upside_pct}%</div>
+      <div class="scenario-params">FCF-groei ${s.fcf_groei_pct}% · WACC ${s.wacc_pct}%</div>
+    </div>`;
+  }).join('');
+
+  const heatmapHeader = `<tr><th>FCF-groei ↓ · WACC →</th>${sens.wacc_range.map(w => `<th>${w}%</th>`).join('')}</tr>`;
+  const heatmapRows = sens.groei_range.map((g, gi) => {
+    const cells = sens.wacc_range.map((w, wi) => {
+      const val = sens.matrix[gi][wi];
+      const pct = (val - koers) / koers;
+      const bg  = heatColor(pct);
+      const textColor = Math.abs(pct) > 0.3 ? '#fff' : 'inherit';
+      return `<td style="background:${bg};color:${textColor};font-weight:600">${fmt(val)}</td>`;
+    }).join('');
+    return `<tr><td>groei ${g}%</td>${cells}</tr>`;
+  }).join('');
+
+  el.innerHTML = `
+    <p class="section-subtitle">DCF Aannames (basisscenario)</p>
+    <div class="metrics-grid" style="margin-bottom:28px">
+      <div class="metric-card"><div class="metric-label">Basis FCF</div><div class="metric-value">$${dcf.basis_fcf}M</div><div class="metric-sub">${fv.dcf.valuta_label || 'USD mln'}</div></div>
+      <div class="metric-card"><div class="metric-label">WACC</div><div class="metric-value">${dcf.wacc_pct}%</div></div>
+      <div class="metric-card"><div class="metric-label">FCF-groei fase 1</div><div class="metric-value">${dcf.groei_fase1_pct}%</div></div>
+      <div class="metric-card"><div class="metric-label">Terminal groei</div><div class="metric-value">${dcf.terminal_groei_pct}%</div></div>
+    </div>
+
+    <p class="section-subtitle">Scenario's</p>
+    <div class="scenario-grid">${scenarioCards}</div>
+
+    <p class="section-subtitle">Fair Value vs. Koers (${m.valuta})</p>
+    <div class="chart-card" style="margin-bottom:28px">
+      <div class="chart-title">Scenario vergelijking</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="chart-fv-scenarios"></canvas></div>
+    </div>
+
+    <p class="section-subtitle">Gevoeligheidsanalyse — Fair Value (${m.valuta})</p>
+    <div class="heatmap-wrap">
+      <div class="heatmap-title">Intrinsieke waarde bij variatie in FCF-groei en WACC</div>
+      <div class="heatmap-axis-label">Koers = ${m.valuta} ${fmt(koers)} · Groen = ondergewaardeerd · Rood = overgewaardeerd</div>
+      <div style="overflow-x:auto">
+        <table class="heatmap">
+          <thead>${heatmapHeader}</thead>
+          <tbody>${heatmapRows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+  el.dataset.rendered = '1';
+
+  setTimeout(() => {
+    const c = document.getElementById('chart-fv-scenarios');
+    if (!c) return;
+    const labels = fv.scenarios.map(s => s.scenario);
+    const values = fv.scenarios.map(s => s.fair_value);
+    const bgs    = fv.scenarios.map(s => s.upside_pct > 0 ? CHART_COLORS.green + '25' : CHART_COLORS.red + '25');
+    const bords  = fv.scenarios.map(s => s.upside_pct > 0 ? CHART_COLORS.green : CHART_COLORS.red);
+    chartInstances['fv'] = new Chart(c, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          { label: 'Fair Value', data: values, backgroundColor: bgs, borderColor: bords, borderWidth: 1.5, borderRadius: 8 },
+          { type: 'line', label: 'Huidige koers', data: new Array(labels.length).fill(koers), borderColor: CHART_COLORS.gold, borderWidth: 2, borderDash: [4,3], pointRadius: 0, fill: false }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { display: false }, border: { display: false } },
+          y: { grid: { color: '#F0EDE6' }, border: { display: false }, ticks: { callback: v => m.valuta + ' ' + v } }
+        }
+      }
+    });
+  }, 50);
+}
+
+// ──────────────────────────────────────────────
+// TAB: SCOREKAART
+// ──────────────────────────────────────────────
+function renderScorekaart(d) {
+  const el = document.getElementById('content-scorekaart');
+  if (el.dataset.rendered) return;
+  const sk = d.scorekaart;
+  const eoClass = `eo-${sk.eindoordeel}`;
+
+  const rows = sk.items.map((item, idx) => {
+    const dots = Array.from({length: item.max}, (_, i) =>
+      `<div class="score-dot ${i < item.score ? 'filled' : 'empty'}"></div>`
+    ).join('');
+    const hasDetail = item.indicatoren && item.indicatoren.length > 0;
+    return `<div class="score-row${hasDetail ? ' score-row-clickable' : ''}" data-idx="${idx}">
+      <div>
+        <div class="score-fw">${item.framework}</div>
+        <div class="score-oordeel">${item.oordeel}</div>
+      </div>
+      <div class="score-dots">${dots}</div>
+      <div class="score-num">${item.score}/${item.max}</div>
+      ${hasDetail ? `<div class="score-drill-icon">→</div>` : `<div></div>`}
+    </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <div class="eindoordeel-banner ${eoClass}">
+      <div class="eo-label">Eindoordeel</div>
+      <div class="eo-oordeel">${sk.eindoordeel}</div>
+      <div class="eo-samenvatting">${sk.samenvatting}</div>
+    </div>
+
+    <div class="two-col" style="align-items:start">
+      <div>
+        <p class="section-subtitle">Framework scores</p>
+        <div class="score-table-wrap">
+          ${rows}
+          <div class="score-total-row">
+            <span class="score-total-label">TOTAALSCORE</span>
+            <span class="score-total-value">${sk.totaal} / ${sk.max}</span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--text-3);margin-top:-16px">
+          ${sk.items.some(i => i.indicatoren) ? '→ Klik op een framework voor uitleg en indicatoren.' : ''}
+        </p>
+      </div>
+      <div>
+        <p class="section-subtitle">Overzicht</p>
+        <div class="chart-card">
+          <div class="chart-wrap" style="height:300px"><canvas id="chart-radar"></canvas></div>
+        </div>
+      </div>
+    </div>
+  `;
+  el.dataset.rendered = '1';
+
+  // Click handlers
+  el.querySelectorAll('.score-row-clickable').forEach(row => {
+    row.addEventListener('click', () => {
+      const item = sk.items[parseInt(row.dataset.idx)];
+      openScorePanel(item);
+    });
+  });
+
+  setTimeout(() => {
+    const c = document.getElementById('chart-radar');
+    if (!c) return;
+    chartInstances['radar'] = new Chart(c, {
+      type: 'radar',
+      data: {
+        labels: sk.items.map(i => i.framework),
+        datasets: [{
+          label: d.meta.ticker,
+          data: sk.items.map(i => i.score),
+          backgroundColor: CHART_COLORS.blue + '18',
+          borderColor: CHART_COLORS.blue, borderWidth: 1.5,
+          pointBackgroundColor: CHART_COLORS.blue, pointRadius: 3,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          r: {
+            min: 0, max: 5, stepSize: 1,
+            grid: { color: '#E8E4DC' }, angleLines: { color: '#E8E4DC' },
+            ticks: { display: false },
+            pointLabels: { font: { size: 11, family: "'Plus Jakarta Sans', sans-serif" }, color: '#6B7280' }
+          }
+        }
+      }
+    });
+  }, 50);
+}
+
+// ──────────────────────────────────────────────
+// SCORE PANEL
+// ──────────────────────────────────────────────
+function openScorePanelBackdrop() {
+  document.getElementById('score-panel-backdrop').classList.add('visible');
+}
+
+function openScorePanel(item) {
+  const panel   = document.getElementById('score-panel');
+  const content = document.getElementById('score-panel-content');
+  document.getElementById('score-panel-title').textContent = item.framework;
+
+  // determine verdict color class
+  const score = item.score / item.max;
+  const verdictClass = score >= 0.8 ? '' : score >= 0.5 ? 'verdict-hold' : 'verdict-pass';
+
+  const indicatorRows = (item.indicatoren || []).map(ind => `
+    <tr>
+      <td>${ind.naam}</td>
+      <td class="ind-waarde">${ind.waarde}</td>
+      <td class="ind-beoordeling">${ind.beoordeling}</td>
+    </tr>`).join('');
+
+  content.innerHTML = `
+    <div class="panel-framework">${item.framework}</div>
+    ${item.categorie ? `<div class="panel-categorie">${item.categorie}</div>` : ''}
+
+    ${item.indicatoren && item.indicatoren.length ? `
+    <div class="indicator-table-wrap">
+      <table class="indicator-table">
+        <thead><tr><th>Indicator</th><th>Waarde</th><th>Beoordeling</th></tr></thead>
+        <tbody>${indicatorRows}</tbody>
+      </table>
+    </div>` : ''}
+
+    ${item.analyse ? `
+    <div class="panel-verdict ${verdictClass}">
+      <div class="panel-verdict-score">${item.score}/${item.max} — ${item.oordeel}</div>
+      <div class="panel-verdict-text">${item.analyse}</div>
+    </div>` : ''}
+  `;
+
+  panel.classList.add('visible');
+  openScorePanelBackdrop();
+}
+
+function closeScorePanel() {
+  document.getElementById('score-panel').classList.remove('visible');
+  document.getElementById('score-panel-backdrop').classList.remove('visible');
+}
+
+document.getElementById('score-panel-close').addEventListener('click', closeScorePanel);
+document.getElementById('score-panel-backdrop').addEventListener('click', closeScorePanel);
+
+// ──────────────────────────────────────────────
+// PDF MODAL
+// ──────────────────────────────────────────────
+function openPdfModal() {
+  document.getElementById('pdf-overlay').classList.add('visible');
+}
+
+function closePdfModal() {
+  document.getElementById('pdf-overlay').classList.remove('visible');
+}
+
+document.getElementById('pdf-cancel-btn').addEventListener('click', closePdfModal);
+document.getElementById('pdf-overlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('pdf-overlay')) closePdfModal();
+});
+
+document.getElementById('pdf-print-btn').addEventListener('click', async () => {
+  if (!currentData) return;
+
+  const checked = Array.from(document.querySelectorAll('#pdf-modal input[type=checkbox]:checked'))
+    .map(cb => cb.value);
+  if (!checked.length) { alert('Selecteer ten minste één hoofdstuk.'); return; }
+
+  const renders = {
+    overzicht:  renderOverzicht,
+    financieel: renderFinancieel,
+    moat:       renderMoat,
+    fairvalue:  renderFairValue,
+    scorekaart: renderScorekaart,
+  };
+
+  // Mark panels + force-render invisible if not yet rendered
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    const tabId = p.id.replace('tab-', '');
+    const include = checked.includes(tabId);
+    p.dataset.printInclude = include ? '1' : '0';
+    if (include && !document.getElementById('content-' + tabId).dataset.rendered) {
+      p.style.display = 'block';
+      p.style.visibility = 'hidden';
+      p.style.position = 'absolute';
+      if (renders[tabId]) renders[tabId](currentData);
+    }
+  });
+
+  // Wait for charts
+  await new Promise(r => setTimeout(r, 700));
+
+  // Restore visibility
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.style.display = '';
+    p.style.visibility = '';
+    p.style.position = '';
+  });
+
+  closePdfModal();
+  window.print();
+});
+
+// ──────────────────────────────────────────────
+// HELPERS
+// ──────────────────────────────────────────────
+function fmt(n) {
+  if (n == null) return '–';
+  return Number(n).toLocaleString('nl-NL');
+}
+
+function nullCell() {
+  return `<span class="td-null">–</span>`;
+}
+
+function formatDate(str) {
+  if (!str) return '';
+  const d = new Date(str);
+  if (isNaN(d)) return str;
+  return d.toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function heatColor(pct) {
+  const clamped = Math.max(-0.6, Math.min(0.6, pct));
+  if (clamped > 0) {
+    const intensity = Math.min(1, clamped / 0.4);
+    const g = Math.round(88 + intensity * 60);
+    const r = Math.round(230 - intensity * 100);
+    const b = Math.round(210 - intensity * 60);
+    return `rgba(${r},${g+20},${b},${0.3 + intensity * 0.6})`;
+  } else {
+    const intensity = Math.min(1, -clamped / 0.4);
+    const r = Math.round(200 + intensity * 55);
+    const g = Math.round(200 - intensity * 100);
+    const b = Math.round(200 - intensity * 100);
+    return `rgba(${r},${g},${b},${0.3 + intensity * 0.6})`;
+  }
+}
+
+function chartOpts() {
+  return {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 10, font: { size: 11, family: "'Plus Jakarta Sans', sans-serif" }, color: '#6B7280' } } },
+    scales: {
+      x: { grid: { display: false }, border: { display: false }, ticks: { font: { size: 11 } } },
+      y: { grid: { color: '#F0EDE6' }, border: { display: false }, ticks: { font: { size: 11 } } }
+    }
+  };
+}
+
+function donutOpts() {
+  return {
+    responsive: true, maintainAspectRatio: false, cutout: '62%',
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: c => `${c.label}: ${c.raw}%` } }
+    }
+  };
+}
+
+function destroyCharts() {
+  Object.values(chartInstances).forEach(c => { try { c.destroy(); } catch(e) {} });
+  Object.keys(chartInstances).forEach(k => delete chartInstances[k]);
+  ['overzicht','financieel','moat','fairvalue','scorekaart'].forEach(tab => {
+    const el = document.getElementById('content-' + tab);
+    if (el) { el.innerHTML = ''; delete el.dataset.rendered; }
+  });
+}
+
+// ──────────────────────────────────────────────
+// KEYBOARD
+// ──────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('pdf-overlay').classList.contains('visible')) {
+      closePdfModal();
+    } else if (document.getElementById('score-panel').classList.contains('visible')) {
+      closeScorePanel();
+    } else {
+      closeDetail();
+    }
+  }
+});
+
+// ──────────────────────────────────────────────
+// START
+// ──────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

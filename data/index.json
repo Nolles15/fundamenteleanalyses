@@ -1,0 +1,47 @@
+{
+  "laatste_update": "2026-03-18",
+  "companies": [
+    {
+      "ticker": "WAWI",
+      "naam": "Wallenius Wilhelmsen ASA",
+      "sector": "Industrieel Transport & Logistiek",
+      "exchange": "OSL",
+      "koers": 135,
+      "valuta": "NOK",
+      "fair_value_basis": 221,
+      "upside_pct": 64,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 35,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-13"
+    },
+    {
+      "ticker": "PUIG",
+      "naam": "Puig Brands, S.A.",
+      "sector": "Consumer Staples — Personal Products",
+      "exchange": "BME",
+      "koers": 14.93,
+      "valuta": "EUR",
+      "fair_value_basis": 21.50,
+      "upside_pct": 44,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 30,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-13"
+    },
+    {
+      "ticker": "ARP",
+      "naam": "Arctic Paper S.A.",
+      "sector": "Basismaterialen — Papier & Verpakking",
+      "exchange": "Nasdaq Stockholm / WSE",
+      "koers": 8.0,
+      "valuta": "PLN",
+      "fair_value_basis": 19.0,
+      "upside_pct": 137,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 25,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-17"
+    }
+  ]
+}

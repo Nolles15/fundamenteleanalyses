@@ -1,0 +1,41 @@
+name: Wekelijkse koers- en data-update
+
+on:
+  schedule:
+    # Elke maandag om 07:00 UTC (09:00 Nederlandse tijd)
+    - cron: '0 7 * * 1'
+
+  # Handmatig starten via GitHub → Actions → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Koersen & nieuwe cijfers ophalen
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code ophalen
+        uses: actions/checkout@v4
+
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Afhankelijkheden installeren
+        run: pip install -r requirements.txt
+
+      - name: Data updaten
+        run: python scripts/update_prices.py
+
+      - name: Wijzigingen committen en pushen
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "data: wekelijkse koers-update ${{ steps.date.outputs.date }}"
+          commit_author: "Aandelenanalyse Bot <actions@github.com>"
+          file_pattern: "data/*.json"
+          skip_dirty_check: false
