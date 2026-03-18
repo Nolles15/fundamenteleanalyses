@@ -383,6 +383,8 @@
       letter-spacing: -0.5px; font-variant-numeric: tabular-nums;
     }
     .metric-value.metric-null { font-size: 16px; color: var(--text-3); font-weight: 500; }
+    .metric-value.metric-label-override { font-size: 18px; color: var(--text-2); font-weight: 700; }
+    .metric-sub-reden { font-size: 10px; color: var(--hold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; margin-top: 4px; }
     .metric-sub { font-size: 11px; color: var(--text-3); margin-top: 3px; }
 
     /* ─── INLINE TOOLTIP (voor tabel-termen) ─── */
@@ -1075,10 +1077,12 @@ function renderOverzicht(d) {
   const m   = d.meta;
 
   const w = fin.waardering;
+  const wl = fin.waardering_labels || {};
   const ri = fin.rendementsindicatoren;
-  function mv(val, suffix) {
-    if (val == null) return { v: '–', cls: 'metric-null' };
-    return { v: `${val}${suffix}`, cls: '' };
+  function mv(val, suffix, labelKey) {
+    if (val != null) return { v: `${val}${suffix}`, cls: '' };
+    if (labelKey && wl[labelKey]) return { v: wl[labelKey].waarde, cls: 'metric-label-override', sub2: wl[labelKey].reden };
+    return { v: '–', cls: 'metric-null' };
   }
   const metrics = [
     { label: 'Koers',      ...mv(`${m.valuta} ${fmt(es.koers)}`, ''), sub: m.peildatum,
@@ -1087,18 +1091,18 @@ function renderOverzicht(d) {
       tip: 'Geschatte intrinsieke waarde op basis van het DCF basisscenario.' },
     { label: 'Upside',     ...mv(`+${es.upside_pct}`, '%'), sub: 'basisscenario',
       tip: 'Verwacht koerspotentieel tot de fair value (basisscenario).' },
-    { label: 'P/E',        ...mv(w.pe, '×'), sub: '',
+    { label: 'P/E',        ...mv(w.pe, '×', 'pe'), sub: '',
       tip: 'Koers-winstverhouding. Hoe vaak betaal je de jaarwinst. Lager is goedkoper; < 15 geldt als aantrekkelijk.' },
-    { label: 'EV/EBITDA',  ...mv(w.ev_ebitda, '×'), sub: '',
+    { label: 'EV/EBITDA',  ...mv(w.ev_ebitda, '×', 'ev_ebitda'), sub: '',
       tip: 'Ondernemingswaarde gedeeld door operationele winst (EBITDA). Maatstaf voor totale bedrijfswaardering, ongeacht schulden of belastingen. Lager = goedkoper.' },
-    { label: 'FCF Yield',  ...mv(w.fcf_yield_pct, '%'), sub: '',
+    { label: 'FCF Yield',  ...mv(w.fcf_yield_pct, '%', 'fcf_yield_pct'), sub: '',
       tip: 'Vrije kasstroom als percentage van de marktwaarde. Hoge FCF Yield betekent veel cash per betaalde euro; > 8% is aantrekkelijk.' },
-    w.p_b != null
-      ? { label: 'P/B', ...mv(w.p_b, '×'), sub: '',
+    (w.p_b != null || wl.p_b)
+      ? { label: 'P/B', ...mv(w.p_b, '×', 'p_b'), sub: '',
           tip: 'Koers-boekwaardeverhouding. Vergelijkt marktwaarde met boekhoudkundige waarde. < 1 kan wijzen op onderwaardering.' }
       : null,
-    w.dividendrendement_pct != null
-      ? { label: 'Dividend', ...mv(w.dividendrendement_pct, '%'), sub: 'rendement',
+    (w.dividendrendement_pct != null || wl.dividendrendement_pct)
+      ? { label: 'Dividend', ...mv(w.dividendrendement_pct, '%', 'dividendrendement_pct'), sub: 'rendement',
           tip: 'Jaarlijks dividend als percentage van de huidige koers.' }
       : null,
     { label: 'ROIC', ...mv(ri.roic_pct, '%'), sub: ri.jaar,
@@ -1119,7 +1123,7 @@ function renderOverzicht(d) {
       ${metrics.map(mc => `<div class="metric-card"${mc.tip ? ` data-tip="${mc.tip}"` : ''}>
         <div class="metric-label">${mc.label}</div>
         <div class="metric-value${mc.cls ? ' ' + mc.cls : ''}">${mc.v}</div>
-        ${mc.sub ? `<div class="metric-sub">${mc.sub}</div>` : ''}
+        ${mc.sub2 ? `<div class="metric-sub metric-sub-reden">${mc.sub2}</div>` : mc.sub ? `<div class="metric-sub">${mc.sub}</div>` : ''}
       </div>`).join('')}
     </div>
 

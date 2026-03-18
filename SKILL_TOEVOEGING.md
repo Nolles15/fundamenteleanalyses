@@ -103,6 +103,9 @@ je niet kon verifiëren.
       "ev_omzet": [GETAL OF null],
       "dividendrendement_pct": [GETAL OF null]
     },
+    "waardering_labels": {
+      "[VELDNAAM bijv. pe]": { "waarde": "[bijv. n.v.t. of >20× of neg.]", "reden": "[korte reden, bijv. verliesjaar 2025]" }
+    },
     "waardering_historisch": {
       "kolommen": ["Huidig ([JAAR])", "[JAAR-1]", "[JAAR-2 of 'record']"],
       "rijen": [

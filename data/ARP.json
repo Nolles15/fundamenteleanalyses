@@ -82,6 +82,12 @@
       "ev_omzet": 0.20,
       "dividendrendement_pct": 0.0
     },
+    "waardering_labels": {
+      "pe":           { "waarde": "n.v.t.", "reden": "verliesjaar 2025" },
+      "ev_ebitda":    { "waarde": ">20×",   "reden": "EBITDA ~nul (2025E)" },
+      "fcf_yield_pct":{ "waarde": "neg.",   "reden": "negatieve FCF 2024" },
+      "p_fcf":        { "waarde": "neg.",   "reden": "negatieve FCF 2024" }
+    },
     "waardering_historisch": {
       "kolommen": ["Huidig (2026)", "2023", "2022 (record)"],
       "rijen": [
