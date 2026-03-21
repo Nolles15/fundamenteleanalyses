@@ -365,26 +365,7 @@
       padding: 16px 18px;
       position: relative;
     }
-    .metric-card[data-tip]:hover::after {
-      content: attr(data-tip);
-      position: absolute;
-      bottom: calc(100% + 8px);
-      left: 50%; transform: translateX(-50%);
-      background: var(--text-1); color: #fff;
-      font-size: 12px; font-weight: 400; line-height: 1.4;
-      padding: 7px 11px; border-radius: 6px;
-      white-space: nowrap; max-width: 260px; white-space: normal;
-      pointer-events: none; z-index: 100;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .metric-card[data-tip]:hover::before {
-      content: '';
-      position: absolute;
-      bottom: calc(100% + 3px); left: 50%; transform: translateX(-50%);
-      border: 5px solid transparent;
-      border-top-color: var(--text-1);
-      pointer-events: none; z-index: 100;
-    }
+    .metric-card[data-tip] { cursor: help; }
     .metric-label {
       font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
       text-transform: uppercase; color: var(--text-3); margin-bottom: 6px;
@@ -400,21 +381,20 @@
 
     /* ─── INLINE TOOLTIP (voor tabel-termen) ─── */
     .tip {
-      position: relative; display: inline-block;
+      display: inline-block;
       border-bottom: 1px dotted var(--text-3); cursor: help;
     }
-    .tip::after {
-      content: attr(data-tip);
-      position: absolute; bottom: calc(100% + 6px); left: 0;
+    #global-tooltip {
+      position: fixed; z-index: 9999; pointer-events: none;
       background: var(--text-1); color: #fff;
       font-size: 12px; font-weight: 400; line-height: 1.5;
       padding: 7px 11px; border-radius: 6px;
-      white-space: normal; width: max-content; max-width: 280px;
-      pointer-events: none; z-index: 200;
+      max-width: 280px; white-space: normal;
       box-shadow: 0 4px 14px rgba(0,0,0,0.18);
-      opacity: 0; transition: opacity 0.15s; text-transform: none; letter-spacing: 0;
+      opacity: 0; transition: opacity 0.12s;
+      font-family: var(--font); text-transform: none; letter-spacing: 0;
     }
-    .tip:hover::after { opacity: 1; }
+    #global-tooltip.visible { opacity: 1; }
 
     /* ─── ANALYSE BLOK ─── */
     .analyse-block {
@@ -838,6 +818,9 @@
       <div id="tab-scorekaart"  class="tab-panel"><div class="content-inner" id="content-scorekaart"></div></div>
     </div>
   </div>
+
+  <!-- GLOBAL TOOLTIP -->
+  <div id="global-tooltip"></div>
 
   <!-- SCORE PANEL BACKDROP -->
   <div id="score-panel-backdrop"></div>
@@ -1934,6 +1917,52 @@ document.addEventListener('keydown', e => {
     }
   }
 });
+
+// ──────────────────────────────────────────────
+// GLOBAL TOOLTIP (position:fixed — nooit geclipped)
+// ──────────────────────────────────────────────
+(function() {
+  const tt = document.getElementById('global-tooltip');
+  let hideTimer;
+
+  function show(el, e) {
+    const tekst = el.dataset.tip;
+    if (!tekst) return;
+    clearTimeout(hideTimer);
+    tt.textContent = tekst;
+    tt.classList.add('visible');
+    position(e);
+  }
+
+  function position(e) {
+    const pad = 10;
+    const w = tt.offsetWidth;
+    const h = tt.offsetHeight;
+    let x = e.clientX - w / 2;
+    let y = e.clientY - h - 12;
+    if (x < pad) x = pad;
+    if (x + w > window.innerWidth - pad) x = window.innerWidth - w - pad;
+    if (y < pad) y = e.clientY + 20;
+    tt.style.left = x + 'px';
+    tt.style.top  = y + 'px';
+  }
+
+  function hide() {
+    hideTimer = setTimeout(() => tt.classList.remove('visible'), 80);
+  }
+
+  document.addEventListener('mouseover', e => {
+    const el = e.target.closest('[data-tip]');
+    if (el) show(el, e);
+    else hide();
+  });
+  document.addEventListener('mousemove', e => {
+    if (tt.classList.contains('visible')) position(e);
+  });
+  document.addEventListener('mouseout', e => {
+    if (!e.relatedTarget || !e.relatedTarget.closest('[data-tip]')) hide();
+  });
+})();
 
 // ──────────────────────────────────────────────
 // START
