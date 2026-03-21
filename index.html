@@ -1553,11 +1553,11 @@ function renderFairValue(d) {
       <div class="scenario-name">${s.scenario}</div>
       <div class="scenario-fv">${m.valuta} ${fmt(s.fair_value)}</div>
       <div class="scenario-upside" style="color:${isPos ? 'var(--buy)' : 'var(--pass)'}">${upSign}${s.upside_pct}%</div>
-      <div class="scenario-params">FCF-groei ${s.fcf_groei_pct}% · WACC ${s.wacc_pct}%</div>
+      <div class="scenario-params"><span class="tip" data-tip="Aangenomen jaarlijkse groei van de vrije kasstroom in dit scenario.">FCF-groei</span> ${s.fcf_groei_pct}% · <span class="tip" data-tip="Weighted Average Cost of Capital: vereist rendement van vermogensverschaffers in dit scenario.">WACC</span> ${s.wacc_pct}%</div>
     </div>`;
   }).join('');
 
-  const heatmapHeader = `<tr><th>FCF-groei ↓ · WACC →</th>${sens.wacc_range.map(w => `<th>${w}%</th>`).join('')}</tr>`;
+  const heatmapHeader = `<tr><th><span class="tip" data-tip="Vrije kasstroomgroei: aangenomen jaarlijkse groei van de FCF.">FCF-groei</span> ↓ · <span class="tip" data-tip="Weighted Average Cost of Capital: gewogen gemiddelde vermogenskostenvoet.">WACC</span> →</th>${sens.wacc_range.map(w => `<th>${w}%</th>`).join('')}</tr>`;
   const heatmapRows = sens.groei_range.map((g, gi) => {
     const cells = sens.wacc_range.map((w, wi) => {
       const val = sens.matrix[gi][wi];
@@ -1570,12 +1570,12 @@ function renderFairValue(d) {
   }).join('');
 
   el.innerHTML = `
-    <p class="section-subtitle">DCF Aannames (basisscenario)</p>
+    <p class="section-subtitle"><span class="tip" data-tip="Discounted Cash Flow: waarderingsmethode waarbij toekomstige kasstromen worden teruggerekend naar de huidige waarde.">DCF</span> Aannames (basisscenario)</p>
     <div class="metrics-grid" style="margin-bottom:28px">
-      <div class="metric-card"><div class="metric-label">Basis FCF</div><div class="metric-value">$${dcf.basis_fcf}M</div><div class="metric-sub">${fv.dcf.valuta_label || 'USD mln'}</div></div>
-      <div class="metric-card"><div class="metric-label">WACC</div><div class="metric-value">${dcf.wacc_pct}%</div></div>
-      <div class="metric-card"><div class="metric-label">FCF-groei fase 1</div><div class="metric-value">${dcf.groei_fase1_pct}%</div></div>
-      <div class="metric-card"><div class="metric-label">Terminal groei</div><div class="metric-value">${dcf.terminal_groei_pct}%</div></div>
+      <div class="metric-card" data-tip="Free Cash Flow: kasstroom die het bedrijf genereert na aftrek van investeringen (CAPEX). Dit is de basis voor de DCF-waardering."><div class="metric-label">Basis FCF</div><div class="metric-value">$${dcf.basis_fcf}M</div><div class="metric-sub">${fv.dcf.valuta_label || 'USD mln'}</div></div>
+      <div class="metric-card" data-tip="Weighted Average Cost of Capital: gewogen gemiddelde vermogenskostenvoet. Het minimaal vereiste rendement voor investeerders. Hogere WACC = lagere fair value."><div class="metric-label">WACC</div><div class="metric-value">${dcf.wacc_pct}%</div></div>
+      <div class="metric-card" data-tip="Verwachte jaarlijkse groei van de vrije kasstroom in fase 1 van het DCF-model (doorgaans de eerste 5–10 jaar)."><div class="metric-label">FCF-groei fase 1</div><div class="metric-value">${dcf.groei_fase1_pct}%</div></div>
+      <div class="metric-card" data-tip="Constante groeivoet na de projectieperiode (perpetuïteit). Doorgaans 1–2%, gelijk aan langetermijn economische groei."><div class="metric-label">Terminal groei</div><div class="metric-value">${dcf.terminal_groei_pct}%</div></div>
     </div>
 
     <p class="section-subtitle">Scenario's</p>
@@ -1589,7 +1589,7 @@ function renderFairValue(d) {
 
     <p class="section-subtitle">Gevoeligheidsanalyse — Fair Value (${m.valuta})</p>
     <div class="heatmap-wrap">
-      <div class="heatmap-title">Intrinsieke waarde bij variatie in FCF-groei en WACC</div>
+      <div class="heatmap-title">Intrinsieke waarde bij variatie in <span class="tip" data-tip="Vrije kasstroomgroei: aangenomen jaarlijkse groei van de FCF.">FCF-groei</span> en <span class="tip" data-tip="Weighted Average Cost of Capital: het vereiste rendement van vermogensverschaffers.">WACC</span></div>
       <div class="heatmap-axis-label">Koers = ${m.valuta} ${fmt(koers)} · Groen = ondergewaardeerd · Rood = overgewaardeerd</div>
       <div style="overflow-x:auto">
         <table class="heatmap">
