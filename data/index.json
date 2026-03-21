@@ -1,5 +1,5 @@
 {
-  "laatste_update": "2026-03-18",
+  "laatste_update": "2026-03-21",
   "companies": [
     {
       "ticker": "WAWI",
@@ -18,11 +18,11 @@
     {
       "ticker": "PUIG",
       "naam": "Puig Brands, S.A.",
-      "sector": "Consumer Staples — Personal Products",
+      "sector": "Consumer Staples â€” Personal Products",
       "exchange": "BME",
       "koers": 14.93,
       "valuta": "EUR",
-      "fair_value_basis": 21.50,
+      "fair_value_basis": 21.5,
       "upside_pct": 44,
       "oordeel": "KOOP",
       "scorekaart_totaal": 30,
@@ -32,7 +32,7 @@
     {
       "ticker": "ARP",
       "naam": "Arctic Paper S.A.",
-      "sector": "Basismaterialen — Papier & Verpakking",
+      "sector": "Basismaterialen â€” Papier & Verpakking",
       "exchange": "Nasdaq Stockholm / WSE",
       "koers": 8.0,
       "valuta": "PLN",
@@ -46,9 +46,9 @@
     {
       "ticker": "ADYEN",
       "naam": "Adyen N.V.",
-      "sector": "Financiële Technologie",
+      "sector": "FinanciÃ«le Technologie",
       "exchange": "Euronext Amsterdam (AEX)",
-      "koers": 911.50,
+      "koers": 911.5,
       "valuta": "EUR",
       "fair_value_basis": 952,
       "upside_pct": 4.4,
@@ -62,7 +62,7 @@
       "naam": "Wipro Limited",
       "sector": "Informatietechnologie",
       "exchange": "NSE/BSE India (ADR: WIT)",
-      "koers": 194.30,
+      "koers": 194.3,
       "valuta": "INR",
       "fair_value_basis": 198,
       "upside_pct": 1.9,
@@ -70,6 +70,48 @@
       "scorekaart_totaal": 23,
       "scorekaart_max": 45,
       "peildatum": "2026-03-18"
+    },
+    {
+      "ticker": "ALTR",
+      "naam": "Altri, SGPS, S.A.",
+      "sector": "Materialen",
+      "exchange": "Euronext Lisbon",
+      "koers": 6.06,
+      "valuta": "EUR",
+      "fair_value_basis": 7.5,
+      "upside_pct": 24,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 30,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21"
+    },
+    {
+      "ticker": "EQNR",
+      "naam": "Equinor ASA",
+      "sector": "Energie",
+      "exchange": "Oslo Børs / NYSE",
+      "koers": 398.6,
+      "valuta": "NOK",
+      "fair_value_basis": 412,
+      "upside_pct": 3,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 31,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21"
+    },
+    {
+      "ticker": "HUSCO",
+      "naam": "HusCompagniet A/S",
+      "sector": "Consumer Discretionary / Bouw",
+      "exchange": "Nasdaq Copenhagen",
+      "koers": 31.4,
+      "valuta": "DKK",
+      "fair_value_basis": 43,
+      "upside_pct": 37,
+      "oordeel": "PASS",
+      "scorekaart_totaal": 21,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21"
     }
   ]
 }
