@@ -953,7 +953,8 @@ function companyCardHTML(c) {
       <div>
         <div class="card-ticker-row">
           ${c.domein
-            ? `<img class="card-logo" src="https://logo.clearbit.com/${c.domein}" alt="${c.ticker}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+            ? `<img class="card-logo" src="https://logo.clearbit.com/${c.domein}" alt="${c.ticker}"
+                onerror="this.src='https://www.google.com/s2/favicons?domain=${c.domein}&sz=64';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';}">`
             : ''}
           <div class="card-logo-fallback" style="${c.domein ? 'display:none' : ''}">${c.ticker.slice(0,3)}</div>
           <span class="card-ticker">${c.ticker}</span>
