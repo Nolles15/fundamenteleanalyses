@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "ticker": "ALTR",
+    "exchange": "Euronext Lisbon",
+    "naam": "Altri, SGPS, S.A.",
+    "sector": "Materialen",
+    "segment": "Eucalyptus Pulp & Bosbeheer",
+    "koers": 6.06,
+    "valuta": "EUR",
+    "peildatum": "2026-03-21",
+    "marktkapitalisatie": "~EUR 1.243 mln"
+  },
+  "executive_summary": {
+    "kernthese": "Altri SGPS is een Portugees geïntegreerd eucalyptus pulp- en bosbeheersbedrijf. Na een uitzonderlijk 2022 drukken lage BEKP-prijzen en zwakke USD de resultaten in 2023-2025. Het bedrijf heeft een narrow moat via verticale integratie, aligned management en een interessante AeoniQ-groeistrategie. Bij pulsprijsherstel significant upside.",
+    "oordeel": "HOLD",
+    "koers": 6.06,
+    "valuta": "EUR",
+    "fair_value_basis": 7.50,
+    "upside_pct": 24,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 3.60, "upside_pct": -41 },
+      { "scenario": "Basis", "fair_value": 7.50, "upside_pct": 24 },
+      { "scenario": "Optimistisch", "fair_value": 12.00, "upside_pct": 98 }
+    ],
+    "grootste_kans": "Herstel BEKP-prijzen + AeoniQ cellulosevezels voor textiel als groeistrategie",
+    "grootste_risico": "Aanhoudende aanboddruk Brazilié + EUR/USD-versterking drukt FCF structureel"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Altri bezit en beheert ~83.500 ha eucalyptus-bossen in Portugal, produceert >1 mln ton/jr BEKP via drie molens (Celbi, Caima, Celtejo) en diversifieert via AeoniQ (cellulosevezels voor textiel). Verticaal geïntegreerd van bos tot pulp.",
+    "personeel": 2100,
+    "landen": 2,
+    "segmenten": [
+      { "naam": "BEKP (Bleached Eucalyptus Kraft Pulp)", "omzet_pct": 87, "beschrijving": "Kernactiviteit; export wereldwijd" },
+      { "naam": "Energie (Biomassa)", "omzet_pct": 8, "beschrijving": "Elektriciteitproductie via biomassa" },
+      { "naam": "AeoniQ / Innovatie", "omzet_pct": 5, "beschrijving": "Cellulosevezels textielsector (groeiend)" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Cofihold SGPS", "pct": 20.47, "type": "Controlerend" },
+      { "naam": "UBS AG", "pct": 9.92, "type": "Institutioneel" },
+      { "naam": "Ana Rebelo Mendonça Fernandes", "pct": 6.21, "type": "Strategisch" },
+      { "naam": "Free float", "pct": 53.87, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "EUR mln",
+    "resultatenrekening": [
+      { "jaar": 2021, "omzet": 785, "omzet_groei_pct": null, "ebitda": 210, "ebitda_marge_pct": 26.8, "nettowinst": 128, "nettomarge_pct": 16.3, "eps": 0.62 },
+      { "jaar": 2022, "omzet": 1052, "omzet_groei_pct": 34.0, "ebitda": 276, "ebitda_marge_pct": 26.2, "nettowinst": 428, "nettomarge_pct": 40.7, "eps": 2.08 },
+      { "jaar": 2023, "omzet": 752, "omzet_groei_pct": -28.5, "ebitda": 99, "ebitda_marge_pct": 13.2, "nettowinst": 43, "nettomarge_pct": 5.7, "eps": 0.21 },
+      { "jaar": 2024, "omzet": 838, "omzet_groei_pct": 11.4, "ebitda": 218, "ebitda_marge_pct": 26.0, "nettowinst": 107, "nettomarge_pct": 12.8, "eps": 0.52 },
+      { "jaar": 2025, "omzet": 703, "omzet_groei_pct": -16.1, "ebitda": 94, "ebitda_marge_pct": 13.4, "nettowinst": 21, "nettomarge_pct": 3.0, "eps": 0.10 }
+    ],
+    "kasstromen": [
+      { "jaar": 2021, "fcf": 220, "fcf_per_aandeel": null },
+      { "jaar": 2022, "fcf": 131, "fcf_per_aandeel": null },
+      { "jaar": 2023, "fcf": 44, "fcf_per_aandeel": null },
+      { "jaar": 2024, "fcf": 231, "fcf_per_aandeel": null },
+      { "jaar": 2025, "fcf": 60, "fcf_per_aandeel": null }
+    ],
+    "balans": [
+      { "jaar": 2021, "nettoschuld": 425, "eigen_vermogen": 723, "debt_ebitda": 2.0 },
+      { "jaar": 2022, "nettoschuld": 409, "eigen_vermogen": 610, "debt_ebitda": 1.5 },
+      { "jaar": 2023, "nettoschuld": 357, "eigen_vermogen": 412, "debt_ebitda": 3.6 },
+      { "jaar": 2024, "nettoschuld": 214, "eigen_vermogen": 459, "debt_ebitda": 1.0 },
+      { "jaar": 2025, "nettoschuld": 442, "eigen_vermogen": 434, "debt_ebitda": 4.7 }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2024,
+      "roce_pct": null,
+      "roe_pct": 23.3,
+      "roic_pct": 12.6,
+      "roa_pct": 8.1
+    },
+    "waardering": {
+      "pe": 58.0,
+      "ev_ebitda": 17.9,
+      "p_fcf": 25.0,
+      "fcf_yield_pct": 4.8,
+      "p_b": 2.9,
+      "ev_omzet": 2.4,
+      "dividendrendement_pct": 4.1
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "Altri heeft een kostenvoordeel via verticale integratie (eigen bossen + nabijgelegen molens). FSC/PEFC-certificering is differentiator. Commodity-aard van pulp en ontbreken van netwerkeffecten beperken de moat.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "AANWEZIG", "score": 3, "toelichting": "FSC/PEFC-certificering; Portugese eucalyptus heeft premium reputatie" },
+      { "naam": "Overstapkosten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Langetermijncontracten; maar commodity-aard beperkt pricing power" },
+      { "naam": "Netwerkeffecten", "oordeel": "AFWEZIG", "score": 1, "toelichting": "Geen netwerkeffecten in commodity-pulp" },
+      { "naam": "Kostenvoordeel", "oordeel": "STERK", "score": 4, "toelichting": "Eigen bossen + korte transportroutes + efficiënte molens" },
+      { "naam": "Efficiënte schaal", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Grootste Portugese producent; >1 mln ton/jaar schaalvoordeel" }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      { "functie": "CEO", "naam": "Jose Armindo Farinha Soares De Pina", "achtergrond": "Sector-ervaring; leidt strategische diversificatie AeoniQ" },
+      { "functie": "CFO", "naam": "Vitor Miguel Jorge Silva", "achtergrond": "Balansmanagement en capital allocation" }
+    ],
+    "capital_allocation": "Consistent dividend betaald. Investering in AeoniQ-acquisitie en Spaanse bosuitbreiding als groeidiversificatie. Green bonds EUR 50M. Geen aandeleninkopen.",
+    "toelichting": "Aligned management via Cofihold (20,47%). Coherente langetermijnstrategie. Transparant. Beperkt track record als groeibedrijf buiten pulp-cyclus."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 137,
+      "wacc_pct": 7.6,
+      "groei_fase1_pct": 5.0,
+      "terminal_groei_pct": 1.5
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 0.0, "wacc_pct": 9.0, "fair_value": 3.60, "upside_pct": -41 },
+      { "scenario": "Basis", "fcf_groei_pct": 5.0, "wacc_pct": 7.6, "fair_value": 7.50, "upside_pct": 24 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 8.0, "wacc_pct": 7.0, "fair_value": 12.00, "upside_pct": 98 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 5.0, "wacc_pct": 7.6, "fair_value": 7.50, "upside_pct": 24 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [6.5, 7.0, 7.5, 8.0, 8.5, 9.0],
+      "groei_range": [0.0, 2.0, 4.0, 6.0, 8.0],
+      "matrix": [
+        [6.8, 6.0, 5.4, 4.9, 4.5, 4.1],
+        [8.5, 7.4, 6.6, 5.9, 5.4, 4.9],
+        [10.9, 9.4, 8.2, 7.3, 6.6, 6.0],
+        [14.7, 12.4, 10.7, 9.3, 8.3, 7.5],
+        [21.5, 17.8, 14.9, 12.8, 11.1, 9.8]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 2, "max": 5, "oordeel": "Voldoet niet op current; sterk op genormaliseerd" },
+      { "framework": "Buffett / Munger", "score": 3, "max": 5, "oordeel": "Gedeeltelijk — narrow moat, redelijke prijs bij cyclisch low" },
+      { "framework": "Peter Lynch", "score": 4, "max": 5, "oordeel": "Interessant — klassieke cyclical nabij dieptepunt" },
+      { "framework": "Phil Fisher", "score": 3, "max": 5, "oordeel": "Gemiddeld — sterk op bescherming, gemiddeld op groei" },
+      { "framework": "Magic Formula", "score": 3, "max": 5, "oordeel": "Gemiddeld — aantrekkelijk op genorm. EBIT" },
+      { "framework": "Moat", "score": 3, "max": 5, "oordeel": "Narrow Moat — kostenvoordeel verticale integratie" },
+      { "framework": "Management", "score": 4, "max": 5, "oordeel": "Neutraal tot Sterk — aligned, coherente strategie" },
+      { "framework": "Fair Value DCF", "score": 4, "max": 5, "oordeel": "Onderwaardering — EUR 7,50 vs EUR 6,06 (+24%)" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 4, "max": 5, "oordeel": "Gelijk aan basis — geen IPO-correctie van toepassing" }
+    ],
+    "totaal": 30,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "Altri SGPS is een kwalitatief goede cyclical op cyclisch laag waarderingsniveau. Kostenvoordeel via verticale integratie, aligned management en AeoniQ-groeistrategie zijn positief. Risico's: aanhoudende aanboddruk Brazilié en EUR/USD-versterking. Fair value EUR 7,50 (+24%). Comfortabele koopzone EUR 5,00-5,50. HOLD/Voorzichtig Koop voor beleggers met 5-jaars horizon en commodity-tolerantie."
+  }
+}

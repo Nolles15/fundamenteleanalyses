@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "ticker": "EQNR",
+    "exchange": "Oslo Børs (OSE) / NYSE",
+    "naam": "Equinor ASA",
+    "sector": "Energie",
+    "segment": "Geïntegreerd Olie & Gas",
+    "koers": 398.60,
+    "valuta": "NOK",
+    "peildatum": "2026-03-21",
+    "marktkapitalisatie": "~NOK 1.030 mrd (~USD 95 mrd)"
+  },
+  "executive_summary": {
+    "kernthese": "Equinor ASA is het Noorse semi-staatsoliebedrijf (67% staatseigendom) met wereldwijd laagste productiekosten (~$7/boe op het NCP), een ROACE van 14,5% en sterke FCF-generatie. Het aandeel handelt op historisch lage EV/EBITDA-niveaus (~2,2x vs sectorgemiddelde 7,6x). De narrow moat via kostenvoordeel, disciplinair management en strategische positie als EU-gasleverancier maken Equinor fundamenteel solide. Bij huidige prijsniveaus is het aandeel licht ondergewaardeerd.",
+    "oordeel": "HOLD",
+    "koers": 398.60,
+    "valuta": "NOK",
+    "fair_value_basis": 412,
+    "upside_pct": 3,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 222, "upside_pct": -44 },
+      { "scenario": "Basis", "fair_value": 412, "upside_pct": 3 },
+      { "scenario": "Optimistisch", "fair_value": 563, "upside_pct": 41 }
+    ],
+    "grootste_kans": "Herstel olieprijzen + sterke structurele FCF-generatie als lage-kostproducent",
+    "grootste_risico": "Structureel dalende olieprijzen en versnelling van energietransitie tast terminal value aan"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Equinor is een Noors geïntegreerd energiebedrijf actief in upstream olie & gas (NCP + internationaal), marketing & midstream, en hernieuwbare energie (offshore wind). Het bedrijf is 67% eigendom van de Noorse staat.",
+    "personeel": 24620,
+    "landen": 30,
+    "segmenten": [
+      { "naam": "E&P Noorwegen", "omzet_pct": 55, "beschrijving": "Winning op NCP; productiekosten ~$7/boe" },
+      { "naam": "E&P Internationaal", "omzet_pct": 25, "beschrijving": "VS, Brazilië, VK, Angola, Azerbeidzjan" },
+      { "naam": "Marketing, Midstream & Processing", "omzet_pct": 15, "beschrijving": "Handel, pijpleidingen, LNG" },
+      { "naam": "Hernieuwbare Energie", "omzet_pct": 5, "beschrijving": "Offshore wind (Dogger Bank, Empire Wind)" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Noorse Staat (Min. v. Handel)", "pct": 67.0, "type": "Controlerend" },
+      { "naam": "BlackRock", "pct": 1.2, "type": "Institutioneel" },
+      { "naam": "Vanguard", "pct": 1.2, "type": "Institutioneel" },
+      { "naam": "Overige publiek", "pct": 30.6, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "USD mln",
+    "resultatenrekening": [
+      { "jaar": 2021, "omzet": 88744, "omzet_groei_pct": null, "ebitda": 45382, "ebitda_marge_pct": 51.1, "nettowinst": 8563, "nettomarge_pct": 9.7, "eps": 2.63 },
+      { "jaar": 2022, "omzet": 149004, "omzet_groei_pct": 68.0, "ebitda": 85202, "ebitda_marge_pct": 57.2, "nettowinst": 28746, "nettomarge_pct": 19.3, "eps": 9.03 },
+      { "jaar": 2023, "omzet": 106848, "omzet_groei_pct": -28.3, "ebitda": 46351, "ebitda_marge_pct": 43.4, "nettowinst": 11885, "nettomarge_pct": 11.1, "eps": 3.93 },
+      { "jaar": 2024, "omzet": 102502, "omzet_groei_pct": -4.1, "ebitda": 40833, "ebitda_marge_pct": 39.8, "nettowinst": 8806, "nettomarge_pct": 8.6, "eps": 3.11 },
+      { "jaar": 2025, "omzet": 105828, "omzet_groei_pct": 3.2, "ebitda": 37825, "ebitda_marge_pct": 35.7, "nettowinst": 5043, "nettomarge_pct": 4.8, "eps": 1.94 }
+    ],
+    "kasstromen": [
+      { "jaar": 2021, "fcf": 20776, "fcf_per_aandeel": null },
+      { "jaar": 2022, "fcf": 26525, "fcf_per_aandeel": null },
+      { "jaar": 2023, "fcf": 18682, "fcf_per_aandeel": null },
+      { "jaar": 2024, "fcf": 7288, "fcf_per_aandeel": null },
+      { "jaar": 2025, "fcf": 5977, "fcf_per_aandeel": null }
+    ],
+    "balans": [
+      { "jaar": 2021, "nettoschuld": 22100, "eigen_vermogen": 39000, "debt_ebitda": 0.49 },
+      { "jaar": 2022, "nettoschuld": 16600, "eigen_vermogen": 54000, "debt_ebitda": 0.19 },
+      { "jaar": 2023, "nettoschuld": -7100, "eigen_vermogen": 48500, "debt_ebitda": -0.15 },
+      { "jaar": 2024, "nettoschuld": 24200, "eigen_vermogen": 42400, "debt_ebitda": 0.59 },
+      { "jaar": 2025, "nettoschuld": 26200, "eigen_vermogen": 40424, "debt_ebitda": 0.69 }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2025,
+      "roce_pct": 14.5,
+      "roe_pct": 12.4,
+      "roic_pct": 9.0,
+      "roa_pct": 3.8
+    },
+    "waardering": {
+      "pe": 14.7,
+      "ev_ebitda": 2.2,
+      "p_fcf": 54.0,
+      "fcf_yield_pct": 1.8,
+      "p_b": 2.1,
+      "ev_omzet": 0.9,
+      "dividendrendement_pct": 5.8
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "Equinor heeft een structureel kostenvoordeel op het NCP (~$7/boe), wat het bedrijf beschermt bij lagere olieprijzen. Afwezigheid van netwerkeffecten en beperkte switching costs (commodity) voorkomen een wide moat-classificatie.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "BEPERKT", "score": 2, "toelichting": "NCP-licenties waardevol maar niet exclusief; merk speelt minimale rol" },
+      { "naam": "Overstapkosten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Langetermijngascontracten bieden enige stickiness; commodity-aard beperkt pricing power" },
+      { "naam": "Netwerkeffecten", "oordeel": "AFWEZIG", "score": 1, "toelichting": "Geen netwerkeffecten in upstream olie & gas" },
+      { "naam": "Kostenvoordeel", "oordeel": "STERK", "score": 4, "toelichting": "Productiekosten ~$7/boe op NCP zijn wereldwijd laagste; gunstige geologie" },
+      { "naam": "Efficiënte schaal", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Dominante positie op NCP; infrastructuurvoordeel beperkt nieuwe concurrenten" }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      { "functie": "CEO", "naam": "Anders Opedal", "achtergrond": "CEO sinds nov 2020, >20 jaar bij Equinor/Statoil, geologisch ingenieur" },
+      { "functie": "CFO", "naam": "Torgrim Reitan", "achtergrond": "CFO sinds okt 2022, >25 jaar bij Equinor, ex-SVP US Operations" }
+    ],
+    "capital_allocation": "Disciplinair kapitaalbeleid: USD 9 mrd teruggegeven aan aandeelhouders in 2025 (USD 5 mrd inkoop + USD 4 mrd dividend). CAPEX beperkt op USD 13,1 mrd. Renewables-ambities bijgesteld ten gunste van hogere FCF.",
+    "toelichting": "Ervaren, stabiel managementteam met transparante communicatie. Geen rode vlaggen of controverses. Strategische bijstelling 2025 (minder renewables) is rationeel maar vertraagt energietransitie-positionering."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 15900,
+      "wacc_pct": 6.8,
+      "groei_fase1_pct": 3.0,
+      "terminal_groei_pct": 1.5
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": -2.0, "wacc_pct": 8.0, "fair_value": 222, "upside_pct": -44 },
+      { "scenario": "Basis", "fcf_groei_pct": 3.0, "wacc_pct": 6.8, "fair_value": 412, "upside_pct": 3 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 6.0, "wacc_pct": 6.0, "fair_value": 563, "upside_pct": 41 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 3.0, "wacc_pct": 6.8, "fair_value": 412, "upside_pct": 3 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [8.0, 8.5, 9.0, 9.5, 10.0, 10.5],
+      "groei_range": [1.0, 2.0, 3.0, 4.0, 5.0],
+      "matrix": [
+        [297, 265, 238, 216, 196, 180],
+        [338, 297, 264, 237, 214, 195],
+        [412, 355, 310, 274, 245, 220],
+        [509, 434, 373, 326, 288, 257],
+        [672, 562, 474, 406, 353, 310]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 3, "max": 5, "oordeel": "Gedeeltelijk — lage P/E maar cyclisch & balanstest niet gehaald" },
+      { "framework": "Buffett / Munger", "score": 3, "max": 5, "oordeel": "Hold — solide bedrijf, redelijke prijs, beperkte moat" },
+      { "framework": "Peter Lynch", "score": 3, "max": 5, "oordeel": "Neutraal — interessant cyclical nabij dieptepunt" },
+      { "framework": "Phil Fisher", "score": 3, "max": 5, "oordeel": "Gemiddeld — transparant management, beperkte innovatie" },
+      { "framework": "Magic Formula", "score": 4, "max": 5, "oordeel": "Aantrekkelijk — hoge earnings yield (~25%)" },
+      { "framework": "Moat", "score": 3, "max": 5, "oordeel": "Narrow Moat — kostenvoordeel NCP" },
+      { "framework": "Management", "score": 4, "max": 5, "oordeel": "Neutraal tot Sterk — ervaren, transparant, disciplinair" },
+      { "framework": "Fair Value DCF", "score": 4, "max": 5, "oordeel": "Lichte korting — fair value NOK 412 vs koers NOK 399" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 4, "max": 5, "oordeel": "Gelijk aan basis — geen IPO-correctie van toepassing" }
+    ],
+    "totaal": 31,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "Equinor is een fundamenteel solide, laag gewaardeerd energiebedrijf met een narrow moat op basis van uitzonderlijk lage productiekosten (~$7/boe op het NCP). Bij de huidige koers van NOK 399 is het aandeel licht ondergewaardeerd versus onze basiswaarde van ~NOK 412. Het aandeel is aantrekkelijker op NOK 340-360. De grootste onzekerheid is de olieprijs: bij Brent structureel onder $60/bbl verslechtert de case significant. Voor beleggers met 5-jaars horizon en comfort met commodity-cycliciteit: HOLD met opwaarts potentieel bij herstel olieprijzen."
+  }
+}
