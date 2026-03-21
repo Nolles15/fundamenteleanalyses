@@ -180,6 +180,17 @@
     .card-upside-meta { font-size: 13px; color: var(--text-2); font-weight: 500; }
     .card-koers-meta  { font-size: 12px; color: var(--text-3); margin-top: 3px; }
 
+    .card-score {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 12px; color: var(--text-3);
+    }
+    .card-score-bar {
+      flex: 1; height: 4px; background: var(--surface-2);
+      border-radius: 2px; margin: 0 10px; overflow: hidden;
+    }
+    .card-score-bar-fill {
+      height: 100%; border-radius: 2px; background: var(--text-1);
+    }
     .card-footer {
       display: flex; align-items: center; justify-content: space-between;
       font-size: 12px; color: var(--text-3);
@@ -960,6 +971,13 @@ function companyCardHTML(c) {
       <div class="card-upside-meta">upside naar ${c.valuta} ${fmt(c.fair_value_basis)}</div>
       <div class="card-koers-meta">koers ${c.valuta} ${fmt(c.koers)}</div>
     </div>
+
+    ${c.scorekaart_totaal != null ? `
+    <div class="card-score">
+      <span>Scorekaart</span>
+      <div class="card-score-bar"><div class="card-score-bar-fill" style="width:${Math.round(c.scorekaart_totaal / c.scorekaart_max * 100)}%"></div></div>
+      <span>${c.scorekaart_totaal} / ${c.scorekaart_max}</span>
+    </div>` : ''}
 
     <div class="card-footer">
       <span>Peildatum ${formatDate(c.peildatum)}</span>
