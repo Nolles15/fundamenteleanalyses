@@ -13,7 +13,8 @@
       "oordeel": "KOOP",
       "scorekaart_totaal": 35,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-13"
+      "peildatum": "2026-03-13",
+      "domein": "walleniuswilhelmsen.com"
     },
     {
       "ticker": "PUIG",
@@ -27,7 +28,8 @@
       "oordeel": "KOOP",
       "scorekaart_totaal": 30,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-13"
+      "peildatum": "2026-03-13",
+      "domein": "puig.com"
     },
     {
       "ticker": "ARP",
@@ -41,7 +43,8 @@
       "oordeel": "HOLD",
       "scorekaart_totaal": 25,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-17"
+      "peildatum": "2026-03-17",
+      "domein": "arcticpaper.com"
     },
     {
       "ticker": "ADYEN",
@@ -55,7 +58,8 @@
       "oordeel": "HOLD",
       "scorekaart_totaal": 33,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-18"
+      "peildatum": "2026-03-18",
+      "domein": "adyen.com"
     },
     {
       "ticker": "WIPRO",
@@ -69,7 +73,8 @@
       "oordeel": "HOLD",
       "scorekaart_totaal": 23,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-18"
+      "peildatum": "2026-03-18",
+      "domein": "wipro.com"
     },
     {
       "ticker": "ALTR",
@@ -83,7 +88,8 @@
       "oordeel": "HOLD",
       "scorekaart_totaal": 30,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-21"
+      "peildatum": "2026-03-21",
+      "domein": "altri.pt"
     },
     {
       "ticker": "EQNR",
@@ -97,7 +103,8 @@
       "oordeel": "HOLD",
       "scorekaart_totaal": 31,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-21"
+      "peildatum": "2026-03-21",
+      "domein": "equinor.com"
     },
     {
       "ticker": "HUSCO",
@@ -111,7 +118,8 @@
       "oordeel": "PASS",
       "scorekaart_totaal": 21,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-21"
+      "peildatum": "2026-03-21",
+      "domein": "huscompagniet.dk"
     }
   ]
 }
