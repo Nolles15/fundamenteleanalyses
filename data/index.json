@@ -107,6 +107,21 @@
       "domein": "kinopolska.pl"
     },
     {
+      "ticker": "PHARM",
+      "naam": "Pharming Group N.V.",
+      "sector": "Gezondheidszorg",
+      "exchange": "Euronext Amsterdam",
+      "koers": 1.362,
+      "valuta": "EUR",
+      "fair_value_basis": 1.82,
+      "upside_pct": 34,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 27,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21",
+      "domein": "pharming.com"
+    },
+    {
       "ticker": "PUIG",
       "naam": "Puig Brands, S.A.",
       "sector": "Consumer Staples — Personal Products",
