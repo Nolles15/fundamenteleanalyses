@@ -1,75 +1,44 @@
-{
-  "laatste_update": "2026-03-18",
-  "companies": [
-    {
-      "ticker": "WAWI",
-      "naam": "Wallenius Wilhelmsen ASA",
-      "sector": "Industrieel Transport & Logistiek",
-      "exchange": "OSL",
-      "koers": 135,
-      "valuta": "NOK",
-      "fair_value_basis": 221,
-      "upside_pct": 64,
-      "oordeel": "KOOP",
-      "scorekaart_totaal": 35,
-      "scorekaart_max": 45,
-      "peildatum": "2026-03-13"
-    },
-    {
-      "ticker": "PUIG",
-      "naam": "Puig Brands, S.A.",
-      "sector": "Consumer Staples — Personal Products",
-      "exchange": "BME",
-      "koers": 14.93,
-      "valuta": "EUR",
-      "fair_value_basis": 21.50,
-      "upside_pct": 44,
-      "oordeel": "KOOP",
-      "scorekaart_totaal": 30,
-      "scorekaart_max": 45,
-      "peildatum": "2026-03-13"
-    },
-    {
-      "ticker": "ARP",
-      "naam": "Arctic Paper S.A.",
-      "sector": "Basismaterialen — Papier & Verpakking",
-      "exchange": "Nasdaq Stockholm / WSE",
-      "koers": 8.0,
-      "valuta": "PLN",
-      "fair_value_basis": 19.0,
-      "upside_pct": 137,
-      "oordeel": "HOLD",
-      "scorekaart_totaal": 25,
-      "scorekaart_max": 45,
-      "peildatum": "2026-03-17"
-    },
-    {
-      "ticker": "ADYEN",
-      "naam": "Adyen N.V.",
-      "sector": "Financiële Technologie",
-      "exchange": "Euronext Amsterdam (AEX)",
-      "koers": 911.50,
-      "valuta": "EUR",
-      "fair_value_basis": 952,
-      "upside_pct": 4.4,
-      "oordeel": "HOLD",
-      "scorekaart_totaal": 33,
-      "scorekaart_max": 45,
-      "peildatum": "2026-03-18"
-    },
-    {
-      "ticker": "WIPRO",
-      "naam": "Wipro Limited",
-      "sector": "Informatietechnologie",
-      "exchange": "NSE/BSE India (ADR: WIT)",
-      "koers": 194.30,
-      "valuta": "INR",
-      "fair_value_basis": 198,
-      "upside_pct": 1.9,
-      "oordeel": "HOLD",
-      "scorekaart_totaal": 23,
-      "scorekaart_max": 45,
-      "peildatum": "2026-03-18"
-    }
-  ]
-}
+[
+  {
+    "id": "arctic_paper_sa",
+    "bestand": "arctic_paper_sa.json",
+    "bedrijf": "Arctic Paper S.A.",
+    "ticker": "ARP",
+    "beurs": "Nasdaq Stockholm",
+    "sector": "Grafisch fijnpapier & Pulp",
+    "land": "Polen / Zweden",
+    "koers": "~21 SEK",
+    "oordeel": "HOLD",
+    "fair_value": "PLN 14 – 28 per aandeel (SEK 35–70); bandbreedte breed",
+    "upside": "Basis: +75–250% over 3 jaar — MAAR hoog risico",
+    "datum_analyse": "17 maart 2026"
+  },
+  {
+    "id": "puig_brands_sa",
+    "bestand": "puig_brands_sa.json",
+    "bedrijf": "PUIG BRANDS S.A.",
+    "ticker": "PUIG",
+    "beurs": "IBEX 35",
+    "sector": "",
+    "land": "",
+    "koers": "",
+    "oordeel": "HOLD",
+    "fair_value": "",
+    "upside": "",
+    "datum_analyse": "12 maart 2026"
+  },
+  {
+    "id": "wawi",
+    "bestand": "wawi.json",
+    "bedrijf": "WAWI",
+    "ticker": "WAWI",
+    "beurs": "Oslo Stock Exchange",
+    "sector": "Industrieel Transport & Logistiek",
+    "land": "",
+    "koers": "NOK 135",
+    "oordeel": "BUY",
+    "fair_value": "",
+    "upside": "",
+    "datum_analyse": "13 maart 2026"
+  }
+]
