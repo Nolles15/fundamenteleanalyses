@@ -2,6 +2,51 @@
   "laatste_update": "2026-03-21",
   "companies": [
     {
+      "ticker": "HEIJM",
+      "naam": "Koninklijke Heijmans N.V.",
+      "sector": "Industrie — Bouw & Infrastructuur",
+      "exchange": "Euronext Amsterdam",
+      "koers": 70.4,
+      "valuta": "EUR",
+      "fair_value_basis": 81,
+      "upside_pct": 15,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 27,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21",
+      "domein": "heijmans.nl"
+    },
+    {
+      "ticker": "KPL",
+      "naam": "Kino Polska TV Spółka Akcyjna",
+      "sector": "Media & Entertainment",
+      "exchange": "Warsaw Stock Exchange (GPW)",
+      "koers": 25.0,
+      "valuta": "PLN",
+      "fair_value_basis": 40,
+      "upside_pct": 60,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 34,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21",
+      "domein": "kinopolska.pl"
+    },
+    {
+      "ticker": "PZU",
+      "naam": "Powszechny Zakład Ubezpieczeń SA",
+      "sector": "Financiële diensten",
+      "exchange": "Warsaw Stock Exchange (GPW)",
+      "koers": 64.9,
+      "valuta": "PLN",
+      "fair_value_basis": 71.0,
+      "upside_pct": 9,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 38,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-21",
+      "domein": "pzu.pl"
+    },
+    {
       "ticker": "WAWI",
       "naam": "Wallenius Wilhelmsen ASA",
       "sector": "Industrieel Transport & Logistiek",
@@ -19,7 +64,7 @@
     {
       "ticker": "PUIG",
       "naam": "Puig Brands, S.A.",
-      "sector": "Consumer Staples â€” Personal Products",
+      "sector": "Consumer Staples — Personal Products",
       "exchange": "BME",
       "koers": 14.93,
       "valuta": "EUR",
@@ -34,7 +79,7 @@
     {
       "ticker": "ARP",
       "naam": "Arctic Paper S.A.",
-      "sector": "Basismaterialen â€” Papier & Verpakking",
+      "sector": "Basismaterialen — Papier & Verpakking",
       "exchange": "Nasdaq Stockholm / WSE",
       "koers": 8.0,
       "valuta": "PLN",
@@ -49,7 +94,7 @@
     {
       "ticker": "ADYEN",
       "naam": "Adyen N.V.",
-      "sector": "FinanciÃ«le Technologie",
+      "sector": "Financiële Technologie",
       "exchange": "Euronext Amsterdam (AEX)",
       "koers": 911.5,
       "valuta": "EUR",

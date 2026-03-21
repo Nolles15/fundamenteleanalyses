@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "ticker": "KPL",
+    "exchange": "Warsaw Stock Exchange (GPW)",
+    "naam": "Kino Polska TV Spółka Akcyjna",
+    "sector": "Media & Entertainment",
+    "segment": "Thematische Televisie & Contentdistributie",
+    "koers": 25.00,
+    "valuta": "PLN",
+    "peildatum": "2026-03-21",
+    "marktkapitalisatie": "PLN ~478 mln (~EUR 112 mln)"
+  },
+  "executive_summary": {
+    "kernthese": "Kino Polska TV SA is Polen's grootste thematische filmzender met het unieke Stopklatka-kanaal (enige vrije filmzender Polen) en het internationale FilmBox-platform. In 2024 groeide de nettowinst met 28,6% tot PLN 66,7 mln bij een EBITDA-marge van 47,7%. Het aandeel noteert op slechts 7,1x de winst bij een nettokaspositie, wat een DCF-basiswaarde van PLN 40 impliceert (+60% upside). Narrow moat via contentkatalogus en Stopklatka free-to-air positie.",
+    "oordeel": "KOOP",
+    "koers": 25.00,
+    "valuta": "PLN",
+    "fair_value_basis": 40,
+    "upside_pct": 60,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 26, "upside_pct": 4 },
+      { "scenario": "Basis", "fair_value": 40, "upside_pct": 60 },
+      { "scenario": "Optimistisch", "fair_value": 56, "upside_pct": 124 }
+    ],
+    "grootste_kans": "Stopklatka-integratievoordelen + groei Poolse advertentiemarkt + FilmBox internationale expansie",
+    "grootste_risico": "Structurele druk lineaire TV door streaming (Netflix, Disney+, Max) op lange termijn"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Kino Polska TV SA exploiteert thematische televisiekanalen in Polen (Stopklatka, Zoom TV, Kino Polska, Kino Polska Muzyka) en internationaal (FilmBox-familie in CEE). Inkomsten via TV-reclame, contentlicenties en distributieabonnementen.",
+    "personeel": 233,
+    "landen": 8,
+    "segmenten": [
+      { "naam": "Stopklatka & Zoom TV reclame", "omzet_pct": 29, "beschrijving": "Free-to-air kanalen; nationale advertentie-inkomsten Polen" },
+      { "naam": "FilmBox & thematische kanalen", "omzet_pct": 51, "beschrijving": "Betaald/kabel; internationale distributie CEE" },
+      { "naam": "Contentlicenties & overig", "omzet_pct": 20, "beschrijving": "Programmaverkoop, licenties, co-producties" }
+    ],
+    "aandeelhouders": [
+      { "naam": "SPI International BV (Canal+ Group)", "pct": 65.99, "type": "Controlerend" },
+      { "naam": "Free float (institutioneel + particulier)", "pct": 34.01, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "PLN mln",
+    "resultatenrekening": [
+      { "jaar": 2020, "omzet": 235, "omzet_groei_pct": null, "ebitda": 88, "ebitda_marge_pct": 37.4, "nettowinst": 33, "nettomarge_pct": 14.0, "eps": 1.73 },
+      { "jaar": 2021, "omzet": 255, "omzet_groei_pct": 8.5, "ebitda": 99, "ebitda_marge_pct": 38.8, "nettowinst": 38, "nettomarge_pct": 14.9, "eps": 1.99 },
+      { "jaar": 2022, "omzet": 270, "omzet_groei_pct": 5.9, "ebitda": 110, "ebitda_marge_pct": 40.7, "nettowinst": 43, "nettomarge_pct": 15.9, "eps": 2.25 },
+      { "jaar": 2023, "omzet": 294.2, "omzet_groei_pct": 9.0, "ebitda": 124.1, "ebitda_marge_pct": 42.2, "nettowinst": 51.9, "nettomarge_pct": 17.6, "eps": 2.72 },
+      { "jaar": 2024, "omzet": 315.5, "omzet_groei_pct": 7.2, "ebitda": 150.4, "ebitda_marge_pct": 47.7, "nettowinst": 66.7, "nettomarge_pct": 21.1, "eps": 3.50 }
+    ],
+    "kasstromen": [
+      { "jaar": 2020, "fcf": 28, "fcf_per_aandeel": 1.47 },
+      { "jaar": 2021, "fcf": 35, "fcf_per_aandeel": 1.83 },
+      { "jaar": 2022, "fcf": 40, "fcf_per_aandeel": 2.09 },
+      { "jaar": 2023, "fcf": 48, "fcf_per_aandeel": 2.51 },
+      { "jaar": 2024, "fcf": 55, "fcf_per_aandeel": 2.88 }
+    ],
+    "balans": [
+      { "jaar": 2022, "nettoschuld": -10, "eigen_vermogen": 270, "debt_ebitda": null },
+      { "jaar": 2023, "nettoschuld": -15, "eigen_vermogen": 298.1, "debt_ebitda": null },
+      { "jaar": 2024, "nettoschuld": -20, "eigen_vermogen": 335, "debt_ebitda": null }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2024,
+      "roce_pct": null,
+      "roe_pct": 24.5,
+      "roic_pct": 22.0,
+      "roa_pct": 15.0
+    },
+    "waardering": {
+      "pe": 7.1,
+      "ev_ebitda": 3.0,
+      "p_fcf": 8.7,
+      "fcf_yield_pct": 11.5,
+      "p_b": 1.43,
+      "ev_omzet": null,
+      "dividendrendement_pct": 2.5
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "Kino Polska heeft een smalle economische slotgracht via haar unieke Poolse filmcatalogus en de exclusieve positie van Stopklatka als enige vrij-ontvangbare filmzender in Polen. Canal+ Group-backing versterkt de moat via internationale content en distributie. Kwetsbaar voor versnelde streaming-adoptie op lange termijn.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Unieke Poolse filmcatalogus; Stopklatka free-to-air licentie; merkbekendheid" },
+      { "naam": "Overstapkosten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Lage kijkersoverstapkosten; hogere overstapkosten voor adverteerders via CPM-contracten" },
+      { "naam": "Netwerkeffecten", "oordeel": "AFWEZIG", "score": 1, "toelichting": "Lineaire TV kent geen klassieke netwerkeffecten" },
+      { "naam": "Kostenvoordeel", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Schaalvoordeel contentlicenties; geamortiseerde catalogus; lage CAPEX per kijkuur" },
+      { "naam": "Efficiënte schaal", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Niche-marktleider Poolse filmzenders; Canal+ synergieën beschermen positie" }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      { "functie": "CEO / Voorzitter RvB", "naam": "Bogusław Jan Kisielewski", "achtergrond": "Langdurige CEO; architect van multi-kanaalstrategie en Stopklatka-acquisitie" },
+      { "functie": "Directeur / COO", "naam": "Erwan Louis André Luherne", "achtergrond": "Vertegenwoordiger Canal+ Group; internationale media-expertise" }
+    ],
+    "capital_allocation": "Conservatieve capital allocation: lage schuld, voorzichtig dividend (pay-out ~18%), retentie van kasstromen voor organische groei. Stopklatka-acquisitie (2024) was strategisch meesterzet met onmiddellijk resultaat.",
+    "toelichting": "Competent en stabiel management met bewezen executie van multi-kanaalstrategie. Beperkt door Canal+ Group-structuur en beperkte publieke transparantie. Geen controverses of rode vlaggen geconstateerd."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 48,
+      "wacc_pct": 10.0,
+      "groei_fase1_pct": 4.0,
+      "terminal_groei_pct": 2.0
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 1.0, "wacc_pct": 12.0, "fair_value": 26, "upside_pct": 4 },
+      { "scenario": "Basis", "fcf_groei_pct": 4.0, "wacc_pct": 10.0, "fair_value": 40, "upside_pct": 60 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 6.0, "wacc_pct": 9.0, "fair_value": 56, "upside_pct": 124 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 4.0, "wacc_pct": 10.0, "fair_value": 40, "upside_pct": 60 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [8.5, 9.0, 9.5, 10.0, 10.5, 11.0],
+      "groei_range": [2.0, 3.0, 4.0, 5.0, 6.0],
+      "matrix": [
+        [45, 42, 39, 37, 35, 33],
+        [54, 50, 46, 42, 40, 37],
+        [67, 60, 55, 50, 46, 43],
+        [86, 76, 67, 60, 55, 50],
+        [122, 102, 87, 76, 68, 61]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 4, "max": 5, "oordeel": "Voldoet — P/E 7,1x, P/B 1,4x, nettokaspositie, lange dividendhistorie" },
+      { "framework": "Buffett / Munger", "score": 3, "max": 5, "oordeel": "Gedeeltelijk — aantrekkelijke prijs en narrow moat, maar streaming-onzekerheid" },
+      { "framework": "Peter Lynch", "score": 4, "max": 5, "oordeel": "Interessant — PEG 0,25; stalwart met heldere thesis en sterk vrije kasstroom" },
+      { "framework": "Phil Fisher", "score": 3, "max": 5, "oordeel": "Gemiddeld — hoge marges en integriteit; beperkte innovatiedynamiek" },
+      { "framework": "Magic Formula", "score": 4, "max": 5, "oordeel": "Aantrekkelijk — earnings yield 14%, ROIC 22%; top-deciel combinatie" },
+      { "framework": "Moat", "score": 3, "max": 5, "oordeel": "Narrow Moat — contentcatalogus + Stopklatka-positie; kwetsbaar voor streaming" },
+      { "framework": "Management", "score": 3, "max": 5, "oordeel": "Neutraal — bewezen executie, stabiel, beperkte transparantie via Canal+ structuur" },
+      { "framework": "Fair Value DCF", "score": 5, "max": 5, "oordeel": "Grote onderwaardering — PLN 40 vs PLN 25 (+60%)" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 5, "max": 5, "oordeel": "Identiek aan basis — geen IPO-correctie vereist" }
+    ],
+    "totaal": 34,
+    "max": 45,
+    "eindoordeel": "KOOP",
+    "samenvatting": "Kino Polska TV SA is een goedkoop gewaardeerde small-cap mediagroep met narrow moat, hoge marges (EBITDA 47,7%) en nagenoeg schuldvrije balans. P/E 7,1x en earnings yield 14% bieden een grote veiligheidsmarge. De Stopklatka-integratie is een bewezen groeidriver. DCF-basiswaarde PLN 40 impliceert +60% upside. Het primaire risico is de structurele streaming-erosie van lineaire televisie. Aanbeveling: KOOP, comfortabel instapniveau tot PLN 32."
+  }
+}

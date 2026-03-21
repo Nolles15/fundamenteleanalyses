@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "ticker": "HEIJM",
+    "exchange": "Euronext Amsterdam",
+    "naam": "Koninklijke Heijmans N.V.",
+    "sector": "Industrie",
+    "segment": "Bouw, Infrastructuur & Projectontwikkeling",
+    "koers": 70.40,
+    "valuta": "EUR",
+    "peildatum": "2026-03-21",
+    "marktkapitalisatie": "EUR 1,53 mrd"
+  },
+  "executive_summary": {
+    "kernthese": "Heijmans is een van de grootste Nederlandse bouw- en infragroepen, exclusief gericht op de Nederlandse markt (Wonen, Werken, Verbinden). Record resultaten in 2024: omzet +22% tot EUR 2,584 mrd, nettowinst +50% tot EUR 90 mln, nettoschuld nagenoeg nul. ROE 25,3% en ROIC 19% zijn uitzonderlijk voor de sector. Echter: P/E 21,5x en P/B 4,18x bieden onvoldoende veiligheidsmarge voor een cyclische bouwer zonder structurele moat. DCF-basiswaarde EUR 81 (+15% upside). Oordeel: HOLD; instapniveau bij correctie naar EUR 55–60.",
+    "oordeel": "HOLD",
+    "koers": 70.40,
+    "valuta": "EUR",
+    "fair_value_basis": 81,
+    "upside_pct": 15,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 50, "upside_pct": -29 },
+      { "scenario": "Basis", "fair_value": 81, "upside_pct": 15 },
+      { "scenario": "Optimistisch", "fair_value": 116, "upside_pct": 65 }
+    ],
+    "grootste_kans": "Structureel woningtekort Nederland + EBITDA-margegroei naar 8%+ in 2025",
+    "grootste_risico": "Cyclische bouwsector + stikstofproblematiek + premiumwaardering biedt beperkte veiligheidsmarge"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Koninklijke Heijmans N.V. is een Nederlands bouwbedrijf (opgericht 1923, beursgenoteerd 1993) actief in woningbouw (Wonen), utiliteitsbouw (Werken) en GWW-infrastructuur (Verbinden), uitsluitend op de Nederlandse markt.",
+    "personeel": 5844,
+    "landen": 1,
+    "segmenten": [
+      { "naam": "Wonen (Housing)", "omzet_pct": 34, "beschrijving": "Residentiële projectontwikkeling; koopwoningen, huur, renovatie" },
+      { "naam": "Werken (Working)", "omzet_pct": 33, "beschrijving": "Utiliteitsprojecten; kantoren, zorg, onderwijs, industrie" },
+      { "naam": "Verbinden (Infra)", "omzet_pct": 33, "beschrijving": "GWW-infrastructuur; wegen, bruggen, energie, water" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Waterbird B.V.", "pct": 8.6, "type": "Strategisch" },
+      { "naam": "DFA International Small Cap Value", "pct": 4.0, "type": "Institutioneel" },
+      { "naam": "Overige institutioneel + retail", "pct": 87.4, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "EUR mln",
+    "resultatenrekening": [
+      { "jaar": 2020, "omzet": 1746, "omzet_groei_pct": null, "ebitda": 85, "ebitda_marge_pct": 4.9, "nettowinst": 30, "nettomarge_pct": 1.7, "eps": 1.09 },
+      { "jaar": 2021, "omzet": 1800, "omzet_groei_pct": 3.1, "ebitda": 100, "ebitda_marge_pct": 5.6, "nettowinst": 45, "nettomarge_pct": 2.5, "eps": 1.64 },
+      { "jaar": 2022, "omzet": 2000, "omzet_groei_pct": 11.1, "ebitda": 120, "ebitda_marge_pct": 6.0, "nettowinst": 55, "nettomarge_pct": 2.8, "eps": 2.00 },
+      { "jaar": 2023, "omzet": 2117, "omzet_groei_pct": 5.9, "ebitda": 147, "ebitda_marge_pct": 6.9, "nettowinst": 60, "nettomarge_pct": 2.8, "eps": 2.18 },
+      { "jaar": 2024, "omzet": 2584, "omzet_groei_pct": 22.1, "ebitda": 199, "ebitda_marge_pct": 7.7, "nettowinst": 90, "nettomarge_pct": 3.5, "eps": 3.28 }
+    ],
+    "kasstromen": [
+      { "jaar": 2020, "fcf": 50, "fcf_per_aandeel": 1.82 },
+      { "jaar": 2021, "fcf": 65, "fcf_per_aandeel": 2.37 },
+      { "jaar": 2022, "fcf": 90, "fcf_per_aandeel": 3.28 },
+      { "jaar": 2023, "fcf": 120, "fcf_per_aandeel": 4.37 },
+      { "jaar": 2024, "fcf": 166, "fcf_per_aandeel": 6.05 }
+    ],
+    "balans": [
+      { "jaar": 2022, "nettoschuld": 150, "eigen_vermogen": 310, "debt_ebitda": 1.3 },
+      { "jaar": 2023, "nettoschuld": 137, "eigen_vermogen": 384, "debt_ebitda": 0.9 },
+      { "jaar": 2024, "nettoschuld": 10, "eigen_vermogen": 463, "debt_ebitda": 0.05 }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2024,
+      "roce_pct": null,
+      "roe_pct": 25.3,
+      "roic_pct": 19.0,
+      "roa_pct": 6.6
+    },
+    "waardering": {
+      "pe": 21.5,
+      "ev_ebitda": 7.7,
+      "p_fcf": 11.6,
+      "fcf_yield_pct": 8.6,
+      "p_b": 4.18,
+      "ev_omzet": null,
+      "dividendrendement_pct": 2.3
+    }
+  },
+  "moat": {
+    "oordeel": "NO MOAT",
+    "toelichting": "Constructie is een commodity-achtige sector waar projecten via aanbesteding worden gegund. Heijmans heeft geen structureel verdedigbaar concurrentievoordeel. De sterke ROE/ROIC is cyclisch gedreven, niet door een duurzame moat. Narrow moat-elementen in complexe woningontwikkeling (twee-petten model) bieden tijdelijk hogere marges.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "BEPERKT", "score": 2, "toelichting": "Koninklijk predicaat; reputatie kwaliteit; geen patenten of merken die klanten vasthouden" },
+      { "naam": "Overstapkosten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Relaties met gemeenten/Rijkswaterstaat geven enige stickiness; aanbestedingen overwegend competitief" },
+      { "naam": "Netwerkeffecten", "oordeel": "AFWEZIG", "score": 1, "toelichting": "Bouwsector kent geen netwerkeffecten" },
+      { "naam": "Kostenvoordeel", "oordeel": "BEPERKT", "score": 2, "toelichting": "Schaalvoordeel inkoop; innovatieve aanpak verlaagt kosten; begrensd voor sectorniveau" },
+      { "naam": "Efficiënte schaal", "oordeel": "BEPERKT", "score": 2, "toelichting": "Niche in complexe woningontwikkeling beschermt marge; geen klassieke sector-niche" }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      { "functie": "CEO / Voorzitter RvB", "naam": "Ton Hillen", "achtergrond": "Sinds 1992 bij Heijmans; CEO per 2016; architect van Nederland-only strategie" },
+      { "functie": "CFO", "naam": "Gavin van Boekel", "achtergrond": "Benoemd 2021; 21+ jaar Unilever; lid Curatorium Register Controllers VU Amsterdam" }
+    ],
+    "capital_allocation": "Disciplinaire schuldaflossing (EUR 300 mln → EUR 10 mln nettoschuld in 4 jaar); groeiend dividend (EUR 0,50 → EUR 1,64); Van Wanrooij-acquisitie 2022 succesvol geïntegreerd.",
+    "toelichting": "Bewezen track record na heroriëntatie 2016. Ton Hillen stuurde Heijmans terug naar consistente winstgevendheid via focus op Nederland en selectief tenderbeleid. Gavin van Boekel bracht financiële discipline vanuit FMCG. Geen controverses."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 150,
+      "wacc_pct": 9.5,
+      "groei_fase1_pct": 4.0,
+      "terminal_groei_pct": 2.0
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 1.0, "wacc_pct": 12.0, "fair_value": 50, "upside_pct": -29 },
+      { "scenario": "Basis", "fcf_groei_pct": 4.0, "wacc_pct": 9.5, "fair_value": 81, "upside_pct": 15 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 6.0, "wacc_pct": 8.5, "fair_value": 116, "upside_pct": 65 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 4.0, "wacc_pct": 9.5, "fair_value": 81, "upside_pct": 15 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [8.5, 9.0, 9.5, 10.0, 10.5, 11.0],
+      "groei_range": [2.0, 3.0, 4.0, 5.0, 6.0],
+      "matrix": [
+        [73, 68, 63, 59, 56, 53],
+        [87, 80, 73, 68, 64, 60],
+        [107, 97, 88, 80, 74, 69],
+        [139, 122, 108, 97, 88, 81],
+        [197, 164, 141, 123, 109, 99]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 2, "max": 5, "oordeel": "Voldoet niet — P/E 21,5x en P/B 4,18x ruim boven Graham-drempels" },
+      { "framework": "Buffett / Munger", "score": 3, "max": 5, "oordeel": "Gedeeltelijk — goed management en balans, geen moat, cyclisch, premiumprijs" },
+      { "framework": "Peter Lynch", "score": 3, "max": 5, "oordeel": "Neutraal — helder verhaal; PEG genormaliseerd 1,43x; cyclische timing kritisch" },
+      { "framework": "Phil Fisher", "score": 3, "max": 5, "oordeel": "Gemiddeld — integriteit en strategie sterk; marges en innovatie beperkt" },
+      { "framework": "Magic Formula", "score": 3, "max": 5, "oordeel": "Gemiddeld — ROIC 19% uitstekend; earnings yield 5,9% matig door premiumwaardering" },
+      { "framework": "Moat", "score": 2, "max": 5, "oordeel": "No Moat — bouwsector is commodity; geen structureel verdedigbaar concurrentievoordeel" },
+      { "framework": "Management", "score": 4, "max": 5, "oordeel": "Sterk — proven track record, strategische coherentie, solide financiële discipline" },
+      { "framework": "Fair Value DCF", "score": 3, "max": 5, "oordeel": "Beperkte onderwaardering — EUR 81 vs EUR 70,40 (+15%); te smal voor cyclische sector" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 4, "max": 5, "oordeel": "Identiek aan basis — geen IPO-correctie vereist; 30+ jaar beurshistorie" }
+    ],
+    "totaal": 27,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "Heijmans is operationeel op zijn sterkst in decennia met record-omzet, -winst en nagenoeg nul schuld. ROE 25,3% en ROIC 19% zijn indrukwekkend. Maar de premiumwaardering van P/E 21,5x en P/B 4,18x biedt onvoldoende veiligheidsmarge voor een cyclische bouwer zonder moat. DCF-basiswaarde EUR 81 impliceert slechts 15% upside. Aanbeveling: HOLD bij huidige koers; comfortabel instapniveau bij correctie naar EUR 55–60."
+  }
+}

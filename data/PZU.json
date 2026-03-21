@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "ticker": "PZU",
+    "exchange": "Warsaw Stock Exchange (GPW)",
+    "naam": "Powszechny Zakład Ubezpieczeń SA",
+    "sector": "Financiële diensten",
+    "segment": "Verzekeringen & Bankieren",
+    "koers": 64.90,
+    "valuta": "PLN",
+    "peildatum": "2026-03-21",
+    "marktkapitalisatie": "PLN 56,15 mrd (~EUR 13,1 mrd)"
+  },
+  "executive_summary": {
+    "kernthese": "PZU SA is de grootste verzekeraar van Polen en Centraal-Europa met een dominante marktpositie (>30% marktaandeel), wide moat op basis van merkgeschiedenis van 220 jaar en schaalvoordelen, en een Solvency II ratio van 255%. Het aandeel noteert op P/E 8,4x met dividendrendement 7,1%. De Pekao-Alior bancaire fusie creëert een katalysator van PLN 20 mrd kapitaalvrijgave.",
+    "oordeel": "KOOP",
+    "koers": 64.90,
+    "valuta": "PLN",
+    "fair_value_basis": 71.0,
+    "upside_pct": 9,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 45.5, "upside_pct": -30 },
+      { "scenario": "Basis", "fair_value": 71.0, "upside_pct": 9 },
+      { "scenario": "Optimistisch", "fair_value": 111.8, "upside_pct": 72 }
+    ],
+    "grootste_kans": "Kapitaalvrijgave PLN 20 mrd via Pekao-fusie + structurele groei Poolse verzekeringsmarkt",
+    "grootste_risico": "Politiek risico 34% staatseigendom en suboptimale capital allocation op overheidsverzoek"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "PZU SA is Polen's grootste financieel conglomeraat: #1 verzekeraar (leven + schade) met 22 miljoen klanten, strategische bankbelangen in Pekao en Alior Bank, en aanwezigheid in Baltische staten en Oekraïne.",
+    "personeel": 38000,
+    "landen": 8,
+    "segmenten": [
+      { "naam": "Schadeverzekeringen Polen", "omzet_pct": 40, "beschrijving": "Motorrijtuigen, eigendommen, aansprakelijkheid" },
+      { "naam": "Levensverzekeringen Polen", "omzet_pct": 25, "beschrijving": "Individuele en groepslevensverzekering" },
+      { "naam": "Corporate & SME", "omzet_pct": 15, "beschrijving": "Bedrijfsverzekeringen, arbeidsongeschiktheid" },
+      { "naam": "Bankieren (Pekao + Alior)", "omzet_pct": 12, "beschrijving": "Strategische belangen; dividendinkomsten" },
+      { "naam": "Internationaal", "omzet_pct": 8, "beschrijving": "Baltics, Oekraïne" }
+    ],
+    "aandeelhouders": [
+      { "naam": "State Treasury (Poolse overheid)", "pct": 34.19, "type": "Controlerend" },
+      { "naam": "Allianz Asset Management GmbH", "pct": 5.30, "type": "Institutioneel" },
+      { "naam": "Nationale-Nederlanden PTE SA", "pct": 5.00, "type": "Institutioneel" },
+      { "naam": "Overige institutioneel + publiek", "pct": 55.51, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "PLN mln",
+    "resultatenrekening": [
+      { "jaar": 2021, "omzet": 38752, "omzet_groei_pct": null, "ebitda": 8563, "ebitda_marge_pct": 22.1, "nettowinst": 3336, "nettomarge_pct": 8.6, "eps": 3.86 },
+      { "jaar": 2022, "omzet": 43970, "omzet_groei_pct": 13.5, "ebitda": 14497, "ebitda_marge_pct": 33.0, "nettowinst": 3781, "nettomarge_pct": 8.6, "eps": 4.38 },
+      { "jaar": 2023, "omzet": 58636, "omzet_groei_pct": 33.4, "ebitda": 26036, "ebitda_marge_pct": 44.4, "nettowinst": 5780, "nettomarge_pct": 9.9, "eps": 6.69 },
+      { "jaar": 2024, "omzet": 60994, "omzet_groei_pct": 4.0, "ebitda": 25130, "ebitda_marge_pct": 41.2, "nettowinst": 5342, "nettomarge_pct": 8.8, "eps": 6.19 },
+      { "jaar": 2025, "omzet": 63322, "omzet_groei_pct": 3.8, "ebitda": 26896, "ebitda_marge_pct": 42.5, "nettowinst": 6699, "nettomarge_pct": 10.6, "eps": 7.76 }
+    ],
+    "kasstromen": [
+      { "jaar": 2021, "fcf": 6157, "fcf_per_aandeel": null },
+      { "jaar": 2022, "fcf": 20664, "fcf_per_aandeel": null },
+      { "jaar": 2023, "fcf": 26953, "fcf_per_aandeel": null },
+      { "jaar": 2024, "fcf": 26951, "fcf_per_aandeel": null },
+      { "jaar": 2025, "fcf": 9011, "fcf_per_aandeel": null }
+    ],
+    "balans": [
+      { "jaar": 2021, "nettoschuld": null, "eigen_vermogen": 15800, "debt_ebitda": null },
+      { "jaar": 2022, "nettoschuld": null, "eigen_vermogen": 16200, "debt_ebitda": null },
+      { "jaar": 2023, "nettoschuld": null, "eigen_vermogen": 18500, "debt_ebitda": null },
+      { "jaar": 2024, "nettoschuld": null, "eigen_vermogen": 21700, "debt_ebitda": null },
+      { "jaar": 2025, "nettoschuld": null, "eigen_vermogen": 22400, "debt_ebitda": null }
+    ],
+    "rendementsindicatoren": {
+      "jaar": 2025,
+      "roce_pct": null,
+      "roe_pct": 30.3,
+      "roic_pct": 12.0,
+      "roa_pct": 1.3
+    },
+    "waardering": {
+      "pe": 8.4,
+      "ev_ebitda": null,
+      "p_fcf": 8.0,
+      "fcf_yield_pct": 12.5,
+      "p_b": 2.5,
+      "ev_omzet": null,
+      "dividendrendement_pct": 7.1
+    }
+  },
+  "moat": {
+    "oordeel": "WIDE MOAT",
+    "toelichting": "PZU heeft een brede moat gebouwd op 220 jaar merkgeschiedenis, dominante marktschaal in Polen (#1 in alle subsegmenten) en hoge switching costs in levens- en pensioenproducten. Geen Europese concurrent heeft een vergelijkbare positie in de Poolse markt.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "STERK", "score": 5, "toelichting": "#1 verzekeringsmerk Polen; 220 jaar historie; staatsgarantie-perceptie" },
+      { "naam": "Overstapkosten", "oordeel": "AANWEZIG", "score": 3, "toelichting": "Hoog in leven/pensioen; lager in schade" },
+      { "naam": "Netwerkeffecten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Distributienetwerk; bancassurance via Pekao" },
+      { "naam": "Kostenvoordeel", "oordeel": "STERK", "score": 4, "toelichting": "Grootste schaal Polen; laagste kosten per polis" },
+      { "naam": "Efficiënte schaal", "oordeel": "STERK", "score": 4, "toelichting": ">30% marktaandeel in vrijwel alle subsegmenten" }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      { "functie": "CEO", "naam": "Artur Olech", "achtergrond": "Aangesteld 2024; voormalig CEO PZU Życie; ontwerper Pekao-Alior fusie" },
+      { "functie": "CFO", "naam": "Tomasz Kulik", "achtergrond": "Meerdere jaren CFO bij PZU; solide financieel profiel" }
+    ],
+    "capital_allocation": "Consistent dividend (payout ~70-80%); PLN 3,86 mrd in 2025. Pekao-Alior fusie creëert PLN 20 mrd kapitaalvrijgave. Staatsinvloed leidt soms tot suboptimale allocatie.",
+    "toelichting": "Strategisch competent management met duidelijke fusie-agenda. Staatsinvloed is structurele beperking. Consistente communicatie en geen controverses."
+  },
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 4470,
+      "wacc_pct": 10.5,
+      "groei_fase1_pct": 4.0,
+      "terminal_groei_pct": 4.0
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 2.0, "wacc_pct": 12.0, "fair_value": 45.5, "upside_pct": -30 },
+      { "scenario": "Basis", "fcf_groei_pct": 4.0, "wacc_pct": 10.5, "fair_value": 70.9, "upside_pct": 9 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 5.5, "wacc_pct": 9.5, "fair_value": 111.8, "upside_pct": 72 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 4.0, "wacc_pct": 10.5, "fair_value": 70.9, "upside_pct": 9 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [8.5, 9.0, 9.5, 10.0, 10.5, 11.0],
+      "groei_range": [2.0, 3.0, 4.0, 5.0, 6.0],
+      "matrix": [
+        [69, 62, 57, 52, 48, 45],
+        [83, 74, 67, 60, 55, 50],
+        [108, 94, 83, 74, 67, 60],
+        [152, 129, 111, 97, 85, 75],
+        [259, 208, 172, 144, 122, 105]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 4, "max": 5, "oordeel": "Gedeeltelijk — P/E ver onder 15; P/B boven drempel (sector-eigenheid)" },
+      { "framework": "Buffett / Munger", "score": 4, "max": 5, "oordeel": "Gedeeltelijk tot Voldoet — wide moat, redelijke prijs" },
+      { "framework": "Peter Lynch", "score": 5, "max": 5, "oordeel": "Interessant — PEG 0,34; stalwart met duidelijk verhaal" },
+      { "framework": "Phil Fisher", "score": 4, "max": 5, "oordeel": "Gemiddeld tot Sterk — groei Polen + marge-bescherming" },
+      { "framework": "Magic Formula", "score": 5, "max": 5, "oordeel": "Aantrekkelijk — hoge earnings yield + hoog ROE" },
+      { "framework": "Moat", "score": 5, "max": 5, "oordeel": "Wide Moat — dominant merk + schaalvoordeel" },
+      { "framework": "Management", "score": 3, "max": 5, "oordeel": "Neutraal — bekwaam maar staatsinvloed begrenzend" },
+      { "framework": "Fair Value DDM", "score": 4, "max": 5, "oordeel": "Onderwaardering — PLN 71-85 vs PLN 64,9 (+9% tot +31%)" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 4, "max": 5, "oordeel": "Gelijk aan basis — geen IPO-correctie vereist" }
+    ],
+    "totaal": 38,
+    "max": 45,
+    "eindoordeel": "KOOP",
+    "samenvatting": "PZU SA is een uitzonderlijk aantrekkelijke wide-moat verzekeraar op P/E 8,4x met 7,1% dividendrendement en PEG 0,34. Dominante positie in de groeiende Poolse markt, Solvency II 255% en PLN 20 mrd kapitaalvrijgave via Pekao-fusie zijn sterke troeven. Politiek risico van 34% staatseigendom is het primaire voorbehoud. Aanbeveling: KOOP, comfortabel instapniveau tot PLN 70."
+  }
+}
