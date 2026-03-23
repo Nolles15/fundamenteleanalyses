@@ -1,5 +1,5 @@
 {
-  "laatste_update": "2026-03-21",
+  "laatste_update": "2026-03-23",
   "companies": [
     {
       "ticker": "ADYEN",
@@ -36,30 +36,32 @@
       "naam": "Arctic Paper S.A.",
       "sector": "Basismaterialen — Papier & Verpakking",
       "exchange": "Nasdaq Stockholm / WSE",
-      "koers": 8.0,
+      "koers": 30.41,
       "valuta": "PLN",
       "fair_value_basis": 19.0,
-      "upside_pct": 137,
+      "upside_pct": -37.5,
       "oordeel": "HOLD",
       "scorekaart_totaal": 25,
       "scorekaart_max": 45,
       "peildatum": "2026-03-17",
-      "domein": "arcticpaper.com"
+      "domein": "arcticpaper.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "EQNR",
       "naam": "Equinor ASA",
       "sector": "Energie",
       "exchange": "Oslo Børs (OSE) / NYSE",
-      "koers": 398.6,
+      "koers": 41.6,
       "valuta": "NOK",
       "fair_value_basis": 412,
-      "upside_pct": 3,
+      "upside_pct": 890.4,
       "oordeel": "HOLD",
       "scorekaart_totaal": 31,
       "scorekaart_max": 45,
       "peildatum": "2026-03-21",
-      "domein": "equinor.com"
+      "domein": "equinor.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "HEIJM",
@@ -126,15 +128,16 @@
       "naam": "Puig Brands, S.A.",
       "sector": "Consumer Staples — Personal Products",
       "exchange": "BME",
-      "koers": 14.93,
+      "koers": 14.86,
       "valuta": "EUR",
       "fair_value_basis": 21.5,
-      "upside_pct": 44,
+      "upside_pct": 44.7,
       "oordeel": "KOOP",
       "scorekaart_totaal": 34,
       "scorekaart_max": 45,
       "peildatum": "2026-03-13",
-      "domein": "puig.com"
+      "domein": "puig.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "PZU",
@@ -156,15 +159,16 @@
       "naam": "Wallenius Wilhelmsen ASA",
       "sector": "Industrieel Transport & Logistiek",
       "exchange": "OSL",
-      "koers": 135,
+      "koers": 115.2,
       "valuta": "NOK",
       "fair_value_basis": 221,
-      "upside_pct": 64,
+      "upside_pct": 91.8,
       "oordeel": "KOOP",
       "scorekaart_totaal": 35,
       "scorekaart_max": 45,
       "peildatum": "2026-03-13",
-      "domein": "walleniuswilhelmsen.com"
+      "domein": "walleniuswilhelmsen.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "WIPRO",
