@@ -7,7 +7,7 @@
     "segment": "Specialty Farmacie / Zeldzame Ziekten",
     "koers": 1.362,
     "valuta": "EUR",
-    "peildatum": "2026-03-21",
+    "peildatum": "2026-03-22",
     "marktkapitalisatie": "ca. EUR 851 mln (~625 mln aandelen)"
   },
   "executive_summary": {
@@ -16,11 +16,23 @@
     "koers": 1.362,
     "valuta": "EUR",
     "fair_value_basis": 1.82,
-    "upside_pct": 34,
+    "upside_pct": 33.6,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 1.31, "upside_pct": -4 },
-      { "scenario": "Basis",         "fair_value": 1.82, "upside_pct": 34 },
-      { "scenario": "Optimistisch",  "fair_value": 2.39, "upside_pct": 75 }
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 1.31,
+        "upside_pct": -3.8
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 1.82,
+        "upside_pct": 33.6
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 2.39,
+        "upside_pct": 75.5
+      }
     ],
     "grootste_kans": "Joenja indicatie-uitbreiding (Phase II readouts H2 2026) + structureel stijgende FCF-marge",
     "grootste_risico": "RUCONEST-concentratie (84% omzet) bij toenemende orale concurrentie en patentverlopen na 2028"
@@ -30,38 +42,152 @@
     "personeel": 375,
     "landen": null,
     "segmenten": [
-      { "naam": "RUCONEST", "omzet_pct": 84, "beschrijving": "Conestat alfa infuus voor hereditair angio-oedeem; FDA+EMA goedgekeurd; $317,9 mln omzet 2025" },
-      { "naam": "Joenja (leniolisib)", "omzet_pct": 16, "beschrijving": "Orale PI3Kδ-remmer voor APDS 12+ jaar; FDA-goedgekeurd VS; $58,2 mln omzet 2025" }
+      {
+        "naam": "RUCONEST",
+        "omzet_pct": 84,
+        "beschrijving": "Conestat alfa infuus voor hereditair angio-oedeem; FDA+EMA goedgekeurd; $317,9 mln omzet 2025"
+      },
+      {
+        "naam": "Joenja (leniolisib)",
+        "omzet_pct": 16,
+        "beschrijving": "Orale PI3Kδ-remmer voor APDS 12+ jaar; FDA-goedgekeurd VS; $58,2 mln omzet 2025"
+      }
     ],
     "aandeelhouders": [
-      { "naam": "JP Morgan Chase & Co.", "pct": 6.18, "type": "Institutioneel" },
-      { "naam": "Barclays Plc", "pct": 5.00, "type": "Institutioneel" },
-      { "naam": "Capital Ventures International", "pct": 3.84, "type": "Institutioneel" },
-      { "naam": "Overig institutioneel & publiek", "pct": 84.98, "type": "Publiek" }
+      {
+        "naam": "JP Morgan Chase & Co.",
+        "pct": 6.18,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Barclays Plc",
+        "pct": 5.0,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Capital Ventures International",
+        "pct": 3.84,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Overig institutioneel & publiek",
+        "pct": 84.98,
+        "type": "Publiek"
+      }
     ]
   },
   "financieel": {
     "valuta_label": "USD mln",
     "resultatenrekening": [
-      { "jaar": 2021, "omzet": 198.9, "omzet_groei_pct": null, "ebitda": 30.4, "ebitda_marge_pct": 15.3, "nettowinst": 16.0, "nettomarge_pct": 8.0, "eps": 0.023 },
-      { "jaar": 2022, "omzet": 205.6, "omzet_groei_pct": 3.4, "ebitda": 17.1, "ebitda_marge_pct": 8.3, "nettowinst": 13.7, "nettomarge_pct": 6.7, "eps": 0.019 },
-      { "jaar": 2023, "omzet": 245.3, "omzet_groei_pct": 19.3, "ebitda": -15.3, "ebitda_marge_pct": -6.2, "nettowinst": -10.5, "nettomarge_pct": -4.3, "eps": -0.016 },
-      { "jaar": 2024, "omzet": 297.2, "omzet_groei_pct": 21.2, "ebitda": 3.2, "ebitda_marge_pct": 1.1, "nettowinst": -11.8, "nettomarge_pct": -4.0, "eps": -0.018 },
-      { "jaar": 2025, "omzet": 376.1, "omzet_groei_pct": 26.6, "ebitda": 43.5, "ebitda_marge_pct": 11.6, "nettowinst": 2.5, "nettomarge_pct": 0.7, "eps": 0.004 }
+      {
+        "jaar": 2021,
+        "omzet": 198.9,
+        "omzet_groei_pct": null,
+        "ebitda": 30.4,
+        "ebitda_marge_pct": 15.3,
+        "nettowinst": 16.0,
+        "nettomarge_pct": 8.0,
+        "eps": 0.023
+      },
+      {
+        "jaar": 2022,
+        "omzet": 205.6,
+        "omzet_groei_pct": 3.4,
+        "ebitda": 17.1,
+        "ebitda_marge_pct": 8.3,
+        "nettowinst": 13.7,
+        "nettomarge_pct": 6.7,
+        "eps": 0.019
+      },
+      {
+        "jaar": 2023,
+        "omzet": 245.3,
+        "omzet_groei_pct": 19.3,
+        "ebitda": -15.3,
+        "ebitda_marge_pct": -6.2,
+        "nettowinst": -10.5,
+        "nettomarge_pct": -4.3,
+        "eps": -0.016
+      },
+      {
+        "jaar": 2024,
+        "omzet": 297.2,
+        "omzet_groei_pct": 21.2,
+        "ebitda": 3.2,
+        "ebitda_marge_pct": 1.1,
+        "nettowinst": -11.8,
+        "nettomarge_pct": -4.0,
+        "eps": -0.018
+      },
+      {
+        "jaar": 2025,
+        "omzet": 376.1,
+        "omzet_groei_pct": 26.6,
+        "ebitda": 43.5,
+        "ebitda_marge_pct": 11.6,
+        "nettowinst": 2.5,
+        "nettomarge_pct": 0.7,
+        "eps": 0.004
+      }
     ],
     "kasstromen": [
-      { "jaar": 2021, "fcf": 27.1, "fcf_per_aandeel": 0.043 },
-      { "jaar": 2022, "fcf": 21.1, "fcf_per_aandeel": 0.034 },
-      { "jaar": 2023, "fcf": -18.7, "fcf_per_aandeel": -0.030 },
-      { "jaar": 2024, "fcf": -2.6, "fcf_per_aandeel": -0.004 },
-      { "jaar": 2025, "fcf": 54.0, "fcf_per_aandeel": 0.086 }
+      {
+        "jaar": 2021,
+        "fcf": 27.1,
+        "fcf_per_aandeel": 0.043
+      },
+      {
+        "jaar": 2022,
+        "fcf": 21.1,
+        "fcf_per_aandeel": 0.034
+      },
+      {
+        "jaar": 2023,
+        "fcf": -18.7,
+        "fcf_per_aandeel": -0.03
+      },
+      {
+        "jaar": 2024,
+        "fcf": -2.6,
+        "fcf_per_aandeel": -0.004
+      },
+      {
+        "jaar": 2025,
+        "fcf": 54.0,
+        "fcf_per_aandeel": 0.086
+      }
     ],
     "balans": [
-      { "jaar": 2021, "nettoschuld": -30.2, "eigen_vermogen": 192.9, "debt_ebitda": null },
-      { "jaar": 2022, "nettoschuld": -40.7, "eigen_vermogen": 204.6, "debt_ebitda": null },
-      { "jaar": 2023, "nettoschuld": -41.9, "eigen_vermogen": 218.8, "debt_ebitda": null },
-      { "jaar": 2024, "nettoschuld": -55.6, "eigen_vermogen": 221.1, "debt_ebitda": null },
-      { "jaar": 2025, "nettoschuld": -63.3, "eigen_vermogen": 277.1, "debt_ebitda": 2.7 }
+      {
+        "jaar": 2021,
+        "nettoschuld": -30.2,
+        "eigen_vermogen": 192.9,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2022,
+        "nettoschuld": -40.7,
+        "eigen_vermogen": 204.6,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2023,
+        "nettoschuld": -41.9,
+        "eigen_vermogen": 218.8,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2024,
+        "nettoschuld": -55.6,
+        "eigen_vermogen": 221.1,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2025,
+        "nettoschuld": -63.3,
+        "eigen_vermogen": 277.1,
+        "debt_ebitda": 2.7
+      }
     ],
     "rendementsindicatoren": {
       "jaar": 2025,
@@ -84,20 +210,61 @@
     "oordeel": "NARROW MOAT",
     "toelichting": "Pharming heeft een smalle maar reale economische slotgracht, gesteund door patenten, orphan drug exclusiviteit, switching costs in zeldzame-ziektenbehandeling en efficiënte schaal in kleine nichemarkten. Kwetsbaar na 2028 bij patentverlopen RUCONEST.",
     "categorieen": [
-      { "naam": "Immateriële activa",  "oordeel": "AANWEZIG", "score": 3, "toelichting": "Patenten RUCONEST (tot ca. 2028), Joenja-licentie (2033+), orphan drug exclusiviteit EU+VS" },
-      { "naam": "Overstapkosten",      "oordeel": "AANWEZIG", "score": 3, "toelichting": "Zeldzame-ziektenpatiënten switchen zelden; arts-patiënt protocols geven hoge switching costs" },
-      { "naam": "Netwerkeffecten",     "oordeel": "AFWEZIG",  "score": 1, "toelichting": "Geen netwerkeffecten aanwezig in farmacie" },
-      { "naam": "Kostenvoordeel",      "oordeel": "BEPERKT",  "score": 2, "toelichting": "Transgene konijnen productie proprietary maar beperkte schaalvoordelen bij kleine populaties" },
-      { "naam": "Efficiënte schaal",   "oordeel": "AANWEZIG", "score": 3, "toelichting": "HAE en APDS zijn kleine nichemarkten die slechts 2-3 commerciële spelers kunnen dragen" }
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Patenten RUCONEST (tot ca. 2028), Joenja-licentie (2033+), orphan drug exclusiviteit EU+VS"
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Zeldzame-ziektenpatiënten switchen zelden; arts-patiënt protocols geven hoge switching costs"
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AFWEZIG",
+        "score": 1,
+        "toelichting": "Geen netwerkeffecten aanwezig in farmacie"
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Transgene konijnen productie proprietary maar beperkte schaalvoordelen bij kleine populaties"
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "HAE en APDS zijn kleine nichemarkten die slechts 2-3 commerciële spelers kunnen dragen"
+      }
     ]
   },
   "management": {
     "oordeel": "NEUTRAAL",
     "personen": [
-      { "functie": "CEO", "naam": "Fabrice Chouraqui, MBA, PharmD", "achtergrond": "Aangetreden maart 2025; voormalig president Novartis USA" },
-      { "functie": "CFO", "naam": "Kenneth Lynard, EMBA", "achtergrond": "Aangetreden 1 oktober 2025" },
-      { "functie": "CMO", "naam": "Dr. Anurag Relan", "achtergrond": "Verantwoordelijk voor klinische pijplijn" },
-      { "functie": "CCO", "naam": "Leverne Marsh", "achtergrond": "Aangetreden 1 januari 2026" }
+      {
+        "functie": "CEO",
+        "naam": "Fabrice Chouraqui, MBA, PharmD",
+        "achtergrond": "Aangetreden maart 2025; voormalig president Novartis USA"
+      },
+      {
+        "functie": "CFO",
+        "naam": "Kenneth Lynard, EMBA",
+        "achtergrond": "Aangetreden 1 oktober 2025"
+      },
+      {
+        "functie": "CMO",
+        "naam": "Dr. Anurag Relan",
+        "achtergrond": "Verantwoordelijk voor klinische pijplijn"
+      },
+      {
+        "functie": "CCO",
+        "naam": "Leverne Marsh",
+        "achtergrond": "Aangetreden 1 januari 2026"
+      }
     ],
     "capital_allocation": "Hoge R&D-investeringen 2022-2024 voor Joenja-lancering; herstel FCF in 2025; geen dividend; groei-herinvestering is prioriteit",
     "toelichting": "Alle vier topmanagers zijn in 2025-2026 aangetreden. CEO-profiel (ex-Novartis USA) is uitzonderlijk sterk. Te vroeg voor definitief STERK-oordeel."
@@ -110,34 +277,151 @@
       "terminal_groei_pct": 2.5
     },
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": 5.0,  "wacc_pct": 10.0, "fair_value": 1.31, "upside_pct": -4 },
-      { "scenario": "Basis",               "fcf_groei_pct": 10.0, "wacc_pct": 9.0,  "fair_value": 1.82, "upside_pct": 34 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 15.0, "wacc_pct": 8.5,  "fair_value": 2.39, "upside_pct": 75 },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 10.0, "wacc_pct": 9.0,  "fair_value": 1.82, "upside_pct": 34 }
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 5.0,
+        "wacc_pct": 10.0,
+        "fair_value": 1.31,
+        "upside_pct": -4
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 10.0,
+        "wacc_pct": 9.0,
+        "fair_value": 1.82,
+        "upside_pct": 34
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 15.0,
+        "wacc_pct": 8.5,
+        "fair_value": 2.39,
+        "upside_pct": 75
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 10.0,
+        "wacc_pct": 9.0,
+        "fair_value": 1.82,
+        "upside_pct": 34
+      }
     ],
     "gevoeligheid": {
-      "wacc_range": [8.0, 8.5, 9.0, 9.5, 10.0, 10.5],
-      "groei_range": [5.0, 7.5, 10.0, 12.5, 15.0],
+      "wacc_range": [
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0,
+        10.5
+      ],
+      "groei_range": [
+        5.0,
+        7.5,
+        10.0,
+        12.5,
+        15.0
+      ],
       "matrix": [
-        [1.76, 1.62, 1.50, 1.40, 1.31, 1.22],
-        [2.19, 1.98, 1.82, 1.67, 1.54, 1.42],
-        [2.98, 2.60, 2.31, 2.07, 1.87, 1.69],
-        [4.85, 3.95, 3.25, 2.72, 2.33, 2.01],
-        [10.20, 7.10, 5.15, 4.00, 3.20, 2.60]
+        [
+          1.76,
+          1.62,
+          1.5,
+          1.4,
+          1.31,
+          1.22
+        ],
+        [
+          2.19,
+          1.98,
+          1.82,
+          1.67,
+          1.54,
+          1.42
+        ],
+        [
+          2.98,
+          2.6,
+          2.31,
+          2.07,
+          1.87,
+          1.69
+        ],
+        [
+          4.85,
+          3.95,
+          3.25,
+          2.72,
+          2.33,
+          2.01
+        ],
+        [
+          10.2,
+          7.1,
+          5.15,
+          4.0,
+          3.2,
+          2.6
+        ]
       ]
     }
   },
   "scorekaart": {
     "items": [
-      { "framework": "Graham",                "score": 2, "max": 5, "oordeel": "Voldoet niet" },
-      { "framework": "Buffett / Munger",       "score": 3, "max": 5, "oordeel": "Gedeeltelijk" },
-      { "framework": "Peter Lynch",            "score": 3, "max": 5, "oordeel": "Interessant" },
-      { "framework": "Phil Fisher",            "score": 3, "max": 5, "oordeel": "Gemiddeld" },
-      { "framework": "Magic Formula",          "score": 2, "max": 5, "oordeel": "Onaantrekkelijk" },
-      { "framework": "Moat",                   "score": 3, "max": 5, "oordeel": "Narrow Moat" },
-      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "Neutraal" },
-      { "framework": "Fair Value DCF",         "score": 4, "max": 5, "oordeel": "Korting" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 4, "max": 5, "oordeel": "Korting" }
+      {
+        "framework": "Graham",
+        "score": 2,
+        "max": 5,
+        "oordeel": "Voldoet niet"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gedeeltelijk"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Interessant"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gemiddeld"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 2,
+        "max": 5,
+        "oordeel": "Onaantrekkelijk"
+      },
+      {
+        "framework": "Moat",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Narrow Moat"
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Korting"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Korting"
+      }
     ],
     "totaal": 27,
     "max": 45,
