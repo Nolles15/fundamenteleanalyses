@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "ticker": "TMUS",
+    "exchange": "NASDAQ",
+    "naam": "T-Mobile US, Inc.",
+    "sector": "Communication Services",
+    "segment": "Wireless Telecommunication Services",
+    "koers": 208.76,
+    "valuta": "USD",
+    "peildatum": "2026-03-24",
+    "marktkapitalisatie": "~$240 miljard"
+  },
+  "executive_summary": {
+    "kernthese": "T-Mobile US is de tweede grootste draadloze telecomaanbieder in de VS en heeft zich na de overname van Sprint (april 2020) ontpopt tot de snelstgroeiende grootschalige operator in de sector. Het bedrijf combineert een toonaangevend 5G-netwerk met agressieve klantenwervingsstrategieën, sterke vrije kasstroomgroei en een uitbreidende positie in het Fixed Wireless Access (FWA) broadbandsegment. De FCF groeide in 2024 met 54% naar $13,5 miljard, wat aangeeft dat de sprint-integratievoordelen volledig zijn gerealiseerd. Bij een koers van $208,76 is het aandeel fair gewaardeerd ten opzichte van de basiswaarde van ~$253; de veiligheidsmarge is te smal voor een comfortabele aankoop.",
+    "kernthese_en": "T-Mobile US is the second-largest wireless carrier in the US and has emerged as the fastest-growing large-scale operator following the Sprint acquisition in April 2020. The company combines a leading 5G network with aggressive customer acquisition strategies, strong free cash flow growth, and an expanding Fixed Wireless Access (FWA) broadband position. FCF grew 54% in 2024 to $13.5 billion, indicating that Sprint integration synergies are fully realized. At $208.76, the stock is fairly valued versus the base DCF value of ~$253; the margin of safety is too narrow for a comfortable buy.",
+    "oordeel": "HOLD",
+    "koers": 208.76,
+    "valuta": "USD",
+    "fair_value_basis": 253.0,
+    "upside_pct": 21.2,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 155.0, "upside_pct": -25.8 },
+      { "scenario": "Basis",         "fair_value": 253.0, "upside_pct": 21.2 },
+      { "scenario": "Optimistisch",  "fair_value": 350.0, "upside_pct": 67.6 }
+    ],
+    "grootste_kans": "Broadband FWA-expansie en nieuwe groeibedrijven (advertising, fintech, AI-diensten) stuwen langetermijnwaardegroei buiten de kerntelefonie.",
+    "grootste_kans_en": "Broadband FWA expansion and new growth businesses (advertising, fintech, AI services) drive long-term value creation beyond core wireless.",
+    "grootste_risico": "Hoge schuldenlast (~$72 mrd nettoschuld) maakt het bedrijf kwetsbaar bij rentestijging of dalende FCF; CEO-transitierisico na het vertrek van Mike Sievert.",
+    "grootste_risico_en": "High debt load (~$72B net debt) makes the company vulnerable to rising interest rates or declining FCF; CEO transition risk following Mike Sievert's departure."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "T-Mobile US genereert omzet primair via maandelijkse mobiele abonnementen (postpaid en prepaid, ~87% van totale omzet), apparatuurverkoop (~11%) en overige inkomsten (~2%). Het bedrijf opereert ook via Metro by T-Mobile (prepaid) en biedt wholesale-diensten aan MVNO-klanten. Het snel groeiende Fixed Wireless Access (FWA) segment bedient inmiddels meer dan 8,5 miljoen huishoudens en bedrijven met breedbandinternettoegang via het 5G-netwerk.",
+    "beschrijving_en": "T-Mobile US generates revenue primarily through monthly mobile subscriptions (postpaid and prepaid, ~87% of total revenue), device sales (~11%), and other income (~2%). The company also operates via Metro by T-Mobile (prepaid) and offers wholesale services to MVNO customers. The rapidly growing Fixed Wireless Access (FWA) segment now serves more than 8.5 million households and businesses with broadband internet access via the 5G network.",
+    "personeel": null,
+    "landen": 1,
+    "segmenten": [
+      { "naam": "Servicediensten (postpaid & prepaid)", "omzet_pct": 87.0, "beschrijving": "Maandelijkse mobiele abonnementen voor spraak, data en sms op het 5G/4G LTE-netwerk" },
+      { "naam": "Apparatuurverkoop", "omzet_pct": 11.0, "beschrijving": "Smartphones en accessoires" },
+      { "naam": "Overige inkomsten", "omzet_pct": 2.0, "beschrijving": "Wholesale (MVNO), advertenties, fintech en overige diensten" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Deutsche Telekom AG (incl. proxy SoftBank)", "pct": 52.0, "type": "Controlerend" },
+      { "naam": "SoftBank Group", "pct": 7.6, "type": "Institutioneel" },
+      { "naam": "Vanguard Group", "pct": 4.5, "type": "Institutioneel" },
+      { "naam": "BlackRock", "pct": 4.5, "type": "Institutioneel" },
+      { "naam": "Public float (overig)", "pct": 31.4, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "USD mrd",
+    "resultatenrekening": [
+      {
+        "jaar": 2015,
+        "omzet": 32.1,
+        "omzet_groei_pct": null,
+        "ebitda": 9.8,
+        "ebitda_marge_pct": 30.5,
+        "nettowinst": -0.1,
+        "nettomarge_pct": null,
+        "eps": -0.12
+      },
+      {
+        "jaar": 2016,
+        "omzet": 37.2,
+        "omzet_groei_pct": 15.9,
+        "ebitda": 11.0,
+        "ebitda_marge_pct": 29.6,
+        "nettowinst": 0.7,
+        "nettomarge_pct": 1.9,
+        "eps": 0.78
+      },
+      {
+        "jaar": 2017,
+        "omzet": 40.6,
+        "omzet_groei_pct": 9.1,
+        "ebitda": 12.5,
+        "ebitda_marge_pct": 30.8,
+        "nettowinst": 4.5,
+        "nettomarge_pct": 11.1,
+        "eps": 5.20
+      },
+      {
+        "jaar": 2018,
+        "omzet": 43.3,
+        "omzet_groei_pct": 6.7,
+        "ebitda": 13.4,
+        "ebitda_marge_pct": 30.9,
+        "nettowinst": 2.9,
+        "nettomarge_pct": 6.7,
+        "eps": 3.30
+      },
+      {
+        "jaar": 2019,
+        "omzet": 44.9,
+        "omzet_groei_pct": 3.7,
+        "ebitda": 14.1,
+        "ebitda_marge_pct": 31.4,
+        "nettowinst": 3.5,
+        "nettomarge_pct": 7.8,
+        "eps": 4.09
+      },
+      {
+        "jaar": 2020,
+        "omzet": 68.4,
+        "omzet_groei_pct": 52.3,
+        "ebitda": 19.5,
+        "ebitda_marge_pct": 28.5,
+        "nettowinst": 0.3,
+        "nettomarge_pct": 0.4,
+        "eps": 0.23
+      },
+      {
+        "jaar": 2021,
+        "omzet": 80.1,
+        "omzet_groei_pct": 17.1,
+        "ebitda": 23.0,
+        "ebitda_marge_pct": 28.7,
+        "nettowinst": 3.0,
+        "nettomarge_pct": 3.7,
+        "eps": 2.43
+      },
+      {
+        "jaar": 2022,
+        "omzet": 79.6,
+        "omzet_groei_pct": -0.6,
+        "ebitda": 20.2,
+        "ebitda_marge_pct": 25.4,
+        "nettowinst": 2.6,
+        "nettomarge_pct": 3.3,
+        "eps": 2.15
+      },
+      {
+        "jaar": 2023,
+        "omzet": 78.6,
+        "omzet_groei_pct": -1.3,
+        "ebitda": 27.1,
+        "ebitda_marge_pct": 34.5,
+        "nettowinst": 8.3,
+        "nettomarge_pct": 10.6,
+        "eps": 7.16
+      },
+      {
+        "jaar": 2024,
+        "omzet": 81.4,
+        "omzet_groei_pct": 3.6,
+        "ebitda": 30.9,
+        "ebitda_marge_pct": 38.0,
+        "nettowinst": 11.3,
+        "nettomarge_pct": 13.9,
+        "eps": 9.90
+      },
+      {
+        "jaar": 2025,
+        "omzet": 83.5,
+        "omzet_groei_pct": 2.6,
+        "ebitda": 35.0,
+        "ebitda_marge_pct": 41.9,
+        "nettowinst": 11.0,
+        "nettomarge_pct": 13.2,
+        "eps": 9.72
+      }
+    ],
+    "kasstromen": [
+      {
+        "jaar": 2019,
+        "fcf": 1.3,
+        "fcf_na_sbc": 1.0,
+        "fcf_per_aandeel": 1.18,
+        "sbc": 0.3
+      },
+      {
+        "jaar": 2020,
+        "fcf": 2.1,
+        "fcf_na_sbc": 1.7,
+        "fcf_per_aandeel": 1.37,
+        "sbc": 0.4
+      },
+      {
+        "jaar": 2021,
+        "fcf": 6.1,
+        "fcf_na_sbc": 5.6,
+        "fcf_per_aandeel": 4.53,
+        "sbc": 0.5
+      },
+      {
+        "jaar": 2022,
+        "fcf": 7.7,
+        "fcf_na_sbc": 7.1,
+        "fcf_per_aandeel": 5.72,
+        "sbc": 0.6
+      },
+      {
+        "jaar": 2023,
+        "fcf": 8.8,
+        "fcf_na_sbc": 8.1,
+        "fcf_per_aandeel": 7.00,
+        "sbc": 0.667
+      },
+      {
+        "jaar": 2024,
+        "fcf": 13.5,
+        "fcf_na_sbc": 12.8,
+        "fcf_per_aandeel": 11.20,
+        "sbc": 0.649
+      },
+      {
+        "jaar": 2025,
+        "fcf": 16.0,
+        "fcf_na_sbc": 15.4,
+        "fcf_per_aandeel": 13.50,
+        "sbc": 0.65
+      }
+    ],
+    "balans": [
+      {
+        "jaar": 2020,
+        "nettoschuld": 69.0,
+        "eigen_vermogen": 37.0,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2021,
+        "nettoschuld": 70.0,
+        "eigen_vermogen": 42.0,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2022,
+        "nettoschuld": 68.0,
+        "eigen_vermogen": 45.0,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2023,
+        "nettoschuld": 70.0,
+        "eigen_vermogen": 51.0,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2024,
+        "nettoschuld": 72.0,
+        "eigen_vermogen": 59.0,
+        "debt_ebitda": 2.3
+      },
+      {
+        "jaar": 2025,
+        "nettoschuld": 69.0,
+        "eigen_vermogen": 64.0,
+        "debt_ebitda": null
+      }
+    ],
+    "rendementsindicatoren": [
+      {
+        "jaar": 2021,
+        "roce_pct": null,
+        "roe_pct": 7.1,
+        "roic_pct": 3.5,
+        "roa_pct": 1.6,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": -4.0
+      },
+      {
+        "jaar": 2022,
+        "roce_pct": null,
+        "roe_pct": 5.8,
+        "roic_pct": 4.6,
+        "roa_pct": 1.4,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": -2.9
+      },
+      {
+        "jaar": 2023,
+        "roce_pct": null,
+        "roe_pct": 16.3,
+        "roic_pct": 6.8,
+        "roa_pct": 4.1,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": -0.7
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": null,
+        "roe_pct": 19.2,
+        "roic_pct": 9.9,
+        "roa_pct": 5.2,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": 2.4
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": null,
+        "roe_pct": 17.2,
+        "roic_pct": 9.5,
+        "roa_pct": 4.9,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": 2.0
+      }
+    ],
+    "accruals": [
+      {
+        "jaar": 2022,
+        "accruals_ratio": -6.5,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2023,
+        "accruals_ratio": -4.5,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2024,
+        "accruals_ratio": -5.8,
+        "non_gaap_verschil_pct": null
+      }
+    ],
+    "waardering": {
+      "pe": 21.5,
+      "pe_forward": 17.5,
+      "ev_ebitda": 9.5,
+      "p_fcf": null,
+      "p_fcf_na_sbc": 16.3,
+      "fcf_yield_pct": 5.6,
+      "p_b": 4.1,
+      "ev_omzet": 3.4,
+      "dividendrendement_pct": 1.2,
+      "peg": 1.1
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "T-Mobile heeft een reëel maar smal concurrentievoordeel, primair gebaseerd op spectrum-bezit (met name 2,5 GHz), schaalvoordelen na de Sprint-fusie en netwerkkwaliteit. De 'Un-carrier' merkpositionering voegt waarde toe maar is minder verankerd dan een softwareplatform of sterk consumenten-merk. De FWA-positie is een opkomend strategisch voordeel, maar consumentenoverstapkosten blijven laag en de markt heeft drie levensvatbare grote spelers.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Spectrum-licenties (2,5 GHz, mmWave 5G) zijn schaarse activa; merk T-Mobile is sterk bij jonge consumenten; overheidslicenties zijn toetredingsbarrière."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Consumentenoverstapkosten zijn laag in de VS (number portability, device unlocking). Enterprise-klanten hebben hogere integratiekosten, maar per saldo zwak."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AFWEZIG",
+        "score": 1,
+        "toelichting": "Mobiele telecomnetwerken kennen geen klassieke netwerkeffecten — meer gebruikers creëert geen hogere waarde per gebruiker. FWA geeft ook geen platformeffect."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Schaalvoordeel na Sprint-fusie (gedeelde infrastructuur, spectrumdeling). EBITDA-marge stijgt snel. Echter: alle drie grote US-operators genieten vergelijkbare schaalvoordelen."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "De VS-markt is groot genoeg voor drie levensvatbare operators. Geen echte efficiënte-schaal situatie zoals bij utilities of infrastructuurmonopolies."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      {
+        "functie": "President & CEO",
+        "naam": "Srini Gopalan",
+        "achtergrond": "Aangesteld november 2025; daarvoor COO bij T-Mobile (2021-2025). Eerder CEO van Telstra Europe en senior functies bij Deutsche Telekom en Vodafone. Eerste keer als CEO van een large-cap Amerikaans beursgenoteerd bedrijf."
+      },
+      {
+        "functie": "EVP & CFO",
+        "naam": "Peter Osvaldik",
+        "achtergrond": "Al enkele jaren CFO bij T-Mobile; sterk track record in post-Sprint financiële transformatie. Expertise in schuldbeheer en kapitaalmarkten. Continuïteit is een pluspunt."
+      },
+      {
+        "functie": "EVP & General Counsel",
+        "naam": "Mark W. Nelson",
+        "achtergrond": "Ervaren juridisch directeur; cruciaal in de Sprint-fusiegoedkeuring en regelgevingsrelaties."
+      },
+      {
+        "functie": "Voorzitter Raad van Bestuur",
+        "naam": "Timotheus Höttges",
+        "achtergrond": "CEO Deutsche Telekom; houdt toezicht als controlerende aandeelhouder. Belangen van DT en TMUS-minderheidsaandeelhouders kunnen af en toe divergeren."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.27,
+      "verwateringsgraad_pct_jaar": null,
+      "prikkels_aligned": true,
+      "toelichting": "CEO Gopalan ontvangt $1,4 mln basisloon, doelbonus $2-3 mln gekoppeld aan EBITDA/FCF/klantengroei, en ~$19,5 mln in performance RSU's. SBC totaal 2024 was $649 mln (0,27% van marktkapitalisatie) — laag en verwateringsdruk beperkt door actieve inkopen."
+    },
+    "insider_transactions": [
+      {
+        "datum": "2025-01-01",
+        "naam": "Andre Almeida",
+        "functie": "Director",
+        "type": "KOOP",
+        "aandelen": 3810,
+        "koers": 235.72
+      },
+      {
+        "datum": "2024-12-01",
+        "naam": "Letitia Long",
+        "functie": "Director",
+        "type": "VERKOOP",
+        "aandelen": 1100,
+        "koers": 231.08
+      },
+      {
+        "datum": "2024-12-01",
+        "naam": "Srikant Datar",
+        "functie": "Director",
+        "type": "VERKOOP",
+        "aandelen": 6000,
+        "koers": 246.82
+      },
+      {
+        "datum": "2025-11-01",
+        "naam": "Mike Sievert",
+        "functie": "CEO",
+        "type": "KOOP",
+        "aandelen": 35094,
+        "koers": null
+      },
+      {
+        "datum": "2025-09-01",
+        "naam": "Deutsche Telekom",
+        "functie": "Grootste aandeelhouder",
+        "type": "VERKOOP",
+        "aandelen": 140000,
+        "koers": 220.44
+      }
+    ],
+    "capital_allocation": "Sprint-integratievoordelen van >$6 mrd volledig gerealiseerd (eerder dan beloofd). Dividendprogramma gestart september 2023 ($2,60/aandeel/jaar). In 2024 $3,0 mrd aan aandelen teruggekocht bij koersen van $140-$180 — lager dan de huidige koers, wat wijst op prudent kapitaalbeheer. Schuldenreductie: D/EBITDA verbeterd van ~4x naar ~2,3x.",
+    "toelichting": "Management scoort positief op track record onder voormalig CEO Sievert en CFO Osvaldik biedt continuïteit. De nieuwe CEO Gopalan kent het bedrijf goed als ex-COO maar moet nog bewijzen als zelfstandig groot-cap CEO. Compensatiestructuur is goed gealigneerd met aandeelhouders via EBITDA- en FCF-gestuurde prikkels."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-05",
+      "omschrijving": "Q1 2026 kwartaalresultaten — eerste volledig kwartaal onder CEO Gopalan",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-08",
+      "omschrijving": "Q2 2026 resultaten — toets FWA-groei vs. kabelcompetitie",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-08",
+      "omschrijving": "Verdere SoftBank bloksales verwacht (resterende ~7,6% stake)",
+      "richting": "NEGATIEF",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-09",
+      "omschrijving": "FCC spectrum-veiling uitkomsten (600MHz herveiling mogelijk)",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-11",
+      "omschrijving": "Q3 2026 resultaten; potentieel Capital Allocation Update",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-12",
+      "omschrijving": "Dividend herbeoordeling / verhoging",
+      "richting": "POSITIEF",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2027-01",
+      "omschrijving": "AI-diensten (Live Translation, edge AI) commercieel lanceert",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2027-06",
+      "omschrijving": "T-Fiber schaling; broadband klantdoelstelling update",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-06",
+      "omschrijving": "Deutsche Telekom herbalancering van belang (continu)",
+      "richting": "NEGATIEF",
+      "impact": "KLEIN"
+    }
+  ],
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 12.8,
+      "basis_fcf_na_sbc": 12.8,
+      "wacc_pct": 7.0,
+      "groei_fase1_pct": 8.0,
+      "fase1_jaren": 5,
+      "terminal_groei_pct": 2.5,
+      "shares_outstanding_mln": 1130.0,
+      "nettoschuld_huidig": 72.0
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch",       "fcf_groei_pct": 4.0,  "wacc_pct": 8.0, "fair_value": 155.0, "upside_pct": -25.8 },
+      { "scenario": "Basis",               "fcf_groei_pct": 8.0,  "wacc_pct": 7.0, "fair_value": 253.0, "upside_pct": 21.2 },
+      { "scenario": "Optimistisch",        "fcf_groei_pct": 12.0, "wacc_pct": 6.0, "fair_value": 350.0, "upside_pct": 67.6 },
+      { "scenario": "Basis (geen SBC-correctie)", "fcf_groei_pct": 8.0, "wacc_pct": 7.0, "fair_value": 261.0, "upside_pct": 25.0 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [6.0, 6.5, 7.0, 7.5, 8.0, 8.5],
+      "groei_range": [3.0, 5.0, 7.0, 9.0, 11.0],
+      "matrix": [
+        [205, 185, 170, 155, 143, 133],
+        [250, 225, 205, 187, 172, 159],
+        [305, 273, 247, 225, 206, 190],
+        [375, 334, 300, 271, 247, 226],
+        [460, 408, 365, 329, 298, 272]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham",                "score": 2, "max": 5, "oordeel": "Voldoet niet — te hoge schuld, P/E ~21x en P/B ~4x ver boven Graham-normen" },
+      { "framework": "Buffett / Munger",       "score": 3, "max": 5, "oordeel": "Gedeeltelijk — redelijk bedrijf op redelijke prijs, geen wide moat, hoge schuld" },
+      { "framework": "Peter Lynch",            "score": 4, "max": 5, "oordeel": "Interessant — duidelijk groeidoel (FWA, AI), PEG ~1,2, stalwart met meerdere groeidrivers" },
+      { "framework": "Phil Fisher",            "score": 4, "max": 5, "oordeel": "Sterk — meerdere groeiplatforms, bewezen executie, stijgende EBITDA-marges" },
+      { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "Gemiddeld — schuldenlast verhoogt EV fors, earnings yield slechts ~3,8%" },
+      { "framework": "Moat",                   "score": 3, "max": 5, "oordeel": "Narrow Moat — spectrum + schaal, geen breed duurzaam voordeel; overstapkosten laag" },
+      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "Neutraal/Positief — sterk track record maar CEO-transitierisico na Sievert" },
+      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Beperkte marge — ~21% upside bij $208,76; veiligheidsmarge te smal bij narrow moat" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "Neutraal — geen IPO-correctie van toepassing; TMUS beursgenoteerd sinds 2013" }
+    ],
+    "totaal": 28,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "T-Mobile US is een uitstekend operationeel bedrijf dat succesvol getransformeerd is van challenger naar marktleider in 5G. De FCF-groei is indrukwekkend (+54% in 2024) en FWA-expansie plus AI-netwerkkansen bieden reëel langetermijn groeipotentieel. Echter: bij $208,76 is de veiligheidsmarge t.o.v. basiswaarde (~$253) slechts ~21% — te smal bij een narrow moat en een onbewezen nieuwe CEO. Aanbevolen koopzone: ~$185-195 (25-30% korting op basiswaarde).",
+    "samenvatting_en": "T-Mobile US is an outstanding operational business that has successfully transformed from challenger to 5G market leader. FCF growth is impressive (+54% in 2024) and FWA expansion plus AI network opportunities offer real long-term growth potential. However, at $208.76 the margin of safety versus the base DCF value (~$253) is only ~21% — too narrow given a narrow moat and an unproven new CEO. Recommended buy zone: ~$185-195 (25-30% discount to base value)."
+  },
+  "bronnen": {
+    "jaarverslag_jaar": 2024,
+    "jaarverslag_url": "https://investor.t-mobile.com",
+    "ir_pagina": "https://investor.t-mobile.com",
+    "claims": [
+      {
+        "sectie": "H2.1 Resultatenrekening",
+        "claim": "Omzet 2024 $81,4 mrd, EBITDA $30,9 mrd (marge 38,0%), nettowinst $11,3 mrd, EPS $9,90",
+        "bron": "T-Mobile Q4 2025 Earnings Release & Full Year 2025 (11 februari 2026)",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.3 Kasstroomoverzicht",
+        "claim": "FCF 2024 $13,5 mrd; FCF na SBC $12,8 mrd; SBC $649 mln; aandeleninkopen 2024 $3,0 mrd",
+        "bron": "T-Mobile Q4 2025 Earnings Release & Full Year 2025 (11 februari 2026)",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.2 Balans",
+        "claim": "Nettoschuld 2024 ~$72 mrd; bruto schuld $87 mrd; eigen vermogen $59 mrd; D/EBITDA ~2,3x",
+        "bron": "SEC EDGAR 10-K jaarverslag 2024",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.5 Rendementsindicatoren",
+        "claim": "ROIC 2024 ~9,9%, WACC ~7,5%, ROIC-WACC spread +2,4% — eerste jaar structureel boven WACC",
+        "bron": "GuruFocus.com: ROIC historisch TMUS; eigen berekening",
+        "pagina": null
+      },
+      {
+        "sectie": "H7.1 DCF-analyse",
+        "claim": "WACC 7,0% (risicovrije rente 4,39%, ERP 5,5%, beta 0,65); basiswaarde $253; pessimistisch $155; optimistisch $350",
+        "bron": "FRED 10-jaars US Treasury 4,39% per 24 maart 2026; Damodaran US ERP 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H4.3 Insider Transacties",
+        "claim": "Andre Almeida kocht 3.810 aandelen in januari 2025 à $235,72 (open markt); SoftBank verkocht 40,2 mln aandelen Q3 2025 voor $9,17 mrd",
+        "bron": "SEC EDGAR Form 4 insider transactions TMUS (2024-2025)",
+        "pagina": null
+      },
+      {
+        "sectie": "H1.4 Aandeelhoudersstructuur",
+        "claim": "Deutsche Telekom ~46% direct + proxy SoftBank = ~52% stemrechten; SoftBank ~7,6%; free float ~40-45%",
+        "bron": "StockTitan.net: Deutsche Telekom Schedule 13D/A SEC filings",
+        "pagina": null
+      }
+    ]
+  },
+  "thesis_tracker": {
+    "publicatiedatum": "2026-03-24",
+    "oordeel_bij_publicatie": "HOLD",
+    "koers_bij_publicatie": 208.76,
+    "checkpoints": [
+      {
+        "datum": null,
+        "label": "6m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "S&P 500",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "12m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "S&P 500",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "24m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "S&P 500",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      }
+    ]
+  }
+}

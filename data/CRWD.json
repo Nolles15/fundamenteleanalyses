@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "ticker": "CRWD",
+    "exchange": "NASDAQ",
+    "naam": "CrowdStrike Holdings, Inc.",
+    "sector": "Technologie — Cybersecurity / Enterprise Software",
+    "segment": "Cloud-native Endpoint & XDR Security",
+    "koers": 410.04,
+    "valuta": "USD",
+    "peildatum": "2026-03-22",
+    "marktkapitalisatie": "~$103,8 miljard"
+  },
+  "executive_summary": {
+    "kernthese": "CrowdStrike Holdings is de marktleider in cloud-native endpoint- en XDR-beveiliging, met een AI-gebaseerd Falcon-platform dat bescherming biedt aan meer dan 29.000 zakelijke klanten wereldwijd. In FY2026 bereikte het bedrijf een ARR van $5,25 miljard (+24% YoY) en genereerde het voor het eerst een positief GAAP-kwartaalresultaat. De platform-consolidatietrend en de AI-gedreven dreigingsomgeving spelen structureel in het voordeel van CrowdStrike. Tegen een koers van $410 noteert het aandeel circa 23% onder onze basiswaarde van ~$505, maar de premiewaardering vereist foutloze uitvoering.",
+    "kernthese_en": "CrowdStrike Holdings is the market leader in cloud-native endpoint and XDR security, with an AI-based Falcon platform protecting more than 29,000 enterprise customers worldwide. In FY2026 the company reached an ARR of $5.25 billion (+24% YoY) and reported its first positive GAAP quarterly result. The platform consolidation trend and AI-driven threat environment structurally favor CrowdStrike. At a price of $410 the stock trades approximately 23% below our base fair value of ~$505, but the premium valuation demands flawless execution.",
+    "oordeel": "HOLD",
+    "koers": 410.04,
+    "valuta": "USD",
+    "fair_value_basis": 505,
+    "upside_pct": 23.2,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 295, "upside_pct": -28.0 },
+      { "scenario": "Basis",         "fair_value": 505, "upside_pct": 23.2 },
+      { "scenario": "Optimistisch",  "fair_value": 680, "upside_pct": 65.9 }
+    ],
+    "grootste_kans": "Versnelling van platform-consolidatie via Falcon Flex en AI-native productuitbreiding die ARR-groei terugbrengt naar >25%.",
+    "grootste_kans_en": "Acceleration of platform consolidation through Falcon Flex and AI-native product expansion bringing ARR growth back above 25%.",
+    "grootste_risico": "Hoge waardering (EV/Omzet ~21x) laat nauwelijks ruimte voor een groeitegenvaller of omslag in het marktsentiment voor tech.",
+    "grootste_risico_en": "High valuation (EV/Revenue ~21x) leaves little room for a growth disappointment or a shift in market sentiment toward tech."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "CrowdStrike opereert als een cloud-native SaaS-bedrijf in de cybersecuritysector. Het Falcon-platform is het centrale product: een lichtgewicht sensor die op endpoints wordt geïnstalleerd en gegevens streamt naar de cloud voor AI-analyse en bedreigingsdetectie. Het verdienmodel is gebaseerd op abonnementslicenties (>95% van de omzet), waarbij klanten modules van het Falcon-platform activeren.",
+    "beschrijving_en": "CrowdStrike operates as a cloud-native SaaS company in the cybersecurity sector. The Falcon platform is the core product: a lightweight sensor installed on endpoints that streams data to the cloud for AI analysis and threat detection. The revenue model is based on subscription licences (>95% of revenue), with customers activating modules of the Falcon platform.",
+    "personeel": 10000,
+    "landen": null,
+    "segmenten": [
+      { "naam": "Endpoint Security (Falcon Prevent/Insight)", "omzet_pct": null, "beschrijving": "Core-product; grootste bijdrage aan omzet" },
+      { "naam": "Identity Protection (Falcon Identity)", "omzet_pct": null, "beschrijving": "Snel groeiend segment voor identiteitsbeveiliging" },
+      { "naam": "Cloud Security (CNAPP)", "omzet_pct": null, "beschrijving": "Cloud workload protection, CSPM, CIEM" },
+      { "naam": "Next-Gen SIEM / Log Management (Falcon LogScale)", "omzet_pct": null, "beschrijving": "Concurreert met Splunk" },
+      { "naam": "Threat Intelligence (Falcon X)", "omzet_pct": null, "beschrijving": "Premium feeds en managed services" },
+      { "naam": "Professional & Managed Services (Falcon Complete MDR)", "omzet_pct": null, "beschrijving": "Beheerde detectie- en responsdiensten" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Vanguard Group", "pct": 7.5, "type": "Institutioneel" },
+      { "naam": "BlackRock", "pct": 6.8, "type": "Institutioneel" },
+      { "naam": "Fidelity Investments", "pct": 4.2, "type": "Institutioneel" },
+      { "naam": "George Kurtz (CEO/oprichter)", "pct": 3.5, "type": "Controlerend" },
+      { "naam": "Overige institutionelen + publiek", "pct": 78.0, "type": "Publiek" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "USD mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2022,
+        "omzet": 1452,
+        "omzet_groei_pct": null,
+        "ebitda": 115,
+        "ebitda_marge_pct": 7.9,
+        "nettowinst": -234,
+        "nettomarge_pct": -16.1,
+        "eps": null
+      },
+      {
+        "jaar": 2023,
+        "omzet": 2241,
+        "omzet_groei_pct": 54.3,
+        "ebitda": 345,
+        "ebitda_marge_pct": 15.4,
+        "nettowinst": -184,
+        "nettomarge_pct": -8.2,
+        "eps": null
+      },
+      {
+        "jaar": 2024,
+        "omzet": 3055,
+        "omzet_groei_pct": 36.3,
+        "ebitda": 650,
+        "ebitda_marge_pct": 21.3,
+        "nettowinst": -90,
+        "nettomarge_pct": -2.9,
+        "eps": null
+      },
+      {
+        "jaar": 2025,
+        "omzet": 3954,
+        "omzet_groei_pct": 29.4,
+        "ebitda": 880,
+        "ebitda_marge_pct": 22.3,
+        "nettowinst": -15,
+        "nettomarge_pct": -0.4,
+        "eps": null
+      },
+      {
+        "jaar": 2026,
+        "omzet": 4812,
+        "omzet_groei_pct": 21.7,
+        "ebitda": 1050,
+        "ebitda_marge_pct": 21.8,
+        "nettowinst": -163,
+        "nettomarge_pct": -3.4,
+        "eps": null
+      }
+    ],
+    "kasstromen": [
+      {
+        "jaar": 2023,
+        "fcf": 209,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": 0.88,
+        "sbc": null
+      },
+      {
+        "jaar": 2024,
+        "fcf": 940,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": 3.80,
+        "sbc": null
+      },
+      {
+        "jaar": 2025,
+        "fcf": 1068,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": 4.24,
+        "sbc": null
+      },
+      {
+        "jaar": 2026,
+        "fcf": 1240,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": 4.83,
+        "sbc": 1300
+      }
+    ],
+    "balans": [
+      {
+        "jaar": 2023,
+        "nettoschuld": -2000,
+        "eigen_vermogen": 2050,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2024,
+        "nettoschuld": -3856,
+        "eigen_vermogen": 4050,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2025,
+        "nettoschuld": -3556,
+        "eigen_vermogen": 4650,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2026,
+        "nettoschuld": -3756,
+        "eigen_vermogen": 5200,
+        "debt_ebitda": null
+      }
+    ],
+    "rendementsindicatoren": [
+      {
+        "jaar": 2026,
+        "roce_pct": null,
+        "roe_pct": null,
+        "roic_pct": 13.5,
+        "roa_pct": null,
+        "wacc_pct": 11.0,
+        "roic_wacc_spread": 2.5
+      }
+    ],
+    "accruals": [
+      {
+        "jaar": 2026,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": 27.0
+      }
+    ],
+    "waardering": {
+      "pe": null,
+      "pe_forward": 90.0,
+      "ev_ebitda": 93.0,
+      "p_fcf": 84.0,
+      "p_fcf_na_sbc": null,
+      "fcf_yield_pct": 1.2,
+      "p_b": 18.0,
+      "ev_omzet": 21.0,
+      "dividendrendement_pct": 0.0,
+      "peg": 4.1
+    }
+  },
+  "moat": {
+    "oordeel": "WIDE MOAT",
+    "toelichting": "CrowdStrike beschikt over een brede economische slotgracht dankzij unieke AI-modellen getraind op petabytes aan threat-data, zeer hoge overstapkosten (Falcon-integratie in IT-processen maakt migratie ~18 maanden kostbaar) en groeiende netwerkeffecten doordat elk nieuw endpoint de threat-intelligence voor alle klanten verbetert. De voornaamste bedreiging is Microsoft, dat Defender agressief bundelt in M365-licenties en een prijsconcurrentie creëert bij budgetbewuste klanten.",
+    "categorieen": [
+      { "naam": "Immateriële activa",  "oordeel": "STERK", "score": 5, "toelichting": "AI-modellen getraind op petabytes threat-data; sterk merk; FedRAMP/overheidsaccreditaties die concurrenten jaren kosten" },
+      { "naam": "Overstapkosten",      "oordeel": "STERK", "score": 5, "toelichting": "Falcon-integratie in IT-processen, SIEM, SOAR en ticketingsystemen maakt migratie zeer kostbaar (~18 maanden implementatie); contractduur 1–3 jaar" },
+      { "naam": "Netwerkeffecten",     "oordeel": "AANWEZIG", "score": 4, "toelichting": "Elk nieuw endpoint verrijkt de threat-intelligence database; meer klanten = betere detectie voor alle klanten via AI/ML leereffect" },
+      { "naam": "Kostenvoordeel",      "oordeel": "BEPERKT", "score": 3, "toelichting": "Schaalvoordelen in cloudinfra en R&D aanwezig, maar concurrenten (PANW, MSFT) zijn vergelijkbaar groot; geen unieke grondstof" },
+      { "naam": "Efficiënte schaal",   "oordeel": "BEPERKT", "score": 2, "toelichting": "Markt is groot genoeg voor meerdere grote spelers; CrowdStrike domineert maar heeft geen monopolie" }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      { "functie": "CEO & Oprichter", "naam": "George Kurtz", "achtergrond": "Ex-CTO McAfee; 12+ jaar bij CrowdStrike; technisch geloofwaardig; publiek gezicht van de onderneming; bezit ~3,5% aandelen" },
+      { "functie": "CFO", "naam": "Burt Podbere", "achtergrond": "Al >8 jaar CFO; degelijk en consistent in guidance; vertrouwd door investeerders" },
+      { "functie": "President", "naam": "Michael Sentonas", "achtergrond": "Ex-CISO/CTO; technische expertise; leidt global sales" },
+      { "functie": "Chief Security Officer", "naam": "Shawn Henry", "achtergrond": "Ex-FBI; geloofwaardigheid in overheids- en defensiesegment" }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 1.25,
+      "verwateringsgraad_pct_jaar": null,
+      "prikkels_aligned": true,
+      "toelichting": "SBC bedraagt ~$1,3 miljard in FY2026, circa 27% van de omzet — een structureel hoge last die GAAP-resultaten drukt en aandeelhouders verwatert. Een beperkt aandeleninkoopprogramma werd in FY2026 gestart ter compensatie van de SBC-verwateringsdruk."
+    },
+    "insider_transactions": [
+      {
+        "datum": null,
+        "naam": null,
+        "functie": null,
+        "type": "VERKOOP",
+        "aandelen": null,
+        "koers": null
+      }
+    ],
+    "capital_allocation": "Kapitaal wordt primair naar R&D (~35% van omzet) en sales & marketing (~35%) gealloceerd. Kleinere bolt-on overnames (o.a. Humio voor log management in 2021, ~$400 mln) zijn succesvol geïntegreerd. Geen dividend; beperkt aandeleninkoopprogramma gestart in FY2026.",
+    "toelichting": "Management scoort sterk op uitvoering, technische geloofwaardigheid en transparantie, ook na het juli 2024-incident waarbij George Kurtz publiekelijk verantwoordelijkheid nam. Het significante aandelenbelang van de CEO (3,5%) zorgt voor goede alignment met aandeelhouders. De hoge SBC-verwatering is een aandachtspunt."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-03",
+      "omschrijving": "FedRAMP High-autorisatie voor Federal XIoT/OT Security behaald; nieuwe cloud-regio's in Saudi-Arabië, India en VAE aangekondigd — opent overheidsmarkt.",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-03",
+      "omschrijving": "Falcon Flex ARR oversteeg $1,69 miljard (+120% YoY) in FY2026 — cross-selling versnelt platformadoptie.",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-06",
+      "omschrijving": "Q1 FY2027 earnings release — eerste kwartaalrapportage na FY2026-afsluiting; bewijs voor herstel ARR-groei is cruciaal.",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-12",
+      "omschrijving": "Verwachte uitkomst class action lawsuits voortkomend uit juli 2024-incident; financieel impact geschat op $30–50 mln schikking.",
+      "richting": "NEUTRAAL",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-09",
+      "omschrijving": "Macro/rente-omgeving: bij stijgende rentes (10Y >5%) of recessie krimpen growth-multiples wat aanzienlijke neerwaartse druk geeft.",
+      "richting": "NEGATIEF",
+      "impact": "GROOT"
+    }
+  ],
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 865,
+      "basis_fcf_na_sbc": null,
+      "wacc_pct": 11.0,
+      "groei_fase1_pct": 18.0,
+      "fase1_jaren": 5,
+      "terminal_groei_pct": 3.0,
+      "shares_outstanding_mln": 257,
+      "nettoschuld_huidig": -3756
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch",       "fcf_groei_pct": 8.0,  "wacc_pct": 11.0, "fair_value": 295, "upside_pct": -28.0 },
+      { "scenario": "Basis",               "fcf_groei_pct": 18.0, "wacc_pct": 11.0, "fair_value": 505, "upside_pct": 23.2 },
+      { "scenario": "Optimistisch",        "fcf_groei_pct": 28.0, "wacc_pct": 10.0, "fair_value": 680, "upside_pct": 65.9 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 18.0, "wacc_pct": 11.0, "fair_value": 505, "upside_pct": 23.2 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [9.0, 10.0, 11.0, 12.0, 13.0, 14.0],
+      "groei_range": [10.0, 15.0, 18.0, 22.0, 28.0],
+      "matrix": [
+        [425, 365, 315, 275, 242, 215],
+        [560, 475, 408, 355, 310, 275],
+        [650, 548, 472, 410, 360, 318],
+        [780, 655, 562, 488, 428, 378],
+        [990, 825, 706, 612, 535, 472]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham",                "score": 1, "max": 5, "oordeel": "Voldoet niet — P/E ~90x, P/B ~18x, geen dividend; ver boven Graham-normen" },
+      { "framework": "Buffett / Munger",       "score": 3, "max": 5, "oordeel": "Gedeeltelijk — uitstekend bedrijf met Wide Moat, prijs is redelijk maar niet aantrekkelijk" },
+      { "framework": "Peter Lynch",            "score": 3, "max": 5, "oordeel": "Neutraal — Fast Grower met helder verhaal, maar PEG ~4,1 is ruim boven Lynch's ideaal <1" },
+      { "framework": "Phil Fisher",            "score": 5, "max": 5, "oordeel": "Sterk — superieur AI-native product, ~35% R&D-ratio, integer en technisch geloofwaardig management" },
+      { "framework": "Magic Formula",          "score": 2, "max": 5, "oordeel": "Gemiddeld — Earnings Yield slechts ~1,0% (EBIT/EV); te laag voor Greenblatt-screener" },
+      { "framework": "Moat",                   "score": 5, "max": 5, "oordeel": "Wide Moat — AI-threat-data + hoge switching costs + netwerkeffecten; Score 19/25" },
+      { "framework": "Management",             "score": 4, "max": 5, "oordeel": "Sterk — skin in the game (CEO 3,5%), aantoonbare uitvoering; hoge SBC is aandachtspunt" },
+      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Neutraal/aantrekkelijk — basiswaarde ~$505 impliceert +23% opwaarts bij koers $410" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "Gelijk aan basis — geen pre-IPO financial engineering geconstateerd; correctie niet van toepassing" }
+    ],
+    "totaal": 29,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "CrowdStrike is een uitzonderlijk kwalitatief bedrijf — een Wide Moat-marktleider in cybersecurity met een bewezen AI-native platform, superieur management en structureel stijgende vrije kasstromen. Onze basiswaarde van ~$505 per aandeel impliceert circa 23% opwaarts potentieel. De hoge premiewaardering (EV/omzet ~21x, P/FCF ~84x) vereist dat de double-digit FCF-groei en margineverbetering daadwerkelijk realiseerbaar zijn. De voornaamste risico's zijn Microsofts Defender-bundeling en de hoge SBC-verwatering. Voor beleggers met een lange horizon en risicobereidheid voor premium-SaaS-volatiliteit biedt het huidige niveau een evenwichtige entry.",
+    "samenvatting_en": "CrowdStrike is an exceptionally high-quality business — a Wide Moat market leader in cybersecurity with a proven AI-native platform, superior management, and structurally rising free cash flows. Our base fair value of ~$505 per share implies approximately 23% upside. The premium valuation (EV/Revenue ~21x, P/FCF ~84x) requires that double-digit FCF growth and margin improvement remain achievable. The main risks are Microsoft's Defender bundling and high SBC dilution. For investors with a long time horizon and tolerance for premium-SaaS volatility, the current level offers a balanced entry point."
+  },
+  "bronnen": {
+    "jaarverslag_jaar": 2026,
+    "jaarverslag_url": "https://ir.crowdstrike.com",
+    "ir_pagina": "https://ir.crowdstrike.com",
+    "claims": [
+      {
+        "sectie": "H0 Executive Summary",
+        "claim": "ARR van $5,25 miljard bereikt in FY2026 (+24% YoY); eerste positief GAAP-kwartaalresultaat ($38,7 mln) in Q4 FY2026",
+        "bron": "CrowdStrike FY2026 Q4 Earnings Release, 3 maart 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.1 Resultatenrekening",
+        "claim": "Omzet FY2026: $4.812 mln; GAAP nettoverlies FY2026: -$163 mln; non-GAAP nettowinst: ~$957 mln",
+        "bron": "CrowdStrike FY2026 Q4 Earnings Release, 3 maart 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.3 Kasstroomoverzicht",
+        "claim": "FCF FY2026 geschat op ~$1.240 mln op basis van Q4 operationele kasstroom $498 mln; FCF-marge ~26%",
+        "bron": "CrowdStrike FY2026 Q4 Earnings Release (schatting op CFO-basis), 3 maart 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.5 Waarderingsratio's",
+        "claim": "EV/Omzet ~21x, P/FCF ~84x, P/E (non-GAAP forward) ~90x bij koers $410",
+        "bron": "MarketBeat / StockAnalysis — 22 maart 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H7 Fair Value",
+        "claim": "WACC 11,0% op basis van risicovrije rente 4,39% (US 10Y Treasury 20 maart 2026), ERP 5,50% (Damodaran), beta 1,20",
+        "bron": "US Federal Reserve / Damodaran Online 2026",
+        "pagina": null
+      },
+      {
+        "sectie": "H1.4 Producten",
+        "claim": "Meer dan 66% van klanten gebruikt 5+ Falcon-modules in FY2026; Falcon Flex ARR >$1,69 miljard (+120% YoY)",
+        "bron": "CrowdStrike FY2026 Q4 Earnings Release, 3 maart 2026",
+        "pagina": null
+      }
+    ]
+  },
+  "thesis_tracker": {
+    "publicatiedatum": "2026-03-22",
+    "oordeel_bij_publicatie": "HOLD",
+    "koers_bij_publicatie": 410.04,
+    "checkpoints": [
+      {
+        "datum": null,
+        "label": "6m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "NASDAQ",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "12m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "NASDAQ",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "24m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "NASDAQ",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      }
+    ]
+  }
+}

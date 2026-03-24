@@ -1,0 +1,488 @@
+{
+  "meta": {
+    "ticker": "PNDORA",
+    "exchange": "NASDAQ Copenhagen",
+    "naam": "Pandora A/S",
+    "sector": "Consumer Discretionary",
+    "segment": "Sieraden & Accessoires / Jewelry & Accessories",
+    "koers": 443.0,
+    "valuta": "DKK",
+    "peildatum": "2026-03-13",
+    "marktkapitalisatie": "DKK ~33 miljard"
+  },
+  "executive_summary": {
+    "kernthese": "Pandora A/S is 's werelds grootste sieradenmerk gemeten naar verkochte eenheden, met een uniek schaalbaar bedrijfsmodel gebaseerd op het modulaire charmearmbandconcept. Onder de Phoenix-strategie (2019–2025) heeft het bedrijf een indrukwekkende transformatie doorgemaakt naar een Full Jewellery Brand met aantoonbare groei, uitstekende marges en hoge kasstroomgeneratie. De aandelendaling van circa 60% in het afgelopen jaar — hoofdzakelijk veroorzaakt door Amerikaanse importtarieven op Thailand (36%) en macro-economische tegenwind — heeft het aandeel teruggebracht tot een historisch aantrekkelijke waardering. Op basis van een conservatief basisscenario-DCF bedraagt de intrinsieke waarde circa DKK 950, ruim het dubbele van de huidige koers.",
+    "kernthese_en": "Pandora A/S is the world's largest jewelry brand by units sold, with a unique and scalable business model based on the modular charm bracelet concept. Under the Phoenix strategy (2019–2025) the company has undergone an impressive transformation into a Full Jewellery Brand with demonstrable growth, excellent margins and strong cash flow generation. A share price decline of approximately 60% over the past year — driven primarily by US tariffs on Thailand (36%) and macro headwinds — has brought the stock to a historically attractive valuation. Based on a conservative base-case DCF, intrinsic value is approximately DKK 950, more than double the current price.",
+    "oordeel": "KOOP",
+    "koers": 443.0,
+    "valuta": "DKK",
+    "fair_value_basis": 950.0,
+    "upside_pct": 114.0,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 480.0, "upside_pct": 8.0 },
+      { "scenario": "Basis",         "fair_value": 950.0, "upside_pct": 114.0 },
+      { "scenario": "Optimistisch",  "fair_value": 1750.0, "upside_pct": 295.0 }
+    ],
+    "grootste_kans": "Tariefnormalisatie gecombineerd met Phoenix v2-expansie buiten Europa kan leiden tot aanzienlijk hogere FCF-groei dan het basisscenario.",
+    "grootste_kans_en": "Tariff normalization combined with Phoenix v2 expansion outside Europe could lead to significantly higher FCF growth than the base scenario.",
+    "grootste_risico": "Structureel hogere importtarieven op Thailand (36%) kunnen de marges in het VS-segment (36% van omzet) permanent aantasten als productie niet gediversifieerd wordt.",
+    "grootste_risico_en": "Structurally higher import tariffs on Thailand (36%) could permanently impair margins in the US segment (36% of revenue) if production is not diversified."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Pandora ontwerpt, produceert en verkoopt betaalbare luxe sieraden in zilver, goud-plating en met edelstenen via een hybride distributiemodel van eigen concept stores, shop-in-shops en online D2C. Het bedrijf opereert een gesloten ecosysteem rondom de charmebracelet waarbij klanten herhaalaankopen doen via verwisselbare bedels die persoonlijke mijlpalen symboliseren. Productie vindt vrijwel volledig plaats in eigen fabrieken in Thailand, wat een uitzonderlijk kostenvoordeel oplevert.",
+    "beschrijving_en": "Pandora designs, manufactures and sells affordable luxury jewelry in silver, gold-plating and with gemstones through a hybrid distribution model of own concept stores, shop-in-shops and online D2C channels. The company operates a closed ecosystem around the charm bracelet, generating repeat purchases through interchangeable charms symbolizing personal milestones. Production takes place almost entirely in company-owned factories in Thailand, providing an exceptional cost advantage.",
+    "personeel": 41330,
+    "landen": null,
+    "segmenten": [
+      { "naam": "Charms & Carriers", "omzet_pct": 74.5, "beschrijving": "Kernproduct; aandrijver herhaalaankopen via het charmebracelet-ecosysteem" },
+      { "naam": "Overig (ringen, kettingen, oorbellen)", "omzet_pct": 25.5, "beschrijving": "Groeiend segment via Phoenix v2-strategie" },
+      { "naam": "Europa / MEA", "omzet_pct": 49.7, "beschrijving": "Grootste regio, matuur, lage groei in 2024" },
+      { "naam": "Noord-Amerika", "omzet_pct": 36.1, "beschrijving": "Sterke groei; VS 9% organisch Q4 2024; blootgesteld aan tariefrisico" },
+      { "naam": "Azië / Pacific", "omzet_pct": 7.7, "beschrijving": "Onderpenetratie; significante groeikans" },
+      { "naam": "Latijns-Amerika", "omzet_pct": 6.5, "beschrijving": "Snelst groeiende regio procentueel" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Institutionele beleggers (pensioenfondsen, indexfondsen)", "pct": 100, "type": "Institutioneel" }
+    ]
+  },
+  "financieel": {
+    "valuta_label": "DKK mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2021,
+        "omzet": 23394,
+        "omzet_groei_pct": null,
+        "ebitda": 7838,
+        "ebitda_marge_pct": 33.5,
+        "nettowinst": 4160,
+        "nettomarge_pct": 17.8,
+        "eps": 41.7
+      },
+      {
+        "jaar": 2022,
+        "omzet": 26463,
+        "omzet_groei_pct": 13.1,
+        "ebitda": 8716,
+        "ebitda_marge_pct": 32.9,
+        "nettowinst": 5029,
+        "nettomarge_pct": 19.0,
+        "eps": 53.7
+      },
+      {
+        "jaar": 2023,
+        "omzet": 28136,
+        "omzet_groei_pct": 6.3,
+        "ebitda": 9118,
+        "ebitda_marge_pct": 32.4,
+        "nettowinst": 4740,
+        "nettomarge_pct": 16.8,
+        "eps": 55.1
+      },
+      {
+        "jaar": 2024,
+        "omzet": 31680,
+        "omzet_groei_pct": 12.6,
+        "ebitda": 10327,
+        "ebitda_marge_pct": 32.6,
+        "nettowinst": 5227,
+        "nettomarge_pct": 16.5,
+        "eps": 64.6
+      },
+      {
+        "jaar": 2025,
+        "omzet": 32549,
+        "omzet_groei_pct": 2.7,
+        "ebitda": 10316,
+        "ebitda_marge_pct": 31.7,
+        "nettowinst": 5241,
+        "nettomarge_pct": 16.1,
+        "eps": 67.9
+      }
+    ],
+    "kasstromen": [
+      {
+        "jaar": 2021,
+        "fcf": 5932,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "sbc": null
+      },
+      {
+        "jaar": 2022,
+        "fcf": 3596,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "sbc": null
+      },
+      {
+        "jaar": 2023,
+        "fcf": 6255,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "sbc": null
+      },
+      {
+        "jaar": 2024,
+        "fcf": 7385,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "sbc": null
+      },
+      {
+        "jaar": 2025,
+        "fcf": 5912,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "sbc": null
+      }
+    ],
+    "balans": [
+      {
+        "jaar": 2021,
+        "nettoschuld": 2883,
+        "eigen_vermogen": 7001,
+        "debt_ebitda": 0.37
+      },
+      {
+        "jaar": 2022,
+        "nettoschuld": 6794,
+        "eigen_vermogen": 7167,
+        "debt_ebitda": 0.78
+      },
+      {
+        "jaar": 2023,
+        "nettoschuld": 9770,
+        "eigen_vermogen": 5355,
+        "debt_ebitda": 1.07
+      },
+      {
+        "jaar": 2024,
+        "nettoschuld": 11007,
+        "eigen_vermogen": 5508,
+        "debt_ebitda": 1.07
+      },
+      {
+        "jaar": 2025,
+        "nettoschuld": 13710,
+        "eigen_vermogen": 5282,
+        "debt_ebitda": 1.33
+      }
+    ],
+    "rendementsindicatoren": [
+      {
+        "jaar": 2021,
+        "roce_pct": null,
+        "roe_pct": 59.0,
+        "roic_pct": 52.0,
+        "roa_pct": 22.0,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 43.5
+      },
+      {
+        "jaar": 2022,
+        "roce_pct": null,
+        "roe_pct": 70.0,
+        "roic_pct": 49.0,
+        "roa_pct": 23.0,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 40.5
+      },
+      {
+        "jaar": 2023,
+        "roce_pct": null,
+        "roe_pct": 89.0,
+        "roic_pct": 45.0,
+        "roa_pct": 20.0,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 36.5
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": null,
+        "roe_pct": 95.0,
+        "roic_pct": 46.0,
+        "roa_pct": 19.0,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 37.5
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": null,
+        "roe_pct": 99.0,
+        "roic_pct": 41.0,
+        "roa_pct": 18.0,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 32.5
+      }
+    ],
+    "accruals": [
+      {
+        "jaar": 2021,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2022,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2023,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2024,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": null
+      },
+      {
+        "jaar": 2025,
+        "accruals_ratio": null,
+        "non_gaap_verschil_pct": null
+      }
+    ],
+    "waardering": {
+      "pe": 6.5,
+      "pe_forward": null,
+      "ev_ebitda": 7.4,
+      "p_fcf": 5.6,
+      "p_fcf_na_sbc": null,
+      "fcf_yield_pct": null,
+      "p_b": 6.5,
+      "ev_omzet": 1.5,
+      "dividendrendement_pct": 5.0,
+      "peg": 0.65
+    }
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "toelichting": "Pandora's slotgracht rust op twee pijlers: een sterk, emotioneel geladen globaal merk in het betaalbare luxesegment en een uitzonderlijk efficiënt, verticaal geïntegreerd productieapparaat in Thailand. De charmebracelet-ecosysteem creëert enige lock-in maar de switchkosten zijn lager dan bij B2B-software. Op een horizon van 5 jaar achten wij de moat duurzaam, mits de nieuwe CEO de merkpositionering consistent voortzet.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "STERK",
+        "score": 4,
+        "toelichting": "Pandora staat in de top-100 meest waardevolle merken wereldwijd (Interbrand 2024); betaalbare luxe met emotionele waarde die moeilijk te kopiëren is"
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Klanten zijn emotioneel gebonden via hun armbandcollectie maar fysieke switchkosten zijn laag; charms van concurrenten passen niet op Pandora-armbanden"
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AFWEZIG",
+        "score": 1,
+        "toelichting": "Geen directe netwerkeffecten; meer gebruikers maken het product niet beter voor anderen"
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "STERK",
+        "score": 4,
+        "toelichting": "Productie op grote schaal in eigen fabrieken in Thailand; brutomarge >79% sectorleidend voor een massamerk; verticale integratie versterkt kostenvoordeel"
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Betaalbare luxe-niche biedt enige bescherming; ultra-luxe concurrenten richten zich op een ander segment maar markt is groot genoeg voor meerdere spelers"
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      {
+        "functie": "CEO (aftredend AGM 2026)",
+        "naam": "Alexander Lacik",
+        "achtergrond": "Ex-CEO Britax, ex-President Noord-Amerika Reckitt Benckiser, ex-P&G; leider van de succesvolle Phoenix-transformatie sinds april 2019"
+      },
+      {
+        "functie": "CEO-opvolger (per AGM 2026)",
+        "naam": "Berta de Pablos-Barbier",
+        "achtergrond": "Ex-CMO Pandora (nov. 2024), ex-CEO Moët & Chandon en Dom Pérignon (LVMH); 30 jaar luxe-ervaring; interne promotie"
+      },
+      {
+        "functie": "CFO",
+        "naam": "Anders Boyer",
+        "achtergrond": "20 jaar CFO-ervaring bij Pandora, Hempel en GN Store Nord; aangetreden augustus 2018"
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": null,
+      "verwateringsgraad_pct_jaar": null,
+      "prikkels_aligned": true,
+      "toelichting": "Managementbeloningen zijn gedeeltelijk prestatiegerelateerd op TSR en ROIC; geen grote aandelenverkopen geregistreerd vanuit huidige sleutelfiguren"
+    },
+    "insider_transactions": [
+      {
+        "datum": null,
+        "naam": null,
+        "functie": null,
+        "type": null,
+        "aandelen": null,
+        "koers": null
+      }
+    ],
+    "capital_allocation": "Lacik heeft discipline getoond in kapitaalallocatie: geen grote overnames, organische investeringen in nieuwe winkels en productiecapaciteit, en structurele aandeleninkopen (gemiddeld DKK ~4 miljard/jaar). Dividend is ingevoerd in 2016 en groeit. Nagenoeg alle FCF wordt teruggegeven aan aandeelhouders via inkopen en dividend.",
+    "toelichting": "Management scoort sterk op consistentie en transparantie: Pandora heeft de afgelopen jaren consequent financiële doelstellingen gehaald of overtroffen (2024: 13% organische groei vs. guidance 6-9%). De aangekondigde CEO-wissel in 2026 is een aandachtspunt maar het risico is beperkt door de interne opvolging van de Pablos-Barbier die de strategie en organisatie goed kent."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-Q2",
+      "omschrijving": "AGM 2026: formele benoeming Berta de Pablos-Barbier als nieuwe CEO en strategische update Phoenix v2",
+      "richting": "NEUTRAAL",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-Q2",
+      "omschrijving": "Uitkomst US-tariefonderhandelingen Thailand (36%): permanente structurele kostenpost of terugtrekking?",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-Q1",
+      "omschrijving": "Q4 2025 / FY 2025 jaarcijfers en guidance 2026 — bevestiging of bijstelling financiële doelstellingen",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-Q3",
+      "omschrijving": "Phoenix v2 expansie: voortgang categorie-uitbreiding (ringen, kettingen, oorbellen) en geografische groei Azië/LatAm",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-Q4",
+      "omschrijving": "Kerstseizoen 2026: indicatief voor stabilisering of herstel van de Noord-Amerikaanse omzet na tariefimpact",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    }
+  ],
+  "fair_value": {
+    "dcf": {
+      "basis_fcf": 5912,
+      "basis_fcf_na_sbc": null,
+      "wacc_pct": 8.5,
+      "groei_fase1_pct": 6.0,
+      "fase1_jaren": 5,
+      "terminal_groei_pct": 2.5,
+      "shares_outstanding_mln": 75,
+      "nettoschuld_huidig": 13710
+    },
+    "scenarios": [
+      { "scenario": "Pessimistisch",       "fcf_groei_pct": 2.0,  "wacc_pct": 10.0, "fair_value": 480.0,  "upside_pct": 8.0 },
+      { "scenario": "Basis",               "fcf_groei_pct": 6.0,  "wacc_pct": 8.5,  "fair_value": 950.0,  "upside_pct": 114.0 },
+      { "scenario": "Optimistisch",        "fcf_groei_pct": 10.0, "wacc_pct": 7.0,  "fair_value": 1750.0, "upside_pct": 295.0 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 6.0,  "wacc_pct": 8.5,  "fair_value": 950.0,  "upside_pct": 114.0 }
+    ],
+    "gevoeligheid": {
+      "wacc_range": [7.0, 8.5, 10.0, 11.5],
+      "groei_range": [2.0, 4.0, 6.0, 8.0, 10.0],
+      "matrix": [
+        [820,  620, 480, 390],
+        [1100, 800, 600, 480],
+        [1450, 950, 720, 570],
+        [1900, 1200, 880, 690],
+        [2500, 1550, 1100, 850]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham",                "score": 3, "max": 5, "oordeel": "Gedeeltelijk — P/E 6,5x uitstekend, P/B 6,5x voldoet niet aan Graham-norm, D/E grensgebied" },
+      { "framework": "Buffett / Munger",       "score": 4, "max": 5, "oordeel": "Voldoet — outstanding bedrijf met ROIC 41%, nu verhandeld op aantrekkelijke prijs" },
+      { "framework": "Peter Lynch",            "score": 4, "max": 5, "oordeel": "Interessant — PEG 0,65x, helder verhaal, Stalwart met Fast Grower-kenmerken" },
+      { "framework": "Phil Fisher",            "score": 4, "max": 5, "oordeel": "Sterk — merk, brutomarge >79%, consistent management, productinnovatie via Phoenix v2" },
+      { "framework": "Magic Formula",          "score": 5, "max": 5, "oordeel": "Aantrekkelijk — earnings yield ~10,2% + ROIC 41% = top-deciel op beide Magic Formula-assen" },
+      { "framework": "Moat",                   "score": 4, "max": 5, "oordeel": "Narrow-to-Wide — sterk merk + kostenvoordeel; beperkte overstapkosten en geen netwerkeffecten" },
+      { "framework": "Management",             "score": 4, "max": 5, "oordeel": "Sterk — bewezen track record, transparant, aandachtspunt CEO-wissel 2026" },
+      { "framework": "Fair Value DCF",         "score": 5, "max": 5, "oordeel": "Grote korting — basisscenario DKK 950, ~+114% upside vs. huidige koers DKK 443" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 5, "max": 5, "oordeel": "Zelfde als basis — geen IPO-correctie vereist; Pandora is >15 jaar beursgenoteerd" }
+    ],
+    "totaal": 38,
+    "max": 45,
+    "eindoordeel": "KOOP",
+    "samenvatting": "Pandora A/S biedt op de huidige koers van DKK 443 een uitzonderlijke combinatie van hoge bedrijfskwaliteit en lage waardering. De ROIC van 41%, de brutomarge van >79% en de structureel sterke FCF-generatie zijn sectoruniek. De aandelendaling van ~60% reflecteert reële risico's — met name de Amerikaanse importtarieven op Thailand — maar de markt lijkt de fundamentele kracht te onderwaarderen. Op basis van een conservatief basisscenario-DCF bedraagt de intrinsieke waarde circa DKK 950, ruim het dubbele van de huidige koers. De PEG-ratio van 0,65x en een earnings yield van ~10% bevestigen de onderwaardering. Voornaamste onzekerheid: de structurele uitkomst van de US-tariefdreiging.",
+    "samenvatting_en": "Pandora A/S offers at the current price of DKK 443 an exceptional combination of high business quality and low valuation. The 41% ROIC, gross margin above 79% and structurally strong FCF generation are sector-unique. The ~60% share price decline reflects real risks — particularly US import tariffs on Thailand — but the market appears to be undervaluing the fundamental strength of the business. Based on a conservative base-case DCF, intrinsic value is approximately DKK 950, more than double the current price. A PEG ratio of 0.65x and an earnings yield of ~10% confirm the undervaluation. The primary uncertainty is the structural outcome of the US tariff threat."
+  },
+  "bronnen": {
+    "jaarverslag_jaar": 2024,
+    "jaarverslag_url": "https://pandoragroup.com/investor",
+    "ir_pagina": "https://pandoragroup.com/investor/share-information/key-figures",
+    "claims": [
+      {
+        "sectie": "H2.1 Resultatenrekening",
+        "claim": "Omzet FY 2025: DKK 32.549 mln; EBITDA-marge 31,7%; nettowinst DKK 5.241 mln; EPS DKK 67,9",
+        "bron": "Pandora A/S Annual Report 2024 + Q3 2025 Interim Report (GlobeNewswire)",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.3 Kasstroomoverzicht",
+        "claim": "FCF 2025: DKK 5.912 mln; gemiddelde FCF 2021–2025: DKK 5.816 mln; FCF-conversie gemiddeld ~120%",
+        "bron": "Pandora A/S Annual Report 2024; StockAnalysis.com CPH:PNDORA Cash Flow",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.2 Balans",
+        "claim": "Nettoschuld 2025: DKK 13.710 mln; nettoschuld/EBITDA 1,33x; eigen vermogen DKK 5.282 mln",
+        "bron": "Pandora A/S Annual Report 2024",
+        "pagina": null
+      },
+      {
+        "sectie": "H2.4 Rendementsindicatoren",
+        "claim": "ROIC 2025: 41%; ROE 2025: 99%; ROA 2025: 18%",
+        "bron": "Pandora A/S Annual Report 2024; StockAnalysis.com CPH:PNDORA",
+        "pagina": null
+      },
+      {
+        "sectie": "H7.3 DCF-resultaten",
+        "claim": "Basisscenario fair value DKK 950; pessimistisch DKK 480; optimistisch DKK 1.750; aandelen uitstaand ~75 miljoen",
+        "bron": "Eigen DCF-berekening op basis van Pandora jaarverslagen 2021–2024",
+        "pagina": null
+      },
+      {
+        "sectie": "H4 Managementanalyse",
+        "claim": "Alexander Lacik treedt af per AGM 2026; opvolger Berta de Pablos-Barbier (ex-CMO Pandora, ex-CEO Moët & Chandon)",
+        "bron": "GlobeNewswire — 'Alexander Lacik to retire in 2026' (30 september 2025)",
+        "pagina": null
+      }
+    ]
+  },
+  "thesis_tracker": {
+    "publicatiedatum": "2026-03-13",
+    "oordeel_bij_publicatie": "KOOP",
+    "koers_bij_publicatie": 443.0,
+    "checkpoints": [
+      {
+        "datum": null,
+        "label": "6m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "OMXC20",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "12m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "OMXC20",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      },
+      {
+        "datum": null,
+        "label": "24m",
+        "koers": null,
+        "rendement_pct": null,
+        "benchmark": "OMXC20",
+        "benchmark_rendement_pct": null,
+        "oordeel_nog_geldig": null
+      }
+    ]
+  }
+}
