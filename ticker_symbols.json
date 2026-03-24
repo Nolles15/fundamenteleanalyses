@@ -1,0 +1,16 @@
+{
+  "_comment": "Handmatige override: ticker → Yahoo Finance symbool. Verwijder een entry om auto-detectie te gebruiken.",
+  "ADYEN": "ADYEN.AS",
+  "ALTR": "ALTR.LS",
+  "ARP": "ATC.WA",
+  "EQNR": "EQNR.OL",
+  "HEIJM": "HEIJM.AS",
+  "HUSCO": "HUSCO.CO",
+  "KPL": "KPL.WA",
+  "PHARM": "PHARM.AS",
+  "PUIG": "PUIG.MC",
+  "PZU": "PZU.WA",
+  "WAWI": "WAWI.OL",
+  "WIPRO": "WIPRO.NS",
+  "ULVR": "ULVR.AS"
+}
