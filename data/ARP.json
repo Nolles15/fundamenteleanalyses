@@ -5,7 +5,7 @@
     "naam": "Arctic Paper S.A.",
     "sector": "Basismaterialen — Papier & Verpakking",
     "segment": "Grafisch fijnpapier & Pulp",
-    "koers": 8.0,
+    "koers": 30.41,
     "valuta": "PLN",
     "peildatum": "2026-03-17",
     "marktkapitalisatie": "~600–650 mln PLN / ~1,45 mrd SEK"
@@ -13,14 +13,26 @@
   "executive_summary": {
     "kernthese": "Arctic Paper S.A. is een van de toonaangevende Europese producenten van hoogwaardig grafisch fijnpapier, met vier papierfabrieken in Polen, Zweden en Duitsland, en een meerderheidsbelang van 51% in Rottneros AB, een Zweedse pulpproducent. Het bedrijf opereert in een sector met structureel dalende vraag naar grafisch papier door digitalisering, én met cyclische druk van hoge grondstofprijzen en overaanbod. Na een recordjaar in 2022 is Arctic Paper in 2025 zwaar getroffen door collapserende pulpprijzen en verliezen bij Rottneros (nettoverlies SEK -452 mln). De koers is in 1,5 jaar gehalveerd; bij herstel is het opwaartse potentieel substantieel maar onzeker.",
     "oordeel": "HOLD",
-    "koers": 8.0,
+    "koers": 30.41,
     "valuta": "PLN",
     "fair_value_basis": 19.0,
-    "upside_pct": 137,
+    "upside_pct": -37.5,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 8.0,  "upside_pct": 0   },
-      { "scenario": "Basis",         "fair_value": 19.0, "upside_pct": 137 },
-      { "scenario": "Optimistisch",  "fair_value": 29.0, "upside_pct": 262 }
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 8.0,
+        "upside_pct": 0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 19.0,
+        "upside_pct": 137
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 29.0,
+        "upside_pct": 262
+      }
     ],
     "grootste_kans": "Herstel pulpprijzen + kostenbesparingen (PLN 45–50 mln) + prijsverhogingen papier April 2026 bieden significant opwaarts potentieel.",
     "grootste_risico": "Structureel dalende vraag grafisch papier door digitalisering; Rottneros blijft verlieslatend bij uitblijven pulpprijsherstel."
@@ -30,39 +42,170 @@
     "personeel": null,
     "landen": 3,
     "segmenten": [
-      { "naam": "Fijnpapier (Paper)",  "omzet_pct": 75, "beschrijving": "Hoogwaardig grafisch fijnpapier onder merken Amber, Arctic, Munken en G-Print. Fabrieken in Kostrzyn (PL), Grycksbo (SE), Munkedal (SE) en Mochenwangen (DE)." },
-      { "naam": "Pulp (Rottneros)",    "omzet_pct": 25, "beschrijving": "Marktpulp (CTMP en sulfaatpulp) via 51%-dochter Rottneros AB, Nasdaq Stockholm. Twee fabrieken: Rottneros Mill en Vallvik Mill." }
+      {
+        "naam": "Fijnpapier (Paper)",
+        "omzet_pct": 75,
+        "beschrijving": "Hoogwaardig grafisch fijnpapier onder merken Amber, Arctic, Munken en G-Print. Fabrieken in Kostrzyn (PL), Grycksbo (SE), Munkedal (SE) en Mochenwangen (DE)."
+      },
+      {
+        "naam": "Pulp (Rottneros)",
+        "omzet_pct": 25,
+        "beschrijving": "Marktpulp (CTMP en sulfaatpulp) via 51%-dochter Rottneros AB, Nasdaq Stockholm. Twee fabrieken: Rottneros Mill en Vallvik Mill."
+      }
     ],
     "aandeelhouders": [
-      { "naam": "Nemus Holding AB (Thomas Onstad)", "pct": 58.3, "type": "Controlerend" },
-      { "naam": "Thomas Onstad (direct)",           "pct": 9.8,  "type": "Controlerend" },
-      { "naam": "Free float (overige)",             "pct": 31.9, "type": "Publiek" }
+      {
+        "naam": "Nemus Holding AB (Thomas Onstad)",
+        "pct": 58.3,
+        "type": "Controlerend"
+      },
+      {
+        "naam": "Thomas Onstad (direct)",
+        "pct": 9.8,
+        "type": "Controlerend"
+      },
+      {
+        "naam": "Free float (overige)",
+        "pct": 31.9,
+        "type": "Publiek"
+      }
     ]
   },
   "financieel": {
     "valuta_label": "PLN mln",
     "resultatenrekening": [
-      { "jaar": 2019, "omzet": 2250, "omzet_groei_pct": null,  "ebitda": 100, "ebitda_marge_pct": 4.4,  "nettowinst": 15,   "nettomarge_pct": null, "eps": 0.22  },
-      { "jaar": 2020, "omzet": 2400, "omzet_groei_pct": 6.7,   "ebitda": 120, "ebitda_marge_pct": 5.0,  "nettowinst": 35,   "nettomarge_pct": null, "eps": 0.50  },
-      { "jaar": 2021, "omzet": 3413, "omzet_groei_pct": 42.2,  "ebitda": 328, "ebitda_marge_pct": 9.6,  "nettowinst": 150,  "nettomarge_pct": null, "eps": 2.16  },
-      { "jaar": 2022, "omzet": 4894, "omzet_groei_pct": 43.4,  "ebitda": 650, "ebitda_marge_pct": 13.3, "nettowinst": 450,  "nettomarge_pct": null, "eps": 6.48  },
-      { "jaar": 2023, "omzet": 3550, "omzet_groei_pct": -27.5, "ebitda": 400, "ebitda_marge_pct": 11.3, "nettowinst": 200,  "nettomarge_pct": null, "eps": 2.88  },
-      { "jaar": 2024, "omzet": 3435, "omzet_groei_pct": -3.2,  "ebitda": 299, "ebitda_marge_pct": 8.7,  "nettowinst": 70,   "nettomarge_pct": null, "eps": 1.01  },
-      { "jaar": 2025, "omzet": 3198, "omzet_groei_pct": -6.9,  "ebitda": 28,  "ebitda_marge_pct": 0.9,  "nettowinst": -250, "nettomarge_pct": null, "eps": -3.60 }
+      {
+        "jaar": 2019,
+        "omzet": 2250,
+        "omzet_groei_pct": null,
+        "ebitda": 100,
+        "ebitda_marge_pct": 4.4,
+        "nettowinst": 15,
+        "nettomarge_pct": null,
+        "eps": 0.22
+      },
+      {
+        "jaar": 2020,
+        "omzet": 2400,
+        "omzet_groei_pct": 6.7,
+        "ebitda": 120,
+        "ebitda_marge_pct": 5.0,
+        "nettowinst": 35,
+        "nettomarge_pct": null,
+        "eps": 0.5
+      },
+      {
+        "jaar": 2021,
+        "omzet": 3413,
+        "omzet_groei_pct": 42.2,
+        "ebitda": 328,
+        "ebitda_marge_pct": 9.6,
+        "nettowinst": 150,
+        "nettomarge_pct": null,
+        "eps": 2.16
+      },
+      {
+        "jaar": 2022,
+        "omzet": 4894,
+        "omzet_groei_pct": 43.4,
+        "ebitda": 650,
+        "ebitda_marge_pct": 13.3,
+        "nettowinst": 450,
+        "nettomarge_pct": null,
+        "eps": 6.48
+      },
+      {
+        "jaar": 2023,
+        "omzet": 3550,
+        "omzet_groei_pct": -27.5,
+        "ebitda": 400,
+        "ebitda_marge_pct": 11.3,
+        "nettowinst": 200,
+        "nettomarge_pct": null,
+        "eps": 2.88
+      },
+      {
+        "jaar": 2024,
+        "omzet": 3435,
+        "omzet_groei_pct": -3.2,
+        "ebitda": 299,
+        "ebitda_marge_pct": 8.7,
+        "nettowinst": 70,
+        "nettomarge_pct": null,
+        "eps": 1.01
+      },
+      {
+        "jaar": 2025,
+        "omzet": 3198,
+        "omzet_groei_pct": -6.9,
+        "ebitda": 28,
+        "ebitda_marge_pct": 0.9,
+        "nettowinst": -250,
+        "nettomarge_pct": null,
+        "eps": -3.6
+      }
     ],
     "resultatenrekening_analyse": "De enorme winstvolatiliteit is kenmerkend voor een cyclische papierproducent. 2022 was een recordjaar door naoorlogse vraaginhaalslagen, hoge papier- en pulpprijzen en gunstige EUR/PLN. Sindsdien is er een scherpe normalisatie opgetreden, versneld door de Rottneros-verliezen in 2025 (nettoverlies Rottneros: SEK -452 mln = ~PLN -181 mln). De gecombineerde impact resulteerde in een groepsbrede nettoverlies in 2025 van naar schatting PLN -250 mln.",
     "kasstromen": [
-      { "jaar": 2021, "cfo": 250, "capex": 120, "fcf": 130,  "fcf_per_aandeel": 1.87,  "dividend_uitbetaald": 30  },
-      { "jaar": 2022, "cfo": 550, "capex": 150, "fcf": 400,  "fcf_per_aandeel": 5.76,  "dividend_uitbetaald": 120 },
-      { "jaar": 2023, "cfo": 350, "capex": 200, "fcf": 150,  "fcf_per_aandeel": 2.16,  "dividend_uitbetaald": 100 },
-      { "jaar": 2024, "cfo": 220, "capex": 400, "fcf": -180, "fcf_per_aandeel": -2.59, "dividend_uitbetaald": 80  }
+      {
+        "jaar": 2021,
+        "cfo": 250,
+        "capex": 120,
+        "fcf": 130,
+        "fcf_per_aandeel": 1.87,
+        "dividend_uitbetaald": 30
+      },
+      {
+        "jaar": 2022,
+        "cfo": 550,
+        "capex": 150,
+        "fcf": 400,
+        "fcf_per_aandeel": 5.76,
+        "dividend_uitbetaald": 120
+      },
+      {
+        "jaar": 2023,
+        "cfo": 350,
+        "capex": 200,
+        "fcf": 150,
+        "fcf_per_aandeel": 2.16,
+        "dividend_uitbetaald": 100
+      },
+      {
+        "jaar": 2024,
+        "cfo": 220,
+        "capex": 400,
+        "fcf": -180,
+        "fcf_per_aandeel": -2.59,
+        "dividend_uitbetaald": 80
+      }
     ],
     "kasstromen_analyse": "In 2024 was de FCF negatief door een CAPEX-sprint van >PLN 400 mln (investeringen in nieuwe productiecapaciteit: verpakkingen, pellets, energie). Dit is een bewuste keuze van management om te investeren in de toekomst terwijl de papiermarkt zwak is. In 2025 zal de FCF wederom zeer negatief zijn door de operationele verliezen. De keerzijde: als de investeringen niet renderen of de markt niet herstelt, verslechtert de financiële positie verder.",
     "balans": [
-      { "jaar": 2021, "nettoschuld": -100, "eigen_vermogen": 1400, "debt_ebitda": null },
-      { "jaar": 2022, "nettoschuld": -300, "eigen_vermogen": 1800, "debt_ebitda": null },
-      { "jaar": 2023, "nettoschuld": -250, "eigen_vermogen": 1900, "debt_ebitda": null },
-      { "jaar": 2024, "nettoschuld": -142, "eigen_vermogen": 1700, "debt_ebitda": null }
+      {
+        "jaar": 2021,
+        "nettoschuld": -100,
+        "eigen_vermogen": 1400,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2022,
+        "nettoschuld": -300,
+        "eigen_vermogen": 1800,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2023,
+        "nettoschuld": -250,
+        "eigen_vermogen": 1900,
+        "debt_ebitda": null
+      },
+      {
+        "jaar": 2024,
+        "nettoschuld": -142,
+        "eigen_vermogen": 1700,
+        "debt_ebitda": null
+      }
     ],
     "balans_analyse": "De balans van Arctic Paper was tot 2024 relatief solide, met een nettokaspositie van PLN -142 mln (dwz. meer kassa dan schuld). De boekwaarde per aandeel bedroeg in 2024 ~PLN 24,5, terwijl de huidige koers ~PLN 8 is. Dit resulteert in een P/B van slechts 0,33× — historisch laag en suggereert dat de markt de activa significant afprijst.",
     "rendementsindicatoren": {
@@ -74,26 +217,63 @@
     },
     "rendementsindicatoren_analyse": "ROIC is de sleutelmaatstaf voor waardecreatie. In normale jaren (2021, 2023) ligt ROIC rond 8%, wat waarschijnlijk rond of licht boven de WACC van ca. 9–10% ligt — geen brede moat. In het recordjaar 2022 was de ROIC uitzonderlijk hoog. In 2025 is de ROIC vrijwel zeker diep negatief door de verliezen bij Rottneros.",
     "waardering": {
-      "pe": null,
+      "pe": 17.0,
       "ev_ebitda": null,
       "p_fcf": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": -8.5,
       "p_b": 0.33,
-      "ev_omzet": 0.20,
-      "dividendrendement_pct": 0.0
+      "ev_omzet": 0.2,
+      "dividendrendement_pct": 585.0
     },
     "waardering_labels": {
-      "pe":           { "waarde": "n.v.t.", "reden": "verliesjaar 2025" },
-      "ev_ebitda":    { "waarde": ">20×",   "reden": "EBITDA ~nul (2025E)" },
-      "fcf_yield_pct":{ "waarde": "neg.",   "reden": "negatieve FCF 2024" },
-      "p_fcf":        { "waarde": "neg.",   "reden": "negatieve FCF 2024" }
+      "pe": {
+        "waarde": "n.v.t.",
+        "reden": "verliesjaar 2025"
+      },
+      "ev_ebitda": {
+        "waarde": ">20×",
+        "reden": "EBITDA ~nul (2025E)"
+      },
+      "fcf_yield_pct": {
+        "waarde": "neg.",
+        "reden": "negatieve FCF 2024"
+      },
+      "p_fcf": {
+        "waarde": "neg.",
+        "reden": "negatieve FCF 2024"
+      }
     },
     "waardering_historisch": {
-      "kolommen": ["Huidig (2026)", "2023", "2022 (record)"],
+      "kolommen": [
+        "Huidig (2026)",
+        "2023",
+        "2022 (record)"
+      ],
       "rijen": [
-        { "ratio": "P/E",      "waarden": ["N/A (verlies 2025)", "~3×",   "~1,4×"] },
-        { "ratio": "P/B",      "waarden": ["~0,33× (l)",         "~0,4×", "~0,5×"] },
-        { "ratio": "EV/EBITDA","waarden": [">20× (2025E)",       "~3–4×", "~1–2×"] }
+        {
+          "ratio": "P/E",
+          "waarden": [
+            "N/A (verlies 2025)",
+            "~3×",
+            "~1,4×"
+          ]
+        },
+        {
+          "ratio": "P/B",
+          "waarden": [
+            "~0,33× (l)",
+            "~0,4×",
+            "~0,5×"
+          ]
+        },
+        {
+          "ratio": "EV/EBITDA",
+          "waarden": [
+            ">20× (2025E)",
+            "~3–4×",
+            "~1–2×"
+          ]
+        }
       ]
     },
     "waardering_analyse": "De huidige koers van PLN 8 is uitzonderlijk laag in historisch perspectief. In normale jaren (2021–2023) handelde Arctic Paper op 3–4× EV/EBITDA; de huidige >20× reflecteert het verliesjaar 2025E en niet de genormaliseerde winstcapaciteit. Zodra het bedrijf terugkeert naar een EBITDA van PLN 250–300 mln, comprimeren de multiples aanzienlijk. De P/B van 0,33× suggereert dat de markt uitgaat van permanente waardevernietiging of significante balanserosie — een risico dat niet onterecht is bij aanhoudende verliezen.",
@@ -103,19 +283,56 @@
     "oordeel": "NO MOAT",
     "toelichting": "Arctic Paper heeft hoogstens een smal concurrentievoordeel in premium papierniches (Munken-merk voor ongecoat design paper). Het overgrote deel van de activiteiten bevindt zich in structureel dalende commodity-markten. Verticale integratie via Rottneros is strategisch logisch maar heeft in de praktijk geleid tot extra cyclisch risico.",
     "categorieen": [
-      { "naam": "Immateriële activa",  "oordeel": "BEPERKT", "score": 2, "toelichting": "Merken Munken, Arctic, Amber zijn bekend in nichemarkten (premium ongecoat papier), maar in commodity-paper is merkonderscheid gering." },
-      { "naam": "Overstapkosten",      "oordeel": "AFWEZIG", "score": 1, "toelichting": "Papier is grotendeels een commodity; klanten schakelen makkelijk over op andere leveranciers of goedkoper Aziatisch papier." },
-      { "naam": "Netwerkeffecten",     "oordeel": "AFWEZIG", "score": 1, "toelichting": "Niet van toepassing in de papiersector." },
-      { "naam": "Kostenvoordeel",      "oordeel": "BEPERKT", "score": 2, "toelichting": "Verticale integratie via Rottneros (eigen pulp) biedt theoretisch een kostenvoordeel, maar Rottneros is in 2025 een kostendrein." },
-      { "naam": "Efficiënte schaal",   "oordeel": "BEPERKT", "score": 2, "toelichting": "Premium nichemarkten (Munken, design paper) zijn kleiner en hebben minder prijsconcurrentie, maar het grootste deel van de volumes is in het competitieve standaard grafisch papier segment." }
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Merken Munken, Arctic, Amber zijn bekend in nichemarkten (premium ongecoat papier), maar in commodity-paper is merkonderscheid gering."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "AFWEZIG",
+        "score": 1,
+        "toelichting": "Papier is grotendeels een commodity; klanten schakelen makkelijk over op andere leveranciers of goedkoper Aziatisch papier."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AFWEZIG",
+        "score": 1,
+        "toelichting": "Niet van toepassing in de papiersector."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Verticale integratie via Rottneros (eigen pulp) biedt theoretisch een kostenvoordeel, maar Rottneros is in 2025 een kostendrein."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Premium nichemarkten (Munken, design paper) zijn kleiner en hebben minder prijsconcurrentie, maar het grootste deel van de volumes is in het competitieve standaard grafisch papier segment."
+      }
     ]
   },
   "management": {
     "oordeel": "NEUTRAAL",
     "personen": [
-      { "functie": "CEO",              "naam": "Michał Jarczyński",     "achtergrond": "Langjarig directeur; ervaring in papier- en maakindustrie in Polen. Consistent communicator naar markt." },
-      { "functie": "CFO",              "naam": "Katarzyna Wojtkowiak",  "achtergrond": "11 jaar bij Arctic Paper Groep; eerder Chief Accountant en Group Treasury. Sterk financieel profiel." },
-      { "functie": "RvC (aandeelh.)",  "naam": "Thomas Onstad",         "achtergrond": "Meerderheidsaandeelhouder (68%); Zweedse zakenman. Lid RvC sinds 2008. Sterke betrokkenheid maar geconcentreerde macht." }
+      {
+        "functie": "CEO",
+        "naam": "Michał Jarczyński",
+        "achtergrond": "Langjarig directeur; ervaring in papier- en maakindustrie in Polen. Consistent communicator naar markt."
+      },
+      {
+        "functie": "CFO",
+        "naam": "Katarzyna Wojtkowiak",
+        "achtergrond": "11 jaar bij Arctic Paper Groep; eerder Chief Accountant en Group Treasury. Sterk financieel profiel."
+      },
+      {
+        "functie": "RvC (aandeelh.)",
+        "naam": "Thomas Onstad",
+        "achtergrond": "Meerderheidsaandeelhouder (68%); Zweedse zakenman. Lid RvC sinds 2008. Sterke betrokkenheid maar geconcentreerde macht."
+      }
     ],
     "capital_allocation": "Historisch verantwoord dividendbeleid (2022–2024). Bewuste CAPEX-sprint 2023–2025 (>PLN 400 mln) voor diversificatie naar verpakkingen, pellets en energie — strategisch logisch maar financieel risicovol in zwakke markt. Geen significante aandeleninkopen.",
     "toelichting": "Management is solide en integer, maar heeft de omvang van de operationele problemen bij Rottneros wellicht te laat en te optimistisch gecommuniceerd. Thomas Onstad's 68%-belang zorgt voor sterke persoonlijke prikkels voor herstel, maar beperkt de zeggenschap van minderheidsaandeelhouders significant."
@@ -128,37 +345,144 @@
       "terminal_groei_pct": 1.0
     },
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": -5.0, "wacc_pct": 9.0,  "fair_value": 8.0,  "upside_pct": 0   },
-      { "scenario": "Basis",               "fcf_groei_pct": 5.0,  "wacc_pct": 9.0,  "fair_value": 19.0, "upside_pct": 137 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 10.0, "wacc_pct": 9.0,  "fair_value": 29.0, "upside_pct": 262 },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 5.0,  "wacc_pct": 9.0,  "fair_value": 19.0, "upside_pct": 137 }
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": -5.0,
+        "wacc_pct": 9.0,
+        "fair_value": 8.0,
+        "upside_pct": 0
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 5.0,
+        "wacc_pct": 9.0,
+        "fair_value": 19.0,
+        "upside_pct": 137
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 10.0,
+        "wacc_pct": 9.0,
+        "fair_value": 29.0,
+        "upside_pct": 262
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 5.0,
+        "wacc_pct": 9.0,
+        "fair_value": 19.0,
+        "upside_pct": 137
+      }
     ],
     "gevoeligheid": {
-      "wacc_range":  [7.5, 8.5, 9.0, 10.0, 11.0],
-      "groei_range": [-5.0, 0.0, 5.0, 10.0],
+      "wacc_range": [
+        7.5,
+        8.5,
+        9.0,
+        10.0,
+        11.0
+      ],
+      "groei_range": [
+        -5.0,
+        0.0,
+        5.0,
+        10.0
+      ],
       "matrix": [
-        [10, 8,  8,  7,  6],
-        [17, 14, 13, 11, 9],
-        [27, 22, 19, 16, 13],
-        [42, 33, 29, 23, 19]
+        [
+          10,
+          8,
+          8,
+          7,
+          6
+        ],
+        [
+          17,
+          14,
+          13,
+          11,
+          9
+        ],
+        [
+          27,
+          22,
+          19,
+          16,
+          13
+        ],
+        [
+          42,
+          33,
+          29,
+          23,
+          19
+        ]
       ]
     }
   },
   "scorekaart": {
     "items": [
-      { "framework": "Graham",                "score": 3, "max": 5, "oordeel": "GEDEELTELIJK — extreme P/B-korting; inconsistente winst en geen dividend" },
-      { "framework": "Buffett / Munger",       "score": 2, "max": 5, "oordeel": "PASS — geen moat, onvoorspelbare kasstromen, commodity-cyclisch" },
-      { "framework": "Peter Lynch",            "score": 3, "max": 5, "oordeel": "NEUTRAAL — cyclische bodem; turnaround mogelijk maar structurele vraagdaling" },
-      { "framework": "Phil Fisher",            "score": 3, "max": 5, "oordeel": "GEMIDDELD — transitie interessant; marges zwak en moeilijk te beschermen" },
-      { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "GEMIDDELD — hoge Earnings Yield in goede jaren; lage return on capital" },
-      { "framework": "Moat",                   "score": 2, "max": 5, "oordeel": "NO MOAT / NARROW MOAT — commodity met beperkte premium niches" },
-      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "NEUTRAAL — integer, maar sterk gecentraliseerde macht bij Onstad" },
-      { "framework": "Fair Value DCF",         "score": 4, "max": 5, "oordeel": "KORTING van ~137% t.o.v. basisscenario; groot potentieel als herstel doorzet" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 2, "max": 5, "oordeel": "NEUTRAAL / LICHT NEERWAARTS in pessimistisch scenario — IPO-correctie n.v.t." }
+      {
+        "framework": "Graham",
+        "score": 3,
+        "max": 5,
+        "oordeel": "GEDEELTELIJK — extreme P/B-korting; inconsistente winst en geen dividend"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 2,
+        "max": 5,
+        "oordeel": "PASS — geen moat, onvoorspelbare kasstromen, commodity-cyclisch"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 3,
+        "max": 5,
+        "oordeel": "NEUTRAAL — cyclische bodem; turnaround mogelijk maar structurele vraagdaling"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 3,
+        "max": 5,
+        "oordeel": "GEMIDDELD — transitie interessant; marges zwak en moeilijk te beschermen"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 3,
+        "max": 5,
+        "oordeel": "GEMIDDELD — hoge Earnings Yield in goede jaren; lage return on capital"
+      },
+      {
+        "framework": "Moat",
+        "score": 2,
+        "max": 5,
+        "oordeel": "NO MOAT / NARROW MOAT — commodity met beperkte premium niches"
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "NEUTRAAL — integer, maar sterk gecentraliseerde macht bij Onstad"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 4,
+        "max": 5,
+        "oordeel": "KORTING van ~137% t.o.v. basisscenario; groot potentieel als herstel doorzet"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 2,
+        "max": 5,
+        "oordeel": "NEUTRAAL / LICHT NEERWAARTS in pessimistisch scenario — IPO-correctie n.v.t."
+      }
     ],
     "totaal": 25,
     "max": 45,
     "eindoordeel": "HOLD",
     "samenvatting": "Arctic Paper is een klassiek cyclisch aandeel op een mogelijke bodem. De koers is gehalveerd door een perfecte storm: collaps van Rottneros (nettoverlies SEK 452 mln in 2025), dalende papiervolumes, Aziatische concurrentie en valutategenwind. Op boekwaardeniveaus (P/B ~0,33x) en op basis van een genormaliseerde DCF is het aandeel potentieel significant ondergewaardeerd — mits het herstel doorzet. De cruciale onzekerheid is of en wanneer pulpprijzen en grafisch papierprijzen herstellen. Oordeel: HOLD voor bestaande positie. Bijkopen alleen bij concreet bewijs van operationeel herstel."
-  }
+  },
+  "update_beschikbaar": false,
+  "update_reden": null,
+  "laatste_koers_update": "2026-03-23"
 }
