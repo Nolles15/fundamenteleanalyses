@@ -36,14 +36,14 @@
       "naam": "Arctic Paper S.A.",
       "sector": "Basismaterialen — Papier & Verpakking",
       "exchange": "Nasdaq Stockholm / WSE",
-      "koers": 30.41,
+      "koers": 8.0,
       "valuta": "PLN",
       "fair_value_basis": 19.0,
-      "upside_pct": -37.5,
+      "upside_pct": 137.5,
       "oordeel": "HOLD",
       "scorekaart_totaal": 25,
       "scorekaart_max": 45,
-      "peildatum": "2026-03-17",
+      "peildatum": "2026-03-24",
       "domein": "arcticpaper.com"
     },
     {
@@ -64,7 +64,7 @@
     {
       "ticker": "BETS-B",
       "naam": "Betsson AB (publ)",
-      "sector": "Consumer Discretionary / Online Gaming",
+      "sector": "Consumer Discretionary",
       "exchange": "Nasdaq Stockholm Large Cap",
       "koers": 98,
       "valuta": "SEK",
