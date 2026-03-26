@@ -1,5 +1,5 @@
 {
-  "laatste_update": "2026-03-24",
+  "laatste_update": "2026-03-26",
   "companies": [
     {
       "ticker": "ADYEN",
@@ -60,6 +60,21 @@
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
       "domein": "asml.com"
+    },
+    {
+      "ticker": "BETS-B",
+      "naam": "Betsson AB (publ)",
+      "sector": "Consumer Discretionary / Online Gaming",
+      "exchange": "Nasdaq Stockholm Large Cap",
+      "koers": 98,
+      "valuta": "SEK",
+      "fair_value_basis": 348,
+      "upside_pct": 255,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 40,
+      "scorekaart_max": 45,
+      "peildatum": "2026-03-26",
+      "domein": "betsson.com"
     },
     {
       "ticker": "CRWD",
