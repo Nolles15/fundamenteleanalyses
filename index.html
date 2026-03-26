@@ -1509,8 +1509,37 @@ function renderMoat(d) {
       </div>`).join('')}
     </div>
 
+    <p class="section-subtitle">Compensatiestructuur</p>
+    <div class="text-card"><p>${mgmt.compensatie.toelichting}</p></div>
+
     <p class="section-subtitle">Capital Allocation</p>
     <div class="text-card"><p>${mgmt.capital_allocation}</p></div>
+
+    ${mgmt.insider_transactions && mgmt.insider_transactions.length ? `
+    <p class="section-subtitle">Insider Transactions (laatste 24 maanden)</p>
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <thead><tr style="color:var(--text-3);border-bottom:1px solid var(--border)">
+        <th style="padding:6px 10px;text-align:left;font-weight:600">Datum</th>
+        <th style="padding:6px 10px;text-align:left;font-weight:600">Persoon</th>
+        <th style="padding:6px 10px;text-align:left;font-weight:600">Functie</th>
+        <th style="padding:6px 10px;text-align:left;font-weight:600">Type</th>
+        <th style="padding:6px 10px;text-align:right;font-weight:600">Aandelen</th>
+        <th style="padding:6px 10px;text-align:right;font-weight:600">Koers</th>
+      </tr></thead>
+      <tbody>
+        ${mgmt.insider_transactions.map(t => `
+        <tr style="border-bottom:1px solid rgba(255,255,255,.04)">
+          <td style="padding:7px 10px;color:var(--text-2)">${t.datum || '–'}</td>
+          <td style="padding:7px 10px">${t.naam}</td>
+          <td style="padding:7px 10px;color:var(--text-2)">${t.functie}</td>
+          <td style="padding:7px 10px"><span style="font-weight:700;color:${t.type === 'KOOP' ? 'var(--buy)' : t.type === 'VERKOOP' ? 'var(--pass)' : 'var(--hold)'}">${t.type}</span></td>
+          <td style="padding:7px 10px;text-align:right;font-variant-numeric:tabular-nums">${t.aandelen != null ? t.aandelen.toLocaleString('nl-NL') : 'Klein volume'}</td>
+          <td style="padding:7px 10px;text-align:right;font-variant-numeric:tabular-nums">${t.koers != null ? t.koers.toFixed(2) : '–'}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+    </div>` : ''}
 
     <p class="section-subtitle">Oordeel management</p>
     <div class="text-card">

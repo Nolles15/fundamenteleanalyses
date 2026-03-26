@@ -117,7 +117,9 @@
     },
     "insider_transactions": [
       { "datum": "2025-10-24", "naam": "Kristian Saliba", "functie": "Operational CFO", "type": "VERKOOP", "aandelen": 17500, "koers": 137.47 },
-      { "datum": "2025-12-04", "naam": "Tristan Sjöberg", "functie": "Bestuurslid", "type": "KOOP", "aandelen": null, "koers": null }
+      { "datum": "2025-12-04", "naam": "Tristan Sjöberg", "functie": "Bestuurslid", "type": "KOOP/VERKOOP", "aandelen": null, "koers": null },
+      { "datum": "2024-2025", "naam": "Peter Hamberg", "functie": "Bestuurslid", "type": "KOOP", "aandelen": null, "koers": null },
+      { "datum": "2024-2025", "naam": "Eva de Falck", "functie": "Bestuurslid", "type": "KOOP", "aandelen": null, "koers": null }
     ],
     "capital_allocation": "Consistente aandeleninkopen EUR 50–90 mln/jaar (2021–2024); eerste reguliere dividend 2025 (EUR 104,8 mln, yield 7,3%); EUR 40 mln inkoopprogramma geïnitieerd bij lage koers; acquisities goed geïntegreerd; geen materiële goodwill-afschrijvingen.",
     "toelichting": "Pontus Lindwall is 35 jaar verbonden aan de onderneming en heeft aantoonbaar waarde gecreëerd. Management is transparant over tegenvallers (openlijk EBIT-daling gecommuniceerd in Q4 2025). CEO bezit >2 mln aandelen — sterke skin-in-the-game. Geen aanwijzingen van financial engineering of pre-IPO misbruik."
