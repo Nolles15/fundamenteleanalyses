@@ -401,9 +401,14 @@ function buildCard(pos, data) {
   const basis = scenarios.find(s => s.scenario === 'Basis');
   const opt   = scenarios.find(s => s.scenario === 'Optimistisch');
 
-  // progress bar positions (low = pessimistisch, high = optimistisch)
-  const pbLow  = pess ? pess.fair_value : koers * 0.7;
-  const pbHigh = opt  ? opt.fair_value  : koers * 1.4;
+  // progress bar: range covers all values so current price is never clipped
+  const allVals = [pess?.fair_value, basis?.fair_value, opt?.fair_value, koers, aankoop]
+    .filter(v => v != null);
+  const rangeMin = Math.min(...allVals);
+  const rangeMax = Math.max(...allVals);
+  const padding  = (rangeMax - rangeMin) * 0.08 || rangeMin * 0.1;
+  const pbLow  = rangeMin - padding;
+  const pbHigh = rangeMax + padding;
   const posCurrent  = koers  != null ? pct2pos(koers, pbLow, pbHigh) : null;
   const posAankoop  = aankoop != null ? pct2pos(aankoop, pbLow, pbHigh) : null;
   const posBasis    = basis   ? pct2pos(basis.fair_value, pbLow, pbHigh) : null;
@@ -505,11 +510,8 @@ function buildCard(pos, data) {
           ${posCurrent != null ? `<div class="pb-current" style="left:${posCurrent}%"></div>` : ''}
         </div>
 
-        <!-- labels -->
+        <!-- only show current price label to avoid overlap -->
         <div class="pb-labels">
-          ${posStop  != null ? `<span class="pb-lbl pb-lbl-stop"  style="left:${posStop}%">${fmtPrice(pess?.fair_value, valuta)}</span>` : ''}
-          ${posBasis != null ? `<span class="pb-lbl pb-lbl-basis" style="left:${posBasis}%">${fmtPrice(basis?.fair_value, valuta)}</span>` : ''}
-          ${posOpt   != null ? `<span class="pb-lbl pb-lbl-opt"   style="left:${posOpt}%">${fmtPrice(opt?.fair_value, valuta)}</span>` : ''}
           ${posCurrent != null ? `<span class="pb-lbl pb-lbl-current" style="left:${posCurrent}%">▲ nu</span>` : ''}
         </div>
       </div>
