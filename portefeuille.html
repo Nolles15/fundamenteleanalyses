@@ -611,37 +611,48 @@ async function init() {
   }
 }
 
+async function fetchYahoo(symbol) {
+  // probeer direct, dan via CORS-proxy als fallback
+  const direct = `https://query2.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=1d`;
+  const proxy  = `https://api.allorigins.win/raw?url=${encodeURIComponent(direct)}`;
+
+  for (const url of [direct, proxy]) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const json = await res.json();
+      const meta = json?.chart?.result?.[0]?.meta;
+      if (meta?.regularMarketPrice) return meta;
+    } catch(_) {}
+  }
+  return null;
+}
+
 async function fetchLiveKoersen(positions) {
   const withSymbol = positions.filter(p => p.yahoo_symbol);
   if (!withSymbol.length) return;
 
   await Promise.allSettled(withSymbol.map(async pos => {
-    try {
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${pos.yahoo_symbol}?interval=1d&range=1d`;
-      const res = await fetch(url);
-      if (!res.ok) return;
-      const json = await res.json();
-      const meta = json?.chart?.result?.[0]?.meta;
-      if (!meta) return;
+    const meta = await fetchYahoo(pos.yahoo_symbol);
+    if (!meta) return;
 
-      const prijs = meta.regularMarketPrice;
-      const valuta = pos.valuta;
-      const aankoop = pos.aankoopkoers;
-      const rendement = ((prijs - aankoop) / aankoop) * 100;
-      const tijd = new Date(meta.regularMarketTime * 1000)
-        .toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    const prijs = meta.regularMarketPrice;
+    const valuta = pos.valuta;
+    const aankoop = pos.aankoopkoers;
+    const rendement = ((prijs - aankoop) / aankoop) * 100;
+    const tijd = new Date(meta.regularMarketTime * 1000)
+      .toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
 
-      const elKoers = document.querySelector(`[data-live-koers="${pos.ticker}"]`);
-      const elTijd  = document.querySelector(`[data-live-tijd="${pos.ticker}"]`);
-      const elRend  = document.querySelector(`[data-live-rendement="${pos.ticker}"]`);
+    const elKoers = document.querySelector(`[data-live-koers="${pos.ticker}"]`);
+    const elTijd  = document.querySelector(`[data-live-tijd="${pos.ticker}"]`);
+    const elRend  = document.querySelector(`[data-live-rendement="${pos.ticker}"]`);
 
-      if (elKoers) elKoers.textContent = fmtPrice(prijs, valuta);
-      if (elTijd)  elTijd.innerHTML = `<span class="live-badge">live</span> ${tijd}`;
-      if (elRend) {
-        elRend.textContent = fmtPct(rendement);
-        elRend.className = `metric-value ${rendement >= 0 ? 'positive' : 'negative'}`;
-      }
-    } catch(_) {}
+    if (elKoers) elKoers.textContent = fmtPrice(prijs, valuta);
+    if (elTijd)  elTijd.innerHTML = `<span class="live-badge">live</span> ${tijd}`;
+    if (elRend) {
+      elRend.textContent = fmtPct(rendement);
+      elRend.className = `metric-value ${rendement >= 0 ? 'positive' : 'negative'}`;
+    }
   }));
 }
 
