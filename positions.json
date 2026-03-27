@@ -76,7 +76,8 @@
     "naam": "Arctic Paper",
     "aankoopkoers": 47.25,
     "valuta": "SEK",
-    "aantal": 145,
+    "aantal": 140,
+    "koers_override": 20.30,
     "datum": null
   }
 ]

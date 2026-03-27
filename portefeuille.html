@@ -396,9 +396,9 @@ function buildCard(pos, data) {
   const naam     = meta.naam   || pos.naam || ticker;
   const exchange = meta.exchange || '';
   const sector   = (meta.sector || '').split('—')[0].trim();
-  const valuta   = meta.valuta || pos.valuta;
+  const valuta   = pos.valuta || meta.valuta;
   const oordeel  = es.oordeel  || 'HOLD';
-  const koers    = meta.koers;
+  const koers    = pos.koers_override != null ? pos.koers_override : meta.koers;
   const domain   = meta.domein || '';
 
   const aankoop = pos.aankoopkoers;
