@@ -5,7 +5,7 @@
     "naam": "Arctic Paper S.A.",
     "sector": "Basismaterialen — Papier & Verpakking",
     "segment": "Grafisch fijnpapier & Pulp",
-    "koers": 8.0,
+    "koers": 30.46,
     "valuta": "PLN",
     "peildatum": "2026-03-24",
     "marktkapitalisatie": "~600–650 mln PLN / ~1,45 mrd SEK"
@@ -13,10 +13,10 @@
   "executive_summary": {
     "kernthese": "Arctic Paper S.A. is een van de toonaangevende Europese producenten van hoogwaardig grafisch fijnpapier, met vier papierfabrieken in Polen, Zweden en Duitsland, en een meerderheidsbelang van 51% in Rottneros AB, een Zweedse pulpproducent. Het bedrijf opereert in een sector met structureel dalende vraag naar grafisch papier door digitalisering, én met cyclische druk van hoge grondstofprijzen en overaanbod. Na een recordjaar in 2022 is Arctic Paper in 2025 zwaar getroffen door collapserende pulpprijzen en verliezen bij Rottneros (nettoverlies SEK -452 mln). De koers is in 1,5 jaar gehalveerd; bij herstel is het opwaartse potentieel substantieel maar onzeker.",
     "oordeel": "HOLD",
-    "koers": 8.0,
+    "koers": 30.46,
     "valuta": "PLN",
     "fair_value_basis": 19.0,
-    "upside_pct": 137.5,
+    "upside_pct": -37.6,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -484,5 +484,5 @@
   },
   "update_beschikbaar": false,
   "update_reden": null,
-  "laatste_koers_update": "2026-03-23"
+  "laatste_koers_update": "2026-03-30"
 }

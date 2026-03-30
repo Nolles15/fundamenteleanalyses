@@ -1,5 +1,5 @@
 {
-  "laatste_update": "2026-03-26",
+  "laatste_update": "2026-03-30",
   "companies": [
     {
       "ticker": "ADYEN",
@@ -36,30 +36,32 @@
       "naam": "Arctic Paper S.A.",
       "sector": "Basismaterialen — Papier & Verpakking",
       "exchange": "Nasdaq Stockholm / WSE",
-      "koers": 8.0,
+      "koers": 30.46,
       "valuta": "PLN",
       "fair_value_basis": 19.0,
-      "upside_pct": 137.5,
+      "upside_pct": -37.6,
       "oordeel": "HOLD",
       "scorekaart_totaal": 25,
       "scorekaart_max": 45,
       "peildatum": "2026-03-24",
-      "domein": "arcticpaper.com"
+      "domein": "arcticpaper.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "ASML",
       "naam": "ASML Holding N.V.",
       "sector": "Technologie — Halfgeleiderproductieapparatuur",
       "exchange": "AEX",
-      "koers": 1128.0,
+      "koers": 1141.8,
       "valuta": "EUR",
       "fair_value_basis": 1420.0,
-      "upside_pct": 26.0,
+      "upside_pct": 24.4,
       "oordeel": "KOOP",
       "scorekaart_totaal": 37,
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
-      "domein": "asml.com"
+      "domein": "asml.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "BETS-B",
@@ -81,45 +83,48 @@
       "naam": "CrowdStrike Holdings, Inc.",
       "sector": "Technologie — Cybersecurity / Enterprise Software",
       "exchange": "NASDAQ",
-      "koers": 410.04,
+      "koers": 369.58,
       "valuta": "USD",
       "fair_value_basis": 505,
-      "upside_pct": 23.2,
+      "upside_pct": 36.6,
       "oordeel": "HOLD",
       "scorekaart_totaal": 29,
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
-      "domein": "crowdstrike.com"
+      "domein": "crowdstrike.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "DIS",
       "naam": "The Walt Disney Company",
       "sector": "Communication Services / Media & Entertainment",
       "exchange": "NYSE",
-      "koers": 100.1,
+      "koers": 92.42,
       "valuta": "USD",
       "fair_value_basis": 125.0,
-      "upside_pct": 25.0,
+      "upside_pct": 35.3,
       "oordeel": "HOLD",
       "scorekaart_totaal": 30,
       "scorekaart_max": 45,
       "peildatum": "2026-03-23",
-      "domein": "thewaltdisneycompany.com"
+      "domein": "thewaltdisneycompany.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "EQNR",
       "naam": "Equinor ASA",
       "sector": "Energie",
       "exchange": "Oslo Børs (OSE) / NYSE",
-      "koers": 394.9,
+      "koers": 41.53,
       "valuta": "NOK",
       "fair_value_basis": 412,
-      "upside_pct": 4.3,
+      "upside_pct": 892.1,
       "oordeel": "HOLD",
       "scorekaart_totaal": 31,
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
-      "domein": "equinor.com"
+      "domein": "equinor.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "HEIJM",
@@ -216,15 +221,16 @@
       "naam": "Puig Brands, S.A.",
       "sector": "Consumer Staples — Personal Products",
       "exchange": "BME",
-      "koers": 15.03,
+      "koers": 17.15,
       "valuta": "EUR",
       "fair_value_basis": 21.5,
-      "upside_pct": 43.0,
+      "upside_pct": 25.4,
       "oordeel": "KOOP",
       "scorekaart_totaal": 34,
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
-      "domein": "puig.com"
+      "domein": "puig.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "PZU",
@@ -246,30 +252,32 @@
       "naam": "T-Mobile US, Inc.",
       "sector": "Communication Services",
       "exchange": "NASDAQ",
-      "koers": 208.76,
+      "koers": 210.82,
       "valuta": "USD",
       "fair_value_basis": 253.0,
-      "upside_pct": 21.2,
+      "upside_pct": 20.0,
       "oordeel": "HOLD",
       "scorekaart_totaal": 28,
       "scorekaart_max": 45,
       "peildatum": "2026-03-24",
-      "domein": "t-mobile.com"
+      "domein": "t-mobile.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "WAWI",
       "naam": "Wallenius Wilhelmsen ASA",
       "sector": "Industrieel Transport & Logistiek",
       "exchange": "OSL",
-      "koers": 119.1,
+      "koers": 119.9,
       "valuta": "NOK",
       "fair_value_basis": 221,
-      "upside_pct": 85.6,
+      "upside_pct": 84.3,
       "oordeel": "KOOP",
       "scorekaart_totaal": 35,
       "scorekaart_max": 45,
       "peildatum": "2026-03-22",
-      "domein": "walleniuswilhelmsen.com"
+      "domein": "walleniuswilhelmsen.com",
+      "update_beschikbaar": false
     },
     {
       "ticker": "WIPRO",

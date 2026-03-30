@@ -5,18 +5,18 @@
     "naam": "Equinor ASA",
     "sector": "Energie",
     "segment": "Geïntegreerd Olie & Gas",
-    "koers": 394.9,
+    "koers": 41.53,
     "valuta": "NOK",
     "peildatum": "2026-03-22",
-    "marktkapitalisatie": "~NOK 1.030 mrd (~USD 95 mrd)"
+    "marktkapitalisatie": "$103.5 mrd"
   },
   "executive_summary": {
     "kernthese": "Equinor ASA is het Noorse semi-staatsoliebedrijf (67% staatseigendom) met wereldwijd laagste productiekosten (~$7/boe op het NCP), een ROACE van 14,5% en sterke FCF-generatie. Het aandeel handelt op historisch lage EV/EBITDA-niveaus (~2,2x vs sectorgemiddelde 7,6x). De narrow moat via kostenvoordeel, disciplinair management en strategische positie als EU-gasleverancier maken Equinor fundamenteel solide. Bij huidige prijsniveaus is het aandeel licht ondergewaardeerd.",
     "oordeel": "HOLD",
-    "koers": 394.9,
+    "koers": 41.53,
     "valuta": "NOK",
     "fair_value_basis": 412,
-    "upside_pct": 4.3,
+    "upside_pct": 892.1,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -207,13 +207,13 @@
       "roa_pct": 3.8
     },
     "waardering": {
-      "pe": 14.7,
-      "ev_ebitda": 2.2,
+      "pe": 21.4,
+      "ev_ebitda": 3.3,
       "p_fcf": 54.0,
       "fcf_yield_pct": 1.8,
-      "p_b": 2.1,
-      "ev_omzet": 0.9,
-      "dividendrendement_pct": 5.8
+      "p_b": 2.57,
+      "ev_omzet": 1.09,
+      "dividendrendement_pct": 376.0
     }
   },
   "moat": {
@@ -427,5 +427,8 @@
     "max": 45,
     "eindoordeel": "HOLD",
     "samenvatting": "Equinor is een fundamenteel solide, laag gewaardeerd energiebedrijf met een narrow moat op basis van uitzonderlijk lage productiekosten (~$7/boe op het NCP). Bij de huidige koers van NOK 399 is het aandeel licht ondergewaardeerd versus onze basiswaarde van ~NOK 412. Het aandeel is aantrekkelijker op NOK 340-360. De grootste onzekerheid is de olieprijs: bij Brent structureel onder $60/bbl verslechtert de case significant. Voor beleggers met 5-jaars horizon en comfort met commodity-cycliciteit: HOLD met opwaarts potentieel bij herstel olieprijzen."
-  }
+  },
+  "update_beschikbaar": false,
+  "update_reden": null,
+  "laatste_koers_update": "2026-03-30"
 }

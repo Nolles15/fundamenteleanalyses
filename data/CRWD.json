@@ -5,23 +5,35 @@
     "naam": "CrowdStrike Holdings, Inc.",
     "sector": "Technologie — Cybersecurity / Enterprise Software",
     "segment": "Cloud-native Endpoint & XDR Security",
-    "koers": 410.04,
+    "koers": 369.58,
     "valuta": "USD",
     "peildatum": "2026-03-22",
-    "marktkapitalisatie": "~$103,8 miljard"
+    "marktkapitalisatie": "$93.7 mrd"
   },
   "executive_summary": {
     "kernthese": "CrowdStrike Holdings is de marktleider in cloud-native endpoint- en XDR-beveiliging, met een AI-gebaseerd Falcon-platform dat bescherming biedt aan meer dan 29.000 zakelijke klanten wereldwijd. In FY2026 bereikte het bedrijf een ARR van $5,25 miljard (+24% YoY) en genereerde het voor het eerst een positief GAAP-kwartaalresultaat. De platform-consolidatietrend en de AI-gedreven dreigingsomgeving spelen structureel in het voordeel van CrowdStrike. Tegen een koers van $410 noteert het aandeel circa 23% onder onze basiswaarde van ~$505, maar de premiewaardering vereist foutloze uitvoering.",
     "kernthese_en": "CrowdStrike Holdings is the market leader in cloud-native endpoint and XDR security, with an AI-based Falcon platform protecting more than 29,000 enterprise customers worldwide. In FY2026 the company reached an ARR of $5.25 billion (+24% YoY) and reported its first positive GAAP quarterly result. The platform consolidation trend and AI-driven threat environment structurally favor CrowdStrike. At a price of $410 the stock trades approximately 23% below our base fair value of ~$505, but the premium valuation demands flawless execution.",
     "oordeel": "HOLD",
-    "koers": 410.04,
+    "koers": 369.58,
     "valuta": "USD",
     "fair_value_basis": 505,
-    "upside_pct": 23.2,
+    "upside_pct": 36.6,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 295, "upside_pct": -28.0 },
-      { "scenario": "Basis",         "fair_value": 505, "upside_pct": 23.2 },
-      { "scenario": "Optimistisch",  "fair_value": 680, "upside_pct": 65.9 }
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 295,
+        "upside_pct": -28.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 505,
+        "upside_pct": 23.2
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 680,
+        "upside_pct": 65.9
+      }
     ],
     "grootste_kans": "Versnelling van platform-consolidatie via Falcon Flex en AI-native productuitbreiding die ARR-groei terugbrengt naar >25%.",
     "grootste_kans_en": "Acceleration of platform consolidation through Falcon Flex and AI-native product expansion bringing ARR growth back above 25%.",
@@ -34,19 +46,63 @@
     "personeel": 10000,
     "landen": null,
     "segmenten": [
-      { "naam": "Endpoint Security (Falcon Prevent/Insight)", "omzet_pct": null, "beschrijving": "Core-product; grootste bijdrage aan omzet" },
-      { "naam": "Identity Protection (Falcon Identity)", "omzet_pct": null, "beschrijving": "Snel groeiend segment voor identiteitsbeveiliging" },
-      { "naam": "Cloud Security (CNAPP)", "omzet_pct": null, "beschrijving": "Cloud workload protection, CSPM, CIEM" },
-      { "naam": "Next-Gen SIEM / Log Management (Falcon LogScale)", "omzet_pct": null, "beschrijving": "Concurreert met Splunk" },
-      { "naam": "Threat Intelligence (Falcon X)", "omzet_pct": null, "beschrijving": "Premium feeds en managed services" },
-      { "naam": "Professional & Managed Services (Falcon Complete MDR)", "omzet_pct": null, "beschrijving": "Beheerde detectie- en responsdiensten" }
+      {
+        "naam": "Endpoint Security (Falcon Prevent/Insight)",
+        "omzet_pct": null,
+        "beschrijving": "Core-product; grootste bijdrage aan omzet"
+      },
+      {
+        "naam": "Identity Protection (Falcon Identity)",
+        "omzet_pct": null,
+        "beschrijving": "Snel groeiend segment voor identiteitsbeveiliging"
+      },
+      {
+        "naam": "Cloud Security (CNAPP)",
+        "omzet_pct": null,
+        "beschrijving": "Cloud workload protection, CSPM, CIEM"
+      },
+      {
+        "naam": "Next-Gen SIEM / Log Management (Falcon LogScale)",
+        "omzet_pct": null,
+        "beschrijving": "Concurreert met Splunk"
+      },
+      {
+        "naam": "Threat Intelligence (Falcon X)",
+        "omzet_pct": null,
+        "beschrijving": "Premium feeds en managed services"
+      },
+      {
+        "naam": "Professional & Managed Services (Falcon Complete MDR)",
+        "omzet_pct": null,
+        "beschrijving": "Beheerde detectie- en responsdiensten"
+      }
     ],
     "aandeelhouders": [
-      { "naam": "Vanguard Group", "pct": 7.5, "type": "Institutioneel" },
-      { "naam": "BlackRock", "pct": 6.8, "type": "Institutioneel" },
-      { "naam": "Fidelity Investments", "pct": 4.2, "type": "Institutioneel" },
-      { "naam": "George Kurtz (CEO/oprichter)", "pct": 3.5, "type": "Controlerend" },
-      { "naam": "Overige institutionelen + publiek", "pct": 78.0, "type": "Publiek" }
+      {
+        "naam": "Vanguard Group",
+        "pct": 7.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "BlackRock",
+        "pct": 6.8,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Fidelity Investments",
+        "pct": 4.2,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "George Kurtz (CEO/oprichter)",
+        "pct": 3.5,
+        "type": "Controlerend"
+      },
+      {
+        "naam": "Overige institutionelen + publiek",
+        "pct": 78.0,
+        "type": "Publiek"
+      }
     ]
   },
   "financieel": {
@@ -115,7 +171,7 @@
         "jaar": 2024,
         "fcf": 940,
         "fcf_na_sbc": null,
-        "fcf_per_aandeel": 3.80,
+        "fcf_per_aandeel": 3.8,
         "sbc": null
       },
       {
@@ -180,12 +236,12 @@
     "waardering": {
       "pe": null,
       "pe_forward": 90.0,
-      "ev_ebitda": 93.0,
+      "ev_ebitda": -1915.1,
       "p_fcf": 84.0,
       "p_fcf_na_sbc": null,
-      "fcf_yield_pct": 1.2,
-      "p_b": 18.0,
-      "ev_omzet": 21.0,
+      "fcf_yield_pct": 1.3,
+      "p_b": 21.15,
+      "ev_omzet": 18.57,
       "dividendrendement_pct": 0.0,
       "peg": 4.1
     }
@@ -194,20 +250,61 @@
     "oordeel": "WIDE MOAT",
     "toelichting": "CrowdStrike beschikt over een brede economische slotgracht dankzij unieke AI-modellen getraind op petabytes aan threat-data, zeer hoge overstapkosten (Falcon-integratie in IT-processen maakt migratie ~18 maanden kostbaar) en groeiende netwerkeffecten doordat elk nieuw endpoint de threat-intelligence voor alle klanten verbetert. De voornaamste bedreiging is Microsoft, dat Defender agressief bundelt in M365-licenties en een prijsconcurrentie creëert bij budgetbewuste klanten.",
     "categorieen": [
-      { "naam": "Immateriële activa",  "oordeel": "STERK", "score": 5, "toelichting": "AI-modellen getraind op petabytes threat-data; sterk merk; FedRAMP/overheidsaccreditaties die concurrenten jaren kosten" },
-      { "naam": "Overstapkosten",      "oordeel": "STERK", "score": 5, "toelichting": "Falcon-integratie in IT-processen, SIEM, SOAR en ticketingsystemen maakt migratie zeer kostbaar (~18 maanden implementatie); contractduur 1–3 jaar" },
-      { "naam": "Netwerkeffecten",     "oordeel": "AANWEZIG", "score": 4, "toelichting": "Elk nieuw endpoint verrijkt de threat-intelligence database; meer klanten = betere detectie voor alle klanten via AI/ML leereffect" },
-      { "naam": "Kostenvoordeel",      "oordeel": "BEPERKT", "score": 3, "toelichting": "Schaalvoordelen in cloudinfra en R&D aanwezig, maar concurrenten (PANW, MSFT) zijn vergelijkbaar groot; geen unieke grondstof" },
-      { "naam": "Efficiënte schaal",   "oordeel": "BEPERKT", "score": 2, "toelichting": "Markt is groot genoeg voor meerdere grote spelers; CrowdStrike domineert maar heeft geen monopolie" }
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "AI-modellen getraind op petabytes threat-data; sterk merk; FedRAMP/overheidsaccreditaties die concurrenten jaren kosten"
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "Falcon-integratie in IT-processen, SIEM, SOAR en ticketingsystemen maakt migratie zeer kostbaar (~18 maanden implementatie); contractduur 1–3 jaar"
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AANWEZIG",
+        "score": 4,
+        "toelichting": "Elk nieuw endpoint verrijkt de threat-intelligence database; meer klanten = betere detectie voor alle klanten via AI/ML leereffect"
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "BEPERKT",
+        "score": 3,
+        "toelichting": "Schaalvoordelen in cloudinfra en R&D aanwezig, maar concurrenten (PANW, MSFT) zijn vergelijkbaar groot; geen unieke grondstof"
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Markt is groot genoeg voor meerdere grote spelers; CrowdStrike domineert maar heeft geen monopolie"
+      }
     ]
   },
   "management": {
     "oordeel": "STERK",
     "personen": [
-      { "functie": "CEO & Oprichter", "naam": "George Kurtz", "achtergrond": "Ex-CTO McAfee; 12+ jaar bij CrowdStrike; technisch geloofwaardig; publiek gezicht van de onderneming; bezit ~3,5% aandelen" },
-      { "functie": "CFO", "naam": "Burt Podbere", "achtergrond": "Al >8 jaar CFO; degelijk en consistent in guidance; vertrouwd door investeerders" },
-      { "functie": "President", "naam": "Michael Sentonas", "achtergrond": "Ex-CISO/CTO; technische expertise; leidt global sales" },
-      { "functie": "Chief Security Officer", "naam": "Shawn Henry", "achtergrond": "Ex-FBI; geloofwaardigheid in overheids- en defensiesegment" }
+      {
+        "functie": "CEO & Oprichter",
+        "naam": "George Kurtz",
+        "achtergrond": "Ex-CTO McAfee; 12+ jaar bij CrowdStrike; technisch geloofwaardig; publiek gezicht van de onderneming; bezit ~3,5% aandelen"
+      },
+      {
+        "functie": "CFO",
+        "naam": "Burt Podbere",
+        "achtergrond": "Al >8 jaar CFO; degelijk en consistent in guidance; vertrouwd door investeerders"
+      },
+      {
+        "functie": "President",
+        "naam": "Michael Sentonas",
+        "achtergrond": "Ex-CISO/CTO; technische expertise; leidt global sales"
+      },
+      {
+        "functie": "Chief Security Officer",
+        "naam": "Shawn Henry",
+        "achtergrond": "Ex-FBI; geloofwaardigheid in overheids- en defensiesegment"
+      }
     ],
     "compensatie": {
       "sbc_pct_marktkapitalisatie": 1.25,
@@ -272,34 +369,151 @@
       "nettoschuld_huidig": -3756
     },
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": 8.0,  "wacc_pct": 11.0, "fair_value": 295, "upside_pct": -28.0 },
-      { "scenario": "Basis",               "fcf_groei_pct": 18.0, "wacc_pct": 11.0, "fair_value": 505, "upside_pct": 23.2 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 28.0, "wacc_pct": 10.0, "fair_value": 680, "upside_pct": 65.9 },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 18.0, "wacc_pct": 11.0, "fair_value": 505, "upside_pct": 23.2 }
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 11.0,
+        "fair_value": 295,
+        "upside_pct": -28.0
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 18.0,
+        "wacc_pct": 11.0,
+        "fair_value": 505,
+        "upside_pct": 23.2
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 28.0,
+        "wacc_pct": 10.0,
+        "fair_value": 680,
+        "upside_pct": 65.9
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 18.0,
+        "wacc_pct": 11.0,
+        "fair_value": 505,
+        "upside_pct": 23.2
+      }
     ],
     "gevoeligheid": {
-      "wacc_range": [9.0, 10.0, 11.0, 12.0, 13.0, 14.0],
-      "groei_range": [10.0, 15.0, 18.0, 22.0, 28.0],
+      "wacc_range": [
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0
+      ],
+      "groei_range": [
+        10.0,
+        15.0,
+        18.0,
+        22.0,
+        28.0
+      ],
       "matrix": [
-        [425, 365, 315, 275, 242, 215],
-        [560, 475, 408, 355, 310, 275],
-        [650, 548, 472, 410, 360, 318],
-        [780, 655, 562, 488, 428, 378],
-        [990, 825, 706, 612, 535, 472]
+        [
+          425,
+          365,
+          315,
+          275,
+          242,
+          215
+        ],
+        [
+          560,
+          475,
+          408,
+          355,
+          310,
+          275
+        ],
+        [
+          650,
+          548,
+          472,
+          410,
+          360,
+          318
+        ],
+        [
+          780,
+          655,
+          562,
+          488,
+          428,
+          378
+        ],
+        [
+          990,
+          825,
+          706,
+          612,
+          535,
+          472
+        ]
       ]
     }
   },
   "scorekaart": {
     "items": [
-      { "framework": "Graham",                "score": 1, "max": 5, "oordeel": "Voldoet niet — P/E ~90x, P/B ~18x, geen dividend; ver boven Graham-normen" },
-      { "framework": "Buffett / Munger",       "score": 3, "max": 5, "oordeel": "Gedeeltelijk — uitstekend bedrijf met Wide Moat, prijs is redelijk maar niet aantrekkelijk" },
-      { "framework": "Peter Lynch",            "score": 3, "max": 5, "oordeel": "Neutraal — Fast Grower met helder verhaal, maar PEG ~4,1 is ruim boven Lynch's ideaal <1" },
-      { "framework": "Phil Fisher",            "score": 5, "max": 5, "oordeel": "Sterk — superieur AI-native product, ~35% R&D-ratio, integer en technisch geloofwaardig management" },
-      { "framework": "Magic Formula",          "score": 2, "max": 5, "oordeel": "Gemiddeld — Earnings Yield slechts ~1,0% (EBIT/EV); te laag voor Greenblatt-screener" },
-      { "framework": "Moat",                   "score": 5, "max": 5, "oordeel": "Wide Moat — AI-threat-data + hoge switching costs + netwerkeffecten; Score 19/25" },
-      { "framework": "Management",             "score": 4, "max": 5, "oordeel": "Sterk — skin in the game (CEO 3,5%), aantoonbare uitvoering; hoge SBC is aandachtspunt" },
-      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Neutraal/aantrekkelijk — basiswaarde ~$505 impliceert +23% opwaarts bij koers $410" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "Gelijk aan basis — geen pre-IPO financial engineering geconstateerd; correctie niet van toepassing" }
+      {
+        "framework": "Graham",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Voldoet niet — P/E ~90x, P/B ~18x, geen dividend; ver boven Graham-normen"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gedeeltelijk — uitstekend bedrijf met Wide Moat, prijs is redelijk maar niet aantrekkelijk"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal — Fast Grower met helder verhaal, maar PEG ~4,1 is ruim boven Lynch's ideaal <1"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 5,
+        "max": 5,
+        "oordeel": "Sterk — superieur AI-native product, ~35% R&D-ratio, integer en technisch geloofwaardig management"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 2,
+        "max": 5,
+        "oordeel": "Gemiddeld — Earnings Yield slechts ~1,0% (EBIT/EV); te laag voor Greenblatt-screener"
+      },
+      {
+        "framework": "Moat",
+        "score": 5,
+        "max": 5,
+        "oordeel": "Wide Moat — AI-threat-data + hoge switching costs + netwerkeffecten; Score 19/25"
+      },
+      {
+        "framework": "Management",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Sterk — skin in the game (CEO 3,5%), aantoonbare uitvoering; hoge SBC is aandachtspunt"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal/aantrekkelijk — basiswaarde ~$505 impliceert +23% opwaarts bij koers $410"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gelijk aan basis — geen pre-IPO financial engineering geconstateerd; correctie niet van toepassing"
+      }
     ],
     "totaal": 29,
     "max": 45,
@@ -383,5 +597,8 @@
         "oordeel_nog_geldig": null
       }
     ]
-  }
+  },
+  "update_beschikbaar": false,
+  "update_reden": null,
+  "laatste_koers_update": "2026-03-30"
 }

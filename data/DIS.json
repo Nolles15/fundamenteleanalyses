@@ -5,23 +5,35 @@
     "naam": "The Walt Disney Company",
     "sector": "Communication Services / Media & Entertainment",
     "segment": "Media, Entertainment & Themaparken",
-    "koers": 100.10,
+    "koers": 92.42,
     "valuta": "USD",
     "peildatum": "2026-03-23",
-    "marktkapitalisatie": "~USD 181 miljard"
+    "marktkapitalisatie": "$163.9 mrd"
   },
   "executive_summary": {
     "kernthese": "Disney verkeert in een structurele herstelfase na de zware COVID-jaren en de pijnlijke overgang naar streaming. De combinatie van unieke immateriële activa (merken, IP), schaalbare streamingprofitabiliteit en wereldwijd gewaardeerde themaparkervaring creëert een defensieve 'wide moat'. De FCF herstelde van bijna nul in FY2022 naar USD 10,1 mrd in FY2025. Bij de huidige koers van ~USD 100 noteert het aandeel met een korting van 25–35% ten opzichte van een gebalanceerde basiswaardering, wat een aantrekkelijk instapmoment suggereert voor langetermijnbeleggers.",
     "kernthese_en": "Disney is in a structural recovery phase following the severe COVID years and the painful transition to streaming. The combination of unique intangible assets (brands, IP), scalable streaming profitability and globally valued theme park experiences creates a defensive 'wide moat'. Free cash flow recovered from near zero in FY2022 to USD 10.1bn in FY2025. At the current price of ~USD 100, the stock trades at a 25–35% discount to a balanced base valuation, suggesting an attractive entry point for long-term investors.",
     "oordeel": "HOLD",
-    "koers": 100.10,
+    "koers": 92.42,
     "valuta": "USD",
     "fair_value_basis": 125.0,
-    "upside_pct": 25.0,
+    "upside_pct": 35.3,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 62.0, "upside_pct": -38.0 },
-      { "scenario": "Basis",         "fair_value": 90.0, "upside_pct": -10.0 },
-      { "scenario": "Optimistisch",  "fair_value": 155.0, "upside_pct": 55.0 }
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 62.0,
+        "upside_pct": -38.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 90.0,
+        "upside_pct": -10.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 155.0,
+        "upside_pct": 55.0
+      }
     ],
     "grootste_kans": "Streaming-winstgevendheid versnelt naar USD 2–3 mrd in FY2027, gecombineerd met themaparkexpansie (Abu Dhabi, nieuwe cruiseschepen).",
     "grootste_kans_en": "Streaming profitability accelerates to USD 2–3bn in FY2027, combined with theme park expansion (Abu Dhabi, new cruise ships).",
@@ -34,16 +46,48 @@
     "personeel": 228000,
     "landen": null,
     "segmenten": [
-      { "naam": "Experiences", "omzet_pct": 38.0, "beschrijving": "Themaparken, resorts, cruises, consumentenproducten — hogemargeactiviteiten" },
-      { "naam": "Entertainment", "omzet_pct": 44.0, "beschrijving": "Streaming (Disney+, Hulu), lineaire TV (ABC, diverse kabelnetten), filmstudio's" },
-      { "naam": "Sports (ESPN)", "omzet_pct": 18.0, "beschrijving": "ESPN lineair & ESPN+ streaming, sportrechten, ABC Sports" }
+      {
+        "naam": "Experiences",
+        "omzet_pct": 38.0,
+        "beschrijving": "Themaparken, resorts, cruises, consumentenproducten — hogemargeactiviteiten"
+      },
+      {
+        "naam": "Entertainment",
+        "omzet_pct": 44.0,
+        "beschrijving": "Streaming (Disney+, Hulu), lineaire TV (ABC, diverse kabelnetten), filmstudio's"
+      },
+      {
+        "naam": "Sports (ESPN)",
+        "omzet_pct": 18.0,
+        "beschrijving": "ESPN lineair & ESPN+ streaming, sportrechten, ABC Sports"
+      }
     ],
     "aandeelhouders": [
-      { "naam": "The Vanguard Group", "pct": 8.5, "type": "Institutioneel" },
-      { "naam": "BlackRock Inc.", "pct": 6.2, "type": "Institutioneel" },
-      { "naam": "State Street Corporation", "pct": 3.8, "type": "Institutioneel" },
-      { "naam": "Fidelity Management & Research", "pct": 3.2, "type": "Institutioneel" },
-      { "naam": "Publiek (retail)", "pct": 78.3, "type": "Publiek" }
+      {
+        "naam": "The Vanguard Group",
+        "pct": 8.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "BlackRock Inc.",
+        "pct": 6.2,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "State Street Corporation",
+        "pct": 3.8,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Fidelity Management & Research",
+        "pct": 3.2,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Publiek (retail)",
+        "pct": 78.3,
+        "type": "Publiek"
+      }
     ]
   },
   "financieel": {
@@ -57,7 +101,7 @@
         "ebitda_marge_pct": 28.4,
         "nettowinst": 8.4,
         "nettomarge_pct": 16.0,
-        "eps": 4.90
+        "eps": 4.9
       },
       {
         "jaar": 2016,
@@ -364,15 +408,15 @@
       }
     ],
     "waardering": {
-      "pe": 14.6,
+      "pe": 13.6,
       "pe_forward": 16.5,
-      "ev_ebitda": 11.2,
+      "ev_ebitda": 10.9,
       "p_fcf": 20.8,
       "p_fcf_na_sbc": 20.8,
       "fcf_yield_pct": 4.8,
-      "p_b": 1.6,
-      "ev_omzet": 1.8,
-      "dividendrendement_pct": 1.2,
+      "p_b": 1.51,
+      "ev_omzet": 2.2,
+      "dividendrendement_pct": 162.0,
       "peg": 1.0
     }
   },
@@ -531,34 +575,151 @@
       "nettoschuld_huidig": 35.0
     },
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": 4.0,  "wacc_pct": 10.5, "fair_value": 62.0,  "upside_pct": -38.0 },
-      { "scenario": "Basis",               "fcf_groei_pct": 8.0,  "wacc_pct": 9.4,  "fair_value": 90.0,  "upside_pct": -10.0 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 13.0, "wacc_pct": 8.5,  "fair_value": 155.0, "upside_pct": 55.0 },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 8.0,  "wacc_pct": 9.4,  "fair_value": 90.0,  "upside_pct": null }
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 10.5,
+        "fair_value": 62.0,
+        "upside_pct": -38.0
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 9.4,
+        "fair_value": 90.0,
+        "upside_pct": -10.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 13.0,
+        "wacc_pct": 8.5,
+        "fair_value": 155.0,
+        "upside_pct": 55.0
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 9.4,
+        "fair_value": 90.0,
+        "upside_pct": null
+      }
     ],
     "gevoeligheid": {
-      "wacc_range": [8.0, 8.5, 9.0, 9.4, 10.0, 10.5],
-      "groei_range": [3.0, 5.0, 8.0, 10.0, 13.0],
+      "wacc_range": [
+        8.0,
+        8.5,
+        9.0,
+        9.4,
+        10.0,
+        10.5
+      ],
+      "groei_range": [
+        3.0,
+        5.0,
+        8.0,
+        10.0,
+        13.0
+      ],
       "matrix": [
-        [73, 65, 59, 54, 48, 44],
-        [84, 75, 68, 63, 56, 51],
-        [104, 93, 84, 78, 70, 64],
-        [119, 107, 96, 89, 80, 73],
-        [144, 129, 117, 109, 97, 89]
+        [
+          73,
+          65,
+          59,
+          54,
+          48,
+          44
+        ],
+        [
+          84,
+          75,
+          68,
+          63,
+          56,
+          51
+        ],
+        [
+          104,
+          93,
+          84,
+          78,
+          70,
+          64
+        ],
+        [
+          119,
+          107,
+          96,
+          89,
+          80,
+          73
+        ],
+        [
+          144,
+          129,
+          117,
+          109,
+          97,
+          89
+        ]
       ]
     }
   },
   "scorekaart": {
     "items": [
-      { "framework": "Graham",                "score": 3, "max": 5, "oordeel": "Gedeeltelijk — P/E aantrekkelijk (14,6x), P/B en current ratio zwak; Graham Number ~USD 78–90 onder koers" },
-      { "framework": "Buffett / Munger",       "score": 4, "max": 5, "oordeel": "Voldoet grotendeels — Wide Moat, wide moat, eerlijke prijs (~USD 100 vs. intrinsieke waarde USD 125–145), bewezen bedrijf" },
-      { "framework": "Peter Lynch",            "score": 3, "max": 5, "oordeel": "Interessant — Stalwart/Turnaround mix, PEG 1,2x licht boven grens van 1,0 maar acceptabel" },
-      { "framework": "Phil Fisher",            "score": 3, "max": 5, "oordeel": "Gemiddeld-sterk — groeipotentieel aanwezig in streaming en parken, streaming-bewijs op schaal loopt nog" },
-      { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "Gemiddeld — earnings yield 7,2% goed, maar ROC (~8–9%) gedrukt door hoge goodwill Fox-acquisitie" },
-      { "framework": "Moat",                   "score": 5, "max": 5, "oordeel": "WIDE MOAT — onvervangbare IP + themaparkschaal + geïntegreerd entertainment-ecosysteem" },
-      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "Neutraal positief — Johnston sterk, D'Amaro onbeproefd als groep-CEO; geen significante insiderinkopen" },
-      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Basis DCF USD 90; Basis+ USD 105; huidige koers USD 100 licht boven mechanistische basis-DCF" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "N.v.t. — Disney >60 jaar beursgenoteerd; geen IPO-correctie vereist; identiek aan basis-DCF" }
+      {
+        "framework": "Graham",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gedeeltelijk — P/E aantrekkelijk (14,6x), P/B en current ratio zwak; Graham Number ~USD 78–90 onder koers"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Voldoet grotendeels — Wide Moat, wide moat, eerlijke prijs (~USD 100 vs. intrinsieke waarde USD 125–145), bewezen bedrijf"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Interessant — Stalwart/Turnaround mix, PEG 1,2x licht boven grens van 1,0 maar acceptabel"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gemiddeld-sterk — groeipotentieel aanwezig in streaming en parken, streaming-bewijs op schaal loopt nog"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gemiddeld — earnings yield 7,2% goed, maar ROC (~8–9%) gedrukt door hoge goodwill Fox-acquisitie"
+      },
+      {
+        "framework": "Moat",
+        "score": 5,
+        "max": 5,
+        "oordeel": "WIDE MOAT — onvervangbare IP + themaparkschaal + geïntegreerd entertainment-ecosysteem"
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal positief — Johnston sterk, D'Amaro onbeproefd als groep-CEO; geen significante insiderinkopen"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Basis DCF USD 90; Basis+ USD 105; huidige koers USD 100 licht boven mechanistische basis-DCF"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 3,
+        "max": 5,
+        "oordeel": "N.v.t. — Disney >60 jaar beursgenoteerd; geen IPO-correctie vereist; identiek aan basis-DCF"
+      }
     ],
     "totaal": 30,
     "max": 45,
@@ -612,7 +773,7 @@
   "thesis_tracker": {
     "publicatiedatum": "2026-03-23",
     "oordeel_bij_publicatie": "HOLD",
-    "koers_bij_publicatie": 100.10,
+    "koers_bij_publicatie": 100.1,
     "checkpoints": [
       {
         "datum": null,
@@ -642,5 +803,8 @@
         "oordeel_nog_geldig": null
       }
     ]
-  }
+  },
+  "update_beschikbaar": false,
+  "update_reden": null,
+  "laatste_koers_update": "2026-03-30"
 }

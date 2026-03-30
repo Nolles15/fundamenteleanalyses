@@ -5,23 +5,35 @@
     "naam": "T-Mobile US, Inc.",
     "sector": "Communication Services",
     "segment": "Wireless Telecommunication Services",
-    "koers": 208.76,
+    "koers": 210.82,
     "valuta": "USD",
     "peildatum": "2026-03-24",
-    "marktkapitalisatie": "~$240 miljard"
+    "marktkapitalisatie": "$235.8 mrd"
   },
   "executive_summary": {
     "kernthese": "T-Mobile US is de tweede grootste draadloze telecomaanbieder in de VS en heeft zich na de overname van Sprint (april 2020) ontpopt tot de snelstgroeiende grootschalige operator in de sector. Het bedrijf combineert een toonaangevend 5G-netwerk met agressieve klantenwervingsstrategieën, sterke vrije kasstroomgroei en een uitbreidende positie in het Fixed Wireless Access (FWA) broadbandsegment. De FCF groeide in 2024 met 54% naar $13,5 miljard, wat aangeeft dat de sprint-integratievoordelen volledig zijn gerealiseerd. Bij een koers van $208,76 is het aandeel fair gewaardeerd ten opzichte van de basiswaarde van ~$253; de veiligheidsmarge is te smal voor een comfortabele aankoop.",
     "kernthese_en": "T-Mobile US is the second-largest wireless carrier in the US and has emerged as the fastest-growing large-scale operator following the Sprint acquisition in April 2020. The company combines a leading 5G network with aggressive customer acquisition strategies, strong free cash flow growth, and an expanding Fixed Wireless Access (FWA) broadband position. FCF grew 54% in 2024 to $13.5 billion, indicating that Sprint integration synergies are fully realized. At $208.76, the stock is fairly valued versus the base DCF value of ~$253; the margin of safety is too narrow for a comfortable buy.",
     "oordeel": "HOLD",
-    "koers": 208.76,
+    "koers": 210.82,
     "valuta": "USD",
     "fair_value_basis": 253.0,
-    "upside_pct": 21.2,
+    "upside_pct": 20.0,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 155.0, "upside_pct": -25.8 },
-      { "scenario": "Basis",         "fair_value": 253.0, "upside_pct": 21.2 },
-      { "scenario": "Optimistisch",  "fair_value": 350.0, "upside_pct": 67.6 }
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 155.0,
+        "upside_pct": -25.8
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 253.0,
+        "upside_pct": 21.2
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 350.0,
+        "upside_pct": 67.6
+      }
     ],
     "grootste_kans": "Broadband FWA-expansie en nieuwe groeibedrijven (advertising, fintech, AI-diensten) stuwen langetermijnwaardegroei buiten de kerntelefonie.",
     "grootste_kans_en": "Broadband FWA expansion and new growth businesses (advertising, fintech, AI services) drive long-term value creation beyond core wireless.",
@@ -34,16 +46,48 @@
     "personeel": null,
     "landen": 1,
     "segmenten": [
-      { "naam": "Servicediensten (postpaid & prepaid)", "omzet_pct": 87.0, "beschrijving": "Maandelijkse mobiele abonnementen voor spraak, data en sms op het 5G/4G LTE-netwerk" },
-      { "naam": "Apparatuurverkoop", "omzet_pct": 11.0, "beschrijving": "Smartphones en accessoires" },
-      { "naam": "Overige inkomsten", "omzet_pct": 2.0, "beschrijving": "Wholesale (MVNO), advertenties, fintech en overige diensten" }
+      {
+        "naam": "Servicediensten (postpaid & prepaid)",
+        "omzet_pct": 87.0,
+        "beschrijving": "Maandelijkse mobiele abonnementen voor spraak, data en sms op het 5G/4G LTE-netwerk"
+      },
+      {
+        "naam": "Apparatuurverkoop",
+        "omzet_pct": 11.0,
+        "beschrijving": "Smartphones en accessoires"
+      },
+      {
+        "naam": "Overige inkomsten",
+        "omzet_pct": 2.0,
+        "beschrijving": "Wholesale (MVNO), advertenties, fintech en overige diensten"
+      }
     ],
     "aandeelhouders": [
-      { "naam": "Deutsche Telekom AG (incl. proxy SoftBank)", "pct": 52.0, "type": "Controlerend" },
-      { "naam": "SoftBank Group", "pct": 7.6, "type": "Institutioneel" },
-      { "naam": "Vanguard Group", "pct": 4.5, "type": "Institutioneel" },
-      { "naam": "BlackRock", "pct": 4.5, "type": "Institutioneel" },
-      { "naam": "Public float (overig)", "pct": 31.4, "type": "Publiek" }
+      {
+        "naam": "Deutsche Telekom AG (incl. proxy SoftBank)",
+        "pct": 52.0,
+        "type": "Controlerend"
+      },
+      {
+        "naam": "SoftBank Group",
+        "pct": 7.6,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Vanguard Group",
+        "pct": 4.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "BlackRock",
+        "pct": 4.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Public float (overig)",
+        "pct": 31.4,
+        "type": "Publiek"
+      }
     ]
   },
   "financieel": {
@@ -77,7 +121,7 @@
         "ebitda_marge_pct": 30.8,
         "nettowinst": 4.5,
         "nettomarge_pct": 11.1,
-        "eps": 5.20
+        "eps": 5.2
       },
       {
         "jaar": 2018,
@@ -87,7 +131,7 @@
         "ebitda_marge_pct": 30.9,
         "nettowinst": 2.9,
         "nettomarge_pct": 6.7,
-        "eps": 3.30
+        "eps": 3.3
       },
       {
         "jaar": 2019,
@@ -147,7 +191,7 @@
         "ebitda_marge_pct": 38.0,
         "nettowinst": 11.3,
         "nettomarge_pct": 13.9,
-        "eps": 9.90
+        "eps": 9.9
       },
       {
         "jaar": 2025,
@@ -193,21 +237,21 @@
         "jaar": 2023,
         "fcf": 8.8,
         "fcf_na_sbc": 8.1,
-        "fcf_per_aandeel": 7.00,
+        "fcf_per_aandeel": 7.0,
         "sbc": 0.667
       },
       {
         "jaar": 2024,
         "fcf": 13.5,
         "fcf_na_sbc": 12.8,
-        "fcf_per_aandeel": 11.20,
+        "fcf_per_aandeel": 11.2,
         "sbc": 0.649
       },
       {
         "jaar": 2025,
         "fcf": 16.0,
         "fcf_na_sbc": 15.4,
-        "fcf_per_aandeel": 13.50,
+        "fcf_per_aandeel": 13.5,
         "sbc": 0.65
       }
     ],
@@ -314,15 +358,15 @@
       }
     ],
     "waardering": {
-      "pe": 21.5,
+      "pe": 21.7,
       "pe_forward": 17.5,
-      "ev_ebitda": 9.5,
+      "ev_ebitda": 10.7,
       "p_fcf": null,
       "p_fcf_na_sbc": 16.3,
-      "fcf_yield_pct": 5.6,
-      "p_b": 4.1,
-      "ev_omzet": 3.4,
-      "dividendrendement_pct": 1.2,
+      "fcf_yield_pct": 6.4,
+      "p_b": 3.94,
+      "ev_omzet": 3.97,
+      "dividendrendement_pct": 194.0,
       "peg": 1.1
     }
   },
@@ -505,34 +549,151 @@
       "nettoschuld_huidig": 72.0
     },
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": 4.0,  "wacc_pct": 8.0, "fair_value": 155.0, "upside_pct": -25.8 },
-      { "scenario": "Basis",               "fcf_groei_pct": 8.0,  "wacc_pct": 7.0, "fair_value": 253.0, "upside_pct": 21.2 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 12.0, "wacc_pct": 6.0, "fair_value": 350.0, "upside_pct": 67.6 },
-      { "scenario": "Basis (geen SBC-correctie)", "fcf_groei_pct": 8.0, "wacc_pct": 7.0, "fair_value": 261.0, "upside_pct": 25.0 }
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 8.0,
+        "fair_value": 155.0,
+        "upside_pct": -25.8
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 7.0,
+        "fair_value": 253.0,
+        "upside_pct": 21.2
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 12.0,
+        "wacc_pct": 6.0,
+        "fair_value": 350.0,
+        "upside_pct": 67.6
+      },
+      {
+        "scenario": "Basis (geen SBC-correctie)",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 7.0,
+        "fair_value": 261.0,
+        "upside_pct": 25.0
+      }
     ],
     "gevoeligheid": {
-      "wacc_range": [6.0, 6.5, 7.0, 7.5, 8.0, 8.5],
-      "groei_range": [3.0, 5.0, 7.0, 9.0, 11.0],
+      "wacc_range": [
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5
+      ],
+      "groei_range": [
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0
+      ],
       "matrix": [
-        [205, 185, 170, 155, 143, 133],
-        [250, 225, 205, 187, 172, 159],
-        [305, 273, 247, 225, 206, 190],
-        [375, 334, 300, 271, 247, 226],
-        [460, 408, 365, 329, 298, 272]
+        [
+          205,
+          185,
+          170,
+          155,
+          143,
+          133
+        ],
+        [
+          250,
+          225,
+          205,
+          187,
+          172,
+          159
+        ],
+        [
+          305,
+          273,
+          247,
+          225,
+          206,
+          190
+        ],
+        [
+          375,
+          334,
+          300,
+          271,
+          247,
+          226
+        ],
+        [
+          460,
+          408,
+          365,
+          329,
+          298,
+          272
+        ]
       ]
     }
   },
   "scorekaart": {
     "items": [
-      { "framework": "Graham",                "score": 2, "max": 5, "oordeel": "Voldoet niet — te hoge schuld, P/E ~21x en P/B ~4x ver boven Graham-normen" },
-      { "framework": "Buffett / Munger",       "score": 3, "max": 5, "oordeel": "Gedeeltelijk — redelijk bedrijf op redelijke prijs, geen wide moat, hoge schuld" },
-      { "framework": "Peter Lynch",            "score": 4, "max": 5, "oordeel": "Interessant — duidelijk groeidoel (FWA, AI), PEG ~1,2, stalwart met meerdere groeidrivers" },
-      { "framework": "Phil Fisher",            "score": 4, "max": 5, "oordeel": "Sterk — meerdere groeiplatforms, bewezen executie, stijgende EBITDA-marges" },
-      { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "Gemiddeld — schuldenlast verhoogt EV fors, earnings yield slechts ~3,8%" },
-      { "framework": "Moat",                   "score": 3, "max": 5, "oordeel": "Narrow Moat — spectrum + schaal, geen breed duurzaam voordeel; overstapkosten laag" },
-      { "framework": "Management",             "score": 3, "max": 5, "oordeel": "Neutraal/Positief — sterk track record maar CEO-transitierisico na Sievert" },
-      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Beperkte marge — ~21% upside bij $208,76; veiligheidsmarge te smal bij narrow moat" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "Neutraal — geen IPO-correctie van toepassing; TMUS beursgenoteerd sinds 2013" }
+      {
+        "framework": "Graham",
+        "score": 2,
+        "max": 5,
+        "oordeel": "Voldoet niet — te hoge schuld, P/E ~21x en P/B ~4x ver boven Graham-normen"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gedeeltelijk — redelijk bedrijf op redelijke prijs, geen wide moat, hoge schuld"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Interessant — duidelijk groeidoel (FWA, AI), PEG ~1,2, stalwart met meerdere groeidrivers"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Sterk — meerdere groeiplatforms, bewezen executie, stijgende EBITDA-marges"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Gemiddeld — schuldenlast verhoogt EV fors, earnings yield slechts ~3,8%"
+      },
+      {
+        "framework": "Moat",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Narrow Moat — spectrum + schaal, geen breed duurzaam voordeel; overstapkosten laag"
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal/Positief — sterk track record maar CEO-transitierisico na Sievert"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Beperkte marge — ~21% upside bij $208,76; veiligheidsmarge te smal bij narrow moat"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Neutraal — geen IPO-correctie van toepassing; TMUS beursgenoteerd sinds 2013"
+      }
     ],
     "totaal": 28,
     "max": 45,
@@ -622,5 +783,8 @@
         "oordeel_nog_geldig": null
       }
     ]
-  }
+  },
+  "update_beschikbaar": false,
+  "update_reden": null,
+  "laatste_koers_update": "2026-03-30"
 }
