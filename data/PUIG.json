@@ -5,18 +5,18 @@
     "naam": "Puig Brands, S.A.",
     "sector": "Consumer Staples — Personal Products",
     "segment": "Luxe Beauty, Parfum & Mode",
-    "koers": 17.15,
+    "koers": 17.5,
     "valuta": "EUR",
     "peildatum": "2026-03-22",
-    "marktkapitalisatie": "$16.4 mrd"
+    "marktkapitalisatie": "$16.7 mrd"
   },
   "executive_summary": {
     "kernthese": "Puig Brands, S.A. is een Spaans familiebedrijf dat uitgegroeid is tot een van de tien grootste spelers in de mondiale luxe beauty- en parfumindustrie. Het bedrijf bezit een sterke portefeuille van wereldwijd erkende merken — waaronder Rabanne, Carolina Herrera, Jean Paul Gaultier, Charlotte Tilbury en Byredo — en genereert inmiddels bijna €5 miljard omzet per jaar. Puig maakte in mei 2024 zijn beursgang op de Bolsa de Madrid; sindsdien is de koers met circa 46% gedaald van €27,78 naar €14,93, ondanks solide financiële resultaten. Dit heeft geleid tot een valuatie die op basis van onze DCF-analyse significant onder de intrinsieke waarde ligt.",
     "oordeel": "KOOP",
-    "koers": 17.15,
+    "koers": 17.5,
     "valuta": "EUR",
     "fair_value_basis": 21.5,
-    "upside_pct": 25.4,
+    "upside_pct": 22.9,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -164,13 +164,13 @@
       "roa_pct": 6.2
     },
     "waardering": {
-      "pe": 16.3,
+      "pe": 16.7,
       "ev_ebitda": 7.87,
       "p_fcf": 12.8,
       "fcf_yield_pct": 7.8,
-      "p_b": 2.48,
+      "p_b": 2.53,
       "ev_omzet": 1.76,
-      "dividendrendement_pct": 220.0
+      "dividendrendement_pct": 215.0
     }
   },
   "moat": {
@@ -381,5 +381,5 @@
   },
   "update_beschikbaar": false,
   "update_reden": null,
-  "laatste_koers_update": "2026-03-30"
+  "laatste_koers_update": "2026-04-06"
 }

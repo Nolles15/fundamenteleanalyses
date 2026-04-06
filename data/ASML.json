@@ -5,19 +5,19 @@
     "naam": "ASML Holding N.V.",
     "sector": "Technologie — Halfgeleiderproductieapparatuur",
     "segment": "Semiconductor Equipment / Lithografie",
-    "koers": 1141.8,
+    "koers": 1161.0,
     "valuta": "EUR",
     "peildatum": "2026-03-22",
-    "marktkapitalisatie": "$443.2 mrd"
+    "marktkapitalisatie": "$450.6 mrd"
   },
   "executive_summary": {
     "kernthese": "ASML Holding N.V. is de enige producent van EUV-lithografiemachines ter wereld — onmisbaar voor de fabricage van de meest geavanceerde halfgeleiders voor AI, smartphones en datacenters. Dit technologische monopolie rust op 30+ jaar R&D, duizenden patenten en een onrepliceerbare supply chain. In FY2025 behaalde ASML een recordomzet van €32,7 miljard (+15,5%) en een nettowinst van €9,6 miljard. Met een orderboek van €38,8 miljard en de opkomst van High-NA EUV-machines (€400M/stuk) is de structurele groei op lange termijn geborgd. Op een koers van €1.128 noteert het aandeel ~20% onder onze basiswaarde van €1.420 — een aantrekkelijk instapmoment voor beleggers met een horizon van 5+ jaar.",
     "kernthese_en": "ASML Holding N.V. is the world's sole producer of EUV lithography machines — indispensable for manufacturing the most advanced semiconductors powering AI, smartphones and data centers. This technological monopoly is built on 30+ years of R&D, thousands of patents and an irreplicable supply chain. In FY2025 ASML achieved record revenue of €32.7 billion (+15.5%) and net income of €9.6 billion. With an order book of €38.8 billion and the ramp-up of High-NA EUV machines (€400M each), long-term structural growth is secured. At a price of €1,128 the stock trades ~20% below our base fair value of €1,420 — an attractive entry point for investors with a 5+ year horizon.",
     "oordeel": "KOOP",
-    "koers": 1141.8,
+    "koers": 1161.0,
     "valuta": "EUR",
     "fair_value_basis": 1420.0,
-    "upside_pct": 24.4,
+    "upside_pct": 22.3,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -226,15 +226,15 @@
       }
     ],
     "waardering": {
-      "pe": 46.1,
+      "pe": 46.9,
       "pe_forward": 32.0,
-      "ev_ebitda": 35.3,
+      "ev_ebitda": 35.8,
       "p_fcf": 55.0,
       "p_fcf_na_sbc": null,
-      "fcf_yield_pct": 1.7,
-      "p_b": 22.44,
-      "ev_omzet": 13.26,
-      "dividendrendement_pct": 94.0,
+      "fcf_yield_pct": 1.6,
+      "p_b": 22.82,
+      "ev_omzet": 13.43,
+      "dividendrendement_pct": 93.0,
       "peg": 1.6
     }
   },
@@ -589,5 +589,5 @@
   },
   "update_beschikbaar": false,
   "update_reden": null,
-  "laatste_koers_update": "2026-03-30"
+  "laatste_koers_update": "2026-04-06"
 }

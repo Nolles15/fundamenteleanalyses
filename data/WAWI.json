@@ -5,18 +5,18 @@
     "naam": "Wallenius Wilhelmsen ASA",
     "sector": "Industrieel Transport & Logistiek",
     "segment": "RoRo Scheepvaart & Logistiek",
-    "koers": 119.9,
+    "koers": 125.6,
     "valuta": "NOK",
     "peildatum": "2026-03-22",
-    "marktkapitalisatie": "$50.7 mrd"
+    "marktkapitalisatie": "$53.1 mrd"
   },
   "executive_summary": {
     "kernthese": "Wallenius Wilhelmsen ASA (WAWI) is de wereldmarktleider in Roll-on/Roll-off (RoRo) scheepvaart en autologistiek, met een vloot van circa 125 schepen verdeeld over 15 handelsroutes naar zes continenten. Na de fusiebeursgang in april 2017 maakte WAWI een indrukwekkende winsttransformatie door: van USD 102 miljoen nettowinst in 2019 naar USD 1,104 miljard in 2025. Structurele rugwind vanuit Chinese auto-export, krappe scheepscapaciteit en aantrekkelijke langetermijncontracten bieden een stevig fundament. Het aandeel noteert op extreem lage waarderingsmultiples (P/E ~5x, EV/EBITDA ~3,7x) met een FCF-yield van ~23%.",
     "oordeel": "KOOP",
-    "koers": 119.9,
+    "koers": 125.6,
     "valuta": "NOK",
     "fair_value_basis": 221,
-    "upside_pct": 84.3,
+    "upside_pct": 76.0,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -226,13 +226,13 @@
       "roa_pct": 10.1
     },
     "waardering": {
-      "pe": 5.1,
-      "ev_ebitda": 35.1,
+      "pe": 5.4,
+      "ev_ebitda": 36.7,
       "p_fcf": 4.4,
       "fcf_yield_pct": 23.0,
-      "p_b": 1.58,
-      "ev_omzet": 10.0,
-      "dividendrendement_pct": 1094.0
+      "p_b": 1.66,
+      "ev_omzet": 10.47,
+      "dividendrendement_pct": 1044.0
     }
   },
   "moat": {
@@ -710,5 +710,5 @@
   },
   "update_beschikbaar": false,
   "update_reden": null,
-  "laatste_koers_update": "2026-03-30"
+  "laatste_koers_update": "2026-04-06"
 }

@@ -5,19 +5,19 @@
     "naam": "T-Mobile US, Inc.",
     "sector": "Communication Services",
     "segment": "Wireless Telecommunication Services",
-    "koers": 210.82,
+    "koers": 201.4,
     "valuta": "USD",
     "peildatum": "2026-03-24",
-    "marktkapitalisatie": "$235.8 mrd"
+    "marktkapitalisatie": "$225.3 mrd"
   },
   "executive_summary": {
     "kernthese": "T-Mobile US is de tweede grootste draadloze telecomaanbieder in de VS en heeft zich na de overname van Sprint (april 2020) ontpopt tot de snelstgroeiende grootschalige operator in de sector. Het bedrijf combineert een toonaangevend 5G-netwerk met agressieve klantenwervingsstrategieën, sterke vrije kasstroomgroei en een uitbreidende positie in het Fixed Wireless Access (FWA) broadbandsegment. De FCF groeide in 2024 met 54% naar $13,5 miljard, wat aangeeft dat de sprint-integratievoordelen volledig zijn gerealiseerd. Bij een koers van $208,76 is het aandeel fair gewaardeerd ten opzichte van de basiswaarde van ~$253; de veiligheidsmarge is te smal voor een comfortabele aankoop.",
     "kernthese_en": "T-Mobile US is the second-largest wireless carrier in the US and has emerged as the fastest-growing large-scale operator following the Sprint acquisition in April 2020. The company combines a leading 5G network with aggressive customer acquisition strategies, strong free cash flow growth, and an expanding Fixed Wireless Access (FWA) broadband position. FCF grew 54% in 2024 to $13.5 billion, indicating that Sprint integration synergies are fully realized. At $208.76, the stock is fairly valued versus the base DCF value of ~$253; the margin of safety is too narrow for a comfortable buy.",
     "oordeel": "HOLD",
-    "koers": 210.82,
+    "koers": 201.4,
     "valuta": "USD",
     "fair_value_basis": 253.0,
-    "upside_pct": 20.0,
+    "upside_pct": 25.6,
     "fair_value_scenarios": [
       {
         "scenario": "Pessimistisch",
@@ -358,15 +358,15 @@
       }
     ],
     "waardering": {
-      "pe": 21.7,
+      "pe": 20.7,
       "pe_forward": 17.5,
-      "ev_ebitda": 10.7,
+      "ev_ebitda": 10.4,
       "p_fcf": null,
       "p_fcf_na_sbc": 16.3,
-      "fcf_yield_pct": 6.4,
-      "p_b": 3.94,
-      "ev_omzet": 3.97,
-      "dividendrendement_pct": 194.0,
+      "fcf_yield_pct": 6.7,
+      "p_b": 3.77,
+      "ev_omzet": 3.85,
+      "dividendrendement_pct": 203.0,
       "peg": 1.1
     }
   },
@@ -786,5 +786,5 @@
   },
   "update_beschikbaar": false,
   "update_reden": null,
-  "laatste_koers_update": "2026-03-30"
+  "laatste_koers_update": "2026-04-06"
 }
