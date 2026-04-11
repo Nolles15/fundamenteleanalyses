@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Achtergronden */
+  --color-bg-primary:   #f8f9fa;
+  --color-bg-surface:   #ffffff;
+  --color-bg-muted:     #f1f3f5;
+  --color-bg-dark:      #051125;
+
+  /* Tekst */
+  --color-text-primary:   #051125;
+  --color-text-secondary: #4a5568;
+  --color-text-muted:     #94a3b8;
+
+  /* Accent */
+  --color-accent:       #051125;
+  --color-accent-hover: #1b263b;
+  --color-accent-light: #e8ecf1;
+
+  /* Oordelen — editorial pastel badges */
+  --color-buy:          #166534;
+  --color-buy-bg:       #aeeecb;
+  --color-buy-border:   #86e0a8;
+  --color-hold:         #7c4a1a;
+  --color-hold-bg:      #ffdcc3;
+  --color-hold-border:  #ffc99e;
+  --color-pass:         #991B1B;
+  --color-pass-bg:      #ffdad6;
+  --color-pass-border:  #ffb8b2;
+
+  /* Grafieken */
+  --color-chart-1:      #051125;
+  --color-chart-2:      #4A7AB5;
+  --color-chart-3:      #166534;
+  --color-chart-4:      #94a3b8;
+
+  /* Borders & shadows */
+  --color-border:       #e2e8f0;
+  --color-ring:         #051125;
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-lora);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* CSS custom properties voor non-Tailwind gebruik (shadows etc.) */
+:root {
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #051125;
+}
+
+/* CTA gradient button */
+.btn-cta {
+  background: linear-gradient(135deg, #051125, #1b263b);
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+}
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+/* Financiële tabellen — cijfers uitlijnen */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Prose styling voor .md analyse-content */
+.prose-analyse {
+  font-family: var(--font-serif);
+  max-width: 65ch;
+  line-height: 1.75;
+}
+
+.prose-analyse h2 {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #051125;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-analyse p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Recharts: focus outline verwijderen bij klikken */
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none;
+}
+
+/* Scrollbar verbergen (section-nav mobile bar) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

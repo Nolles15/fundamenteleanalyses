@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "ticker": "ASML",
+    "exchange": "Euronext Amsterdam",
+    "naam": "ASML Holding N.V.",
+    "sector": "Technologie",
+    "industrie": "Halfgeleiderapparatuur / Lithografie",
+    "land": "Nederland",
+    "koers": 1270.00,
+    "valuta": "EUR",
+    "peildatum": "2026-04-11",
+    "marktkapitalisatie": "EUR 476 mrd",
+    "marktkapitalisatie_mln": 476000,
+    "free_float_pct": 100,
+    "index_lidmaatschap": "AEX, EURO STOXX 50, NASDAQ-100",
+    "domein": "asml.com",
+    "yahoo_symbol": "ASML.AS"
+  },
+
+  "executive_summary": {
+    "kernthese": "ASML is de absolute wereldleider in lithografiesystemen en de enige producent van EUV-machines. Met een monopolie op de essentiële technologie voor geavanceerde chipproductie, een orderboek van EUR 38,8 mrd, een ROIC van 68% en structurele rugwind van de AI-supercyclus is ASML een van de meest kwalitatieve groeibedrijven ter wereld. De huidige koers prijst echter een groot deel van het goede nieuws al in.",
+    "oordeel": "HOLD",
+    "koers": 1270.00,
+    "valuta": "EUR",
+    "fair_value_basis": 1410,
+    "fair_value_kansgewogen": 1385,
+    "epv_per_aandeel": 320,
+    "upside_pct": 11,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 1050, "upside_pct": -17, "fcf_groei_pct": 8, "wacc_pct": 7.72, "kans_pct": 20 },
+      { "scenario": "Basis",         "fair_value": 1410, "upside_pct": 11, "fcf_groei_pct": 14, "wacc_pct": 7.72, "kans_pct": 50 },
+      { "scenario": "Optimistisch",  "fair_value": 1780, "upside_pct": 40, "fcf_groei_pct": 18, "wacc_pct": 7.72, "kans_pct": 30 }
+    ],
+    "reverse_dcf_impliciete_groei_pct": 15.5,
+    "grootste_kans": "AI-gedreven supercyclus verlengt en verdiept de vraag naar EUV/High-NA EUV tot ver in het decennium.",
+    "grootste_risico": "Verscherping US-exportrestricties (MATCH Act) beperkt DUV-verkopen aan China, goed voor ~10-15% van de omzet."
+  },
+
+  "bedrijfsprofiel": {
+    "beschrijving": "ASML ontwikkelt, produceert en verkoopt lithografiesystemen voor de halfgeleiderindustrie. Het bedrijf is de enige producent ter wereld van Extreme Ultraviolet (EUV) machines, essentieel voor de productie van de meest geavanceerde chips.",
+    "geschiedenis": "Opgericht in 1984 als joint venture tussen ASM International en Philips. In 20+ jaar ontwikkeld tot wereldleider in lithografie. Cruciaal keerpunt: de ontwikkeling van EUV-technologie, gefinancierd met steun van Intel, TSMC en Samsung. Eerste commerciële EUV-leveringen in 2017-2018, High-NA EUV in 2024.",
+    "bedrijfsmodel": "Drie pijlers: (1) verkoop nieuwe systemen (~75% omzet), (2) installed base management/service (~20%), (3) upgrades en opties (~5%). Prijzen per systeem: EUR 50-70 mln (DUV), EUR 200-350 mln (EUV), EUR 350+ mln (High-NA EUV).",
+    "ipo_context": "IPO op NASDAQ op 15 maart 1995. Sinds 2014 ook genoteerd op Euronext Amsterdam. Geen materiële kapitaalstructuurwijzigingen bij IPO.",
+    "klantenprofiel": "Extreem geconcentreerde klantenbase: TSMC (~35%), Samsung (~20%), Intel (~15%), SK Hynix/Micron (~15%) zijn samen goed voor ~85% van de omzet.",
+    "oprichtingsjaar": 1984,
+    "ipo_datum": "1995-03-15",
+    "ipo_koers": 1.77,
+    "personeel": 44000,
+    "landen_actief": 16,
+    "klantconcentratie": "Zeer hoog — top-4 klanten goed voor ~85% van de omzet. Dit is zowel een risico als een moat-indicator.",
+    "geografische_spreiding": [
+      { "regio": "Taiwan", "omzet_pct": 35, "valuta": "USD" },
+      { "regio": "Zuid-Korea", "omzet_pct": 20, "valuta": "USD/KRW" },
+      { "regio": "China", "omzet_pct": 20, "valuta": "USD/CNY" },
+      { "regio": "Verenigde Staten", "omzet_pct": 15, "valuta": "USD" },
+      { "regio": "Europa/Overig", "omzet_pct": 10, "valuta": "EUR" }
+    ],
+    "geografische_spreiding_toelichting": "Circa 90% van de omzet is USD-gedenomineerd. China verwacht te dalen van 33% (2025) naar 20% (2026) door exportrestricties.",
+    "segmenten": [
+      { "naam": "Systemen (nieuw)", "omzet_pct": 75, "beschrijving": "Verkoop van DUV, EUV en High-NA EUV lithografiesystemen" },
+      { "naam": "Installed Base Management", "omzet_pct": 20, "beschrijving": "Service, onderhoud en reserveonderdelen voor geïnstalleerde machines" },
+      { "naam": "Upgrades & Opties", "omzet_pct": 5, "beschrijving": "Upgrades en aanvullende opties op bestaande systemen" }
+    ],
+    "aandeelhouders": [
+      { "naam": "Capital Group", "pct": 15, "type": "Institutioneel" },
+      { "naam": "BlackRock", "pct": 8, "type": "Institutioneel" },
+      { "naam": "Baillie Gifford", "pct": 4, "type": "Institutioneel" },
+      { "naam": "Free float", "pct": 100, "type": "Publiek" }
+    ],
+    "institutioneel_eigendom_trend": "Stabiel tot stijgend. JPMorgan verhoogde positie met 48%, Capital International +17%."
+  },
+
+  "financieel": {
+    "valuta_label": "EUR mln",
+    "resultatenrekening": [
+      { "jaar": 2015, "omzet": 6287, "omzet_groei_pct": null, "brutowinst": 2830, "brutomarge_pct": 45.0, "ebit": 1690, "ebit_marge_pct": 26.9, "ebitda": 1950, "ebitda_marge_pct": 31.0, "nettowinst": 1387, "nettomarge_pct": 22.1, "eps": 3.20, "eps_groei_pct": null, "aandelen_uitstaand_mln": 433 },
+      { "jaar": 2016, "omzet": 6795, "omzet_groei_pct": 8.1, "brutowinst": 3020, "brutomarge_pct": 44.4, "ebit": 1790, "ebit_marge_pct": 26.3, "ebitda": 2070, "ebitda_marge_pct": 30.5, "nettowinst": 1476, "nettomarge_pct": 21.7, "eps": 3.44, "eps_groei_pct": 7.5, "aandelen_uitstaand_mln": 429 },
+      { "jaar": 2017, "omzet": 9053, "omzet_groei_pct": 33.2, "brutowinst": 4120, "brutomarge_pct": 45.5, "ebit": 2616, "ebit_marge_pct": 28.9, "ebitda": 2950, "ebitda_marge_pct": 32.6, "nettowinst": 2121, "nettomarge_pct": 23.4, "eps": 4.98, "eps_groei_pct": 44.8, "aandelen_uitstaand_mln": 426 },
+      { "jaar": 2018, "omzet": 10944, "omzet_groei_pct": 20.9, "brutowinst": 4930, "brutomarge_pct": 45.0, "ebit": 3143, "ebit_marge_pct": 28.7, "ebitda": 3500, "ebitda_marge_pct": 32.0, "nettowinst": 2592, "nettomarge_pct": 23.7, "eps": 6.11, "eps_groei_pct": 22.7, "aandelen_uitstaand_mln": 424 },
+      { "jaar": 2019, "omzet": 11820, "omzet_groei_pct": 8.0, "brutowinst": 5200, "brutomarge_pct": 44.0, "ebit": 3127, "ebit_marge_pct": 26.5, "ebitda": 3500, "ebitda_marge_pct": 29.6, "nettowinst": 2592, "nettomarge_pct": 21.9, "eps": 6.18, "eps_groei_pct": 1.1, "aandelen_uitstaand_mln": 419 },
+      { "jaar": 2020, "omzet": 13979, "omzet_groei_pct": 18.3, "brutowinst": 7260, "brutomarge_pct": 51.9, "ebit": 4628, "ebit_marge_pct": 33.1, "ebitda": 5100, "ebitda_marge_pct": 36.5, "nettowinst": 3554, "nettomarge_pct": 25.4, "eps": 8.48, "eps_groei_pct": 37.2, "aandelen_uitstaand_mln": 419 },
+      { "jaar": 2021, "omzet": 18611, "omzet_groei_pct": 33.1, "brutowinst": 9810, "brutomarge_pct": 52.7, "ebit": 7986, "ebit_marge_pct": 42.9, "ebitda": 8500, "ebitda_marge_pct": 45.7, "nettowinst": 5883, "nettomarge_pct": 31.6, "eps": 14.36, "eps_groei_pct": 69.3, "aandelen_uitstaand_mln": 410 },
+      { "jaar": 2022, "omzet": 21173, "omzet_groei_pct": 13.8, "brutowinst": 10690, "brutomarge_pct": 50.5, "ebit": 6849, "ebit_marge_pct": 32.4, "ebitda": 7500, "ebitda_marge_pct": 35.4, "nettowinst": 5624, "nettomarge_pct": 26.6, "eps": 13.97, "eps_groei_pct": -2.7, "aandelen_uitstaand_mln": 403 },
+      { "jaar": 2023, "omzet": 27559, "omzet_groei_pct": 30.2, "brutowinst": 14140, "brutomarge_pct": 51.3, "ebit": 9786, "ebit_marge_pct": 35.5, "ebitda": 10800, "ebitda_marge_pct": 39.2, "nettowinst": 7840, "nettomarge_pct": 28.5, "eps": 19.91, "eps_groei_pct": 42.5, "aandelen_uitstaand_mln": 394 },
+      { "jaar": 2024, "omzet": 28262, "omzet_groei_pct": 2.5, "brutowinst": 14610, "brutomarge_pct": 51.7, "ebit": 9763, "ebit_marge_pct": 34.5, "ebitda": 10760, "ebitda_marge_pct": 38.1, "nettowinst": 7600, "nettomarge_pct": 26.9, "eps": 19.33, "eps_groei_pct": -2.9, "aandelen_uitstaand_mln": 394 },
+      { "jaar": 2025, "omzet": 32670, "omzet_groei_pct": 15.6, "brutowinst": 17260, "brutomarge_pct": 52.8, "ebit": 11100, "ebit_marge_pct": 34.0, "ebitda": 13947, "ebitda_marge_pct": 42.7, "nettowinst": 9610, "nettomarge_pct": 29.4, "eps": 24.71, "eps_groei_pct": 27.8, "aandelen_uitstaand_mln": 389 }
+    ],
+    "toelichting_resultaten": "Omzet CAGR 2015-2025: 17,9%. EPS CAGR: 22,8%. De structurele groei wordt gedreven door EUV-adoptie en uitbreiding installed base. De vertraging in 2024 (+2,5%) was een overgangsjaar; groei herstelde in 2025.",
+    "omzet_cagr_pct": 17.9,
+    "omzet_cagr_periode": "2015-2025",
+
+    "kasstromen": [
+      { "jaar": 2015, "cfo": 1804, "capex": 416, "fcf": 1388, "fcf_na_sbc": 1338, "fcf_per_aandeel": 3.09, "fcf_marge_pct": 21.3, "fcf_groei_pct": null, "fcf_conversion": 0.96, "sbc": 50, "dividend_totaal": 455, "aandeleninkoop": 500 },
+      { "jaar": 2016, "cfo": 1858, "capex": 443, "fcf": 1415, "fcf_na_sbc": 1360, "fcf_per_aandeel": 3.17, "fcf_marge_pct": 20.0, "fcf_groei_pct": 1.6, "fcf_conversion": 0.92, "sbc": 55, "dividend_totaal": 601, "aandeleninkoop": 1500 },
+      { "jaar": 2017, "cfo": 2747, "capex": 563, "fcf": 2184, "fcf_na_sbc": 2124, "fcf_per_aandeel": 4.99, "fcf_marge_pct": 23.5, "fcf_groei_pct": 56.2, "fcf_conversion": 1.00, "sbc": 60, "dividend_totaal": 596, "aandeleninkoop": 2000 },
+      { "jaar": 2018, "cfo": 2894, "capex": 651, "fcf": 2243, "fcf_na_sbc": 2178, "fcf_per_aandeel": 5.14, "fcf_marge_pct": 19.9, "fcf_groei_pct": 2.5, "fcf_conversion": 0.84, "sbc": 65, "dividend_totaal": 891, "aandeleninkoop": 2500 },
+      { "jaar": 2019, "cfo": 3157, "capex": 719, "fcf": 2438, "fcf_na_sbc": 2370, "fcf_per_aandeel": 5.66, "fcf_marge_pct": 20.1, "fcf_groei_pct": 8.8, "fcf_conversion": 0.91, "sbc": 68, "dividend_totaal": 1006, "aandeleninkoop": 2000 },
+      { "jaar": 2020, "cfo": 4635, "capex": 817, "fcf": 3818, "fcf_na_sbc": 3746, "fcf_per_aandeel": 8.94, "fcf_marge_pct": 26.8, "fcf_groei_pct": 58.1, "fcf_conversion": 1.05, "sbc": 72, "dividend_totaal": 1152, "aandeleninkoop": 2500 },
+      { "jaar": 2021, "cfo": 7198, "capex": 932, "fcf": 6266, "fcf_na_sbc": 6186, "fcf_per_aandeel": 15.09, "fcf_marge_pct": 33.2, "fcf_groei_pct": 65.1, "fcf_conversion": 1.05, "sbc": 80, "dividend_totaal": 2255, "aandeleninkoop": 4640 },
+      { "jaar": 2022, "cfo": 4269, "capex": 1010, "fcf": 3259, "fcf_na_sbc": 3186, "fcf_per_aandeel": 7.91, "fcf_marge_pct": 15.1, "fcf_groei_pct": -48.5, "fcf_conversion": 0.57, "sbc": 73, "dividend_totaal": 2337, "aandeleninkoop": 4700 },
+      { "jaar": 2023, "cfo": 9533, "capex": 975, "fcf": 8558, "fcf_na_sbc": 8412, "fcf_per_aandeel": 21.35, "fcf_marge_pct": 30.5, "fcf_groei_pct": 163.9, "fcf_conversion": 1.07, "sbc": 146, "dividend_totaal": 2403, "aandeleninkoop": 1000 },
+      { "jaar": 2024, "cfo": 9846, "capex": 1100, "fcf": 8746, "fcf_na_sbc": 8559, "fcf_per_aandeel": 21.73, "fcf_marge_pct": 30.3, "fcf_groei_pct": 1.7, "fcf_conversion": 1.13, "sbc": 187, "dividend_totaal": 2522, "aandeleninkoop": 500 },
+      { "jaar": 2025, "cfo": 14860, "capex": 1850, "fcf": 13010, "fcf_na_sbc": 12803, "fcf_per_aandeel": 32.91, "fcf_marge_pct": 39.2, "fcf_groei_pct": 49.6, "fcf_conversion": 1.33, "sbc": 207, "dividend_totaal": 2918, "aandeleninkoop": 5950 }
+    ],
+    "toelichting_kasstromen": "FCF na SBC CAGR 2015-2025: 25,4%. SBC is verwaarloosbaar (0,04% van marktkapitalisatie). De FCF-daling in 2022 was werkkapitaal-gerelateerd (vooruitbetalingen EUV-componenten); normaliseerde in 2023. FCF-conversie is structureel >100%.",
+
+    "balans": [
+      { "jaar": 2020, "totale_activa": 26449, "eigen_vermogen": 9732, "bruto_schuld": 4690, "nettoschuld": -1150, "debt_equity": 0.48, "debt_ebitda": 0.92, "current_ratio": 2.5, "quick_ratio": 1.8, "goodwill_pct_activa": 10.5, "boekwaarde_per_aandeel": 23.2 },
+      { "jaar": 2021, "totale_activa": 31793, "eigen_vermogen": 10192, "bruto_schuld": 4696, "nettoschuld": -1420, "debt_equity": 0.46, "debt_ebitda": 0.55, "current_ratio": 2.3, "quick_ratio": 1.7, "goodwill_pct_activa": 8.8, "boekwaarde_per_aandeel": 24.9 },
+      { "jaar": 2022, "totale_activa": 36592, "eigen_vermogen": 10801, "bruto_schuld": 5268, "nettoschuld": -680, "debt_equity": 0.49, "debt_ebitda": 0.70, "current_ratio": 2.1, "quick_ratio": 1.5, "goodwill_pct_activa": 7.6, "boekwaarde_per_aandeel": 26.8 },
+      { "jaar": 2023, "totale_activa": 39958, "eigen_vermogen": 13452, "bruto_schuld": 4980, "nettoschuld": -3500, "debt_equity": 0.37, "debt_ebitda": 0.46, "current_ratio": 2.4, "quick_ratio": 1.8, "goodwill_pct_activa": 7.0, "boekwaarde_per_aandeel": 34.1 },
+      { "jaar": 2024, "totale_activa": 48590, "eigen_vermogen": 18477, "bruto_schuld": 2700, "nettoschuld": -7200, "debt_equity": 0.15, "debt_ebitda": 0.25, "current_ratio": 2.8, "quick_ratio": 2.1, "goodwill_pct_activa": 5.8, "boekwaarde_per_aandeel": 46.9 },
+      { "jaar": 2025, "totale_activa": 50600, "eigen_vermogen": 19600, "bruto_schuld": 2700, "nettoschuld": -10130, "debt_equity": 0.14, "debt_ebitda": 0.19, "current_ratio": 3.0, "quick_ratio": 2.3, "goodwill_pct_activa": 5.5, "boekwaarde_per_aandeel": 50.4 }
+    ],
+    "toelichting_balans": "Nettokaspositie van EUR 10,1 mrd (eind 2025). Bruto schuld EUR 2,7 mrd, Debt/EBITDA slechts 0,2x. Balans uitzonderlijk sterk. Laag eigen vermogen door cumulatief EUR 29+ mrd aandeleninkopen.",
+    "schuldvervaldatum": "Geen materieel herfinancieringsrisico; meeste schuld vervalt na 2028.",
+
+    "rendementsindicatoren": [
+      { "jaar": 2020, "roce_pct": 32, "roe_pct": 36.5, "roic_pct": 38, "roa_pct": 13.4, "asset_turnover": 0.53, "wacc_pct": 8.5, "roic_wacc_spread": 29.5 },
+      { "jaar": 2021, "roce_pct": 54, "roe_pct": 57.7, "roic_pct": 52, "roa_pct": 18.5, "asset_turnover": 0.59, "wacc_pct": 8.5, "roic_wacc_spread": 43.5 },
+      { "jaar": 2022, "roce_pct": 43, "roe_pct": 52.1, "roic_pct": 45, "roa_pct": 15.4, "asset_turnover": 0.58, "wacc_pct": 9.0, "roic_wacc_spread": 36.0 },
+      { "jaar": 2023, "roce_pct": 53, "roe_pct": 58.3, "roic_pct": 56, "roa_pct": 19.6, "asset_turnover": 0.69, "wacc_pct": 9.0, "roic_wacc_spread": 47.0 },
+      { "jaar": 2024, "roce_pct": 46, "roe_pct": 41.1, "roic_pct": 48, "roa_pct": 15.6, "asset_turnover": 0.58, "wacc_pct": 8.5, "roic_wacc_spread": 39.5 },
+      { "jaar": 2025, "roce_pct": 55, "roe_pct": 49.0, "roic_pct": 68, "roa_pct": 19.0, "asset_turnover": 0.65, "wacc_pct": 8.5, "roic_wacc_spread": 59.5 }
+    ],
+    "toelichting_rendement": "ROIC-WACC spread is structureel positief en extreem hoog (30-60%+). Dit bevestigt de wide moat en waardecreatie. De spread is structureel, niet cyclisch.",
+
+    "accruals": [
+      { "jaar": 2021, "accruals_ratio": -0.08, "non_gaap_verschil_pct": null, "sbc_pct_fcf": 1.3 },
+      { "jaar": 2022, "accruals_ratio": -0.04, "non_gaap_verschil_pct": null, "sbc_pct_fcf": 2.3 },
+      { "jaar": 2023, "accruals_ratio": -0.12, "non_gaap_verschil_pct": null, "sbc_pct_fcf": 1.7 },
+      { "jaar": 2024, "accruals_ratio": -0.10, "non_gaap_verschil_pct": null, "sbc_pct_fcf": 2.2 },
+      { "jaar": 2025, "accruals_ratio": -0.15, "non_gaap_verschil_pct": null, "sbc_pct_fcf": 1.6 }
+    ],
+    "toelichting_earnings_quality": "Structureel negatieve accruals ratio wijst op conservatieve winstrapportage. Geen materieel non-GAAP gebruik. SBC verwaarloosbaar.",
+
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 7.50,
+      "huidig_rendement_pct": 0.59,
+      "gemiddeld_rendement_5j_pct": 0.75,
+      "gemiddeld_rendement_10j_pct": 0.80,
+      "cagr_dividend_pct": 21.8,
+      "fcf_dekkingsratio": 4.4,
+      "payout_ratio_fcf_pct": 22.8,
+      "oordeel_houdbaarheid": "Zeer comfortabel — FCF-dekking >4x, progressief beleid, nooit verlaagd.",
+      "progressief_beleid": true,
+      "eerstvolgende_ex_dividend": "2026-05 (verwacht)",
+      "toelichting": "Dividend is een bijzaak in de beleggingsthese; waardecreatie zit primair in buybacks en winstgroei. Het dividend is echter stabiel groeiend en zeer goed gedekt.",
+      "historie": [
+        { "jaar": 2015, "dps": 1.05, "groei_pct": null, "payout_ratio_pct": 33, "fcf_dekking": 2.9, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2016, "dps": 1.40, "groei_pct": 33, "payout_ratio_pct": 41, "fcf_dekking": 2.3, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2017, "dps": 1.40, "groei_pct": 0, "payout_ratio_pct": 28, "fcf_dekking": 3.6, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2018, "dps": 2.10, "groei_pct": 50, "payout_ratio_pct": 34, "fcf_dekking": 2.4, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2019, "dps": 2.40, "groei_pct": 14, "payout_ratio_pct": 39, "fcf_dekking": 2.4, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2020, "dps": 2.75, "groei_pct": 15, "payout_ratio_pct": 32, "fcf_dekking": 3.2, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2021, "dps": 5.50, "groei_pct": 100, "payout_ratio_pct": 38, "fcf_dekking": 2.7, "type": "Regulier", "bijzonderheden": "Inclusief EUR 2,10 interim" },
+        { "jaar": 2022, "dps": 5.80, "groei_pct": 5, "payout_ratio_pct": 42, "fcf_dekking": 1.4, "type": "Regulier", "bijzonderheden": "FCF tijdelijk laag door werkkapitaal" },
+        { "jaar": 2023, "dps": 6.10, "groei_pct": 5, "payout_ratio_pct": 31, "fcf_dekking": 3.5, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2024, "dps": 6.40, "groei_pct": 5, "payout_ratio_pct": 33, "fcf_dekking": 3.4, "type": "Regulier", "bijzonderheden": null },
+        { "jaar": 2025, "dps": 7.50, "groei_pct": 17, "payout_ratio_pct": 30, "fcf_dekking": 4.4, "type": "Regulier", "bijzonderheden": null }
+      ]
+    },
+
+    "waardering": {
+      "pe": 46.3,
+      "pe_forward": 33,
+      "pe_historisch_gem_10j": 35,
+      "ev_ebitda": 35.6,
+      "ev_ebitda_historisch_gem_10j": 28,
+      "p_fcf": 37.2,
+      "p_fcf_na_sbc": 37.2,
+      "fcf_yield_pct": 2.7,
+      "p_b": 24.3,
+      "ev_omzet": 14.3,
+      "dividendrendement_pct": 0.59,
+      "peg": 2.0
+    },
+    "toelichting_waardering": "Alle ratio's liggen boven het 10-jaars gemiddelde. Op forward P/E (33x) is de premie minder extreem. De markt prijst significante groei in.",
+    "ipo_correctie": "Niet van toepassing — ASML is sinds 1995 genoteerd.",
+
+    "sector_kpis": [
+      { "kpi_naam": "Orderboek (EUR mrd)", "eenheid": "EUR mrd", "waarden": [
+        { "jaar": 2021, "waarde": 26.2 }, { "jaar": 2022, "waarde": 40.4 }, { "jaar": 2023, "waarde": 39.0 }, { "jaar": 2024, "waarde": 36.0 }, { "jaar": 2025, "waarde": 38.8 }
+      ], "toelichting": "Orderboek biedt >100% dekking van 2026 guidance onderkant" },
+      { "kpi_naam": "Book-to-bill ratio", "eenheid": "x", "waarden": [
+        { "jaar": 2021, "waarde": 1.75 }, { "jaar": 2022, "waarde": 1.44 }, { "jaar": 2023, "waarde": 1.07 }, { "jaar": 2024, "waarde": 0.88 }, { "jaar": 2025, "waarde": 1.40 }
+      ], "toelichting": "Book-to-bill >1 in 2025 door recordbookings Q4" },
+      { "kpi_naam": "EUV-leveringen (units)", "eenheid": "stuks", "waarden": [
+        { "jaar": 2021, "waarde": 42 }, { "jaar": 2022, "waarde": 40 }, { "jaar": 2023, "waarde": 53 }, { "jaar": 2024, "waarde": 50 }, { "jaar": 2025, "waarde": 49 }
+      ], "toelichting": "EUV-leveringen stabiliseren; groei komt van Higher-NA en installed base" },
+      { "kpi_naam": "R&D / omzet %", "eenheid": "%", "waarden": [
+        { "jaar": 2021, "waarde": 15.6 }, { "jaar": 2022, "waarde": 14.9 }, { "jaar": 2023, "waarde": 14.4 }, { "jaar": 2024, "waarde": 16.5 }, { "jaar": 2025, "waarde": 16.3 }
+      ], "toelichting": "Hoge R&D-intensiteit vereist voor High-NA EUV en toekomstige technologieën" },
+      { "kpi_naam": "Brutomarge %", "eenheid": "%", "waarden": [
+        { "jaar": 2021, "waarde": 52.7 }, { "jaar": 2022, "waarde": 50.5 }, { "jaar": 2023, "waarde": 51.3 }, { "jaar": 2024, "waarde": 51.7 }, { "jaar": 2025, "waarde": 52.8 }
+      ], "toelichting": "Brutomarge stabiel ~51-53%, in lijn met guidance" }
+    ],
+    "toelichting_sector_kpis": "Recordbookings Q4 2025 (EUR 13,2 mrd) bevestigen aanhoudende vraag. Vanaf 2026 stopt ASML met kwartaalbookingrapportage."
+  },
+
+  "moat": {
+    "oordeel": "WIDE MOAT",
+    "duurzaamheid_horizon": "10+ jaar",
+    "toelichting": "ASML heeft een van de breedste moats ter wereld: een de facto monopolie op EUV-lithografie, beschermd door 15.000+ patenten, 40 jaar expertise en een onrepliceerbaar ecosysteem.",
+    "duurzaamheid_toelichting": "De moat is duurzaam op 10+ jaar horizon. De enige bedreiging op zeer lange termijn (>15 jaar) is een fundamentele technologieverschuiving weg van optische lithografie, maar er is momenteel geen alternatief in zicht.",
+    "categorieen": [
+      { "naam": "Immateriële activa", "oordeel": "STERK", "score": 5, "toelichting": ">15.000 patenten, 40 jaar lithografie-expertise, EUV-monopolie" },
+      { "naam": "Overstapkosten", "oordeel": "STERK", "score": 5, "toelichting": "Productielijn volledig ontworpen rond ASML-systemen; overstap = fab herbouwen" },
+      { "naam": "Netwerkeffecten", "oordeel": "BEPERKT", "score": 2, "toelichting": "Indirect via ecosysteem (Carl Zeiss optica, IMEC R&D)" },
+      { "naam": "Kostenvoordeel", "oordeel": "STERK", "score": 5, "toelichting": "Enige producent met schaal voor EUV; EUR 5+ mrd R&D/jaar onhaalbaar voor nieuwkomer" },
+      { "naam": "Efficiënte schaal", "oordeel": "STERK", "score": 5, "toelichting": "TAM te klein voor tweede EUV-producent; niche met ruimte voor één dominante speler" }
+    ]
+  },
+
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      { "functie": "CEO", "naam": "Christophe Fouquet", "achtergrond": "Frans, ingenieur, 15+ jaar bij ASML, architect EUV-commercialisering. CEO sinds april 2024." },
+      { "functie": "CFO", "naam": "Roger Dassen", "achtergrond": "CFO sinds 2009, uitzonderlijk lange staat van dienst, zeer transparant richting analisten." }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.04,
+      "verwateringsgraad_pct_jaar": 0.5,
+      "ceo_pay_ratio": null,
+      "prikkels_aligned": true,
+      "toelichting": "CEO-beloning EUR 7,0 mln (16% vast, 84% variabel). LTI gekoppeld aan relatieve TSR en R&D-milestones. SBC verwaarloosbaar vs. sector. Prikkels goed aligned met aandeelhoudersbelang."
+    },
+    "insider_transactions": [],
+    "insider_netto": "NETTO VERKOPER",
+    "owner_operator": false,
+    "eigenbelang_pct": 0.002,
+    "capital_allocation": "Uitstekend: EUR 29+ mrd cumulatieve buybacks, EUR 5,3 mrd R&D (2025), progressief dividend, geen materiële acquisities.",
+    "capital_allocation_detail": "Organische groei via R&D (EUR 5,3 mrd/jaar) heeft EUV en High-NA EUV opgeleverd met exceptioneel rendement. Geen materiële acquisities. Cumulatief EUR 29+ mrd aandeleninkopen, nieuw programma EUR 12 mrd (2026-2028). Timing buybacks: consistent zonder market timing, past bij structureel groeiend bedrijf.",
+    "integriteit": "Excellente downside transparency. Helder over risico's (exportrestricties, China). Geen controverses of regulatory actions.",
+    "toelichting": "Management combineert operationele excellentie met transparante communicatie en disciplined capital allocation. Eindoordeel: STERK."
+  },
+
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "cyclisch/groei",
+      "kapitaalintensief": true,
+      "consolidatiegraad": "hoog",
+      "sentiment": "positief",
+      "trends": "AI-investeringscyclus, miniaturisatie (3nm, 2nm), geopolitieke herschikking supply chains, High-NA EUV adoptie.",
+      "toelichting": "Halfgeleiderapparatuur is een cyclische groeisector. Top-5 bedrijven controleren >80% markt. Structurele groei gedreven door AI, IoT, automotive, cloud computing."
+    },
+    "porter": {
+      "dreiging_toetreders": { "score": "LAAG", "toelichting": "EUR 5+ mrd R&D, 20+ jaar expertise, onmogelijk om in te breken" },
+      "macht_leveranciers": { "score": "MIDDEL", "toelichting": "Carl Zeiss sole-source voor optica; ASML heeft belang in Zeiss" },
+      "macht_klanten": { "score": "LAAG", "toelichting": "Klanten hebben geen alternatief voor EUV" },
+      "dreiging_substituten": { "score": "LAAG", "toelichting": "Geen alternatief voor optische lithografie op <7nm" },
+      "concurrentie_intensiteit": { "score": "LAAG", "toelichting": "Monopolie in EUV; duopolie in DUV (met Nikon)" },
+      "conclusie": "Zeer aantrekkelijke sector voor structurele winstgevendheid."
+    },
+    "concurrenten": [
+      { "naam": "Applied Materials", "ticker": "AMAT", "omzet_groei_pct": 8, "ebit_marge_pct": 28, "roic_pct": 30, "nettoschuld_ebitda": 0.5, "ev_ebitda": 22, "p_fcf": 25, "marktaandeel_pct": null },
+      { "naam": "Lam Research", "ticker": "LRCX", "omzet_groei_pct": 12, "ebit_marge_pct": 30, "roic_pct": 35, "nettoschuld_ebitda": 0.3, "ev_ebitda": 20, "p_fcf": 22, "marktaandeel_pct": null },
+      { "naam": "Tokyo Electron", "ticker": "8035.T", "omzet_groei_pct": 15, "ebit_marge_pct": 27, "roic_pct": 25, "nettoschuld_ebitda": -0.5, "ev_ebitda": 25, "p_fcf": 28, "marktaandeel_pct": null },
+      { "naam": "KLA Corporation", "ticker": "KLAC", "omzet_groei_pct": 10, "ebit_marge_pct": 40, "roic_pct": 45, "nettoschuld_ebitda": 1.0, "ev_ebitda": 24, "p_fcf": 26, "marktaandeel_pct": null }
+    ],
+    "positie": "Absolute marktleider in lithografie (~90% marktaandeel); monopolie in EUV (100%).",
+    "positie_toelichting": "ASML onderscheidt zich door veruit de hoogste ROIC (68% vs. 25-45% peers) en noteert tegen de hoogste multiple. De premie is gerechtvaardigd door het EUV-monopolie.",
+    "tam_sam_som": {
+      "tam_mln": 120000,
+      "tam_groei_pct": 8,
+      "sam_mln": 40000,
+      "sam_groei_pct": 10,
+      "huidige_penetratie_pct": 82,
+      "impliciete_penetratie_na_horizon_pct": 85,
+      "groei_plausibel": true,
+      "bron": "SEMI, ASML Investor Day 2024",
+      "toelichting": "TAM halfgeleiderapparatuur ~USD 120 mrd (2025), SAM lithografie ~USD 40 mrd. ASML penetratie ~82%."
+    }
+  },
+
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "VOLDOET NIET",
+      "graham_number": 185,
+      "margin_of_safety_pct": -85,
+      "toelichting": "P/E 46x ruim boven 15x limiet. P/B 24x ruim boven 1,5x. Graham Number EUR 185 vs. koers EUR 1.270. Typisch voor monopolistische groeibedrijven."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "Uitzonderlijk bedrijf (moat, management, ROIC) maar volle prijs. Exact het type 'wonderful company' — de vraag is of de huidige prijs 'fair' is."
+    },
+    "lynch": {
+      "categorie": "Fast Grower",
+      "oordeel": "NEUTRAAL",
+      "peg_ratio": 2.0,
+      "toelichting": "Sterk verhaal (AI-monopolie) maar PEG 2,0x suggereert geen onderwaardering in Lynch-termen."
+    },
+    "fisher": {
+      "oordeel": "STERK",
+      "toelichting": "Producten met enorm groeipotentieel (High-NA EUV), wereldklasse R&D (EUR 5,3 mrd), beschermde marges door monopolie, sterk management."
+    },
+    "greenblatt": {
+      "oordeel": "GEMIDDELD",
+      "earnings_yield_pct": 2.5,
+      "return_on_capital_pct": 100,
+      "toelichting": "Extreem hoge Return on Capital (>100%) maar lage Earnings Yield (2,5%) door hoge waardering."
+    }
+  },
+
+  "risicos": [
+    { "omschrijving": "US-exportrestricties (MATCH Act) beperken DUV-verkopen aan China", "kans": "HOOG", "impact": "GROOT", "dcf_aanname_geraakt": "Omzetgroei fase 1 (-3-5%)", "toelichting": "Bipartisan wetgeving in Congress om DUV-export naar China te beperken. China was 33% van 2025 omzet, verwacht 20% in 2026. Verdere beperkingen raken 10-15% van totale omzet." },
+    { "omschrijving": "Cyclische dip halfgeleidervraag 2027-2028", "kans": "MIDDEN", "impact": "MIDDEL", "dcf_aanname_geraakt": "FCF-groei tijdelijk negatief", "toelichting": "Halfgeleiders zijn cyclisch. Na de huidige AI-investeringsgolf kan overinvestering leiden tot tijdelijke vraaguitval." },
+    { "omschrijving": "Klantconcentratie (TSMC 35%)", "kans": "LAAG", "impact": "GROOT", "dcf_aanname_geraakt": "Omzet bij TSMC-disruptie", "toelichting": "Top-4 klanten goed voor 85% omzet. Disruptie bij TSMC zou materieel zijn." },
+    { "omschrijving": "Taiwan-conflict (geopolitiek)", "kans": "LAAG", "impact": "GROOT", "dcf_aanname_geraakt": "Alle DCF-aannames", "toelichting": "Een conflict rond Taiwan zou TSMC en de mondiale chipketen ontwrichten." },
+    { "omschrijving": "Valutarisico EUR/USD", "kans": "MIDDEN", "impact": "MIDDEL", "dcf_aanname_geraakt": "Marge ±2%", "toelichting": "~90% omzet in USD, kosten in EUR. Sterkere EUR drukt marges." },
+    { "omschrijving": "Technologierisico High-NA EUV", "kans": "LAAG", "impact": "MIDDEL", "dcf_aanname_geraakt": "Terminal groei", "toelichting": "High-NA EUV is nog vroeg in adoptie; vertragingen zijn mogelijk maar niet fundamenteel bedreigend." }
+  ],
+
+  "these_invalide_bij": "Koersdaling onder EUR 700 (impliceert langdurige winstdaling >30%), verlies EUV-monopolie, of Taiwan-conflict dat TSMC uitschakelt.",
+
+  "esg": {
+    "materiele_factoren": [
+      { "factor": "Energieverbruik productie", "sasb_categorie": "Energy Management", "risico_niveau": "MIDDEL", "financiele_impact": "Stijgende energiekosten drukken marges; klanten eisen energie-efficiëntere machines", "dcf_impact": "Marginaal negatief op kosten" },
+      { "factor": "Supply chain concentratie", "sasb_categorie": "Supply Chain Management", "risico_niveau": "MIDDEL", "financiele_impact": "Afhankelijkheid van Carl Zeiss en andere sole-source leveranciers", "dcf_impact": null },
+      { "factor": "Geopolitiek / sanctierisico", "sasb_categorie": "Business Ethics", "risico_niveau": "HOOG", "financiele_impact": "Exportrestricties beperken adresseerbare markt", "dcf_impact": "Omzetgroei -3-5% bij volledige MATCH Act implementatie" }
+    ],
+    "eindoordeel": "ESG-risico's zijn materieel maar beheersbaar. Het geopolitieke risico is het meest significant.",
+    "toelichting": null
+  },
+
+  "katalysatoren": [
+    { "datum_ca": "2026-04", "omschrijving": "Q1 2026 resultaten (15 april)", "richting": "BINAIR", "impact": "GROOT" },
+    { "datum_ca": "2026-07", "omschrijving": "Q2 2026 resultaten + H1 update", "richting": "POSITIEF", "impact": "GROOT" },
+    { "datum_ca": "2026-09", "omschrijving": "MATCH Act stemming Congress", "richting": "NEGATIEF", "impact": "GROOT" },
+    { "datum_ca": "2026-10", "omschrijving": "Q3 2026 + 2027 guidance", "richting": "POSITIEF", "impact": "GROOT" },
+    { "datum_ca": "2026-11", "omschrijving": "Investor Day (verwacht)", "richting": "POSITIEF", "impact": "MIDDEL" },
+    { "datum_ca": "2027-04", "omschrijving": "Eerste High-NA EUV volume-leveringen", "richting": "POSITIEF", "impact": "GROOT" }
+  ],
+
+  "fair_value": {
+    "valuta_kasstromen": "EUR",
+    "methoden_toegepast": ["DCF", "Relatieve waardering", "EPV", "Reverse DCF"],
+    "methoden_niet_toegepast": [
+      { "methode": "DDM", "reden": "Dividendrendement te laag (0,6%) voor zinvolle DDM" },
+      { "methode": "SOTP", "reden": "ASML opereert als één geïntegreerd segment" }
+    ],
+    "toelichting_methode": "DCF als primaire methode, ondersteund door EPV als no-growth baseline en reverse DCF als plausibiliteitscheck.",
+
+    "wacc": {
+      "risicovrije_rente_pct": 3.05,
+      "risicovrije_rente_bron": "German 10yr Bund, 10 april 2026 (Trading Economics)",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 4.23,
+      "erp_bron": "Damodaran implied ERP, januari 2026 (pages.stern.nyu.edu)",
+      "beta_adjusted": 1.15,
+      "beta_bron": "Bloomberg, 5-jaars regressie, Blume-adjusted",
+      "beta_type": "regressie",
+      "country_risk_premium_pct": 0,
+      "size_premium_pct": null,
+      "cost_of_equity_pct": 7.91,
+      "schuldkosten_na_belasting_pct": 1.50,
+      "ev_gewicht_pct": 97,
+      "dv_gewicht_pct": 3,
+      "wacc_pct": 7.72,
+      "sector_wacc_pct": 8.5,
+      "illiquiditeitskorting_pct": null
+    },
+
+    "dcf": {
+      "model_type": "Two-stage FCFF",
+      "fcf_definitie": "FCFF",
+      "basis_fcf": 12803,
+      "basis_fcf_na_sbc": 12803,
+      "fcf_type": "FCFF na SBC",
+      "groei_fase1_pct": 14,
+      "groei_fase2_pct": null,
+      "terminal_groei_pct": 2.5,
+      "terminal_methode": "Gordon Growth + Exit Multiple cross-check",
+      "exit_multiple_gebruikt": 22,
+      "exit_multiple_bron": "Mediaan EV/EBITDA halfgeleiderapparatuur over volle cyclus",
+      "terminal_value_gordon_growth": 425000,
+      "terminal_value_exit_multiple": 380000,
+      "terminal_value_pct_van_totaal": 75,
+      "terminal_implied_ev_ebitda": 28,
+      "terminal_groei_consistentie": "Terminal groei 2,5% vereist 10% herinvestering bij 25% ROIC in volwassen fase — plausibel voor een bedrijf dat in de terminal fase minder groei-capex nodig heeft.",
+      "mid_year_convention": true,
+      "wacc_pct": 7.72,
+      "shares_outstanding_mln": 389,
+      "nettoschuld_huidig": -10130
+    },
+    "dcf_toelichting": "FCFF na SBC als basis. Mid-year convention toegepast. Nettokaspositie (EUR 10,1 mrd) opgeteld bij DCF. Gordon Growth terminal value EUR 425 mrd, exit multiple cross-check EUR 380 mrd — verschil van 12% is acceptabel. Impliciete terminal EV/EBITDA: 28x, hoger dan sector (22x) maar gerechtvaardigd door moat.",
+
+    "projectie": [
+      { "jaar": 2026, "omzet": 37000, "omzet_groei_pct": 13.3, "ebit": 12580, "ebit_marge_pct": 34.0, "nopat": 10693, "capex": 2000, "delta_nwc": 500, "sbc": 220, "fcf": 14600 },
+      { "jaar": 2027, "omzet": 42500, "omzet_groei_pct": 14.9, "ebit": 14875, "ebit_marge_pct": 35.0, "nopat": 12644, "capex": 2200, "delta_nwc": 600, "sbc": 240, "fcf": 16640 },
+      { "jaar": 2028, "omzet": 48000, "omzet_groei_pct": 12.9, "ebit": 17280, "ebit_marge_pct": 36.0, "nopat": 14688, "capex": 2400, "delta_nwc": 500, "sbc": 260, "fcf": 18970 },
+      { "jaar": 2029, "omzet": 53000, "omzet_groei_pct": 10.4, "ebit": 19080, "ebit_marge_pct": 36.0, "nopat": 16218, "capex": 2500, "delta_nwc": 400, "sbc": 280, "fcf": 21610 },
+      { "jaar": 2030, "omzet": 58000, "omzet_groei_pct": 9.4, "ebit": 20880, "ebit_marge_pct": 36.0, "nopat": 17748, "capex": 2600, "delta_nwc": 300, "sbc": 300, "fcf": 24060 }
+    ],
+
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 8, "wacc_pct": 7.72, "fair_value": 1050, "upside_pct": -17 },
+      { "scenario": "Basis", "fcf_groei_pct": 14, "wacc_pct": 7.72, "fair_value": 1410, "upside_pct": 11 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 18, "wacc_pct": 7.72, "fair_value": 1780, "upside_pct": 40 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 14, "wacc_pct": 7.72, "fair_value": 1410, "upside_pct": 11 }
+    ],
+
+    "kansgewogen_fair_value": 1385,
+
+    "reverse_dcf": {
+      "impliciete_groei_pct": 15.5,
+      "historische_fcf_cagr_pct": 25.4,
+      "consensus_groei_pct": 15,
+      "interpretatie": "De markt prijst ~15,5% FCF-groei in voor de komende 5 jaar. Dit is in lijn met consensus en lager dan de historische CAGR (25,4%), wat plausibel is."
+    },
+
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 34,
+      "genormaliseerde_nopat": 9434,
+      "maintenance_capex": 1000,
+      "adjusted_earnings_power": 8434,
+      "epv_per_aandeel": 320,
+      "groeipremie_pct": 340
+    },
+
+    "ddm": {
+      "uitgevoerd": false,
+      "model": null,
+      "dps_verwacht": null,
+      "cost_of_equity_pct": null,
+      "dividendgroei_pct": null,
+      "ddm_fair_value": null
+    },
+
+    "sotp": {
+      "uitgevoerd": false,
+      "segmenten": null,
+      "sotp_fair_value": null,
+      "conglomeraatkorting_pct": null
+    },
+
+    "synthese": {
+      "fair_value_bandbreedte_laag": 1050,
+      "fair_value_bandbreedte_centraal": 1410,
+      "fair_value_bandbreedte_hoog": 1780,
+      "methode_gewichten": "DCF 70%, Relatieve waardering 20%, EPV 10%",
+      "margin_of_safety_vereist_pct": 15,
+      "koopniveau": 1150
+    },
+    "synthese_toelichting": "DCF basis fair value EUR 1.410 (+11% upside). Kansgewogen EUR 1.385. EPV EUR 320 (significant lager — de markt betaalt EUR 950 voor groei). Bij 15% margin of safety wordt het koopniveau EUR ~1.150-1.200.",
+
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [6.5, 7.0, 7.5, 7.72, 8.5, 9.5],
+      "groei_range": [6.0, 10.0, 14.0, 18.0, 22.0],
+      "matrix": [
+        [1120, 990, 890, 860, 740, 610],
+        [1480, 1310, 1170, 1130, 960, 790],
+        [1890, 1670, 1490, 1410, 1210, 990],
+        [2350, 2070, 1840, 1780, 1500, 1220],
+        [2880, 2530, 2240, 2160, 1820, 1470]
+      ]
+    },
+    "gevoeligheid_terminal": null
+  },
+
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 1, "max": 5, "oordeel": "Voldoet niet (te duur op alle maatstaven)" },
+      { "framework": "Buffett / Munger", "score": 4, "max": 5, "oordeel": "Gedeeltelijk (uitzonderlijk bedrijf, volle prijs)" },
+      { "framework": "Peter Lynch", "score": 3, "max": 5, "oordeel": "Neutraal (sterk verhaal, PEG >1)" },
+      { "framework": "Phil Fisher", "score": 5, "max": 5, "oordeel": "Sterk (innovatie, moat, management)" },
+      { "framework": "Magic Formula", "score": 3, "max": 5, "oordeel": "Gemiddeld (hoge returns, lage yield)" },
+      { "framework": "Moat", "score": 5, "max": 5, "oordeel": "Wide Moat (EUV-monopolie)" },
+      { "framework": "Management", "score": 5, "max": 5, "oordeel": "Sterk (transparant, aligned, track record)" },
+      { "framework": "Fair Value DCF", "score": 3, "max": 5, "oordeel": "Lichte korting (+11% upside)" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "N.v.t. (IPO 1995)" }
+    ],
+    "totaal": 32,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "ASML is een van de beste bedrijven ter wereld: monopolie op essentiële technologie, uitzonderlijke returns, sterk management en structurele AI-rugwind. De koers van EUR 1.270 prijst echter een groot deel van het goede nieuws in. Met een kansgewogen fair value van EUR 1.385 (+9% upside) is er onvoldoende margin of safety voor een KOOP-oordeel. Bij EUR 1.100-1.150 wordt het oordeel KOOP. De voornaamste onzekerheid is de MATCH Act. De Q1-resultaten (15 april) zijn de eerstvolgende katalysator."
+  },
+
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "ASML Jaarverslagen 2015-2025",
+      "ASML Investor Relations",
+      "MacroTrends",
+      "StockAnalysis.com",
+      "Yahoo Finance",
+      "Damodaran (NYU Stern) — ERP en CRP",
+      "Trading Economics — Obligatierendementen",
+      "CNBC, Bloomberg, Reuters — Nieuwsartikelen",
+      "Seeking Alpha — Analistenrapportages"
+    ],
+    "pre_ipo_data_beschikbaar": true,
+    "ontbrekende_data": "Exacte maintenance capex vs. growth capex splitsing (geschat op basis van D&A). Gedetailleerde compensatiestructuur per jaar. Carl Zeiss leveringscontracten.",
+    "non_gaap_gebruikt": false,
+    "non_gaap_toelichting": null
+  },
+
+  "bronnen": [
+    { "url": "https://www.asml.com/en/investors/", "titel": "ASML Investor Relations", "type": "beurswebsite" },
+    { "url": "https://www.macrotrends.net/stocks/charts/ASML/asml-holding/financial-statements", "titel": "MacroTrends ASML Financial Statements", "type": "databron" },
+    { "url": "https://stockanalysis.com/stocks/asml/", "titel": "StockAnalysis ASML", "type": "databron" },
+    { "url": "https://pages.stern.nyu.edu/~adamodar/", "titel": "Damodaran Online — Implied ERP", "type": "databron" },
+    { "url": "https://tradingeconomics.com/germany/government-bond-yield", "titel": "Trading Economics — German 10yr Bund", "type": "databron" },
+    { "url": "https://www.cnbc.com/2026/04/07/asml-shares-today-us-chip-export-curbs-china.html", "titel": "CNBC — ASML Export Curbs", "type": "nieuwsartikel" },
+    { "url": "https://seekingalpha.com/article/4889478-asml-q1-earnings-preview", "titel": "Seeking Alpha — ASML Q1 Preview", "type": "analistenrapport" }
+  ],
+
+  "update_historie": []
+}

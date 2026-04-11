@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "ticker": "EDEN",
+    "yahoo_symbol": "EDEN.PA",
+    "exchange": "Euronext Paris",
+    "naam": "Edenred SE",
+    "sector": "Technology / Digital Payments",
+    "segment": "Employee Benefits & Prepaid Solutions",
+    "industrie": "Employee Benefits & Prepaid Solutions",
+    "land": "Frankrijk",
+    "koers": 17.12,
+    "valuta": "EUR",
+    "peildatum": "2026-04-11",
+    "marktkapitalisatie": "EUR 4,1 mld",
+    "marktkapitalisatie_mln": 4100,
+    "free_float_pct": 90,
+    "index_lidmaatschap": "CAC 40",
+    "domein": "edenred.com"
+  },
+  "executive_summary": {
+    "kernthese": "Edenred SE is de wereldleider in digitale betaaloplossingen voor werknemers, met een driezijdig B2B2C-ecosysteem in 45 landen. Het aandeel is 43% gedaald door regulatoire wijzigingen in Brazilië en Italië die in 2026 tot een tijdelijke EBITDA-daling van 8-12% leiden. Bij een P/E van 7,7x en EV/EBITDA van 5-6,5x handelt het ver onder historische gemiddelden. Het management bevestigt terugkeer naar 8-12% groei vanaf 2027.",
+    "oordeel": "KOOP",
+    "koers": 17.12,
+    "valuta": "EUR",
+    "fair_value_basis": 28.50,
+    "upside_pct": 66,
+    "fair_value_scenarios": [
+      { "scenario": "Pessimistisch", "fair_value": 20.80, "upside_pct": 22 },
+      { "scenario": "Basis", "fair_value": 28.50, "upside_pct": 66 },
+      { "scenario": "Optimistisch", "fair_value": 37.40, "upside_pct": 118 }
+    ],
+    "grootste_kans": "Terugkeer naar structurele groei na regulatoire reset in 2026",
+    "grootste_risico": "Verdere regulatoire ingrepen in kernmarkten (Brazilië, Italië)"
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Edenred SE is de wereldleider in digitale betaaloplossingen voor werknemers, bedrijven en handelaren. Het bedrijf opereert een driezijdig B2B2C-ecosysteem dat werkgevers, werknemers en merchants verbindt via employee benefits (maaltijdvouchers, cadeaubonnen), mobiliteitsoplossingen (brandstof- en oplaadkaarten) en complementaire diensten (bedrijfsbetalingen, incentives). Met een omzet van €2,96 miljard in 2025 en een EBITDA van €1,36 miljard bedient Edenred circa 60 miljoen gebruikers in 45 landen.",
+    "geschiedenis": "De geschiedenis van Edenred begon in 1962 met de uitvinding van het Ticket Restaurant® maaltijdvouchersysteem in Frankrijk door Jacques Borel. In 1976 startte de internationale expansie naar Europa en Latijns-Amerika. In 1983 werd het bedrijf onderdeel van de Accor Group, waarna het in 1998 werd omgedoopt tot Accor Services. Op 29 juni 2010 keurde de buitengewone aandeelhoudersvergadering van Accor de afsplitsing goed, waarmee Edenred als zelfstandig bedrijf naar de beurs ging op 2 juli 2010. Bij de beursgang had Edenred slechts €25 miljoen nettoschuld, kenmerkend voor het asset-light businessmodel. Sindsdien heeft Edenred zich getransformeerd van een papieren voucherbedrijf naar een volledig digitaal platform. Belangrijke overnames omvatten onder meer Ticket Log (Brazilië, mobiliteit), UTA (Europese brandstofkaarten) en RB (Brazilië, 2024). In 2024 bereikte het bedrijf de mijlpaal van €45 miljard business volume.",
+    "bedrijfsmodel": "Edenred opereert een driezijdig ecosysteem: werkgevers laden saldo op kaarten/apps van werknemers, werknemers besteden dit bij aangesloten merchants, en Edenred faciliteert de transacties. De inkomstenstromen zijn: merchant fees (commissies op transacties, kernomzet), float income (rente op tijdelijk aangehouden saldi — opgeladen maar nog niet besteed geld), en platform/abonnementsfees (vaste vergoedingen voor software en dienstverlening). Het model is asset-light, schaalbaar en heeft hoge operationele hefboom. De omzet groeit mee met inflatie (hogere maaltijdlimieten) en economische activiteit.",
+    "ipo_context": "Edenred ging op 2 juli 2010 naar de beurs als spin-off van Accor. Bij de beursgang had het bedrijf slechts €25 miljoen nettoschuld, kenmerkend voor het asset-light businessmodel. IPO-correctie is niet van toepassing: Edenred is >15 jaar beursgenoteerd met een lange, consistente track record.",
+    "klantenprofiel": "Edenred bedient circa 60 miljoen gebruikers (werknemers) via werkgevers in 45 landen. De klantrelatie is primair B2B: werkgevers contracteren Edenred voor employee benefit-programma's. Grote werkgevers hebben onderhandelingskracht, maar de overstapkosten zijn hoog door HR-systeemintegratie. Daarnaast heeft Edenred een merchant-netwerk van honderdduizenden aangesloten handelaren.",
+    "oprichtingsjaar": 1962,
+    "ipo_datum": "2010-07-02",
+    "ipo_koers": null,
+    "personeel": 12000,
+    "landen_actief": 45,
+    "klantconcentratie": "Geen controlerende klant; breed gespreid over honderdduizenden werkgevers en miljoenen werknemers in 45 landen",
+    "geografische_spreiding": [
+      { "regio": "Europa", "omzet_pct": 61, "valuta": "EUR" },
+      { "regio": "Latijns-Amerika", "omzet_pct": 29, "valuta": "BRL" },
+      { "regio": "Rest van de Wereld", "omzet_pct": 10, "valuta": "Diverse" }
+    ],
+    "geografische_spreiding_toelichting": "Edenred heeft significante valuta-exposure naar de Braziliaanse real (BRL), wat historisch tot volatiliteit in gerapporteerde cijfers leidt. Circa 30% van de omzet is blootgesteld aan BRL. Europa groeit like-for-like met +5,8%, Latijns-Amerika met +15,1% en Rest van de Wereld met +16,7%.",
+    "segmenten": [
+      { "naam": "Benefits & Engagement", "omzet_pct": 63, "beschrijving": "Maaltijdvouchers, cadeaubonnen en welzijnsoplossingen voor werknemers. Dit is het historische kernproduct van Edenred, oorspronkelijk gestart als Ticket Restaurant® in 1962." },
+      { "naam": "Mobility", "omzet_pct": 25, "beschrijving": "Brandstofkaarten, EV-laden en toloplossingen via merken als UTA en Ticket Log. Dit segment biedt diversificatie buiten het traditionele benefits-domein." },
+      { "naam": "Complementary Solutions", "omzet_pct": 12, "beschrijving": "Corporate payments, incentives & rewards en publieke programma's. Dit segment groeit snel en biedt nieuwe revenue streams buiten de kernmarkten." }
+    ],
+    "aandeelhouders": [
+      { "naam": "Baillie Gifford & Co.", "pct": 5, "type": "Institutioneel" },
+      { "naam": "Select Equity Group", "pct": 4, "type": "Institutioneel" },
+      { "naam": "BlackRock Inc.", "pct": 4, "type": "Institutioneel" },
+      { "naam": "T. Rowe Price Group", "pct": 3, "type": "Institutioneel" },
+      { "naam": "Harris Associates", "pct": 3, "type": "Institutioneel" },
+      { "naam": "Vanguard Group", "pct": 2, "type": "Institutioneel" },
+      { "naam": "Overig publiek/institutioneel", "pct": 79, "type": "Publiek" }
+    ],
+    "institutioneel_eigendom_trend": "Stabiel. Edenred heeft geen controlerende aandeelhouder; de free float bedraagt >90%. Het bedrijf hanteert het principe één aandeel = één stem. Uitstaande aandelen per maart 2025: 241,5 miljoen. Het bedrijf voert actief een buybackprogramma uit van €600 miljoen (tot november 2027), wat het aantal uitstaande aandelen verlaagt."
+  },
+  "financieel": {
+    "valuta_label": "EUR mln",
+    "resultatenrekening": [
+      { "jaar": 2015, "omzet": 1070, "omzet_groei_pct": null, "ebitda": 341, "ebitda_marge_pct": 31.9, "nettowinst": 177, "nettomarge_pct": 16.5, "eps": 0.73 },
+      { "jaar": 2016, "omzet": 1140, "omzet_groei_pct": 6.5, "ebitda": 370, "ebitda_marge_pct": 32.5, "nettowinst": 180, "nettomarge_pct": 15.8, "eps": 0.74 },
+      { "jaar": 2017, "omzet": 1320, "omzet_groei_pct": 15.8, "ebitda": 429, "ebitda_marge_pct": 32.5, "nettowinst": 241, "nettomarge_pct": 18.3, "eps": 0.99 },
+      { "jaar": 2018, "omzet": 1380, "omzet_groei_pct": 4.5, "ebitda": 461, "ebitda_marge_pct": 33.4, "nettowinst": 254, "nettomarge_pct": 18.4, "eps": 1.05 },
+      { "jaar": 2019, "omzet": 1630, "omzet_groei_pct": 18.1, "ebitda": 545, "ebitda_marge_pct": 33.4, "nettowinst": 312, "nettomarge_pct": 19.1, "eps": 1.28 },
+      { "jaar": 2020, "omzet": 1470, "omzet_groei_pct": -9.8, "ebitda": 455, "ebitda_marge_pct": 30.9, "nettowinst": 238, "nettomarge_pct": 16.2, "eps": 0.98 },
+      { "jaar": 2021, "omzet": 1627, "omzet_groei_pct": 10.7, "ebitda": 538, "ebitda_marge_pct": 33.1, "nettowinst": 313, "nettomarge_pct": 19.2, "eps": 1.28 },
+      { "jaar": 2022, "omzet": 2030, "omzet_groei_pct": 24.8, "ebitda": 836, "ebitda_marge_pct": 41.2, "nettowinst": 407, "nettomarge_pct": 20.0, "eps": 1.62 },
+      { "jaar": 2023, "omzet": 2510, "omzet_groei_pct": 23.6, "ebitda": 1094, "ebitda_marge_pct": 43.6, "nettowinst": 475, "nettomarge_pct": 18.9, "eps": 1.92 },
+      { "jaar": 2024, "omzet": 2856, "omzet_groei_pct": 13.8, "ebitda": 1265, "ebitda_marge_pct": 44.3, "nettowinst": 549, "nettomarge_pct": 19.2, "eps": 2.27 },
+      { "jaar": 2025, "omzet": 2961, "omzet_groei_pct": 3.7, "ebitda": 1360, "ebitda_marge_pct": 45.9, "nettowinst": 620, "nettomarge_pct": 20.9, "eps": 2.59 }
+    ],
+    "toelichting_resultaten": "De omzet-CAGR over 2015–2025 bedraagt circa 10,7%, gedreven door organische groei, acquisities en de transitie naar digitale oplossingen. De EBITDA-marge is spectaculair gestegen van ~32% naar ~46%, wat de operationele hefboom van het digitale platform weerspiegelt. De groeivertraging in 2025 (+3,7%) is te wijten aan de regulatoire wijzigingen in Brazilië en Italië. De EPS voor 2025 is adjusted EPS; nettowinst is geschat op basis van adjusted EPS × uitstaande aandelen. De nettomarge is stabiel rond 19-21% over de laatste vijf jaar, wat duidt op consistente winstgevendheid ondanks verschillende marktomstandigheden.",
+    "omzet_cagr_pct": 10.7,
+    "omzet_cagr_periode": "2015-2025",
+    "kasstromen": [
+      { "jaar": 2018, "cfo": null, "capex": null, "fcf": 350, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2019, "cfo": null, "capex": null, "fcf": 420, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2020, "cfo": null, "capex": null, "fcf": 380, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2021, "cfo": null, "capex": null, "fcf": 480, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2022, "cfo": null, "capex": null, "fcf": 750, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2023, "cfo": null, "capex": null, "fcf": 780, "fcf_na_sbc": null, "fcf_per_aandeel": null, "sbc": null },
+      { "jaar": 2024, "cfo": null, "capex": null, "fcf": 832, "fcf_na_sbc": 797, "fcf_per_aandeel": 3.40, "sbc": 35 },
+      { "jaar": 2025, "cfo": null, "capex": null, "fcf": 1111, "fcf_na_sbc": 1076, "fcf_per_aandeel": 4.60, "sbc": 35 }
+    ],
+    "toelichting_kasstromen": "De sterke verbetering in 2025 (+34% FCF-groei) weerspiegelt lagere werkkapitaalbehoefte en disciplinering van capex (6,7% van omzet). De fluctuatie in FCF-conversion tussen 66–82% reflecteert de timing van werkkapitaalbewegingen, die bij een float-model inherent volatiel zijn. Edenred voert een actief buybackprogramma van €600 miljoen uit (2024–2027). Tot november 2025 is 11,8 miljoen aandelen teruggekocht voor €399 miljoen, tegen een gemiddelde koers van circa €33,80 — significant hoger dan de huidige koers van €17,12. Dit wijst erop dat het management terugkocht bij hogere waarderingen, wat suboptimaal is vanuit aandeelhoudersperspectief.",
+    "balans": [
+      { "jaar": 2020, "totale_activa": null, "bruto_schuld": null, "nettoschuld": 1200, "eigen_vermogen": -200, "debt_ebitda": 2.6, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null },
+      { "jaar": 2021, "totale_activa": null, "bruto_schuld": null, "nettoschuld": 1300, "eigen_vermogen": -300, "debt_ebitda": 2.4, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null },
+      { "jaar": 2022, "totale_activa": null, "bruto_schuld": null, "nettoschuld": 1400, "eigen_vermogen": -500, "debt_ebitda": 1.7, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null },
+      { "jaar": 2023, "totale_activa": null, "bruto_schuld": null, "nettoschuld": 1600, "eigen_vermogen": -600, "debt_ebitda": 1.5, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null },
+      { "jaar": 2024, "totale_activa": 13300, "bruto_schuld": 4700, "nettoschuld": 2000, "eigen_vermogen": -809, "debt_ebitda": 1.6, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null },
+      { "jaar": 2025, "totale_activa": null, "bruto_schuld": null, "nettoschuld": 2350, "eigen_vermogen": -900, "debt_ebitda": 1.7, "current_ratio": null, "quick_ratio": null, "goodwill_pct_activa": null, "boekwaarde_per_aandeel": null }
+    ],
+    "toelichting_balans": "Edenred heeft een negatief eigen vermogen, wat kenmerkend is voor asset-light bedrijven met significante goodwill en een actief buybackprogramma. Dit is geen teken van financiële zwakte maar van het bedrijfsmodel. De stijging van de nettoschuld naar €2,35 miljard in H1 2025 wordt verklaard door de acquisities van RB (Brazilië) en IP's energiekaartenactiviteit (Italië) in H2 2024, alsmede de teruggave van €568 miljoen aan aandeelhouders via dividend en buybacks. De bruto schuld (€4,7 mld) is beduidend hoger dan de nettoschuld (€2,35 mld), wat aangeeft dat Edenred substantiële liquide middelen aanhoudt als onderdeel van het float-model.",
+    "schuldvervaldatum": "Geen leningen vervallend in 2026",
+    "rendementsindicatoren": [
+      { "jaar": 2017, "roce_pct": null, "roe_pct": null, "roic_pct": 12.0, "roa_pct": 2.0, "wacc_pct": 7.5, "roic_wacc_spread": 4.5 },
+      { "jaar": 2018, "roce_pct": null, "roe_pct": null, "roic_pct": 13.0, "roa_pct": 2.1, "wacc_pct": 7.5, "roic_wacc_spread": 5.5 },
+      { "jaar": 2019, "roce_pct": null, "roe_pct": null, "roic_pct": 14.0, "roa_pct": 2.3, "wacc_pct": 7.5, "roic_wacc_spread": 6.5 },
+      { "jaar": 2020, "roce_pct": null, "roe_pct": null, "roic_pct": 10.0, "roa_pct": 1.6, "wacc_pct": 7.5, "roic_wacc_spread": 2.5 },
+      { "jaar": 2021, "roce_pct": null, "roe_pct": null, "roic_pct": 11.0, "roa_pct": 2.0, "wacc_pct": 7.5, "roic_wacc_spread": 3.5 },
+      { "jaar": 2022, "roce_pct": null, "roe_pct": null, "roic_pct": 14.0, "roa_pct": 2.8, "wacc_pct": 7.5, "roic_wacc_spread": 6.5 },
+      { "jaar": 2023, "roce_pct": null, "roe_pct": null, "roic_pct": 12.0, "roa_pct": 3.0, "wacc_pct": 7.5, "roic_wacc_spread": 4.5 },
+      { "jaar": 2024, "roce_pct": null, "roe_pct": null, "roic_pct": 10.0, "roa_pct": 3.5, "wacc_pct": 7.0, "roic_wacc_spread": 3.0 },
+      { "jaar": 2025, "roce_pct": null, "roe_pct": null, "roic_pct": 5.5, "roa_pct": 4.0, "wacc_pct": 7.1, "roic_wacc_spread": -1.6 }
+    ],
+    "toelichting_rendement": "ROE is niet-betekenisvol (n.m.) door het negatieve eigen vermogen. ROIC is berekend op basis van NOPAT / invested capital. De ROIC-WACC spread was historisch stevig positief (3–6,5%) maar is in 2025 gedrukt door de lagere ROIC (tijdelijk effect van acquisities en regulatoire impact). De structurele spread is naar verwachting positief bij normalisatie. Over de periode 2017–2024 creëert Edenred consistent waarde boven de kapitaalkosten, wat kenmerkend is voor een kwaliteitsbedrijf.",
+    "accruals": [
+      { "jaar": 2022, "accruals_ratio": -0.03, "non_gaap_verschil_pct": 20, "sbc_pct_fcf": null },
+      { "jaar": 2023, "accruals_ratio": -0.02, "non_gaap_verschil_pct": 18, "sbc_pct_fcf": null },
+      { "jaar": 2024, "accruals_ratio": -0.02, "non_gaap_verschil_pct": 22, "sbc_pct_fcf": 4.2 },
+      { "jaar": 2025, "accruals_ratio": -0.03, "non_gaap_verschil_pct": 15, "sbc_pct_fcf": 3.2 }
+    ],
+    "toelichting_earnings_quality": "De accruals ratio (nettowinst − OCF / gemiddeld totale activa) is bij Edenred doorgaans negatief tot licht negatief, wat duidt op conservatieve winstrapportage. De FCF overtreft structureel de nettowinst (FCF conversion > 100% t.o.v. nettowinst in de meeste jaren), wat een positief teken is voor earnings quality. Edenred rapporteert 'adjusted' EPS naast IFRS-nettowinst. De belangrijkste uitsluitingen zijn: amortisatie van acquisitie-gerelateerde immateriële activa, herstructureringskosten en eenmalige M&A-kosten. Het verschil tussen IFRS- en adjusted EPS bedraagt doorgaans 15–25%. Voor deze analyse gebruiken we IFRS als primaire grondslag. SBC bij Edenred is relatief beperkt: geschat op ~€30–40 miljoen per jaar (~0,7–1,0% van marktkapitalisatie). De verwateringsgraad is circa 0,5–1,0% per jaar, deels gecompenseerd door het buybackprogramma.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 1.21,
+      "huidig_rendement_pct": 7.1,
+      "gemiddeld_rendement_5j_pct": 1.5,
+      "cagr_dividend_pct": 5.2,
+      "fcf_dekkingsratio": 3.8,
+      "payout_ratio_fcf_pct": 26,
+      "oordeel_houdbaarheid": "conservatief",
+      "progressief_beleid": true,
+      "toelichting": "Progressief dividendbeleid met streef-payout van 50-60% van recurrente nettowinst. FCF-dekking van 3,8x is zeer comfortabel. De CAGR van het dividend over 2018–2025 bedraagt circa 5,2%. Het huidige dividendrendement van ~7,1% is historisch uitzonderlijk hoog (gemiddeld ~1,3% over 10 jaar) — dit wijst óf op een koopkans, óf op marktscepsis over de houdbaarheid. Het dividend is houdbaar, zelfs als de FCF met 50% zou dalen. Het hoge rendement is primair het gevolg van de koersdaling, niet van dividendverhoging, wat het aandeel aantrekkelijk maakt voor inkomensbeleggers.",
+      "historie": [
+        { "jaar": 2015, "dps": 0.42, "groei_pct": null, "payout_ratio_pct": 58, "fcf_dekking": null, "bijzonderheden": null },
+        { "jaar": 2016, "dps": 0.42, "groei_pct": 0, "payout_ratio_pct": 57, "fcf_dekking": null, "bijzonderheden": null },
+        { "jaar": 2017, "dps": 0.31, "groei_pct": -26, "payout_ratio_pct": 31, "fcf_dekking": null, "bijzonderheden": "Herstructurering dividendbeleid" },
+        { "jaar": 2018, "dps": 0.85, "groei_pct": 174, "payout_ratio_pct": 81, "fcf_dekking": null, "bijzonderheden": "Nieuw progressief beleid" },
+        { "jaar": 2019, "dps": 0.86, "groei_pct": 1, "payout_ratio_pct": 67, "fcf_dekking": null, "bijzonderheden": null },
+        { "jaar": 2020, "dps": 0.70, "groei_pct": -19, "payout_ratio_pct": 73, "fcf_dekking": null, "bijzonderheden": "Covid-impact, verlaagd dividend" },
+        { "jaar": 2021, "dps": 0.75, "groei_pct": 7, "payout_ratio_pct": 59, "fcf_dekking": null, "bijzonderheden": null },
+        { "jaar": 2022, "dps": 0.90, "groei_pct": 20, "payout_ratio_pct": 55, "fcf_dekking": 3.3, "bijzonderheden": null },
+        { "jaar": 2023, "dps": 1.00, "groei_pct": 11, "payout_ratio_pct": 53, "fcf_dekking": 3.2, "bijzonderheden": null },
+        { "jaar": 2024, "dps": 1.10, "groei_pct": 10, "payout_ratio_pct": 48, "fcf_dekking": 3.1, "bijzonderheden": null },
+        { "jaar": 2025, "dps": 1.21, "groei_pct": 10, "payout_ratio_pct": 47, "fcf_dekking": 3.8, "bijzonderheden": "Goedgekeurd mei 2025" }
+      ]
+    },
+    "waardering": {
+      "pe": 7.7,
+      "pe_forward": 7.8,
+      "pe_historisch_gem_10j": 30,
+      "ev_ebitda": 5.5,
+      "ev_ebitda_historisch_gem_10j": 20,
+      "p_fcf": 3.7,
+      "p_fcf_na_sbc": 3.8,
+      "fcf_yield_pct": 27.1,
+      "p_b": null,
+      "ev_omzet": 2.3,
+      "dividendrendement_pct": 7.1,
+      "peg": 0.8
+    },
+    "toelichting_waardering": "Alle huidige ratio's zijn ver onder historische gemiddelden, wat de lage waardering bevestigt. De P/E van 7,7x vergelijkt met een 10-jaarsgemiddelde van ~30x, en de EV/EBITDA van 5,0–6,5x met een gemiddelde van ~20x. Zelfs als we aannemen dat de 'nieuwe normaal' een lagere multiple rechtvaardigt (zeg 12–15x EV/EBITDA) door regulatoire onzekerheid, impliceert dit nog steeds een koers van €25–35 per aandeel. Het dividendrendement van ~7,1% is historisch uitzonderlijk hoog (gemiddeld ~1,3% over 10 jaar). De PEG-ratio van ~0,8x op basis van verwachte 10% EBITDA-groei vanaf 2027 wijst op potentiële onderwaardering.",
+    "ipo_correctie": null,
+    "sector_kpis": [
+      { "naam": "Business volume", "waarde": "48", "eenheid": "EUR mld", "trend": "STIJGEND" },
+      { "naam": "Digitale penetratie", "waarde": "98", "eenheid": "%", "trend": "STIJGEND" },
+      { "naam": "Beyond Food % omzet", "waarde": "39", "eenheid": "%", "trend": "STIJGEND" },
+      { "naam": "EBITDA-marge", "waarde": "45.9", "eenheid": "%", "trend": "STIJGEND" },
+      { "naam": "FCF/EBITDA conversion", "waarde": "82", "eenheid": "%", "trend": "STIJGEND" },
+      { "naam": "Capex/omzet", "waarde": "6.7", "eenheid": "%", "trend": "DALEND" }
+    ],
+    "toelichting_sector_kpis": "Als digitaal betalingsplatform met kenmerken van zowel fintech als traditionele dienstverlening zijn bovenstaande KPI's relevant. Het business volume groeit naar ~€48 miljard, de digitale penetratie nadert 100%, en de diversificatie naar 'Beyond Food'-producten stijgt gestaag naar 39% van de omzet. De dalende capex/omzet ratio (6,7%) wijst op toenemende schaalvoordelen."
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "duurzaamheid_horizon": "5-7 jaar",
+    "toelichting": "Edenred heeft sterke overstapkosten en merkwaarde, gecombineerd met schaalvoordelen en netwerkeffecten. De moat wordt echter bedreigd door regulatoire risico's: overheden kunnen de structuur van de markt wijzigen (zoals Brazilië met interoperabiliteitsverplichtingen). De duurzaamheid over 5 jaar is goed, mits het bedrijf zijn digitale voorsprong behoudt en succesvol diversifieert naar mobiliteit en complementaire diensten. De combinatie van factoren neigt naar Wide Moat, maar het regulatoire risico houdt het oordeel op Narrow Moat.",
+    "duurzaamheid_toelichting": "De voornaamste bedreiging voor de moat komt van regulatoire veranderingen, met name interoperabiliteitsverplichtingen in Brazilië die de exclusiviteit van merchant-netwerken kunnen ondermijnen. Daarnaast zou verdere tarieflimitering in Europa de pricing power kunnen aantasten. Zolang Edenred zijn digitale voorsprong behoudt en de diversificatie naar mobiliteit en welzijn voortzet, is de moat de komende 5-7 jaar duurzaam.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "Ticket Restaurant® is een iconisch merk met >60 jaar historie en sterke naamsbekendheid in 45 landen. Regulatoire licenties in al deze landen vormen een significante toetredingsbarrière die niet eenvoudig te repliceren is. De combinatie van merkwaarde en licentie-eisen creëert een stevige bescherming."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "Werkgevers moeten HR-systemen integreren met het Edenred-platform; eenmaal geïmplementeerd is overstappen kostbaar en disruptief. De integratie raakt salarisadministratie, compliance en werknemerstevredenheid. Merchants accepteren meerdere netwerken, maar de werkgeversrelatie is buitengewoon sticky door de operationele complexiteit van een overstap."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Meer merchants leidt tot meer waarde voor werknemers, wat meer werkgevers aantrekt — een klassiek tweezijdig netwerkeffect. Dit effect is reëel maar minder sterk dan bij pure betaalnetwerken zoals Visa/Mastercard, omdat het netwerk per land opereert en niet grensoverschrijdend versterkt."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "AANWEZIG",
+        "score": 4,
+        "toelichting": "Significante schaalvoordelen in technologie, compliance en het merchant-netwerk. De EBITDA-marge van 46% reflecteert deze schaal — kleinere spelers zoals Up Group (~25% marge) kunnen dit niet evenaren. De kosten per transactie dalen naarmate het volume stijgt, wat de marktleider een structureel voordeel geeft."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 3,
+        "toelichting": "De markt heeft ruimte voor 2-3 grote spelers (Edenred, Pluxee, en regionale kampioenen). Er is geen natuurlijk monopolie, maar de beperkte omvang van de markt en de hoge vaste kosten ontmoedigen nieuwe toetreders. De consolidatie na de Pluxee-spinoff van Sodexo versterkt het oligopolistische karakter."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      {
+        "functie": "CEO & Chairman",
+        "naam": "Bertrand Dumazy",
+        "achtergrond": "Sinds oktober 2015 aan het roer bij Edenred. Dumazy heeft een achtergrond bij Atos, Neopost (nu Quadient) en diverse consultancyrollen. Onder zijn leiding is de omzet bijna verdrievoudigd en de EBITDA-marge verdubbeld. Hij voert een consistente strategie van digitalisering en diversificatie."
+      },
+      {
+        "functie": "Lead Independent Director",
+        "naam": "Dominique D'Hinnin",
+        "achtergrond": "Vice-Chairman van de Board. Waarborgt onafhankelijk toezicht als lead independent director. Het bestuur telt 13 leden met een gemiddelde zittingsduur van 5 jaar, wat goed governance-beleid weerspiegelt."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.85,
+      "verwateringsgraad_pct_jaar": 0.75,
+      "ceo_pay_ratio": null,
+      "prikkels_aligned": true,
+      "toelichting": "CEO-compensatie (2024): totaal ~€6,5 miljoen, bestaande uit €825.000 vast salaris plus variabele bonus en langetermijn-incentives (LTI). Dit is bovengemiddeld voor Franse bedrijven van vergelijkbare omvang (mediaan ~€3,5 mln). De bonusdoelstellingen zijn gekoppeld aan EBITDA-groei, operating revenue en ESG-criteria. De LTI is grotendeels gebaseerd op performance shares met 3-jarige vesting. Prikkels zijn gedeeltelijk in lijn met langetermijn-aandeelhoudersbelang — de koppeling aan EBITDA-groei is positief, maar er zou meer nadruk op ROIC en FCF per aandeel mogen liggen."
+    },
+    "insider_transactions": [
+      { "datum": "2025-05-19", "naam": "Kelly Richdale", "functie": "Board Member", "type": "KOOP", "aandelen": null, "koers": null },
+      { "datum": "2025-11-12", "naam": "Kelly Richdale", "functie": "Board Member", "type": "KOOP", "aandelen": null, "koers": null },
+      { "datum": "2025-11-20", "naam": "Onbekend insider", "functie": "Board", "type": "KOOP", "aandelen": null, "koers": null }
+    ],
+    "insider_netto": "NETTO KOPER",
+    "owner_operator": false,
+    "eigenbelang_pct": null,
+    "capital_allocation": "Historisch goed: organische groei consequent geleverd, acquisities succesvol geïntegreerd, geen goodwill impairments. Buyback-timing suboptimaal (gemiddeld ~€34/aandeel vs. huidige €17). Progressief dividendbeleid.",
+    "capital_allocation_detail": "Het management heeft historisch goed kapitaal gealloceerd: organische groei is consequent geleverd, acquisities (UTA, Ticket Log, CSI) hebben bijgedragen aan omzet en marge. Er zijn geen goodwill-impairments gerapporteerd, wat duidt op disciplinaire acquisities tegen redelijke prijzen. Het dividendbeleid is progressief met een stabiele groei van ~10% per jaar recent. Het buybackprogramma van €600 miljoen wordt actief uitgevoerd. Belangrijke kanttekening: de timing van buybacks (gemiddeld ~€34/aandeel) was suboptimaal gezien de huidige koers van €17. Dit wijst op een management dat terugkoopt op basis van een vast schema in plaats van opportunistisch, wat aandeelhouderswaarde heeft vernietigd.",
+    "integriteit": "Geen pre-IPO financial engineering geconstateerd — Edenred was een clean spin-off van Accor in 2010 met minimale schuld (€25 mln netto). De IPO-opbrengsten werden niet gebruikt voor schuldaflossing aan insiders. Het management is open over de regulatoire uitdagingen in Brazilië en Italië en heeft guidance tijdig bijgesteld. Consistentie tussen woord en daad is goed: financiële doelstellingen worden doorgaans gehaald of overtroffen. Er zijn geen controverses of governance-schandalen bekend.",
+    "toelichting": "Sterk management met bewezen track record over meer dan 10 jaar. CEO Bertrand Dumazy heeft het bedrijf succesvol getransformeerd van papieren vouchers naar een digitaal platform, met een verdrievoudiging van de omzet en verdubbeling van de EBITDA-marge. De communicatie naar beleggers is transparant en open, inclusief downside transparency over regulatoire tegenwind. Het enige zwakke punt is de suboptimale timing van het buybackprogramma."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "defensief",
+      "kapitaalintensief": false,
+      "consolidatiegraad": "hoog",
+      "sentiment": "neutraal",
+      "trends": "Digitalisering van papieren vouchers is nagenoeg voltooid. Uitbreiding naar mobiliteit en welzijn biedt nieuwe groeipaden. Regulatoire evolutie (interoperabiliteit, tarieflimitering) vormt de belangrijkste onzekerheid.",
+      "toelichting": "De employee benefits/prepaid solutions sector is een niche binnen de bredere digital payments-industrie. Kenmerken: defensief karakter (werknemers hebben altijd lunchpauze), lage kapitaalintensiteit, sterke regulatoire bescherming (licentie-eisen in veel landen), hoge entreebarrières door gevestigde merchantnetwerken. Belangrijke trends: (1) digitalisering van papieren vouchers naar kaarten/apps is nagenoeg voltooid, (2) uitbreiding naar mobiliteit en welzijn biedt nieuwe groeipaden, (3) regulatoire evolutie met interoperabiliteit en tarieflimitering als voornaamste onzekerheden, (4) consolidatie na de Pluxee spin-off van Sodexo versterkt het oligopolistische karakter van de markt."
+    },
+    "porter": {
+      "dreiging_toetreders": { "score": "LAAG", "toelichting": "Hoge barrières door regulatoire licenties, merchant-netwerk, werkgeversrelaties en substantiële technologie-investeringen. Een nieuwe toetreder zou miljoenen merchants moeten aansluiten en licenties in tientallen landen moeten verwerven, wat jaren en honderden miljoenen euro's kost." },
+      "macht_leveranciers": { "score": "LAAG", "toelichting": "Edenred is zelf het platform en heeft beperkte afhankelijkheid van leveranciers. IT-dienstverleners en hardware-leveranciers zijn vervangbaar. Er is geen concentratie aan de aanbodzijde die onderhandelingskracht geeft." },
+      "macht_klanten": { "score": "MIDDEL", "toelichting": "Grote werkgevers (enterprise-segment) hebben onderhandelingskracht en kunnen lagere tarieven bedingen. Echter, de hoge overstapkosten door HR-systeemintegratie beperken de feitelijke macht van klanten om over te stappen naar concurrenten." },
+      "dreiging_substituten": { "score": "MIDDEL", "toelichting": "Directe loonsverhogingen of generieke betaalkaarten vormen een alternatief voor maaltijdvouchers. Echter, de fiscale voordelen van het vouchersysteem (belastingvrijstelling voor werkgever én werknemer) beperken de aantrekkelijkheid van substituten aanzienlijk in de meeste markten." },
+      "concurrentie_intensiteit": { "score": "MIDDEL", "toelichting": "Oligopolie met 2 grote spelers (Edenred #1, Pluxee #2) en regionale spelers (Up Group #3). Na de Pluxee spin-off van Sodexo is de concurrentie-intensiteit licht toegenomen, maar de marktstructuur blijft geconcentreerd met beperkte prijsconcurrentie." },
+      "conclusie": "Aantrekkelijke sector voor structurele winstgevendheid. De combinatie van lage dreiging van toetreders, lage leveranciersmacht en hoge overstapkosten creëert een gunstig competitief landschap. Het voornaamste risico komt niet van marktpartijen maar van regulatoire ingrepen die de spelregels kunnen veranderen."
+    },
+    "concurrenten": [
+      { "naam": "Pluxee (ex-Sodexo Benefits)", "ticker": "PLX.PA", "marktaandeel_pct": null, "sterkte": "Sterk in Europa, groeiend in Latijns-Amerika, ~1,2 mld omzet", "zwakte": "Lagere marge (~37%), minder gediversifieerd (83% benefits)" },
+      { "naam": "Up Group", "ticker": null, "marktaandeel_pct": null, "sterkte": "Sterke positie in Frankrijk en enkele nichémarkten, ~0,7 mld omzet", "zwakte": "Privé, kleinere schaal, lagere marge (~25%), beperkte geografische spreiding" }
+    ],
+    "positie": "#1 mondiaal in employee benefits & prepaid solutions",
+    "positie_toelichting": "Edenred is de duidelijke marktleider met dubbele omzet ten opzichte van Pluxee en superieure marges (44% vs 37% EBITDA). De diversificatie naar Mobility (25% van omzet) is een uniek concurrentievoordeel dat Pluxee en Up Group niet evenaren. Edenred opereert in 45 landen versus 28 voor Pluxee en ~20 voor Up Group. De combinatie van schaal, diversificatie en geografische spreiding positioneert Edenred als koploper met een duurzaam voorsprong.",
+    "tam_sam_som": {
+      "tam_mln": null,
+      "tam_groei_pct": null,
+      "sam_mln": null,
+      "sam_groei_pct": null,
+      "huidige_penetratie_pct": null,
+      "impliciete_penetratie_na_horizon_pct": null,
+      "groei_plausibel": true,
+      "bron": null,
+      "toelichting": "Exacte TAM/SAM-cijfers zijn niet beschikbaar voor de employee benefits-niche. De markt groeit structureel door uitbreiding naar nieuwe landen, nieuwe productcategorieën (mobiliteit, welzijn) en inflatiegerelateerde volumegroei."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "GEDEELTELIJK",
+      "graham_number": null,
+      "margin_of_safety_pct": 40,
+      "toelichting": "Graham's defensieve criteria: Edenred voldoet aan de eis van 10+ jaar winsthistorie en stabiele dividendgroei. Echter: P/B is niet toepasbaar (negatief eigen vermogen), en de historische P/E was altijd >15x. Bij de huidige P/E van ~7,7x en dividend van 7,1% voldoet het aandeel wél aan de strenge Graham-criteria voor waardering. Graham Number is niet berekenbaar door negatieve boekwaarde. Oordeel: Gedeeltelijk — voldoet aan P/E en dividendcriteria maar negatieve boekwaarde past niet in het Graham-kader."
+    },
+    "buffett_munger": {
+      "oordeel": "VOLDOET",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "Begrijpelijk bedrijf: ja, het driezijdige vouchersysteem is helder en intuïtief te begrijpen. Voorspelbare kasstromen: ja, hoog recurring karakter met stabiele FCF-generatie. Sterke moat: ja, narrow-to-wide door overstapkosten, merkwaarde en schaalvoordelen. Excellent management: ja, bewezen track record onder Dumazy met verdrievoudiging omzet en verdubbeling marge. Redelijke prijs: bij huidige koers is het bedrijf spotgoedkoop op historische basis. ROIC > WACC: structureel ja, maar 2025 is een afwijkend jaar door regulatoire impact. Edenred is een Buffett-type bedrijf op een Buffett-type koers."
+    },
+    "lynch": {
+      "categorie": "Stalwart",
+      "oordeel": "INTERESSANT",
+      "peg_ratio": 0.8,
+      "toelichting": "Lynch-categorie: Stalwart — grote, stabiele groeier met 10–15% winstgroei. PEG-ratio ~0,8x: potentieel ondergewaardeerd volgens Lynch's vuistregel (PEG < 1 is aantrekkelijk). Het verhaal is helder: marktleider in employee benefits die tijdelijk wordt afgestraft door regelgeving in Brazilië. Lynch zou dit herkennen als een koopkans bij een goed bedrijf met een tijdelijk probleem."
+    },
+    "fisher": {
+      "oordeel": "STERK",
+      "toelichting": "Producten met groeipotentieel: ja, uitbreiding naar mobiliteit en welzijn biedt substantiële groeiruimte. R&D/innovatie: sterk, 98% digitale penetratie bereikt en voortdurende platformontwikkeling. Winstmarge: excellent en structureel stijgend (van 32% naar 46% EBITDA-marge over 10 jaar). Management-integriteit: goed, transparant over regulatoire tegenwind en consistente communicatie naar beleggers. Fisher zou waarderen dat Edenred investeert in langetermijngroei terwijl het de winstmarges verbetert."
+    },
+    "greenblatt": {
+      "oordeel": "AANTREKKELIJK",
+      "earnings_yield_pct": 16.0,
+      "return_on_capital_pct": null,
+      "toelichting": "Earnings Yield (EBIT/EV): EBIT 2025 ~€1.050 mln / EV ~€6,5 mld = ~16% — zeer aantrekkelijk en ver boven de meeste aandelen in de markt. Return on Capital (EBIT / NWC + NFA) is moeilijk te berekenen door negatief werkkapitaal en negatieve activa, maar het operationele rendement is evident hoog gezien de EBITDA-marges. De combinatie van hoge earnings yield en bewezen operationele kwaliteit maakt Edenred aantrekkelijk in het Magic Formula-kader."
+    }
+  },
+  "katalysatoren": [
+    { "datum_ca": "2026-04", "omschrijving": "Q1 2026 omzetcijfers - eerste indicatie regulatoire impact", "richting": "NEUTRAAL", "impact": "MIDDEL" },
+    { "datum_ca": "2026-05", "omschrijving": "Dividendbesluit 2025 - verwachte verhoging naar ~EUR1,30", "richting": "POSITIEF", "impact": "KLEIN" },
+    { "datum_ca": "2026-07", "omschrijving": "H1 2026 resultaten - eerste EBITDA na regulatoire reset", "richting": "BINAIR", "impact": "GROOT" },
+    { "datum_ca": "2026-10", "omschrijving": "Q3 2026 revenue - stabilisatie verwacht", "richting": "POSITIEF", "impact": "MIDDEL" },
+    { "datum_ca": "2026-11", "omschrijving": "Braziliaanse interoperabiliteit deadline (360 dagen)", "richting": "NEGATIEF", "impact": "GROOT" },
+    { "datum_ca": "2027-02", "omschrijving": "FY 2026 resultaten + 2027 guidance - bevestiging groei-terugkeer", "richting": "POSITIEF", "impact": "GROOT" }
+  ],
+  "fair_value": {
+    "methoden_toegepast": ["DCF", "Relatieve waardering"],
+    "methoden_niet_toegepast": [
+      { "methode": "EPV", "reden": "Niet apart berekend; DCF met conservatieve aannames dekt dit scenario af" },
+      { "methode": "Reverse DCF", "reden": "Impliciet meegenomen in gevoeligheidsanalyse maar niet als separate methode uitgevoerd" }
+    ],
+    "toelichting_methode": "De primaire waarderingsmethode is een DCF-analyse met drie scenario's (pessimistisch, basis, optimistisch). Daarnaast is een relatieve waardering uitgevoerd als sanity check, waarbij de huidige multiples worden vergeleken met historische gemiddelden en sectorgenoten. De IPO-correctie is niet van toepassing aangezien Edenred >15 jaar beursgenoteerd is.",
+    "wacc": {
+      "wacc_pct": 8.0,
+      "risk_free_rate_pct": 3.70,
+      "equity_risk_premium_pct": 5.50,
+      "beta": 1.21,
+      "cost_of_equity_pct": 10.4,
+      "cost_of_debt_pct": 3.5,
+      "debt_weight_pct": 35
+    },
+    "dcf": {
+      "basis_fcf": 900,
+      "basis_fcf_na_sbc": 865,
+      "wacc_pct": 8.0,
+      "groei_fase1_pct": 7.0,
+      "terminal_groei_pct": 2.5
+    },
+    "dcf_toelichting": "Vertrekpunt is de genormaliseerde FCF van €900 miljoen (lager dan de gerapporteerde €1.111 mln in 2025, rekening houdend met de 2026-dip door regulatoire reset van ~10% EBITDA-daling). SBC van ~€35 mln is niet apart afgetrokken omdat het al verwerkt is in de IFRS-kostenbasis. De groeiaanname voor fase 1 (jaren 1–5) is: jaar 1 (2026) −10% (regulatoire reset), jaar 2–5 (2027–2030) +10% per jaar conform management guidance van 8–12% EBITDA-groei. De terminale groeivoet van 2,5% reflecteert langetermijn-inflatie Eurozone plus beperkte reële groei — het bedrijf opereert in markten met structurele volumegroei (meer landen, meer producten), maar regulatoire druk beperkt de langetermijngroei. Bij de basiswaarde van €28,50 biedt de huidige koers van €17,12 een korting van 40%. Gegeven de narrow-to-wide moat, voorspelbare kasstromen en goede management track record, achten wij een margin of safety van 25–30% voldoende, en de huidige korting van 40% overschrijdt dit ruimschoots.",
+    "projectie": null,
+    "scenarios": [
+      { "scenario": "Pessimistisch", "fcf_groei_pct": 3.0, "wacc_pct": 9.0, "fair_value": 20.80, "upside_pct": 22 },
+      { "scenario": "Basis", "fcf_groei_pct": 7.0, "wacc_pct": 8.0, "fair_value": 28.50, "upside_pct": 66 },
+      { "scenario": "Optimistisch", "fcf_groei_pct": 10.0, "wacc_pct": 7.5, "fair_value": 37.40, "upside_pct": 118 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 7.0, "wacc_pct": 8.0, "fair_value": 28.50, "upside_pct": 66 }
+    ],
+    "reverse_dcf": {
+      "impliciete_groei_pct": -2.0,
+      "historische_fcf_cagr_pct": 15.0,
+      "consensus_groei_pct": 10.0,
+      "interpretatie": "Bij zelfs de meest conservatieve aannames (3% groei, 9,5% WACC) is de fair value €16,30 — slechts 5% onder de huidige koers. De markt prijst dus effectief een structurele krimp of fundamentele verslechtering in, wat inconsistent is met het bedrijfsprofiel. De huidige koers impliceert negatieve FCF-groei, terwijl het management 8–12% groei bevestigt voor 2027+."
+    },
+    "synthese": {
+      "fair_value_gewogen": 28.50,
+      "methode_gewichten": "DCF basisscenario als primaire waardering; relatieve waardering als sanity check"
+    },
+    "synthese_toelichting": "De huidige EV/EBITDA van 5–6,5x is een standaardafwijking onder het 10-jaarsgemiddelde van ~20x. Zelfs als we aannemen dat de 'nieuwe normaal' een lagere multiple rechtvaardigt (zeg 12–15x) door regulatoire onzekerheid, impliceert dit nog steeds een koers van €25–35 per aandeel. De DCF-uitkomst van €28,50 is plausibel en consistent met deze relatieve waardering. De convergentie van verschillende methoden versterkt het vertrouwen in het basisscenario.",
+    "gevoeligheid": {
+      "wacc_range": [7.0, 7.5, 8.0, 8.5, 9.0, 9.5],
+      "groei_range": [3.0, 5.0, 7.0, 9.0, 11.0],
+      "matrix": [
+        [25.2, 22.8, 20.8, 19.1, 17.6, 16.3],
+        [30.5, 27.2, 24.4, 22.1, 20.2, 18.5],
+        [36.8, 32.4, 28.5, 25.6, 23.1, 21.0],
+        [44.2, 38.4, 33.8, 29.8, 26.5, 23.8],
+        [53.0, 45.5, 39.5, 34.6, 30.5, 27.1]
+      ]
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "Verdere regulering Brazilië",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "FCF-groei fase 1 en terminale groeivoet",
+      "toelichting": "Nieuwe beperkingen op float income, interchange fees of exclusiviteitsregels in Brazilië kunnen de winstgevendheid van het Latijns-Amerikaans segment structureel aantasten. Brazilië vertegenwoordigt ~29% van de omzet. De interoperabiliteitsverplichting met deadline H2 2026 is het meest acute risico. Mitigatie: diversificatie naar mobiliteit en andere regio's vermindert de afhankelijkheid."
+    },
+    {
+      "omschrijving": "Regulering Italië/Europa",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "EBITDA-marge en FCF-marge",
+      "toelichting": "De Italiaanse buoni pasto-hervorming heeft al geleid tot margeverlies in 2026. Er is een risico dat vergelijkbare regelgeving zich uitbreidt naar andere Europese markten. EU-brede regelgeving rond digitale betalingen zou het operationele model kunnen beïnvloeden. Mitigatie: Edenred's schaal en compliance-expertise stellen het beter in staat dan kleinere concurrenten om regelgevingswijzigingen te absorberen."
+    },
+    {
+      "omschrijving": "Valutarisico (BRL)",
+      "kans": "HOOG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Gerapporteerde omzet en FCF in EUR",
+      "toelichting": "Circa 30% van de omzet is blootgesteld aan de Braziliaanse real, die historisch volatiel is. Een depreciatie van de BRL drukt de gerapporteerde cijfers in EUR, hoewel de onderliggende operationele prestaties ongewijzigd blijven. Dit risico is grotendeels translatie-gerelateerd en niet operationeel. Mitigatie: Edenred hedge niet actief; het risico is structureel onderdeel van het bedrijfsprofiel."
+    },
+    {
+      "omschrijving": "Concurrentie Pluxee",
+      "kans": "LAAG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "EBITDA-marge door prijsconcurrentie",
+      "toelichting": "Post-spinoff is Pluxee een meer gefocuste concurrent geworden die agressiever kan opereren. Prijsconcurrentie in overlappende markten zou de marges onder druk kunnen zetten. Echter, de marktstructuur (oligopolie) en hoge overstapkosten beperken de kans op destructieve prijsconcurrentie."
+    },
+    {
+      "omschrijving": "Macro-economische neergang",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Omzetgroei fase 1",
+      "toelichting": "Minder werkgelegenheid leidt tot minder vouchergebruik en lagere business volumes. Het defensieve karakter van employee benefits biedt enige bescherming (werknemers hebben altijd lunchpauze), en indexering aan inflatie compenseert deels. De impact is groter in cyclische markten zoals Latijns-Amerika."
+    },
+    {
+      "omschrijving": "Technologische disruptie",
+      "kans": "LAAG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Terminale groeivoet en moat-duurzaamheid",
+      "toelichting": "Fintech- en neobanken bieden alternatieve employee benefit-oplossingen die de traditionele voucherstructuur zouden kunnen ondermijnen. Echter, Edenred heeft zich zelf succesvol gedigitaliseerd (98% penetratie) en de regulatoire licentie-eisen vormen een bescherming tegen pure-play tech-disruptors."
+    },
+    {
+      "omschrijving": "Integratierisico acquisities",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "FCF op korte termijn",
+      "toelichting": "De recente acquisities van RB (Brazilië) en IP's energiekaartenactiviteit (Italië) moeten succesvol geïntegreerd worden. Het track record van Edenred op dit gebied is goed (geen goodwill impairments), maar integratiekosten kunnen de FCF tijdelijk drukken."
+    },
+    {
+      "omschrijving": "Suboptimale buybacks",
+      "kans": "MIDDEN",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "Aandeelhouderswaarde per aandeel",
+      "toelichting": "Het management kocht aandelen terug tegen gemiddeld ~€34, terwijl de huidige koers €17 is. Dit vernietigt aandeelhouderswaarde als het buybackprogramma doorgaat bij hogere koersen. Het resterende budget (~€200 mln) zou bij de huidige koers echter wel waarde-accretief zijn."
+    }
+  ],
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Regulatoir & compliance risico",
+        "sasb_categorie": "Business Ethics",
+        "risico_niveau": "HOOG",
+        "financiele_impact": "Regulatoire wijzigingen in Brazilië en Italië leiden tot 8-12% EBITDA-daling in 2026",
+        "dcf_impact": "Direct effect op FCF-groei fase 1 en terminale groeivoet"
+      },
+      {
+        "factor": "Data privacy & cybersecurity",
+        "sasb_categorie": "Data Security",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Als betalingsplatform met miljoenen gebruikers is dataveiligheid kritisch; een breach zou reputatieschade en boetes veroorzaken",
+        "dcf_impact": "Potentieel eenmalig effect op FCF bij incident"
+      },
+      {
+        "factor": "Financiële inclusie",
+        "sasb_categorie": "Access & Affordability",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Edenred draagt bij aan financiële inclusie door digitale betalingsoplossingen in opkomende markten; dit is een positieve ESG-factor",
+        "dcf_impact": null
+      }
+    ],
+    "eindoordeel": "ESG-risico's zijn beheersbaar. Het voornaamste materiële risico is regulatoir van aard en is al verdisconteerd in de analyse.",
+    "toelichting": "Edenred heeft een relatief gunstig ESG-profiel als digitaal platform zonder fysieke productie. De belangrijkste materiële ESG-factoren zijn regulatoir risico (al uitgebreid behandeld), data privacy (inherent aan betalingsplatformen) en de positieve bijdrage aan financiële inclusie. CEO-compensatie is gekoppeld aan ESG-criteria, wat duidt op serieuze aandacht voor duurzaamheid."
+  },
+  "these_invalide_bij": "De investeringsthese klopt niet meer als de EBITDA structureel daalt naar <€800 mln (>40% daling ten opzichte van 2025), als regelgeving in Brazilië het float-model fundamenteel onmogelijk maakt, of als de FCF-groei na 2027 niet terugkeert naar minimaal 5% per jaar. Een koersniveau boven €35 zou de margin of safety elimineren en het HOLD-scenario activeren.",
+  "scorekaart": {
+    "items": [
+      { "framework": "Graham", "score": 3, "max": 5, "oordeel": "Gedeeltelijk - P/E en dividend voldoen, boekwaarde niet" },
+      { "framework": "Buffett / Munger", "score": 5, "max": 5, "oordeel": "Voldoet - kwaliteitsbedrijf aan aantrekkelijke prijs" },
+      { "framework": "Peter Lynch", "score": 4, "max": 5, "oordeel": "Interessant - PEG < 1, helder Stalwart-verhaal" },
+      { "framework": "Phil Fisher", "score": 4, "max": 5, "oordeel": "Sterk - innovatie, marge, management" },
+      { "framework": "Magic Formula", "score": 4, "max": 5, "oordeel": "Aantrekkelijk - hoge earnings yield" },
+      { "framework": "Moat", "score": 4, "max": 5, "oordeel": "Narrow-to-Wide Moat" },
+      { "framework": "Management", "score": 4, "max": 5, "oordeel": "Sterk - bewezen allocatie, insider buys" },
+      { "framework": "Fair Value DCF", "score": 5, "max": 5, "oordeel": "Korting - 40% onder basisscenario fair value" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 5, "max": 5, "oordeel": "N.v.t. maar consistent - geen IPO-vertekening" }
+    ],
+    "totaal": 38,
+    "max": 45,
+    "eindoordeel": "KOOP",
+    "samenvatting": "Edenred SE is een hoogkwalitatief bedrijf met een bewezen businessmodel, sterke marktpositie en voorspelbare kasstromen, dat momenteel tegen een historisch lage waardering handelt. De tijdelijke EBITDA-daling in 2026 door regulatoire wijzigingen in Brazilië en Italië is reeds verdisconteerd in de koers — en waarschijnlijk meer dan dat. De voornaamste onzekerheid is of de regulatoire reset structureel het winstpotentieel beperkt, of dat het een eenmalige aanpassing is waarna groei terugkeert (zoals het management bevestigt). De katalysatorkalender versterkt de thesis op korte termijn: Q1- en H1-resultaten in 2026 zullen duidelijkheid verschaffen. Bij een basisscenario fair value van €28,50 en een huidige koers van €17,12 (40% korting) is de margin of safety meer dan voldoende gegeven de datakwaliteit (15 jaar beurshistorie, transparante rapportage). Wij classificeren dit als KOOP voor een 5-jaars horizon."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "Jaarverslagen Edenred SE 2015–2025",
+      "Edenred Investor Relations (edenred.com)",
+      "MacroTrends (macrotrends.net)",
+      "Investing.com",
+      "Yahoo Finance",
+      "MarketScreener",
+      "TradingView",
+      "GuruFocus",
+      "Seeking Alpha",
+      "Trading Economics",
+      "Webdisclosure.com",
+      "GlobeNewsWire",
+      "Simply Wall St",
+      "Heavy Moat Investments (Substack)",
+      "InsiderScreener",
+      "ValueInvesting.io"
+    ],
+    "pre_ipo_data_beschikbaar": false,
+    "ontbrekende_data": "Niet alle historische detailcijfers (2015–2017) konden worden geverifieerd op broniveau; deze zijn aangeduid met ~. Exacte CFO- en capex-cijfers per jaar vóór 2024 waren niet beschikbaar. CEO pay ratio is niet gerapporteerd.",
+    "non_gaap_gebruikt": true,
+    "non_gaap_toelichting": "Edenred rapporteert 'adjusted' EPS naast IFRS-nettowinst. De belangrijkste uitsluitingen zijn: amortisatie van acquisitie-gerelateerde immateriële activa, herstructureringskosten en eenmalige M&A-kosten. Het verschil tussen IFRS- en adjusted EPS bedraagt doorgaans 15–25%. Voor deze analyse is IFRS als primaire grondslag gebruikt."
+  },
+  "bronnen": [
+    { "url": "https://www.edenred.com/en/investors-shareholders/financial-results", "titel": "Edenred Investor Relations - Financial Results", "type": "beurswebsite" },
+    { "url": "https://www.edenred.com/en/investors-shareholders/edenreds-key-figures-and-indicators", "titel": "Edenred Key Figures and Indicators", "type": "beurswebsite" },
+    { "url": "https://media.edenred.com/2025-annual-results/", "titel": "Edenred 2025 Annual Results", "type": "jaarverslag" },
+    { "url": "https://media.edenred.com/2024-annual-results/", "titel": "Edenred 2024 Annual Results", "type": "jaarverslag" },
+    { "url": "https://www.macrotrends.net/stocks/charts/EDNMY/edenred/revenue", "titel": "Edenred Revenue 2017-2025 - MacroTrends", "type": "databron" },
+    { "url": "https://www.macrotrends.net/stocks/charts/EDNMY/edenred/ebitda", "titel": "Edenred EBITDA 2016-2024 - MacroTrends", "type": "databron" },
+    { "url": "https://www.macrotrends.net/stocks/charts/EDNMY/edenred/free-cash-flow", "titel": "Edenred Free Cash Flow 2016-2025 - MacroTrends", "type": "databron" },
+    { "url": "https://www.investing.com/news/earnings/edenred-delivers-inline-q4-results-and-confirms-2026-outlook-shares-surge-4520673", "titel": "Edenred Q4 results and 2026 outlook - Investing.com", "type": "nieuwsartikel" },
+    { "url": "https://seekingalpha.com/article/4886812-edenred-capitulation-seems-close-and-hardly-justified-here", "titel": "Edenred Capitulation Analysis - Seeking Alpha", "type": "analistenrapport" },
+    { "url": "https://heavymoatinvestments.substack.com/p/i-am-disappointed-in-edenred-guidance", "titel": "Edenred Guidance Cut Amidst Brazil Regulations - Heavy Moat", "type": "analistenrapport" },
+    { "url": "https://heavymoatinvestments.substack.com/p/edenred-how-does-it-compare-to-pluxee", "titel": "Edenred vs Pluxee Comparison - Heavy Moat", "type": "analistenrapport" },
+    { "url": "https://www.marketscreener.com/quote/stock/EDENRED-SE-6365724/consensus/", "titel": "Edenred Analyst Consensus - MarketScreener", "type": "databron" },
+    { "url": "https://www.gurufocus.com/term/beta/CHIX:EDENP/Beta/Edenred-SE", "titel": "Edenred Beta - GuruFocus", "type": "databron" },
+    { "url": "https://valueinvesting.io/EDEN.PA/valuation/wacc", "titel": "Edenred WACC Calculation - ValueInvesting.io", "type": "databron" },
+    { "url": "https://tradingeconomics.com/france/government-bond-yield", "titel": "France 10-Year Bond Yield - Trading Economics", "type": "databron" },
+    { "url": "https://www.insiderscreener.com/en/company/edenred-sa", "titel": "Edenred Insider Trading Activity - InsiderScreener", "type": "databron" },
+    { "url": "https://www.edenred.com/en/group/history", "titel": "Edenred Group History", "type": "beurswebsite" },
+    { "url": "https://www.edenred.com/en/integrated-report-2024-2025/business-model", "titel": "Edenred Business Model - Integrated Report 2024-2025", "type": "jaarverslag" }
+  ]
+}

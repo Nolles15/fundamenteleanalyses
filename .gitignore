@@ -1,5 +1,31 @@
-__pycache__/
-*.pyc
+# OS
 .DS_Store
 Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Python (niet meer in gebruik, maar voor de zekerheid)
+__pycache__/
+*.pyc
+venv/
+
+# Claude Code local config
+.claude/
+
+# External skill repos
+bencium-claude-code-design-skill/
+
+# Logs
 *.log
+
+# Data pipeline artifacts
+data/_logs/
+data/*_draft.md
+data/*_run.log

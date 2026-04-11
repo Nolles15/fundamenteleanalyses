@@ -1,0 +1,37 @@
+{
+  "laatste_update": "2026-04-11",
+  "companies": [
+    {
+      "ticker": "ASML",
+      "naam": "ASML Holding N.V.",
+      "sector": "Technologie",
+      "exchange": "Euronext Amsterdam",
+      "koers": 1270.00,
+      "valuta": "EUR",
+      "fair_value_basis": 1410,
+      "upside_pct": 11,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 32,
+      "scorekaart_max": 45,
+      "peildatum": "2026-04-11",
+      "domein": "asml.com",
+      "yahoo_symbol": "ASML.AS"
+    },
+    {
+      "ticker": "EDEN",
+      "naam": "Edenred SE",
+      "sector": "Technology / Digital Payments",
+      "exchange": "Euronext Paris",
+      "koers": 17.12,
+      "valuta": "EUR",
+      "fair_value_basis": 28.50,
+      "upside_pct": 66,
+      "oordeel": "KOOP",
+      "scorekaart_totaal": 38,
+      "scorekaart_max": 45,
+      "peildatum": "2026-04-11",
+      "domein": "edenred.com",
+      "yahoo_symbol": "EDEN.PA"
+    }
+  ]
+}

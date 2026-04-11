@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── USERS ──────────────────────────────────────────────
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  naam         String?
+  createdAt    DateTime @default(now())
+
+  subscription Subscription?
+  purchases    Purchase[]
+}
+
+// ─── SUBSCRIPTIONS ──────────────────────────────────────
+
+model Subscription {
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  stripeCustomerId     String?   @unique
+  stripeSubscriptionId String?   @unique
+  plan                 Plan      @default(GRATIS)
+  status               SubStatus @default(ACTIVE)
+  currentPeriodEnd     DateTime?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+}
+
+// ─── PURCHASES (losse analyses) ─────────────────────────
+
+model Purchase {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ticker    String
+  createdAt DateTime @default(now())
+
+  @@unique([userId, ticker])
+}
+
+// ─── ENUMS ──────────────────────────────────────────────
+
+enum Plan {
+  GRATIS
+  PREMIUM_MAAND
+  PREMIUM_JAAR
+}
+
+enum SubStatus {
+  ACTIVE
+  PAST_DUE
+  CANCELED
+  INCOMPLETE
+}
