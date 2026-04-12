@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 import type { Analyse } from '@/lib/types'
 import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
@@ -87,27 +86,16 @@ export function AnalyseHeader({ analyse }: AnalyseHeaderProps) {
 }
 
 function CompanyLogo({ ticker, domein }: { ticker: string; domein?: string }) {
-  if (domein) {
-    return (
-      <div className="w-14 h-14 rounded-xl overflow-hidden border border-border bg-bg-muted shrink-0 flex items-center justify-center">
-        <Image
-          src={`https://logo.clearbit.com/${domein}`}
-          alt={ticker}
-          width={56}
-          height={56}
-          className="w-full h-full object-contain"
-          unoptimized
-        />
-      </div>
-    )
-  }
+  return <TickerInitiaal ticker={ticker} size={56} />
+}
 
+function TickerInitiaal({ ticker, size = 56 }: { ticker: string; size?: number }) {
   const letter = ticker.charAt(0).toUpperCase()
   const hue = ticker.charCodeAt(0) % 360
   return (
     <div
-      className="w-14 h-14 rounded-xl shrink-0 flex items-center justify-center text-white font-bold text-lg font-sans"
-      style={{ backgroundColor: `hsl(${hue}, 45%, 40%)` }}
+      className="rounded-xl shrink-0 flex items-center justify-center text-white font-bold text-lg font-sans"
+      style={{ backgroundColor: `hsl(${hue}, 45%, 40%)`, width: size, height: size }}
     >
       {letter}
     </div>
