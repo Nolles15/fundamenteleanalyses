@@ -8,7 +8,8 @@ aandelenanalyse/
 ├── docs/                    Plannen en documentatie
 │   ├── BUILD_PLAN.md        Technisch bouwplan Next.js platform
 │   ├── BUSINESS_PLAN.md     Businessmodel en prijsstrategie
-│   └── SKILL_*.md           Skill-prompts (referentie, niet aanpassen)
+│   ├── SKILL_*.md           Skill-prompts (mag aangepast worden voor JSON-contract sync)
+│   └── ANALYSE_JSON_CONTRACT.md  JSON-structuur contract (brug tussen skill en types.ts)
 ├── platform/                Next.js 16 applicatie (het product)
 │   └── src/
 │       ├── content/data/    Kopie van data/ — SYNC HOUDEN
@@ -35,7 +36,8 @@ aandelenanalyse/
 - GEEN nieuwe mappen aanmaken buiten data/, docs/, platform/
 - GEEN schema-informatie afleiden uit JSON-bestanden — gebruik types.ts
 - GEEN Python scripts, Flask apps, of andere tooling toevoegen
-- docs/SKILL_*.md bestanden NIET wijzigen — dat is Janco's domein
+- docs/SKILL_*.md bestanden MAG je wijzigen als het gaat om JSON-contract sync
+- docs/ANALYSE_JSON_CONTRACT.md en types.ts MOETEN synchroon blijven
 
 ### Tech stack
 - Next.js 16 (App Router, Server Components, Turbopack)

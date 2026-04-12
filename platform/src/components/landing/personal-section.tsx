@@ -33,9 +33,12 @@ export function PersonalSection({ companies }: Props) {
     : companies.filter((c) => purchasedTickers.includes(c.ticker))
 
   const heeftAnalyses = mijnAnalyses.length > 0
+  const MAX_ZICHTBAAR = 3
+  const zichtbaar = mijnAnalyses.slice(0, MAX_ZICHTBAAR)
+  const overflow = mijnAnalyses.length > MAX_ZICHTBAAR
 
   // Live koersen voor de kaarten
-  const symbols = mijnAnalyses
+  const symbols = zichtbaar
     .map((c) => c.yahoo_symbol)
     .filter((s): s is string => !!s)
   const { prices } = useLivePrices(symbols)
@@ -92,8 +95,8 @@ export function PersonalSection({ companies }: Props) {
                 )}
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {mijnAnalyses.map((c) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {zichtbaar.map((c) => (
                   <AnalyseCard
                     key={c.ticker}
                     analyse={c}
@@ -104,13 +107,15 @@ export function PersonalSection({ companies }: Props) {
                 ))}
               </div>
 
-              {!isPremium && (
-                <Link
-                  href="/analyses"
-                  className="sm:hidden inline-flex mt-4 text-sm font-medium text-accent hover:underline font-sans"
-                >
-                  Alle analyses &rarr;
-                </Link>
+              {overflow && (
+                <div className="mt-4 text-center">
+                  <Link
+                    href="/analyses"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline font-sans"
+                  >
+                    Bekijk al je {mijnAnalyses.length} analyses &rarr;
+                  </Link>
+                </div>
               )}
             </div>
           </>

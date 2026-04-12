@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { getIndex } from '@/lib/data'
 import { FeaturedAnalyse } from '@/components/landing/featured-analyse'
 import { AnalysePreviewGrid } from '@/components/landing/analyse-preview-grid'
+import { AnalyseSpotlight } from '@/components/landing/analyse-spotlight'
+import { getAnalyse } from '@/lib/data'
 import { FAQ } from '@/components/landing/faq'
 import { PersonalSection } from '@/components/landing/personal-section'
 import { ShowWhenLoggedOut } from '@/components/landing/auth-visibility'
@@ -28,10 +30,17 @@ export default function HomePage() {
 
   const heroImage = findHeroImage(featured.ticker)
 
-  // Nieuwste 4 analyses (op peildatum, aflopend)
-  const nieuwste = [...companies]
-    .sort((a, b) => b.peildatum.localeCompare(a.peildatum))
-    .slice(0, 4)
+  // Nieuwste analyses (op peildatum, aflopend)
+  const gesorteerd = [...companies].sort((a, b) => b.peildatum.localeCompare(a.peildatum))
+
+  // Spotlight: nieuwste KOOP-analyse, of eerste als geen KOOP
+  const spotlight = gesorteerd.find((c) => c.oordeel === 'KOOP') ?? gesorteerd[0]
+  const spotlightData = getAnalyse(spotlight.ticker)
+  const spotlightKernthese = spotlightData.executive_summary.kernthese
+  const spotlightHero = findHeroImage(spotlight.ticker)
+
+  // Overige analyses (max 2) voor onder de spotlight
+  const overige = gesorteerd.filter((c) => c.ticker !== spotlight.ticker).slice(0, 2)
 
   const websiteLd = {
     '@context': 'https://schema.org',
@@ -155,7 +164,7 @@ export default function HomePage() {
                 Nieuwste Analyses
               </h2>
               <p className="text-text-secondary font-sans text-sm">
-                Real-time fundamentele inzichten uit de Europese markten.
+                Diepgaande fundamentele analyses van Europese aandelen.
               </p>
             </div>
             <Link
@@ -166,24 +175,47 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <AnalysePreviewGrid companies={nieuwste} />
+          {/* Spotlight: uitgelichte analyse */}
+          <AnalyseSpotlight
+            analyse={spotlight}
+            kernthese={spotlightKernthese}
+            heroImage={spotlightHero}
+          />
 
-          {/* Categorielinks */}
-          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2">
-            {[
-              { label: 'Nederlandse markt', href: '/markt/aex' },
-              { label: 'Europese small caps', href: '/markt/europese-small-caps' },
-              { label: 'Tech & groei', href: '/markt/tech-en-groei' },
-              { label: 'Scandinavie', href: '/markt/scandinavie' },
-            ].map((cat) => (
+          {/* Overige analyses */}
+          {overige.length > 0 && (
+            <div className="mt-6">
+              <AnalysePreviewGrid
+                companies={overige}
+                gridClassName="grid grid-cols-1 sm:grid-cols-2 gap-4"
+              />
+            </div>
+          )}
+
+          {/* Conversie-balk */}
+          <div className="mt-8 rounded-xl bg-gradient-to-r from-[#051125] to-[#1b263b] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div>
+              <h3 className="text-lg font-bold text-white font-serif mb-1">
+                Ontdek alle {companies.length}+ analyses
+              </h3>
+              <p className="text-sm text-white/60 font-sans">
+                Gratis oordeel en kernthese. Volledige analyse vanaf &euro;4,95.
+              </p>
+            </div>
+            <div className="flex gap-3 shrink-0">
               <Link
-                key={cat.href}
-                href={cat.href}
-                className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors font-sans"
+                href="/analyses"
+                className="bg-white text-[#051125] px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/90 transition-colors font-sans"
               >
-                {cat.label} &rarr;
+                Alle analyses
               </Link>
-            ))}
+              <Link
+                href="/prijzen"
+                className="border border-white/30 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors font-sans"
+              >
+                Bekijk prijzen
+              </Link>
+            </div>
           </div>
 
           <Link

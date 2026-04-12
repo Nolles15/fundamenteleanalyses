@@ -588,215 +588,88 @@ RA-REVIEW INSTRUCTIE (voor de gebruiker, niet voor Claude):
 JSON EXPORT — AUTOMATISCH NA HET DOCUMENT
 ════════════════════════════════════════
 
+╔══════════════════════════════════════════════════════════════════╗
+║  KRITIEK: De JSON output MOET EXACT de structuur volgen van     ║
+║  docs/ANALYSE_JSON_CONTRACT.md — dat is de ENIGE referentie.    ║
+║  Bij twijfel over veldnamen, keys of structuur: raadpleeg       ║
+║  ALTIJD dat document. NIET uit het hoofd werken.                ║
+╚══════════════════════════════════════════════════════════════════╝
+
 Na het genereren van het Markdown-document, schrijf ALTIJD automatisch
 twee bestanden weg met het Write tool:
 
 STAP A — Sla het Markdown-document op:
-  Pad: ./dashboard/data/[TICKER].md
+  Pad: ./data/[TICKER].md
   Inhoud: de volledige analyse die je zojuist hebt geschreven.
   Dit bestand is de tekst-bron voor het platform en voor RA-review.
   Het platform combineert dit bestand met de JSON voor de analysepagina.
 
 STAP B — Schrijf het JSON-bestand:
-  Pad: ./dashboard/data/[TICKER].json
-  Gebruik EXACT de onderstaande JSON-structuur. Vul alle velden in op
-  basis van de analyse die je zojuist hebt uitgevoerd. Zet null voor
-  velden die je niet kon verifiëren.
+  Pad: ./data/[TICKER].json
+
+  ⚠️  LEES EERST docs/ANALYSE_JSON_CONTRACT.md VOORDAT JE DE JSON SCHRIJFT.
+  Gebruik EXACT de structuur uit dat contract. Hieronder staat een
+  SAMENVATTING van de top-level structuur, maar het contract is leidend
+  voor alle veldnamen, nesting en waarden.
+
+  Vul alle velden in op basis van de analyse die je zojuist hebt uitgevoerd.
+  Zet null voor velden die je niet kon verifiëren.
   De JSON bevat gestructureerde data (getallen, scores, oordelen).
   De narratieve tekst staat in het .md bestand — herhaal die NIET in JSON.
 
-```json
+Top-level structuur (zie contract voor alle velden en nesting):
+
+```
 {
-  "meta": {
-    "ticker": "[TICKER]",
-    "exchange": "[BEURS]",
-    "naam": "[VOLLEDIGE BEDRIJFSNAAM]",
-    "sector": "[SECTOR]",
-    "segment": "[SUBSEGMENT]",
-    "koers": [KOERS ALS GETAL],
-    "valuta": "[VALUTA]",
-    "peildatum": "[YYYY-MM-DD]",
-    "marktkapitalisatie": "[TEKST]"
-  },
-  "executive_summary": {
-    "kernthese": "[3-5 zinnen kernthese]",
-    "oordeel": "[KOOP|HOLD|PASS]",
-    "koers": [KOERS],
-    "valuta": "[VALUTA]",
-    "fair_value_basis": [BASISSCENARIO FAIR VALUE],
-    "upside_pct": [UPSIDE % ALS GETAL ZONDER %],
-    "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": [GETAL], "upside_pct": [GETAL] },
-      { "scenario": "Basis",         "fair_value": [GETAL], "upside_pct": [GETAL] },
-      { "scenario": "Optimistisch",  "fair_value": [GETAL], "upside_pct": [GETAL] }
-    ],
-    "grootste_kans": "[één zin]",
-    "grootste_risico": "[één zin]"
-  },
-  "bedrijfsprofiel": {
-    "beschrijving": "[kort bedrijfsmodel]",
-    "personeel": [GETAL OF null],
-    "landen": [GETAL OF null],
-    "segmenten": [
-      { "naam": "[NAAM]", "omzet_pct": [GETAL], "beschrijving": "[KORT]" }
-    ],
-    "aandeelhouders": [
-      { "naam": "[NAAM]", "pct": [GETAL], "type": "Controlerend|Institutioneel|Publiek" }
-    ]
-  },
-  "financieel": {
-    "valuta_label": "[bijv. EUR mln of USD mln]",
-    "resultatenrekening": [
-      {
-        "jaar": [YYYY],
-        "omzet": [GETAL OF null],
-        "omzet_groei_pct": [GETAL OF null],
-        "ebitda": [GETAL OF null],
-        "ebitda_marge_pct": [GETAL OF null],
-        "nettowinst": [GETAL OF null],
-        "nettomarge_pct": [GETAL OF null],
-        "eps": [GETAL OF null]
-      }
-    ],
-    "kasstromen": [
-      {
-        "jaar": [YYYY],
-        "fcf": [GETAL OF null],
-        "fcf_na_sbc": [GETAL OF null],
-        "fcf_per_aandeel": [GETAL OF null],
-        "sbc": [GETAL OF null]
-      }
-    ],
-    "balans": [
-      {
-        "jaar": [YYYY],
-        "nettoschuld": [GETAL],
-        "eigen_vermogen": [GETAL],
-        "debt_ebitda": [GETAL OF null]
-      }
-    ],
-    "rendementsindicatoren": [
-      {
-        "jaar": [YYYY],
-        "roce_pct": [GETAL OF null],
-        "roe_pct": [GETAL OF null],
-        "roic_pct": [GETAL OF null],
-        "roa_pct": [GETAL OF null],
-        "wacc_pct": [GETAL OF null],
-        "roic_wacc_spread": [GETAL OF null]
-      }
-    ],
-    "accruals": [
-      {
-        "jaar": [YYYY],
-        "accruals_ratio": [GETAL OF null],
-        "non_gaap_verschil_pct": [GETAL OF null]
-      }
-    ],
-    "waardering": {
-      "pe": [GETAL OF null],
-      "pe_forward": [GETAL OF null],
-      "ev_ebitda": [GETAL OF null],
-      "p_fcf": [GETAL OF null],
-      "p_fcf_na_sbc": [GETAL OF null],
-      "fcf_yield_pct": [GETAL OF null],
-      "p_b": [GETAL OF null],
-      "ev_omzet": [GETAL OF null],
-      "dividendrendement_pct": [GETAL OF null],
-      "peg": [GETAL OF null]
-    }
-  },
-  "moat": {
-    "oordeel": "[WIDE MOAT|NARROW MOAT|NO MOAT]",
-    "toelichting": "[2-3 zinnen]",
-    "categorieen": [
-      { "naam": "Immateriële activa",  "oordeel": "STERK|AANWEZIG|BEPERKT|AFWEZIG", "score": [1-5], "toelichting": "[kort]" },
-      { "naam": "Overstapkosten",      "oordeel": "STERK|AANWEZIG|BEPERKT|AFWEZIG", "score": [1-5], "toelichting": "[kort]" },
-      { "naam": "Netwerkeffecten",     "oordeel": "STERK|AANWEZIG|BEPERKT|AFWEZIG", "score": [1-5], "toelichting": "[kort]" },
-      { "naam": "Kostenvoordeel",      "oordeel": "STERK|AANWEZIG|BEPERKT|AFWEZIG", "score": [1-5], "toelichting": "[kort]" },
-      { "naam": "Efficiënte schaal",   "oordeel": "STERK|AANWEZIG|BEPERKT|AFWEZIG", "score": [1-5], "toelichting": "[kort]" }
-    ]
-  },
-  "management": {
-    "oordeel": "[STERK|NEUTRAAL|ZORGWEKKEND]",
-    "personen": [
-      { "functie": "[CEO/CFO/etc]", "naam": "[NAAM]", "achtergrond": "[KORT]" }
-    ],
-    "compensatie": {
-      "sbc_pct_marktkapitalisatie": [GETAL OF null],
-      "verwateringsgraad_pct_jaar": [GETAL OF null],
-      "prikkels_aligned": true,
-      "toelichting": "[kort]"
-    },
-    "insider_transactions": [
-      {
-        "datum": "[YYYY-MM-DD]",
-        "naam": "[NAAM]",
-        "functie": "[FUNCTIE]",
-        "type": "KOOP|VERKOOP",
-        "aandelen": [GETAL],
-        "koers": [GETAL]
-      }
-    ],
-    "capital_allocation": "[samenvatting capital allocation track record]",
-    "toelichting": "[eindoordeel management in 2-3 zinnen]"
-  },
-  "katalysatoren": [
-    {
-      "datum_ca": "[YYYY-MM]",
-      "omschrijving": "[TEKST]",
-      "richting": "POSITIEF|NEGATIEF|NEUTRAAL|BINAIR",
-      "impact": "GROOT|MIDDEL|KLEIN"
-    }
-  ],
-  "fair_value": {
-    "dcf": {
-      "basis_fcf": [GETAL],
-      "basis_fcf_na_sbc": [GETAL OF null],
-      "wacc_pct": [GETAL],
-      "groei_fase1_pct": [GETAL],
-      "terminal_groei_pct": [GETAL]
-    },
-    "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": [GETAL], "wacc_pct": [GETAL], "fair_value": [GETAL], "upside_pct": [GETAL] },
-      { "scenario": "Basis",               "fcf_groei_pct": [GETAL], "wacc_pct": [GETAL], "fair_value": [GETAL], "upside_pct": [GETAL] },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": [GETAL], "wacc_pct": [GETAL], "fair_value": [GETAL], "upside_pct": [GETAL] },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": [GETAL], "wacc_pct": [GETAL], "fair_value": [GETAL], "upside_pct": [GETAL] }
-    ],
-    "gevoeligheid": {
-      "wacc_range": [8.0, 8.5, 9.0, 9.5, 10.0, 10.5],
-      "groei_range": [1.0, 2.0, 3.0, 4.0, 5.0],
-      "matrix": [
-        [RIJ VOOR groei=1%: 6 waarden],
-        [RIJ VOOR groei=2%: 6 waarden],
-        [RIJ VOOR groei=3%: 6 waarden],
-        [RIJ VOOR groei=4%: 6 waarden],
-        [RIJ VOOR groei=5%: 6 waarden]
-      ]
-    }
-  },
-  "scorekaart": {
-    "items": [
-      { "framework": "Graham",                "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Buffett / Munger",       "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Peter Lynch",            "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Phil Fisher",            "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Magic Formula",          "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Moat",                   "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Management",             "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Fair Value DCF",         "score": [1-5], "max": 5, "oordeel": "[tekst]" },
-      { "framework": "Fair Value IPO-gecorr.", "score": [1-5], "max": 5, "oordeel": "[tekst]" }
-    ],
-    "totaal": [SOM VAN SCORES],
-    "max": 45,
-    "eindoordeel": "[KOOP|HOLD|PASS]",
-    "samenvatting": "[max 150 woorden finale beleggingsoordeel inclusief voornaamste onzekerheid en katalysator-effect]"
-  }
+  "meta": { ... },                        // VERPLICHT
+  "executive_summary": { ... },           // VERPLICHT
+  "bedrijfsprofiel": { ... },             // VERPLICHT
+  "financieel": { ... },                  // VERPLICHT
+  "moat": { ... },                        // VERPLICHT
+  "management": { ... },                  // VERPLICHT
+  "sector_concurrentie": { ... },         // optioneel
+  "analyseframeworks": { ... },           // optioneel
+  "risicos": [ ... ],                     // optioneel
+  "these_invalide_bij": "string",         // optioneel
+  "esg": { ... },                         // optioneel
+  "katalysatoren": [ ... ],               // optioneel
+  "fair_value": { ... },                  // VERPLICHT
+  "scorekaart": { ... },                  // VERPLICHT
+  "databronnen": { ... },                 // optioneel
+  "bronnen": [ ... ],                     // optioneel
+  "update_historie": [ ... ]              // optioneel
 }
 ```
 
+VEELGEMAAKTE FOUTEN — vermijd deze ALTIJD:
+
+  ✗ "verdict"                    → ✓ "oordeel"
+  ✗ "naam" (bij risico's)       → ✓ "omschrijving"
+  ✗ "peter_lynch"               → ✓ "lynch"
+  ✗ "phil_fisher"               → ✓ "fisher"
+  ✗ "greenblatt_magic_formula"  → ✓ "greenblatt"
+  ✗ "threat_new_entrants"       → ✓ "dreiging_toetreders"
+  ✗ Porter als platte string    → ✓ Porter als { "score": "...", "toelichting": "..." }
+  ✗ "kans": "MIDDEN"            → ✓ "kans": "middel" (lowercase)
+  ✗ "impact": "GROOT"           → ✓ "impact": "hoog" (lowercase)
+  ✗ "totaal_score"              → ✓ "totaal"
+  ✗ "categorien"                → ✓ "categorieen" (dubbel-e)
+  ✗ "segment" in meta           → ✓ "industrie" in meta
+  ✗ "landen" in bedrijfsprofiel → ✓ "landen_actief"
+
+Scenario-namen in fair_value.scenarios en executive_summary.fair_value_scenarios:
+  Gebruik "Bear", "Base", "Bull" (NIET "Pessimistisch", "Basis", "Optimistisch").
+  Elk scenario heeft ook: fcf_groei_pct, wacc_pct, kans_pct.
+
+Executive summary extra velden (niet vergeten):
+  fair_value_kansgewogen, epv_per_aandeel, reverse_dcf_impliciete_groei_pct
+
+Meta extra velden (niet vergeten):
+  industrie, land, marktkapitalisatie_mln, free_float_pct,
+  index_lidmaatschap, domein, yahoo_symbol
+
 Na het schrijven van het JSON-bestand, update ook het index.json bestand in
-./dashboard/data/index.json. Voeg het bedrijf toe aan de "companies" array
+./data/index.json. Voeg het bedrijf toe aan de "companies" array
 als het er nog niet in staat, of vervang de bestaande entry als de ticker
 al bestaat. Gebruik voor index.json de volgende compacte structuur:
 

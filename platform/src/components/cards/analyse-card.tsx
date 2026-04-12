@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { AnalyseIndex } from '@/lib/types'
-import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
+import { formatKoers, formatUpside } from '@/lib/utils'
 import { OordeelBadge } from './oordeel-badge'
 import { ScoreBar } from './score-bar'
 
@@ -24,7 +24,6 @@ export function AnalyseCard({ analyse, livePrice }: AnalyseCardProps) {
     oordeel,
     scorekaart_totaal,
     scorekaart_max,
-    peildatum,
     domein,
   } = analyse
 
@@ -32,7 +31,6 @@ export function AnalyseCard({ analyse, livePrice }: AnalyseCardProps) {
   const koers = livePrice ?? analyse.koers
   const upside = ((fair_value_basis / koers) - 1) * 100
   const upsidePositief = upside >= 0
-  const isLive = livePrice !== undefined
 
   return (
     <Link
@@ -83,11 +81,6 @@ export function AnalyseCard({ analyse, livePrice }: AnalyseCardProps) {
 
       {/* Scorekaart balk */}
       <ScoreBar score={scorekaart_totaal} max={scorekaart_max} oordeel={oordeel} />
-
-      {/* Peildatum */}
-      <p className="text-xs text-text-muted font-sans mt-3">
-        {isLive ? 'Live koers' : `Peildatum: ${formatDatum(peildatum)}`}
-      </p>
     </Link>
   )
 }
