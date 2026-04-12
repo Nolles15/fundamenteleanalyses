@@ -50,7 +50,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         if (dbUser) {
           token.id = dbUser.id
           token.plan = dbUser.subscription?.plan ?? 'GRATIS'
-          token.purchasedTickers = dbUser.purchases.map((p) => p.ticker)
+          token.purchasedTickers = dbUser.purchases.map((p: { ticker: string }) => p.ticker)
         }
       }
       return token
