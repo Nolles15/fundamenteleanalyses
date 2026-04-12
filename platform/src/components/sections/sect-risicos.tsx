@@ -74,21 +74,30 @@ function RisicosContent({ analyse }: Props) {
 
 /* ─── Risico kaart ─────────────────────────────────────── */
 
+function isHoog(val: string) {
+  const v = val.toLowerCase()
+  return v === 'hoog' || v === 'groot' || v === 'high'
+}
+function isMiddel(val: string) {
+  const v = val.toLowerCase()
+  return v === 'middel' || v === 'midden' || v === 'medium'
+}
+
 function RisicoKaart({ risico }: { risico: Risico }) {
-  const impactLower = risico.impact.toLowerCase()
-  const kansLower = risico.kans.toLowerCase()
+  const impact = risico.impact ?? ''
+  const kans = risico.kans ?? ''
 
   const impactConfig =
-    impactLower === 'hoog'
+    isHoog(impact)
       ? { bg: 'bg-pass', text: 'text-white', border: 'border-pass' }
-      : impactLower === 'middel'
+      : isMiddel(impact)
         ? { bg: 'bg-hold', text: 'text-white', border: 'border-hold' }
         : { bg: 'bg-bg-muted', text: 'text-text-secondary', border: 'border-border' }
 
   const kansBadge =
-    kansLower === 'hoog'
+    isHoog(kans)
       ? 'bg-pass-bg text-pass border-pass-border'
-      : kansLower === 'middel'
+      : isMiddel(kans)
         ? 'bg-hold-bg text-hold border-hold-border'
         : 'bg-bg-muted text-text-muted border-border'
 
@@ -167,9 +176,9 @@ function ESGBlok({ esg }: { esg: ESG }) {
 
 function ESGRij({ factor, isLast }: { factor: ESGFactor; isLast: boolean }) {
   const niveauKleur =
-    factor.risico_niveau.toLowerCase() === 'hoog'
+    isHoog(factor.risico_niveau ?? '')
       ? 'text-pass font-semibold'
-      : factor.risico_niveau.toLowerCase() === 'middel'
+      : isMiddel(factor.risico_niveau ?? '')
         ? 'text-hold font-semibold'
         : 'text-text-secondary'
 

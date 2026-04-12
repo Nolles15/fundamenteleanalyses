@@ -153,10 +153,11 @@ function SectorContent({ analyse }: Props) {
 }
 
 function PorterRij({ label, kracht }: { label: string; kracht: PorterKracht }) {
+  const scoreLower = (kracht?.score ?? '').toLowerCase()
   const kleur =
-    kracht.score.toLowerCase().includes('laag')
+    scoreLower.includes('laag') || scoreLower.includes('low')
       ? 'bg-buy'
-      : kracht.score.toLowerCase().includes('hoog')
+      : scoreLower.includes('hoog') || scoreLower.includes('high')
         ? 'bg-pass'
         : 'bg-hold'
 

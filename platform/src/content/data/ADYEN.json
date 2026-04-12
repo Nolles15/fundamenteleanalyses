@@ -6,7 +6,7 @@
     "sector": "groei",
     "industrie": "Betalingsverwerking / Payment Processing",
     "land": "Nederland",
-    "koers": 860.0,
+    "koers": 860,
     "valuta": "EUR",
     "peildatum": "2026-04-12",
     "marktkapitalisatie": "EUR 27090 mln",
@@ -19,7 +19,7 @@
   "executive_summary": {
     "kernthese": "Adyen is een Nederlands fintechbedrijf dat een volledig geïntegreerd betalingsplatform biedt aan ondernemingen wereldwijd. Anders dan traditionele betalingsverwerkers — die vaak bestaan uit samengevoegde overnames met verschillende systemen — heeft Adyen zijn gehele platform zelf gebouwd als één enkele technologiestack. Dit betekent dat een klant via één integratie zowel online betalingen, fysieke pinbetalingen in de winkel als mobiele betalingen kan verwerken in meer dan 200 landen en via meer dan 250 betaalmethoden. De klanten zijn voornamelijk grote ondernemingen: McDonald's, Spotify, Microsoft, eBay, Uber en L'Oréal behoren tot het klantenbestand. Adyen verdient geld via transactievergoedingen — een klein percentage van elke betaling dat de merchant betaalt bovenop de interchange-kosten die naar kaartuitgevers gaan. Deze vergoeding (de \"take rate\") bedraagt gemiddeld 17 basispunten (0,17%) van het verwerkte volume. Daarnaast genereert Adyen omzet uit financiële producten zoals Adyen for Platforms (embedded finance), Adyen Issuing (virtuele kaartuitgifte) en Adyen Capital (bedrijfsleningen op basis van transactiedata). Het bedrijf is bewust niet op consumentenbetalingen gericht maar positioneert zich als de onzichtbare betalingsinfrastructuur achter grote merken.",
     "oordeel": "KOOP",
-    "koers": 860.0,
+    "koers": 860,
     "valuta": "EUR",
     "fair_value_basis": 1229,
     "fair_value_kansgewogen": 1280,
@@ -107,7 +107,7 @@
     "aandeelhouders": [
       {
         "naam": "Pieter Van Der Does",
-        "pct": 3.0,
+        "pct": 3,
         "type": "Institutioneel"
       },
       {
@@ -117,17 +117,17 @@
       },
       {
         "naam": "Capital Research Management",
-        "pct": 5.0,
+        "pct": 5,
         "type": "Institutioneel"
       },
       {
         "naam": "Baillie Gifford",
-        "pct": 5.0,
+        "pct": 5,
         "type": "Institutioneel"
       },
       {
         "naam": "Public Institutional",
-        "pct": 85.0,
+        "pct": 85,
         "type": "Institutioneel"
       }
     ]
@@ -140,9 +140,9 @@
         "omzet": 349,
         "omzet_groei_pct": null,
         "ebitda": 196,
-        "ebitda_marge_pct": 56.0,
+        "ebitda_marge_pct": 56,
         "nettowinst": 157,
-        "nettomarge_pct": 45.0,
+        "nettomarge_pct": 45,
         "eps": 5.29,
         "aandelen_uitstaand_mln": 29.7
       },
@@ -151,7 +151,7 @@
         "omzet": 497,
         "omzet_groei_pct": 42.4,
         "ebitda": 289,
-        "ebitda_marge_pct": 58.0,
+        "ebitda_marge_pct": 58,
         "nettowinst": 217,
         "nettomarge_pct": 43.7,
         "eps": 7.13,
@@ -197,9 +197,9 @@
         "ebitda": 738,
         "ebitda_marge_pct": 45.5,
         "nettowinst": 698,
-        "nettomarge_pct": 43.0,
+        "nettomarge_pct": 43,
         "eps": 22.53,
-        "aandelen_uitstaand_mln": 31.0
+        "aandelen_uitstaand_mln": 31
       },
       {
         "jaar": 2024,
@@ -219,7 +219,7 @@
         "ebitda": 1246,
         "ebitda_marge_pct": 52.7,
         "nettowinst": 1063,
-        "nettomarge_pct": 45.0,
+        "nettomarge_pct": 45,
         "eps": 33.75,
         "aandelen_uitstaand_mln": 31.5
       }
@@ -448,7 +448,7 @@
       {
         "jaar": 2024,
         "roce_pct": null,
-        "roe_pct": 21.0,
+        "roe_pct": 21,
         "roic_pct": 55,
         "roa_pct": 6.9,
         "wacc_pct": null
@@ -470,7 +470,7 @@
     },
     "waardering": {
       "pe": null,
-      "pe_forward": 22.0,
+      "pe_forward": 22,
       "pe_historisch_gem_10j": null,
       "ev_ebitda": 16.4,
       "ev_ebitda_historisch_gem_10j": null,
@@ -479,7 +479,7 @@
       "fcf_yield_pct": 3.9,
       "p_b": null,
       "ev_omzet": null,
-      "dividendrendement_pct": 0.0,
+      "dividendrendement_pct": 0,
       "peg": 1.3
     },
     "sector_kpis": [
@@ -510,7 +510,7 @@
       {
         "year": 2025,
         "processed_volume_eur_b": 1394,
-        "take_rate_bps": 17.0,
+        "take_rate_bps": 17,
         "net_rev_retention_pct": 118
       }
     ]
@@ -539,12 +539,27 @@
       "toelichting": "De wereldwijde betalingsverwerking is een van de snelst groeiende sectoren in de financiële dienstverlening, gedreven door de structurele verschuiving van cash naar digitale betalingen. De totale markt voor merchant payment processing wordt geschat op $2+ biljoen aan jaarlijkse transactievergoedingen, groeiend met 8-10% per jaar. De sector wordt gekenmerkt door twee dynamieken: aan de ene kant consolidatie onder legacy-spelers (Worldpay-FIS, Fiserv-First Data, Worldline-Ingenico) die via overnames schaal proberen te bereiken, aan de andere kant disruptie door technologie-native spelers als Adyen, Stripe en Checkout.com die met zelfgebouwde platforms marktaandeel winnen. De langetermijnwinnaars zijn de partijen met de beste technologie, de laagste kosten per transactie en de sterkste data-capabilities."
     },
     "porter": {
-      "threat_new_entrants": "MIDDEL — Toetredingsdrempels zijn significant maar niet onoverkomelijk. Een betaalinstelling-licentie is vereist, plus directe connecties met Visa, Mastercard en lokale netwerken. Stripe bewees dat een nieuwkomer in 10-15 jaar marktleider kan worden met superieure technologie.",
-      "power_suppliers": "LAAG — De belangrijkste \"leveranciers\" zijn kaartnetwerken (Visa, Mastercard) die gestandaardiseerde interchange-tarieven hanteren. Adyen heeft direct acquiring-licenties en is niet afhankelijk van tussenpersonen.",
-      "power_customers": "MIDDEL — Grote enterprise-klanten hebben onderhandelingsmacht op prijs, maar hoge overstapkosten beperken hun bereidheid om daadwerkelijk over te stappen. De take rate is een fractie van de totale betalingskosten (interchange domineert).",
-      "threat_substitutes": "MIDDEL — Open Banking en account-to-account (A2A) betalingen zijn opkomende substituten voor kaartbetalingen. Echter, kaartbetalingen zijn diep verankerd in het gedrag van consumenten en merchants, en de overgang is traag.",
-      "competitive_intensity": "HOOG — Adyen concurreert met Stripe, PayPal/Braintree, Checkout.com, Worldline en de Amerikaanse legacy-processors (Fiserv, FIS). Prijsconcurrentie is reëel, maar de concurrentie speelt zich primair af op productkwaliteit, coverage en data-capabilities.",
-      "conclusion": "De sector is structureel aantrekkelijk voor technologie-native spelers die op kwaliteit concurreren. Legacy-processors met gefragmenteerde systemen verliezen geleidelijk marktaandeel aan platforms als Adyen en Stripe. De langetermijnwinnaars profiteren van schaalvoordelen en netwerkeffecten."
+      "dreiging_toetreders": {
+        "score": "MIDDEL",
+        "toelichting": "Toetredingsdrempels zijn significant maar niet onoverkomelijk. Een betaalinstelling-licentie is vereist, plus directe connecties met Visa, Mastercard en lokale netwerken. Stripe bewees dat een nieuwkomer in 10-15 jaar marktleider kan worden met superieure technologie."
+      },
+      "macht_leveranciers": {
+        "score": "LAAG",
+        "toelichting": "De belangrijkste \"leveranciers\" zijn kaartnetwerken (Visa, Mastercard) die gestandaardiseerde interchange-tarieven hanteren. Adyen heeft direct acquiring-licenties en is niet afhankelijk van tussenpersonen."
+      },
+      "macht_klanten": {
+        "score": "MIDDEL",
+        "toelichting": "Grote enterprise-klanten hebben onderhandelingsmacht op prijs, maar hoge overstapkosten beperken hun bereidheid om daadwerkelijk over te stappen. De take rate is een fractie van de totale betalingskosten (interchange domineert)."
+      },
+      "dreiging_substituten": {
+        "score": "MIDDEL",
+        "toelichting": "Open Banking en account-to-account (A2A) betalingen zijn opkomende substituten voor kaartbetalingen. Echter, kaartbetalingen zijn diep verankerd in het gedrag van consumenten en merchants, en de overgang is traag."
+      },
+      "concurrentie_intensiteit": {
+        "score": "HOOG",
+        "toelichting": "Adyen concurreert met Stripe, PayPal/Braintree, Checkout.com, Worldline en de Amerikaanse legacy-processors (Fiserv, FIS). Prijsconcurrentie is reëel, maar de concurrentie speelt zich primair af op productkwaliteit, coverage en data-capabilities."
+      },
+      "conclusie": "De sector is structureel aantrekkelijk voor technologie-native spelers die op kwaliteit concurreren. Legacy-processors met gefragmenteerde systemen verliezen geleidelijk marktaandeel aan platforms als Adyen en Stripe. De langetermijnwinnaars profiteren van schaalvoordelen en netwerkeffecten."
     },
     "concurrenten": [
       {
@@ -631,7 +646,7 @@
       "beta_adjusted": 1.83,
       "beta_bron": "Yahoo Finance, 5-jaars maandelijks",
       "beta_type": "regressie",
-      "country_risk_premium_pct": 0.0,
+      "country_risk_premium_pct": 0,
       "size_premium_pct": null,
       "cost_of_equity_pct": 10.79,
       "schuldkosten_na_belasting_pct": 1.5,
@@ -761,47 +776,47 @@
     },
     "greenblatt_magic_formula": {
       "verdict": "GEMIDDELD",
-      "earnings_yield_pct": 6.0,
+      "earnings_yield_pct": 6,
       "return_on_capital_pct": 80,
       "toelichting": "Adyen scoort asymmetrisch op Greenblatt's Magic Formula. De Return on Capital is uitstekend: met een EBIT van circa €1,2 miljard op een operationeel geïnvesteerd kapitaal van slechts €1,5 miljard (Adyen is extreem asset-light) komt de ROC uit op circa 80%. De Earnings Yield is met 6,0% acceptabel maar niet spectaculair — een reflectie van de nog altijd bovengemiddelde waardering. In een Magic Formula-ranking zou Adyen hoog scoren op de winstgevendheidsas maar gemiddeld op de waarderingsdas."
     }
   },
   "risicos": [
     {
-      "naam": "Concurrentie van Stripe",
       "kans": "MIDDEN",
       "impact": "GROOT",
-      "toelichting": "Stripe verwerkt een vergelijkbaar volume ($1,4 biljoen) en groeit sneller, met name in de VS en het SMB-segment. Als Stripe ook het enterprise-segment penetreert met een vergelijkbaar geïntegreerd platform, kan Adyen's pricing power afnemen. DCF-aanname: omzetgroei en marge."
+      "toelichting": "Stripe verwerkt een vergelijkbaar volume ($1,4 biljoen) en groeit sneller, met name in de VS en het SMB-segment. Als Stripe ook het enterprise-segment penetreert met een vergelijkbaar geïntegreerd platform, kan Adyen's pricing power afnemen. DCF-aanname: omzetgroei en marge.",
+      "omschrijving": "Concurrentie van Stripe"
     },
     {
-      "naam": "Regulering: Open Banking en PSD3",
       "kans": "MIDDEN",
       "impact": "MIDDEL",
-      "toelichting": "De EU's regulering rond Open Banking en instant payments stimuleert account-to-account betalingen die kaartnetwerken omzeilen. Als A2A betalingen significant marktaandeel winnen, daalt Adyen's take rate structureel. DCF-aanname: take rate en omzetgroei."
+      "toelichting": "De EU's regulering rond Open Banking en instant payments stimuleert account-to-account betalingen die kaartnetwerken omzeilen. Als A2A betalingen significant marktaandeel winnen, daalt Adyen's take rate structureel. DCF-aanname: take rate en omzetgroei.",
+      "omschrijving": "Regulering: Open Banking en PSD3"
     },
     {
-      "naam": "Macro-economische vertraging",
       "kans": "MIDDEN",
       "impact": "MIDDEL",
-      "toelichting": "Adyen's omzet is volume-gedreven en correleert met consumentenbestedingen. Een recessie in Europa of de VS zou het verwerkte volume en daarmee de netto-omzet onder druk zetten. De cycliciteit is echter beperkt: zelfs in 2020 (Covid) groeide Adyen's netto-omzet 38%. DCF-aanname: omzetgroei fase 1."
+      "toelichting": "Adyen's omzet is volume-gedreven en correleert met consumentenbestedingen. Een recessie in Europa of de VS zou het verwerkte volume en daarmee de netto-omzet onder druk zetten. De cycliciteit is echter beperkt: zelfs in 2020 (Covid) groeide Adyen's netto-omzet 38%. DCF-aanname: omzetgroei fase 1.",
+      "omschrijving": "Macro-economische vertraging"
     },
     {
-      "naam": "Valutarisico",
       "kans": "HOOG",
       "impact": "MIDDEL",
-      "toelichting": "Circa 30% van Adyen's omzet wordt gegenereerd in USD, terwijl kosten primair in EUR zijn. Een sterke euro drukt de gerapporteerde omzetgroei. In 2025 was de reported groei 18% versus 21% op constant-valutabasis. DCF-aanname: omzetgroei."
+      "toelichting": "Circa 30% van Adyen's omzet wordt gegenereerd in USD, terwijl kosten primair in EUR zijn. Een sterke euro drukt de gerapporteerde omzetgroei. In 2025 was de reported groei 18% versus 21% op constant-valutabasis. DCF-aanname: omzetgroei.",
+      "omschrijving": "Valutarisico"
     },
     {
-      "naam": "Concentratierisico grote klanten",
       "kans": "LAAG",
       "impact": "MIDDEL",
-      "toelichting": "Hoewel geen enkele klant boven 5% zit, kan het verlies van een top-10 klant (bijv. eBay, Spotify) een merkbaar effect hebben op de omzet en het sentiment. De hoge overstapkosten maken dit scenario onwaarschijnlijk maar niet onmogelijk. DCF-aanname: omzetgroei."
+      "toelichting": "Hoewel geen enkele klant boven 5% zit, kan het verlies van een top-10 klant (bijv. eBay, Spotify) een merkbaar effect hebben op de omzet en het sentiment. De hoge overstapkosten maken dit scenario onwaarschijnlijk maar niet onmogelijk. DCF-aanname: omzetgroei.",
+      "omschrijving": "Concentratierisico grote klanten"
     },
     {
-      "naam": "Pre-IPO financial engineering",
       "kans": "LAAG",
       "impact": "KLEIN",
-      "toelichting": "Niet geconstateerd. Adyen was al winstgevend voor de IPO en had geen schulden. De IPO-opbrengsten gingen naar vroege investeerders (General Atlantic, Index Ventures), niet naar schuldaflossing. Er zijn geen tekenen van pre-IPO financial engineering."
+      "toelichting": "Niet geconstateerd. Adyen was al winstgevend voor de IPO en had geen schulden. De IPO-opbrengsten gingen naar vroege investeerders (General Atlantic, Index Ventures), niet naar schuldaflossing. Er zijn geen tekenen van pre-IPO financial engineering.",
+      "omschrijving": "Pre-IPO financial engineering"
     }
   ],
   "these_invalide_bij": "De these wordt invalide bij (1) structureel verlies van marktaandeel aan Stripe in het enterprise-segment, zichtbaar als netto-omzetretentie onder 110%, (2) EBITDA-marge die structureel daalt onder 45% door prijsconcurrentie, of (3) regulatoire verschuiving waardoor kaartbetalingen meer dan 30% marktaandeel verliezen aan A2A-alternatieven.",
