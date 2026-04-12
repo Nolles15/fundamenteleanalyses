@@ -50,9 +50,10 @@ function FrameworkHeader({
   naam: string
   oordeel: string
 }) {
-  const oordeelKleur = oordeel.toLowerCase().includes('positief') || oordeel.toLowerCase().includes('koop')
+  const o = (oordeel ?? '').toLowerCase()
+  const oordeelKleur = o.includes('positief') || o.includes('koop') || o.includes('sterk')
     ? 'text-buy'
-    : oordeel.toLowerCase().includes('negatief') || oordeel.toLowerCase().includes('pass')
+    : o.includes('negatief') || o.includes('pass') || o.includes('niet')
       ? 'text-pass'
       : 'text-hold'
 

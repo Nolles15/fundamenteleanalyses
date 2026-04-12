@@ -754,31 +754,31 @@
   },
   "analyseframeworks": {
     "graham": {
-      "verdict": "VOLDOET NIET",
       "graham_number": 58,
       "margin_of_safety_pct": -93,
-      "toelichting": "Adyen voldoet op geen enkel punt aan Grahams criteria. De P/E van 25,5x is boven Grahams maximum van 15x, de P/B van 9,6x overschrijdt de grens van 1,5x dramatisch. Het Graham Number bedraagt slechts €58 — 93% onder de huidige koers. Dit is kenmerkend voor asset-light groeibedrijven met hoge ROIC: de boekwaarde onderschat de economische waarde structureel. Graham zou Adyen niet kopen, maar zijn framework is niet ontworpen voor platformbedrijven met exponentiele groeikenmerken."
+      "toelichting": "Adyen voldoet op geen enkel punt aan Grahams criteria. De P/E van 25,5x is boven Grahams maximum van 15x, de P/B van 9,6x overschrijdt de grens van 1,5x dramatisch. Het Graham Number bedraagt slechts €58 — 93% onder de huidige koers. Dit is kenmerkend voor asset-light groeibedrijven met hoge ROIC: de boekwaarde onderschat de economische waarde structureel. Graham zou Adyen niet kopen, maar zijn framework is niet ontworpen voor platformbedrijven met exponentiele groeikenmerken.",
+      "oordeel": "VOLDOET NIET"
     },
     "buffett_munger": {
-      "verdict": "GEDEELTELIJK",
       "roic_boven_wacc_structureel": true,
-      "toelichting": "Adyen is in veel opzichten het archetype van een Buffett-bedrijf: een begrijpelijk bedrijf (het verwerkt betalingen), met voorspelbare kasstromen (contractuele relaties met enterprise-klanten), een brede moat (overstapkosten, schaalvoordeel) en een uitstekend management (founder-CEO met skin in the game). De ROIC van 55% is structureel vijf keer de WACC van 10,7%. Het verschil met een perfecte Buffett-score is de prijs: bij een P/FCF van 25,8x is dit geen \"fair price\" in de meest conservatieve Buffett-zin, hoewel de koers nu significant lager ligt dan de historische gemiddelden."
+      "toelichting": "Adyen is in veel opzichten het archetype van een Buffett-bedrijf: een begrijpelijk bedrijf (het verwerkt betalingen), met voorspelbare kasstromen (contractuele relaties met enterprise-klanten), een brede moat (overstapkosten, schaalvoordeel) en een uitstekend management (founder-CEO met skin in the game). De ROIC van 55% is structureel vijf keer de WACC van 10,7%. Het verschil met een perfecte Buffett-score is de prijs: bij een P/FCF van 25,8x is dit geen \"fair price\" in de meest conservatieve Buffett-zin, hoewel de koers nu significant lager ligt dan de historische gemiddelden.",
+      "oordeel": "GEDEELTELIJK"
     },
-    "peter_lynch": {
+    "lynch": {
       "categorie": "Stalwart",
-      "verdict": "INTERESSANT",
       "peg": 1.3,
-      "toelichting": "Adyen classificeert als een Stalwart in Lynch-terminologie: een groot, gevestigd bedrijf met stabiele groei van 18-22% per jaar. De PEG-ratio van 1,3 ligt ruim onder de grens van 2,0 die Lynch als maximum hanteert, en net boven de \"koopwaardig\" grens van 1,0. Het verhaal is helder en overtuigend: Adyen is de onzichtbare betalingsinfrastructuur achter wereldmerken, en verdient een fractie van een procent op elke transactie. De complexiteit zit in de technologie onder de motorkap, niet in het verdienmodel — precies het soort bedrijf dat Lynch graag zag."
+      "toelichting": "Adyen classificeert als een Stalwart in Lynch-terminologie: een groot, gevestigd bedrijf met stabiele groei van 18-22% per jaar. De PEG-ratio van 1,3 ligt ruim onder de grens van 2,0 die Lynch als maximum hanteert, en net boven de \"koopwaardig\" grens van 1,0. Het verhaal is helder en overtuigend: Adyen is de onzichtbare betalingsinfrastructuur achter wereldmerken, en verdient een fractie van een procent op elke transactie. De complexiteit zit in de technologie onder de motorkap, niet in het verdienmodel — precies het soort bedrijf dat Lynch graag zag.",
+      "oordeel": "INTERESSANT"
     },
-    "phil_fisher": {
-      "verdict": "STERK",
-      "toelichting": "Adyen scoort uitstekend op Fishers kwalitatieve criteria. Het bedrijf investeert 100% van de ontwikkelingsinspanning intern — alle code, producten en infrastructuur worden zelf gebouwd, wat resulteert in een single-platform voordeel dat concurrenten niet kunnen repliceren zonder vanaf nul te beginnen. De innovatiecultuur is sterk: Adyen lanceerde Adyen for Platforms, Adyen Issuing en Adyen Capital als organische productextensies die de waardepropositie per klant significant verhogen. De margebescherming komt van de overstapkosten en het schaalvoordeel. Management-integriteit is STERK met een founder-CEO."
+    "fisher": {
+      "toelichting": "Adyen scoort uitstekend op Fishers kwalitatieve criteria. Het bedrijf investeert 100% van de ontwikkelingsinspanning intern — alle code, producten en infrastructuur worden zelf gebouwd, wat resulteert in een single-platform voordeel dat concurrenten niet kunnen repliceren zonder vanaf nul te beginnen. De innovatiecultuur is sterk: Adyen lanceerde Adyen for Platforms, Adyen Issuing en Adyen Capital als organische productextensies die de waardepropositie per klant significant verhogen. De margebescherming komt van de overstapkosten en het schaalvoordeel. Management-integriteit is STERK met een founder-CEO.",
+      "oordeel": "STERK"
     },
-    "greenblatt_magic_formula": {
-      "verdict": "GEMIDDELD",
+    "greenblatt": {
       "earnings_yield_pct": 6,
       "return_on_capital_pct": 80,
-      "toelichting": "Adyen scoort asymmetrisch op Greenblatt's Magic Formula. De Return on Capital is uitstekend: met een EBIT van circa €1,2 miljard op een operationeel geïnvesteerd kapitaal van slechts €1,5 miljard (Adyen is extreem asset-light) komt de ROC uit op circa 80%. De Earnings Yield is met 6,0% acceptabel maar niet spectaculair — een reflectie van de nog altijd bovengemiddelde waardering. In een Magic Formula-ranking zou Adyen hoog scoren op de winstgevendheidsas maar gemiddeld op de waarderingsdas."
+      "toelichting": "Adyen scoort asymmetrisch op Greenblatt's Magic Formula. De Return on Capital is uitstekend: met een EBIT van circa €1,2 miljard op een operationeel geïnvesteerd kapitaal van slechts €1,5 miljard (Adyen is extreem asset-light) komt de ROC uit op circa 80%. De Earnings Yield is met 6,0% acceptabel maar niet spectaculair — een reflectie van de nog altijd bovengemiddelde waardering. In een Magic Formula-ranking zou Adyen hoog scoren op de winstgevendheidsas maar gemiddeld op de waarderingsdas.",
+      "oordeel": "GEMIDDELD"
     }
   },
   "risicos": [
