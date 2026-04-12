@@ -43,15 +43,16 @@ function SectorContent({ analyse }: Props) {
           </div>
           <div>
             <p className="text-xs text-text-muted font-sans uppercase tracking-wide">
-              Sectortype
+              Sector
             </p>
             <p className="text-xl font-bold text-text-primary font-sans">
-              {sc.sectorprofiel.type}
+              {analyse.meta.sector}
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
+          <MiniStat label="Type" waarde={sc.sectorprofiel.type} />
           <MiniStat label="Kapitaalintensief" waarde={sc.sectorprofiel.kapitaalintensief ? 'Ja' : 'Nee'} />
           <MiniStat label="Consolidatiegraad" waarde={sc.sectorprofiel.consolidatiegraad} />
           <MiniStat label="Sentiment" waarde={sc.sectorprofiel.sentiment} />
@@ -247,8 +248,13 @@ function TamSamSomBlok({ data }: { data: TamSamSom }) {
             <MiniStat label="Groei plausibel" waarde={data.groei_plausibel ? 'Ja' : 'Nee'} />
           )}
         </div>
+        {data.toelichting && (
+          <p className="text-xs text-text-secondary font-sans leading-relaxed mt-3 pt-3 border-t border-border">
+            {data.toelichting}
+          </p>
+        )}
         {data.bron && (
-          <p className="text-xs text-text-muted font-sans mt-3 pt-3 border-t border-border">
+          <p className="text-xs text-text-muted font-sans mt-2">
             Bron: {data.bron}
           </p>
         )}

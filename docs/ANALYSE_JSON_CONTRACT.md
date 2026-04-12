@@ -257,11 +257,24 @@ Laatste sync: 2026-04-12
     }
   ],
   "positie": "#2 mondiaal in enterprise-betalingen",
-  "positie_toelichting": "Details."
+  "positie_toelichting": "Details.",
+  "tam_sam_som": {
+    "tam_mln": 2500000,
+    "tam_groei_pct": 8,
+    "sam_mln": 150000,
+    "sam_groei_pct": 12,
+    "huidige_penetratie_pct": 1.6,
+    "impliciete_penetratie_na_horizon_pct": 3,
+    "groei_plausibel": true,
+    "bron": "McKinsey Global Payments Report 2025",
+    "toelichting": "Toelichting op de marktomvang en groeipotentie."
+  }
 }
 ```
 
 **KRITIEK**: Porter keys zijn Nederlands. Elke kracht is een object `{ "score": "...", "toelichting": "..." }`, NIET een platte string.
+
+**KRITIEK TAM/SAM/SOM**: Velden heten `tam_mln` en `sam_mln` (NIET `tam_mln_eur` of `sam_mln_eur`). Veld heet `impliciete_penetratie_na_horizon_pct` (NIET `impliciete_penetratie_horizon_pct`).
 
 ## analyseframeworks (optioneel)
 
@@ -314,6 +327,41 @@ Laatste sync: 2026-04-12
 ```
 
 **KRITIEK**: Veld heet `omschrijving` (NIET `naam`). Waarden voor kans/impact: `hoog`, `middel`, `laag` (lowercase).
+
+## esg (optioneel)
+
+```json
+{
+  "materiele_factoren": [
+    {
+      "factor": "Data Security & Privacy",
+      "sasb_categorie": "TC-SI-230a",
+      "risico_niveau": "Middel",
+      "financiele_impact": "Potentieel verlies van klantvertrouwen en regulatory fines.",
+      "dcf_impact": "Omzetgroei"
+    }
+  ],
+  "eindoordeel": "Samenvattend ESG-oordeel in één alinea.",
+  "toelichting": "Optionele extra toelichting."
+}
+```
+
+**KRITIEK**: `materiele_factoren` is een **array** van objecten (NIET een object met keys). Veld heet `eindoordeel` (NIET `esg_eindoordeel`). Elke factor heeft `risico_niveau` (NIET `risico`) en `financiele_impact` (NIET `toelichting`).
+
+## katalysatoren (optioneel)
+
+```json
+[
+  {
+    "datum_ca": "2026-06",
+    "omschrijving": "Q1 2026 cijfers (gepland 3 juni)",
+    "richting": "BINAIR",
+    "impact": "GROOT"
+  }
+]
+```
+
+**KRITIEK**: Veld heet `datum_ca` (NIET `datum`), `omschrijving` (NIET `beschrijving`), `richting` (NIET `type`). Waarden voor richting: `POSITIEF`, `NEGATIEF`, `NEUTRAAL`, `BINAIR` (uppercase).
 
 ## fair_value (VERPLICHT)
 
@@ -387,3 +435,13 @@ Laatste sync: 2026-04-12
 | `"impact": "GROOT"` | `"impact": "hoog"` |
 | `"totaal_score": 35` | `"totaal": 35` |
 | `"categorien": [...]` | `"categorieen": [...]` |
+| `"cotacao": "PYPL"` | `"ticker": "PYPL"` (bij concurrenten) |
+| `"omzetgroei_pct": 25` | `"omzet_groei_pct": 25` (met underscore) |
+| `"tam_mln_eur": 2500000` | `"tam_mln": 2500000` (geen _eur suffix) |
+| `"sam_mln_eur": 150000` | `"sam_mln": 150000` (geen _eur suffix) |
+| `"type": "BINAIR"` (bij katalysator) | `"richting": "BINAIR"` |
+| `"beschrijving": "..."` (bij katalysator) | `"omschrijving": "..."` |
+| `"datum": "2026-06"` (bij katalysator) | `"datum_ca": "2026-06"` |
+| `"esg_eindoordeel": "..."` | `"eindoordeel": "..."` (binnen esg object) |
+| `"materiele_factoren": { "key": {...} }` | `"materiele_factoren": [{ "factor": "...", ... }]` (array, geen object) |
+| `"risico": "MIDDEL"` (bij ESG factor) | `"risico_niveau": "Middel"` |

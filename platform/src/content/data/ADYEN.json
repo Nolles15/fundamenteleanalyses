@@ -564,64 +564,61 @@
     "concurrenten": [
       {
         "naam": "Stripe",
-        "cotacao": false,
-        "omzetgroei_pct": 25,
         "ebit_marge_pct": 25,
         "roic_pct": 30,
         "nettoschuld_ebitda": 0,
         "ev_ebitda": 35,
         "p_fcf": 40,
-        "marktaandeel_pct": 34
+        "marktaandeel_pct": 34,
+        "omzet_groei_pct": 25,
+        "ticker": null
       },
       {
         "naam": "PayPal",
-        "cotacao": "PYPL",
-        "omzetgroei_pct": 6,
         "ebit_marge_pct": 18,
         "roic_pct": 15,
         "nettoschuld_ebitda": 1.2,
         "ev_ebitda": 10,
         "p_fcf": 12,
-        "marktaandeel_pct": 32
+        "marktaandeel_pct": 32,
+        "omzet_groei_pct": 6,
+        "ticker": "PYPL"
       },
       {
         "naam": "Worldline",
-        "cotacao": "WLN.PA",
-        "omzetgroei_pct": -4,
         "ebit_marge_pct": 15,
         "roic_pct": 5,
         "nettoschuld_ebitda": 2.5,
         "ev_ebitda": 5,
         "p_fcf": 8,
-        "marktaandeel_pct": 5
+        "marktaandeel_pct": 5,
+        "omzet_groei_pct": -4,
+        "ticker": "WLN.PA"
       },
       {
         "naam": "Checkout.com",
-        "cotacao": false,
-        "omzetgroei_pct": 30,
         "ebit_marge_pct": 10,
         "roic_pct": null,
         "nettoschuld_ebitda": 0,
         "ev_ebitda": null,
         "p_fcf": null,
-        "marktaandeel_pct": 3
+        "marktaandeel_pct": 3,
+        "omzet_groei_pct": 30,
+        "ticker": null
       }
     ],
     "positie": "Adyen is de nummer twee wereldwijd in modern payment processing (na Stripe) en marktleider in Europa voor enterprise-betalingen, met een verwerkt volume van €1,4 biljoen in 2025.",
     "positie_toelichting": "Adyen handelt tegen een significant hogere waardering dan legacy-processors als Worldline (EV/EBITDA 5x) en PayPal (10x), maar lager dan de impliciete waardering van Stripe (~35x). De premie ten opzichte van legacy is gerechtvaardigd door superieure groei (18% vs. negatief bij Worldline), veel hogere marges (53% EBITDA vs. 15-25%) en een structureel beter platform. Vergeleken met Stripe is Adyen goedkoper op dezelfde kwaliteitskenmerken, maar Stripe groeit sneller en domineert het SMB-segment en de VS.",
     "tam_sam_som": {
-      "tam_mln_eur": 2500000,
       "tam_groei_pct": 8,
-      "tam_description": "$2.5T in processing fees globally",
-      "sam_mln_eur": 150000,
       "sam_groei_pct": 12,
-      "sam_description": "enterprise payment processing in target markets",
       "huidige_penetratie_pct": 1.6,
-      "penetratie_rationale": "€2.4B net rev / €150B SAM",
-      "impliciete_penetratie_horizon_pct": 3,
       "groei_plausibel": true,
       "bron": "McKinsey Global Payments Report 2025, BCG Payments Model",
-      "toelichting": "De totale adresseerbare markt voor Adyen is enorm. Met slechts 1,6% penetratie van de enterprise processing fee pool is er ruimschoots ruimte voor groei door zowel marktvolume als marktaandeelwinst."
+      "toelichting": "De totale adresseerbare markt voor Adyen is enorm. Met slechts 1,6% penetratie van de enterprise processing fee pool is er ruimschoots ruimte voor groei door zowel marktvolume als marktaandeelwinst.",
+      "tam_mln": 2500000,
+      "sam_mln": 150000,
+      "impliciete_penetratie_na_horizon_pct": 3
     }
   },
   "fair_value": {
@@ -821,63 +818,66 @@
   ],
   "these_invalide_bij": "De these wordt invalide bij (1) structureel verlies van marktaandeel aan Stripe in het enterprise-segment, zichtbaar als netto-omzetretentie onder 110%, (2) EBITDA-marge die structureel daalt onder 45% door prijsconcurrentie, of (3) regulatoire verschuiving waardoor kaartbetalingen meer dan 30% marktaandeel verliezen aan A2A-alternatieven.",
   "esg": {
-    "materiele_factoren": {
-      "data_security_privacy": {
-        "risico": "MIDDEL",
-        "toelichting": "Adyen verwerkt gevoelige betalingsdata en is onderworpen aan PCI DSS en GDPR. Een datalek zou reputatieschade en boetes veroorzaken. Financieel: potentieel verlies van klantvertrouwen en regulatory fines."
+    "eindoordeel": "De materiële ESG-risico's voor Adyen zijn beheersbaar. Het grootste risico is cybersecurity, dat actief wordt gemanaged via PCI DSS-certificering en SOC 2 compliance. De dual-class aandelenstructuur is een governance-aandachtspunt maar geen dealbreaker gezien de track record van het management.",
+    "materiele_factoren": [
+      {
+        "factor": "Data Security Privacy",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Adyen verwerkt gevoelige betalingsdata en is onderworpen aan PCI DSS en GDPR. Een datalek zou reputatieschade en boetes veroorzaken. Financieel: potentieel verlies van klantvertrouwen en regulatory fines."
       },
-      "talent_retention": {
-        "risico": "MIDDEL",
-        "toelichting": "Adyen opereert in een competitieve arbeidsmarkt voor tech-talent. Het verlies van kernengineers zou de productontwikkeling vertragen. Financieel: hogere personeelskosten of lagere innovatiesnelheid."
+      {
+        "factor": "Talent Retention",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Adyen opereert in een competitieve arbeidsmarkt voor tech-talent. Het verlies van kernengineers zou de productontwikkeling vertragen. Financieel: hogere personeelskosten of lagere innovatiesnelheid."
       },
-      "governance": {
-        "risico": "LAAG",
-        "toelichting": "Twee stemklassen (B-aandelen met 50× stemrecht voor oprichters) beperken de invloed van minderheidsaandeelhouders. Dit is gebruikelijk bij tech-bedrijven maar een governance-risico bij slecht management."
+      {
+        "factor": "Governance",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Twee stemklassen (B-aandelen met 50× stemrecht voor oprichters) beperken de invloed van minderheidsaandeelhouders. Dit is gebruikelijk bij tech-bedrijven maar een governance-risico bij slecht management."
       }
-    },
-    "esg_eindoordeel": "De materiële ESG-risico's voor Adyen zijn beheersbaar. Het grootste risico is cybersecurity, dat actief wordt gemanaged via PCI DSS-certificering en SOC 2 compliance. De dual-class aandelenstructuur is een governance-aandachtspunt maar geen dealbreaker gezien de track record van het management."
+    ]
   },
   "katalysatoren": [
     {
-      "datum": "2026-06",
-      "beschrijving": "Q1 2026 cijfers (gepland 3 juni)",
-      "type": "BINAIR",
+      "datum_ca": "2026-06",
+      "omschrijving": "Q1 2026 cijfers (gepland 3 juni)",
+      "richting": "BINAIR",
       "impact": "GROOT"
     },
     {
-      "datum": "2026-H2",
-      "beschrijving": "EBITDA-marge richting 55%+ target",
-      "type": "POSITIEF",
+      "datum_ca": "2026-H2",
+      "omschrijving": "EBITDA-marge richting 55%+ target",
+      "richting": "POSITIEF",
       "impact": "GROOT"
     },
     {
-      "datum": "2026-H2",
-      "beschrijving": "Groei embedded finance (Adyen for Platforms, Issuing)",
-      "type": "POSITIEF",
+      "datum_ca": "2026-H2",
+      "omschrijving": "Groei embedded finance (Adyen for Platforms, Issuing)",
+      "richting": "POSITIEF",
       "impact": "MIDDEL"
     },
     {
-      "datum": "2026-10",
-      "beschrijving": "H1 2026 resultaten",
-      "type": "BINAIR",
+      "datum_ca": "2026-10",
+      "omschrijving": "H1 2026 resultaten",
+      "richting": "BINAIR",
       "impact": "GROOT"
     },
     {
-      "datum": "2027-02",
-      "beschrijving": "FY2026 resultaten",
-      "type": "BINAIR",
+      "datum_ca": "2027-02",
+      "omschrijving": "FY2026 resultaten",
+      "richting": "BINAIR",
       "impact": "GROOT"
     },
     {
-      "datum": "2026-H2",
-      "beschrijving": "Mogelijke aankondiging dividendbeleid of buybackprogramma",
-      "type": "POSITIEF",
+      "datum_ca": "2026-H2",
+      "omschrijving": "Mogelijke aankondiging dividendbeleid of buybackprogramma",
+      "richting": "POSITIEF",
       "impact": "GROOT"
     },
     {
-      "datum": "2026-2027",
-      "beschrijving": "Verdere enterprise wins in VS (concurreren met Stripe)",
-      "type": "POSITIEF",
+      "datum_ca": "2026-2027",
+      "omschrijving": "Verdere enterprise wins in VS (concurreren met Stripe)",
+      "richting": "POSITIEF",
       "impact": "MIDDEL"
     }
   ]

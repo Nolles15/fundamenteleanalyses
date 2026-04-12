@@ -42,5 +42,22 @@
       "domein": "edenred.com",
       "yahoo_symbol": "EDEN.PA"
     }
+    ,{
+      "ticker": "SW",
+      "naam": "Smurfit Westrock plc",
+      "sector": "Materialen / Verpakkingen",
+      "exchange": "NYSE",
+      "koers": 39.50,
+      "valuta": "USD",
+      "fair_value_basis": 39,
+      "upside_pct": -1,
+      "oordeel": "PASS",
+      "scorekaart_totaal": 22,
+      "scorekaart_max": 45,
+      "peildatum": "2026-04-12",
+      "domein": "smurfitwestrock.com",
+      "yahoo_symbol": "SW",
+      "tags": ["verpakkingen", "golfkarton", "cyclisch", "fusie", "dividend"]
+    }
   ]
 }
