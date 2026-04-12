@@ -1,6 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { AnalyseIndex } from '@/lib/types'
 import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
 import { OordeelBadge } from './oordeel-badge'
@@ -90,8 +92,24 @@ export function AnalyseCard({ analyse, livePrice }: AnalyseCardProps) {
   )
 }
 
-function CompanyLogo({ ticker }: { ticker: string; domein?: string }) {
-  return <TickerInitiaal ticker={ticker} />
+function CompanyLogo({ ticker, domein }: { ticker: string; domein?: string }) {
+  const [failed, setFailed] = useState(false)
+  const token = process.env.NEXT_PUBLIC_LOGO_DEV_TOKEN
+
+  if (!domein || !token || failed) return <TickerInitiaal ticker={ticker} />
+
+  return (
+    <div className="w-10 h-10 rounded-lg overflow-hidden border border-border bg-bg-muted shrink-0 flex items-center justify-center">
+      <Image
+        src={`https://img.logo.dev/${domein}?token=${token}&size=80&format=png`}
+        alt={ticker}
+        width={40}
+        height={40}
+        className="w-full h-full object-contain"
+        onError={() => setFailed(true)}
+      />
+    </div>
+  )
 }
 
 function TickerInitiaal({ ticker }: { ticker: string }) {

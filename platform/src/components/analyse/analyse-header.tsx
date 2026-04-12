@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 import type { Analyse } from '@/lib/types'
 import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
@@ -86,16 +87,31 @@ export function AnalyseHeader({ analyse }: AnalyseHeaderProps) {
 }
 
 function CompanyLogo({ ticker, domein }: { ticker: string; domein?: string }) {
-  return <TickerInitiaal ticker={ticker} size={56} />
+  const token = process.env.NEXT_PUBLIC_LOGO_DEV_TOKEN
+
+  if (!domein || !token) return <TickerInitiaal ticker={ticker} />
+
+  return (
+    <div className="w-14 h-14 rounded-xl overflow-hidden border border-border bg-bg-muted shrink-0 flex items-center justify-center">
+      <Image
+        src={`https://img.logo.dev/${domein}?token=${token}&size=112&format=png`}
+        alt={ticker}
+        width={56}
+        height={56}
+        className="w-full h-full object-contain"
+        unoptimized
+      />
+    </div>
+  )
 }
 
-function TickerInitiaal({ ticker, size = 56 }: { ticker: string; size?: number }) {
+function TickerInitiaal({ ticker }: { ticker: string }) {
   const letter = ticker.charAt(0).toUpperCase()
   const hue = ticker.charCodeAt(0) % 360
   return (
     <div
-      className="rounded-xl shrink-0 flex items-center justify-center text-white font-bold text-lg font-sans"
-      style={{ backgroundColor: `hsl(${hue}, 45%, 40%)`, width: size, height: size }}
+      className="w-14 h-14 rounded-xl shrink-0 flex items-center justify-center text-white font-bold text-lg font-sans"
+      style={{ backgroundColor: `hsl(${hue}, 45%, 40%)` }}
     >
       {letter}
     </div>
