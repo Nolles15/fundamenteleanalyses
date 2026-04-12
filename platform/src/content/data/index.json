@@ -1,5 +1,5 @@
 {
-  "laatste_update": "2026-04-11",
+  "laatste_update": "2026-04-12",
   "companies": [
     {
       "ticker": "ASML",
@@ -8,10 +8,10 @@
       "exchange": "Euronext Amsterdam",
       "koers": 1270.00,
       "valuta": "EUR",
-      "fair_value_basis": 1410,
-      "upside_pct": 11,
-      "oordeel": "HOLD",
-      "scorekaart_totaal": 32,
+      "fair_value_basis": 820,
+      "upside_pct": -35,
+      "oordeel": "PASS",
+      "scorekaart_totaal": 26,
       "scorekaart_max": 45,
       "peildatum": "2026-04-11",
       "domein": "asml.com",
