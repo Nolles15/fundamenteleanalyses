@@ -2,11 +2,13 @@
 
 import { useState } from 'react'
 import { signIn } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 export default function InloggenPage() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const callbackUrl = searchParams.get('callbackUrl') ?? '/'
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 
@@ -29,7 +31,7 @@ export default function InloggenPage() {
       return
     }
 
-    router.push('/account')
+    router.push(callbackUrl)
     router.refresh()
   }
 
@@ -103,7 +105,7 @@ export default function InloggenPage() {
         <p className="text-center text-sm text-text-secondary mt-6">
           Nog geen account?{' '}
           <Link
-            href="/registreren"
+            href={`/registreren${callbackUrl !== '/' ? `?callbackUrl=${encodeURIComponent(callbackUrl)}` : ''}`}
             className="text-accent font-medium hover:underline"
           >
             Registreer je hier

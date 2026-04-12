@@ -5,6 +5,8 @@ import { getIndex } from '@/lib/data'
 import { FeaturedAnalyse } from '@/components/landing/featured-analyse'
 import { AnalysePreviewGrid } from '@/components/landing/analyse-preview-grid'
 import { FAQ } from '@/components/landing/faq'
+import { PersonalSection } from '@/components/landing/personal-section'
+import { ShowWhenLoggedOut } from '@/components/landing/auth-visibility'
 
 function findHeroImage(ticker: string): string | undefined {
   const dir = path.join(process.cwd(), 'public/images/heroes')
@@ -52,12 +54,12 @@ export default function HomePage() {
       {
         '@type': 'Question',
         name: 'Hoe worden analyses gecontroleerd?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financi\u00eble cijfers. Dit systeem is opgezet volgens de methodiek van een Register Accountant.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Dit systeem is opgezet volgens de methodiek van een Register Accountant.' },
       },
       {
         '@type': 'Question',
         name: 'Wat kost het?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Het oordeel, de kernthese en het bedrijfsprofiel zijn gratis. De volledige analyse is beschikbaar als losse aankoop (\u20ac4,95) of via een abonnement (vanaf \u20ac9,95/mnd).' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Het oordeel, de kernthese en het bedrijfsprofiel zijn gratis. De volledige analyse is beschikbaar als losse aankoop (€4,95) of via een abonnement (vanaf €9,95/mnd).' },
       },
     ],
   }
@@ -72,71 +74,77 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
-      {/* ── Hero ─────────────────────────────────────────── */}
-      <section className="bg-bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Linker kolom: tekst */}
-            <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary font-serif leading-tight mb-6">
-                Direct toegang tot diepgaande Europese aandelenanalyses.
-              </h1>
-              <p className="text-lg text-text-secondary font-sans mb-8 max-w-lg">
-                Wij analyseren de fundamentals, zodat u zich kunt richten op het rendement.
-                Geen hypes, alleen harde cijfers en strategisch inzicht.
-              </p>
 
-              {/* Social proof badges */}
-              <div className="flex flex-wrap gap-3 mb-8">
-                {['RA-geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
-                  <span
-                    key={badge}
-                    className="text-xs font-medium text-text-secondary bg-bg-muted px-3 py-1.5 rounded-full font-sans"
+      {/* ── Persoonlijke sectie (alleen zichtbaar als ingelogd) ── */}
+      <PersonalSection companies={companies} />
+
+      {/* ── Hero (alleen zichtbaar als NIET ingelogd) ──────────── */}
+      <ShowWhenLoggedOut>
+        <section className="bg-bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Linker kolom: tekst */}
+              <div>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary font-serif leading-tight mb-6">
+                  Direct toegang tot diepgaande Europese aandelenanalyses.
+                </h1>
+                <p className="text-lg text-text-secondary font-sans mb-8 max-w-lg">
+                  Wij analyseren de fundamentals, zodat u zich kunt richten op het rendement.
+                  Geen hypes, alleen harde cijfers en strategisch inzicht.
+                </p>
+
+                {/* Social proof badges */}
+                <div className="flex flex-wrap gap-3 mb-8">
+                  {['RA-geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
+                    <span
+                      key={badge}
+                      className="text-xs font-medium text-text-secondary bg-bg-muted px-3 py-1.5 rounded-full font-sans"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="/analyses"
+                    className="btn-cta px-6 py-3 rounded-lg text-sm font-semibold font-sans"
                   >
-                    {badge}
-                  </span>
-                ))}
+                    Bekijk alle analyses
+                  </Link>
+                  <Link
+                    href="/methode"
+                    className="text-sm font-semibold text-text-primary border border-border px-6 py-3 rounded-lg hover:bg-bg-muted transition-colors font-sans"
+                  >
+                    Onze methode
+                  </Link>
+                </div>
               </div>
 
-              {/* CTA */}
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/analyses"
-                  className="btn-cta px-6 py-3 rounded-lg text-sm font-semibold font-sans"
-                >
-                  Bekijk alle analyses
-                </Link>
-                <Link
-                  href="/methode"
-                  className="text-sm font-semibold text-text-primary border border-border px-6 py-3 rounded-lg hover:bg-bg-muted transition-colors font-sans"
-                >
-                  Onze methode
-                </Link>
+              {/* Rechter kolom: featured analyse */}
+              <div className="hidden lg:block">
+                <FeaturedAnalyse analyse={featured} heroImage={heroImage} />
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Rechter kolom: featured analyse */}
-            <div className="hidden lg:block">
-              <FeaturedAnalyse analyse={featured} heroImage={heroImage} />
+        {/* ── Social proof bar ─────────────────────────────── */}
+        <section className="bg-bg-muted">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-text-secondary font-sans">
+              <span>{companies.length}+ uitgebreide analyses</span>
+              <span className="hidden sm:inline">&middot;</span>
+              <span>9 frameworks per analyse</span>
+              <span className="hidden sm:inline">&middot;</span>
+              <span>RA-geverifieerd proces</span>
+              <span className="hidden sm:inline">&middot;</span>
+              <span>Europese small &amp; midcap focus</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── Social proof bar ─────────────────────────────── */}
-      <section className="bg-bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-text-secondary font-sans">
-            <span>{companies.length}+ uitgebreide analyses</span>
-            <span className="hidden sm:inline">&middot;</span>
-            <span>9 frameworks per analyse</span>
-            <span className="hidden sm:inline">&middot;</span>
-            <span>RA-geverifieerd proces</span>
-            <span className="hidden sm:inline">&middot;</span>
-            <span>Europese small &amp; midcap focus</span>
-          </div>
-        </div>
-      </section>
+        </section>
+      </ShowWhenLoggedOut>
 
       {/* ── Nieuwste analyses ────────────────────────────── */}
       <section className="bg-bg-primary">

@@ -1,37 +1,27 @@
 {
-  "laatste_update": "2026-04-12",
-  "companies": [
+  "stocks": [
     {
-      "ticker": "ASML",
-      "naam": "ASML Holding N.V.",
+      "ticker": "ADYEN",
+      "naam": "Adyen N.V.",
       "sector": "Technologie",
       "exchange": "Euronext Amsterdam",
-      "koers": 1270.00,
+      "koers": 860,
       "valuta": "EUR",
-      "fair_value_basis": 820,
-      "upside_pct": -35,
-      "oordeel": "PASS",
-      "scorekaart_totaal": 26,
-      "scorekaart_max": 45,
-      "peildatum": "2026-04-11",
-      "domein": "asml.com",
-      "yahoo_symbol": "ASML.AS"
-    },
-    {
-      "ticker": "EDEN",
-      "naam": "Edenred SE",
-      "sector": "Technology / Digital Payments",
-      "exchange": "Euronext Paris",
-      "koers": 17.12,
-      "valuta": "EUR",
-      "fair_value_basis": 28.50,
-      "upside_pct": 66,
+      "fair_value_basis": 1229,
+      "upside_pct": 43,
       "oordeel": "KOOP",
-      "scorekaart_totaal": 38,
+      "scorekaart_totaal": 35,
       "scorekaart_max": 45,
-      "peildatum": "2026-04-11",
-      "domein": "edenred.com",
-      "yahoo_symbol": "EDEN.PA"
+      "peildatum": "2026-04-12",
+      "domein": "adyen.com",
+      "yahoo_symbol": "ADYEN.AS",
+      "tags": [
+        "fintech",
+        "payment-processing",
+        "europa",
+        "high-quality",
+        "value"
+      ]
     }
   ]
 }

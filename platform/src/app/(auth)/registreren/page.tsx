@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import { signIn } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { registreer } from './actions'
 
 export default function RegistrerenPage() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const callbackUrl = searchParams.get('callbackUrl') ?? '/'
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 
@@ -39,7 +41,7 @@ export default function RegistrerenPage() {
       return
     }
 
-    router.push('/account')
+    router.push(callbackUrl)
     router.refresh()
   }
 
@@ -151,7 +153,7 @@ export default function RegistrerenPage() {
         <p className="text-center text-sm text-text-secondary mt-6">
           Al een account?{' '}
           <Link
-            href="/inloggen"
+            href={`/inloggen${callbackUrl !== '/' ? `?callbackUrl=${encodeURIComponent(callbackUrl)}` : ''}`}
             className="text-accent font-medium hover:underline"
           >
             Log hier in

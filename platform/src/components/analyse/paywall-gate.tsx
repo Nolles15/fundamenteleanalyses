@@ -2,6 +2,7 @@
 
 import { Lock } from 'lucide-react'
 import { useSession } from 'next-auth/react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import type { AccessLevel } from '@/lib/access'
 import { hasAccess } from '@/lib/access'
@@ -24,6 +25,7 @@ export function PaywallGate({
   description,
 }: PaywallGateProps) {
   const { data: session } = useSession()
+  const pathname = usePathname()
 
   if (access === 'free' || DEV_UNLOCK) return <>{children}</>
 
@@ -31,6 +33,7 @@ export function PaywallGate({
   if (hasAccess(user ?? null, ticker, access)) return <>{children}</>
 
   const isLoggedIn = !!user
+  const loginUrl = `/inloggen?callbackUrl=${encodeURIComponent(pathname)}`
 
   return (
     <div className="relative overflow-hidden rounded-xl">
@@ -70,10 +73,10 @@ export function PaywallGate({
             </Link>
           ) : (
             <Link
-              href="/registreren"
+              href={loginUrl}
               className="block w-full bg-accent text-white text-sm font-medium py-2.5 rounded-lg hover:opacity-90 transition-opacity font-sans text-center"
             >
-              Gratis account aanmaken
+              Inloggen voor toegang
             </Link>
           )}
         </div>
