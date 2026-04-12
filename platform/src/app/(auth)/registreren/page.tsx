@@ -1,12 +1,20 @@
 'use client'
 
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { registreer } from './actions'
 
 export default function RegistrerenPage() {
+  return (
+    <Suspense>
+      <RegistrerenForm />
+    </Suspense>
+  )
+}
+
+function RegistrerenForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const callbackUrl = searchParams.get('callbackUrl') ?? '/'
