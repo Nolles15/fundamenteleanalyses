@@ -556,6 +556,10 @@ function ReverseDCFBlok({ data }: { data: ReverseDCF }) {
   return (
     <div>
       <SectionHeading title="Reverse DCF" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        In plaats van een fair value te berekenen, draait een reverse DCF de vraag om: welke groei verwacht de markt bij de huidige koers?
+        Hoe lager de ingeprijsde groei ten opzichte van de werkelijke groei, hoe groter de mogelijke onderwaardering.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border p-5">
         <div className="flex items-center justify-between mb-3">
           <div>
@@ -598,6 +602,10 @@ function EPVBlok({ data, valuta }: { data: EPV; valuta: string }) {
   return (
     <div>
       <SectionHeading title="Earnings Power Value (EPV)" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        EPV berekent wat het bedrijf waard is op basis van de huidige winstcapaciteit, zonder toekomstige groei mee te rekenen.
+        Als de EPV al boven de koers ligt, betaal je effectief niets voor groei.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border p-5">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <MiniStat label="Genorm. EBIT-marge" waarde={`${formatGetal(data.genormaliseerde_ebit_marge_pct)}%`} />
