@@ -143,7 +143,7 @@ export default function HomePage() {
         <section className="bg-bg-muted">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-text-secondary font-sans">
-              <span>{companies.length}+ uitgebreide analyses</span>
+              <span>{companies.length} uitgebreide analyses</span>
               <span className="hidden sm:inline">&middot;</span>
               <span>9 frameworks per analyse</span>
               <span className="hidden sm:inline">&middot;</span>
@@ -171,7 +171,7 @@ export default function HomePage() {
               href="/analyses"
               className="hidden sm:inline-flex text-sm font-medium text-accent hover:underline font-sans"
             >
-              Bekijk alle {companies.length}+ analyses &rarr;
+              Bekijk alle {companies.length} analyses &rarr;
             </Link>
           </div>
 
@@ -196,7 +196,7 @@ export default function HomePage() {
           <div className="mt-8 rounded-xl bg-gradient-to-r from-[#051125] to-[#1b263b] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5">
             <div>
               <h3 className="text-lg font-bold text-white font-serif mb-1">
-                Ontdek alle {companies.length}+ analyses
+                Ontdek alle {companies.length} analyses
               </h3>
               <p className="text-sm text-white/60 font-sans">
                 Gratis oordeel en kernthese. Volledige analyse vanaf &euro;4,95.
@@ -222,7 +222,7 @@ export default function HomePage() {
             href="/analyses"
             className="sm:hidden inline-flex mt-6 text-sm font-medium text-accent hover:underline font-sans"
           >
-            Bekijk alle {companies.length}+ analyses &rarr;
+            Bekijk alle {companies.length} analyses &rarr;
           </Link>
         </div>
       </section>
