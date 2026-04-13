@@ -376,14 +376,50 @@
 <hr>
 
 <!-- ============================================ -->
-<!-- SECTION 4: BACKEND / WAT ONTBREEKT -->
+<!-- SECTION 4: ADMIN -->
 <!-- ============================================ -->
-<div class="section backend">
-  <div class="section-title">Achter de schermen &amp; wat ontbreekt</div>
+<div class="section" style="margin-bottom: 56px">
+  <div class="section-title" style="background:#e8ecf1; color:#051125">Admin (alleen ADMIN_EMAIL)</div>
+  <p class="section-desc">Toegang via <code>/admin</code> — alleen als je ingelogd bent met het email dat matcht met de <code>ADMIN_EMAIL</code> env var. Anders redirect naar homepage.</p>
 
   <div class="grid-2">
     <div class="page">
-      <div class="page-name">Stripe Webhooks (werkt)</div>
+      <div class="page-route">/admin</div>
+      <div class="page-name">Dashboard</div>
+      <div class="page-content">
+        <ul>
+          <li>KPI-kaarten: totaal gebruikers, premium abonnees, aankopen deze maand</li>
+          <li>Tabel: laatste 5 registraties (naam, plan, datum)</li>
+          <li>Tabel: laatste 5 aankopen (gebruiker, ticker, datum)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/admin/gebruikers</div>
+      <div class="page-name">Gebruikers</div>
+      <div class="page-content">
+        <ul>
+          <li>Volledige tabel: naam, email, plan, status, aankopen, registratiedatum</li>
+          <li>Samenvattingsregel: totaal / premium / met aankopen</li>
+          <li>Status-dots: actief (groen), achterstallig (oranje), opgezegd (rood)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 5: BACKEND -->
+<!-- ============================================ -->
+<div class="section backend">
+  <div class="section-title">Achter de schermen</div>
+
+  <div class="grid-3">
+    <div class="page">
+      <div class="page-name">Stripe Webhooks</div>
       <div class="page-content">
         <ul>
           <li><code>checkout.session.completed</code> &rarr; Purchase of Subscription aanmaken</li>
@@ -391,6 +427,20 @@
           <li><code>customer.subscription.deleted</code> &rarr; Terug naar GRATIS</li>
           <li><code>invoice.payment_failed</code> &rarr; Status PAST_DUE</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-name">Email-notificaties (Resend) <span class="badge badge-free">LIVE</span></div>
+      <div class="page-content">
+        <p>Admin krijgt email bij:</p>
+        <ul>
+          <li>Nieuwe registratie (naam + email)</li>
+          <li>Losse aankoop (ticker + email)</li>
+          <li>Nieuw abonnement (plan + email)</li>
+          <li>Opzegging (email)</li>
+        </ul>
+        <p style="margin-top:6px; font-style:italic">Fire-and-forget, blokkeert nooit de user flow. Afzender: onboarding@resend.dev (eigen domein na verificatie).</p>
       </div>
     </div>
 
@@ -404,20 +454,20 @@
     </div>
   </div>
 
-  <div class="highlight-red" style="margin-top: 20px">
-    <p style="font-size:14px; font-weight:700; color:#991B1B; margin-bottom:8px">Wat ontbreekt</p>
+  <div class="highlight" style="margin-top: 20px">
+    <p style="font-size:14px; font-weight:700; color:#7c4a1a; margin-bottom:8px">Nog open</p>
     <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px">
       <div>
-        <p><strong>Admin dashboard</strong></p>
-        <p>Geen /admin route. Geen overzicht van gebruikers, aankopen, of abonnementen. Alleen via directe database-queries.</p>
+        <p><strong>Stripe producten</strong></p>
+        <p>Code compleet, maar producten (losse analyse, premium maand, premium jaar) nog niet aangemaakt in Stripe Dashboard.</p>
       </div>
       <div>
-        <p><strong>Email notificaties</strong></p>
-        <p>Geen email bij registratie, aankoop, of abonnement. Geen email-provider (Resend/SendGrid) geconfigureerd. Newsletter form is disabled.</p>
+        <p><strong>Newsletter backend</strong></p>
+        <p>UI staat klaar (disabled). Geen backend, geen e-maillijst. Resend of Buttondown nog te configureren.</p>
       </div>
       <div>
         <p><strong>Middleware / route protection</strong></p>
-        <p>Geen server-side auth middleware. /account checkt session server-side, maar premium content wordt alleen client-side geblurred (PaywallGate). HTML bevat de data.</p>
+        <p>Geen server-side auth middleware. Premium content wordt alleen client-side geblurred (PaywallGate). HTML bevat de data.</p>
       </div>
     </div>
   </div>

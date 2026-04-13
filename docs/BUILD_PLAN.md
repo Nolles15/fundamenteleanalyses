@@ -1116,26 +1116,45 @@ Later te automatiseren via GitHub Action die luistert naar pushes in de data-rep
 
 ---
 
-## 11. Wat NIET in scope is (Fase 1)
+## 11. Voortgangsstatus per feature
 
-Expliciet uitgesteld naar Fase 2 of later:
+**Legenda:** LIVE = op productie, KLAAR = code af maar nog niet volledig geconfigureerd, OPEN = nog te bouwen
 
-- Auth.js / login
-- Stripe / betalingen
-- Database (PostgreSQL)
+### Fase 1 (oorspronkelijk plan) — COMPLEET
+- LIVE — Alle publieke pagina's (homepage, /analyses, /analyse/[ticker], /methode, /over, /prijzen, /disclaimer, /privacy)
+- LIVE — Design systeem (Tailwind v4, kleuren, typografie, componenten)
+- LIVE — SEO (sitemap, robots, structured data, FAQ schema)
+- LIVE — Live koersen (Yahoo Finance)
+- LIVE — Logo.dev integratie
+- LIVE — 4 analyses (ADYEN, ASML, EDEN, SW) met hero images
+- LIVE — Marktcategorie pagina's (/markt/[categorie])
+
+### Fase 2 (accounts + betaling + admin) — GROTENDEELS COMPLEET
+- LIVE — Auth.js v5 (inloggen/registreren/uitloggen, JWT, credentials provider)
+- LIVE — Database (Prisma v7 + Neon PostgreSQL)
+- LIVE — PaywallGate (blur + CTA, client-side, access levels per tab)
+- LIVE — Account pagina (/account met profiel, plan, gekochte analyses)
+- LIVE — Admin dashboard (/admin — KPI's, recente registraties, recente aankopen)
+- LIVE — Admin gebruikers (/admin/gebruikers — volledige tabel met plan, status, aankopen)
+- LIVE — Email-notificaties (Resend — admin krijgt mail bij registratie, aankoop, abonnement, opzegging)
+- KLAAR — Stripe checkout, webhook, portal (code compleet, producten nog niet aangemaakt in Stripe Dashboard)
+- OPEN — Custom domein (aandelenanalyse.nl nog niet gekoppeld aan Vercel)
+- OPEN — Resend domein verificatie (emails komen nu van onboarding@resend.dev)
+
+### Fase 3 (interactief + schaal) — OPEN
+- OPEN — Interactieve DCF-calculator
+- OPEN — Vergelijkingsfunctie
+- OPEN — Nieuwsbrief (UI staat klaar, backend nog niet)
+- OPEN — Analytics (Google Analytics / Plausible)
+- OPEN — Portefeuille-pagina
+- OPEN — Thesis tracker pagina
+- OPEN — Server-side middleware (premium content nu alleen client-side geblurred)
+
+### Bewust uitgesteld (geen prioriteit)
 - Meertaligheid (next-intl) — pas als er Engelse content is
-- Interactieve DCF-calculator
-- Vergelijkingsfunctie
-- Alerts / notificaties
-- Nieuwsbrief-integratie (Resend)
-- Admin-interface
-- Analytics (Google Analytics / Plausible)
-- Portefeuille-pagina (huidige portefeuille.html functionaliteit)
-- Thesis tracker pagina
 - Dark mode
 - Animaties (Framer Motion)
-
-Deze features zijn bewust weggelaten. De site moet eerst live, professioneel en inhoudelijk compleet zijn. Features toevoegen aan een werkend product is makkelijker dan een product lanceren dat alles half doet.
+- Analyses upload via admin (voorlopig handmatig via git push)
 
 ---
 

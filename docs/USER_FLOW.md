@@ -1,35 +1,48 @@
 # User Flow & Customer Journey — Aandelenanalyse.nl
 
-**Datum:** 11 april 2026
-**Status:** Concept — input voor bouw
+**Datum:** 13 april 2026 (bijgewerkt)
+**Status:** Actuele staat — reflecteert wat er gebouwd is
 **Doel:** Hoe beweegt een gebruiker door het platform, van ontdekking tot betaling?
 
 ---
 
-## Sitemap
+## Sitemap (actueel)
 
 ```
-aandelenanalyse.nl/
-├── /                           Homepage (publiek)
-├── /analyse/[ticker]           Individuele analyse (deels publiek, deels premium)
+fundamenteleanalyses.vercel.app/
+│
+│  ── Publiek (iedereen) ──
+├── /                           Homepage (adaptief: hero of PersonalSection)
+├── /analyses                   Alle analyses (grid met filter/sort)
+├── /analyse/[ticker]           Individuele analyse (gratis + premium tabs)
 ├── /markt/[categorie]          Categoriepagina (publiek)
 │   ├── /markt/aex
 │   ├── /markt/europese-small-caps
 │   ├── /markt/tech-en-groei
 │   └── /markt/scandinavie
-├── /zoeken                     Zoekresultaten (publiek)
-├── /methode                    Methode-uitleg (publiek)
-├── /over                       Over ons (publiek)
-├── /prijzen                    Pricing (publiek)
-├── /disclaimer                 Wft-disclaimer (publiek)
-├── /privacy                    Privacyverklaring (publiek)
-├── /voorwaarden                Algemene voorwaarden (publiek)
+├── /methode                    Methode-uitleg
+├── /over                       Over ons
+├── /prijzen                    Pricing (3 tiers + checkout)
+├── /disclaimer                 Wft-disclaimer
+├── /privacy                    Privacyverklaring
 │
-│  ── Fase 2: ingelogd ──
-├── /dashboard                  Persoonlijk dashboard
-├── /watchlist                  Opgeslagen analyses
-├── /account                    Account & abonnement
-└── /account/billing            Facturatie
+│  ── Auth ──
+├── /inloggen                   Login (email + wachtwoord)
+├── /registreren                Registratie (naam + email + wachtwoord)
+│
+│  ── Ingelogd ──
+├── /account                    Profiel, plan, gekochte analyses, uitloggen
+│
+│  ── Admin (alleen ADMIN_EMAIL) ──
+├── /admin                      Dashboard (KPI's, recente activiteit)
+├── /admin/gebruikers           Gebruikerstabel (plan, status, aankopen)
+│
+│  ── API ──
+├── /api/auth/[...]             NextAuth endpoints
+├── /api/stripe/checkout        Stripe checkout sessie aanmaken
+├── /api/stripe/webhook         Stripe webhook (purchase/subscription/cancellation)
+├── /api/stripe/portal          Stripe customer portal redirect
+└── /api/koersen                Live koersen (Yahoo Finance proxy)
 ```
 
 ---
@@ -264,39 +277,55 @@ Elk moment waarop we de gebruiker richting een actie sturen:
 
 ---
 
-## Samenvatting: wat moet er gebouwd worden
+## Samenvatting: wat is gebouwd en wat is open
 
-### Launch (freemium vanaf dag 1)
+**Bijgewerkt: 13 april 2026**
 
-| Pagina/Feature | Status | Prioriteit |
-|----------------|--------|-----------|
-| Homepage (landing page) | Mockup klaar, bouwen | Hoog |
-| `/analyse/[ticker]` | Gebouwd | Klaar |
-| Auth (login/register) | Gebouwd | Klaar |
-| Paywall component | Gebouwd | Klaar |
-| Stripe-integratie (checkout + webhook) | Nieuw | Hoog |
-| `/prijzen` | Nieuw | Hoog |
-| `/methode` | Nieuw — content schrijven | Hoog |
-| `/disclaimer` | Nieuw — tekst klaar | Hoog |
-| `/privacy` | Nieuw — tekst klaar | Hoog |
-| `/over` | Nieuw — content schrijven | Medium |
-| `/markt/[categorie]` | Nieuw — tussenpagina | Hoog |
-| SEO (sitemap, robots, structured data) | Nieuw | Hoog |
-| Nieuwsbrief-signup | Nieuw | Hoog |
-| Breadcrumbs component | Nieuw | Medium |
-| "Vergelijkbare analyses" op analyse-pagina | Nieuw | Medium |
-| `/zoeken` | Nieuw — zoekresultaten | Medium |
+### LIVE op productie
 
-### Na launch (optimalisatie)
+| Pagina/Feature | Route | Status |
+|----------------|-------|--------|
+| Homepage (landing page) | `/` | LIVE — hero, spotlight, previews, FAQ, adaptief voor ingelogd/uitgelogd |
+| Alle analyses overzicht | `/analyses` | LIVE — grid met filter/sort |
+| Analyse detail (4 tickers) | `/analyse/[ticker]` | LIVE — 10 tabs, conditionele paywall |
+| Marktcategorieën | `/markt/[categorie]` | LIVE — 4 categorieën |
+| Auth (login/register) | `/inloggen`, `/registreren` | LIVE — credentials, JWT, callbackUrl doorgifte |
+| Account | `/account` | LIVE — profiel, plan, gekochte analyses, uitloggen |
+| Paywall component | op analyse-pagina | LIVE — blur + CTA, access levels per tab |
+| Stripe checkout + webhook | `/api/stripe/*` | LIVE (code klaar, Stripe producten nog niet aangemaakt) |
+| Prijzen | `/prijzen` | LIVE — 3 tiers, checkout buttons |
+| Methode | `/methode` | LIVE |
+| Over | `/over` | LIVE |
+| Disclaimer | `/disclaimer` | LIVE |
+| Privacy | `/privacy` | LIVE |
+| SEO | sitemap, robots, structured data | LIVE |
+| Admin dashboard | `/admin` | LIVE — KPI's, recente registraties/aankopen |
+| Admin gebruikers | `/admin/gebruikers` | LIVE — volledige tabel, plan/status/aankopen |
+| Email-notificaties | Resend | LIVE — admin krijgt mail bij registratie, aankoop, abo, opzegging |
 
-| Pagina/Feature | Status | Prioriteit |
-|----------------|--------|-----------|
-| `/dashboard` | Nieuw | Medium |
-| `/watchlist` | Nieuw | Medium |
-| `/account` uitbreiden (facturen, gegevens) | Uitbreiden | Medium |
-| Mobiele bottom nav | Nieuw | Medium |
-| Categorie-abonnementen | Nieuw (bij 50+ analyses) | Laag |
+### OPEN (nog te bouwen)
+
+| Feature | Prioriteit | Notitie |
+|---------|-----------|---------|
+| Stripe producten configureren | Hoog | Code klaar, producten in Stripe Dashboard aanmaken |
+| Custom domein | Hoog | aandelenanalyse.nl koppelen in Vercel |
+| Resend domein verificatie | Medium | Zodat emails van eigen domein komen |
+| Meer analyses | Hoog | 4 van doel 25+ |
+| Newsletter backend | Medium | UI disabled, Resend/Buttondown nog niet opgezet |
+| Server-side middleware | Medium | Premium content nu alleen client-side geblurred |
+| Zoekfunctie | Medium | `/zoeken` nog niet gebouwd |
+| Vergelijkbare analyses | Laag | Onderaan analyse-pagina |
+| Interactieve DCF | Laag | Fase 3 |
+| Analytics | Laag | Google Analytics of Plausible |
+
+### Niet meer van toepassing (oorspronkelijk plan, nu anders opgelost)
+
+| Feature | Reden |
+|---------|-------|
+| `/dashboard` | Vervangen door PersonalSection op homepage + /account |
+| `/watchlist` | Niet nodig in huidige scope |
+| Mobiele bottom nav (publiek) | Niet gebouwd, mobiel hamburger-menu overbodig door eenvoudige header |
 
 ---
 
-*Dit document beschrijft de informatiearchitectuur en gebruikersflow. Visueel ontwerp volgt het DESIGN_BESLUIT_HOMEPAGE.md en het amsterdam_editorial design system.*
+*Voor een visuele flowchart van alle routes, auth flow en betaalstromen: zie [SITE_FLOWCHART.html](SITE_FLOWCHART.html) (open in browser).*
