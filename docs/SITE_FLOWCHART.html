@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Flowchart — Aandelenanalyse</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #f1f3f5; color: #051125; padding: 40px 20px; }
+
+  h1 { text-align: center; font-size: 24px; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: #4a5568; font-size: 14px; margin-bottom: 48px; }
+
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* Section headers */
+  .section { margin-bottom: 56px; }
+  .section-title {
+    font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+    padding: 10px 20px; border-radius: 8px; margin-bottom: 24px; display: inline-block;
+  }
+  .section-desc { color: #4a5568; font-size: 13px; margin-bottom: 20px; margin-left: 4px; }
+
+  .visitor .section-title { background: #e8ecf1; color: #051125; }
+  .loggedout .section-title { background: #ffdcc3; color: #7c4a1a; }
+  .loggedin .section-title { background: #aeeecb; color: #166534; }
+  .backend .section-title { background: #ffdad6; color: #991B1B; }
+  .info .section-title { background: #e2e8f0; color: #4a5568; }
+
+  /* Flow rows */
+  .flow { display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .flow-vertical { display: flex; flex-direction: column; gap: 12px; }
+
+  /* Page cards */
+  .page {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+    padding: 16px 20px; min-width: 200px; max-width: 320px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .page-route {
+    font-family: 'Fira Code', monospace; font-size: 12px; color: #4A7AB5;
+    background: #f0f4ff; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;
+  }
+  .page-name { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .page-content { font-size: 12px; color: #4a5568; line-height: 1.6; }
+  .page-content li { margin-left: 12px; list-style: disc; }
+
+  /* Access badges */
+  .badge {
+    display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.5px; padding: 2px 8px; border-radius: 4px; margin-left: 6px;
+  }
+  .badge-free { background: #aeeecb; color: #166534; }
+  .badge-premium { background: #e8ecf1; color: #051125; }
+  .badge-locked { background: #ffdad6; color: #991B1B; }
+  .badge-stripe { background: #635bff; color: #fff; }
+
+  /* Arrows */
+  .arrow {
+    display: flex; align-items: center; justify-content: center;
+    color: #94a3b8; font-size: 20px; min-width: 32px; align-self: center;
+  }
+  .arrow-down {
+    display: flex; align-items: center; justify-content: center;
+    color: #94a3b8; font-size: 20px; height: 32px;
+  }
+
+  /* Grid layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+  /* Connector line */
+  .connector {
+    display: flex; align-items: center; gap: 8px; margin: 12px 0;
+    color: #94a3b8; font-size: 12px; font-weight: 600;
+  }
+  .connector::before, .connector::after {
+    content: ''; flex: 1; height: 1px; background: #d1d5db;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px;
+    padding: 16px 20px; background: #fff; border-radius: 12px; border: 1px solid #e2e8f0;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #4a5568; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* Highlight box */
+  .highlight {
+    background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px;
+    padding: 16px 20px; margin-top: 8px;
+  }
+  .highlight-red {
+    background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px;
+    padding: 16px 20px; margin-top: 8px;
+  }
+  .highlight p { font-size: 12px; color: #4a5568; line-height: 1.6; }
+  .highlight strong, .highlight-red strong { color: #051125; }
+
+  /* Divider */
+  hr { border: none; border-top: 2px dashed #e2e8f0; margin: 48px 0; }
+
+  @media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; }
+    .arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Aandelenanalyse.nl &mdash; Site Flowchart</h1>
+<p class="subtitle">Alle routes, gescheiden per gebruikerstype. Gegenereerd 13 april 2026.</p>
+
+<!-- Legend -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#aeeecb"></div> Gratis toegankelijk</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#e8ecf1"></div> Premium (betaald)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffdad6"></div> Geblokkeerd / paywall</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#635bff"></div> Stripe (extern)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffdcc3"></div> Alleen niet-ingelogd</div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 1: NIET INGELOGDE BEZOEKER -->
+<!-- ============================================ -->
+<div class="section loggedout">
+  <div class="section-title">Niet-ingelogde bezoeker</div>
+  <p class="section-desc">Dit is wat iemand ziet die voor het eerst op de site komt of niet is ingelogd.</p>
+
+  <div class="grid-3">
+    <div class="page">
+      <div class="page-route">/</div>
+      <div class="page-name">Homepage</div>
+      <div class="page-content">
+        <ul>
+          <li>Hero met value proposition</li>
+          <li>Social proof bar (3+ analyses, 9 frameworks, RA)</li>
+          <li>Spotlight: nieuwste KOOP-analyse</li>
+          <li>2 preview-kaarten</li>
+          <li>Conversie-balk &rarr; /analyses of /prijzen</li>
+          <li>FAQ (3 vragen, structured data)</li>
+          <li>Newsletter CTA (disabled)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/analyses</div>
+      <div class="page-name">Alle analyses</div>
+      <div class="page-content">
+        <ul>
+          <li>Grid met alle analyse-kaarten</li>
+          <li>Filter op oordeel, sorteer op upside/score</li>
+          <li>Klik op kaart &rarr; /analyse/[ticker]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/analyse/[ticker]</div>
+      <div class="page-name">Analyse detail</div>
+      <div class="page-content">
+        <p style="margin-bottom:6px"><strong>Zichtbaar:</strong></p>
+        <ul>
+          <li>Samenvatting <span class="badge badge-free">gratis</span></li>
+          <li>Bedrijf <span class="badge badge-free">gratis</span></li>
+          <li>Bronnen <span class="badge badge-free">gratis</span></li>
+        </ul>
+        <p style="margin:8px 0 6px"><strong>Geblokkeerd (blur + CTA):</strong></p>
+        <ul>
+          <li>Financieel, Moat, Management, Sector, Frameworks, Waardering, Risico's, Scorekaart <span class="badge badge-locked">paywall</span></li>
+        </ul>
+        <p style="margin-top:8px; font-style:italic">CTA: "Inloggen voor toegang" &rarr; /inloggen</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">AUTH FLOW</div>
+
+  <div class="grid-2">
+    <div class="page">
+      <div class="page-route">/inloggen</div>
+      <div class="page-name">Inloggen</div>
+      <div class="page-content">
+        <ul>
+          <li>Email + wachtwoord formulier</li>
+          <li>Bij succes &rarr; redirect naar <code>callbackUrl</code> (of /)</li>
+          <li>Link: "Nog geen account?" &rarr; /registreren</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/registreren</div>
+      <div class="page-name">Registreren</div>
+      <div class="page-content">
+        <ul>
+          <li>Naam + email + wachtwoord (2x)</li>
+          <li>Maakt account aan (plan: GRATIS)</li>
+          <li>Auto-login na registratie</li>
+          <li>Redirect naar <code>callbackUrl</code> (of /)</li>
+          <li>Link: "Al een account?" &rarr; /inloggen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>callbackUrl doorgifte:</strong> Als je vanuit een paywall op /analyse/asml op "Inloggen" klikt, wordt <code>?callbackUrl=/analyse/asml</code> meegegeven. Na succesvolle login kom je terug op die analyse.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 2: INGELOGDE GEBRUIKER -->
+<!-- ============================================ -->
+<div class="section loggedin">
+  <div class="section-title">Ingelogde gebruiker</div>
+  <p class="section-desc">Drie sub-types: gratis (geen aankopen), gratis (met losse aankopen), premium abonnee.</p>
+
+  <div class="grid-3" style="margin-bottom: 24px">
+    <div class="page" style="border-left: 3px solid #94a3b8">
+      <div class="page-name">Gratis gebruiker (geen aankopen)</div>
+      <div class="page-content">
+        <p><strong>Homepage:</strong> "Welkom terug, [naam]" + badge "Gratis" + lege staat: "Je hebt gratis toegang tot samenvattingen" + CTA naar /analyses en /prijzen</p>
+        <p style="margin-top:8px"><strong>Analyse detail:</strong> Samenvatting + Bedrijf + Bronnen zichtbaar. Rest: blur + "Bekijk prijzen" &rarr; /prijzen</p>
+      </div>
+    </div>
+
+    <div class="page" style="border-left: 3px solid #4A7AB5">
+      <div class="page-name">Gratis + losse aankopen</div>
+      <div class="page-content">
+        <p><strong>Homepage:</strong> "Welkom terug" + kaarten van gekochte analyses (max 3)</p>
+        <p style="margin-top:8px"><strong>Gekochte analyse:</strong> ALLES zichtbaar (10 secties)</p>
+        <p style="margin-top:8px"><strong>Niet-gekochte analyse:</strong> Blur + "Bekijk prijzen"</p>
+      </div>
+    </div>
+
+    <div class="page" style="border-left: 3px solid #166534">
+      <div class="page-name">Premium abonnee</div>
+      <div class="page-content">
+        <p><strong>Homepage:</strong> "Welkom terug" + badge "Premium" + alle analyse-kaarten (max 3, link naar rest)</p>
+        <p style="margin-top:8px"><strong>Elke analyse:</strong> ALLES zichtbaar, geen paywall</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="page">
+      <div class="page-route">/</div>
+      <div class="page-name">Homepage (ingelogd)</div>
+      <div class="page-content">
+        <ul>
+          <li>Hero-sectie is <strong>verborgen</strong></li>
+          <li>PersonalSection vervangt hero</li>
+          <li>Spotlight + previews blijven zichtbaar</li>
+          <li>Conversie-balk + FAQ + newsletter blijven</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/account</div>
+      <div class="page-name">Mijn account</div>
+      <div class="page-content">
+        <ul>
+          <li>Profiel: naam + email</li>
+          <li>Abonnement: plan + einddatum</li>
+          <li>Als gratis: "Upgraden" &rarr; /prijzen</li>
+          <li>Gekochte analyses (lijst met links)</li>
+          <li>Uitloggen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-route">/prijzen</div>
+      <div class="page-name">Prijzen (ingelogd)</div>
+      <div class="page-content">
+        <ul>
+          <li>Zelfde 3 plannen als niet-ingelogd</li>
+          <li>"Start Premium" &rarr; Stripe Checkout <span class="badge badge-stripe">Stripe</span></li>
+          <li>"Start Jaarabonnement" &rarr; Stripe Checkout <span class="badge badge-stripe">Stripe</span></li>
+          <li>Losse analyse: koop-knop op analyse-pagina zelf</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">BETAALFLOW</div>
+
+  <div class="grid-2">
+    <div class="page" style="border: 1px solid #635bff">
+      <div class="page-route" style="background:#f0f0ff; color:#635bff">Stripe Checkout (extern)</div>
+      <div class="page-name">Betaling</div>
+      <div class="page-content">
+        <ul>
+          <li>Gebruiker verlaat de site &rarr; Stripe hosted page</li>
+          <li><strong>Losse analyse (€4,95):</strong> mode=payment</li>
+          <li><strong>Premium maand (€9,95):</strong> mode=subscription</li>
+          <li><strong>Premium jaar (€99,50):</strong> mode=subscription</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-name">Na betaling</div>
+      <div class="page-content">
+        <p><strong>Succes:</strong></p>
+        <ul>
+          <li>Losse analyse &rarr; /analyse/[ticker]?betaald=1</li>
+          <li>Abonnement &rarr; /account?welkom=1</li>
+        </ul>
+        <p style="margin-top:8px"><strong>Geannuleerd:</strong></p>
+        <ul>
+          <li>Losse analyse &rarr; /analyse/[ticker]</li>
+          <li>Abonnement &rarr; /prijzen</li>
+        </ul>
+        <p style="margin-top:8px"><strong>Achter de schermen:</strong> Stripe webhook &rarr; DB update (purchase of subscription)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 3: NAVIGATIE -->
+<!-- ============================================ -->
+<div class="section info">
+  <div class="section-title">Navigatie &amp; info-pagina's</div>
+  <p class="section-desc">Altijd zichtbaar, ongeacht inlogstatus.</p>
+
+  <div class="page" style="max-width:100%; margin-bottom: 20px">
+    <div class="page-name">Header (sticky, altijd zichtbaar)</div>
+    <div class="page-content" style="display:flex; gap:24px; flex-wrap:wrap; align-items:center; padding: 8px 0">
+      <span><strong>[Logo]</strong> &rarr; /</span>
+      <span>Analyses &rarr; /analyses</span>
+      <span>Methode &rarr; /methode</span>
+      <span>Over &rarr; /over</span>
+      <span>Prijzen &rarr; /prijzen</span>
+      <span style="color:#991B1B">Niet ingelogd: <strong>"Toegang"</strong> &rarr; /inloggen</span>
+      <span style="color:#166534">Ingelogd: <strong>[Avatar]</strong> &rarr; /account</span>
+    </div>
+  </div>
+
+  <div class="grid-4">
+    <div class="page">
+      <div class="page-route">/methode</div>
+      <div class="page-name">Methode</div>
+      <div class="page-content">Uitleg van het analyseproces en de 9 frameworks.</div>
+    </div>
+    <div class="page">
+      <div class="page-route">/over</div>
+      <div class="page-name">Over ons</div>
+      <div class="page-content">Achtergrond over het platform en de analist.</div>
+    </div>
+    <div class="page">
+      <div class="page-route">/disclaimer</div>
+      <div class="page-name">Disclaimer</div>
+      <div class="page-content">Geen beleggingsadvies, juridische tekst.</div>
+    </div>
+    <div class="page">
+      <div class="page-route">/privacy</div>
+      <div class="page-name">Privacy</div>
+      <div class="page-content">Privacybeleid.</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================ -->
+<!-- SECTION 4: BACKEND / WAT ONTBREEKT -->
+<!-- ============================================ -->
+<div class="section backend">
+  <div class="section-title">Achter de schermen &amp; wat ontbreekt</div>
+
+  <div class="grid-2">
+    <div class="page">
+      <div class="page-name">Stripe Webhooks (werkt)</div>
+      <div class="page-content">
+        <ul>
+          <li><code>checkout.session.completed</code> &rarr; Purchase of Subscription aanmaken</li>
+          <li><code>customer.subscription.updated</code> &rarr; Plan/status updaten</li>
+          <li><code>customer.subscription.deleted</code> &rarr; Terug naar GRATIS</li>
+          <li><code>invoice.payment_failed</code> &rarr; Status PAST_DUE</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-name">NEXT_PUBLIC_UNLOCK</div>
+      <div class="page-content">
+        <p>In <code>.env.local</code> staat <code>NEXT_PUBLIC_UNLOCK=1</code></p>
+        <p style="margin-top:6px">Dit schakelt de PaywallGate <strong>volledig uit</strong> &mdash; alle content is zichtbaar zonder betaling.</p>
+        <p style="margin-top:6px; font-weight:600">Check: staat dit ook op Vercel? Dan ziet iedereen alles gratis.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-red" style="margin-top: 20px">
+    <p style="font-size:14px; font-weight:700; color:#991B1B; margin-bottom:8px">Wat ontbreekt</p>
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px">
+      <div>
+        <p><strong>Admin dashboard</strong></p>
+        <p>Geen /admin route. Geen overzicht van gebruikers, aankopen, of abonnementen. Alleen via directe database-queries.</p>
+      </div>
+      <div>
+        <p><strong>Email notificaties</strong></p>
+        <p>Geen email bij registratie, aankoop, of abonnement. Geen email-provider (Resend/SendGrid) geconfigureerd. Newsletter form is disabled.</p>
+      </div>
+      <div>
+        <p><strong>Middleware / route protection</strong></p>
+        <p>Geen server-side auth middleware. /account checkt session server-side, maar premium content wordt alleen client-side geblurred (PaywallGate). HTML bevat de data.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

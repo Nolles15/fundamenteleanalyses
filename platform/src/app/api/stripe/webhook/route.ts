@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { stripe } from '@/lib/stripe'
 import { prisma } from '@/lib/prisma'
+import {
+  notifyAdminPurchase,
+  notifyAdminSubscription,
+  notifyAdminCancellation,
+} from '@/lib/email'
 import type Stripe from 'stripe'
 
 export async function POST(req: NextRequest) {
@@ -39,6 +44,8 @@ export async function POST(req: NextRequest) {
             update: {},
             create: { userId, ticker },
           })
+          const buyer = await prisma.user.findUnique({ where: { id: userId }, select: { email: true } })
+          if (buyer) notifyAdminPurchase(buyer.email, ticker)
         }
       }
 
@@ -53,11 +60,12 @@ export async function POST(req: NextRequest) {
           ? new Date(firstItem.current_period_end * 1000)
           : null
 
+        const plan = isYearly ? 'PREMIUM_JAAR' as const : 'PREMIUM_MAAND' as const
         await prisma.subscription.upsert({
           where: { userId },
           update: {
             stripeSubscriptionId: subscriptionId,
-            plan: isYearly ? 'PREMIUM_JAAR' : 'PREMIUM_MAAND',
+            plan,
             status: 'ACTIVE',
             currentPeriodEnd: periodEnd,
           },
@@ -65,11 +73,13 @@ export async function POST(req: NextRequest) {
             userId,
             stripeCustomerId: session.customer as string,
             stripeSubscriptionId: subscriptionId,
-            plan: isYearly ? 'PREMIUM_JAAR' : 'PREMIUM_MAAND',
+            plan,
             status: 'ACTIVE',
             currentPeriodEnd: periodEnd,
           },
         })
+        const subscriber = await prisma.user.findUnique({ where: { id: userId }, select: { email: true } })
+        if (subscriber) notifyAdminSubscription(subscriber.email, plan)
       }
       break
     }
@@ -108,6 +118,11 @@ export async function POST(req: NextRequest) {
       const subscription = event.data.object as Stripe.Subscription
       const customerId = subscription.customer as string
 
+      const cancelledSub = await prisma.subscription.findUnique({
+        where: { stripeCustomerId: customerId },
+        include: { user: { select: { email: true } } },
+      })
+
       await prisma.subscription.updateMany({
         where: { stripeCustomerId: customerId },
         data: {
@@ -116,6 +131,8 @@ export async function POST(req: NextRequest) {
           stripeSubscriptionId: null,
         },
       })
+
+      if (cancelledSub) notifyAdminCancellation(cancelledSub.user.email)
       break
     }
 

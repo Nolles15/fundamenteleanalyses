@@ -2,6 +2,7 @@
 
 import { hash } from 'bcryptjs'
 import { prisma } from '@/lib/prisma'
+import { notifyAdminNewUser } from '@/lib/email'
 
 type Result =
   | { success: true }
@@ -42,6 +43,9 @@ export async function registreer(formData: FormData): Promise<Result> {
       },
     },
   })
+
+  // Admin-notificatie (fire-and-forget)
+  notifyAdminNewUser(naam, email)
 
   return { success: true }
 }
