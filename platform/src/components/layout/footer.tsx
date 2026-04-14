@@ -13,7 +13,7 @@ export function Footer() {
               <span className="font-semibold text-text-primary font-sans">Aandelenanalyse</span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed font-sans">
-              Fundamentele Europese aandelenanalyses via een RA-geverifieerd proces.
+              Fundamentele Europese aandelenanalyses. AI-geassisteerd, handmatig geverifieerd.
             </p>
           </div>
 

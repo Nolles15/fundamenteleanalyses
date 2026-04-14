@@ -15,7 +15,7 @@ export default function MethodePage() {
       </h1>
       <p className="text-lg text-text-secondary font-sans mb-12 max-w-2xl">
         Elke analyse doorloopt hetzelfde gestandaardiseerde proces: 9 frameworks, een
-        DCF-waardering en een RA-geverifieerd controlesysteem. Zo is elke analyse vergelijkbaar
+        DCF-waardering en een handmatig controlesysteem. Zo is elke analyse vergelijkbaar
         en reproduceerbaar.
       </p>
 
@@ -33,7 +33,7 @@ export default function MethodePage() {
               {
                 stap: '2',
                 titel: 'Controle',
-                tekst: 'Alle cijfers worden gecontroleerd via een vast controlesysteem, opgezet volgens de methodiek van een Register Accountant.',
+                tekst: 'Alle cijfers worden handmatig gecontroleerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.',
               },
               {
                 stap: '3',
@@ -110,17 +110,17 @@ export default function MethodePage() {
           </p>
         </section>
 
-        {/* RA-verificatie */}
+        {/* Verificatie */}
         <section>
-          <h2>RA-geverifieerd proces</h2>
+          <h2>Verificatieproces</h2>
           <p>
             Het controlesysteem verifieert de juistheid van alle gepresenteerde financi&euml;le
             data (omzet, winst, schuldratio&apos;s, kasstromen) tegen primaire bronnen zoals
-            jaarverslagen en kwartaalcijfers. Dit systeem is opgezet volgens de methodiek van
-            een Register Accountant.
+            jaarverslagen en kwartaalcijfers. Elke claim in de analyse bevat een bronverwijzing
+            met paginanummer, zodat de verificatie traceerbaar is.
           </p>
           <p>
-            De Register Accountant beoordeelt niet de beleggingsthese, DCF-aannames of het
+            Het verificatieproces beoordeelt niet de beleggingsthese, DCF-aannames of het
             KOOP/HOLD/PASS-oordeel. Die verantwoordelijkheid ligt bij het analyseproces zelf.
           </p>
         </section>

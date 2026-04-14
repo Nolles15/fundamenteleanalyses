@@ -10,7 +10,7 @@ const items = [
   },
   {
     q: 'Hoe worden analyses gecontroleerd?',
-    a: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Dit systeem is opgezet volgens de methodiek van een Register Accountant. Alle gepresenteerde data wordt geverifieerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.',
+    a: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Alle gepresenteerde data wordt handmatig geverifieerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.',
   },
   {
     q: 'Hoe vaak komen er nieuwe analyses?',

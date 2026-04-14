@@ -2,14 +2,14 @@
 
 **Datum:** 22 maart 2026
 **Status:** Conceptanalyse — intern gebruik
-**Versie:** 3.0 (bijgewerkt na externe review: RA-efficiency, DCF engine, thesis tracker, premium pricing)
+**Versie:** 3.1 (bijgewerkt: DCF engine, thesis tracker, premium pricing, RA-verwijzingen verwijderd)
 
 ---
 
 ## Inhoudsopgave
 
 1. Wat heb je nu?
-2. Pipeline: AI + registeraccountant als schaalbaar model
+2. Pipeline: AI-skill als schaalbaar model
 3. Productanalyse — wat is er goed, wat mist er, hoe ziet het er professioneel uit?
 4. Technisch voorstel: herbouwen van nul
 5. Commercieel voorstel: van hobby naar product
@@ -45,9 +45,9 @@ De gestructureerde JSON-output (volledig gedocumenteerd in COWORK_EXPORT.md) maa
 
 ---
 
-## 2. Pipeline: AI + registeraccountant als schaalbaar model
+## 2. Pipeline: AI-skill als schaalbaar model
 
-Dit is het centrale inzicht dat alles verandert. De combinatie van een Claude-skill en een registeraccountant als reviewer lost het grootste probleem van elk analyses-platform op: kwaliteit vs. snelheid vs. kosten.
+Dit is het centrale inzicht dat alles verandert. De Claude-skill lost het grootste probleem van elk analyses-platform op: kwaliteit vs. snelheid vs. kosten.
 
 ### Hoe de pipeline werkt
 
@@ -60,54 +60,40 @@ Dit is het centrale inzicht dat alles verandert. De combinatie van een Claude-sk
   - DCF + scenario's + gevoeligheidsmatrix
   - JSON-output automatisch gegenereerd
         ↓
-[Registeraccountant: review ~1-2 uur per analyse]
+[Handmatige review door Janco]
   - Verificatie van financiële cijfers
   - Beoordeling DCF-aannames
   - Correctie eventuele fouten
-  - Aftekening met initialen/naam
         ↓
-[Deploy: python deploy.py → live in seconden]
+[Deploy: live in seconden]
 ```
 
 ### Wat dit betekent voor schaalbaarheid
 
-Zonder RA-stap zou je zelf 4-8 uur per analyse besteden. Met deze pipeline:
+Handmatig zou je 4-8 uur per analyse besteden. Met deze pipeline:
 - **Jouw tijdsinvestering**: 30-60 minuten per analyse (invoer, review, eventuele correcties)
-- **RA-tijdsinvestering**: 1-2 uur per analyse → teruggebracht naar 20-40 min via audit trail (zie hieronder)
-- **Totale tijd per analyse**: 2-3 uur (was: 4-8 uur)
-- **Realistisch volume**: 3-5 analyses per week bij structureel samenwerken
+- **Totale tijd per analyse**: 1-2 uur (was: 4-8 uur)
+- **Realistisch volume**: 3-5 analyses per week
 
-### RA-efficiency: de audit trail
+### Audit trail voor kwaliteitsborging
 
-De grootste bottleneck is de RA-reviewtijd. Oplossing: de AI noteert bij elke financiële claim de bron en paginanummer. Dit is geïmplementeerd als een `bronnen[]` array in het JSON-schema en als inline-citaten in de Markdown-analyse.
+De AI noteert bij elke financiële claim de bron en paginanummer. Dit is geïmplementeerd als een `bronnen[]` array in het JSON-schema en als inline-citaten in de Markdown-analyse.
 
-Concreet: in plaats van dat de RA het jaarverslag zelf opzoekt om omzetcijfers te controleren, ziet hij:
+Concreet:
 
 ```json
 { "sectie": "H2.1 Resultatenrekening", "claim": "Omzet FY2024: €1.792 mld",
   "bron": "Jaarverslag 2024", "pagina": 42 }
 ```
 
-De RA hoeft alleen de geciteerde pagina's op te slaan en te verifiëren. Spot-check in plaats van volledige verificatie. Conservatieve schatting: reviewtijd van 1-2 uur naar 20-40 minuten.
-
-Bij 4 analyses/week zijn dat 200 analyses per jaar. Bij het huidige tempo (1-2/week) zijn het 50-100. Beide zijn enorme verbeteringen ten opzichte van handmatig schrijven.
-
-### De waarde van de RA-handtekening
-
-Dit is geen detail — dit is een strategisch voordeel. De registeraccountant:
-- Voegt wettelijk gewicht toe (RA is een beschermd beroep met tuchtrecht)
-- Maakt de disclaimer sterker: "gecontroleerd door een registeraccountant" vs. "door een individu"
-- Verhoogt de bereidheid om te betalen significant
-- Beschermt tegen juridische aansprakelijkheid als een analyse fouten bevat
-
-**Aanbeveling**: Maak de reviewer zichtbaar op de site. Naam, foto, RA-registratienummer. Dit vertrouwenssignaal is veel waard.
+Spot-check in plaats van volledige verificatie. Bij 4 analyses/week zijn dat 200 analyses per jaar. Bij het huidige tempo (1-2/week) zijn het 50-100. Beide zijn enorme verbeteringen ten opzichte van handmatig schrijven.
 
 ### Pipeline automatisering (volgende stap)
 
 Resterende handmatige stap: het pushen naar GitHub. Oplossingen in volgorde van eenvoud:
-1. **Nu**: `python deploy.py` in terminal — werkt al
-2. **Korte termijn**: Automatisch domein invullen als onderdeel van JSON (skill al aanwezig in COWORK_EXPORT.md), geen interactieve prompt meer nodig
-3. **Nieuwe platform**: Directe upload-functionaliteit in admin-interface — RA uploadt gecheckte JSON, auto-deploy
+1. **Nu**: directe upload via admin-interface
+2. **Korte termijn**: Automatisch domein invullen als onderdeel van JSON, geen interactieve prompt meer nodig
+3. **Nieuwe platform**: Directe upload-functionaliteit in admin-interface — gecheckte JSON, auto-deploy
 
 ---
 
@@ -126,7 +112,6 @@ Resterende handmatige stap: het pushen naar GitHub. Oplossingen in volgorde van 
 
 **Vertrouwen**
 - Auteursprofiel (wie ben jij? wat is je beleggingsachtergrond?)
-- RA-profiel en registratienummer zichtbaar
 - Methode-pagina: hoe werkt de scorekaart, hoe komt de DCF tot stand?
 - Trackrecord-pagina: eerdere oordelen vs. werkelijk koersverloop
 - Uitgebreide disclaimer en risicowaarschuwing
@@ -219,7 +204,7 @@ Deploy: Vercel (gratis tier voldoende).
 - Stripe voor abonnementsbeheer
 - Middleware die premium-content afschermt
 - Gratis tier: samenvatting + scorekaart zichtbaar, volledige analyse achter betaalwall
-- Admin-interface: RA kan gecheckte JSON uploaden → auto-deploy
+- Admin-interface: gecheckte JSON uploaden → auto-deploy
 
 **Fase 2: Freemium + accounts (4-8 weken na Fase 1)**
 
@@ -228,7 +213,7 @@ Deploy: Vercel (gratis tier voldoende).
 - Middleware die premium-content afschermt
 - Gratis tier: samenvatting + scorekaart zichtbaar, volledige analyse achter betaalwall
 - **Interactive DCF Engine**: JSON bevat alle ruwe variabelen (FCF, WACC, g, shares_outstanding, nettoschuld). De frontend doet live herberekeningen — geen API-aanroep nodig. Dit is pure wiskunde in de browser en past in Fase 2 (niet Fase 3 zoals eerder gedacht).
-- Admin-interface: RA kan gecheckte JSON uploaden → auto-deploy
+- Admin-interface: gecheckte JSON uploaden → auto-deploy
 
 **Fase 3: Interactieve features (8-16 weken na Fase 2)**
 
@@ -278,7 +263,7 @@ Dit levert een functioneel Engelstalig platform zonder structurele technische sc
 
 **Unieke waarde:**
 1. Europese small/midcap focus (vrijwel ongedekt)
-2. AI-gegenereerd + RA-gecheckt (combinatie van snelheid en geloofwaardigheid)
+2. AI-gegenereerd + handmatig gecheckt (combinatie van snelheid en geloofwaardigheid)
 3. Gestandaardiseerde scorekaart (vergelijkbaar over bedrijven)
 4. Diepte: pre-IPO analyse, vijf investeringsframeworks, gevoeligheidsmatrix
 
@@ -315,7 +300,7 @@ Dit levert een functioneel Engelstalig platform zonder structurele technische sc
 
 - 100+ analyses beschikbaar
 - Engelstalige markt actief benaderen
-- Evt. tweede reviewer/analist (RA-netwerk)
+- Evt. tweede reviewer/analist
 - Cursusproduct: "Fundamentele analyse voor retail-beleggers" (€97-€197)
 - Community (Discord voor abonnees)
 
@@ -381,27 +366,6 @@ Gepersonaliseerd beleggingsadvies vereist een AFM-vergunning. Analyses als infor
 **Standaard disclaimer (opnemen op elke pagina en analyse):**
 > "De analyses op dit platform zijn uitsluitend bedoeld voor informatieve en educatieve doeleinden. Ze vormen geen beleggingsadvies in de zin van de Wet op het financieel toezicht (Wft). Beleggen brengt risico's met zich mee. U kunt uw inleg geheel of gedeeltelijk verliezen. Raadpleeg een erkend financieel adviseur voordat u beleggingsbeslissingen neemt."
 
-### RA als reviewer — juridische implicaties (VERSCHERPT v3.0)
-
-De registeraccountant verrifieert uitsluitend de **data-integriteit**: kloppen de gepresenteerde financiële cijfers met de bronnen? Hij beoordeelt uitdrukkelijk **niet** de beleggingsthese, de DCF-aannames of het KOOP/HOLD/PASS-oordeel. Dit onderscheid is cruciaal voor de AFM-vrijstelling:
-
-| RA verifieert WEL | RA verifieert NIET |
-|-------------------|-------------------|
-| Omzetcijfers kloppen met jaarverslag | Of het aandeel een goede investering is |
-| Schuldratio's correct berekend | DCF-groeiprognoses |
-| Bronvermeldingen traceerbaar | Het eindoordeel KOOP/HOLD/PASS |
-| Geen rekenfouten in tabellen | Sectoranalyse of moat-beoordeling |
-
-**Communicatie op de site:**
-- "Financiële data geverifieerd door [naam RA], registeraccountant [nummer]"
-- NIET: "Aanbeveling goedgekeurd door RA" (dat is beleggingsadvies)
-
-**Werkafspraken met de RA (formaliseren voor lancering):**
-- Schriftelijke overeenkomst over scope (data-integriteit, niet beleggingsadvies)
-- Tarief per analyse (marktconform: €75-€150/analyse)
-- Aansprakelijkheidsverdeling vastleggen
-- De `bronnen[]` audit trail in de JSON is specifiek gebouwd om de RA-taak te vergemakkelijken
-
 ### Aansprakelijkheid
 
 Als een analyse een fout bevat die leidt tot beleggingsverlies, is aansprakelijkheid in principe beperkt door de disclaimer. Toch:
@@ -434,15 +398,15 @@ Bij e-mailadressen en betalingsgegevens:
 
 ### Rode vlag 1: Kwaliteitsborging bij schaal
 
-De RA-review is de kwaliteitsgarantie. Risico: bij te hoog volume wordt de review oppervlakkig. Als de RA 10 analyses per week moet reviewen naast andere werkzaamheden, laat de kwaliteit af.
+Bij te hoog volume wordt de handmatige review oppervlakkig. De audit trail (`bronnen[]` array) helpt bij spot-checks, maar er is een limiet aan wat één persoon kan reviewen.
 
-**Mitigatie**: Volume afspreken met RA van tevoren. Liever 3 kwalitatieve analyses per week dan 7 halfbakken.
+**Mitigatie**: Liever 3 kwalitatieve analyses per week dan 7 halfbakken.
 
 ### Rode vlag 2: AI-gegenereerde analyses als reputatierisico
 
 Als het publiek ontdekt dat analyses primair AI-gegenereerd zijn, kan dit vertrouwen schaden. In de huidige markt is dit een genuanceerd punt.
 
-**Mitigatie**: Volledige transparantie over het proces. "AI-geassisteerd, door registeraccountant geverifieerd" is een sterkere propositie dan proberen dit te verbergen. De skill zelf is jouw intellectuele eigendom — het framework, de criteria, de vragen die gesteld worden. Dat is het product.
+**Mitigatie**: Volledige transparantie over het proces. "AI-geassisteerd, handmatig geverifieerd" is een sterkere propositie dan proberen dit te verbergen. De skill zelf is jouw intellectuele eigendom — het framework, de criteria, de vragen die gesteld worden. Dat is het product.
 
 ### Rode vlag 3: Trackrecord → opgelost via Thesis Tracker
 
@@ -486,7 +450,7 @@ Het huidige HTML-bestand schaalt niet. Maar: herbouwen kost tijd die anders in a
 
 Dit heeft alle ingrediënten voor een succesvol niche-product:
 - Onderscheidende content (Europese small caps, professioneel framework)
-- Schaalbare pipeline (AI + RA)
+- Schaalbare pipeline (AI-skill + handmatige review)
 - Herbruikbare technische kennis (Next.js, Vercel, Stripe, Resend)
 - Realistisch marktgat (Nederlandstalig én Engelstalig)
 
@@ -497,8 +461,7 @@ De uitdaging is volgorde: bouwen kost tijd, maar zonder bereik heeft een betaald
 **Direct (week 1-2)**
 - Eigen domein kopen en koppelen aan huidige site
 - Google Analytics toevoegen
-- Disclaimer toevoegen
-- RA-samenwerking formaliseren (afspraken over volume, tarief, aansprakelijkheid)
+- Disclaimer toevoegen aan alle analysepagina's
 
 **Fase 1: Platform bouwen (maand 1-2)**
 - Next.js-platform bouwen met professioneel design
@@ -514,19 +477,16 @@ De uitdaging is volgorde: bouwen kost tijd, maar zonder bereik heeft een betaald
 **Fase 2: Freemium (maand 4-8)**
 - Auth.js + Stripe toevoegen
 - Betaalwall voor volledige analyses
-- Admin-interface voor RA-upload
+- Admin-interface voor analyse-upload
 - Doel: 50 betalende abonnees
 
 **Fase 3: Schaal (maand 8-24)**
 - 100+ analyses
 - DCF-calculator en vergelijkingsfunctie
 - Engelstalige markt actief benaderen
-- Evt. tweede reviewer
 - Cursusproduct
 
 ### Eerlijkheid
-
-De RA-stap is de gamechanger ten opzichte van de eerste versie van dit plan. Het maakt het platform juridisch robuuster, onderscheidender van concurrenten, en geloofwaardiger voor betalers. Maar het vereist een goede werkafspraak: duidelijke taakverdeling, goed tarief, en volume dat voor beiden haalbaar is.
 
 De techniek is het minste probleem — die kennis is al aanwezig. De grootste onzekerheid blijft: is er voldoende vraag? Dat weet je pas na 6-12 maanden actief publiceren. Begin gratis, meet, en schaal pas als de markt het vraagt.
 

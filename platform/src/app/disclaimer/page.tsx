@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Disclaimer',
   description:
-    'Aandelenanalyse.nl is geen beleggingsadvies. Lees onze volledige disclaimer over de Wft-vrijstelling en het RA-geverifieerde proces.',
+    'Aandelenanalyse.nl is geen beleggingsadvies. Lees onze volledige disclaimer over de Wft-vrijstelling en ons verificatieproces.',
 }
 
 export default function DisclaimerPage() {
@@ -33,12 +33,12 @@ export default function DisclaimerPage() {
         </section>
 
         <section>
-          <h2>RA-geverifieerd proces</h2>
+          <h2>Verificatieproces</h2>
           <p>
-            De financi&euml;le data in onze analyses wordt gecontroleerd via een vast controlesysteem dat
-            is opgezet volgens de methodiek van een Register Accountant. Dit betreft uitsluitend
-            verificatie van de juistheid van gepresenteerde cijfers (omzet, winst, schuldratio&apos;s) tegen
-            primaire bronnen. De Register Accountant beoordeelt niet de beleggingsthese, DCF-aannames
+            De financi&euml;le data in onze analyses wordt handmatig gecontroleerd via een vast
+            controlesysteem. Dit betreft uitsluitend verificatie van de juistheid van gepresenteerde
+            cijfers (omzet, winst, schuldratio&apos;s) tegen primaire bronnen zoals jaarverslagen en
+            kwartaalcijfers. Het verificatieproces beoordeelt niet de beleggingsthese, DCF-aannames
             of het KOOP/HOLD/PASS-oordeel.
           </p>
         </section>

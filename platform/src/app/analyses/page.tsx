@@ -6,7 +6,7 @@ import { HomepageGrid } from '@/components/cards/homepage-grid'
 export const metadata: Metadata = {
   title: 'Alle Analyses — Fundamentele aandelenanalyses',
   description:
-    'Overzicht van alle fundamentele aandelenanalyses. Filter op oordeel, sorteer op upside of score. RA-geverifieerd proces.',
+    'Overzicht van alle fundamentele aandelenanalyses. Filter op oordeel, sorteer op upside of score. Handmatig geverifieerd.',
 }
 
 export default function AnalysesPage() {

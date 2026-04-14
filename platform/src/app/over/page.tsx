@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Over Ons',
   description:
-    'Over aandelenanalyse.nl: diepgaande fundamentele analyses van Europese aandelen via een RA-geverifieerd proces.',
+    'Over aandelenanalyse.nl: diepgaande fundamentele analyses van Europese aandelen. AI-geassisteerd, handmatig geverifieerd.',
 }
 
 export default function OverPage() {
@@ -15,7 +15,7 @@ export default function OverPage() {
       </h1>
       <p className="text-lg text-text-secondary font-sans mb-12 max-w-2xl">
         Diepgaande fundamentele analyses van Europese aandelen. Onafhankelijk, gestandaardiseerd
-        en gecontroleerd via een RA-geverifieerd proces.
+        en handmatig geverifieerd.
       </p>
 
       <div className="prose-analyse space-y-6">
@@ -32,9 +32,9 @@ export default function OverPage() {
         <section>
           <h2>Onze aanpak</h2>
           <p>
-            Wij combineren AI-geassisteerd onderzoek met een RA-geverifieerd controlesysteem. Het
+            Wij combineren AI-geassisteerd onderzoek met een handmatig controlesysteem. Het
             AI-proces levert snelheid en consistentie: elke analyse volgt exact hetzelfde framework.
-            Het controlesysteem levert betrouwbaarheid: alle financi&euml;le cijfers worden
+            De handmatige controle levert betrouwbaarheid: alle financi&euml;le cijfers worden
             geverifieerd tegen primaire bronnen.
           </p>
           <p>

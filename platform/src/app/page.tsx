@@ -63,7 +63,7 @@ export default function HomePage() {
       {
         '@type': 'Question',
         name: 'Hoe worden analyses gecontroleerd?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Dit systeem is opgezet volgens de methodiek van een Register Accountant.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Alle data wordt handmatig geverifieerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.' },
       },
       {
         '@type': 'Question',
@@ -104,7 +104,7 @@ export default function HomePage() {
 
                 {/* Social proof badges */}
                 <div className="flex flex-wrap gap-3 mb-8">
-                  {['RA-geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
+                  {['Handmatig geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
                     <span
                       key={badge}
                       className="text-xs font-medium text-text-secondary bg-bg-muted px-3 py-1.5 rounded-full font-sans"
@@ -147,7 +147,7 @@ export default function HomePage() {
               <span className="hidden sm:inline">&middot;</span>
               <span>9 frameworks per analyse</span>
               <span className="hidden sm:inline">&middot;</span>
-              <span>RA-geverifieerd proces</span>
+              <span>Handmatig geverifieerd</span>
               <span className="hidden sm:inline">&middot;</span>
               <span>Europese small &amp; midcap focus</span>
             </div>

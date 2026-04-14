@@ -17,11 +17,11 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Fundamentele aandelenanalyses — RA-geverifieerd | Aandelenanalyse.nl',
+    default: 'Fundamentele aandelenanalyses — Europese aandelen | Aandelenanalyse.nl',
     template: '%s | Aandelenanalyse',
   },
   description:
-    'Diepgaande fundamentele analyses van Europese aandelen. DCF-waardering, scorekaarten en investeringsoordelen. RA-geverifieerd proces. Gratis toegankelijk.',
+    'Diepgaande fundamentele analyses van Europese aandelen. DCF-waardering, scorekaarten en investeringsoordelen. Gratis toegankelijk.',
   metadataBase: new URL('https://aandelenanalyse.nl'),
 }
 
