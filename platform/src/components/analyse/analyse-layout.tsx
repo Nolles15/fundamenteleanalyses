@@ -81,7 +81,7 @@ export function AnalyseLayout({ tabs, children }: AnalyseLayoutProps) {
       <div className="lg:flex lg:gap-10 pt-8 lg:pt-10">
         {/* Desktop sidebar */}
         <aside className="hidden lg:block w-52 shrink-0" aria-label="Secties">
-          <nav className="sticky top-24">
+          <nav className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto no-scrollbar">
             <p className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-3 px-3 font-sans">
               Inhoud
             </p>
