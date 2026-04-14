@@ -1,6 +1,6 @@
 # User Flow & Customer Journey — Aandelenanalyse.nl
 
-**Datum:** 13 april 2026 (bijgewerkt)
+**Datum:** 14 april 2026 (bijgewerkt)
 **Status:** Actuele staat — reflecteert wat er gebouwd is
 **Doel:** Hoe beweegt een gebruiker door het platform, van ontdekking tot betaling?
 
@@ -23,6 +23,10 @@ fundamenteleanalyses.vercel.app/
 ├── /methode                    Methode-uitleg
 ├── /over                       Over ons
 ├── /prijzen                    Pricing (3 tiers + checkout)
+├── /leren                      Educatieve artikelen (SEO)
+│   ├── /leren/fundamentele-analyse
+│   ├── /leren/dcf-waardering
+│   └── /leren/moat-analyse
 ├── /disclaimer                 Wft-disclaimer
 ├── /privacy                    Privacyverklaring
 │
@@ -279,16 +283,17 @@ Elk moment waarop we de gebruiker richting een actie sturen:
 
 ## Samenvatting: wat is gebouwd en wat is open
 
-**Bijgewerkt: 13 april 2026**
+**Bijgewerkt: 14 april 2026**
 
 ### LIVE op productie
 
 | Pagina/Feature | Route | Status |
 |----------------|-------|--------|
-| Homepage (landing page) | `/` | LIVE — hero, spotlight, previews, FAQ, adaptief voor ingelogd/uitgelogd |
+| Homepage (landing page) | `/` | LIVE — hero, spotlight, previews, FAQ, adaptief voor ingelogd/uitgelogd, mobiel-geoptimaliseerd |
 | Alle analyses overzicht | `/analyses` | LIVE — grid met filter/sort |
-| Analyse detail (4 tickers) | `/analyse/[ticker]` | LIVE — 10 tabs, conditionele paywall |
+| Analyse detail (5 tickers) | `/analyse/[ticker]` | LIVE — 10 tabs, conditionele paywall, verduidelijkte waardering-sectie |
 | Marktcategorieën | `/markt/[categorie]` | LIVE — 4 categorieën |
+| Leren (SEO) | `/leren/*` | LIVE — 3 artikelen (fundamentele analyse, DCF, moat) |
 | Auth (login/register) | `/inloggen`, `/registreren` | LIVE — credentials, JWT, callbackUrl doorgifte |
 | Account | `/account` | LIVE — profiel, plan, gekochte analyses, uitloggen |
 | Paywall component | op analyse-pagina | LIVE — blur + CTA, access levels per tab |
@@ -300,8 +305,10 @@ Elk moment waarop we de gebruiker richting een actie sturen:
 | Privacy | `/privacy` | LIVE |
 | SEO | sitemap, robots, structured data | LIVE |
 | Admin dashboard | `/admin` | LIVE — KPI's, recente registraties/aankopen |
-| Admin gebruikers | `/admin/gebruikers` | LIVE — volledige tabel, plan/status/aankopen |
+| Admin gebruikers | `/admin/gebruikers` | LIVE — volledige tabel, plan wijzigen, analyses toekennen |
 | Email-notificaties | Resend | LIVE — admin krijgt mail bij registratie, aankoop, abo, opzegging |
+| Sessie-crashbescherming | proxy.ts + ErrorBoundary | LIVE — 3-laags (JWT try/catch, SessionErrorBoundary, proxy onError) |
+| Mobiel hamburger-menu | header.tsx | LIVE — full-screen overlay, scroll lock, auto-close |
 
 ### OPEN (nog te bouwen)
 
@@ -310,7 +317,7 @@ Elk moment waarop we de gebruiker richting een actie sturen:
 | Stripe producten configureren | Hoog | Code klaar, producten in Stripe Dashboard aanmaken |
 | Custom domein | Hoog | aandelenanalyse.nl koppelen in Vercel |
 | Resend domein verificatie | Medium | Zodat emails van eigen domein komen |
-| Meer analyses | Hoog | 4 van doel 25+ |
+| Meer analyses | Hoog | 5 van doel 25+ |
 | Newsletter backend | Medium | UI disabled, Resend/Buttondown nog niet opgezet |
 | Server-side middleware | Medium | Premium content nu alleen client-side geblurred |
 | Zoekfunctie | Medium | `/zoeken` nog niet gebouwd |
@@ -324,7 +331,7 @@ Elk moment waarop we de gebruiker richting een actie sturen:
 |---------|-------|
 | `/dashboard` | Vervangen door PersonalSection op homepage + /account |
 | `/watchlist` | Niet nodig in huidige scope |
-| Mobiele bottom nav (publiek) | Niet gebouwd, mobiel hamburger-menu overbodig door eenvoudige header |
+| RA-verwijzingen | Vervangen door "procescontrole + steekproefsgewijze verificatie" (14 april 2026) |
 
 ---
 

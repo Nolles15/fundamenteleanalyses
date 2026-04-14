@@ -1,6 +1,6 @@
 # Bouwplan: Aandelenanalyse Platform
 
-**Versie:** 1.0 — 9 april 2026
+**Versie:** 1.1 — 14 april 2026
 **Doel:** Werkdocument voor de technische bouw. Elke sectie bevat genoeg detail om direct te implementeren met een goedkoper model.
 **Tijdlijn:** ~1 week als richtlijn — geen concessies op kwaliteit
 **Principe:** Kies het juiste pad, niet het snelste
@@ -37,7 +37,7 @@ npx create-next-app@latest aandelenanalyse-platform \
 
 | Onderdeel | Keuze | Waarom |
 |-----------|-------|--------|
-| Framework | Next.js 15 App Router | SSG, bekende stack, Vercel deploy |
+| Framework | Next.js 16 App Router | SSG, bekende stack, Vercel deploy |
 | Styling | Tailwind CSS v4 | Snelheid, consistentie |
 | UI-componenten | Eigen componenten | Geen shadcn — te veel overhead voor een content-site |
 | Typografie | Lora (serif, analyses) + Inter (sans, UI) | Premium gevoel voor financiële content |
@@ -259,14 +259,14 @@ Regels:
 
 ### TypeScript types (lib/types.ts)
 
-Deze types mappen op het **nieuwste JSON-schema** (april 2026 skill-update). Alle velden die niet in elke analyse voorkomen zijn optioneel (`?`). Componenten handelen ontbrekende data graceful af. De types zijn backward compatible met oude exports.
+Deze types mappen op het **nieuwste JSON-schema** (april 2026 skill-update). Alle velden die niet in elke analyse voorkomen zijn optioneel (`?`). Componenten handelen ontbrekende data graceful af.
 
-**Gouden regel:** Als de analyse-skill verandert, pas je `lib/types.ts` aan en het bijbehorende tab-component. Maximaal 2 bestanden per wijziging.
+**Gouden regel:** Als de analyse-skill verandert, pas je `lib/types.ts` aan en het bijbehorende component. Maximaal 2 bestanden per wijziging.
 
-**Nieuw vs. oud schema:** Het nieuwste schema bevat o.a. `sector_concurrentie` (Porter, concurrenten), `analyseframeworks` (Graham/Buffett/Lynch/Fisher/Greenblatt), `risicos` (array), `fair_value.wacc` (volledige WACC-opbouw), `reverse_dcf`, `epv`, `ddm`, `sotp`, `synthese`, twee gevoeligheidsmatrices, `financieel.dividend` en `databronnen`. De actuele types staan in `platform/src/lib/types.ts`.
+**Actuele types:** Zie `platform/src/lib/types.ts` — dat is de ENIGE bron van waarheid. De onderstaande snippet is een versimpelde weergave van de toplevel-structuur. Raadpleeg altijd het bestand zelf voor het volledige schema.
 
 ```typescript
-// ─── TOPLEVEL ─────────────────────────────────────────────
+// ─── TOPLEVEL (versimpeld — zie types.ts voor alle velden) ─────
 
 export interface Analyse {
   meta: Meta
@@ -275,306 +275,20 @@ export interface Analyse {
   financieel: Financieel
   moat: Moat
   management: Management
+  sector_concurrentie?: SectorConcurrentie
+  analyseframeworks?: AnalyseFrameworks
+  risicos?: Risico[]
+  esg?: ESG
   katalysatoren?: Katalysator[]
   fair_value: FairValue
   scorekaart: Scorekaart
-  bronnen?: Bronnen
-  thesis_tracker?: ThesisTracker
-}
-
-// ─── META ─────────────────────────────────────────────────
-
-export interface Meta {
-  ticker: string
-  exchange: string
-  naam: string
-  sector: string
-  segment?: string
-  koers: number
-  valuta: string
-  peildatum: string
-  marktkapitalisatie?: string
-  domein?: string
-}
-
-// ─── EXECUTIVE SUMMARY ───────────────────────────────────
-
-export interface ExecutiveSummary {
-  kernthese: string
-  kernthese_en?: string
-  oordeel: 'KOOP' | 'HOLD' | 'PASS'
-  koers: number
-  valuta: string
-  fair_value_basis: number
-  upside_pct: number
-  fair_value_scenarios: Scenario[]
-  grootste_kans: string
-  grootste_kans_en?: string
-  grootste_risico: string
-  grootste_risico_en?: string
-}
-
-export interface Scenario {
-  scenario: string
-  fair_value: number
-  upside_pct: number
-  fcf_groei_pct?: number
-  wacc_pct?: number
-}
-
-// ─── BEDRIJFSPROFIEL ─────────────────────────────────────
-
-export interface Bedrijfsprofiel {
-  beschrijving: string
-  beschrijving_en?: string
-  personeel?: number
-  landen?: number
-  segmenten: Segment[]
-  aandeelhouders: Aandeelhouder[]
-}
-
-export interface Segment {
-  naam: string
-  omzet_pct: number
-  beschrijving: string
-}
-
-export interface Aandeelhouder {
-  naam: string
-  pct: number
-  type: string
-}
-
-// ─── FINANCIEEL ──────────────────────────────────────────
-
-export interface Financieel {
-  valuta_label: string
-  resultatenrekening: JaarResultaat[]
-  kasstromen: JaarKasstroom[]
-  balans: JaarBalans[]
-  rendementsindicatoren: Rendement | Rendement[]
-  accruals?: Accrual[]
-  waardering: Waardering
-}
-
-export interface JaarResultaat {
-  jaar: number
-  omzet: number
-  omzet_groei_pct: number | null
-  ebitda: number | null
-  ebitda_marge_pct: number | null
-  nettowinst: number
-  nettomarge_pct: number
-  eps: number
-  // Uitgebreider (nieuwere analyses):
-  brutomarge_pct?: number
-  ebit?: number
-  ebit_marge_pct?: number
-}
-
-export interface JaarKasstroom {
-  jaar: number
-  fcf: number
-  fcf_per_aandeel: number
-  fcf_na_sbc?: number | null
-  sbc?: number | null
-}
-
-export interface JaarBalans {
-  jaar: number
-  nettoschuld: number
-  eigen_vermogen: number
-  debt_ebitda: number | null
-  // Uitgebreider:
-  totale_activa?: number
-  goodwill?: number
-  current_ratio?: number
-}
-
-export interface Rendement {
-  jaar: number
-  roce_pct: number | null
-  roe_pct: number | null
-  roic_pct: number | null
-  roa_pct: number | null
-  wacc_pct?: number
-  roic_wacc_spread?: number
-}
-
-export interface Accrual {
-  jaar: number
-  accrual_ratio_pct?: number | null
-  accruals_ratio?: number | null
-  non_gaap_verschil_pct?: number | null
-}
-
-export interface Waardering {
-  pe: number
-  pe_forward?: number
-  ev_ebitda: number
-  p_fcf: number
-  p_fcf_na_sbc?: number | null
-  fcf_yield_pct: number | null
-  p_b: number
-  ev_omzet: number
-  dividendrendement_pct: number
-  peg?: number
-}
-
-// ─── MOAT ────────────────────────────────────────────────
-
-export interface Moat {
-  oordeel: string    // "WIDE MOAT", "NARROW MOAT", "NO MOAT"
-  toelichting: string
-  categorieen: MoatCategorie[]
-}
-
-export interface MoatCategorie {
-  naam: string       // "Immateriële activa", "Overstapkosten", etc.
-  oordeel: string    // "STERK", "AANWEZIG", "BEPERKT", "AFWEZIG"
-  score: number      // 1-5
-  toelichting: string
-}
-
-// ─── MANAGEMENT ──────────────────────────────────────────
-
-export interface Management {
-  oordeel: string
-  personen: Persoon[]
-  capital_allocation: string
-  toelichting: string
-  compensatie?: Compensatie
-  insider_transactions?: InsiderTransaction[]
-}
-
-export interface Persoon {
-  functie: string
-  naam: string
-  achtergrond: string
-}
-
-export interface Compensatie {
-  sbc_pct_marktkapitalisatie?: number | null
-  verwateringsgraad_pct_jaar?: number | null
-  prikkels_aligned?: boolean
-  toelichting?: string
-}
-
-export interface InsiderTransaction {
-  datum: string
-  naam: string
-  functie: string
-  type: string       // "KOOP", "VERKOOP"
-  aandelen: number
-  koers: number
-}
-
-// ─── KATALYSATOREN ───────────────────────────────────────
-
-export interface Katalysator {
-  datum_ca: string         // "2026-Q1", "2026", etc.
-  omschrijving: string
-  richting: 'POSITIEF' | 'NEGATIEF'
-  impact: 'GROOT' | 'MIDDEL' | 'KLEIN'
-}
-
-// ─── FAIR VALUE ──────────────────────────────────────────
-
-export interface FairValue {
-  dcf: DCFInputs
-  scenarios: Scenario[]
-  gevoeligheid: Gevoeligheid
-}
-
-export interface DCFInputs {
-  basis_fcf: number
-  basis_fcf_na_sbc?: number | null
-  wacc_pct: number
-  groei_fase1_pct: number
-  fase1_jaren?: number             // default 5
-  terminal_groei_pct: number
-  shares_outstanding_mln?: number
-  nettoschuld_huidig?: number
-}
-
-export interface Gevoeligheid {
-  wacc_range: number[]
-  groei_range: number[]
-  matrix: number[][]               // matrix[groei_idx][wacc_idx] = fair value
-}
-
-// ─── SCOREKAART ──────────────────────────────────────────
-
-export interface Scorekaart {
-  items: ScorekaartItem[]
-  totaal: number
-  max: number
-  eindoordeel: string
-  samenvatting: string
-  samenvatting_en?: string
-}
-
-export interface ScorekaartItem {
-  framework: string
-  score: number
-  max: number        // altijd 5
-  oordeel: string
-}
-
-// ─── BRONNEN (AUDIT TRAIL) ───────────────────────────────
-
-export interface Bronnen {
-  jaarverslag_jaar?: number
-  jaarverslag_url?: string
-  ir_pagina?: string
-  claims: BronClaim[]
-}
-
-export interface BronClaim {
-  sectie: string
-  claim: string
-  bron: string
-  pagina: number | null
-}
-
-// ─── THESIS TRACKER ──────────────────────────────────────
-
-export interface ThesisTracker {
-  publicatiedatum: string
-  oordeel_bij_publicatie: string
-  koers_bij_publicatie: number
-  checkpoints: ThesisCheckpoint[]
-}
-
-export interface ThesisCheckpoint {
-  datum: string | null
-  label: string                    // "6m", "12m", "24m"
-  koers: number | null
-  rendement_pct: number | null
-  benchmark?: string               // "AEX", "S&P 500"
-  benchmark_rendement_pct?: number | null
-  oordeel_nog_geldig?: boolean | null
-}
-
-// ─── INDEX ───────────────────────────────────────────────
-
-export interface AnalyseIndex {
-  ticker: string
-  naam: string
-  sector: string
-  exchange: string
-  koers: number
-  valuta: string
-  fair_value_basis: number
-  upside_pct: number
-  oordeel: 'KOOP' | 'HOLD' | 'PASS'
-  scorekaart_totaal: number
-  scorekaart_max: number
-  peildatum: string
-  domein?: string
-  tags?: string[]                  // voor categorie-abonnementen
+  databronnen?: Databronnen
+  bronnen?: Bron[]
+  update_historie?: UpdateHistorie[]
 }
 ```
+
+Het volledige schema bevat 40+ interfaces waaronder `SectorConcurrentie` (Porter, concurrenten, TAM/SAM/SOM), `AnalyseFrameworks` (Graham/Buffett/Lynch/Fisher/Greenblatt), `FairValue` (DCF met WACC-opbouw, projectie, reverse DCF, EPV, DDM, SOTP, synthese, twee gevoeligheidsmatrices), `Dividend`, `ESG`, `Databronnen` en `UpdateHistorie`. Zie `platform/src/lib/types.ts` voor het complete schema.
 
 ### Data-laadlogica (lib/data.ts)
 
@@ -692,7 +406,7 @@ Per tab, de fallback-strategie:
 | `/` | SSG | Homepage — kaarten grid, filters, zoek |
 | `/analyse/[ticker]` | SSG (generateStaticParams) | Individuele analyse, tab-interface |
 | `/methode` | SSG | Uitleg scorekaart, DCF, frameworks |
-| `/over` | SSG | Over de auteur, RA-profiel, disclaimer |
+| `/over` | SSG | Over de auteur, verificatieproces, disclaimer |
 | `/prijzen` | SSG | Abonnementen en losse analyse-prijzen |
 
 Alle pagina's zijn statisch gegenereerd. Geen server-side rendering nodig in Fase 1.
@@ -706,7 +420,7 @@ Alle pagina's zijn statisch gegenereerd. Geen server-side rendering nodig in Fas
 ├───────────────────────────────────────────────┤
 │                                                │
 │  Onafhankelijke fundamentele aandelenanalyses  │
-│  RA-geverifieerd · 9 frameworks · DCF-model    │
+│  Handmatig geverifieerd · 9 frameworks · DCF   │
 │                                                │
 │  [Filter: Alle / KOOP / HOLD / PASS]           │
 │  [Filter: Sector ▾]  [Sorteer: Upside ▾]      │
@@ -930,7 +644,7 @@ export function getTabAccess(tabId: string): AccessLevel {
 **Homepage:**
 ```
 title: "Aandelenanalyse — Onafhankelijke fundamentele analyses"
-description: "Diepgaande aandelenanalyses met DCF-waardering, scorekaart en RA-verificatie. Europese small & midcaps."
+description: "Diepgaande aandelenanalyses met DCF-waardering en scorekaart. Handmatig geverifieerd."
 ```
 
 **Analyse-pagina:**
@@ -1126,7 +840,7 @@ Later te automatiseren via GitHub Action die luistert naar pushes in de data-rep
 - LIVE — SEO (sitemap, robots, structured data, FAQ schema)
 - LIVE — Live koersen (Yahoo Finance)
 - LIVE — Logo.dev integratie
-- LIVE — 4 analyses (ADYEN, ASML, EDEN, SW) met hero images
+- LIVE — 5 analyses (ADYEN, ASML, EDEN, SW, HEIJM) met hero images
 - LIVE — Marktcategorie pagina's (/markt/[categorie])
 
 ### Fase 2 (accounts + betaling + admin) — GROTENDEELS COMPLEET
@@ -1135,11 +849,27 @@ Later te automatiseren via GitHub Action die luistert naar pushes in de data-rep
 - LIVE — PaywallGate (blur + CTA, client-side, access levels per tab)
 - LIVE — Account pagina (/account met profiel, plan, gekochte analyses)
 - LIVE — Admin dashboard (/admin — KPI's, recente registraties, recente aankopen)
-- LIVE — Admin gebruikers (/admin/gebruikers — volledige tabel met plan, status, aankopen)
+- LIVE — Admin gebruikers (/admin/gebruikers — volledige tabel, plan wijzigen, analyses toekennen)
 - LIVE — Email-notificaties (Resend — admin krijgt mail bij registratie, aankoop, abonnement, opzegging)
+- LIVE — Sessie-crashbescherming (3-laags: JWT try/catch, SessionErrorBoundary, proxy.ts onError)
 - KLAAR — Stripe checkout, webhook, portal (code compleet, producten nog niet aangemaakt in Stripe Dashboard)
 - OPEN — Custom domein (aandelenanalyse.nl nog niet gekoppeld aan Vercel)
 - OPEN — Resend domein verificatie (emails komen nu van onboarding@resend.dev)
+
+### UX & content (14 april 2026)
+- LIVE — Mobiel hamburger-menu (full-screen overlay, scroll lock, auto-close)
+- LIVE — Homepage mobiel-geoptimaliseerd (featured analyse zichtbaar, responsive grid)
+- LIVE — Scorekaart balk met label ("Scorekaart 22/45")
+- LIVE — Sidebar analyse-pagina scrollt mee binnen viewport
+- LIVE — /leren sectie (3 SEO-artikelen: fundamentele analyse, DCF, moat)
+- LIVE — Waardering-sectie verduidelijkt (intro, per-blok uitleg, parameter-hints, onderbouwing)
+- LIVE — RA-verwijzingen vervangen door "procescontrole + steekproefsgewijze verificatie"
+
+### Skill & data-kwaliteit (14 april 2026)
+- LIVE — Verplichte cycliciteitscheck in analyse-skill (4 regels voor cyclische bedrijven)
+- LIVE — JSON-contract uitgebreid met alle DCF-velden (model_type, fcf_type, terminal details, dcf_toelichting)
+- LIVE — Validator checkt fcf_type (herkomst/cycliciteitscheck)
+- LIVE — HEIJM analyse met genormaliseerde FCF (mid-cyclus correctie)
 
 ### Fase 3 (interactief + schaal) — OPEN
 - OPEN — Interactieve DCF-calculator
