@@ -132,6 +132,7 @@ const CHECKS: VeldCheck[] = [
   { pad: 'fair_value.wacc.risicovrije_rente_type', ernst: 'verwacht', label: 'WACC: risicovrije rente type (spot/genormaliseerd)' },
   { pad: 'fair_value.wacc.beta_type',          ernst: 'verwacht', label: 'WACC: beta type (regressie/bottom_up)' },
   { pad: 'fair_value.dcf.fcf_definitie',       ernst: 'verwacht', label: 'DCF: FCF-definitie (FCFF/FCFE)' },
+  { pad: 'fair_value.dcf.fcf_type',            ernst: 'verwacht', label: 'DCF: FCF type / herkomst (incl. cycliciteitscheck)' },
   { pad: 'fair_value.dcf.terminal_groei_consistentie', ernst: 'verwacht', label: 'DCF: terminal groei consistentie-check' },
   { pad: 'fair_value.methoden_toegepast',      ernst: 'verwacht', label: 'Methoden toegepast' },
   { pad: 'fair_value.reverse_dcf',             ernst: 'verwacht', label: 'Reverse DCF' },

@@ -369,14 +369,26 @@ Laatste sync: 2026-04-12
 {
   "methoden_toegepast": ["DCF", "EPV", "Reverse DCF"],
   "dcf": {
+    "model_type": "2-fase DCF + Gordon Growth terminal value",
+    "fcf_definitie": "FCFF",
     "basis_fcf": 700,
+    "basis_fcf_na_sbc": 680,
+    "fcf_type": "FCF 2025 (CFO - CAPEX) of Genormaliseerde FCF [X] mln (mid-cyclus)",
     "groei_fase1_pct": 18,
+    "groei_fase2_pct": 10,
     "terminal_groei_pct": 3,
+    "terminal_methode": "Gordon Growth Model, cross-check via exit multiple",
+    "exit_multiple_gebruikt": 12.0,
+    "exit_multiple_bron": "Mediaan EV/EBITDA sector over volle cyclus",
     "terminal_value_pct_van_totaal": 65,
+    "terminal_implied_ev_ebitda": 13.5,
+    "terminal_groei_consistentie": "Terminal groei X% vereist Y% herinvestering bij Z% ROIC — plausibel/niet-plausibel",
+    "mid_year_convention": true,
     "wacc_pct": 9,
     "shares_outstanding_mln": 28.9,
     "nettoschuld_huidig": -2000
   },
+  "dcf_toelichting": "Uitgebreide onderbouwing van het DCF-model: gekozen FCF-startpunt, cycliciteitscheck, groei-aannames en terminal value motivatie.",
   "scenarios": [
     { "scenario": "Bear", "fair_value": 900, "upside_pct": 5, "kans_pct": 25 },
     { "scenario": "Base", "fair_value": 1229, "upside_pct": 43, "kans_pct": 50 },
