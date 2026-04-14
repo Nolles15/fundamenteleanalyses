@@ -58,6 +58,23 @@
       "domein": "smurfitwestrock.com",
       "yahoo_symbol": "SW",
       "tags": ["verpakkingen", "golfkarton", "cyclisch", "fusie", "dividend"]
+    },
+    {
+      "ticker": "HEIJM",
+      "naam": "Koninklijke Heijmans N.V.",
+      "sector": "Industrie",
+      "exchange": "ENXTAM",
+      "koers": 83.55,
+      "valuta": "EUR",
+      "fair_value_basis": 210.34,
+      "upside_pct": 152,
+      "oordeel": "HOLD",
+      "scorekaart_totaal": 31,
+      "scorekaart_max": 45,
+      "peildatum": "2026-04-14",
+      "domein": "heijmans.nl",
+      "yahoo_symbol": "HEIJM.AS",
+      "tags": ["bouw", "woningbouw", "infrastructuur", "Nederland", "cyclisch", "dividend"]
     }
   ]
 }
