@@ -1,4 +1,5 @@
 import { prisma } from '@/lib/prisma'
+import { UserActions } from './user-actions'
 
 const PLAN_LABELS: Record<string, string> = {
   GRATIS: 'Gratis',
@@ -45,6 +46,7 @@ export default async function GebruikersPage() {
                 <th className="text-left px-4 py-3 font-medium text-text-secondary">Plan</th>
                 <th className="text-left px-4 py-3 font-medium text-text-secondary">Status</th>
                 <th className="text-left px-4 py-3 font-medium text-text-secondary">Aankopen</th>
+                <th className="text-left px-4 py-3 font-medium text-text-secondary">Acties</th>
                 <th className="text-right px-4 py-3 font-medium text-text-secondary">Geregistreerd</th>
               </tr>
             </thead>
@@ -87,6 +89,9 @@ export default async function GebruikersPage() {
                           {user.purchases.map((p: { ticker: string }) => p.ticker).join(', ')}
                         </span>
                       )}
+                    </td>
+                    <td className="px-4 py-3">
+                      <UserActions userId={user.id} currentPlan={plan} />
                     </td>
                     <td className="px-4 py-3 text-right text-text-muted tabular-nums whitespace-nowrap">
                       {user.createdAt.toLocaleDateString('nl-NL', {
