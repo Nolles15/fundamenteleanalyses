@@ -1,5 +1,6 @@
 import { auth } from '@/lib/auth'
 import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
 export default auth((req) => {
   const { pathname } = req.nextUrl
@@ -20,6 +21,18 @@ export default auth((req) => {
 
   return NextResponse.next()
 })
+
+// Fallback: als auth() zelf faalt door corrupt token, vang het op
+// zodat de pagina laadt als uitgelogde gebruiker i.p.v. crasht.
+export function onError(request: NextRequest) {
+  const response = NextResponse.next()
+
+  // Verwijder corrupte auth cookies
+  response.cookies.delete('authjs.session-token')
+  response.cookies.delete('__Secure-authjs.session-token')
+
+  return response
+}
 
 export const config = {
   matcher: ['/account/:path*', '/inloggen', '/registreren'],

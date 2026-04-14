@@ -42,22 +42,30 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     async jwt({ token, user, trigger }) {
       // Bij inloggen of session update: haal plan + purchases op
       if (user || trigger === 'update') {
-        const id = (user?.id ?? token.id) as string
-        const dbUser = await prisma.user.findUnique({
-          where: { id },
-          include: { subscription: true, purchases: true },
-        })
-        if (dbUser) {
-          token.id = dbUser.id
-          token.plan = dbUser.subscription?.plan ?? 'GRATIS'
-          token.purchasedTickers = dbUser.purchases.map((p: { ticker: string }) => p.ticker)
+        try {
+          const id = (user?.id ?? token.id) as string
+          if (!id) return token
+
+          const dbUser = await prisma.user.findUnique({
+            where: { id },
+            include: { subscription: true, purchases: true },
+          })
+          if (dbUser) {
+            token.id = dbUser.id
+            token.plan = dbUser.subscription?.plan ?? 'GRATIS'
+            token.purchasedTickers = dbUser.purchases.map((p: { ticker: string }) => p.ticker)
+          }
+        } catch {
+          // DB-fout mag sessie niet crashen — user krijgt gewoon GRATIS-defaults
+          token.plan = token.plan ?? 'GRATIS'
+          token.purchasedTickers = token.purchasedTickers ?? []
         }
       }
       return token
     },
     async session({ session, token }) {
       if (session.user) {
-        session.user.id = token.id as string
+        session.user.id = (token.id as string) ?? ''
         session.user.plan = (token.plan as string) ?? 'GRATIS'
         session.user.purchasedTickers = (token.purchasedTickers as string[]) ?? []
       }
