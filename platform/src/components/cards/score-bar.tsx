@@ -13,16 +13,19 @@ const barKleur: Record<'KOOP' | 'HOLD' | 'PASS', string> = {
 export function ScoreBar({ score, max, oordeel }: ScoreBarProps) {
   const pct = Math.round((score / max) * 100)
   return (
-    <div className="flex items-center gap-2">
-      <div className="flex-1 h-1.5 bg-bg-muted rounded-full overflow-hidden">
+    <div>
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-xs text-text-muted font-sans">Scorekaart</span>
+        <span className="text-xs font-medium text-text-secondary font-sans tabular-nums">
+          {score}/{max}
+        </span>
+      </div>
+      <div className="h-1.5 bg-bg-muted rounded-full overflow-hidden">
         <div
           className={`h-full rounded-full transition-all ${barKleur[oordeel]}`}
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="text-xs text-text-muted font-sans tabular-nums shrink-0">
-        {score}/{max}
-      </span>
     </div>
   )
 }
