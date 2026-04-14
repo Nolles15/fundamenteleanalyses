@@ -42,6 +42,15 @@ function WaarderingContent({ analyse }: Props) {
 
   return (
     <div className="space-y-8">
+      {/* Intro */}
+      <p className="text-sm text-text-secondary font-sans leading-relaxed">
+        Om de fair value te bepalen combineren we meerdere waarderingsmethoden. Het uitgangspunt is een{' '}
+        <strong>DCF-model</strong> (Discounted Cash Flow): we schatten de toekomstige kasstromen en rekenen die
+        terug naar wat ze vandaag waard zijn. Daarnaast gebruiken we onder andere scenario-analyse,
+        gevoeligheidsanalyse en — waar relevant — een EPV (no-growth waardering) en reverse DCF.
+        Hieronder vind je per stap de aannames en onderbouwing.
+      </p>
+
       {/* Hero: Fair Value overzicht */}
       <div className="bg-accent/5 border-2 border-accent/20 rounded-2xl p-6">
         <div className="grid grid-cols-3 gap-4 mb-4">
@@ -114,16 +123,7 @@ function WaarderingContent({ analyse }: Props) {
       {fv.wacc != null && <WACCBlok wacc={fv.wacc} />}
 
       {/* DCF Inputs */}
-      <DCFBlok dcf={fv.dcf} valuta={valuta} valutaKasstromen={fv.valuta_kasstromen} />
-
-      {/* DCF toelichting */}
-      {fv.dcf_toelichting && (
-        <div className="bg-bg-muted rounded-lg px-4 py-3">
-          <p className="text-xs text-text-secondary font-sans leading-relaxed">
-            {fv.dcf_toelichting}
-          </p>
-        </div>
-      )}
+      <DCFBlok dcf={fv.dcf} valuta={valuta} valutaKasstromen={fv.valuta_kasstromen} toelichting={fv.dcf_toelichting} />
 
       {/* Illiquiditeitskorting */}
       {fv.wacc?.illiquiditeitskorting_pct != null && es.fair_value_basis != null && (
@@ -242,6 +242,10 @@ function WACCBlok({ wacc }: { wacc: WACCOpbouw }) {
   return (
     <div>
       <SectionHeading title="WACC-opbouw" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        De WACC (Weighted Average Cost of Capital) is de disconteringsvoet waarmee toekomstige kasstromen
+        worden teruggerekend. Hoe hoger het risico, hoe hoger de WACC en hoe lager de berekende fair value.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border overflow-hidden">
         <table className="w-full text-sm font-sans">
           <tbody>
@@ -285,10 +289,20 @@ function WACCBlok({ wacc }: { wacc: WACCOpbouw }) {
 
 /* ─── DCF Inputs ───────────────────────────────────────── */
 
-function DCFBlok({ dcf, valuta, valutaKasstromen }: { dcf: DCFInputs; valuta: string; valutaKasstromen?: string }) {
+function DCFBlok({ dcf, valuta, valutaKasstromen, toelichting }: { dcf: DCFInputs; valuta: string; valutaKasstromen?: string; toelichting?: string }) {
+  const nettoschuld = dcf.nettoschuld_huidig
+  const nettokasLabel = nettoschuld != null && nettoschuld < 0 ? 'Nettokaspositie' : 'Nettoschuld'
+  const nettokasHint = nettoschuld != null && nettoschuld < 0
+    ? 'Meer kas dan schuld — wordt opgeteld bij de waarde'
+    : 'Schuld minus kas — wordt afgetrokken van de ondernemingswaarde'
+
   return (
     <div>
       <SectionHeading title="DCF-model" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        Het DCF-model schat de toekomstige vrije kasstromen en rekent ze terug naar de waarde van vandaag
+        met een disconteringsvoet (WACC). Hoe hoger de verwachte groei en hoe lager de WACC, hoe hoger de fair value.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border p-5">
         <div className="flex items-center gap-3 mb-4 flex-wrap">
           <Calculator size={16} className="text-accent" />
@@ -299,7 +313,7 @@ function DCFBlok({ dcf, valuta, valutaKasstromen }: { dcf: DCFInputs; valuta: st
           )}
           {dcf.fcf_definitie && (
             <span className="text-xs font-medium bg-accent-light text-accent px-2 py-0.5 rounded">
-              {dcf.fcf_definitie}
+              {dcf.fcf_definitie === 'FCFF' ? 'FCFF — kasstroom voor alle vermogensverschaffers' : dcf.fcf_definitie}
             </span>
           )}
           {valutaKasstromen && (
@@ -307,56 +321,101 @@ function DCFBlok({ dcf, valuta, valutaKasstromen }: { dcf: DCFInputs; valuta: st
               DCF in {valutaKasstromen}
             </span>
           )}
-          {dcf.fcf_type && (
-            <span className="text-xs text-text-muted font-sans">FCF type: {dcf.fcf_type}</span>
-          )}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          <MiniStat label="Basis FCF" waarde={formatKoers(dcf.basis_fcf, valuta)} />
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-5">
+          <MiniStat
+            label="Basis FCF"
+            waarde={formatKoers(dcf.basis_fcf, valuta)}
+            hint={dcf.fcf_type ?? 'Startpunt vrije kasstroom voor het model'}
+          />
           {dcf.basis_fcf_na_sbc != null && (
-            <MiniStat label="Basis FCF na SBC" waarde={formatKoers(dcf.basis_fcf_na_sbc, valuta)} />
+            <MiniStat
+              label="Basis FCF na SBC"
+              waarde={formatKoers(dcf.basis_fcf_na_sbc, valuta)}
+              hint="Gecorrigeerd voor aandelencompensatie"
+            />
           )}
-          <MiniStat label="Groei fase 1" waarde={`${formatGetal(dcf.groei_fase1_pct)}%`} />
+          <MiniStat
+            label="Groei fase 1"
+            waarde={`${formatGetal(dcf.groei_fase1_pct)}%`}
+            hint="Verwachte jaarlijkse groei in de eerste 5 jaar"
+          />
           {dcf.groei_fase2_pct != null && (
-            <MiniStat label="Groei fase 2" waarde={`${formatGetal(dcf.groei_fase2_pct)}%`} />
+            <MiniStat
+              label="Groei fase 2"
+              waarde={`${formatGetal(dcf.groei_fase2_pct)}%`}
+              hint="Vertragende groei in jaar 6-10"
+            />
           )}
-          <MiniStat label="Terminal groei" waarde={`${formatGetal(dcf.terminal_groei_pct)}%`} />
+          <MiniStat
+            label="Terminal groei"
+            waarde={`${formatGetal(dcf.terminal_groei_pct)}%`}
+            hint="Eeuwigdurende groei na de projectieperiode"
+          />
           {dcf.wacc_pct != null && (
-            <MiniStat label="WACC" waarde={`${formatGetal(dcf.wacc_pct)}%`} />
+            <MiniStat
+              label="WACC"
+              waarde={`${formatGetal(dcf.wacc_pct)}%`}
+              hint="Disconteringsvoet (zie WACC-opbouw hierboven)"
+            />
           )}
           {dcf.shares_outstanding_mln != null && (
-            <MiniStat label="Aandelen uitst. (mln)" waarde={formatGetal(dcf.shares_outstanding_mln, 1)} />
+            <MiniStat
+              label="Aandelen uitstaand"
+              waarde={`${formatGetal(dcf.shares_outstanding_mln, 1)} mln`}
+              hint="Totaal om van bedrijfswaarde naar waarde per aandeel te komen"
+            />
           )}
-          {dcf.nettoschuld_huidig != null && (
-            <MiniStat label="Nettoschuld" waarde={formatKoers(dcf.nettoschuld_huidig, valuta)} />
+          {nettoschuld != null && (
+            <MiniStat
+              label={nettokasLabel}
+              waarde={formatKoers(Math.abs(nettoschuld), valuta)}
+              hint={nettokasHint}
+            />
           )}
         </div>
 
         {/* Terminal value details */}
         {(dcf.terminal_value_pct_van_totaal != null || dcf.terminal_methode != null) && (
-          <div className="mt-4 pt-4 border-t border-border">
-            <p className="text-xs text-text-muted font-sans mb-2 uppercase tracking-wide">
+          <div className="mt-5 pt-4 border-t border-border">
+            <p className="text-xs text-text-muted font-sans mb-1 uppercase tracking-wide">
               Terminal Value
             </p>
-            <div className="flex flex-wrap gap-4">
+            <p className="text-[11px] text-text-muted font-sans mb-3 leading-snug">
+              De geschatte waarde van alle kasstromen na de projectieperiode. Vaak het grootste deel van de totale waarde.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-5">
               {dcf.terminal_methode && (
                 <MiniStat label="Methode" waarde={dcf.terminal_methode} />
               )}
               {dcf.terminal_value_pct_van_totaal != null && (
-                <MiniStat label="% van totaal" waarde={`${formatGetal(dcf.terminal_value_pct_van_totaal)}%`} />
+                <MiniStat
+                  label="% van totale waarde"
+                  waarde={`${formatGetal(dcf.terminal_value_pct_van_totaal)}%`}
+                  hint={dcf.terminal_value_pct_van_totaal > 75 ? 'Relatief hoog — model is gevoelig voor terminal aannames' : undefined}
+                />
               )}
               {dcf.exit_multiple_gebruikt != null && (
                 <MiniStat
-                  label={`Exit multiple${dcf.exit_multiple_bron ? ` (${dcf.exit_multiple_bron})` : ''}`}
+                  label="Exit multiple"
                   waarde={`${formatGetal(dcf.exit_multiple_gebruikt, 1)}x`}
+                  hint={dcf.exit_multiple_bron ?? 'Veronderstelde waardering aan het einde van de projectieperiode'}
                 />
               )}
               {dcf.mid_year_convention != null && (
-                <MiniStat label="Mid-year convention" waarde={dcf.mid_year_convention ? 'Ja' : 'Nee'} />
+                <MiniStat
+                  label="Mid-year convention"
+                  waarde={dcf.mid_year_convention ? 'Ja' : 'Nee'}
+                  hint="Kasstromen vallen halverwege het jaar i.p.v. aan het einde"
+                />
               )}
               {dcf.terminal_implied_ev_ebitda != null && (
-                <MiniStat label="Impliciete terminal EV/EBITDA" waarde={`${formatGetal(dcf.terminal_implied_ev_ebitda, 1)}x`} />
+                <MiniStat
+                  label="Impliciete EV/EBITDA"
+                  waarde={`${formatGetal(dcf.terminal_implied_ev_ebitda, 1)}x`}
+                  hint="Waardering die de terminal value impliceert — sanity check"
+                />
               )}
             </div>
             {dcf.terminal_groei_consistentie && (
@@ -364,6 +423,18 @@ function DCFBlok({ dcf, valuta, valutaKasstromen }: { dcf: DCFInputs; valuta: st
                 {dcf.terminal_groei_consistentie}
               </p>
             )}
+          </div>
+        )}
+
+        {/* DCF toelichting — onderbouwing van keuzes */}
+        {toelichting && (
+          <div className="mt-5 pt-4 border-t border-border">
+            <p className="text-xs font-semibold text-text-muted font-sans uppercase tracking-wide mb-1">
+              Onderbouwing
+            </p>
+            <p className="text-xs text-text-secondary font-sans leading-relaxed">
+              {toelichting}
+            </p>
           </div>
         )}
       </div>
@@ -455,6 +526,10 @@ function ScenariosBlok({
   return (
     <div>
       <SectionHeading title="Scenario's" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        Drie scenario's met verschillende groeiaannames laten zien hoe gevoelig de fair value is
+        voor de toekomstverwachting. De kansweging bepaalt de gecombineerde fair value.
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {scenarios.map((s) => {
           const positief = s.upside_pct >= 0
@@ -514,6 +589,9 @@ function GevoeligheidBlok({
   return (
     <div>
       <SectionHeading title={titel} />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        Elke cel toont de fair value bij een combinatie van groei en WACC. Zo zie je hoe gevoelig het resultaat is voor kleine veranderingen in de aannames.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-xs font-sans">
@@ -714,6 +792,10 @@ function SyntheseBlok({ data, valuta, koers }: { data: FairValueSynthese; valuta
   return (
     <div>
       <SectionHeading title="Fair Value Synthese" />
+      <p className="text-xs text-text-muted font-sans mb-3 -mt-1">
+        De synthese combineert alle methoden tot een bandbreedte. Het koopniveau houdt rekening met
+        een margin of safety — de buffer voor onzekerheid in de aannames.
+      </p>
       <div className="bg-bg-surface rounded-xl border border-border p-5">
         {/* Bandbreedte visueel */}
         {heeftBandbreedte && (
@@ -760,13 +842,16 @@ function SyntheseBlok({ data, valuta, koers }: { data: FairValueSynthese; valuta
 
 /* ─── Helpers ──────────────────────────────────────────── */
 
-function MiniStat({ label, waarde }: { label: string; waarde: string }) {
+function MiniStat({ label, waarde, hint }: { label: string; waarde: string; hint?: string }) {
   return (
     <div>
       <p className="text-xs text-text-muted font-sans mb-0.5">{label}</p>
       <p className="text-sm font-semibold text-text-primary font-sans tabular-nums">
         {waarde}
       </p>
+      {hint && (
+        <p className="text-[11px] text-text-muted font-sans mt-0.5 leading-snug">{hint}</p>
+      )}
     </div>
   )
 }

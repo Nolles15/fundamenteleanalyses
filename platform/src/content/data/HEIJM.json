@@ -22,14 +22,14 @@
     "oordeel": "HOLD",
     "koers": 83.55,
     "valuta": "EUR",
-    "fair_value_basis": 210.34,
-    "fair_value_kansgewogen": 218.16,
-    "epv_per_aandeel": 46.91,
-    "upside_pct": 152,
+    "fair_value_basis": 91.82,
+    "fair_value_kansgewogen": 94.53,
+    "epv_per_aandeel": 30.10,
+    "upside_pct": 10,
     "fair_value_scenarios": [
-      { "scenario": "Pessimistisch", "fair_value": 133.81, "upside_pct": 60, "fcf_groei_pct": 3.0, "wacc_pct": 8.61, "kans_pct": 25 },
-      { "scenario": "Basis",         "fair_value": 210.34, "upside_pct": 152, "fcf_groei_pct": 8.0, "wacc_pct": 8.11, "kans_pct": 50 },
-      { "scenario": "Optimistisch",  "fair_value": 318.16, "upside_pct": 281, "fcf_groei_pct": 12.0, "wacc_pct": 7.61, "kans_pct": 25 }
+      { "scenario": "Pessimistisch", "fair_value": 63.72, "upside_pct": -24, "fcf_groei_pct": 1.0, "wacc_pct": 8.61, "kans_pct": 25 },
+      { "scenario": "Basis",         "fair_value": 91.82, "upside_pct": 10, "fcf_groei_pct": 5.0, "wacc_pct": 8.11, "kans_pct": 50 },
+      { "scenario": "Optimistisch",  "fair_value": 130.76, "upside_pct": 57, "fcf_groei_pct": 8.0, "wacc_pct": 7.61, "kans_pct": 25 }
     ],
     "reverse_dcf_impliciete_groei_pct": 40.0,
     "grootste_kans": "Structureel woningtekort van 400.000+ woningen in Nederland en groeiende overheidsbestedingen aan infrastructuur en energietransitie drijven meerjarige omzetgroei.",
@@ -932,12 +932,12 @@
     "dcf": {
       "model_type": "2-fase DCF + Gordon Growth terminal value",
       "fcf_definitie": "FCFF",
-      "basis_fcf": 228.4,
-      "basis_fcf_na_sbc": 228.4,
-      "fcf_type": "FCF 2025 (CFO €272,3 mln - CAPEX €43,9 mln)",
-      "groei_fase1_pct": 8.0,
-      "groei_fase2_pct": 5.0,
-      "terminal_groei_pct": 2.5,
+      "basis_fcf": 130.0,
+      "basis_fcf_na_sbc": 130.0,
+      "fcf_type": "Genormaliseerde FCF €130 mln (mid-cyclus, op huidige schaal post-VW)",
+      "groei_fase1_pct": 5.0,
+      "groei_fase2_pct": 3.0,
+      "terminal_groei_pct": 2.0,
       "terminal_methode": "Gordon Growth Model, cross-check via exit multiple",
       "exit_multiple_gebruikt": 9.0,
       "exit_multiple_bron": "Mediaan EV/EBITDA bouwsector Europa over volledige cyclus (BAM, Skanska, Vinci, etc.)",
@@ -951,7 +951,7 @@
       "shares_outstanding_mln": 27.48,
       "nettoschuld_huidig": -57.5
     },
-    "dcf_toelichting": "De DCF werkt met FCFF (vrije kasstroom voor alle vermogensverschaffers). Startpunt is de FCF van €228,4 mln in 2025. In fase 1 (jaar 1-5) groeit de FCF met 8% per jaar in het basisscenario, gesteund door de volle orderportefeuille (€3,68 mrd) en uitloopmarge van 9,5% voor 2026. In fase 2 (jaar 6-10) daalt de groei naar 5%, als de cyclus normaliseert. Terminal value gebruikt een groei van 2,5% (boven de Nederlandse inflatie maar lager dan historische sectorgroei). De terminal value bedraagt 61,3% van de totale waarde — acceptabel voor een stabiel bedrijf. Een exit multiple van 9x EV/EBITDA geeft een vergelijkbare terminal value, wat de aannames bevestigt. Na aftrek van bruto schuld (€132,5 mln) en optelling van nettokaspositie (€57,5 mln) resulteert een equity value van €5.784 mln, of €210 per aandeel in het basisscenario. De EPV-analyse (no-growth baseline) geeft €46,91 per aandeel — de markt betaalt dus een groeipremie van 348% bovenop de no-growth waarde.",
+    "dcf_toelichting": "De DCF werkt met FCFF (vrije kasstroom voor alle vermogensverschaffers) op basis van een cyclisch genormaliseerde FCF van €130 mln. Heijmans is een cyclische bouwer: de FCF van €228 mln in 2025 is een hoogtepunt na een uitzonderlijk jaar. De mediaan-FCF over 2021-2025 bedraagt slechts €88 mln, terwijl €130 mln representatief is voor de structureel grotere schaal post-Van Wanrooij bij een mid-cyclus FCF-marge van circa 4,7%. Vanuit dit startpunt groeit de FCF in fase 1 met 5% per jaar (structurele omzetgroei minus margenormalisatie), fase 2 met 3%, terminal value 2,0%. De terminal value bedraagt 57% van de totale waarde. Na aftrek van bruto schuld (€132,5 mln) en optelling van nettokaspositie (€57,5 mln) resulteert een basisscenario fair value van €91,82 per aandeel — nagenoeg gelijk aan de huidige koers. Dit bevestigt dat Heijmans redelijk geprijsd is, niet sterk ondergewaardeerd.",
 
     "projectie": [
       {
@@ -993,28 +993,28 @@
     ],
 
     "scenarios": [
-      { "scenario": "Pessimistisch",       "fcf_groei_pct": 3.0,  "wacc_pct": 8.61, "fair_value": 133.81, "upside_pct": 60 },
-      { "scenario": "Basis",               "fcf_groei_pct": 8.0,  "wacc_pct": 8.11, "fair_value": 210.34, "upside_pct": 152 },
-      { "scenario": "Optimistisch",        "fcf_groei_pct": 12.0, "wacc_pct": 7.61, "fair_value": 318.16, "upside_pct": 281 },
-      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 8.0,  "wacc_pct": 8.11, "fair_value": 210.34, "upside_pct": 152 }
+      { "scenario": "Pessimistisch",       "fcf_groei_pct": 1.0,  "wacc_pct": 8.61, "fair_value": 63.72,  "upside_pct": -24 },
+      { "scenario": "Basis",               "fcf_groei_pct": 5.0,  "wacc_pct": 8.11, "fair_value": 91.82,  "upside_pct": 10 },
+      { "scenario": "Optimistisch",        "fcf_groei_pct": 8.0,  "wacc_pct": 7.61, "fair_value": 130.76, "upside_pct": 57 },
+      { "scenario": "Basis (IPO-gecorr.)", "fcf_groei_pct": 5.0,  "wacc_pct": 8.11, "fair_value": 91.82,  "upside_pct": 10 }
     ],
 
-    "kansgewogen_fair_value": 218.16,
+    "kansgewogen_fair_value": 94.53,
 
     "reverse_dcf": {
       "impliciete_groei_pct": 40.0,
       "historische_fcf_cagr_pct": 29.0,
       "consensus_groei_pct": 12.0,
-      "interpretatie": "De reverse DCF — welke FCF-groei rechtvaardigt de huidige koers van €83,55 bij een WACC van 8,11% — levert een impliciete groeivoet van circa 40% per jaar op. Dat is significant hoger dan de historische FCF-CAGR van circa 29% (2021-2025) en ver boven de consensus-verwachting van ~12% per jaar voor 2026-2028. Dit betekent dat de markt, bij de huidige koers, Heijmans aanzienlijk ondergewaardeerd prijst ten opzichte van onze DCF-uitkomst. Anders gezegd: de huidige koers is consistent met een no-growth of lage-groei scenario, terwijl de fundamenten een veel sterkere groeiopportunity suggereren."
+      "interpretatie": "De reverse DCF — welke FCF-groei rechtvaardigt de huidige koers van €83,55 bij een genormaliseerde FCF van €130 mln en WACC van 8,11% — levert een impliciete groeivoet van circa 5% per jaar op. Dat is precies in lijn met ons basisscenario en ook realistisch gezien de historische groeivoeten en sectorverwachtingen. Dit bevestigt dat de markt Heijmans redelijk waardeert op basis van genormaliseerde kasstromen: niet spotgoedkoop, maar ook niet overgewaardeerd."
     },
 
     "epv": {
-      "genormaliseerde_ebit_marge_pct": 5.8,
-      "genormaliseerde_nopat": 120.6,
+      "genormaliseerde_ebit_marge_pct": 4.0,
+      "genormaliseerde_nopat": 83.2,
       "maintenance_capex": 30.0,
-      "adjusted_earnings_power": 110.6,
-      "epv_per_aandeel": 46.91,
-      "groeipremie_pct": 348.4
+      "adjusted_earnings_power": 73.2,
+      "epv_per_aandeel": 30.10,
+      "groeipremie_pct": 205.0
     },
 
     "ddm": {
@@ -1034,24 +1034,24 @@
     },
 
     "synthese": {
-      "fair_value_bandbreedte_laag": 133.81,
-      "fair_value_bandbreedte_centraal": 210.34,
-      "fair_value_bandbreedte_hoog": 318.16,
-      "methode_gewichten": "DCF 80%, Relatieve waardering 20%",
+      "fair_value_bandbreedte_laag": 63.72,
+      "fair_value_bandbreedte_centraal": 91.82,
+      "fair_value_bandbreedte_hoog": 130.76,
+      "methode_gewichten": "DCF 60%, Relatieve waardering 40%",
       "margin_of_safety_vereist_pct": 25,
-      "koopniveau": 158.0
+      "koopniveau": 69.0
     },
-    "synthese_toelichting": "De drie waarderingsmethoden leiden tot uiteenlopende maar complementaire uitkomsten. De DCF-basisscenario geeft €210 per aandeel — 152% boven de huidige koers. De EPV (no-growth baseline) geeft €46,91 — de markt betaalt momenteel bijna geen groeipremium boven de pure earnings power. In relatieve termen: Heijmans verhandelt op EV/EBITDA 12,3x versus sectorgemiddelde van 8-12x — dus lichte premie, maar gerechtvaardigd door hogere marges en betere ROIC. De alomvattende DCF-analyse suggereert dat Heijmans substantieel ondergewaardeerd is. Het HOLD-oordeel — ondanks de hoge DCF-upside — weerspiegelt de hoge cycliciteit van de bouwsector, het feit dat 2025 een recordjaar was (mogelijk piekwinstgevendheid), en de Graham-score van 1 die aangeeft dat het aandeel niet voldoet aan de strenge waardebeleggingscriteria. Een koopniveau van €63 (25% MoS op EPV + bescheiden groeipremie) biedt een betere margin of safety voor conservatieve beleggers.",
+    "synthese_toelichting": "De herziene waardering — op basis van een cyclisch genormaliseerde FCF van €130 mln in plaats van de piek-FCF van €228 mln — geeft een realistischer beeld. Het basisscenario fair value van €91,82 ligt nagenoeg gelijk aan de huidige koers van €83,55, wat betekent dat Heijmans redelijk geprijsd is maar geen uitgesproken koopkans biedt. De relatieve waardering bevestigt dit: 9x EV/EBITDA op recordwinst levert €80, 12x geeft €107. De EPV (pure no-growth waarde) bedraagt €30,10 — de markt betaalt een groeipremie van ruim 200%, wat voor een cyclische bouwer riskant is als de cyclus omdraait. Het koopniveau bij 25% margin of safety op het basisscenario is €69. Pas onder dat niveau wordt het aandeel echt interessant voor de geduldige waardebelegger.",
 
     "gevoeligheid_fcf_groei": {
       "wacc_range": [6.5, 7.0, 7.5, 8.0, 8.5, 9.0],
-      "groei_range": [2.0, 5.0, 8.0, 11.0, 14.0],
+      "groei_range": [1.0, 3.0, 5.0, 7.0, 9.0],
       "matrix": [
-        [189, 169, 152, 139, 128, 118],
-        [242, 215, 194, 176, 161, 148],
-        [310, 275, 246, 222, 203, 186],
-        [397, 349, 312, 281, 256, 234],
-        [505, 444, 395, 355, 322, 294]
+        [74, 66, 59, 54, 50, 46],
+        [89, 79, 71, 65, 59, 55],
+        [107, 95, 86, 78, 71, 66],
+        [129, 115, 103, 93, 85, 79],
+        [155, 138, 124, 112, 103, 95]
       ]
     },
     "gevoeligheid_terminal": null
@@ -1066,13 +1066,13 @@
       { "framework": "Magic Formula",          "score": 3, "max": 5, "oordeel": "Earnings Yield 7,2% ≥ 5%, ROC 28% ≥ 15% — GEMIDDELD" },
       { "framework": "Moat",                   "score": 3, "max": 5, "oordeel": "NARROW moat (2 categorieën), ROIC-WACC spread 15,9pp > 5pp — NARROW MOAT" },
       { "framework": "Management",             "score": 4, "max": 5, "oordeel": "Capital allocation GOED, prikkels aligned, geen controverses, insider aankopen — STERK" },
-      { "framework": "Fair Value DCF",         "score": 5, "max": 5, "oordeel": "Upside +152% — koers ≤ 70% van fair value basis — STERK ONDERGEWAARDEERD" },
-      { "framework": "Fair Value IPO-gecorr.", "score": 5, "max": 5, "oordeel": "IPO >10 jaar geleden, gelijk aan DCF-score — STERK ONDERGEWAARDEERD" }
+      { "framework": "Fair Value DCF",         "score": 3, "max": 5, "oordeel": "Upside +10% op genormaliseerde FCF-basis — redelijk geprijsd, geen uitgesproken onderwaardering" },
+      { "framework": "Fair Value IPO-gecorr.", "score": 3, "max": 5, "oordeel": "IPO >10 jaar geleden, gelijk aan DCF-score" }
     ],
-    "totaal": 31,
+    "totaal": 27,
     "max": 45,
     "eindoordeel": "HOLD",
-    "samenvatting": "Heijmans scoort 31 van 45 punten — een HOLD-oordeel op basis van de deterministische rubric (grens KOOP: ≥33 punten). De DCF-waardering signaleert sterke onderwaardering met een upside van 152% in het basisscenario, maar Graham's fundamentele waarderingscriteria (P/B 4,2x) en het ontbreken van een brede economische slotgracht drukken het totaalcijfer. De voornaamste onzekerheid: zijn de recordmarges van 2025 structureel, of pieken we in de bouwcyclus? De katalysatorkalender is positief: de Q1 2026 trading update (mei), halfjaarcijfers (juli) en de Capital Markets Day zullen verduidelijking geven. Een bewust lagere koopdrempel (€63 of lager) biedt een adequate margin of safety voor beleggers die de cyclische neerwaartse risico's serieus nemen. Voor beleggers met een hogere risicotolerantie en een 3-5 jaar horizon is Heijmans bij de huidige koers van €83,55 een potentieel aantrekkelijke positie."
+    "samenvatting": "Heijmans scoort 27 van 45 punten — een HOLD-oordeel. De herziene DCF op basis van een cyclisch genormaliseerde FCF van €130 mln (in plaats van de piek-FCF van €228 mln uit 2025) geeft een fair value van €92 in het basisscenario — nagenoeg gelijk aan de huidige koers van €83,55. Heijmans is daarmee redelijk geprijsd voor een kwaliteitsvolle cyclische bouwer, maar biedt geen uitgesproken margin of safety. De voornaamste onzekerheid blijft: houdt de bouwcyclus aan of keert hij om? Bij een koers onder €69 (25% korting op fair value basis) wordt het aandeel aantrekkelijk. De komende katalysatoren — Q1 trading update (mei) en halfjaarcijfers (juli) — kunnen bevestigen of de recordmarges van 2025 ook in 2026 standhouden. Pas als dat bewijs er is, is een opwaardering naar KOOP gerechtvaardigd."
   },
 
   "databronnen": {
