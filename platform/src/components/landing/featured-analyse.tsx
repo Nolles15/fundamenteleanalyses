@@ -31,7 +31,7 @@ export function FeaturedAnalyse({ analyse, heroImage }: Props) {
     >
       {/* Hero image */}
       {heroImage && (
-        <div className="relative h-48 w-full">
+        <div className="relative h-36 sm:h-48 w-full">
           <Image
             src={heroImage}
             alt={naam}
@@ -45,10 +45,10 @@ export function FeaturedAnalyse({ analyse, heroImage }: Props) {
         </div>
       )}
 
-      <div className="p-8">
+      <div className="p-5 sm:p-8">
         <div className="flex items-start justify-between mb-2">
-          <div>
-            <p className="text-xl font-bold text-text-primary font-sans">{naam}</p>
+          <div className="min-w-0">
+            <p className="text-lg sm:text-xl font-bold text-text-primary font-sans truncate">{naam}</p>
             <p className="text-xs text-text-muted font-sans mt-1">
               {sector}{exchange ? ` | ${exchange}` : ''}
             </p>
@@ -56,28 +56,28 @@ export function FeaturedAnalyse({ analyse, heroImage }: Props) {
           <OordeelBadge oordeel={oordeel} size="md" />
         </div>
 
-        <div className="flex items-baseline gap-6 mt-6">
+        <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-5 sm:mt-6">
           <div>
-            <p className="text-xs text-text-muted font-sans mb-1">Koers</p>
-            <p className="text-lg font-bold text-text-primary font-sans tabular-nums">
+            <p className="text-xs text-text-muted font-sans mb-0.5 sm:mb-1">Koers</p>
+            <p className="text-base sm:text-lg font-bold text-text-primary font-sans tabular-nums">
               {formatKoers(koers, valuta)}
             </p>
           </div>
           <div>
-            <p className="text-xs text-text-muted font-sans mb-1">Fair value</p>
-            <p className="text-lg font-bold text-text-primary font-sans tabular-nums">
+            <p className="text-xs text-text-muted font-sans mb-0.5 sm:mb-1">Fair value</p>
+            <p className="text-base sm:text-lg font-bold text-text-primary font-sans tabular-nums">
               {formatKoers(fair_value_basis, valuta)}
             </p>
           </div>
           <div>
-            <p className="text-xs text-text-muted font-sans mb-1">Upside</p>
-            <p className={`text-lg font-bold font-sans tabular-nums ${upside >= 0 ? 'text-buy' : 'text-pass'}`}>
+            <p className="text-xs text-text-muted font-sans mb-0.5 sm:mb-1">Upside</p>
+            <p className={`text-base sm:text-lg font-bold font-sans tabular-nums ${upside >= 0 ? 'text-buy' : 'text-pass'}`}>
               {formatUpside(upside)}
             </p>
           </div>
         </div>
 
-        <p className="text-xs text-accent font-sans font-medium mt-6">
+        <p className="text-xs text-accent font-sans font-medium mt-5 sm:mt-6">
           Lees volledig rapport &rarr;
         </p>
       </div>

@@ -22,7 +22,7 @@ export function AnalyseSpotlight({ analyse, kernthese, heroImage }: Props) {
     >
       <div className="grid md:grid-cols-2">
         {/* Visuele kant: hero image of gradient */}
-        <div className="relative h-52 md:h-auto md:min-h-[300px] bg-gradient-to-br from-[#051125] to-[#1b263b]">
+        <div className="relative h-40 sm:h-52 md:h-auto md:min-h-[300px] bg-gradient-to-br from-[#051125] to-[#1b263b]">
           {heroImage && (
             <Image
               src={heroImage}
@@ -34,21 +34,21 @@ export function AnalyseSpotlight({ analyse, kernthese, heroImage }: Props) {
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#051125] via-[#051125]/60 to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-[#051125]/20" />
 
-          <div className="relative z-10 p-6 sm:p-8 flex flex-col justify-end h-full">
-            <span className="text-[10px] font-semibold tracking-widest uppercase text-white/50 font-sans mb-3">
+          <div className="relative z-10 p-5 sm:p-8 flex flex-col justify-end h-full">
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-white/50 font-sans mb-2 sm:mb-3">
               Uitgelichte analyse
             </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-white font-serif leading-tight mb-1">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white font-serif leading-tight mb-1">
               {naam}
             </h3>
-            <p className="text-sm text-white/50 font-sans">
+            <p className="text-xs sm:text-sm text-white/50 font-sans">
               {ticker} &middot; {exchange}
             </p>
           </div>
         </div>
 
         {/* Content kant */}
-        <div className="bg-bg-surface p-6 sm:p-8 flex flex-col justify-center">
+        <div className="bg-bg-surface p-5 sm:p-8 flex flex-col justify-center">
           <div className="flex items-center gap-3 mb-4">
             <OordeelBadge oordeel={oordeel} size="md" />
             <span className="text-xs text-text-muted font-sans">{sector}</span>

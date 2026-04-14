@@ -90,21 +90,21 @@ export default function HomePage() {
       {/* ── Hero (alleen zichtbaar als NIET ingelogd) ──────────── */}
       <ShowWhenLoggedOut>
         <section className="bg-bg-surface">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               {/* Linker kolom: tekst */}
               <div>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary font-serif leading-tight mb-6">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary font-serif leading-tight mb-4 sm:mb-6">
                   Direct toegang tot diepgaande Europese aandelenanalyses.
                 </h1>
-                <p className="text-lg text-text-secondary font-sans mb-8 max-w-lg">
+                <p className="text-base sm:text-lg text-text-secondary font-sans mb-6 sm:mb-8 max-w-lg">
                   Wij analyseren de fundamentals, zodat u zich kunt richten op het rendement.
                   Geen hypes, alleen harde cijfers en strategisch inzicht.
                 </p>
 
                 {/* Social proof badges */}
-                <div className="flex flex-wrap gap-3 mb-8">
-                  {['Handmatig geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
+                <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
+                  {['Geverifieerd', '9 frameworks', 'DCF-waardering'].map((badge) => (
                     <span
                       key={badge}
                       className="text-xs font-medium text-text-secondary bg-bg-muted px-3 py-1.5 rounded-full font-sans"
@@ -131,25 +131,30 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Rechter kolom: featured analyse */}
+              {/* Rechter kolom: featured analyse (desktop) */}
               <div className="hidden lg:block">
                 <FeaturedAnalyse analyse={featured} heroImage={heroImage} />
               </div>
+            </div>
+
+            {/* Featured analyse (mobiel + tablet) */}
+            <div className="lg:hidden mt-10">
+              <FeaturedAnalyse analyse={featured} heroImage={heroImage} />
             </div>
           </div>
         </section>
 
         {/* ── Social proof bar ─────────────────────────────── */}
         <section className="bg-bg-muted">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-text-secondary font-sans">
-              <span>{companies.length} uitgebreide analyses</span>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-y-2 gap-x-4 sm:gap-x-8 text-sm text-text-secondary font-sans">
+              <span>{companies.length} analyses</span>
               <span className="hidden sm:inline">&middot;</span>
-              <span>9 frameworks per analyse</span>
+              <span>9 frameworks</span>
               <span className="hidden sm:inline">&middot;</span>
-              <span>Handmatig geverifieerd</span>
+              <span>Geverifieerd</span>
               <span className="hidden sm:inline">&middot;</span>
-              <span>Europese small &amp; midcap focus</span>
+              <span>Europese focus</span>
             </div>
           </div>
         </section>
@@ -193,27 +198,27 @@ export default function HomePage() {
           )}
 
           {/* Conversie-balk */}
-          <div className="mt-8 rounded-xl bg-gradient-to-r from-[#051125] to-[#1b263b] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+          <div className="mt-8 rounded-xl bg-gradient-to-r from-[#051125] to-[#1b263b] p-5 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-5">
             <div>
-              <h3 className="text-lg font-bold text-white font-serif mb-1">
+              <h3 className="text-base sm:text-lg font-bold text-white font-serif mb-0.5 sm:mb-1">
                 Ontdek alle {companies.length} analyses
               </h3>
-              <p className="text-sm text-white/60 font-sans">
+              <p className="text-xs sm:text-sm text-white/60 font-sans">
                 Gratis oordeel en kernthese. Volledige analyse vanaf &euro;4,95.
               </p>
             </div>
-            <div className="flex gap-3 shrink-0">
+            <div className="flex gap-3 shrink-0 w-full sm:w-auto">
               <Link
                 href="/analyses"
-                className="bg-white text-[#051125] px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/90 transition-colors font-sans"
+                className="bg-white text-[#051125] px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/90 transition-colors font-sans flex-1 sm:flex-initial text-center"
               >
                 Alle analyses
               </Link>
               <Link
                 href="/prijzen"
-                className="border border-white/30 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors font-sans"
+                className="border border-white/30 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-white/10 transition-colors font-sans flex-1 sm:flex-initial text-center"
               >
-                Bekijk prijzen
+                Prijzen
               </Link>
             </div>
           </div>
@@ -239,11 +244,11 @@ export default function HomePage() {
 
       {/* ── Newsletter CTA ───────────────────────────────── */}
       <section className="bg-bg-dark">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif mb-4">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
+          <h2 className="text-xl sm:text-3xl font-bold text-white font-serif mb-3 sm:mb-4">
             Nieuwe analyse? Jij weet het eerst.
           </h2>
-          <p className="text-white/70 font-sans mb-8">
+          <p className="text-sm sm:text-base text-white/70 font-sans mb-6 sm:mb-8">
             Ontvang analyses, marktinzichten en fundamentele updates direct in je inbox.
           </p>
           <form

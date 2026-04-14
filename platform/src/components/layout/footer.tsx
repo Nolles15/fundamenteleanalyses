@@ -31,6 +31,9 @@ export function Footer() {
               <Link href="/prijzen" className="text-text-muted hover:text-text-primary transition-colors">
                 Prijzen
               </Link>
+              <Link href="/leren" className="text-text-muted hover:text-text-primary transition-colors">
+                Leren
+              </Link>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-text-secondary font-medium text-xs uppercase tracking-wide">
