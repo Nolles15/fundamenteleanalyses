@@ -29,6 +29,7 @@ export function Header() {
           <nav className="hidden sm:flex items-center gap-6">
             <NavLink href="/analyses" current={pathname}>Analyses</NavLink>
             <NavLink href="/methode" current={pathname}>Methode</NavLink>
+            <NavLink href="/leren" current={pathname}>Leren</NavLink>
             <NavLink href="/over" current={pathname}>Over</NavLink>
             <NavLink href="/prijzen" current={pathname}>Prijzen</NavLink>
 

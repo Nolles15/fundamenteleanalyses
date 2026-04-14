@@ -33,7 +33,7 @@ export default function MethodePage() {
               {
                 stap: '2',
                 titel: 'Controle',
-                tekst: 'Alle cijfers worden handmatig gecontroleerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.',
+                tekst: 'Het analyseproces wordt gecontroleerd en financiele cijfers worden steekproefsgewijs geverifieerd tegen primaire bronnen.',
               },
               {
                 stap: '3',
@@ -114,10 +114,10 @@ export default function MethodePage() {
         <section>
           <h2>Verificatieproces</h2>
           <p>
-            Het controlesysteem verifieert de juistheid van alle gepresenteerde financi&euml;le
-            data (omzet, winst, schuldratio&apos;s, kasstromen) tegen primaire bronnen zoals
-            jaarverslagen en kwartaalcijfers. Elke claim in de analyse bevat een bronverwijzing
-            met paginanummer, zodat de verificatie traceerbaar is.
+            Elke analyse doorloopt een vaste procescontrole. Financi&euml;le cijfers (omzet,
+            winst, schuldratio&apos;s, kasstromen) worden steekproefsgewijs geverifieerd tegen
+            primaire bronnen zoals jaarverslagen en kwartaalcijfers. Elke claim in de analyse
+            bevat een bronverwijzing, zodat de verificatie traceerbaar is.
           </p>
           <p>
             Het verificatieproces beoordeelt niet de beleggingsthese, DCF-aannames of het

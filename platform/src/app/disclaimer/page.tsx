@@ -35,11 +35,11 @@ export default function DisclaimerPage() {
         <section>
           <h2>Verificatieproces</h2>
           <p>
-            De financi&euml;le data in onze analyses wordt handmatig gecontroleerd via een vast
-            controlesysteem. Dit betreft uitsluitend verificatie van de juistheid van gepresenteerde
-            cijfers (omzet, winst, schuldratio&apos;s) tegen primaire bronnen zoals jaarverslagen en
-            kwartaalcijfers. Het verificatieproces beoordeelt niet de beleggingsthese, DCF-aannames
-            of het KOOP/HOLD/PASS-oordeel.
+            Elke analyse doorloopt een vaste procescontrole. Financi&euml;le cijfers (omzet,
+            winst, schuldratio&apos;s) worden steekproefsgewijs geverifieerd tegen primaire bronnen
+            zoals jaarverslagen en kwartaalcijfers. Dit is geen volledige audit van alle
+            gepresenteerde data. Het verificatieproces beoordeelt niet de beleggingsthese,
+            DCF-aannames of het KOOP/HOLD/PASS-oordeel.
           </p>
         </section>
 

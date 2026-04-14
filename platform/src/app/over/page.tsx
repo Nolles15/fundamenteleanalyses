@@ -32,10 +32,10 @@ export default function OverPage() {
         <section>
           <h2>Onze aanpak</h2>
           <p>
-            Wij combineren AI-geassisteerd onderzoek met een handmatig controlesysteem. Het
+            Wij combineren AI-geassisteerd onderzoek met een vast controlesysteem. Het
             AI-proces levert snelheid en consistentie: elke analyse volgt exact hetzelfde framework.
-            De handmatige controle levert betrouwbaarheid: alle financi&euml;le cijfers worden
-            geverifieerd tegen primaire bronnen.
+            De controle levert betrouwbaarheid: het proces wordt gecheckt en financi&euml;le
+            cijfers worden steekproefsgewijs geverifieerd tegen primaire bronnen.
           </p>
           <p>
             Het resultaat: analyses met de diepte van een institutioneel rapport, maar dan voor

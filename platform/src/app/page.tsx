@@ -63,7 +63,7 @@ export default function HomePage() {
       {
         '@type': 'Question',
         name: 'Hoe worden analyses gecontroleerd?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vast controlesysteem op juistheid van de financiële cijfers. Alle data wordt handmatig geverifieerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Elke analyse doorloopt een vaste procescontrole. Financiële cijfers worden steekproefsgewijs geverifieerd tegen primaire bronnen zoals jaarverslagen en kwartaalcijfers.' },
       },
       {
         '@type': 'Question',
