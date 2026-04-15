@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import type { Analyse } from '@/lib/types'
 import { OordeelBadge } from '@/components/cards/oordeel-badge'
-import { formatKoers, formatUpside, formatGetal, formatDatum } from '@/lib/utils'
+import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
 import { ScoreRadar } from './score-radar'
 
 interface TickerOption {
@@ -28,27 +28,39 @@ export function VergelijkClient({ tickers }: Props) {
 
   // URL synchroon houden
   useEffect(() => {
+    if (!tickerA && !tickerB) return
     const params = new URLSearchParams()
     if (tickerA) params.set('a', tickerA)
     if (tickerB) params.set('b', tickerB)
-    const qs = params.toString()
-    router.replace(qs ? `?${qs}` : '/vergelijk', { scroll: false })
+    router.replace(`?${params.toString()}`, { scroll: false })
   }, [tickerA, tickerB, router])
 
   // Data laden
-  useEffect(() => {
-    async function load(ticker: string, setter: (a: Analyse | null) => void) {
-      if (!ticker) { setter(null); return }
-      try {
-        const res = await fetch(`/api/analyse/${ticker}`)
-        if (!res.ok) { setter(null); return }
-        setter(await res.json())
-      } catch { setter(null) }
+  const loadAnalyse = useCallback(async (ticker: string): Promise<Analyse | null> => {
+    if (!ticker) return null
+    try {
+      const res = await fetch(`/api/analyse/${ticker}`)
+      if (!res.ok) return null
+      return await res.json()
+    } catch {
+      return null
     }
+  }, [])
+
+  useEffect(() => {
+    if (!tickerA && !tickerB) return
+    let cancelled = false
     setLoading(true)
-    Promise.all([load(tickerA, setAnalyseA), load(tickerB, setAnalyseB)])
-      .finally(() => setLoading(false))
-  }, [tickerA, tickerB])
+
+    Promise.all([loadAnalyse(tickerA), loadAnalyse(tickerB)]).then(([a, b]) => {
+      if (cancelled) return
+      setAnalyseA(a)
+      setAnalyseB(b)
+      setLoading(false)
+    })
+
+    return () => { cancelled = true }
+  }, [tickerA, tickerB, loadAnalyse])
 
   return (
     <div>
