@@ -12,6 +12,16 @@ import {
 import type { Analyse } from '@/lib/types'
 import { COLORS, ANIM } from '@/components/charts/chart-config'
 
+const FRAMEWORKS = [
+  { key: 'Graham', label: 'Graham' },
+  { key: 'Buffett / Munger', label: 'Buffett' },
+  { key: 'Peter Lynch', label: 'Lynch' },
+  { key: 'Phil Fisher', label: 'Fisher' },
+  { key: 'Magic Formula', label: 'Magic F.' },
+  { key: 'Moat', label: 'Moat' },
+  { key: 'Management', label: 'Mgmt' },
+] as const
+
 interface Props {
   a: Analyse
   b: Analyse
@@ -21,27 +31,22 @@ export function ScoreRadar({ a, b }: Props) {
   const itemsA = a.scorekaart.items
   const itemsB = b.scorekaart.items
 
-  // Verzamel alle frameworks, kort genoeg voor het diagram
-  const frameworks = Array.from(
-    new Set([...itemsA.map((i) => i.framework), ...itemsB.map((i) => i.framework)])
-  )
+  if (itemsA.length === 0 && itemsB.length === 0) return null
 
-  const data = frameworks.map((fw) => {
-    const scoreA = itemsA.find((i) => i.framework === fw)?.score ?? 0
-    const scoreB = itemsB.find((i) => i.framework === fw)?.score ?? 0
-    // Kort label voor de assen
-    const label = fw.length > 14 ? fw.split(/[\s/]+/).slice(0, 2).join(' ') : fw
-    return { framework: label, [a.meta.ticker]: scoreA, [b.meta.ticker]: scoreB }
-  })
+  const data = FRAMEWORKS.map(({ key, label }) => ({
+    framework: label,
+    [a.meta.ticker]: itemsA.find((i) => i.framework === key)?.score ?? 0,
+    [b.meta.ticker]: itemsB.find((i) => i.framework === key)?.score ?? 0,
+  }))
 
   return (
-    <div className="w-full" style={{ height: 320 }}>
+    <div className="w-full" style={{ height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart data={data} cx="50%" cy="50%" outerRadius="72%">
           <PolarGrid stroke="#e2e8f0" strokeOpacity={0.6} />
           <PolarAngleAxis
             dataKey="framework"
-            tick={{ fontSize: 10, fill: '#94a3b8', fontFamily: 'var(--font-inter)' }}
+            tick={{ fontSize: 11, fill: '#94a3b8', fontFamily: 'var(--font-inter)' }}
           />
           <PolarRadiusAxis
             domain={[0, 5]}

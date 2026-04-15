@@ -89,6 +89,7 @@ export function VergelijkClient({ tickers }: Props) {
       {!loading && analyseA && analyseB && (
         <div className="space-y-8">
           <KerngegevensBlok a={analyseA} b={analyseB} />
+          <FinancieelBlok a={analyseA} b={analyseB} />
           <ScorekaartBlok a={analyseA} b={analyseB} />
           <ScenariosBlok a={analyseA} b={analyseB} />
           <RisicosBlok a={analyseA} b={analyseB} />
@@ -213,14 +214,36 @@ function KerngegevensBlok({ a, b }: { a: Analyse; b: Analyse }) {
 
 /* ─── Scorekaart per framework ───────────────────────────── */
 
+// 7 standaard-frameworks voor vergelijking (Fair Value varianten samenvoegen)
+const STANDAARD_FRAMEWORKS = [
+  'Graham',
+  'Buffett / Munger',
+  'Peter Lynch',
+  'Phil Fisher',
+  'Magic Formula',
+  'Moat',
+  'Management',
+] as const
+
+function findScore(items: { framework: string; score: number; max: number }[], fw: string): number | undefined {
+  const exact = items.find((i) => i.framework === fw)
+  if (exact) return exact.score
+  return undefined
+}
+
 function ScorekaartBlok({ a, b }: { a: Analyse; b: Analyse }) {
   const itemsA = a.scorekaart.items
   const itemsB = b.scorekaart.items
 
-  // Verzamel alle unieke frameworks
-  const frameworks = Array.from(
-    new Set([...itemsA.map((i) => i.framework), ...itemsB.map((i) => i.framework)])
-  )
+  // Fair Value items apart: som alle FV-scores per analyse
+  const fvA = itemsA.filter((i) => i.framework.startsWith('Fair Value'))
+  const fvB = itemsB.filter((i) => i.framework.startsWith('Fair Value'))
+  const fvScoreA = fvA.length > 0 ? fvA.reduce((s, i) => s + i.score, 0) : undefined
+  const fvScoreB = fvB.length > 0 ? fvB.reduce((s, i) => s + i.score, 0) : undefined
+  const fvMaxA = fvA.length > 0 ? fvA.reduce((s, i) => s + i.max, 0) : undefined
+  const fvMaxB = fvB.length > 0 ? fvB.reduce((s, i) => s + i.max, 0) : undefined
+
+  const heeftItems = itemsA.length > 0 || itemsB.length > 0
 
   return (
     <div className="bg-bg-surface rounded-xl border border-border overflow-hidden">
@@ -229,12 +252,14 @@ function ScorekaartBlok({ a, b }: { a: Analyse; b: Analyse }) {
       </div>
 
       {/* Radar chart */}
-      <div className="px-5 py-6">
-        <ScoreRadar a={a} b={b} />
-      </div>
+      {heeftItems && (
+        <div className="px-5 py-6">
+          <ScoreRadar a={a} b={b} />
+        </div>
+      )}
 
       {/* Tabel */}
-      <div className="overflow-x-auto border-t border-border">
+      <div className={`overflow-x-auto ${heeftItems ? 'border-t border-border' : ''}`}>
         <table className="w-full text-sm font-sans">
           <thead>
             <tr className="border-b border-border">
@@ -244,22 +269,31 @@ function ScorekaartBlok({ a, b }: { a: Analyse; b: Analyse }) {
             </tr>
           </thead>
           <tbody>
-            {frameworks.map((fw) => {
-              const scoreA = itemsA.find((i) => i.framework === fw)?.score
-              const scoreB = itemsB.find((i) => i.framework === fw)?.score
-              const max = itemsA.find((i) => i.framework === fw)?.max ?? itemsB.find((i) => i.framework === fw)?.max ?? 5
-              return (
-                <tr key={fw} className="border-b border-border last:border-0">
-                  <td className="px-5 py-2.5 text-text-secondary text-xs">{fw}</td>
-                  <td className="px-5 py-2.5 text-right tabular-nums">
-                    <ScoreDot score={scoreA} max={max} />
-                  </td>
-                  <td className="px-5 py-2.5 text-right tabular-nums">
-                    <ScoreDot score={scoreB} max={max} />
-                  </td>
-                </tr>
-              )
-            })}
+            {STANDAARD_FRAMEWORKS.map((fw) => (
+              <tr key={fw} className="border-b border-border">
+                <td className="px-5 py-2.5 text-text-secondary text-xs">{fw}</td>
+                <td className="px-5 py-2.5 text-right tabular-nums">
+                  <ScoreDot score={findScore(itemsA, fw)} max={5} />
+                </td>
+                <td className="px-5 py-2.5 text-right tabular-nums">
+                  <ScoreDot score={findScore(itemsB, fw)} max={5} />
+                </td>
+              </tr>
+            ))}
+            {/* Fair Value samengevat */}
+            <tr className="border-b border-border">
+              <td className="px-5 py-2.5 text-text-secondary text-xs">Fair Value</td>
+              <td className="px-5 py-2.5 text-right tabular-nums">
+                {fvScoreA != null && fvMaxA != null
+                  ? <ScoreDot score={fvScoreA} max={fvMaxA} />
+                  : <span className="text-xs text-text-muted">—</span>}
+              </td>
+              <td className="px-5 py-2.5 text-right tabular-nums">
+                {fvScoreB != null && fvMaxB != null
+                  ? <ScoreDot score={fvScoreB} max={fvMaxB} />
+                  : <span className="text-xs text-text-muted">—</span>}
+              </td>
+            </tr>
             <tr className="bg-bg-muted">
               <td className="px-5 py-2.5 text-text-primary text-xs font-semibold">Totaal</td>
               <td className="px-5 py-2.5 text-right text-xs font-semibold text-text-primary tabular-nums">
@@ -281,6 +315,74 @@ function ScoreDot({ score, max }: { score?: number; max: number }) {
   const ratio = score / max
   const kleur = ratio >= 0.8 ? 'text-buy' : ratio >= 0.5 ? 'text-hold' : 'text-pass'
   return <span className={`text-xs font-semibold ${kleur}`}>{score}/{max}</span>
+}
+
+/* ─── Financieel ─────────────────────────────────────────── */
+
+function fmtRatio(n: number | null | undefined): string {
+  if (n == null) return '—'
+  return n.toLocaleString('nl-NL', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+}
+
+function fmtPct(n: number | null | undefined): string {
+  if (n == null) return '—'
+  return `${n.toLocaleString('nl-NL', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}%`
+}
+
+function FinancieelBlok({ a, b }: { a: Analyse; b: Analyse }) {
+  const wA = a.financieel.waardering
+  const wB = b.financieel.waardering
+  const rA = a.financieel.resultatenrekening
+  const rB = b.financieel.resultatenrekening
+  const kA = a.financieel.kasstromen
+  const kB = b.financieel.kasstromen
+  const latestRA = rA?.length ? rA[rA.length - 1] : null
+  const latestRB = rB?.length ? rB[rB.length - 1] : null
+  const latestKA = kA?.length ? kA[kA.length - 1] : null
+  const latestKB = kB?.length ? kB[kB.length - 1] : null
+
+  return (
+    <div className="bg-bg-surface rounded-xl border border-border overflow-hidden">
+      <div className="px-5 py-3 border-b border-border bg-bg-muted">
+        <h2 className="text-sm font-semibold text-text-primary font-sans">Financieel</h2>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm font-sans">
+          <thead>
+            <tr className="border-b border-border">
+              <th className="text-left px-5 py-2.5 text-xs text-text-muted font-medium" />
+              <th className="text-right px-5 py-2.5 text-xs text-text-muted font-medium">{a.meta.ticker}</th>
+              <th className="text-right px-5 py-2.5 text-xs text-text-muted font-medium">{b.meta.ticker}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Waardering */}
+            <tr className="bg-bg-muted">
+              <td className="px-5 py-2 text-xs font-semibold text-text-primary" colSpan={3}>Waardering</td>
+            </tr>
+            <VergelijkRij label="P/E" waarde_a={fmtRatio(wA?.pe)} waarde_b={fmtRatio(wB?.pe)} />
+            <VergelijkRij label="P/E forward" waarde_a={fmtRatio(wA?.pe_forward)} waarde_b={fmtRatio(wB?.pe_forward)} />
+            <VergelijkRij label="EV/EBITDA" waarde_a={fmtRatio(wA?.ev_ebitda)} waarde_b={fmtRatio(wB?.ev_ebitda)} />
+            <VergelijkRij label="P/FCF" waarde_a={fmtRatio(wA?.p_fcf)} waarde_b={fmtRatio(wB?.p_fcf)} />
+            <VergelijkRij label="FCF yield" waarde_a={fmtPct(wA?.fcf_yield_pct)} waarde_b={fmtPct(wB?.fcf_yield_pct)} />
+            <VergelijkRij label="P/B" waarde_a={fmtRatio(wA?.p_b)} waarde_b={fmtRatio(wB?.p_b)} />
+            <VergelijkRij label="Dividend" waarde_a={fmtPct(wA?.dividendrendement_pct)} waarde_b={fmtPct(wB?.dividendrendement_pct)} />
+
+            {/* Winstgevendheid */}
+            <tr className="bg-bg-muted">
+              <td className="px-5 py-2 text-xs font-semibold text-text-primary" colSpan={3}>
+                Winstgevendheid ({latestRA?.jaar ?? '—'} / {latestRB?.jaar ?? '—'})
+              </td>
+            </tr>
+            <VergelijkRij label="EBITDA-marge" waarde_a={fmtPct(latestRA?.ebitda_marge_pct)} waarde_b={fmtPct(latestRB?.ebitda_marge_pct)} />
+            <VergelijkRij label="Nettomarge" waarde_a={fmtPct(latestRA?.nettomarge_pct)} waarde_b={fmtPct(latestRB?.nettomarge_pct)} />
+            <VergelijkRij label="FCF-marge" waarde_a={fmtPct(latestKA?.fcf_marge_pct)} waarde_b={fmtPct(latestKB?.fcf_marge_pct)} />
+            <VergelijkRij label="Omzetgroei" waarde_a={fmtPct(latestRA?.omzet_groei_pct)} waarde_b={fmtPct(latestRB?.omzet_groei_pct)} />
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
 }
 
 /* ─── Scenarios ──────────────────────────────────────────── */
