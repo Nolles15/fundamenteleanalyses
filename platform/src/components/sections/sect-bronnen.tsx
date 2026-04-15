@@ -19,7 +19,7 @@ export function SectBronnen({ analyse }: Props) {
       {databronnen != null && (
         <div className="space-y-4">
           {/* Geraadpleegde bronnen */}
-          {databronnen.bronnen_geraadpleegd.length > 0 && (
+          {databronnen.bronnen_geraadpleegd != null && databronnen.bronnen_geraadpleegd.length > 0 && (
             <div className="bg-bg-surface rounded-xl border border-border p-5">
               <p className="text-xs text-text-muted font-sans mb-3 uppercase tracking-wide">
                 Geraadpleegde bronnen
