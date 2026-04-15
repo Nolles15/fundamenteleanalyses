@@ -1,0 +1,1805 @@
+{
+  "meta": {
+    "ticker": "ASML",
+    "exchange": "Euronext Amsterdam",
+    "naam": "ASML Holding N.V.",
+    "sector": "Technologie",
+    "industrie": "Halfgeleiderapparatuur / Lithografie",
+    "land": "Nederland",
+    "koers": 1270.0,
+    "valuta": "EUR",
+    "peildatum": "2026-04-11",
+    "marktkapitalisatie": "EUR 489 mrd",
+    "marktkapitalisatie_mln": 489483,
+    "free_float_pct": 99.0,
+    "index_lidmaatschap": "AEX, EURO STOXX 50, NASDAQ-100",
+    "domein": "asml.com",
+    "yahoo_symbol": "ASML.AS"
+  },
+  "executive_summary": {
+    "kernthese": "ASML is de enige producent ter wereld van EUV-lithografiemachines, het meest kritieke apparaat in de halfgeleiderproductie. Chipfabrikanten als TSMC, Samsung, Intel en SK Hynix zijn volledig afhankelijk van ASML om halfgeleiders te produceren op de meest geavanceerde nodes (kleiner dan 7 nanometer). Deze monopoliepositie, opgebouwd over drie decennia investering van meer dan €30 miljard in R&D, is nagenoeg onmogelijk te repliceren — concurrenten Canon en Nikon hebben EUV-ontwikkeling jaren geleden opgegeven. De structurele groeidrivers zijn krachtig: de explosieve vraag naar AI-chips drijft recordbestellingen (orderboek €38,8 miljard eind 2025), de uitrol van High-NA EUV opent een nieuwe productcyclus, en de geïnstalleerde basis van meer dan 1.000 systemen genereert groeiende terugkerende serviceomzet. Het belangrijkste risico is de toenemende geopolitieke druk: China vertegenwoordigde 33% van de omzet in 2025 en verscherpte exportbeperkingen via de MATCH Act kunnen dit drastisch reduceren. De halfgeleidersector is bovendien inherent cyclisch, wat perioden van sterke vraag afwisselt met plotselinge bestedingsdalingen.",
+    "oordeel": "PASS",
+    "koers": 1270.0,
+    "valuta": "EUR",
+    "fair_value_basis": 820,
+    "fair_value_kansgewogen": 836,
+    "epv_per_aandeel": 270,
+    "upside_pct": -35,
+    "fair_value_scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 495,
+        "upside_pct": -61,
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 9.5,
+        "kans_pct": 25
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 820,
+        "upside_pct": -35,
+        "fcf_groei_pct": 13.0,
+        "wacc_pct": 8.82,
+        "kans_pct": 50
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 1211,
+        "upside_pct": -5,
+        "fcf_groei_pct": 18.0,
+        "wacc_pct": 8.3,
+        "kans_pct": 25
+      }
+    ],
+    "reverse_dcf_impliciete_groei_pct": 16.2,
+    "grootste_kans": "Seculiere AI-chip-vraag drijft meerjarige groeicyclus in geavanceerde lithografie, met recordorderboek van €38,8 miljard als bewijs van klantcommitment.",
+    "grootste_risico": "Verscherping van exportbeperkingen naar China (MATCH Act) kan tot 33% van de omzet bedreigen, terwijl de cyclische aard van de halfgeleiderindustrie altijd een terugval mogelijk maakt."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "ASML Holding N.V. is de wereldmarktleider en enige producent van EUV-lithografiemachines (Extreme Ultraviolet), het meest geavanceerde type apparatuur dat chipfabrikanten gebruiken om de kleinste patronen op siliciumwafers te schrijven. Lithografie is de cruciale stap in het halfgeleiderproductieproces waarbij licht door een masker wordt geprojecteerd om miljarden nanoscopische structuren op een chip te etsen. ASML levert zowel DUV-systemen (Deep Ultraviolet, de vorige generatie) als de nieuwste EUV- en High-NA EUV-systemen. De klanten zijn uitsluitend de grootste chipproducenten ter wereld: TSMC, Samsung, Intel, SK Hynix en Micron. ASML's unieke positie in de waardeketen is die van enabler: zonder ASML-machines kan geen enkel bedrijf ter wereld chips produceren op de meest geavanceerde nodes (sub-7nm). Het verdienmodel bestaat uit twee pijlers. Ten eerste de verkoop van nieuwe lithografiesystemen, met prijzen variërend van €5 miljoen voor een basis-DUV-systeem tot €350 miljoen voor een High-NA EUV-machine. Ten tweede Installed Base Management (IBM), een groeiende stroom van terugkerende omzet uit service, onderhoud, software-updates en upgrades van reeds geleverde systemen. In 2025 genereerde IBM ongeveer 25% van de totale omzet, met hogere marges dan systeemverkoop. ASML zit daarmee in een positie vergelijkbaar met een razorblademodel: de initiële machine creëert een levenslange klantrelatie voor service-inkomsten gedurende de operationele levensduur van 15-20 jaar per systeem.",
+    "geschiedenis": "ASML werd in 1984 opgericht als een joint venture tussen Philips en de chipproducent ASM International in Veldhoven, Nederland. Het bedrijf begon in een houten noodgebouw op het Philips-terrein met slechts 31 medewerkers en de ambitie om lithografiesystemen te ontwikkelen die konden concurreren met de Japanse marktleiders Nikon en Canon. In de jaren negentig boekte ASML zijn eerste commerciële successen met DUV-steppermachines en groeide het uit tot een serieuze concurrent. De beursgang op Euronext Amsterdam volgde in 1995, met een notering aan de NASDAQ in hetzelfde jaar. Een cruciaal keerpunt was de strategische keuze in de late jaren negentig om zwaar te investeren in EUV-lithografie, een technologie die destijds als onmogelijk werd beschouwd. Dit vergde decennia van R&D en cumulatief meer dan €30 miljard aan investeringen. In 2012 deden TSMC, Samsung en Intel gezamenlijk kapitaalinjecties in ASML ter waarde van €3,85 miljard om de EUV-ontwikkeling te versnellen — een ongekend signaal van vertrouwen. De overname van lichtbronproducent Cymer in 2013 voor €1,95 miljard was strategisch cruciaal: ASML nam hiermee de controle over de EUV-lichtbron, het technisch meest uitdagende onderdeel. In 2016 volgde de overname van HMI (Taiwan) voor metrologiecapaciteiten, en in 2020 Berliner Glas voor optische modules. De doorbraak kwam rond 2018-2019 toen EUV-machines voor het eerst in volume werden ingezet bij TSMC voor de 7nm-node. Sindsdien is ASML van een nicheleverancier uitgegroeid tot een van de meest waardevolle bedrijven ter wereld. De omzet verviervoudigde van €9 miljard in 2017 naar €32,7 miljard in 2025. In 2024 trad Christophe Fouquet aan als CEO, opvolger van Peter Wennink die het bedrijf vijftien jaar leidde door de kritieke EUV-transitie. Eind 2025 bedroeg het orderboek €38,8 miljard, gedreven door de explosieve vraag naar AI-chips.",
+    "bedrijfsmodel": "ASML verdient geld via twee hoofdstromen. De eerste is de verkoop van nieuwe lithografiesystemen, onderverdeeld in EUV-systemen (waaronder High-NA) en DUV-systemen. De tweede is Installed Base Management (IBM): service, onderhoud, upgrades en software voor de meer dan 1.000 systemen die wereldwijd bij klanten staan opgesteld. De IBM-stroom groeit sneller dan systeemverkoop en genereert hogere marges, vergelijkbaar met een SaaS-model. In 2025 was de omzetverdeling ongeveer 75% systeemverkoop en 25% IBM.",
+    "ipo_context": "ASML ging in 1995 naar de beurs op zowel Euronext Amsterdam als de NASDAQ. De IPO-opbrengst werd gebruikt om de groei te financieren en de afhankelijkheid van moederbedrijf Philips te verminderen. Philips verkocht geleidelijk zijn belang; het laatste restant werd in 2013 verkocht. De kapitaalstructuur is sindsdien fundamenteel veranderd: ASML is overgegaan van een netto schuldpositie naar een netto kaspositie van €8,6 miljard eind 2025, gedreven door sterke kasstroomgeneratie en ondanks omvangrijke buyback- en dividendprogramma's.",
+    "klantenprofiel": "ASML heeft een extreem geconcentreerde klantenbase: de top drie klanten (TSMC, Samsung en Intel) vertegenwoordigen samen circa 70% van de omzet. TSMC is veruit de grootste klant met naar schatting 35-40% van de totale omzet, gevolgd door Samsung (20-25%) en Intel (15-20%). SK Hynix en Micron zijn kleinere maar groeiende klanten, met name voor geheugenchips en HBM (High Bandwidth Memory). De afhankelijkheid is echter wederzijds: deze klanten zijn volledig afhankelijk van ASML voor geavanceerde lithografie, wat de onderhandelingspositie in balans houdt.",
+    "oprichtingsjaar": 1984,
+    "ipo_datum": "1995-03-14",
+    "ipo_koers": 17.22,
+    "personeel": 44000,
+    "landen_actief": 16,
+    "klantconcentratie": "Top 3 klanten (TSMC, Samsung, Intel) vertegenwoordigen circa 70% van de omzet. TSMC alleen is goed voor naar schatting 35-40%. De concentratie is hoog, maar de afhankelijkheid is wederzijds: klanten hebben geen alternatief voor ASML's EUV-technologie.",
+    "geografische_spreiding": [
+      {
+        "regio": "Taiwan",
+        "omzet_pct": 35,
+        "valuta": "USD"
+      },
+      {
+        "regio": "China",
+        "omzet_pct": 33,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Zuid-Korea",
+        "omzet_pct": 15,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Verenigde Staten",
+        "omzet_pct": 10,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Overig (Japan, Europa)",
+        "omzet_pct": 7,
+        "valuta": "EUR/JPY"
+      }
+    ],
+    "geografische_spreiding_toelichting": "De geografische spreiding weerspiegelt waar de grootste chipfabrieken staan. Taiwan (TSMC) en Zuid-Korea (Samsung, SK Hynix) domineren. China was in 2025 goed voor 33% van de omzet, maar dit aandeel zal naar verwachting dalen naar circa 20% in 2026 door verscherpte exportbeperkingen. De valuta-exposure is overwegend in USD, aangezien chipfabrikanten in dollars afrekenen.",
+    "segmenten": [
+      {
+        "naam": "EUV-systemen",
+        "omzet_pct": 55,
+        "beschrijving": "De meest geavanceerde lithografiesystemen die werken met extreem ultraviolet licht (13,5nm golflengte). Essentieel voor de productie van chips op sub-7nm nodes. Prijs per systeem: €150-350 miljoen."
+      },
+      {
+        "naam": "DUV-systemen",
+        "omzet_pct": 20,
+        "beschrijving": "Deep Ultraviolet lithografiesystemen, de vorige generatie. Nog steeds essentieel voor minder geavanceerde chipproductie en bepaalde productiestappen. Prijs: €5-90 miljoen per systeem."
+      },
+      {
+        "naam": "Installed Base Management",
+        "omzet_pct": 25,
+        "beschrijving": "Service, onderhoud, software-updates en upgrades voor de meer dan 1.000 geïnstalleerde systemen wereldwijd. Terugkerende omzet met hogere marges dan systeemverkoop. Groeit met circa 26% per jaar."
+      }
+    ],
+    "aandeelhouders": [
+      {
+        "naam": "Capital Group",
+        "pct": 14.1,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "BlackRock",
+        "pct": 8.0,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Baillie Gifford",
+        "pct": 4.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Vanguard Group",
+        "pct": 3.5,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Overig institutioneel en publiek",
+        "pct": 69.9,
+        "type": "Publiek"
+      }
+    ],
+    "institutioneel_eigendom_trend": "Het institutioneel eigendom van ASML is stabiel hoog, boven de 85%. De aandeelhoudersbase is breed gespreid over grote internationale institutionele beleggers. Er is geen controlerende aandeelhouder. Capital Group is met circa 14% de grootste aandeelhouder. De trend is licht stijgend door toenemende opname in ESG- en thematische technologiefondsen."
+  },
+  "financieel": {
+    "valuta_label": "EUR mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2015,
+        "omzet": 6286,
+        "omzet_groei_pct": null,
+        "brutowinst": 2835,
+        "brutomarge_pct": 45.1,
+        "ebit": 1585,
+        "ebit_marge_pct": 25.2,
+        "ebitda": 1894,
+        "ebitda_marge_pct": 30.1,
+        "nettowinst": 1387,
+        "nettomarge_pct": 22.1,
+        "eps": 3.26,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": 425.5
+      },
+      {
+        "jaar": 2016,
+        "omzet": 6795,
+        "omzet_groei_pct": 8.1,
+        "brutowinst": 3042,
+        "brutomarge_pct": 44.8,
+        "ebit": 1695,
+        "ebit_marge_pct": 24.9,
+        "ebitda": 2020,
+        "ebitda_marge_pct": 29.7,
+        "nettowinst": 1470,
+        "nettomarge_pct": 21.6,
+        "eps": 3.64,
+        "eps_groei_pct": 11.7,
+        "aandelen_uitstaand_mln": 403.8
+      },
+      {
+        "jaar": 2017,
+        "omzet": 9053,
+        "omzet_groei_pct": 33.2,
+        "brutowinst": 4028,
+        "brutomarge_pct": 44.5,
+        "ebit": 2547,
+        "ebit_marge_pct": 28.1,
+        "ebitda": 2938,
+        "ebitda_marge_pct": 32.5,
+        "nettowinst": 2121,
+        "nettomarge_pct": 23.4,
+        "eps": 5.31,
+        "eps_groei_pct": 45.9,
+        "aandelen_uitstaand_mln": 399.5
+      },
+      {
+        "jaar": 2018,
+        "omzet": 10944,
+        "omzet_groei_pct": 20.9,
+        "brutowinst": 4870,
+        "brutomarge_pct": 44.5,
+        "ebit": 2966,
+        "ebit_marge_pct": 27.1,
+        "ebitda": 3465,
+        "ebitda_marge_pct": 31.7,
+        "nettowinst": 2592,
+        "nettomarge_pct": 23.7,
+        "eps": 6.42,
+        "eps_groei_pct": 20.9,
+        "aandelen_uitstaand_mln": 403.7
+      },
+      {
+        "jaar": 2019,
+        "omzet": 11820,
+        "omzet_groei_pct": 8.0,
+        "brutowinst": 5248,
+        "brutomarge_pct": 44.4,
+        "ebit": 3161,
+        "ebit_marge_pct": 26.7,
+        "ebitda": 3708,
+        "ebitda_marge_pct": 31.4,
+        "nettowinst": 2592,
+        "nettomarge_pct": 21.9,
+        "eps": 6.36,
+        "eps_groei_pct": -0.9,
+        "aandelen_uitstaand_mln": 407.5
+      },
+      {
+        "jaar": 2020,
+        "omzet": 13979,
+        "omzet_groei_pct": 18.3,
+        "brutowinst": 6858,
+        "brutomarge_pct": 49.1,
+        "ebit": 4249,
+        "ebit_marge_pct": 30.4,
+        "ebitda": 4887,
+        "ebitda_marge_pct": 35.0,
+        "nettowinst": 3554,
+        "nettomarge_pct": 25.4,
+        "eps": 8.82,
+        "eps_groei_pct": 38.7,
+        "aandelen_uitstaand_mln": 403.0
+      },
+      {
+        "jaar": 2021,
+        "omzet": 18611,
+        "omzet_groei_pct": 33.1,
+        "brutowinst": 9668,
+        "brutomarge_pct": 51.9,
+        "ebit": 6310,
+        "ebit_marge_pct": 33.9,
+        "ebitda": 7215,
+        "ebitda_marge_pct": 38.8,
+        "nettowinst": 5883,
+        "nettomarge_pct": 31.6,
+        "eps": 14.8,
+        "eps_groei_pct": 67.8,
+        "aandelen_uitstaand_mln": 397.5
+      },
+      {
+        "jaar": 2022,
+        "omzet": 21174,
+        "omzet_groei_pct": 13.8,
+        "brutowinst": 10118,
+        "brutomarge_pct": 47.8,
+        "ebit": 6849,
+        "ebit_marge_pct": 32.4,
+        "ebitda": 7628,
+        "ebitda_marge_pct": 36.0,
+        "nettowinst": 5624,
+        "nettomarge_pct": 26.6,
+        "eps": 14.25,
+        "eps_groei_pct": -3.7,
+        "aandelen_uitstaand_mln": 394.6
+      },
+      {
+        "jaar": 2023,
+        "omzet": 27559,
+        "omzet_groei_pct": 30.2,
+        "brutowinst": 13751,
+        "brutomarge_pct": 49.9,
+        "ebit": 9022,
+        "ebit_marge_pct": 32.7,
+        "ebitda": 10587,
+        "ebitda_marge_pct": 38.4,
+        "nettowinst": 7839,
+        "nettomarge_pct": 28.4,
+        "eps": 19.91,
+        "eps_groei_pct": 39.7,
+        "aandelen_uitstaand_mln": 393.7
+      },
+      {
+        "jaar": 2024,
+        "omzet": 28262,
+        "omzet_groei_pct": 2.6,
+        "brutowinst": 14535,
+        "brutomarge_pct": 51.4,
+        "ebit": 9763,
+        "ebit_marge_pct": 34.5,
+        "ebitda": 10757,
+        "ebitda_marge_pct": 38.1,
+        "nettowinst": 7571,
+        "nettomarge_pct": 26.8,
+        "eps": 19.25,
+        "eps_groei_pct": -3.3,
+        "aandelen_uitstaand_mln": 393.2
+      },
+      {
+        "jaar": 2025,
+        "omzet": 32680,
+        "omzet_groei_pct": 15.6,
+        "brutowinst": 17255,
+        "brutomarge_pct": 52.8,
+        "ebit": 11340,
+        "ebit_marge_pct": 34.7,
+        "ebitda": 12750,
+        "ebitda_marge_pct": 39.0,
+        "nettowinst": 9600,
+        "nettomarge_pct": 29.4,
+        "eps": 24.73,
+        "eps_groei_pct": 28.5,
+        "aandelen_uitstaand_mln": 388.2
+      }
+    ],
+    "toelichting_resultaten": "ASML laat over de periode 2015-2025 een indrukwekkende omzetgroei zien, met een CAGR van circa 18%. De omzet steeg van €6,3 miljard in 2015 naar €32,7 miljard in 2025, gedreven door de toenemende adoptie van EUV-lithografie. De brutomarge verbeterde structureel van circa 44-45% in 2015-2019 naar 52,8% in 2025, wat het toenemende aandeel van hoogwaardige EUV-systemen weerspiegelt. De EBIT-marge steeg van 25% naar bijna 35%. Opvallend is dat 2024 een relatief vlak jaar was met slechts 2,6% omzetgroei, gevolgd door een sterk herstel in 2025. De winstgevendheid is cyclisch beïnvloed maar de langetermijntrend is onmiskenbaar positief. De winst per aandeel steeg van €3,26 in 2015 naar €24,73 in 2025, mede ondersteund door actieve aandeleninkoop die het aantal uitstaande aandelen van 425 miljoen naar 388 miljoen reduceerde.",
+    "omzet_cagr_pct": 18.0,
+    "omzet_cagr_periode": "2015-2025",
+    "kasstromen": [
+      {
+        "jaar": 2015,
+        "cfo": 1876,
+        "capex": 365,
+        "fcf": 1511,
+        "fcf_na_sbc": 1361,
+        "fcf_per_aandeel": 3.55,
+        "fcf_marge_pct": 24.0,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 1.09,
+        "sbc": 150,
+        "dividend_totaal": 362,
+        "aandeleninkoop": 1000
+      },
+      {
+        "jaar": 2016,
+        "cfo": 1883,
+        "capex": 304,
+        "fcf": 1579,
+        "fcf_na_sbc": 1409,
+        "fcf_per_aandeel": 3.91,
+        "fcf_marge_pct": 23.2,
+        "fcf_groei_pct": 4.5,
+        "fcf_conversion": 1.07,
+        "sbc": 170,
+        "dividend_totaal": 503,
+        "aandeleninkoop": 1500
+      },
+      {
+        "jaar": 2017,
+        "cfo": 2742,
+        "capex": 432,
+        "fcf": 2310,
+        "fcf_na_sbc": 2110,
+        "fcf_per_aandeel": 5.78,
+        "fcf_marge_pct": 25.5,
+        "fcf_groei_pct": 46.3,
+        "fcf_conversion": 1.09,
+        "sbc": 200,
+        "dividend_totaal": 659,
+        "aandeleninkoop": 1000
+      },
+      {
+        "jaar": 2018,
+        "cfo": 2944,
+        "capex": 484,
+        "fcf": 2460,
+        "fcf_na_sbc": 2230,
+        "fcf_per_aandeel": 6.09,
+        "fcf_marge_pct": 22.5,
+        "fcf_groei_pct": 6.5,
+        "fcf_conversion": 0.95,
+        "sbc": 230,
+        "dividend_totaal": 799,
+        "aandeleninkoop": 2000
+      },
+      {
+        "jaar": 2019,
+        "cfo": 3556,
+        "capex": 518,
+        "fcf": 3038,
+        "fcf_na_sbc": 2788,
+        "fcf_per_aandeel": 7.45,
+        "fcf_marge_pct": 25.7,
+        "fcf_groei_pct": 23.5,
+        "fcf_conversion": 1.17,
+        "sbc": 250,
+        "dividend_totaal": 884,
+        "aandeleninkoop": 2100
+      },
+      {
+        "jaar": 2020,
+        "cfo": 5270,
+        "capex": 566,
+        "fcf": 4704,
+        "fcf_na_sbc": 4424,
+        "fcf_per_aandeel": 11.67,
+        "fcf_marge_pct": 33.7,
+        "fcf_groei_pct": 54.9,
+        "fcf_conversion": 1.32,
+        "sbc": 280,
+        "dividend_totaal": 987,
+        "aandeleninkoop": 1500
+      },
+      {
+        "jaar": 2021,
+        "cfo": 8875,
+        "capex": 724,
+        "fcf": 8151,
+        "fcf_na_sbc": 7851,
+        "fcf_per_aandeel": 20.5,
+        "fcf_marge_pct": 43.8,
+        "fcf_groei_pct": 73.3,
+        "fcf_conversion": 1.39,
+        "sbc": 300,
+        "dividend_totaal": 1594,
+        "aandeleninkoop": 3400
+      },
+      {
+        "jaar": 2022,
+        "cfo": 8487,
+        "capex": 1029,
+        "fcf": 7458,
+        "fcf_na_sbc": 7128,
+        "fcf_per_aandeel": 18.89,
+        "fcf_marge_pct": 35.2,
+        "fcf_groei_pct": -8.5,
+        "fcf_conversion": 1.33,
+        "sbc": 330,
+        "dividend_totaal": 2090,
+        "aandeleninkoop": 3300
+      },
+      {
+        "jaar": 2023,
+        "cfo": 5443,
+        "capex": 2689,
+        "fcf": 2754,
+        "fcf_na_sbc": 2404,
+        "fcf_per_aandeel": 6.99,
+        "fcf_marge_pct": 10.0,
+        "fcf_groei_pct": -63.1,
+        "fcf_conversion": 0.35,
+        "sbc": 350,
+        "dividend_totaal": 2380,
+        "aandeleninkoop": 3300
+      },
+      {
+        "jaar": 2024,
+        "cfo": 11166,
+        "capex": 2609,
+        "fcf": 8557,
+        "fcf_na_sbc": 8207,
+        "fcf_per_aandeel": 21.76,
+        "fcf_marge_pct": 30.3,
+        "fcf_groei_pct": 210.7,
+        "fcf_conversion": 1.13,
+        "sbc": 350,
+        "dividend_totaal": 2490,
+        "aandeleninkoop": 2400
+      },
+      {
+        "jaar": 2025,
+        "cfo": 12659,
+        "capex": 1850,
+        "fcf": 10809,
+        "fcf_na_sbc": 10309,
+        "fcf_per_aandeel": 28.03,
+        "fcf_marge_pct": 33.1,
+        "fcf_groei_pct": 26.3,
+        "fcf_conversion": 1.13,
+        "sbc": 500,
+        "dividend_totaal": 2925,
+        "aandeleninkoop": 2400
+      }
+    ],
+    "toelichting_kasstromen": "De vrije kasstroom van ASML is indrukwekkend gegroeid, van €1,5 miljard in 2015 naar €10,8 miljard in 2025. De FCF-conversie (FCF/nettowinst) ligt structureel rond of boven 1,0, wat duidt op hoge winstkwaliteit. Een opvallende uitzondering is 2023, toen de FCF kelderde naar €2,8 miljard door een tijdelijke piek in CAPEX gerelateerd aan faciliteitsuitbreidingen en werkkapitaaleffecten. Dit was eenmalig: in 2024 herstelde de FCF naar €8,6 miljard en in 2025 naar een record van €10,8 miljard. De SBC (aandelencompensatie) is met €500 miljoen in 2025 beperkt ten opzichte van de marktkapitalisatie (circa 0,1%). ASML keert consistent kapitaal terug aan aandeelhouders via dividenden en buybacks — samen circa €5,3 miljard in 2025.",
+    "balans": [
+      {
+        "jaar": 2015,
+        "totale_activa": 15798,
+        "eigen_vermogen": 5965,
+        "bruto_schuld": 2500,
+        "nettoschuld": -400,
+        "debt_equity": 0.42,
+        "debt_ebitda": 1.32,
+        "current_ratio": 2.52,
+        "quick_ratio": 2.1,
+        "goodwill_pct_activa": 22.0,
+        "boekwaarde_per_aandeel": 14.02
+      },
+      {
+        "jaar": 2016,
+        "totale_activa": 16968,
+        "eigen_vermogen": 6062,
+        "bruto_schuld": 2500,
+        "nettoschuld": -360,
+        "debt_equity": 0.41,
+        "debt_ebitda": 1.24,
+        "current_ratio": 2.73,
+        "quick_ratio": 2.25,
+        "goodwill_pct_activa": 21.0,
+        "boekwaarde_per_aandeel": 15.01
+      },
+      {
+        "jaar": 2017,
+        "totale_activa": 20340,
+        "eigen_vermogen": 6768,
+        "bruto_schuld": 3700,
+        "nettoschuld": 235,
+        "debt_equity": 0.55,
+        "debt_ebitda": 1.26,
+        "current_ratio": 2.8,
+        "quick_ratio": 2.3,
+        "goodwill_pct_activa": 18.0,
+        "boekwaarde_per_aandeel": 16.94
+      },
+      {
+        "jaar": 2018,
+        "totale_activa": 21826,
+        "eigen_vermogen": 5777,
+        "bruto_schuld": 3868,
+        "nettoschuld": 100,
+        "debt_equity": 0.67,
+        "debt_ebitda": 1.12,
+        "current_ratio": 2.18,
+        "quick_ratio": 1.75,
+        "goodwill_pct_activa": 17.0,
+        "boekwaarde_per_aandeel": 14.31
+      },
+      {
+        "jaar": 2019,
+        "totale_activa": 24731,
+        "eigen_vermogen": 5643,
+        "bruto_schuld": 3955,
+        "nettoschuld": 410,
+        "debt_equity": 0.7,
+        "debt_ebitda": 1.07,
+        "current_ratio": 2.12,
+        "quick_ratio": 1.65,
+        "goodwill_pct_activa": 15.0,
+        "boekwaarde_per_aandeel": 13.85
+      },
+      {
+        "jaar": 2020,
+        "totale_activa": 30667,
+        "eigen_vermogen": 7733,
+        "bruto_schuld": 4746,
+        "nettoschuld": -1250,
+        "debt_equity": 0.61,
+        "debt_ebitda": 0.97,
+        "current_ratio": 2.48,
+        "quick_ratio": 2.0,
+        "goodwill_pct_activa": 12.5,
+        "boekwaarde_per_aandeel": 19.19
+      },
+      {
+        "jaar": 2021,
+        "totale_activa": 36300,
+        "eigen_vermogen": 8811,
+        "bruto_schuld": 4746,
+        "nettoschuld": -2881,
+        "debt_equity": 0.54,
+        "debt_ebitda": 0.66,
+        "current_ratio": 1.92,
+        "quick_ratio": 1.5,
+        "goodwill_pct_activa": 10.5,
+        "boekwaarde_per_aandeel": 22.16
+      },
+      {
+        "jaar": 2022,
+        "totale_activa": 39958,
+        "eigen_vermogen": 13452,
+        "bruto_schuld": 4684,
+        "nettoschuld": -2694,
+        "debt_equity": 0.35,
+        "debt_ebitda": 0.61,
+        "current_ratio": 1.28,
+        "quick_ratio": 0.95,
+        "goodwill_pct_activa": 9.5,
+        "boekwaarde_per_aandeel": 34.08
+      },
+      {
+        "jaar": 2023,
+        "totale_activa": 48590,
+        "eigen_vermogen": 18477,
+        "bruto_schuld": 4990,
+        "nettoschuld": -2021,
+        "debt_equity": 0.27,
+        "debt_ebitda": 0.47,
+        "current_ratio": 1.4,
+        "quick_ratio": 1.05,
+        "goodwill_pct_activa": 8.0,
+        "boekwaarde_per_aandeel": 46.94
+      },
+      {
+        "jaar": 2024,
+        "totale_activa": 50567,
+        "eigen_vermogen": 19612,
+        "bruto_schuld": 5064,
+        "nettoschuld": -7686,
+        "debt_equity": 0.26,
+        "debt_ebitda": 0.47,
+        "current_ratio": 1.53,
+        "quick_ratio": 1.15,
+        "goodwill_pct_activa": 7.5,
+        "boekwaarde_per_aandeel": 49.87
+      },
+      {
+        "jaar": 2025,
+        "totale_activa": 54000,
+        "eigen_vermogen": 23887,
+        "bruto_schuld": 4690,
+        "nettoschuld": -8630,
+        "debt_equity": 0.2,
+        "debt_ebitda": 0.37,
+        "current_ratio": 1.6,
+        "quick_ratio": 1.2,
+        "goodwill_pct_activa": 7.0,
+        "boekwaarde_per_aandeel": 61.98
+      }
+    ],
+    "toelichting_balans": "ASML heeft een ijzersterke balans. De nettokaspositie groeide van een vrijwel neutrale positie in 2015 naar €8,6 miljard netto cash eind 2025. De bruto schuld bleef stabiel rond €4,7-5,1 miljard, terwijl de kasgeneratie fors toenam. De Debt/EBITDA ratio daalde naar 0,37x — zeer conservatief. Goodwill als percentage van de totale activa is gedaald van 22% naar 7%, wat laat zien dat de groei organisch is en niet uit dure overnames komt. Het eigen vermogen steeg ondanks agressieve buybacks van €6 miljard in 2015 naar €24 miljard in 2025, gedreven door de hoge winstgevendheid. De current ratio van 1,6 is comfortabel. Moody's verhoogde de creditrating in november 2025 naar A1, wat het vertrouwen in de financiële gezondheid onderstreept.",
+    "schuldvervaldatum": "Voornaamste obligatieleningen: 1,625% coupon vervalt mei 2027, 2,25% coupon vervalt mei 2032. Herfinancieringsrisico is minimaal gezien de nettokaspositie van €8,6 miljard.",
+    "rendementsindicatoren": [
+      {
+        "jaar": 2015,
+        "roce_pct": 18.7,
+        "roe_pct": 23.3,
+        "roic_pct": 20.5,
+        "roa_pct": 8.8,
+        "asset_turnover": 0.4,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 12.0
+      },
+      {
+        "jaar": 2016,
+        "roce_pct": 19.8,
+        "roe_pct": 24.2,
+        "roic_pct": 21.0,
+        "roa_pct": 8.7,
+        "asset_turnover": 0.4,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 12.5
+      },
+      {
+        "jaar": 2017,
+        "roce_pct": 24.3,
+        "roe_pct": 31.3,
+        "roic_pct": 25.0,
+        "roa_pct": 10.4,
+        "asset_turnover": 0.45,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 16.5
+      },
+      {
+        "jaar": 2018,
+        "roce_pct": 30.7,
+        "roe_pct": 44.9,
+        "roic_pct": 28.0,
+        "roa_pct": 11.9,
+        "asset_turnover": 0.5,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 19.5
+      },
+      {
+        "jaar": 2019,
+        "roce_pct": 33.0,
+        "roe_pct": 45.9,
+        "roic_pct": 29.5,
+        "roa_pct": 10.5,
+        "asset_turnover": 0.48,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 21.0
+      },
+      {
+        "jaar": 2020,
+        "roce_pct": 34.0,
+        "roe_pct": 46.0,
+        "roic_pct": 32.0,
+        "roa_pct": 11.6,
+        "asset_turnover": 0.46,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 23.5
+      },
+      {
+        "jaar": 2021,
+        "roce_pct": 46.6,
+        "roe_pct": 66.8,
+        "roic_pct": 38.0,
+        "roa_pct": 16.2,
+        "asset_turnover": 0.51,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 29.5
+      },
+      {
+        "jaar": 2022,
+        "roce_pct": 37.8,
+        "roe_pct": 41.6,
+        "roic_pct": 26.5,
+        "roa_pct": 14.1,
+        "asset_turnover": 0.53,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 18.0
+      },
+      {
+        "jaar": 2023,
+        "roce_pct": 40.8,
+        "roe_pct": 42.4,
+        "roic_pct": 30.0,
+        "roa_pct": 16.1,
+        "asset_turnover": 0.57,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 21.5
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": 41.2,
+        "roe_pct": 38.6,
+        "roic_pct": 33.0,
+        "roa_pct": 15.0,
+        "asset_turnover": 0.56,
+        "wacc_pct": 8.8,
+        "roic_wacc_spread": 24.2
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": 46.2,
+        "roe_pct": 40.2,
+        "roic_pct": 35.5,
+        "roa_pct": 17.8,
+        "asset_turnover": 0.61,
+        "wacc_pct": 8.8,
+        "roic_wacc_spread": 26.7
+      }
+    ],
+    "toelichting_rendement": "ASML genereert structureel een ROIC die twee tot vier keer de WACC bedraagt. De ROIC-WACC spread is over de afgelopen tien jaar gegroeid van circa 12 procentpunt naar 27 procentpunt in 2025. Dit is een van de sterkste tekenen van duurzame waardecreatie in de gehele halfgeleidersector. De spread is niet cyclisch — zelfs in het relatief zwakke jaar 2022 bleef de ROIC ruim boven de WACC. Dit kwantificeert de kracht van ASML's monopoliepositie: het bedrijf kan elk geïnvesteerd eurootje ruim drie keer terugverdienen.",
+    "accruals": [
+      {
+        "jaar": 2021,
+        "accruals_ratio": -0.06,
+        "non_gaap_verschil_pct": 2.0,
+        "sbc_pct_fcf": 3.7
+      },
+      {
+        "jaar": 2022,
+        "accruals_ratio": -0.07,
+        "non_gaap_verschil_pct": 2.5,
+        "sbc_pct_fcf": 4.4
+      },
+      {
+        "jaar": 2023,
+        "accruals_ratio": 0.1,
+        "non_gaap_verschil_pct": 3.0,
+        "sbc_pct_fcf": 12.7
+      },
+      {
+        "jaar": 2024,
+        "accruals_ratio": -0.08,
+        "non_gaap_verschil_pct": 2.5,
+        "sbc_pct_fcf": 4.1
+      },
+      {
+        "jaar": 2025,
+        "accruals_ratio": -0.02,
+        "non_gaap_verschil_pct": 2.0,
+        "sbc_pct_fcf": 4.6
+      }
+    ],
+    "toelichting_earnings_quality": "De winstkwaliteit van ASML is uitstekend. De accruals ratio is overwegend negatief, wat betekent dat de kasstroom de gerapporteerde winst overtreft — een teken van conservatieve winstneming. Het uitzonderlijke jaar 2023 (positieve accruals) wordt verklaard door grote werkkapitaalveranderingen en hoge CAPEX voor faciliteitsuitbreiding, niet door agressieve boekhoudpraktijken. Het verschil tussen GAAP- en non-GAAP-winst is beperkt (2-3%), wat duidt op transparante rapportage. De SBC als percentage van FCF is met 4-5% beheersbaar en ver onder het niveau van veel technologiebedrijven.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 7.5,
+      "huidig_rendement_pct": 0.59,
+      "gemiddeld_rendement_5j_pct": 0.7,
+      "gemiddeld_rendement_10j_pct": 0.55,
+      "cagr_dividend_pct": 24.3,
+      "fcf_dekkingsratio": 3.7,
+      "payout_ratio_fcf_pct": 27.0,
+      "oordeel_houdbaarheid": "Het dividend is ruimschoots gedekt door de vrije kasstroom met een FCF-dekkingsratio van 3,7x. De payout ratio van 27% is conservatief en laat ruim voldoende ruimte voor investeringen, buybacks en onvoorziene tegenvallers. Het dividend is als zeer houdbaar te kwalificeren.",
+      "progressief_beleid": true,
+      "eerstvolgende_ex_dividend": "2026-05 (verwacht)",
+      "toelichting": "ASML voert een progressief dividendbeleid en heeft het dividend elk jaar verhoogd. De CAGR over 2015-2025 bedraagt maar liefst 24%, aanzienlijk sneller dan de winstgroei. Het dividend per aandeel groeide van €0,85 in 2015 naar €7,50 in 2025. Het dividendrendement van 0,6% is laag in absolute termen, maar dit weerspiegelt de extreem hoge waardering van het aandeel, niet een gebrek aan dividendkracht. De FCF-dekking is comfortabel: ASML genereert bijna vier keer zoveel vrije kasstroom als het aan dividend uitkeert. Het bedrijf combineert het dividend met een omvangrijk buybackprogramma van €12 miljard voor 2026-2028, waardoor de totale aandeelhoudersvergoeding substantieel is.",
+      "historie": [
+        {
+          "jaar": 2015,
+          "dps": 0.85,
+          "groei_pct": null,
+          "payout_ratio_pct": 26.1,
+          "fcf_dekking": 4.17,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2016,
+          "dps": 1.28,
+          "groei_pct": 50.6,
+          "payout_ratio_pct": 35.2,
+          "fcf_dekking": 3.1,
+          "type": "regulier",
+          "bijzonderheden": "Dividend verhoogd met 50%"
+        },
+        {
+          "jaar": 2017,
+          "dps": 1.65,
+          "groei_pct": 28.9,
+          "payout_ratio_pct": 31.1,
+          "fcf_dekking": 3.51,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2018,
+          "dps": 1.98,
+          "groei_pct": 20.0,
+          "payout_ratio_pct": 30.8,
+          "fcf_dekking": 3.08,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2019,
+          "dps": 2.17,
+          "groei_pct": 9.6,
+          "payout_ratio_pct": 34.1,
+          "fcf_dekking": 3.44,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2020,
+          "dps": 2.45,
+          "groei_pct": 12.9,
+          "payout_ratio_pct": 27.8,
+          "fcf_dekking": 4.77,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2021,
+          "dps": 5.5,
+          "groei_pct": 124.5,
+          "payout_ratio_pct": 37.2,
+          "fcf_dekking": 3.73,
+          "type": "regulier",
+          "bijzonderheden": "Dividendverdubbeling na recordjaar"
+        },
+        {
+          "jaar": 2022,
+          "dps": 5.8,
+          "groei_pct": 5.5,
+          "payout_ratio_pct": 40.7,
+          "fcf_dekking": 3.26,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2023,
+          "dps": 6.1,
+          "groei_pct": 5.2,
+          "payout_ratio_pct": 30.6,
+          "fcf_dekking": 1.16,
+          "type": "regulier",
+          "bijzonderheden": "FCF-dekking tijdelijk laag door hoge CAPEX"
+        },
+        {
+          "jaar": 2024,
+          "dps": 6.4,
+          "groei_pct": 4.9,
+          "payout_ratio_pct": 33.2,
+          "fcf_dekking": 3.44,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2025,
+          "dps": 7.5,
+          "groei_pct": 17.2,
+          "payout_ratio_pct": 30.3,
+          "fcf_dekking": 3.7,
+          "type": "regulier",
+          "bijzonderheden": "Dividend verhoogd met 17%"
+        }
+      ]
+    },
+    "waardering": {
+      "pe": 51.4,
+      "pe_forward": 40.0,
+      "pe_historisch_gem_10j": 36.5,
+      "ev_ebitda": 35.0,
+      "ev_ebitda_historisch_gem_10j": 27.4,
+      "p_fcf": 47.5,
+      "p_fcf_na_sbc": 47.5,
+      "fcf_yield_pct": 2.1,
+      "p_b": 20.5,
+      "ev_omzet": 14.5,
+      "dividendrendement_pct": 0.59,
+      "peg": 1.9
+    },
+    "toelichting_waardering": "ASML wordt verhandeld tegen een flinke premie ten opzichte van zowel het eigen historisch gemiddelde als de sectorgenoten. De trailing P/E van 51x ligt 41% boven het 10-jaarsgemiddelde van 36,5x. De EV/EBITDA van 35x overtreft het historisch gemiddelde van 27,4x met 28%. De P/B van 20,5x is extreem hoog, maar wordt verklaard door de hoge ROIC: ASML verdient veel meer op zijn geïnvesteerd kapitaal dan de boekwaarde suggereert. De forward P/E van 40x op basis van 2026-schattingen is lager maar nog steeds boven het gemiddelde. De premie weerspiegelt de monopoliepositie in EUV en de AI-gedreven groeiverwachtingen, maar laat geen ruimte voor teleurstellingen.",
+    "ipo_correctie": "Niet van toepassing. ASML is sinds 1995 beursgenoteerd (31 jaar). Er is geen pre-IPO schuldopbouw of balansvertekening geconstateerd.",
+    "sector_kpis": [
+      {
+        "kpi_naam": "Orderboek (backlog)",
+        "eenheid": "EUR mrd",
+        "waarden": [
+          {
+            "jaar": 2021,
+            "waarde": 26.2
+          },
+          {
+            "jaar": 2022,
+            "waarde": 40.4
+          },
+          {
+            "jaar": 2023,
+            "waarde": 39.0
+          },
+          {
+            "jaar": 2024,
+            "waarde": 36.0
+          },
+          {
+            "jaar": 2025,
+            "waarde": 38.8
+          }
+        ],
+        "toelichting": "Het orderboek piekte in 2022 op €40,4 miljard en daalde vervolgens licht, maar herstelde in Q4 2025 naar €38,8 miljard dankzij recordbestellingen van €13,2 miljard — meer dan het dubbele van de analisten-consensus."
+      },
+      {
+        "kpi_naam": "Book-to-bill ratio",
+        "eenheid": "x",
+        "waarden": [
+          {
+            "jaar": 2021,
+            "waarde": 1.4
+          },
+          {
+            "jaar": 2022,
+            "waarde": 1.9
+          },
+          {
+            "jaar": 2023,
+            "waarde": 1.4
+          },
+          {
+            "jaar": 2024,
+            "waarde": 1.3
+          },
+          {
+            "jaar": 2025,
+            "waarde": 1.2
+          }
+        ],
+        "toelichting": "Een book-to-bill ratio boven 1,0 betekent dat er meer orders binnenkomen dan er omzet wordt geboekt. ASML heeft sinds 2021 consistent een ratio boven 1,0, wat wijst op structurele vraag die het aanbod overtreft."
+      },
+      {
+        "kpi_naam": "EUV-systemen geleverd",
+        "eenheid": "stuks",
+        "waarden": [
+          {
+            "jaar": 2021,
+            "waarde": 42
+          },
+          {
+            "jaar": 2022,
+            "waarde": 40
+          },
+          {
+            "jaar": 2023,
+            "waarde": 53
+          },
+          {
+            "jaar": 2024,
+            "waarde": 44
+          },
+          {
+            "jaar": 2025,
+            "waarde": 48
+          }
+        ],
+        "toelichting": "Het aantal geleverde EUV-systemen schommelt rond 40-53 per jaar, beperkt door de complexe productiecapaciteit. High-NA EUV-systemen zijn nog niet in deze cijfers opgenomen; tot eind 2025 zijn er 5 High-NA systemen geleverd."
+      },
+      {
+        "kpi_naam": "R&D als % van omzet",
+        "eenheid": "%",
+        "waarden": [
+          {
+            "jaar": 2021,
+            "waarde": 15.6
+          },
+          {
+            "jaar": 2022,
+            "waarde": 15.4
+          },
+          {
+            "jaar": 2023,
+            "waarde": 14.4
+          },
+          {
+            "jaar": 2024,
+            "waarde": 16.6
+          },
+          {
+            "jaar": 2025,
+            "waarde": 14.4
+          }
+        ],
+        "toelichting": "ASML investeert consistent 14-17% van de omzet in R&D, ofwel circa €4,7 miljard per jaar in absolute termen. Dit is hoog vergeleken met de bredere halfgeleider-equipmentsector en essentieel om de technologische voorsprong in lithografie te behouden."
+      },
+      {
+        "kpi_naam": "Installed Base Management omzet",
+        "eenheid": "EUR mrd",
+        "waarden": [
+          {
+            "jaar": 2021,
+            "waarde": 4.5
+          },
+          {
+            "jaar": 2022,
+            "waarde": 5.3
+          },
+          {
+            "jaar": 2023,
+            "waarde": 5.6
+          },
+          {
+            "jaar": 2024,
+            "waarde": 6.5
+          },
+          {
+            "jaar": 2025,
+            "waarde": 8.2
+          }
+        ],
+        "toelichting": "De serviceomzet groeit structureel met circa 15-26% per jaar en vertegenwoordigt nu 25% van de totale omzet. Dit segment heeft hogere marges en biedt terugkerende inkomsten onafhankelijk van nieuwe systeemorders — vergelijkbaar met een SaaS-model."
+      }
+    ],
+    "toelichting_sector_kpis": "De sector-KPI's bevestigen ASML's dominante positie: een orderboek van €38,8 miljard biedt meer dan een jaar omzetdekking. De book-to-bill ratio boven 1,0 signaleert voortdurende vraag. De groeiende IBM-stroom (Installed Base Management) vermindert de cyclische gevoeligheid en versterkt de klantrelatie. De constante R&D-investeringen van 14-17% van de omzet zijn noodzakelijk om de technologische moat te onderhouden — concurrenten die niet bereid of in staat zijn dit niveau te evenaren, kunnen ASML niet inhalen."
+  },
+  "moat": {
+    "oordeel": "WIDE MOAT",
+    "duurzaamheid_horizon": "10+ jaar",
+    "toelichting": "ASML bezit een van de sterkste economische slotgrachten ter wereld. Het bedrijf is de enige producent van EUV-lithografiemachines, een technologie die onmisbaar is voor de productie van de meest geavanceerde halfgeleiders. Deze monopoliepositie is opgebouwd over drie decennia en beschermd door een patentportefeuille van bijna 5.000 lithografiepatenten, cumulatieve R&D-investeringen van meer dan €30 miljard, en een ecosysteem van exclusieve toeleveranciers. Concurrenten Canon en Nikon hebben EUV-ontwikkeling opgegeven vanwege de onoverkomelijke technische en financiële drempels. De overstapkosten voor klanten zijn extreem hoog: een EUV-systeem kost €150-350 miljoen, integratie duurt 2-4 jaar, en de gehele productielijn is afgestemd op ASML-specificaties. De ROIC-WACC spread van structureel 20-27 procentpunt over de afgelopen tien jaar bevestigt kwantitatief dat ASML consistent waarde creëert boven de kapitaalkosten — het meest objectieve bewijs van een duurzame moat.",
+    "duurzaamheid_toelichting": "De moat is uitzonderlijk duurzaam. Op een horizon van 10+ jaar zijn er geen geloofwaardige bedreigingen voor ASML's EUV-monopolie. De technologische roadmap strekt zich uit via High-NA EUV (nu) naar Hyper-NA EUV (na 2028), en elk van deze generaties vergt opnieuw miljarden aan R&D die concurrenten niet bereid zijn te investeren. Canon's nanoimprint-lithografie is een theoretisch alternatief maar heeft na jaren van ontwikkeling nog geen volume-adoptie bereikt. Het grootste risico voor de moat is een fundamentele technologieshift die lithografie overbodig maakt — maar daar zijn geen aanwijzingen voor. De verscherping van Chinese exportbeperkingen raakt de omzet maar niet de moat zelf.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "ASML bezit bijna 5.000 lithografie-specifieke patenten en meer dan 38.000 bredere IP-assets verspreid over 32 jurisdicties. Het R&D-budget van €4,7 miljard per jaar — circa 14-17% van de omzet — genereert jaarlijks 400+ nieuwe patentaanvragen. Deze IP-barrière is in drie decennia opgebouwd en praktisch onmogelijk te repliceren door een nieuwkomer."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "De overstapkosten zijn astronomisch. Een EUV-systeem kost €150-350 miljoen per stuk. Integratie in een chipfabriek vergt 2-4 jaar co-engineering met ASML. De gehele productielijn — van procesrecept tot yieldoptimalisatie — is afgestemd op ASML-specificaties. Bovendien is er letterlijk geen alternatieve leverancier voor EUV-machines, waardoor overstappen simpelweg niet mogelijk is."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Netwerkeffecten zijn beperkt aanwezig maar niet de primaire moat-driver. ASML profiteert indirect van een ecosysteemeffect: hoe meer chipfabrikanten EUV adopteren, hoe sterker de push voor de volgende generatie (High-NA), en hoe meer service-omzet ASML genereert uit de geïnstalleerde basis. Het is echter geen klassiek platform-netwerkeffect."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "ASML's schaalvoordeel is enorm. Als enige producent van EUV-systemen kan het bedrijf de volledige R&D-investering van €4,7 miljard per jaar spreiden over alle klanten. Een potentiële concurrent zou dezelfde investeringen moeten doen maar vanuit nul omzet. De cumulatieve kennis en productie-expertise over 40+ jaar creëren bovendien een ervaringscurve die niet te repliceren is."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "STERK",
+        "score": 5,
+        "toelichting": "De markt voor EUV-lithografie is een natuurlijk monopolie. Er zijn wereldwijd slechts vijf klanten die EUV-systemen afnemen (TSMC, Samsung, Intel, SK Hynix, Micron). De totale marktomvang rechtvaardigt maar één producent op het huidige investeringsniveau — een tweede EUV-leverancier zou nooit winstgevend kunnen opereren."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      {
+        "functie": "CEO",
+        "naam": "Christophe Fouquet",
+        "achtergrond": "Franse natuurkundige (MSc Institut Polytechnique de Grenoble) die in 2008 bij ASML kwam na eerdere functies bij KLA-Tencor en Applied Materials. Als EVP EUV (2018-2022) leidde hij de industrialisatie van EUV-lithografie van experimentele technologie naar productietool bij de grootste chipfabrikanten ter wereld. Benoemd als CEO in april 2024 voor een termijn van vier jaar. Onder zijn leiding worden de organisatieprocessen gestroomlijnd om de complexiteit van snelle groei te beheersen."
+      },
+      {
+        "functie": "CFO",
+        "naam": "Roger Dassen",
+        "achtergrond": "Gepromoveerd bedrijfseconoom aan de Universiteit Maastricht met 30 jaar ervaring bij Deloitte, waarvan als CEO van Deloitte Nederland en Vice Chairman van Deloitte Global. Sinds 2018 CFO van ASML. Daarnaast voorzitter van de Raad van Toezicht van het Maastricht UMC en hoogleraar Accountancy aan de VU Amsterdam. Zijn audit-achtergrond brengt financiële discipline en transparantie."
+      },
+      {
+        "functie": "CTO",
+        "naam": "Marco Pieters",
+        "achtergrond": "Benoemd als CTO in 2025 na meer dan 25 jaar ervaring bij ASML. Meest recent was hij EVP Applications, verantwoordelijk voor het vertalen van klantvereisten naar productspecificaties. Zijn diepe technische kennis van het volledige productportfolio maakt hem tot een natuurlijke keuze voor het bewaken van ASML's technologische roadmap."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.1,
+      "verwateringsgraad_pct_jaar": 0.3,
+      "ceo_pay_ratio": 43,
+      "prikkels_aligned": true,
+      "toelichting": "CEO Fouquet ontving in 2024 een totale compensatie van €5,4 miljoen, waarvan 82% in aandelen en slechts 18% vast salaris (€979.000). De korte-termijnbonus (STI) is gemaximeerd op 150% van het basissalaris en gekoppeld aan zowel financiële als niet-financiële doelen. De lange-termijnincentives (LTI) bestaan uit performance shares die pas na meerdere jaren vesten. Cruciale regel: de CEO moet aandelen aanhouden ter waarde van vier keer het jaarsalaris. Dit zorgt voor sterke alignment met aandeelhouders. De SBC van circa €500 miljoen is verwaarloosbaar op een marktkapitalisatie van €489 miljard (0,1%)."
+    },
+    "insider_transactions": [
+      {
+        "datum": "2025-01-15",
+        "naam": "Christophe Fouquet",
+        "functie": "CEO",
+        "type": "KOOP",
+        "aandelen": 1800,
+        "koers": 748.0
+      },
+      {
+        "datum": "2025-01-16",
+        "naam": "Christophe Fouquet",
+        "functie": "CEO",
+        "type": "KOOP",
+        "aandelen": 200,
+        "koers": 751.0
+      }
+    ],
+    "insider_netto": "NETTO KOPER",
+    "owner_operator": false,
+    "eigenbelang_pct": 0.01,
+    "capital_allocation": "ASML combineert hoge R&D-investeringen (€4,7 mrd/jaar) met een progressief dividend en actieve aandeleninkoop. De nieuwe buyback van €12 miljard (2026-2028) onderstreept het vertrouwen in de kasstroomgeneratie.",
+    "capital_allocation_detail": "Het management hanteert een gedisciplineerde driedeling van kapitaalallocatie. Ten eerste investeert ASML jaarlijks circa €4,7 miljard in R&D (14-17% van de omzet), wat de technologische voorsprong in stand houdt en de next-generation systemen (High-NA, Hyper-NA) ontwikkelt. Het historische rendement op deze R&D-investeringen is uitstekend: de overgang van DUV naar EUV heeft de gemiddelde systeemprijs vertienvoudigd. Ten tweede zijn de strategische overnames waardevol geweest: Cymer (2013, €1,95 mrd) gaf controle over de EUV-lichtbron, Berliner Glas (2020) versterkte de optische modules. Er zijn geen goodwill-afschrijvingen geweest. Ten derde keert ASML consistent kapitaal terug: het dividend is elk jaar verhoogd en het cumulatieve buybackprogramma over 2021-2025 bedroeg meer dan €15 miljard, wat het aandelenbestand met circa 10% reduceerde. De timing van buybacks was wisselend — er is ook bij hogere koersen teruggekocht — maar het structurele effect op de winst per aandeel is positief.",
+    "integriteit": "Het management scoort goed op integriteit en transparantie. De guidance die ASML afgeeft is historisch betrouwbaar — de langetermijndoelstellingen uit 2022 (omzet €30-40 miljard in 2025) zijn gehaald. CEO Fouquet communiceerde in april 2025 openlijk over de onzekerheid door Amerikaanse tarieven, wat getuigt van downside transparency. Er zijn geen materiële controverses, rechtszaken of regulatory actions die de reputatie schaden. De enige aandachtspunt is de CEO-aandelentransactie in januari 2025 (aankoop van 2.000 aandelen bij €748-751), wat een positief vertrouwenssignaal is.",
+    "toelichting": "Het management van ASML verdient het oordeel STERK. De combinatie van een CEO met diepe technische EUV-expertise, een CFO met drie decennia audit-ervaring, en een CTO die het volledige productportfolio kent, vormt een complementair team. De compensatiestructuur is sterk gealigned met aandeelhouders (82% equity-based). CEO Fouquet's open-marktaankoop van 2.000 aandelen bij circa €750 in januari 2025 is een concreet vertrouwenssignaal. De capital allocation is gedisciplineerd: hoge R&D, waardecreërende overnames, consistent groeiend dividend en structurele buybacks. De track record van het vorige management (Wennink) was uitstekend; Fouquet zet deze lijn voort."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "cyclisch-groei",
+      "kapitaalintensief": true,
+      "consolidatiegraad": "hoog",
+      "sentiment": "positief",
+      "trends": "AI-gedreven chipcapaciteitsuitbreiding, geavanceerde nodes (sub-3nm), HBM-geheugen, geopolitieke ontkoppeling (reshoring naar VS/EU), verscherpte exportbeperkingen naar China",
+      "toelichting": "De halfgeleider-equipmentsector produceert de machines waarmee chips worden gemaakt. Het is een sterk geconsolideerde industrie met slechts een handvol mondiale spelers die elk een specifieke niche domineren: ASML in lithografie, Applied Materials in depositie, Lam Research in etsen, Tokyo Electron in coaten, en KLA in inspectie. De sector is inherent cyclisch — chipfabrikanten investeren in golven afhankelijk van vraag en technologiecycli — maar de langetermijntrend is structureel positief door de onverzadigbare vraag naar rekenkracht voor AI, cloud, automotive en IoT. De markt voor halfgeleiderapparatuur groeide naar circa $133 miljard in 2025 en wordt verwacht door te groeien naar $156 miljard in 2027."
+    },
+    "porter": {
+      "dreiging_toetreders": {
+        "score": "LAAG",
+        "toelichting": "De toetredingsdrempels zijn extreem hoog. EUV-lithografie vergde meer dan €30 miljard aan cumulatieve R&D en drie decennia ontwikkeling. Geen enkel bedrijf — inclusief niet-genoteerde of staatsgesteunde spelers — heeft geprobeerd een nieuw EUV-programma op te zetten."
+      },
+      "macht_leveranciers": {
+        "score": "MIDDEL",
+        "toelichting": "ASML is afhankelijk van gespecialiseerde toeleveranciers voor optische elementen (Zeiss voor EUV-spiegels) en andere kritieke componenten. De relatie met Zeiss is een sole-source afhankelijkheid. ASML mitigeert dit via langetermijncontracten en verticale integratie (Cymer, Berliner Glas)."
+      },
+      "macht_klanten": {
+        "score": "LAAG",
+        "toelichting": "Hoewel ASML slechts vijf grote klanten heeft, is hun onderhandelingsmacht laag: er is geen alternatieve leverancier voor EUV-machines. Klanten concurreren onderling om leveringsslots, wat ASML pricing power geeft."
+      },
+      "dreiging_substituten": {
+        "score": "LAAG",
+        "toelichting": "Er zijn momenteel geen commercieel levensvatbare substituten voor EUV-lithografie bij sub-7nm chipproductie. Canon's nanoimprint-lithografie is een theoretisch alternatief maar heeft na jaren nog geen volume-adoptie bereikt."
+      },
+      "concurrentie_intensiteit": {
+        "score": "LAAG",
+        "toelichting": "In EUV-lithografie is er geen concurrentie — ASML heeft 100% marktaandeel. In DUV-lithografie concurreert ASML met Canon en Nikon, maar ASML domineert ook hier met circa 94% marktaandeel in de totale lithografiemarkt."
+      },
+      "conclusie": "De sectorstructuur is uitzonderlijk gunstig voor ASML. Alle vijf Porter-krachten zijn laag tot middel, gedomineerd door de extreme toetredingsdrempels en het ontbreken van substituten. Dit verklaart de structureel hoge marges en ROIC. De sector is een van de meest aantrekkelijke ter wereld voor langetermijnbeleggers — mits men niet te veel betaalt."
+    },
+    "concurrenten": [
+      {
+        "naam": "Applied Materials",
+        "ticker": "AMAT",
+        "omzet_groei_pct": 12.7,
+        "ebit_marge_pct": 33.6,
+        "roic_pct": 21.5,
+        "nettoschuld_ebitda": 0.35,
+        "ev_ebitda": 23.0,
+        "p_fcf": 35.0,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Lam Research",
+        "ticker": "LRCX",
+        "omzet_groei_pct": 23.7,
+        "ebit_marge_pct": 31.0,
+        "roic_pct": 25.0,
+        "nettoschuld_ebitda": 0.3,
+        "ev_ebitda": 22.0,
+        "p_fcf": 30.0,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Tokyo Electron",
+        "ticker": "8035.T",
+        "omzet_groei_pct": 19.0,
+        "ebit_marge_pct": 27.0,
+        "roic_pct": 23.0,
+        "nettoschuld_ebitda": 0.2,
+        "ev_ebitda": 20.0,
+        "p_fcf": 28.0,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "KLA Corporation",
+        "ticker": "KLAC",
+        "omzet_groei_pct": 10.0,
+        "ebit_marge_pct": 40.7,
+        "roic_pct": 27.5,
+        "nettoschuld_ebitda": 0.4,
+        "ev_ebitda": 22.0,
+        "p_fcf": 32.0,
+        "marktaandeel_pct": null
+      }
+    ],
+    "positie": "ASML is de absolute marktleider in lithografie met 94% marktaandeel en 100% in het cruciale EUV-segment.",
+    "positie_toelichting": "ASML handelt tegen een significante premie ten opzichte van peers: EV/EBITDA van 35x versus 20-23x voor concurrenten. Deze premie is deels gerechtvaardigd door de monopoliepositie in EUV, hogere groeiperspectieven door AI-vraag, en een sterkere moat. Echter, de premie is inmiddels zo groot (50-75% boven peers) dat zelfs superieure kwaliteit mogelijk al volledig is ingeprijsd. Applied Materials en KLA bieden vergelijkbare ROIC-niveaus tegen aanzienlijk lagere multiples.",
+    "tam_sam_som": {
+      "tam_mln": 156000,
+      "tam_groei_pct": 8.0,
+      "sam_mln": 45000,
+      "sam_groei_pct": 12.0,
+      "huidige_penetratie_pct": 73.0,
+      "impliciete_penetratie_na_horizon_pct": 80.0,
+      "groei_plausibel": true,
+      "bron": "SEMI Industry Forecast 2026-2027",
+      "toelichting": "De totale halfgeleider-equipmentmarkt (TAM) wordt geschat op $156 miljard in 2027. ASML's adresseerbare markt (SAM) — lithografie voor geavanceerde en legacy nodes — bedraagt circa $45 miljard. Met een huidige penetratie van 73% is verdere groei primair afhankelijk van marktvolumegroei en prijsverhogingen per systeem."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "VOLDOET NIET",
+      "graham_number": 119.8,
+      "margin_of_safety_pct": -90.6,
+      "toelichting": "ASML voldoet op geen enkel punt aan Benjamin Grahams conservatieve waardecriteria. De P/E van 51x is ruim boven Grahams maximum van 15x. De P/B van 20,5x overschrijdt de grens van 1,5x dramatisch. Het Graham Number (de maximale prijs die Graham zou betalen op basis van winst en boekwaarde) bedraagt slechts €120 — 91% onder de huidige koers. Dit is typisch voor kwaliteitsbedrijven met hoge ROIC: hun boekwaarde onderschat structureel de economische waarde. Graham zou ASML niet kopen, maar Grahams framework is ook niet ontworpen voor monopolistische groeibedrijven."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "ASML is het archetype van een 'wonderful company': een begrijpelijk bedrijf (het maakt de machines die chips maken), met voorspelbare kasstromen (orderboek €38,8 mrd), een brede moat (EUV-monopolie) en excellent management. De ROIC van 35,5% is structureel meer dan twee keer de WACC van 8,8%. Buffett zou het bedrijf bewonderen, maar de prijs is het knelpunt: bij een P/FCF van 47,5x en geen margin of safety is dit geen 'fair price' in de Buffett-zin. Het oordeel is GEDEELTELIJK: het bedrijf voldoet maar de prijs niet."
+    },
+    "lynch": {
+      "categorie": "Stalwart",
+      "oordeel": "NEUTRAAL",
+      "peg_ratio": 1.9,
+      "toelichting": "ASML classificeert als een Stalwart in Lynch-terminologie: een groot, gevestigd bedrijf met stabiele maar niet explosieve groei (omzet-CAGR 18%, maar afvlakkend naar 10-15% de komende jaren). De PEG-ratio van 1,9 ligt net onder de grens van 2,0 die Lynch als maximum hanteert. Het verhaal is helder — ASML is de enige EUV-leverancier ter wereld — maar de complexiteit van de technologie en de geopolitieke risico's (China, MATCH Act) maken het niet het soort simpel verhaal dat Lynch prefereerde. Bovendien is de huidige koers al veel hoger dan wat Lynch als koopwaardig zou beschouwen."
+    },
+    "fisher": {
+      "oordeel": "STERK",
+      "toelichting": "ASML scoort hoog op Fishers kwalitatieve criteria. Ten eerste zijn de producten technologisch marktleidend met significant groeipotentieel: EUV is essentieel voor de volgende generatie chips, en High-NA EUV opent een geheel nieuwe marktlaag. Ten tweede investeert ASML 14-17% van de omzet in R&D — significant boven het sectorgemiddelde van 10-12% — wat wijst op een sterke innovatiecultuur. Ten derde beschermt de patentportefeuille van 5.000 lithografiepatenten de marges structureel. Tot slot beoordeelt onze managementanalyse de integriteit als STERK. Fisher zou enthousiast zijn over ASML als bedrijf."
+    },
+    "greenblatt": {
+      "oordeel": "GEMIDDELD",
+      "earnings_yield_pct": 2.36,
+      "return_on_capital_pct": 63.0,
+      "toelichting": "ASML scoort asymmetrisch op Greenblatts Magic Formula: de Return on Capital is met 63% uitzonderlijk hoog, wat de enorme waardecreatie weerspiegelt. Echter, de Earnings Yield is slechts 2,4% — ver onder de 10% die Greenblatt als aantrekkelijk beschouwt. Dit betekent dat de markt de hoge winstgevendheid al volledig heeft ingeprijsd. Een belegger betaalt effectief 42x EBIT voor ASML. De hoge Return on Capital rechtvaardigt een premie, maar de huidige Earnings Yield biedt geen aantrekkelijk startrendement voor een Magic Formula-belegger."
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "Verscherping van exportbeperkingen naar China via de MATCH Act",
+      "kans": "HOOG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Omzetgroei fase 1, geografische spreiding",
+      "toelichting": "De MATCH Act, geïntroduceerd in april 2026, stelt voor om ook DUV-lithografiemachines te verbieden voor export naar Chinese chipfabrikanten als SMIC, Hua Hong en Huawei. China was goed voor 33% van de omzet in 2025. ASML verwacht al een daling naar circa 20% in 2026, maar verdere beperkingen kunnen dit aandeel nog verder drukken. Het omzetverlies kan deels worden gecompenseerd door hogere vraag elders (reshoring naar VS/EU), maar de timing en omvang van die compensatie is onzeker."
+    },
+    {
+      "omschrijving": "Cyclische terugval in halfgeleider-CAPEX na de AI-investeringsgolf",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Omzetgroei fase 1 en fase 2",
+      "toelichting": "De halfgeleidersector is inherent cyclisch. Na periodes van sterke investeringen volgt onvermijdelijk een correctie wanneer capaciteit het vraagniveau inhaalt. SEMI voorspelt al een terugval in equipmentbestedingen in 2028 (-10%). Als de AI-investeringscyclus sneller afkoelt dan verwacht, kan ASML's orderinstroom significant dalen. De impact wordt gedempt door het grote orderboek (€38,8 mrd) dat minimaal 12 maanden omzetdekking biedt."
+    },
+    {
+      "omschrijving": "Klantconcentratierisico: TSMC, Samsung en Intel vertegenwoordigen circa 70% van de omzet",
+      "kans": "LAAG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Omzetgroei, terminalwaarde",
+      "toelichting": "Een significante CAPEX-reductie bij één of meer van de top drie klanten zou direct doorwerken in ASML's orders. Dit risico is echter symmetrisch: deze klanten zijn evenzeer afhankelijk van ASML als ASML van hen. Bovendien stimuleren concurrentiedynamiek en AI-investeringen alle drie de klanten om te blijven investeren. De waarschijnlijkheid dat meerdere klanten tegelijk bezuinigen is laag, behalve in een brede economische recessie."
+    },
+    {
+      "omschrijving": "Vertraagde adoptie van High-NA EUV",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Omzetgroei fase 1",
+      "toelichting": "High-NA EUV is ASML's volgende groeimotor met systemen van circa €350 miljoen per stuk. De adoptie hangt af van klantbereidheid en technische haalbaarheid. TSMC heeft aangegeven voorlopig geen High-NA te gebruiken voor de 1,4nm-node, wat een significante vraagkant reduceert. Intel, Samsung en SK Hynix investeren wel, maar als de technologie meer kinderziektes vertoont dan verwacht, verschuift de omzet naar latere jaren."
+    },
+    {
+      "omschrijving": "Geopolitiek risico Taiwan (TSMC-afhankelijkheid)",
+      "kans": "LAAG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Alle DCF-aannames",
+      "toelichting": "TSMC, ASML's grootste klant (35-40% van omzet), is gevestigd in Taiwan. Een militair conflict of ernstige handelsbeperkingen rond Taiwan zou catastrofaal zijn voor de gehele halfgeleiderketen, inclusief ASML. De waarschijnlijkheid wordt internationaal als laag ingeschat, maar de impact zou existentieel zijn. De CHIPS Act-investeringen in VS en EU reduceren deze afhankelijkheid geleidelijk over het komende decennium."
+    },
+    {
+      "omschrijving": "Waarderingsrisico: de markt prijst 16% jaarlijkse FCF-groei in voor 10 jaar",
+      "kans": "HOOG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Huidige koers ten opzichte van fair value",
+      "toelichting": "De reverse DCF analyse toont dat de huidige koers van €1.270 impliceert dat de vrije kasstroom met 16,2% per jaar moet groeien gedurende tien jaar. Hoewel ASML historisch hogere groei heeft gerealiseerd, laat de hoge waardering geen ruimte voor teleurstelling. Een kwartaal onder verwachting of een neerwaartse bijstelling van de langetermijndoelen kan een significante koerscorrectie veroorzaken."
+    },
+    {
+      "omschrijving": "Pre-IPO financial engineering",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "Niet van toepassing",
+      "toelichting": "Niet geconstateerd. ASML is sinds 1995 beursgenoteerd en is organisch gegroeid vanuit de joint venture tussen Philips en ASM International. Er zijn geen aanwijzingen voor pre-IPO schuldopbouw, dividendrecapitalisatie of andere vormen van financial engineering. De IPO-opbrengsten werden gebruikt voor groeifinancieering, niet voor schuldaflossing aan insiders."
+    }
+  ],
+  "these_invalide_bij": "De beleggingsthese wordt invalide bij: (1) structurele doorbraak door een concurrent in EUV-lithografie (zeer onwaarschijnlijk binnen 10 jaar), (2) langdurige daling van ROIC onder de WACC (zou moat-erosie signaleren), (3) volledig verbod op alle ASML-leveringen aan China zonder compenserende vraag elders, of (4) fundamentele technologieshift die fotolithografie overbodig maakt.",
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Toeleveringsketen en geopolitiek",
+        "sasb_categorie": "Supply Chain Management",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Exportbeperkingen kunnen tot 33% van de omzet raken",
+        "dcf_impact": "Negatief effect op omzetgroei fase 1"
+      },
+      {
+        "factor": "Energieverbruik van EUV-systemen",
+        "sasb_categorie": "Product Efficiency",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Indirect: klanten eisen energiezuinigere systemen",
+        "dcf_impact": null
+      },
+      {
+        "factor": "Cybersecurity en IP-bescherming",
+        "sasb_categorie": "Data Security",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "IP-diefstal zou moat kunnen eroderen",
+        "dcf_impact": "Potentieel effect op terminalwaarde"
+      }
+    ],
+    "eindoordeel": "De materiële ESG-risico's voor ASML zijn beheersbaar. Het bedrijf heeft een net-zero doelstelling voor 2040 (Scope 1, 2 en 3). Het grootste ESG-risico is geopolitiek van aard (exportbeperkingen) en wordt al in de risicoanalyse meegenomen.",
+    "toelichting": "ASML heeft ambitieuze duurzaamheidsdoelstellingen: 90% reductie van Scope 1 en 2 emissies en 97% reductie van Scope 3 emissies per miljoen euro toegevoegde waarde tegen 2040. Het directe milieueffect van ASML is beperkt (het is primair een ontwerp- en assemblagebedrijf), maar indirect is het significant: de EUV-machines verbruiken grote hoeveelheden energie bij klanten."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-04",
+      "omschrijving": "Q1 2026 kwartaalresultaten (gepland 15 april)",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-05",
+      "omschrijving": "Ex-dividenddatum en betaalbaarstelling dividend 2025",
+      "richting": "POSITIEF",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-06",
+      "omschrijving": "MATCH Act: mogelijke stemming in Congres",
+      "richting": "NEGATIEF",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-07",
+      "omschrijving": "Q2 2026 kwartaalresultaten",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-09",
+      "omschrijving": "SEMI Industry Outlook update — equipmentprognose 2027",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-10",
+      "omschrijving": "Q3 2026 kwartaalresultaten en orderboekupdate",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-12",
+      "omschrijving": "Imec High-NA EUV kwalificatiedoel Q4 2026",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2027-01",
+      "omschrijving": "Q4 2026 en jaarcijfers 2026",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2027-H1",
+      "omschrijving": "Eerste High-NA EUV pilot-productie bij Intel en Samsung",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    }
+  ],
+  "fair_value": {
+    "valuta_kasstromen": "EUR",
+    "methoden_toegepast": [
+      "DCF (twee-fasen)",
+      "Relatieve waardering",
+      "EPV (Greenwald)",
+      "Reverse DCF"
+    ],
+    "methoden_niet_toegepast": [
+      {
+        "methode": "DDM (Dividend Discount Model)",
+        "reden": "Dividendrendement van 0,6% is te laag voor een betrouwbare DDM-schatting; ASML's waarde zit primair in kasstroomgroei."
+      },
+      {
+        "methode": "Sum-of-the-Parts",
+        "reden": "ASML opereert als één geïntegreerd bedrijf zonder duidelijk af te bakenen autonome segmenten."
+      }
+    ],
+    "toelichting_methode": "De DCF-analyse is de primaire waarderingsmethode, gebaseerd op FCFF (Free Cash Flow to Firm) na aftrek van aandelencompensatie. We gebruiken een twee-fasenmodel: vijf jaar expliciete projectie met hoge groei, gevolgd door vijf jaar vertragende groei en een terminal value op basis van het Gordon Growth Model. De WACC is berekend met actuele marktdata (Duitse Bund, Damodaran ERP, regressiebeta). De EPV biedt een no-growth baseline; de reverse DCF toont welke groei de markt inprijst.",
+    "wacc": {
+      "risicovrije_rente_pct": 3.05,
+      "risicovrije_rente_bron": "Duitse 10-jaars Bund (10 april 2026)",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 4.23,
+      "erp_bron": "Damodaran implied ERP, januari 2026 update",
+      "beta_adjusted": 1.38,
+      "beta_bron": "Yahoo Finance, 5-jaars maandelijks, adjusted (Blume)",
+      "beta_type": "regressie",
+      "country_risk_premium_pct": 0.0,
+      "size_premium_pct": null,
+      "cost_of_equity_pct": 8.89,
+      "schuldkosten_na_belasting_pct": 1.66,
+      "ev_gewicht_pct": 99.05,
+      "dv_gewicht_pct": 0.95,
+      "wacc_pct": 8.82,
+      "sector_wacc_pct": 8.0,
+      "illiquiditeitskorting_pct": null
+    },
+    "dcf": {
+      "model_type": "Twee-fasen FCFF model",
+      "fcf_definitie": "FCFF",
+      "basis_fcf": 10300,
+      "basis_fcf_na_sbc": 10300,
+      "fcf_type": "FCFF na SBC (CFO - CAPEX - SBC)",
+      "groei_fase1_pct": 13.0,
+      "groei_fase2_pct": 7.0,
+      "terminal_groei_pct": 2.5,
+      "terminal_methode": "Gordon Growth Model met exit multiple cross-check",
+      "exit_multiple_gebruikt": 15.0,
+      "exit_multiple_bron": "Mediaan EV/EBITDA halfgeleider-equipment sector over cyclus",
+      "terminal_value_gordon_growth": null,
+      "terminal_value_exit_multiple": null,
+      "terminal_value_pct_van_totaal": 60.3,
+      "terminal_implied_ev_ebitda": 11.4,
+      "terminal_groei_consistentie": "Terminal groei 2,5% vereist circa 25% herinvestering bij 10% ROIC in de volwassen fase — plausibel voor een kapitaalintensief technologiebedrijf dat geleidelijk volwassen wordt.",
+      "mid_year_convention": true,
+      "wacc_pct": 8.82,
+      "shares_outstanding_mln": 385.42,
+      "nettoschuld_huidig": -8630
+    },
+    "dcf_toelichting": "Het DCF-model gebruikt FCFF (Free Cash Flow to Firm) na aftrek van aandelencompensatie, verdisconteerd tegen de WACC van 8,82%. We hanteren een twee-fasenmodel: in fase 1 (jaar 1-5) groeit de FCF met 13% per jaar, consistent met ASML's eigen guidance-range en de verwachte FCF-margeuitbreiding bij stijgende omzet. In fase 2 (jaar 6-10) vertraagt de groei naar 7% naarmate de markt volwassener wordt. De terminal value is berekend via het Gordon Growth Model met 2,5% eeuwigdurende groei — onder het langetermijn nominale BBP-groeitempo. De nettokaspositie van €8,6 miljard is opgeteld bij de enterprise value om de equity value te berekenen. De terminal value vertegenwoordigt 60% van de totale waarde, wat redelijk is voor een bedrijf met langdurige concurrentievoordelen. De impliciete terminal EV/EBITDA van 11,4x is conservatief.",
+    "projectie": [
+      {
+        "jaar": 2026,
+        "omzet": 36500,
+        "omzet_groei_pct": 11.7,
+        "ebit": 12410,
+        "ebit_marge_pct": 34.0,
+        "nopat": 10300,
+        "capex": 2200,
+        "delta_nwc": 500,
+        "sbc": 550,
+        "fcf": 11639
+      },
+      {
+        "jaar": 2027,
+        "omzet": 41000,
+        "omzet_groei_pct": 12.3,
+        "ebit": 14350,
+        "ebit_marge_pct": 35.0,
+        "nopat": 11910,
+        "capex": 2400,
+        "delta_nwc": 400,
+        "sbc": 600,
+        "fcf": 13152
+      },
+      {
+        "jaar": 2028,
+        "omzet": 45500,
+        "omzet_groei_pct": 11.0,
+        "ebit": 16380,
+        "ebit_marge_pct": 36.0,
+        "nopat": 13595,
+        "capex": 2500,
+        "delta_nwc": 300,
+        "sbc": 650,
+        "fcf": 14862
+      },
+      {
+        "jaar": 2029,
+        "omzet": 49500,
+        "omzet_groei_pct": 8.8,
+        "ebit": 17820,
+        "ebit_marge_pct": 36.0,
+        "nopat": 14790,
+        "capex": 2600,
+        "delta_nwc": 200,
+        "sbc": 700,
+        "fcf": 16794
+      },
+      {
+        "jaar": 2030,
+        "omzet": 53000,
+        "omzet_groei_pct": 7.1,
+        "ebit": 19080,
+        "ebit_marge_pct": 36.0,
+        "nopat": 15836,
+        "capex": 2700,
+        "delta_nwc": 200,
+        "sbc": 750,
+        "fcf": 18977
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 9.5,
+        "fair_value": 495,
+        "upside_pct": -61
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 13.0,
+        "wacc_pct": 8.82,
+        "fair_value": 820,
+        "upside_pct": -35
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 18.0,
+        "wacc_pct": 8.3,
+        "fair_value": 1211,
+        "upside_pct": -5
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 13.0,
+        "wacc_pct": 8.82,
+        "fair_value": 820,
+        "upside_pct": -35
+      }
+    ],
+    "kansgewogen_fair_value": 836,
+    "reverse_dcf": {
+      "impliciete_groei_pct": 16.2,
+      "historische_fcf_cagr_pct": 21.0,
+      "consensus_groei_pct": 15.0,
+      "interpretatie": "De markt prijst bij de huidige koers van €1.270 een FCF-groei van 16,2% per jaar in voor de komende tien jaar. Dit is onder het historische tempo van 21% per jaar, maar boven de analisten-consensus van circa 15%. Dit betekent dat de markt optimistischer is dan het gemiddelde analistenscenario maar iets behoudener dan het historische groeipad. De ingeprijsde groei is niet onrealistisch voor een bedrijf met ASML's positie, maar laat weinig ruimte voor tegenvallende kwartalen of een cyclische dip."
+    },
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 31.0,
+      "genormaliseerde_nopat": 8414,
+      "maintenance_capex": 1700,
+      "adjusted_earnings_power": 8414,
+      "epv_per_aandeel": 270,
+      "groeipremie_pct": 204
+    },
+    "ddm": {
+      "uitgevoerd": false,
+      "model": null,
+      "dps_verwacht": null,
+      "cost_of_equity_pct": null,
+      "dividendgroei_pct": null,
+      "ddm_fair_value": null
+    },
+    "sotp": {
+      "uitgevoerd": false,
+      "segmenten": null,
+      "sotp_fair_value": null,
+      "conglomeraatkorting_pct": null
+    },
+    "synthese": {
+      "fair_value_bandbreedte_laag": 495,
+      "fair_value_bandbreedte_centraal": 820,
+      "fair_value_bandbreedte_hoog": 1211,
+      "methode_gewichten": "DCF basis (primair), EPV (no-growth baseline), relatieve waardering (sanity check)",
+      "margin_of_safety_vereist_pct": 25,
+      "koopniveau": 615
+    },
+    "synthese_toelichting": "De DCF-analyse levert een fair value bandbreedte van €495 (pessimistisch) tot €1.211 (optimistisch), met een centraal scenario van €820. De kansgewogen fair value bedraagt €836. De EPV van €270 per aandeel toont dat de markt een groeipremie van 204% inprijst — meer dan driekwart van de huidige koers betaal je voor toekomstige groei, niet voor de huidige winstcapaciteit. Dit is niet ongebruikelijk voor een monopolist met ASML's kwaliteit, maar het impliceert dat het rendement voor een nieuwe koper volledig afhankelijk is van het realiseren van hoge groei gedurende minstens tien jaar. Het koopniveau (fair value minus 25% margin of safety) ligt op €615. Bij de huidige koers van €1.270 is er geen margin of safety — zelfs in het optimistische scenario is er lichte downside. ASML is een uitzonderlijk bedrijf, maar op dit moment uitzonderlijk duur.",
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "groei_range": [
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "matrix": [
+        [
+          632,
+          577,
+          532,
+          493,
+          460,
+          432
+        ],
+        [
+          799,
+          727,
+          667,
+          617,
+          573,
+          536
+        ],
+        [
+          1084,
+          980,
+          895,
+          822,
+          761,
+          707
+        ],
+        [
+          1469,
+          1323,
+          1202,
+          1099,
+          1012,
+          937
+        ],
+        [
+          1987,
+          1782,
+          1612,
+          1470,
+          1348,
+          1243
+        ]
+      ]
+    },
+    "gevoeligheid_terminal": null
+  },
+  "scorekaart": {
+    "items": [
+      {
+        "framework": "Graham",
+        "score": 1,
+        "max": 5,
+        "oordeel": "P/E 51x > 25 en P/B 20,5x > 3,0 → Score 1. ASML voldoet op geen enkel punt aan Grahams conservatieve criteria."
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 4,
+        "max": 5,
+        "oordeel": "ROIC 35,5% > 2×WACC 17,6% structureel, moat WIDE, maar P/FCF 47,5x > 20 → Score 4. Geweldig bedrijf, maar niet tegen een faire prijs."
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 2,
+        "max": 5,
+        "oordeel": "PEG 1,9 ≤ 2,0 → Score 2. Net binnen de grens, maar het verhaal is complex (geopolitiek, cycliciteit)."
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 5,
+        "max": 5,
+        "oordeel": "R&D 14-17% > sector, moat-bescherming door 5.000 patenten, management STERK → alle 3 criteria voldaan → Score 5."
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Earnings Yield 2,4% maar Return on Capital 63% ≥ 50% → Score 3. Hoge winstgevendheid maar te duur voor een aantrekkelijk startrendement."
+      },
+      {
+        "framework": "Moat",
+        "score": 5,
+        "max": 5,
+        "oordeel": "EUV-monopolie met pricing power, ROIC-WACC spread 27pp > 20pp structureel → Score 5. Een van de sterkste moats ter wereld."
+      },
+      {
+        "framework": "Management",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Capital allocation GOED, prikkels aligned (82% equity comp), geen controverses → Score 4. Fouquet is als CEO nog te kort in functie (sinds 2024) voor Score 5."
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Basis fair value €820 impliceert downside van 35% → Score 1. De koers ligt ver boven elke conservatieve fair value schatting."
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 1,
+        "max": 5,
+        "oordeel": "IPO > 10 jaar geleden (1995) → Score gelijk aan Fair Value DCF basis = 1."
+      }
+    ],
+    "totaal": 26,
+    "max": 45,
+    "eindoordeel": "PASS",
+    "samenvatting": "ASML is zonder twijfel een van de meest indrukwekkende bedrijven ter wereld: een feitelijk monopolie in EUV-lithografie, met een ROIC die structureel drie keer de kapitaalkosten bedraagt, een onneembare moat van 5.000 patenten en €30 miljard cumulatieve R&D, en een management dat gedisciplineerd kapitaal alloceert. De kwaliteitsscores zijn hoog: Fisher (5/5), Moat (5/5), Buffett (4/5) en Management (4/5). Toch is het eindoordeel PASS, en de reden is eenduidig: de prijs. Bij een koers van €1.270 en een basis fair value van €820 is er een negatieve margin of safety van 35%. De markt prijst 16,2% jaarlijkse FCF-groei in voor tien jaar — ambitieus maar zonder marge voor tegenvallers. Zelfs in het optimistische scenario (€1.211) biedt de huidige koers geen opwaarts potentieel. De EPV van €270 toont dat meer dan driekwart van de koers betaling is voor toekomstige groei. Voor een waardebelegger is ASML op dit moment niet koopwaardig. Het koopniveau ligt op circa €615. Houd het bedrijf op de watchlist: bij een significante koerscorrectie (bijvoorbeeld door een cyclische dip of geopolitieke escalatie) wordt ASML een van de aantrekkelijkste aandelen ter wereld."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "ASML Annual Report 2025",
+      "ASML Q4 2025 Financial Results press release",
+      "ASML Investor Relations (asml.com/en/investors)",
+      "MacroTrends (macrotrends.net) — financiële historische data",
+      "StockAnalysis.com — financiële data en consensus",
+      "Yahoo Finance — koers, beta, insider transactions",
+      "Damodaran (pages.stern.nyu.edu/~adamodar/) — implied ERP",
+      "Trading Economics — Duitse 10-jaars Bund",
+      "SEMI Industry Forecast 2026-2027",
+      "PatSnap — ASML patentanalyse",
+      "CNBC, Bloomberg — MATCH Act berichtgeving",
+      "TrendForce — High-NA EUV adoptie analyse"
+    ],
+    "pre_ipo_data_beschikbaar": true,
+    "ontbrekende_data": "Exacte CAPEX-splitsing maintenance vs. growth niet beschikbaar in publieke bronnen. Precieze klantenomzetverdeling per bedrijf wordt door ASML niet gepubliceerd (schattingen op basis van analistenrapporten). Individuele analistenrapporten niet openbaar toegankelijk.",
+    "non_gaap_gebruikt": false,
+    "non_gaap_toelichting": "ASML rapporteert primair op IFRS-basis. Het verschil met eventuele non-GAAP cijfers is beperkt (2-3%) en niet materieel voor de analyse."
+  },
+  "bronnen": [
+    {
+      "url": "https://www.asml.com/en/investors/annual-report/2025/financials",
+      "titel": "ASML Annual Report 2025 — Financials",
+      "type": "jaarverslag"
+    },
+    {
+      "url": "https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results",
+      "titel": "ASML Q4 2025 Financial Results",
+      "type": "beurswebsite"
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/ASML/asml-holding/financial-statements",
+      "titel": "MacroTrends ASML Financial Statements",
+      "type": "databron"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/asml/financials/",
+      "titel": "StockAnalysis.com ASML Financials",
+      "type": "databron"
+    },
+    {
+      "url": "https://finance.yahoo.com/quote/ASML.AS/key-statistics/",
+      "titel": "Yahoo Finance ASML Key Statistics",
+      "type": "databron"
+    },
+    {
+      "url": "https://tradingeconomics.com/germany/government-bond-yield",
+      "titel": "Trading Economics — German 10Y Bund Yield",
+      "type": "databron"
+    },
+    {
+      "url": "https://aswathdamodaran.substack.com/p/data-update-2-for-2026-a-testing",
+      "titel": "Damodaran Data Update 2 for 2026 — ERP",
+      "type": "databron"
+    },
+    {
+      "url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports",
+      "titel": "SEMI Equipment Forecast 2027",
+      "type": "nieuwsartikel"
+    },
+    {
+      "url": "https://www.patsnap.com/resources/blog/articles/asml-euv-and-high-na-lithography-technology-roadmap/",
+      "titel": "PatSnap — ASML EUV Patent Analysis",
+      "type": "databron"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/04/07/asml-shares-today-us-chip-export-curbs-china.html",
+      "titel": "CNBC — ASML shares on China export curbs",
+      "type": "nieuwsartikel"
+    },
+    {
+      "url": "https://www.asml.com/en/company/governance/board-of-management",
+      "titel": "ASML Board of Management",
+      "type": "beurswebsite"
+    },
+    {
+      "url": "https://www.trendforce.com/news/2026/02/16/news-asmls-high-na-euv-for-2027-28-which-giants-are-betting-big-intel-samsung-sk-hynix-or-tsmc/",
+      "titel": "TrendForce — High-NA EUV Adoption",
+      "type": "nieuwsartikel"
+    },
+    {
+      "url": "https://www.asml.com/en/company/sustainability",
+      "titel": "ASML Sustainability",
+      "type": "beurswebsite"
+    },
+    {
+      "url": "https://ourbrand.asml.com/m/1a7632ab83c363a7/original/Remuneration-Policy-for-the-Board-of-Management-version-2025.pdf",
+      "titel": "ASML Remuneration Policy 2025",
+      "type": "jaarverslag"
+    }
+  ],
+  "update_historie": [
+    {
+      "datum": "2026-04-11",
+      "beschrijving": "Volledige fundamentele analyse uitgevoerd met deterministische scorekaart en uitgebreide teksten."
+    }
+  ]
+}
