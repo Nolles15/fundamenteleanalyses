@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
-import type { Analyse } from '@/lib/types'
+import type { Analyse, DataKwaliteit } from '@/lib/types'
 import { formatKoers, formatUpside, formatDatum } from '@/lib/utils'
 import { OordeelBadge } from '@/components/cards/oordeel-badge'
+import { DataKwaliteitBadge } from './data-kwaliteit-badge'
+import { berekenDataKwaliteit } from '@/lib/data-kwaliteit'
 
 interface AnalyseHeaderProps {
   analyse: Analyse
@@ -74,12 +76,13 @@ export function AnalyseHeader({ analyse }: AnalyseHeaderProps) {
           </div>
         </div>
 
-        {/* Peildatum + marktkapitalisatie */}
-        <div className="mt-3 flex flex-wrap gap-4 text-xs text-text-muted font-sans">
+        {/* Peildatum + marktkapitalisatie + datakwaliteit */}
+        <div className="mt-3 flex flex-wrap items-center gap-4 text-xs text-text-muted font-sans">
           <span>Peildatum: {formatDatum(meta.peildatum)}</span>
           {meta.marktkapitalisatie && <span>Marktkapitalisatie: {meta.marktkapitalisatie}</span>}
           {meta.free_float_pct != null && <span>Free float: {meta.free_float_pct}%</span>}
           {meta.index_lidmaatschap && <span>{meta.index_lidmaatschap}</span>}
+          <DataKwaliteitBadge kwaliteit={berekenDataKwaliteit(analyse)} />
         </div>
       </div>
     </div>

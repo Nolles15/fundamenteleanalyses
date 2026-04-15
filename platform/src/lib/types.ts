@@ -18,6 +18,7 @@ export interface Analyse {
   databronnen?: Databronnen
   bronnen?: Bron[]
   update_historie?: UpdateHistorie[]
+  data_kwaliteit?: DataKwaliteit
 }
 
 // ─── META ─────────────────────────────────────────────────
@@ -588,6 +589,18 @@ export interface Bron {
   url: string
   titel: string
   type: string
+}
+
+// ─── DATA KWALITEIT ─────────────────────────────────────
+
+export interface DataKwaliteit {
+  jaren_aanwezig: number[]
+  jaren_volledig: number[]
+  jaren_gedeeltelijk: number[]
+  jaren_ontbrekend: number[]
+  dekking_pct: number
+  label: 'Volledige data' | 'Gedeeltelijke data' | 'Beperkte data'
+  toelichting?: string
 }
 
 // ─── INDEX ───────────────────────────────────────────────
