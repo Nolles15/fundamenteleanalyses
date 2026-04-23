@@ -577,8 +577,16 @@ export interface UpdateHistorie {
 
 // ─── DATABRONNEN ─────────────────────────────────────────
 
+export interface FinancieelBron {
+  jaar: number
+  bron: string
+  url: string
+  betrouwbaarheid: "HOOG" | "AGGREGATOR"
+}
+
 export interface Databronnen {
   bronnen_geraadpleegd: string[]
+  financieel?: FinancieelBron[]
   pre_ipo_data_beschikbaar?: boolean
   ontbrekende_data?: string
   non_gaap_gebruikt?: boolean

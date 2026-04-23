@@ -181,3 +181,147 @@ Zonder arg scannen beide scripts alle JSONs in `platform/src/content/data/`.
 ---
 
 **Volgende sessie start:** prompt uit sectie 2 in cowork plakken → AMBEA gevalideerd → committen → schema-additie beslissen.
+
+---
+
+## 7. Cowork skill-update prompt (plak letterlijk in cowork)
+
+```
+Update de skill `fundamentele-analyse` met 11 wijzigingen. Pas ze toe op het
+skill-bestand zelf zodat toekomstige ticker-analyses ze automatisch volgen.
+
+== REGELS DIE FOUT GINGEN EN GEFIXT MOETEN WORDEN ==
+
+1. Filename-conventie (hard):
+   - Bestandsnaam = bare ticker zonder exchange-suffix: `AMBEA.json`, niet `AMBEA.ST.json`
+   - `meta.ticker` = ook bare ticker (AMBEA)
+   - `meta.yahoo_symbol` = met suffix (AMBEA.ST)
+   - `meta.exchange` = "STO" / "AEX" / "ENXTAM" etc
+
+2. `fair_value.synthese_toelichting` staat als string op `fair_value.synthese_toelichting`
+   (NIET in synthese-dict). De 6 keys in synthese zijn exact:
+   laag, centraal, hoog, koopniveau, mos_toegepast_pct, synthese_toelichting (laatste optioneel binnen synthese maar het string-veld eronder is de canonieke plek).
+   Check: ASML.json toont de correcte structuur.
+
+3. Databronnen-hiërarchie bij het vullen:
+   jaarverslag PDF (HOOG) > beursmelding (HOOG) > aggregator (AGGREGATOR).
+   MacroTrends, Yahoo, StockAnalysis zijn AGGREGATOR.
+
+4. Beide Python-validators zijn verplicht voor oplevering:
+   python platform/scripts/validate_structure.py TICKER
+   python platform/scripts/verify_consistency.py TICKER
+   Beide moeten 0 FAIL geven. Geen 1 alleen.
+
+5. Agent-output bij oplevering: volledige stdout van beide scripts plakken,
+   geen samenvatting "alles groen".
+
+6. NIEUWE SCHEMA-ADDITIE: `databronnen.financieel`
+   (zie uitgebreide specificatie onderaan)
+
+7. Enum `risicos[].kans` = LAAG | MIDDEN | HOOG
+   Enum `risicos[].impact` = KLEIN | MIDDEL | GROOT
+   Let op: "MIDDEN" is voor kans, "MIDDEL" is voor impact — niet verwisselen.
+
+8. Framework-namen EXACT zoals in ASML.json scorekaart.items:
+   - "Graham"
+   - "Buffett / Munger"  (met spaties rond de schuine streep)
+   - "Peter Lynch"
+   - "Phil Fisher"
+   - "Magic Formula"
+   - "Moat"
+   - "Management"
+   - "Fair Value DCF"
+   - "Fair Value IPO-gecorr."
+
+9. Moat enum UITSLUITEND: WIDE MOAT | NARROW MOAT | NO MOAT
+   Geen Nederlandstalige varianten zoals "BEPERKTE MOAT" of "GEEN MOAT".
+
+10. Write-procedure voor grote JSONs (ticker-bestanden zijn 30-90KB):
+    A. Altijd één `Write` met volledige inhoud, nooit een stapel `Edit`s.
+    B. Bepaal compactheid vóór Write:
+       ```python
+       payload = json.dumps(d, ensure_ascii=False, indent=2).encode('utf-8')
+       if len(payload) > 30_000:
+           payload = json.dumps(d, ensure_ascii=False, indent=1).encode('utf-8')
+       if len(payload) > 45_000:
+           payload = json.dumps(d, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+       ```
+    C. Tweede file via OS-copy, NIET via 2e Write:
+       ```python
+       import shutil
+       shutil.copyfile('data/TICKER.json', 'platform/src/content/data/TICKER.json')
+       ```
+    D. Disk-check direct na elke Write (harde gate voor validators):
+       ```python
+       import json, os, hashlib
+       for p in ['data/TICKER.json','platform/src/content/data/TICKER.json']:
+           assert os.path.getsize(p) >= 20000, f"TRUNCATED: {p}"
+           d = json.load(open(p, encoding='utf-8'))
+           assert len(d) == 17, f"missing top-level keys: {p}"
+       a = open('data/TICKER.json','rb').read()
+       b = open('platform/src/content/data/TICKER.json','rb').read()
+       assert hashlib.sha256(a).digest() == hashlib.sha256(b).digest(), "files differ"
+       ```
+    E. Read-tool na Write is NIET de waarheid — cache divergeert van disk.
+       Disk-check (D) is het enige geldige bewijs.
+    F. Eindrapportage: validator-output + disk-check-output beide plakken.
+       "Write succeeded" als bewijs is onvoldoende.
+
+11. IPO-carve-out en non-GAAP adjustments (IFRS-16 etc) altijd expliciet
+    toelichten in `databronnen.non_gaap_toelichting`. Als non_gaap_gebruikt=true,
+    leg uit WELKE aanpassingen en WAAROM.
+
+== SCHEMA-ADDITIE: `databronnen.financieel` ==
+
+Nieuwe array in `databronnen`:
+
+```ts
+interface FinancieelBron {
+  jaar: number                              // bv 2024
+  bron: string                              // "ASML Annual Report 2024"
+  url: string                               // HTTPS URL
+  betrouwbaarheid: "HOOG" | "AGGREGATOR"
+}
+```
+
+Regels (gecontroleerd door validate_structure.py):
+- Array bevat minimaal 10 entries (10-jaars financieel-historie)
+- Geen dubbele jaren
+- De **5 meest recente jaren** (max_jaar tot max_jaar-4) moeten ALLEMAAL
+  `betrouwbaarheid == "HOOG"` hebben. Dit is de harde ondergrens voor recente
+  data: afkomstig uit officiële jaarverslagen, jaarverslag-PDFs, of IR-pagina's.
+- De jaren **6-10 geleden** mogen `AGGREGATOR` zijn (MacroTrends, StockAnalysis,
+  Yahoo Finance). Prima als jaarverslagen niet meer vindbaar zijn.
+- HOOG-entry.url MOET bevatten: "jaarverslag", "annual", of "investor" (case-insensitive)
+  OF eindigen op ".pdf". AGGREGATOR-url mag elke vorm.
+- Voor IPO-bedrijven met minder dan 10 jaar historie: leg het tekort uit in
+  `databronnen.ontbrekende_data` en zet `pre_ipo_data_beschikbaar` correct.
+
+Referentie-voorbeeld (alle 11 entries uit ASML.json):
+
+```json
+"financieel": [
+  {"jaar": 2015, "bron": "ASML Annual Report 2015", "url": "https://www.asml.com/en/investors/annual-report/2015", "betrouwbaarheid": "HOOG"},
+  {"jaar": 2016, "bron": "ASML Annual Report 2016", "url": "https://www.asml.com/en/investors/annual-report/2016", "betrouwbaarheid": "HOOG"},
+  ...
+  {"jaar": 2025, "bron": "ASML Annual Report 2025", "url": "https://www.asml.com/en/investors/annual-report/2025", "betrouwbaarheid": "HOOG"}
+]
+```
+
+== BEVESTIGING ==
+Als je klaar bent, bevestig door:
+1. Het skill-bestand te tonen na update (volledig, niet diff)
+2. Één korte tekst-samenvatting van wat er is veranderd
+3. Bevestiging dat deze regels ook gelden voor de 4 te-herbouwen tickers:
+   MIPS, VIT-B, ANOD-B, BONAV-B
+```
+
+---
+
+**Stukken die Janco zelf moet doen rond deze skill-update:**
+1. Bovenstaande prompt plakken in cowork en antwoord afwachten.
+2. ASML.json nakijken (commit `8d4d8c3`+1) — de 11 jaarverslag-URLs volgen het
+   patroon `asml.com/en/investors/annual-report/[jaar]`. Als een URL 404 blijkt,
+   melden zodat Claude Code hem vervangt.
+3. Na cowork-update: één test-ticker (bv MIPS) laten genereren volgens de
+   nieuwe skill en valideren. Als 0 FAIL: groen licht voor de 3 resterende.

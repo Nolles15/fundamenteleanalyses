@@ -17,6 +17,7 @@ Gebruik:
 """
 
 import json
+import re
 import sys
 import os
 from pathlib import Path
@@ -84,6 +85,16 @@ DATABRONNEN_REQUIRED = [
     "bronnen_geraadpleegd", "pre_ipo_data_beschikbaar",
     "ontbrekende_data", "non_gaap_gebruikt", "non_gaap_toelichting",
 ]
+
+# databronnen.financieel: elke entry moet deze velden hebben
+FINANCIEEL_BRON_KEYS = {"jaar", "bron", "url", "betrouwbaarheid"}
+FINANCIEEL_BETROUWBAARHEID_ENUM = {"HOOG", "AGGREGATOR"}
+# Minimaal 10 entries totaal (10-jaars financieel-historie)
+FINANCIEEL_BRON_MIN_TOTAL = 10
+# De 5 meest recente jaren moeten allemaal HOOG zijn (jaarverslagen)
+FINANCIEEL_BRON_RECENT_HOOG_YEARS = 5
+# HOOG-URLs moeten lijken op jaarverslag-bron
+FINANCIEEL_HOOG_URL_PATTERN = re.compile(r"(jaarverslag|annual|investor|\.pdf$)", re.IGNORECASE)
 
 ENUM_KANS = {"LAAG", "MIDDEN", "HOOG"}
 ENUM_IMPACT = {"KLEIN", "MIDDEL", "GROOT"}
@@ -359,6 +370,67 @@ def validate_scorekaart(results, data):
                   f"opgeslagen={eindoordeel}, verwacht={expected}")
 
 
+def validate_databronnen_financieel(results, data):
+    db = data.get("databronnen", {})
+    if not isinstance(db, dict):
+        return
+    fin = db.get("financieel")
+    if fin is None:
+        check(results, "databronnen.financieel aanwezig",
+              False, "ontbreekt — vereist voor traceerbaarheid")
+        return
+    if not isinstance(fin, list):
+        check(results, "databronnen.financieel is lijst",
+              False, f"type={type(fin).__name__}")
+        return
+
+    check(results, f"databronnen.financieel >= {FINANCIEEL_BRON_MIN_TOTAL} entries",
+          len(fin) >= FINANCIEEL_BRON_MIN_TOTAL,
+          f"count={len(fin)}")
+
+    # Elke entry heeft alle verplichte velden
+    for i, entry in enumerate(fin):
+        if not isinstance(entry, dict):
+            check(results, f"databronnen.financieel[{i}] is object",
+                  False, f"type={type(entry).__name__}")
+            continue
+        missing = FINANCIEEL_BRON_KEYS - set(entry.keys())
+        check(results, f"databronnen.financieel[{i}] alle verplichte velden",
+              not missing, f"mist: {missing}" if missing else "")
+        bet = entry.get("betrouwbaarheid")
+        check(results, f"databronnen.financieel[{i}].betrouwbaarheid in {{HOOG|AGGREGATOR}}",
+              bet in FINANCIEEL_BETROUWBAARHEID_ENUM,
+              f"waarde={bet}")
+
+    # Jaren uniek
+    jaren = [e.get("jaar") for e in fin if isinstance(e, dict) and isinstance(e.get("jaar"), int)]
+    check(results, "databronnen.financieel: jaren uniek (geen dubbelingen)",
+          len(jaren) == len(set(jaren)),
+          f"duplicates: {[j for j in jaren if jaren.count(j) > 1]}")
+
+    # Recente 5 jaar moeten HOOG zijn
+    if jaren:
+        max_jaar = max(jaren)
+        recent_jaren = set(range(max_jaar - FINANCIEEL_BRON_RECENT_HOOG_YEARS + 1, max_jaar + 1))
+        recent_entries = [e for e in fin if isinstance(e, dict) and e.get("jaar") in recent_jaren]
+        niet_hoog = [e.get("jaar") for e in recent_entries if e.get("betrouwbaarheid") != "HOOG"]
+        check(results,
+              f"databronnen.financieel: recente {FINANCIEEL_BRON_RECENT_HOOG_YEARS} jaar ({min(recent_jaren)}-{max_jaar}) allemaal HOOG",
+              not niet_hoog,
+              f"niet-HOOG jaren: {niet_hoog}" if niet_hoog else "")
+
+    # HOOG-URLs moeten lijken op jaarverslag-bron
+    for i, entry in enumerate(fin):
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("betrouwbaarheid") == "HOOG":
+            url = entry.get("url", "")
+            check(results,
+                  f"databronnen.financieel[{i}] HOOG url past bij jaarverslag/IR",
+                  bool(FINANCIEEL_HOOG_URL_PATTERN.search(url)),
+                  f"url={url}")
+
+
 def validate_databronnen_en_bronnen(results, data):
     db = data.get("databronnen", {})
     if isinstance(db, dict):
@@ -392,6 +464,7 @@ def verify(data, filepath):
     validate_risicos_en_katalysatoren(results, data)
     validate_scorekaart(results, data)
     validate_databronnen_en_bronnen(results, data)
+    validate_databronnen_financieel(results, data)
     return results
 
 

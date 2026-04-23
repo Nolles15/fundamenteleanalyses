@@ -1722,7 +1722,75 @@
     "pre_ipo_data_beschikbaar": true,
     "ontbrekende_data": "Exacte CAPEX-splitsing maintenance vs. growth niet beschikbaar in publieke bronnen. Precieze klantenomzetverdeling per bedrijf wordt door ASML niet gepubliceerd (schattingen op basis van analistenrapporten). Individuele analistenrapporten niet openbaar toegankelijk.",
     "non_gaap_gebruikt": false,
-    "non_gaap_toelichting": "ASML rapporteert primair op IFRS-basis. Het verschil met eventuele non-GAAP cijfers is beperkt (2-3%) en niet materieel voor de analyse."
+    "non_gaap_toelichting": "ASML rapporteert primair op IFRS-basis. Het verschil met eventuele non-GAAP cijfers is beperkt (2-3%) en niet materieel voor de analyse.",
+    "financieel": [
+      {
+        "jaar": 2015,
+        "bron": "ASML Annual Report 2015",
+        "url": "https://www.asml.com/en/investors/annual-report/2015",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2016,
+        "bron": "ASML Annual Report 2016",
+        "url": "https://www.asml.com/en/investors/annual-report/2016",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2017,
+        "bron": "ASML Annual Report 2017",
+        "url": "https://www.asml.com/en/investors/annual-report/2017",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2018,
+        "bron": "ASML Annual Report 2018",
+        "url": "https://www.asml.com/en/investors/annual-report/2018",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2019,
+        "bron": "ASML Annual Report 2019",
+        "url": "https://www.asml.com/en/investors/annual-report/2019",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2020,
+        "bron": "ASML Annual Report 2020",
+        "url": "https://www.asml.com/en/investors/annual-report/2020",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2021,
+        "bron": "ASML Annual Report 2021",
+        "url": "https://www.asml.com/en/investors/annual-report/2021",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2022,
+        "bron": "ASML Annual Report 2022",
+        "url": "https://www.asml.com/en/investors/annual-report/2022",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2023,
+        "bron": "ASML Annual Report 2023",
+        "url": "https://www.asml.com/en/investors/annual-report/2023",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2024,
+        "bron": "ASML Annual Report 2024",
+        "url": "https://www.asml.com/en/investors/annual-report/2024",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2025,
+        "bron": "ASML Annual Report 2025",
+        "url": "https://www.asml.com/en/investors/annual-report/2025",
+        "betrouwbaarheid": "HOOG"
+      }
+    ]
   },
   "bronnen": [
     {
