@@ -8,12 +8,13 @@ aandelenanalyse/
 ├── docs/                    Plannen en documentatie
 │   ├── BUILD_PLAN.md        Technisch bouwplan Next.js platform
 │   ├── BUSINESS_PLAN.md     Businessmodel en prijsstrategie
-│   ├── SKILL_*.md           Skill-prompts (mag aangepast worden voor JSON-contract sync)
-│   └── ANALYSE_JSON_CONTRACT.md  JSON-structuur contract (brug tussen skill en types.ts)
+│   ├── SCHEMA_GROUND_TRUTH.md  Wijst naar types.ts + cowork skill + ASML.json (enige geldige bronnen)
+│   └── _archive/            Verouderde docs — NIET gebruiken
 ├── platform/                Next.js 16 applicatie (het product)
 │   └── src/
-│       ├── content/data/    Kopie van data/ — SYNC HOUDEN
+│       ├── content/data/    Kopie van data/ — SYNC HOUDEN (cowork skill schrijft hier direct)
 │       └── lib/types.ts     TypeScript schema — DE GOUDEN STANDAARD
+│   └── scripts/             Validator-scripts (verify_consistency.py)
 └── CLAUDE.md                Dit bestand
 ```
 
@@ -35,9 +36,9 @@ aandelenanalyse/
 - GEEN bestanden aanmaken in de root (scripts, pipelines, agents, etc.)
 - GEEN nieuwe mappen aanmaken buiten data/, docs/, platform/
 - GEEN schema-informatie afleiden uit JSON-bestanden — gebruik types.ts
-- GEEN Python scripts, Flask apps, of andere tooling toevoegen
-- docs/SKILL_*.md bestanden MAG je wijzigen als het gaat om JSON-contract sync
-- docs/ANALYSE_JSON_CONTRACT.md en types.ts MOETEN synchroon blijven
+- GEEN Flask apps of ad-hoc tooling. Validator-scripts mogen alleen in `platform/scripts/`.
+- NOOIT bestanden in `docs/_archive/` als referentie gebruiken — die zijn outdated.
+- Bij schema-wijzigingen: synchroniseer `types.ts` + cowork skill + `data/ASML.json` (de referentie).
 
 ### Tech stack
 - Next.js 16 (App Router, Server Components, Turbopack)
