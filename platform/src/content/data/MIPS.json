@@ -1,0 +1,1824 @@
+{
+  "meta": {
+    "ticker": "MIPS",
+    "exchange": "STO",
+    "naam": "Mips AB (publ)",
+    "sector": "Consumentengoederen",
+    "industrie": "Helm- en hoofdveiligheidstechnologie",
+    "land": "Zweden",
+    "koers": 237.0,
+    "valuta": "SEK",
+    "peildatum": "2026-04-22",
+    "marktkapitalisatie": "SEK 6,29 mld",
+    "marktkapitalisatie_mln": 6292,
+    "free_float_pct": 100.0,
+    "index_lidmaatschap": "Nasdaq Stockholm Mid Cap",
+    "domein": "mipscorp.com",
+    "yahoo_symbol": "MIPS.ST"
+  },
+  "executive_summary": {
+    "kernthese": "Mips AB is een Zweeds ingredient-brand bedrijf dat een patented brain-protection systeem licentieert aan wereldwijde helmfabrikanten. De technologie is het resultaat van ruim twintig jaar onderzoek in samenwerking met het Karolinska Instituut en KTH, en is inmiddels gemeengoed in premium fiets-, ski- en motorhelmen. Het bedrijfsmodel is kapitaalarm met brutomarges boven de 70%: Mips produceert zelf geen helmen maar levert alleen de licentie en het friction-reducerende laagje dat in de helm wordt geintegreerd. De structurele groeidrivers zijn regelgeving rond helmveiligheid, stijgend koopgedrag van gesofisticeerde consumenten die voor veiligheidslabels betalen, en uitbreiding naar nieuwe categorieen zoals motor-, bouw- en paardensporthelmen. Recente overname van Koroyd (december 2025) voegt een complementaire impact-absorptietechnologie toe. Het belangrijkste risico is de sterke cycliciteit van de sport-helmmarkt en de kwetsbaarheid voor voorraadcycli bij helmfabrikanten, wat in 2023 tot een halvering van omzet en winst leidde. De waardering prijst structureel dubbelcijferige groei in.",
+    "oordeel": "PASS",
+    "koers": 237.0,
+    "valuta": "SEK",
+    "fair_value_basis": 147,
+    "fair_value_kansgewogen": 144,
+    "epv_per_aandeel": 53,
+    "upside_pct": -38.0,
+    "fair_value_scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 79,
+        "upside_pct": -66.7,
+        "fcf_groei_pct": 2.0,
+        "wacc_pct": 9.71,
+        "kans_pct": 30.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 147,
+        "upside_pct": -38.0,
+        "fcf_groei_pct": 9.0,
+        "wacc_pct": 8.71,
+        "kans_pct": 50.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 232,
+        "upside_pct": -2.1,
+        "fcf_groei_pct": 15.0,
+        "wacc_pct": 8.21,
+        "kans_pct": 20.0
+      }
+    ],
+    "reverse_dcf_impliciete_groei_pct": 13.3,
+    "grootste_kans": "Uitbreiding naar nieuwe helmcategorieen (motor, bouw) kan een volgende groeifase ontsluiten.",
+    "grootste_risico": "Voorraadcyclus bij helm-OEM's kan opnieuw zorgen voor een scherpe omzetdaling zoals in 2023."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Mips AB ontwikkelt, produceert en licentieert een patented veiligheidssysteem voor helmen dat de hersenen beschermt tegen rotatieversnelling bij schuine klappen. De technologie bestaat uit een dunne, laag-wrijvingslaag die tussen de helmschaal en de binnenste padding wordt geplaatst; bij een schuine impact schuift de schaal enkele millimeters over de laag, waardoor rotatiekrachten op het brein worden gereduceerd. Mips maakt zelf geen helmen maar werkt als een ingredient-brand: premium helmfabrikanten (Specialized, Giro, Bell, POC, Smith, KASK en tientallen anderen) betalen een licentie per helm om het Mips-label op hun product te mogen voeren. Dit businessmodel is schaalbaar en zeer kapitaalarm, met brutomarges die consistent boven de 70% liggen en operationele marges rond 30%. De klant van Mips is dus niet de consument maar de helmfabrikant, die op zijn beurt hogere prijzen kan vragen voor een helm met Mips-veiligheidslabel. Het Mips-logo op de helm dient als consumentvertrouwensmerk: onafhankelijke veiligheidstests zoals Virginia Tech's helmranking belonen Mips-uitgeruste helmen. De omzet komt voor het grootste deel uit de fiets- en snowsport-segmenten, aangevuld met motor-, bouw- en paardensporthelmen. Mips heeft in december 2025 Koroyd overgenomen, een Monegaskisch bedrijf met een complementaire impact-absorberende honingraattechnologie.",
+    "geschiedenis": "Mips ontstond in 1996 uit een samenwerking tussen de neurochirurg Hans von Holst van het Karolinska Instituut en de biomechanicus Peter Halldin van KTH. Hun idee was dat een helm niet alleen tegen lineaire klappen moet beschermen maar ook tegen rotatie, die wetenschappelijk de grootste oorzaak is van hersentrauma bij schuine impacts. Het duo begon onderzoek te doen dat uiteindelijk in 2001 resulteerde in hun eerste peer-reviewed publicatie. In de periode 2004-2007 werd de eerste commerciele toepassing ontwikkeld en op de Zweedse markt gelanceerd in een paardensporthelm. Vanaf 2008-2009 stapten de eerste institutionele investeerders in, waaronder Karolinska Development. In 2010 maakte Mips de strategische keuze om zich volledig te richten op het ingredient-brand-model: niet zelf helmen produceren, maar de technologie licentieren aan externe helmfabrikanten. Vanaf 2012 groeide het aantal licentienemers snel toen ook premium fiets- en snowsportmerken het systeem adopteerden. Op 23 maart 2017 ging Mips naar de beurs op Nasdaq Stockholm. In de jaren daarna groeide de omzet snel van circa 125 mln SEK (2017) tot een piek van 608 mln SEK in 2021, gedreven door de corona-boom in fietshelmen. In 2022-2023 volgde een scherpe terugval: helmfabrikanten hadden te grote voorraden opgebouwd en legden bestellingen vrijwel stil, waardoor de omzet in 2023 zakte tot 357 mln SEK. In 2024 begon een voorzichtig herstel, en in 2025 groeide de omzet organisch met 21% naar 533 mln SEK. In december 2025 sloot Mips de overname af van Koroyd voor EUR 40 mln vast plus maximaal EUR 25 mln earn-out, gefinancierd met een nieuwe banklening van SEK 300 mln.",
+    "bedrijfsmodel": "Mips werkt volgens het ingredient-brand-model: het bedrijf produceert geen helmen, maar licentieert zijn patented lage-wrijvingslaag aan premium helmfabrikanten die het systeem in hun producten integreren. Per helm betaalt de fabrikant een licentievergoeding; hoe hoger de prijs van de helm, hoe hoger de Mips-bijdrage. Omdat Mips een kleine fysieke component levert maar vooral de merknaam en het patent verkoopt, zijn de brutomarges zeer hoog (boven de 70%). De vaste kosten zijn beperkt tot R&D, testfaciliteiten, kwaliteitscontrole en salesorganisatie, wat zorgt voor een sterke operationele hefboom.",
+    "ipo_context": "Mips ging op 23 maart 2017 naar de beurs op Nasdaq Stockholm tegen een koers van 67 SEK per aandeel. De IPO werd gebruikt door bestaande aandeelhouders (onder meer Karolinska Development en vroege institutionele investeerders) om posities te verzilveren; er werd geen primair kapitaal aangetrokken voor schuldaflossing. De kapitaalstructuur was bij IPO vrijwel schuldenvrij en dat bleef zo tot december 2025, toen een banklening van SEK 300 mln werd opgenomen voor de overname van Koroyd.",
+    "klantenprofiel": "De klanten van Mips zijn premium helmfabrikanten wereldwijd. De portfolio omvat ruim 150 merken, waaronder Specialized, Giro, Bell, POC, Smith, KASK, Trek, Scott, Sweet Protection en Troy Lee Designs in de fiets- en snowsportsector, alsmede Shoei, AGV, Schuberth en Bell in motorhelmen. De topklanten vertegenwoordigen samen een groot deel van de omzet. Exacte klantconcentratie wordt niet per merk bekendgemaakt, maar de vijf grootste licentienemers zijn historisch goed voor circa 45-55% van de omzet. Eindafnemer is de particuliere sporter en professionele gebruiker, maar de inkoopbeslissing ligt bij de helmfabrikant.",
+    "oprichtingsjaar": 1996,
+    "ipo_datum": "2017-03-23",
+    "ipo_koers": 67.0,
+    "personeel": 165,
+    "landen_actief": 75,
+    "klantconcentratie": "De top-5 klanten vertegenwoordigen naar schatting 45-55% van de omzet; geen enkele klant is goed voor meer dan 20% individueel. Dit geeft een matige concentratie met enige afhankelijkheid van grote sportmerken maar geen single-point-of-failure risico.",
+    "geografische_spreiding": [
+      {
+        "regio": "Noord-Amerika",
+        "omzet_pct": 36,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Europa",
+        "omzet_pct": 43,
+        "valuta": "EUR"
+      },
+      {
+        "regio": "Azie/Oceanie",
+        "omzet_pct": 14,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Rest van wereld",
+        "omzet_pct": 7,
+        "valuta": "USD"
+      }
+    ],
+    "geografische_spreiding_toelichting": "De Europese markt was in 2025 goed voor 43% van de omzet, Noord-Amerika voor 36%. Hoewel Mips in SEK rapporteert, komt de meeste omzet uit USD- en EUR-gedenomineerde contracten. De sterke SEK had in 2025 een materieel negatief effect op de gerapporteerde omzet en winst.",
+    "segmenten": [
+      {
+        "naam": "Fiets",
+        "omzet_pct": 55,
+        "beschrijving": "De fietshelm-segment is historisch het grootste en meest volwassen, met sterke penetratie in premium segmenten en groei in commuting en e-bike helmen."
+      },
+      {
+        "naam": "Snowsport",
+        "omzet_pct": 24,
+        "beschrijving": "Ski- en snowboardhelmen vormen de tweede pijler. De markt is seizoensgebonden maar stabiel, met hoge Mips-penetratie in premium segmenten."
+      },
+      {
+        "naam": "Motor",
+        "omzet_pct": 12,
+        "beschrijving": "Motorhelmen zijn de snelst groeiende categorie, geholpen door grote merken als Shoei, AGV en Schuberth die Mips opnemen."
+      },
+      {
+        "naam": "Safety/Equestrian/Overig",
+        "omzet_pct": 9,
+        "beschrijving": "Bouwhelmen, paardensporthelmen en andere safety-toepassingen vormen een kleine maar groeiende categorie met lange ontwikkelcycli."
+      }
+    ],
+    "aandeelhouders": [
+      {
+        "naam": "Handelsbanken Fonder",
+        "pct": 5.4,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Baillie Gifford & Co.",
+        "pct": 4.9,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Brown Capital Management",
+        "pct": 4.8,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Swedbank Robur Fonder",
+        "pct": 4.2,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Lannebo Fonder",
+        "pct": 3.1,
+        "type": "Institutioneel"
+      }
+    ],
+    "institutioneel_eigendom_trend": "Institutioneel eigendom ligt rond 67% en is de afgelopen twee jaar stabiel. De top-16 aandeelhouders houden samen circa 50%."
+  },
+  "financieel": {
+    "valuta_label": "SEK mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2016,
+        "omzet": 87,
+        "omzet_groei_pct": 74.7,
+        "brutowinst": 65,
+        "brutomarge_pct": 74.7,
+        "ebit": 20,
+        "ebit_marge_pct": 23.0,
+        "ebitda": 25,
+        "ebitda_marge_pct": 28.7,
+        "nettowinst": 13,
+        "nettomarge_pct": 14.9,
+        "eps": 0.5,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": 26.0
+      },
+      {
+        "jaar": 2017,
+        "omzet": 126,
+        "omzet_groei_pct": 44.8,
+        "brutowinst": 93,
+        "brutomarge_pct": 73.8,
+        "ebit": 41,
+        "ebit_marge_pct": 32.5,
+        "ebitda": 48,
+        "ebitda_marge_pct": 38.1,
+        "nettowinst": 32,
+        "nettomarge_pct": 25.4,
+        "eps": 1.22,
+        "eps_groei_pct": 144.0,
+        "aandelen_uitstaand_mln": 26.3
+      },
+      {
+        "jaar": 2018,
+        "omzet": 193,
+        "omzet_groei_pct": 53.2,
+        "brutowinst": 143,
+        "brutomarge_pct": 74.1,
+        "ebit": 77,
+        "ebit_marge_pct": 39.9,
+        "ebitda": 85,
+        "ebitda_marge_pct": 44.0,
+        "nettowinst": 60,
+        "nettomarge_pct": 31.1,
+        "eps": 2.28,
+        "eps_groei_pct": 86.9,
+        "aandelen_uitstaand_mln": 26.4
+      },
+      {
+        "jaar": 2019,
+        "omzet": 330,
+        "omzet_groei_pct": 71.0,
+        "brutowinst": 246,
+        "brutomarge_pct": 74.5,
+        "ebit": 133,
+        "ebit_marge_pct": 40.3,
+        "ebitda": 141,
+        "ebitda_marge_pct": 42.7,
+        "nettowinst": 105,
+        "nettomarge_pct": 31.8,
+        "eps": 3.96,
+        "eps_groei_pct": 73.7,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2020,
+        "omzet": 348,
+        "omzet_groei_pct": 5.5,
+        "brutowinst": 261,
+        "brutomarge_pct": 75.0,
+        "ebit": 159,
+        "ebit_marge_pct": 45.7,
+        "ebitda": 168,
+        "ebitda_marge_pct": 48.3,
+        "nettowinst": 123,
+        "nettomarge_pct": 35.3,
+        "eps": 4.64,
+        "eps_groei_pct": 17.2,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2021,
+        "omzet": 608,
+        "omzet_groei_pct": 74.7,
+        "brutowinst": 450,
+        "brutomarge_pct": 74.0,
+        "ebit": 326,
+        "ebit_marge_pct": 53.6,
+        "ebitda": 335,
+        "ebitda_marge_pct": 55.1,
+        "nettowinst": 255,
+        "nettomarge_pct": 41.9,
+        "eps": 9.62,
+        "eps_groei_pct": 107.3,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2022,
+        "omzet": 563,
+        "omzet_groei_pct": -7.4,
+        "brutowinst": 420,
+        "brutomarge_pct": 74.6,
+        "ebit": 229,
+        "ebit_marge_pct": 40.7,
+        "ebitda": 238,
+        "ebitda_marge_pct": 42.3,
+        "nettowinst": 175,
+        "nettomarge_pct": 31.1,
+        "eps": 6.6,
+        "eps_groei_pct": -31.4,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2023,
+        "omzet": 357,
+        "omzet_groei_pct": -36.6,
+        "brutowinst": 263,
+        "brutomarge_pct": 73.7,
+        "ebit": 70,
+        "ebit_marge_pct": 19.6,
+        "ebitda": 79,
+        "ebitda_marge_pct": 22.1,
+        "nettowinst": 64,
+        "nettomarge_pct": 17.9,
+        "eps": 2.42,
+        "eps_groei_pct": -63.3,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2024,
+        "omzet": 483,
+        "omzet_groei_pct": 35.3,
+        "brutowinst": 360,
+        "brutomarge_pct": 74.5,
+        "ebit": 174,
+        "ebit_marge_pct": 36.0,
+        "ebitda": 184,
+        "ebitda_marge_pct": 38.1,
+        "nettowinst": 141,
+        "nettomarge_pct": 29.2,
+        "eps": 5.32,
+        "eps_groei_pct": 119.8,
+        "aandelen_uitstaand_mln": 26.5
+      },
+      {
+        "jaar": 2025,
+        "omzet": 533,
+        "omzet_groei_pct": 10.4,
+        "brutowinst": 396,
+        "brutomarge_pct": 74.2,
+        "ebit": 156,
+        "ebit_marge_pct": 29.2,
+        "ebitda": 167,
+        "ebitda_marge_pct": 31.3,
+        "nettowinst": 121,
+        "nettomarge_pct": 22.7,
+        "eps": 4.56,
+        "eps_groei_pct": -14.3,
+        "aandelen_uitstaand_mln": 26.55
+      }
+    ],
+    "toelichting_resultaten": "De omzetgroei is uitgesproken cyclisch. Tussen 2016 en 2021 is Mips uitgegroeid van SEK 87 mln naar SEK 608 mln, een CAGR van circa 48% gedreven door groei bij bestaande helmfabrikanten en de corona-boom in fietshelmen. In 2022-2023 keerde de cyclus abrupt: OEM-klanten hadden te grote voorraden opgebouwd en snoeiden brutaal in bestellingen, waardoor de omzet 2023 zakte naar SEK 357 mln. Sinds 2024 is er herstel, met 2025 op SEK 533 mln. Brutomarges liggen over de cyclus consistent rond 74%, wat de kracht van het licentiemodel onderstreept. EBIT-marge varieert daarentegen sterk (19,6% in 2023 tot 53,6% in 2021) vanwege de operationele hefboom op vaste kosten. Over 10 jaar bedraagt de omzet-CAGR circa 22%.",
+    "omzet_cagr_pct": 22.3,
+    "omzet_cagr_periode": "2016-2025",
+    "kasstromen": [
+      {
+        "jaar": 2016,
+        "cfo": 20,
+        "capex": -3,
+        "fcf": 17,
+        "fcf_na_sbc": 15,
+        "fcf_per_aandeel": 0.58,
+        "fcf_marge_pct": 19.5,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 1.31,
+        "sbc": 2,
+        "dividend_totaal": 0,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2017,
+        "cfo": 38,
+        "capex": -5,
+        "fcf": 33,
+        "fcf_na_sbc": 30,
+        "fcf_per_aandeel": 1.14,
+        "fcf_marge_pct": 26.2,
+        "fcf_groei_pct": 94.1,
+        "fcf_conversion": 1.03,
+        "sbc": 3,
+        "dividend_totaal": 0,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2018,
+        "cfo": 70,
+        "capex": -7,
+        "fcf": 63,
+        "fcf_na_sbc": 59,
+        "fcf_per_aandeel": 2.23,
+        "fcf_marge_pct": 32.6,
+        "fcf_groei_pct": 90.9,
+        "fcf_conversion": 1.05,
+        "sbc": 4,
+        "dividend_totaal": 26,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2019,
+        "cfo": 130,
+        "capex": -10,
+        "fcf": 120,
+        "fcf_na_sbc": 115,
+        "fcf_per_aandeel": 4.34,
+        "fcf_marge_pct": 36.4,
+        "fcf_groei_pct": 90.5,
+        "fcf_conversion": 1.14,
+        "sbc": 5,
+        "dividend_totaal": 48,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2020,
+        "cfo": 140,
+        "capex": -12,
+        "fcf": 128,
+        "fcf_na_sbc": 123,
+        "fcf_per_aandeel": 4.64,
+        "fcf_marge_pct": 36.8,
+        "fcf_groei_pct": 6.7,
+        "fcf_conversion": 1.04,
+        "sbc": 5,
+        "dividend_totaal": 71,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2021,
+        "cfo": 290,
+        "capex": -20,
+        "fcf": 270,
+        "fcf_na_sbc": 264,
+        "fcf_per_aandeel": 9.96,
+        "fcf_marge_pct": 44.4,
+        "fcf_groei_pct": 110.9,
+        "fcf_conversion": 1.06,
+        "sbc": 6,
+        "dividend_totaal": 115,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2022,
+        "cfo": 210,
+        "capex": -15,
+        "fcf": 195,
+        "fcf_na_sbc": 189,
+        "fcf_per_aandeel": 7.13,
+        "fcf_marge_pct": 34.6,
+        "fcf_groei_pct": -27.8,
+        "fcf_conversion": 1.11,
+        "sbc": 6,
+        "dividend_totaal": 154,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2023,
+        "cfo": 85,
+        "capex": -8,
+        "fcf": 77,
+        "fcf_na_sbc": 71,
+        "fcf_per_aandeel": 2.68,
+        "fcf_marge_pct": 21.6,
+        "fcf_groei_pct": -62.4,
+        "fcf_conversion": 1.2,
+        "sbc": 6,
+        "dividend_totaal": 154,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2024,
+        "cfo": 155,
+        "capex": -13,
+        "fcf": 142,
+        "fcf_na_sbc": 136,
+        "fcf_per_aandeel": 5.13,
+        "fcf_marge_pct": 29.4,
+        "fcf_groei_pct": 84.4,
+        "fcf_conversion": 1.01,
+        "sbc": 6,
+        "dividend_totaal": 80,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2025,
+        "cfo": 148,
+        "capex": -18,
+        "fcf": 130,
+        "fcf_na_sbc": 122,
+        "fcf_per_aandeel": 4.6,
+        "fcf_marge_pct": 24.4,
+        "fcf_groei_pct": -8.5,
+        "fcf_conversion": 1.07,
+        "sbc": 8,
+        "dividend_totaal": 66,
+        "aandeleninkoop": 0
+      }
+    ],
+    "toelichting_kasstromen": "De vrije kasstroom volgt de winstgevendheid nauwgezet, met piekjaar 2021 (FCF SEK 270 mln) en dalen in 2023 (SEK 77 mln, -62% YoY). De FCF-marge schommelt tussen 22% en 44%, met een 10-jaars mediaan rond 33%. FCF-conversie ligt consistent boven 100%, wat bevestigt dat de gerapporteerde winst goed wordt omgezet in echte kasstroom. SBC is met circa SEK 5-8 mln per jaar beperkt (1-3% van FCF). De daling van de OCF in 2023 met meer dan 50% is vrijwel volledig toe te schrijven aan de omzetdaling door de OEM-voorraadcyclus en was dus structureel herstelbaar; 2024 en 2025 bevestigen dit.",
+    "balans": [
+      {
+        "jaar": 2016,
+        "totale_activa": 115,
+        "eigen_vermogen": 75,
+        "bruto_schuld": 0,
+        "nettoschuld": -35,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 3.2,
+        "quick_ratio": 3.0,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 2.88
+      },
+      {
+        "jaar": 2017,
+        "totale_activa": 210,
+        "eigen_vermogen": 155,
+        "bruto_schuld": 0,
+        "nettoschuld": -115,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.5,
+        "quick_ratio": 5.3,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 5.89
+      },
+      {
+        "jaar": 2018,
+        "totale_activa": 230,
+        "eigen_vermogen": 180,
+        "bruto_schuld": 0,
+        "nettoschuld": -90,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 4.8,
+        "quick_ratio": 4.6,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 6.82
+      },
+      {
+        "jaar": 2019,
+        "totale_activa": 450,
+        "eigen_vermogen": 320,
+        "bruto_schuld": 0,
+        "nettoschuld": -80,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 4.5,
+        "quick_ratio": 4.3,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 12.08
+      },
+      {
+        "jaar": 2020,
+        "totale_activa": 520,
+        "eigen_vermogen": 385,
+        "bruto_schuld": 0,
+        "nettoschuld": -95,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.1,
+        "quick_ratio": 4.9,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 14.53
+      },
+      {
+        "jaar": 2021,
+        "totale_activa": 630,
+        "eigen_vermogen": 520,
+        "bruto_schuld": 0,
+        "nettoschuld": -120,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.7,
+        "quick_ratio": 5.5,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 19.62
+      },
+      {
+        "jaar": 2022,
+        "totale_activa": 610,
+        "eigen_vermogen": 495,
+        "bruto_schuld": 0,
+        "nettoschuld": -115,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.3,
+        "quick_ratio": 5.1,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 18.68
+      },
+      {
+        "jaar": 2023,
+        "totale_activa": 520,
+        "eigen_vermogen": 420,
+        "bruto_schuld": 0,
+        "nettoschuld": -85,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.0,
+        "quick_ratio": 4.8,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 15.85
+      },
+      {
+        "jaar": 2024,
+        "totale_activa": 550,
+        "eigen_vermogen": 460,
+        "bruto_schuld": 0,
+        "nettoschuld": -85,
+        "debt_equity": 0.0,
+        "debt_ebitda": 0.0,
+        "current_ratio": 5.2,
+        "quick_ratio": 5.0,
+        "goodwill_pct_activa": 0.0,
+        "boekwaarde_per_aandeel": 17.36
+      },
+      {
+        "jaar": 2025,
+        "totale_activa": 1550,
+        "eigen_vermogen": 990,
+        "bruto_schuld": 550,
+        "nettoschuld": 200,
+        "debt_equity": 0.56,
+        "debt_ebitda": 3.3,
+        "current_ratio": 2.1,
+        "quick_ratio": 1.9,
+        "goodwill_pct_activa": 32.0,
+        "boekwaarde_per_aandeel": 37.29
+      }
+    ],
+    "toelichting_balans": "Tot en met 2024 opereerde Mips met een fortress balance sheet: geen lange schulden en een consistente nettokaspositie tussen SEK 80 mln en 120 mln. In december 2025 veranderde dat beeld fundamenteel door de overname van Koroyd (EUR 40 mln vast + EUR 25 mln earn-out). Ter financiering is een nieuwe banklening van SEK 300 mln aangetrokken en een voorwaardelijke extra koopprijs van SEK 250 mln op de balans gezet. Bruto schuld ging van nul naar SEK 550 mln; de nettoschuld flipte van -SEK 85 mln (cash) naar +SEK 200 mln. Goodwill sprong van 0% naar circa 32% van de activa. Hoewel de Debt/EBITDA van 3,3x redelijk is, betekent de overgang van nettokas naar nettoschuld dat het bedrijf kwetsbaarder is voor een volgende cyclische dip dan historisch. Current ratio bleef boven 2, dus geen korte-termijnzorgen.",
+    "schuldvervaldatum": "De SEK 300 mln banklening heeft een looptijd van vijf jaar (eindigt 2030); de voorwaardelijke Koroyd-earn-out vervalt op basis van prestatietargets in 2027-2028.",
+    "rendementsindicatoren": [
+      {
+        "jaar": 2016,
+        "roce_pct": 25.0,
+        "roe_pct": 18.0,
+        "roic_pct": 22.0,
+        "roa_pct": 12.0,
+        "asset_turnover": 0.8,
+        "wacc_pct": 9.5,
+        "roic_wacc_spread": 12.5
+      },
+      {
+        "jaar": 2017,
+        "roce_pct": 28.0,
+        "roe_pct": 24.0,
+        "roic_pct": 30.0,
+        "roa_pct": 18.0,
+        "asset_turnover": 0.77,
+        "wacc_pct": 9.5,
+        "roic_wacc_spread": 20.5
+      },
+      {
+        "jaar": 2018,
+        "roce_pct": 40.0,
+        "roe_pct": 36.0,
+        "roic_pct": 42.0,
+        "roa_pct": 27.0,
+        "asset_turnover": 0.89,
+        "wacc_pct": 9.0,
+        "roic_wacc_spread": 33.0
+      },
+      {
+        "jaar": 2019,
+        "roce_pct": 45.0,
+        "roe_pct": 42.0,
+        "roic_pct": 48.0,
+        "roa_pct": 28.0,
+        "asset_turnover": 0.89,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 39.5
+      },
+      {
+        "jaar": 2020,
+        "roce_pct": 44.0,
+        "roe_pct": 35.0,
+        "roic_pct": 46.0,
+        "roa_pct": 25.0,
+        "asset_turnover": 0.72,
+        "wacc_pct": 7.8,
+        "roic_wacc_spread": 38.2
+      },
+      {
+        "jaar": 2021,
+        "roce_pct": 65.0,
+        "roe_pct": 56.0,
+        "roic_pct": 70.0,
+        "roa_pct": 45.0,
+        "asset_turnover": 1.05,
+        "wacc_pct": 7.8,
+        "roic_wacc_spread": 62.2
+      },
+      {
+        "jaar": 2022,
+        "roce_pct": 48.0,
+        "roe_pct": 34.0,
+        "roic_pct": 50.0,
+        "roa_pct": 29.0,
+        "asset_turnover": 0.91,
+        "wacc_pct": 8.5,
+        "roic_wacc_spread": 41.5
+      },
+      {
+        "jaar": 2023,
+        "roce_pct": 16.0,
+        "roe_pct": 14.0,
+        "roic_pct": 17.0,
+        "roa_pct": 12.0,
+        "asset_turnover": 0.64,
+        "wacc_pct": 9.0,
+        "roic_wacc_spread": 8.0
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": 37.0,
+        "roe_pct": 31.0,
+        "roic_pct": 39.0,
+        "roa_pct": 26.0,
+        "asset_turnover": 0.89,
+        "wacc_pct": 8.8,
+        "roic_wacc_spread": 30.2
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": 16.0,
+        "roe_pct": 14.0,
+        "roic_pct": 12.0,
+        "roa_pct": 10.0,
+        "asset_turnover": 0.5,
+        "wacc_pct": 8.7,
+        "roic_wacc_spread": 3.3
+      }
+    ],
+    "toelichting_rendement": "Pre-Koroyd behaalde Mips structureel zeer hoge ROIC's (30-70%) ruim boven de WACC van circa 8-9%, met een spread die gemiddeld 30-40 procentpunten bedroeg. Dit is een klassieke capital-light ingredient-brand met weinig ingezet kapitaal en hoge licentiemarges. De cyclische dip van 2023 trok ROIC eenmalig naar 17%. In 2025 zakte de ROIC echter scherp naar 12% door de toegevoegde SEK 500 mln goodwill uit de Koroyd-overname, die de kapitaalsbasis bijna verdubbelt maar pas in komende jaren extra EBIT moet gaan genereren. De post-Koroyd ROIC-WACC spread is slechts enkele procentpunten en zal zich moeten bewijzen.",
+    "accruals": [
+      {
+        "jaar": 2020,
+        "accruals_ratio": -0.03,
+        "non_gaap_verschil_pct": 2.0,
+        "sbc_pct_fcf": 4.0
+      },
+      {
+        "jaar": 2021,
+        "accruals_ratio": -0.05,
+        "non_gaap_verschil_pct": 3.0,
+        "sbc_pct_fcf": 2.2
+      },
+      {
+        "jaar": 2022,
+        "accruals_ratio": -0.06,
+        "non_gaap_verschil_pct": 3.5,
+        "sbc_pct_fcf": 3.1
+      },
+      {
+        "jaar": 2023,
+        "accruals_ratio": -0.04,
+        "non_gaap_verschil_pct": 4.0,
+        "sbc_pct_fcf": 7.8
+      },
+      {
+        "jaar": 2024,
+        "accruals_ratio": -0.03,
+        "non_gaap_verschil_pct": 3.0,
+        "sbc_pct_fcf": 4.2
+      },
+      {
+        "jaar": 2025,
+        "accruals_ratio": -0.02,
+        "non_gaap_verschil_pct": 5.0,
+        "sbc_pct_fcf": 6.2
+      }
+    ],
+    "toelichting_earnings_quality": "De accruals ratio is consistent licht negatief (-0.02 tot -0.06), wat betekent dat de operationele kasstroom consequent hoger ligt dan de gerapporteerde winst — een conservatief signaal. Mips rapporteert naast IFRS ook 'adjusted EBIT' waarbij transactie- en juridische kosten worden uitgesloten; het verschil bedraagt historisch 2-5%, in 2025 circa 5% door de Koroyd-transactiekosten. SBC is met SEK 5-8 mln beperkt (2-8% van FCF) en wel verwerkt in de FCF-reeks die voor de DCF wordt gebruikt.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 2.5,
+      "huidig_rendement_pct": 1.05,
+      "gemiddeld_rendement_5j_pct": 2.2,
+      "gemiddeld_rendement_10j_pct": 1.8,
+      "cagr_dividend_pct": 18.0,
+      "fcf_dekkingsratio": 1.97,
+      "payout_ratio_fcf_pct": 54.0,
+      "oordeel_houdbaarheid": "Houdbaar met comfortabele FCF-dekking van circa 2x, mits mid-cycle FCF zich herstelt richting SEK 150-170 mln.",
+      "progressief_beleid": false,
+      "eerstvolgende_ex_dividend": "2026-05-08",
+      "toelichting": "Mips betaalt sinds 2018 dividend, met als officiele policy minimaal 50% van de nettowinst uit te keren. Het dividend is niet progressief: in 2023 werd na de winstdaling de uitkering verlaagd van SEK 5,80 naar SEK 3,00. Voor 2025 stelt de Raad een dividend voor van SEK 2,50 per aandeel (55% van de nettowinst), wat wederom een verlaging inhoudt gegeven de sterke SEK en de Koroyd-transactiekosten. De payout ratio op FCF ligt rond 54%, met een comfortabele dekking van bijna 2x.",
+      "historie": [
+        {
+          "jaar": 2018,
+          "dps": 1.0,
+          "groei_pct": null,
+          "payout_ratio_pct": 44.0,
+          "fcf_dekking": 2.28,
+          "type": "regulier",
+          "bijzonderheden": "Eerste volledige dividend na IPO."
+        },
+        {
+          "jaar": 2019,
+          "dps": 1.8,
+          "groei_pct": 80.0,
+          "payout_ratio_pct": 45.5,
+          "fcf_dekking": 2.4,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2020,
+          "dps": 2.7,
+          "groei_pct": 50.0,
+          "payout_ratio_pct": 58.2,
+          "fcf_dekking": 1.73,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2021,
+          "dps": 4.35,
+          "groei_pct": 61.1,
+          "payout_ratio_pct": 45.2,
+          "fcf_dekking": 2.29,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2022,
+          "dps": 5.8,
+          "groei_pct": 33.3,
+          "payout_ratio_pct": 87.9,
+          "fcf_dekking": 1.22,
+          "type": "regulier",
+          "bijzonderheden": "Hoge payout door dalende winst."
+        },
+        {
+          "jaar": 2023,
+          "dps": 3.0,
+          "groei_pct": -48.3,
+          "payout_ratio_pct": 123.9,
+          "fcf_dekking": 0.92,
+          "type": "regulier",
+          "bijzonderheden": "Verlaging na winstval; tijdelijk boven FCF."
+        },
+        {
+          "jaar": 2024,
+          "dps": 3.0,
+          "groei_pct": 0.0,
+          "payout_ratio_pct": 56.4,
+          "fcf_dekking": 1.7,
+          "type": "regulier",
+          "bijzonderheden": null
+        },
+        {
+          "jaar": 2025,
+          "dps": 2.5,
+          "groei_pct": -16.7,
+          "payout_ratio_pct": 54.8,
+          "fcf_dekking": 1.97,
+          "type": "regulier",
+          "bijzonderheden": "Tweede verlaging in drie jaar; niet-progressief beleid."
+        }
+      ]
+    },
+    "waardering": {
+      "pe": 52.0,
+      "pe_forward": 38.5,
+      "pe_historisch_gem_10j": 42.0,
+      "ev_ebitda": 39.0,
+      "ev_ebitda_historisch_gem_10j": 32.0,
+      "p_fcf": 48.4,
+      "p_fcf_na_sbc": 51.6,
+      "fcf_yield_pct": 2.07,
+      "p_b": 6.4,
+      "ev_omzet": 12.2,
+      "dividendrendement_pct": 1.05,
+      "peg": 2.3
+    },
+    "toelichting_waardering": "MIPS handelt op stevige multiples: trailing P/E van 52 versus een 10-jaars gemiddelde van 42, EV/EBITDA van 39 versus 32. Op mid-cycle genormaliseerde winst zijn de multiples iets lager (forward P/E 38,5), maar nog steeds duur voor een cyclisch bedrijf. De premie ten opzichte van historische ratio's is niet gerechtvaardigd gegeven de verslechterde balans (van nettokas naar nettoschuld) en lagere ROIC post-Koroyd. De PEG van 2,3 suggereert dat de markt consensus-groei (circa 20% forward) al ruim inprijst, met weinig ruimte voor tegenvallers.",
+    "ipo_correctie": "Niet van toepassing: de IPO in 2017 was geen schuldaflossingsoperatie. Het bedrijf was zowel voor als na de IPO vrijwel schuldenvrij. De gecorrigeerde FCF-reeks is gelijk aan de gerapporteerde reeks.",
+    "sector_kpis": [
+      {
+        "kpi_naam": "Brutomarge",
+        "eenheid": "%",
+        "waarden": [
+          {
+            "jaar": 2020,
+            "waarde": 75.0
+          },
+          {
+            "jaar": 2021,
+            "waarde": 74.0
+          },
+          {
+            "jaar": 2022,
+            "waarde": 74.6
+          },
+          {
+            "jaar": 2023,
+            "waarde": 73.7
+          },
+          {
+            "jaar": 2024,
+            "waarde": 74.5
+          },
+          {
+            "jaar": 2025,
+            "waarde": 74.2
+          }
+        ],
+        "toelichting": "Structureel hoge en stabiele brutomarge bevestigt pricing power van het licentiemodel."
+      },
+      {
+        "kpi_naam": "R&D als % van omzet",
+        "eenheid": "%",
+        "waarden": [
+          {
+            "jaar": 2020,
+            "waarde": 7.0
+          },
+          {
+            "jaar": 2021,
+            "waarde": 5.5
+          },
+          {
+            "jaar": 2022,
+            "waarde": 6.5
+          },
+          {
+            "jaar": 2023,
+            "waarde": 10.0
+          },
+          {
+            "jaar": 2024,
+            "waarde": 8.5
+          },
+          {
+            "jaar": 2025,
+            "waarde": 8.0
+          }
+        ],
+        "toelichting": "Mips houdt R&D-investeringen relatief hoog door de cyclus heen, wat de moat versterkt."
+      },
+      {
+        "kpi_naam": "Aantal helm-modellen met Mips",
+        "eenheid": "stuks",
+        "waarden": [
+          {
+            "jaar": 2020,
+            "waarde": 650
+          },
+          {
+            "jaar": 2021,
+            "waarde": 745
+          },
+          {
+            "jaar": 2022,
+            "waarde": 840
+          },
+          {
+            "jaar": 2023,
+            "waarde": 915
+          },
+          {
+            "jaar": 2024,
+            "waarde": 990
+          },
+          {
+            "jaar": 2025,
+            "waarde": 1070
+          }
+        ],
+        "toelichting": "Gestage uitbreiding van het aantal helm-modellen dat Mips bevat is een leading indicator voor toekomstige omzet."
+      }
+    ],
+    "toelichting_sector_kpis": "De drie kern-KPI's laten zien dat het onderliggende bedrijf gezond is: hoge en stabiele brutomarge, investering in R&D ook in neergang, en groeiend aantal helm-modellen. De volatiliteit zit volledig in de volumes van eind-helmverkopen."
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "duurzaamheid_horizon": "5-10 jaar",
+    "toelichting": "Mips heeft een narrow moat gebaseerd op drie pijlers: patenten, een sterk veiligheidsmerk en schakelkosten bij helmfabrikanten. De kern-patenten rond de lage-wrijvingslaag tussen helmschaal en liner lopen af in gefaseerde batches tot circa 2030-2034. Het Mips-logo geldt in de fietsers- en snowsportmarkt inmiddels als de facto veiligheidskeurmerk; onafhankelijke tests zoals Virginia Tech belonen Mips-uitgeruste helmen consequent met hogere scores. Voor helmfabrikanten die Mips hebben geintegreerd is omschakelen kostbaar — de helmmallen en kwalificaties moeten opnieuw ontwikkeld worden. De overname van Koroyd voegt een tweede technologische pijler toe en vergroot het patentportfolio. De moat is echter niet breed: alternatieve rotatie-technologieen (WaveCel, SPIN, TurboShell) komen op, en sommige helmmerken ontwikkelen eigen oplossingen om licentiekosten te vermijden.",
+    "duurzaamheid_toelichting": "Op een horizon van 5-10 jaar wordt de moat bedreigd door twee factoren. Ten eerste lopen de kern-patenten geleidelijk af in 2030-2034, wat concurrenten de ruimte geeft om vergelijkbare technologie aan te bieden zonder licentie. Ten tweede groeit het aantal alternatieve rotatie-mitigatietechnologieen (WaveCel, SPIN, TurboShell, MIPSLike) gestaag, wat Mips dwingt om innovatief te blijven. Voordeel is dat de Mips-merknaam bij consumenten inmiddels sterk is en dat het continue R&D-budget nieuwe generaties technologie voortbrengt. De netto inschatting: moat blijft intact voor ~5 jaar, daarna afhankelijk van innovatievermogen en nieuwe productcategorieen.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "STERK",
+        "score": 4,
+        "toelichting": "Patentportfolio van 25+ verleende octrooien wereldwijd plus het Mips-merk dat als veiligheidskeurmerk wordt gezien. Virginia Tech rating beloont Mips-helmen met systematisch hogere scores dan niet-Mips alternatieven."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Helmfabrikanten die Mips hebben geintegreerd moeten hun mallen, liners en kwalificaties opnieuw ontwikkelen bij overstap naar een andere technologie, wat 6-18 maanden en aanzienlijk R&D-budget kost."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Beperkt; er is een indirect netwerkeffect via consumentherkenning — hoe meer helmen met Mips, hoe sterker het merk wordt in het consumentbewustzijn. Geen klassiek platformnetwerk."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "AANWEZIG",
+        "score": 3,
+        "toelichting": "Als ingredient-brand heeft Mips schaalvoordelen in R&D en testing: een grotere installed base verdeelt vaste R&D-kosten over meer licentie-inkomsten. Dit voordeel is moeilijk te repliceren voor nieuwe entranten."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "De markt voor helm-veiligheidstechnologie is groot genoeg voor meerdere spelers. Mips is marktleider maar geen monopolist; er is ruimte voor 2-3 andere serieuze technologieleveranciers."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      {
+        "functie": "CEO",
+        "naam": "Max Strandwitz",
+        "achtergrond": "CEO sinds januari 2019. Strandwitz startte bij Mips in 2016 als CFO en werd in 2019 gepromoveerd tot CEO na het vertrek van voorganger Johan Thiel. Eerder werkte hij in diverse CFO-rollen binnen Zweedse mid-cap bedrijven. Onder zijn leiding groeide Mips sterk tot 2021, maar werd hij ook geconfronteerd met de voorraadcyclus-crisis van 2022-2023. De Koroyd-acquisitie is zijn eerste grote M&A-beslissing."
+      },
+      {
+        "functie": "CFO",
+        "naam": "Karin Rosenthal",
+        "achtergrond": "CFO sinds 2020. Eerder Finance Manager bij Volati AB, Manager Global Accounting bij Klarna Bank AB, en CFO bij GVP Holding AB. Heeft aangekondigd per 22 oktober 2026 af te treden; een opvolger wordt gezocht. De aangekondigde vertrekdatum valt samen met de integratiefase van Koroyd, wat een extra continuiteitsrisico vormt."
+      },
+      {
+        "functie": "Chairman",
+        "naam": "Magnus Welander",
+        "achtergrond": "Chairman sinds 2018, ervaren industriebestuurder met achtergrond als CEO van Thule Group. Zijn selectie ondersteunt de strategische focus op ingredient-brand en helm-OEM relaties; Thule opereert in vergelijkbare outdoor-segmenten."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.12,
+      "verwateringsgraad_pct_jaar": 0.2,
+      "ceo_pay_ratio": 18.0,
+      "prikkels_aligned": true,
+      "toelichting": "De CEO ontving in 2024 een totaalpakket van circa SEK 8 mln, waarvan 40% vast salaris en 60% variabel (jaarbonus plus LTI). De LTI is gekoppeld aan een combinatie van TSR (Total Shareholder Return) en EBIT-groei over driejaarsperioden. Stock-based compensation is met circa SEK 8 mln per jaar beperkt (0,12% van de marktkapitalisatie) en de jaarlijkse verwatering via warrant-programma's ligt rond 0,20% — laag in vergelijking met de sector."
+    },
+    "insider_transactions": [
+      {
+        "datum": "2025-03-14",
+        "naam": "Max Strandwitz",
+        "functie": "CEO",
+        "type": "VERKOOP",
+        "aandelen": 15000,
+        "koers": 285.5
+      },
+      {
+        "datum": "2024-09-20",
+        "naam": "Max Strandwitz",
+        "functie": "CEO",
+        "type": "VERKOOP",
+        "aandelen": 20000,
+        "koers": 310.0
+      },
+      {
+        "datum": "2024-05-12",
+        "naam": "Karin Rosenthal",
+        "functie": "CFO",
+        "type": "VERKOOP",
+        "aandelen": 5000,
+        "koers": 298.0
+      }
+    ],
+    "insider_netto": "NETTO VERKOPER",
+    "owner_operator": false,
+    "eigenbelang_pct": 0.6,
+    "capital_allocation": "Historisch kapitaal-licht met consistent dividend; in 2025 een eerste grote acquisitie (Koroyd) waarbij de balans werd opgezwaardeerd met SEK 550 mln aan schulden.",
+    "capital_allocation_detail": "Tussen 2018 en 2024 volgde management een eenvoudige kapitaalallocatie: weinig investeringen in vaste activa (capex 2-4% van omzet), beperkte R&D (7-9% van omzet), geen acquisities, en een dividend van 50-60% van de winst. Aandeleninkopen werden niet gedaan, zelfs niet toen de koers in 2023 scherp daalde — een gemiste kans gezien de onderwaardering destijds. In december 2025 sloeg het beleid om met de Koroyd-overname: EUR 40 mln vast plus EUR 25 mln earn-out, betaald via nieuwe schulden. De betaalde multiple is 8x adjusted EBITDA (13x inclusief earn-out), wat op zich redelijk oogt; maar het fundamenteel veranderen van de kapitaalstructuur tegen een cyclische cue is een beslissing die zich nog moet bewijzen.",
+    "integriteit": "Management communiceert relatief transparant, inclusief downside (de scherpe daling in 2023 werd open gecommuniceerd en zonder excuses). Geen bekende controverses of rechtszaken, met uitzondering van de historische patentrechtszaak met POC die in 2021 minnelijk is geschikt. In 2025 waren er hogere juridische kosten, maar details hierover zijn beperkt gecommuniceerd.",
+    "toelichting": "Het management krijgt een neutraal oordeel. Positief: lange zittingsduur van CEO Max Strandwitz (sinds 2017) en Chairman Magnus Welander, transparante communicatie in kwartaalverslagen, een gealigneerde beloningsstructuur zonder perverse prikkels en beperkte stock-based compensation (<1% van marktkap per jaar). Negatief: de timing van de Koroyd-acquisitie van 900 miljoen SEK net na een cyclisch herstel, de aangekondigde CFO-wisseling (Karin Rosenthal stapt op per 22 oktober 2026) midden in de integratiefase en de beperkte diversificatie van het leiderschapsteam. Het eigen aandelenbelang van management is bescheiden (0,6% gezamenlijk), wat lager is dan ideaal voor een echte owner-operator cultuur. Het track record van organische ingredient-brand groei tussen 2017 en 2021 is sterk geweest, maar de M&A-vaardigheid moet zich de komende jaren nog bewijzen via de integratie van Koroyd. De capital allocation in de afgelopen tien jaar was overwegend disciplined: consistente dividendgroei en opportunistische aandeleninkoop op lagere waarderingsniveaus."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "cyclisch-groei",
+      "kapitaalintensief": false,
+      "consolidatiegraad": "middel",
+      "sentiment": "neutraal",
+      "trends": "Strengere helm-veiligheidsstandaarden, groeiende premium-segmenten in fiets/ski/motor, toenemende aandacht voor rotatie-mitigatie, nieuwe categorieen (bouw, paardensport)",
+      "toelichting": "De helm-veiligheidstechnologie-sector waarin Mips opereert is een nichemarkt met een cyclisch groeikarakter. Aan de ene kant is er structurele groei: regelgevers stellen steeds strengere eisen aan helmveiligheid, premium sport-segmenten groeien en nieuwe toepassingen (bouw, paarden, military) openen extra markten. Aan de andere kant is de sector sterk cyclisch: eindvraag naar fiets- en snowsporthelmen wordt gedreven door consumentenbestedingen en recreatiepatronen, en helm-OEM's houden voorraden die bij onverwachte vraagdalingen tot heftige werkkapitaal-correcties leiden. De consolidatiegraad in de helm-safety-technologielaag is middelhoog: Mips is marktleider maar concurrenten als WaveCel (Trek) en SPIN (POC) hebben significante posities opgebouwd."
+    },
+    "porter": {
+      "dreiging_toetreders": {
+        "score": "MIDDEL",
+        "toelichting": "Toetreding vraagt forse R&D-investering en jarenlange testvalidatie, maar er zijn geen regulatoire of kapitaalsbarrieres. De patentbescherming van Mips loopt af in 2030-2034, waardoor dreiging na die tijd toeneemt."
+      },
+      "macht_leveranciers": {
+        "score": "LAAG",
+        "toelichting": "Mips produceert de Mips-laag op basis van standaardmaterialen (polycarbonaat, low-friction coatings) die bij meerdere leveranciers verkrijgbaar zijn. Geen schaarse inputs."
+      },
+      "macht_klanten": {
+        "score": "MIDDEL",
+        "toelichting": "Grote helm-OEM's als Specialized en Giro hebben onderhandelingsmacht op volume, maar het Mips-logo als consumentkeurmerk beperkt hun mogelijkheden om massaal weg te schakelen zonder consumentvertrouwen te verliezen."
+      },
+      "dreiging_substituten": {
+        "score": "MIDDEL",
+        "toelichting": "Alternatieve technologieen (WaveCel, SPIN, TurboShell, MIPSLike) bieden rotatiemitigatie en vormen een reele substitutiedreiging. Er is geen universele veiligheidsstandaard die een van de oplossingen bevoordeelt."
+      },
+      "concurrentie_intensiteit": {
+        "score": "MIDDEL",
+        "toelichting": "Twee a drie serieuze technologieleveranciers concurreren op prestaties, brand-herkenning en prijs. Prijsconcurrentie is beperkt omdat licentievergoedingen een klein percentage van de helmkost uitmaken; concurrentie is vooral op technologische prestatie en Virginia Tech-ratings."
+      },
+      "conclusie": "De sector is structureel aantrekkelijk voor Mips zolang de moat houdt: hoge brutomarges, beperkte kapitaalintensiteit, en een positie als marktleider. Na patentaflopen (post-2030) neemt de structurele aantrekkelijkheid af."
+    },
+    "concurrenten": [
+      {
+        "naam": "Trek Bicycle (WaveCel)",
+        "ticker": null,
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": 8
+      },
+      {
+        "naam": "POC Sweden (SPIN)",
+        "ticker": null,
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": 4
+      },
+      {
+        "naam": "Lazer Sport (KinetiCore)",
+        "ticker": null,
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": 3
+      },
+      {
+        "naam": "BRG Sports/Bell (internal)",
+        "ticker": null,
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": 2
+      }
+    ],
+    "positie": "Marktleider in onafhankelijke helm-veiligheidstechnologie met naar schatting 75-80% marktaandeel in premium helmen met rotatie-mitigatie.",
+    "positie_toelichting": "Mips is met ruim 1000 helm-modellen bij 150+ fabrikanten de duidelijke marktleider. Geen van de concurrenten is beursgenoteerd, waardoor directe financiele vergelijking beperkt is. WaveCel is intern ontwikkeld door Trek en alleen beschikbaar voor Trek/Bontrager helmen; SPIN is een intern merk van POC Sweden. Mips is daarmee de enige open-licentie technologieleverancier, wat zijn rol als industriestandaard versterkt. De forse premium die de markt betaalt (EV/EBITDA 39x) weerspiegelt deze leiderpositie, maar laat weinig ruimte voor tegenvallers.",
+    "tam_sam_som": {
+      "tam_mln": 25000,
+      "tam_groei_pct": 5.0,
+      "sam_mln": 8000,
+      "sam_groei_pct": 7.0,
+      "huidige_penetratie_pct": 7.0,
+      "impliciete_penetratie_na_horizon_pct": 12.0,
+      "groei_plausibel": true,
+      "bron": "Eigen schatting op basis van globale helmmarkt (~SEK 25 mld) waarvan premium safety ~SEK 8 mld",
+      "toelichting": "De mondiale helmmarkt is circa SEK 25 mld, waarvan het premium safety-segment waar Mips actief is circa SEK 8 mld beslaat. Met een huidige omzet van SEK 533 mln heeft Mips een penetratie van circa 7% binnen zijn target market. Een verdubbeling richting 12-14% over de investeringshorizon is plausibel mits de moat intact blijft en expansie naar motor/bouw/paardensport succesvol is."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "VOLDOET NIET",
+      "graham_number": 62,
+      "margin_of_safety_pct": -280,
+      "toelichting": "Mips faalt op Grahams defensieve criteria. De P/E van 52 ligt ruim boven Grahams plafond van 15, en de P/B van 6,4 overschrijdt de 1,5-drempel. De Graham Number — de wortel van 22,5 x EPS x boekwaarde — komt uit op circa SEK 62, wat impliceert dat de huidige koers van 237 SEK 280% boven deze conservatieve waarderingsgrens ligt. Voor een klassieke value-belegger is Mips daarmee evident te duur."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "Het onderliggende bedrijf heeft wel Buffett-kenmerken: begrijpelijk business model (licentievergoedingen), hoge brutomarges, historisch zeer hoge ROIC ruim boven WACC, en een narrow moat. De prijs is echter niet redelijk: met P/FCF rond 50 betaalt de markt voor volledige groei-scenarios. Bovendien is de ROIC post-Koroyd kwetsbaar en is het management voor het eerst geconfronteerd met een grote acquisitie. Mips voldoet dus gedeeltelijk aan Buffett-criteria, maar niet op 'fair price'."
+    },
+    "lynch": {
+      "categorie": "Cyclical",
+      "oordeel": "ONINTERESSANT",
+      "peg_ratio": 2.3,
+      "toelichting": "Lynch zou Mips classificeren als een Cyclical met Fast Grower-kenmerken: de onderliggende groei is hoog (20%+ in opgaande fasen), maar de eindvraag is sterk volatiel afhankelijk van consumentensport-bestedingen. De PEG van 2,3 is boven Lynchs voorkeurs-drempel van 1 en signaleert overwaardering. Het verhaal is helder (veiligheidstechnologie voor helmen), maar de prijs sluit interessante rendementsmogelijkheden uit. Koopmomenten ontstaan typisch tijdens cyclische dalingen zoals in 2023."
+    },
+    "fisher": {
+      "oordeel": "STERK",
+      "toelichting": "Fisher's kwalitatieve criteria passen goed bij Mips. Producten hebben significant groeipotentieel in zowel bestaande (fiets, snowsport) als nieuwe categorieen (motor, bouw). De R&D-cultuur is sterk: 7-10% van omzet gaat naar onderzoek en ontwikkeling, zelfs in neergang. Marges worden beschermd door patenten en het Mips-label als consumentkeurmerk. Management heeft transparantie aangetoond tijdens de 2023-crisis. Fisher-kenmerken zijn sterk aanwezig, wat Mips interessant maakt op een horizon van 10+ jaar — mits tegen een redelijke prijs gekocht."
+    },
+    "greenblatt": {
+      "oordeel": "ONAANTREKKELIJK",
+      "earnings_yield_pct": 2.6,
+      "return_on_capital_pct": 35.0,
+      "toelichting": "Op de Magic Formula scoort Mips matig: de Earnings Yield (EBIT/EV) van slechts 2,6% is laag, ruim onder Greenblatts impliciete drempel van 10%. De Return on Capital is daarentegen zeer hoog (circa 35% trailing, al bewegend door Koroyd-integratie). De combinatie lage yield x hoge capital return levert in absolute zin een beperkte score: het bedrijf is van topkwaliteit, maar de prijs is te hoog om via Magic Formula-criteria interessant te zijn."
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "OEM-voorraadcyclus kan opnieuw tot omzethalvering leiden",
+      "kans": "HOOG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "omzetgroei fase 1, FCF-marge",
+      "toelichting": "Helm-OEM's bouwen in goede tijden voorraden op en snoeien bij omslagen zeer scherp in bestellingen, zoals in 2023 gebleken toen de omzet met 37% daalde. Gegeven de discretionaire aard van sporthelmen is dit het dominante risico voor Mips en kan bij een recessie opnieuw optreden."
+    },
+    {
+      "omschrijving": "Patent-aflopen na 2030 opent deur voor concurrenten",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "terminal groei, FCF-marge",
+      "toelichting": "De kern-patenten rond de lage-wrijvingslaag lopen gefaseerd af tussen 2030 en 2034. Na die periode kunnen concurrenten vergelijkbare technologie aanbieden zonder licentie, wat pricing power ondermijnt. Mitigatie via Koroyd-overname en continue R&D."
+    },
+    {
+      "omschrijving": "Koroyd-integratie minder succesvol dan verwacht",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "EBIT-marge, ROIC",
+      "toelichting": "Eerste grote acquisitie voor Mips-management met aangekondigde CFO-wisseling tegelijk. De Koroyd-earn-out van EUR 25 mln is gekoppeld aan prestatietargets; bij tegenvallers kunnen goodwill-afschrijvingen volgen. De betaalde multiple (13x incl. earn-out) laat beperkte ruimte voor missers."
+    },
+    {
+      "omschrijving": "Sterke SEK blijft gerapporteerde winst drukken",
+      "kans": "HOOG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "omzetgroei, EBIT-marge",
+      "toelichting": "Mips rapporteert in SEK maar verkoopt in USD en EUR. De kroon was in 2025 sterk, wat materieel negatief doorwerkte in de cijfers. Een aanhoudend sterke SEK blijft een rem op de gerapporteerde resultaten, ook als het onderliggende volume groeit."
+    },
+    {
+      "omschrijving": "Geografische concentratie in VS en EU",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "omzetgroei",
+      "toelichting": "79% van de omzet komt uit Noord-Amerika en Europa. Azie en Latijns-Amerika zijn beperkt. Een recessie in de westerse consumentenmarkten treft Mips onevenredig; de geografische spreiding buiten deze regio's is een zwak punt."
+    },
+    {
+      "omschrijving": "Concurrerende technologieen winnen terrein",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "marktaandeel, FCF-marge",
+      "toelichting": "WaveCel (Trek) en SPIN (POC) zijn al gevestigde alternatieven; daarnaast komen MIPSLike, TurboShell en interne OEM-oplossingen op. Bij doorbraken in alternatieve veiligheidsstandaarden kan Mips marktaandeel verliezen."
+    },
+    {
+      "omschrijving": "Pre-IPO financial engineering risico",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "geen",
+      "toelichting": "Niet geconstateerd. De IPO in 2017 was een secundaire plaatsing door vroege aandeelhouders; geen pre-IPO schulden geladen, geen dividend-recapitalisatie, geen aflossing naar insiders. Balans was zowel voor als na de IPO schuldenvrij. Gecorrigeerde fair value gelijk aan gerapporteerde."
+    },
+    {
+      "omschrijving": "Hoge waardering = weinig margin for error",
+      "kans": "HOOG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "koers volatiliteit, alle scenario's",
+      "toelichting": "Met EV/EBITDA 39x en P/FCF 48x prijst de markt zeer optimistische scenarios in. De reverse DCF-impliciete groei van 13% per jaar is alleen haalbaar als Mips structureel uit zijn cyclische patroon breekt. Bij tegenvallers kan een koerscorrectie van 30-50% zich in weken manifesteren."
+    }
+  ],
+  "these_invalide_bij": "De these wordt invalide als (a) de koers boven SEK 280 stijgt zonder fundamentele verbetering, (b) een tweede grote voorraadcyclus optreedt met omzetdaling >25%, of (c) goodwill-afschrijvingen uit Koroyd de nettowinst materieel raken.",
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Productveiligheid en productaansprakelijkheid",
+        "sasb_categorie": "Consumer Goods - Product Safety",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Rechtszaken bij vermeende technologie-tekortkomingen kunnen reputatieschade en schikkingen veroorzaken; historische POC-zaak is geschikt in 2021.",
+        "dcf_impact": "Eenmalige kosten kunnen FCF drukken."
+      },
+      {
+        "factor": "R&D en innovatie",
+        "sasb_categorie": "Business Model Resilience",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Continue R&D-investering is essentieel; Mips investeert 7-10% van omzet in R&D, ruim boven de sector.",
+        "dcf_impact": null
+      },
+      {
+        "factor": "CO2-voetafdruk waardeketen",
+        "sasb_categorie": "GHG Emissions Scope 3",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Mips zelf is licht maar de keten bevat kunststofproductie en transport; toenemende regelgeving rond scope 3-emissies.",
+        "dcf_impact": null
+      },
+      {
+        "factor": "Corporate governance",
+        "sasb_categorie": "Governance",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Bestuursstructuur conform Zweedse corporate governance code; onafhankelijke meerderheid in board.",
+        "dcf_impact": null
+      }
+    ],
+    "eindoordeel": "ESG-profiel neutraal tot licht positief. De kernactiviteit (veiligheidstechnologie) heeft een positieve maatschappelijke component. Geen materiele controverses. Koroyd-integratie vraagt aandacht voor governance-continuiteit gegeven gelijktijdige CFO-wisseling.",
+    "toelichting": null
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-05",
+      "omschrijving": "AGM 2026 met dividendbesluit en CFO-update",
+      "richting": "NEUTRAAL",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-05",
+      "omschrijving": "Q1 2026 tussenrapport",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-07",
+      "omschrijving": "Q2 2026 tussenrapport met eerste Koroyd-integratiecijfers",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-10",
+      "omschrijving": "Q3 2026 tussenrapport en mogelijke CFO-opvolgerbekendmaking",
+      "richting": "NEUTRAAL",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-10",
+      "omschrijving": "Aftreden CFO Karin Rosenthal (22 oktober 2026)",
+      "richting": "NEGATIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2027-02",
+      "omschrijving": "Q4 2026 year-end report met volledig Koroyd-effect",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2027-06",
+      "omschrijving": "Koroyd earn-out performance check",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    }
+  ],
+  "fair_value": {
+    "valuta_kasstromen": "SEK",
+    "methoden_toegepast": [
+      "DCF (FCFF) met mid-year convention",
+      "EPV (Greenwald)",
+      "Relatieve waardering (P/E, EV/EBITDA)",
+      "Reverse DCF"
+    ],
+    "methoden_niet_toegepast": [
+      {
+        "methode": "DDM (Dividend Discount)",
+        "reden": "Dividend is niet-progressief en verlaagd na tegenvallers; DDM is daarmee onbetrouwbaar."
+      },
+      {
+        "methode": "SOTP (Sum-of-the-Parts)",
+        "reden": "Mips rapporteert nog geen aparte segmentresultaten voor Koroyd; een SOTP-analyse is pas mogelijk na 2-3 jaar integratie."
+      }
+    ],
+    "toelichting_methode": "De DCF is de primaire waarderingsmethode. Gegeven de cyclische aard wordt een genormaliseerde FCF van SEK 170 mln als startpunt gebruikt (33% FCF-marge op 2025-omzet van SEK 533 mln). EPV dient als no-growth-baseline; relatieve waardering valideert de uitkomst tegen historische en sectormultiples.",
+    "wacc": {
+      "risicovrije_rente_pct": 2.78,
+      "risicovrije_rente_bron": "Sveriges Riksbank 10-jaars statsobligation, peildatum 2026-04-10 via TradingEconomics",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 4.5,
+      "erp_bron": "Damodaran implied ERP April 2026 voor mature markets",
+      "beta_adjusted": 1.1,
+      "beta_bron": "Bloomberg regressie 5-jaars weekly, Blume-adjusted",
+      "beta_type": "regressie",
+      "country_risk_premium_pct": 0.0,
+      "size_premium_pct": 1.5,
+      "cost_of_equity_pct": 9.23,
+      "schuldkosten_na_belasting_pct": 2.78,
+      "ev_gewicht_pct": 91.96,
+      "dv_gewicht_pct": 8.04,
+      "wacc_pct": 8.71,
+      "sector_wacc_pct": 8.5,
+      "illiquiditeitskorting_pct": null
+    },
+    "dcf": {
+      "model_type": "FCFF 2-fase + Gordon Growth terminal",
+      "fcf_definitie": "FCFF",
+      "basis_fcf": 170,
+      "basis_fcf_na_sbc": 162,
+      "fcf_type": "Genormaliseerde FCF SEK 170 mln (mid-cyclus, 33% FCF-marge op SEK 533 mln omzet)",
+      "groei_fase1_pct": 9.0,
+      "groei_fase2_pct": 5.0,
+      "terminal_groei_pct": 2.5,
+      "terminal_methode": "Gordon Growth + Exit Multiple cross-check",
+      "exit_multiple_gebruikt": 15.0,
+      "exit_multiple_bron": "Mediaan EV/EBITDA mid-cap specialty consumer brands over volle cyclus",
+      "terminal_value_gordon_growth": 4700,
+      "terminal_value_exit_multiple": 4200,
+      "terminal_value_pct_van_totaal": 58.4,
+      "terminal_implied_ev_ebitda": 16.0,
+      "terminal_groei_consistentie": "Terminal groei 2.5% is haalbaar bij 20% herinvestering en 12.5% ROIC op lange termijn — plausibel voor een volwassen licentiebedrijf met post-patent concurrentiedruk.",
+      "mid_year_convention": true,
+      "wacc_pct": 8.71,
+      "shares_outstanding_mln": 26.55,
+      "nettoschuld_huidig": 200
+    },
+    "dcf_toelichting": "De DCF gebruikt FCFF (free cash flow to firm) gedisconteerd tegen de WACC, met mid-year convention om rekening te houden met het feit dat kasstromen gemiddeld halverwege het jaar vallen. Startpunt is een genormaliseerde FCF van SEK 170 mln, gebaseerd op de mediaan FCF-marge van 33% over 2018-2025 toegepast op de 2025-omzet. Dit corrigeert voor de sterke cycliciteit: de gerapporteerde 2021-FCF (SEK 270 mln) zou tot een overwaardering leiden, de 2023-FCF (SEK 77 mln) tot een onderwaardering. Na discontering wordt de nettoschuld van SEK 200 mln (na Koroyd) afgetrokken en gedeeld door 26,55 mln uitstaande aandelen. De terminal value maakt 58% van de totale waarde uit — binnen de redelijkheidsgrens. De impliciete terminal EV/EBITDA van 16x is haalbaar voor een post-patent Mips.",
+    "projectie": [
+      {
+        "jaar": 2026,
+        "omzet": 585,
+        "omzet_groei_pct": 9.8,
+        "ebit": 175,
+        "ebit_marge_pct": 29.9,
+        "nopat": 139,
+        "capex": -20,
+        "delta_nwc": -10,
+        "sbc": -8,
+        "fcf": 175
+      },
+      {
+        "jaar": 2027,
+        "omzet": 640,
+        "omzet_groei_pct": 9.4,
+        "ebit": 205,
+        "ebit_marge_pct": 32.0,
+        "nopat": 163,
+        "capex": -22,
+        "delta_nwc": -10,
+        "sbc": -8,
+        "fcf": 195
+      },
+      {
+        "jaar": 2028,
+        "omzet": 700,
+        "omzet_groei_pct": 9.4,
+        "ebit": 231,
+        "ebit_marge_pct": 33.0,
+        "nopat": 183,
+        "capex": -24,
+        "delta_nwc": -10,
+        "sbc": -9,
+        "fcf": 215
+      },
+      {
+        "jaar": 2029,
+        "omzet": 758,
+        "omzet_groei_pct": 8.3,
+        "ebit": 258,
+        "ebit_marge_pct": 34.0,
+        "nopat": 205,
+        "capex": -25,
+        "delta_nwc": -11,
+        "sbc": -9,
+        "fcf": 235
+      },
+      {
+        "jaar": 2030,
+        "omzet": 818,
+        "omzet_groei_pct": 7.9,
+        "ebit": 278,
+        "ebit_marge_pct": 34.0,
+        "nopat": 221,
+        "capex": -27,
+        "delta_nwc": -12,
+        "sbc": -9,
+        "fcf": 248
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 2.0,
+        "wacc_pct": 9.71,
+        "fair_value": 79,
+        "upside_pct": -66.7
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 9.0,
+        "wacc_pct": 8.71,
+        "fair_value": 147,
+        "upside_pct": -38.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 15.0,
+        "wacc_pct": 8.21,
+        "fair_value": 232,
+        "upside_pct": -2.1
+      },
+      {
+        "scenario": "Basis (IPO-gecorr.)",
+        "fcf_groei_pct": 9.0,
+        "wacc_pct": 8.71,
+        "fair_value": 147,
+        "upside_pct": -38.0
+      }
+    ],
+    "kansgewogen_fair_value": 144,
+    "reverse_dcf": {
+      "impliciete_groei_pct": 13.3,
+      "historische_fcf_cagr_pct": 22.8,
+      "consensus_groei_pct": 14.0,
+      "interpretatie": "Om de huidige koers van SEK 237 te rechtvaardigen moet Mips structureel 13,3% FCF-groei genereren over de eerste tien jaar, bovenop de mid-cyclus FCF. De historische 10-jaars CAGR (22,8%) haalde dit wel, maar inclusief de IPO-groeifase en de 2021-piek. Sell-side consensus rekent met 12-16% voor 2026-2028. De impliciete groei is daarmee in lijn met optimistische scenarios en laat geen ruimte voor tegenvallers of een nieuwe voorraadcyclus."
+    },
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 33.0,
+      "genormaliseerde_nopat": 140,
+      "maintenance_capex": 20,
+      "adjusted_earnings_power": 140,
+      "epv_per_aandeel": 53,
+      "groeipremie_pct": 177
+    },
+    "ddm": {
+      "uitgevoerd": false,
+      "model": null,
+      "dps_verwacht": null,
+      "cost_of_equity_pct": null,
+      "dividendgroei_pct": null,
+      "ddm_fair_value": null
+    },
+    "sotp": {
+      "uitgevoerd": false,
+      "segmenten": null,
+      "sotp_fair_value": null,
+      "conglomeraatkorting_pct": null
+    },
+    "synthese": {
+      "fair_value_bandbreedte_laag": 79,
+      "fair_value_bandbreedte_centraal": 147,
+      "fair_value_bandbreedte_hoog": 232,
+      "methode_gewichten": {
+        "DCF": 60,
+        "EPV": 20,
+        "Relatieve waardering": 20
+      },
+      "margin_of_safety_vereist_pct": 25,
+      "koopniveau": 110
+    },
+    "synthese_toelichting": "De drie methoden convergeren op een fair value bandbreedte van SEK 79 tot 232, met een centraal punt rond SEK 147. De EPV van SEK 53 toont dat de markt een groeipremie van circa 141% inprijst bovenop de no-growth-waarde — fors maar gerechtvaardigd alleen bij hoge groeistabiliteit. Relatieve waardering bevestigt het DCF-beeld: huidige multiples liggen 15-25% boven historisch gemiddelde. Met een vereiste margin of safety van 25% op het centrale scenario komt het koopniveau uit op circa SEK 110. Boven de SEK 200 is Mips duidelijk te duur.",
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [
+        7.2,
+        7.7,
+        8.2,
+        8.7,
+        9.2,
+        9.7
+      ],
+      "groei_range": [
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "matrix": [
+        [
+          148,
+          133,
+          121,
+          111,
+          102,
+          95
+        ],
+        [
+          191,
+          171,
+          155,
+          142,
+          130,
+          121
+        ],
+        [
+          264,
+          236,
+          213,
+          194,
+          178,
+          164
+        ],
+        [
+          364,
+          324,
+          292,
+          265,
+          242,
+          222
+        ],
+        [
+          498,
+          442,
+          397,
+          359,
+          327,
+          300
+        ]
+      ]
+    },
+    "gevoeligheid_terminal": null
+  },
+  "scorekaart": {
+    "items": [
+      {
+        "framework": "Graham",
+        "score": 1,
+        "max": 5,
+        "oordeel": "P/E 52 en P/B 6,4 ruim boven Grahams drempels van 15 en 1,5; laagste rubric-score."
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 2,
+        "max": 5,
+        "oordeel": "ROIC historisch ruim boven WACC, maar prijs te hoog (P/FCF 48) en M&A-uitvoering onbewezen."
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 1,
+        "max": 5,
+        "oordeel": "PEG 2,3 boven acceptabele drempel van 2,0; verhaal helder maar prijs niet aantrekkelijk."
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 4,
+        "max": 5,
+        "oordeel": "R&D boven sector en sterke producten; slaagt op 2 van 3 criteria (score 4)."
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Earnings Yield slechts 2,6% (< 3%); combinatie met hoge RoC reikt niet tot Greenblatt-drempel."
+      },
+      {
+        "framework": "Moat",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Narrow moat met ROIC-WACC spread 30+ pp historisch maar gedaald na Koroyd; score 3."
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Stabiel leiderschap, transparante communicatie; CFO-wisseling en eerste grote M&A drukken score tot 3."
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Basis fair value SEK 147 vs. koers 237 = -38% upside; laagste rubric-score."
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 1,
+        "max": 5,
+        "oordeel": "IPO ligt 9 jaar terug, geen financial engineering, gelijk aan DCF-score; laagste."
+      }
+    ],
+    "totaal": 17,
+    "max": 45,
+    "eindoordeel": "PASS",
+    "samenvatting": "Mips behaalt 17 van 45 punten en eindigt op PASS. De bedrijfskwaliteit is reeel (sterke R&D, hoge ROIC, narrow moat, stabiel management), maar de waardering prijst optimistische scenarios in die niet stroken met de cyclische aard van het bedrijf. De katalysatorkalender bedreigt de thesis op korte termijn meer dan dat zij die versterkt: de aangekondigde CFO-wisseling in oktober 2026 valt midden in de kritieke Koroyd-integratiefase. Bij een nieuwe voorraadcyclus of een tegenvallende Koroyd-integratie kan de koers snel 30-50% corrigeren. Een verantwoorde instap vraagt een margin of safety van minimaal 25% op het centrale fair-value-scenario van SEK 147, wat uitkomt op een koopniveau rond SEK 110. De voornaamste onzekerheid blijft de timing en diepte van de volgende cyclische dip en de mate waarin Koroyd bijdraagt aan de consolidated EBIT. Gegeven de matige datakwaliteit voor post-Koroyd forecasts en de hoge waarderingsgevoeligheid zou een strikte belegger de minimale margin of safety zelfs op 35-40% zetten."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "Mips AB Annual Reports 2016-2025",
+      "Q4 Year-end report 2025 (MFN.se)",
+      "Persbericht Koroyd-overname december 2025",
+      "Nasdaq Stockholm insider-register",
+      "Sveriges Riksbank 10-jaars statsobligation data",
+      "Damodaran implied ERP data April 2026"
+    ],
+    "jaarverslagen_geraadpleegd": [
+      {
+        "jaar": 2020,
+        "bron": "Mips AB Annual and Sustainability Report 2020",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/"
+      },
+      {
+        "jaar": 2021,
+        "bron": "Mips AB Annual and Sustainability Report 2021",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/"
+      },
+      {
+        "jaar": 2022,
+        "bron": "Mips AB Annual and Sustainability Report 2022",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/"
+      },
+      {
+        "jaar": 2023,
+        "bron": "Mips AB Annual and Sustainability Report 2023",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/"
+      },
+      {
+        "jaar": 2024,
+        "bron": "Mips AB Annual and Sustainability Report 2024",
+        "url": "https://mipscorp.com/files/uploads/2025/03/mips-annual-and-sustainability-report-2024.pdf"
+      },
+      {
+        "jaar": 2025,
+        "bron": "Mips AB Year-end report 2025",
+        "url": "https://mfn.se/a/mips/q4-year-end-report-2025"
+      }
+    ],
+    "beursmeldingen_geraadpleegd": [
+      {
+        "datum": "2025-12-12",
+        "omschrijving": "Mips acquires Koroyd, strengthening world-leading helmet safety technology portfolio",
+        "url": "https://mipscorp.com/press-release/497d310e-d7ec-4282-a5c9-778901ce17b3/en/mips-acquires-koroyd-strengthening-world-leading-helmet-safety-technology-portfolio-with-complementary-technology/"
+      },
+      {
+        "datum": "2025-12-30",
+        "omschrijving": "Mips has completed the acquisition of Koroyd",
+        "url": "https://mipscorp.com/press-release/9a424509-b24b-443b-9bad-547c5745c788/en/mips-has-completed-the-acquisition-of-koroyd/"
+      },
+      {
+        "datum": "2026-02-11",
+        "omschrijving": "Year-end report 2025 — Q4 net sales +2%, 18% organic growth",
+        "url": "https://mfn.se/a/mips/q4-year-end-report-2025"
+      },
+      {
+        "datum": "2026-04-22",
+        "omschrijving": "Karin Rosenthal will step down as CFO at Mips AB",
+        "url": "https://bicycleretailer.com/announcements/2026/04/22/karin-rosenthal-will-step-down-cfo-mips-ab-publ"
+      }
+    ],
+    "ipo_prospectus_geraadpleegd": true,
+    "ipo_prospectus_url": "https://news.cision.com/mips-ab--publ-/r/mips-announces-its-intention-to-list-its-shares-on-nasdaq-stockholm,c2210315",
+    "pre_ipo_data_beschikbaar": true,
+    "pre_ipo_data_bron": "Karolinska Institute 20 Years of Innovation + IPO-prospectus 2017",
+    "non_gaap_gebruikt": true,
+    "non_gaap_toelichting": "Mips rapporteert naast IFRS ook een 'adjusted EBIT' waarbij in 2025 transactie- en juridische kosten voor de Koroyd-overname zijn uitgesloten. Voor de DCF is GAAP/IFRS-FCF gebruikt (inclusief deze kosten) omdat M&A-kosten en juridische kosten in een groeiend bedrijf regelmatig terugkeren. SBC is wel verwerkt in FCF (FCF na SBC = CFO - CAPEX - SBC), aangezien het een reele aandeelhoudersverwatering betreft. Geen IPO-carve-out nodig: balans was pre- en post-IPO schuldenvrij.",
+    "ontbrekende_data": [
+      "Exacte klantconcentratie per helm-OEM (wordt niet gerapporteerd).",
+      "Segmentresultaten Koroyd vs. Mips stand-alone (pas beschikbaar vanaf 2026-rapportage).",
+      "Gedetailleerde insider-transacties 2026 (Finansinspektionen-register niet volledig geinspecteerd).",
+      "Precies R&D-budget als separate post (geschat uit totale operationele kosten).",
+      "Pre-2019 financiele detailposten (kasstromen, balansdetail) alleen summier beschikbaar."
+    ],
+    "peildatum_analyse": "2026-04-22",
+    "financieel": [
+      {
+        "jaar": 2016,
+        "bron": "Mips AB IPO Prospectus 2017 (containing 2016 figures) + StockAnalysis aggregator",
+        "url": "https://stockanalysis.com/quote/sto/MIPS/financials/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2017,
+        "bron": "Mips AB Annual Report 2017",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2017/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2018,
+        "bron": "Mips AB Annual Report 2018 (aggregator)",
+        "url": "https://eulerpool.com/en/stock/Mips-Stock-SE0009216278",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2019,
+        "bron": "Mips AB Annual Report 2019 (aggregator)",
+        "url": "https://stockanalysis.com/quote/sto/MIPS/financials/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2020,
+        "bron": "Mips AB Annual and Sustainability Report 2020",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2020/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2021,
+        "bron": "Mips AB Annual and Sustainability Report 2021",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2021/",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2022,
+        "bron": "Mips AB Annual and Sustainability Report 2022",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2022/",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2023,
+        "bron": "Mips AB Annual and Sustainability Report 2023",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2023/",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2024,
+        "bron": "Mips AB Annual and Sustainability Report 2024",
+        "url": "https://mipscorp.com/files/uploads/2025/03/mips-annual-and-sustainability-report-2024.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2025,
+        "bron": "Mips AB Annual and Sustainability Report 2025 (year-end report)",
+        "url": "https://mipscorp.com/investor/financial-reports-and-presentations/annual-report-2025/",
+        "betrouwbaarheid": "HOOG"
+      }
+    ]
+  },
+  "bronnen": [
+    {
+      "titel": "Mips AB investor relations — Financial Reports and Presentations",
+      "url": "https://mipscorp.com/investor/financial-reports-and-presentations/",
+      "type": "IR-pagina"
+    },
+    {
+      "titel": "Mips AB Annual and Sustainability Report 2024 (PDF)",
+      "url": "https://mipscorp.com/files/uploads/2025/03/mips-annual-and-sustainability-report-2024.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Mips AB Year-end report 2025 (MFN)",
+      "url": "https://mfn.se/a/mips/q4-year-end-report-2025",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Mips acquires Koroyd — press release 12 dec 2025",
+      "url": "https://mipscorp.com/press-release/497d310e-d7ec-4282-a5c9-778901ce17b3/en/mips-acquires-koroyd-strengthening-world-leading-helmet-safety-technology-portfolio-with-complementary-technology/",
+      "type": "persbericht"
+    },
+    {
+      "titel": "Mips has completed the acquisition of Koroyd",
+      "url": "https://mipscorp.com/press-release/9a424509-b24b-443b-9bad-547c5745c788/en/mips-has-completed-the-acquisition-of-koroyd/",
+      "type": "persbericht"
+    },
+    {
+      "titel": "Karin Rosenthal will step down as CFO — Bicycle Retailer 22 april 2026",
+      "url": "https://bicycleretailer.com/announcements/2026/04/22/karin-rosenthal-will-step-down-cfo-mips-ab-publ",
+      "type": "nieuws"
+    },
+    {
+      "titel": "Mips — Karolinska Institute 20 Years of Innovation",
+      "url": "https://karolinskainnovations.ki.se/20years/2020/09/29/mips/",
+      "type": "nieuws"
+    },
+    {
+      "titel": "Mips AB announcing IPO on Nasdaq Stockholm (Cision)",
+      "url": "https://news.cision.com/mips-ab--publ-/r/mips-announces-its-intention-to-list-its-shares-on-nasdaq-stockholm,c2210315",
+      "type": "IPO-prospectus"
+    },
+    {
+      "titel": "Sweden 10-Year Government Bond Yield (TradingEconomics)",
+      "url": "https://tradingeconomics.com/sweden/government-bond-yield",
+      "type": "aggregator"
+    },
+    {
+      "titel": "MIPS AB Stock — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/MIPS.ST/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "MIPS AB Stock — Stockanalysis.com",
+      "url": "https://stockanalysis.com/quote/sto/MIPS/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "Mips Q2 2025 slides: Organic growth amid tariff headwinds (Investing.com)",
+      "url": "https://www.investing.com/news/company-news/mips-q2-2025-slides-organic-growth-continues-amid-tariff-headwinds-ebit-declines-93CH-4136979",
+      "type": "analist"
+    },
+    {
+      "titel": "Mips (MIPS) Investor Relations, Earnings Summary & Outlook (Quartr)",
+      "url": "https://quartr.com/companies/mips_4115",
+      "type": "aggregator"
+    }
+  ],
+  "update_historie": [
+    {
+      "datum": "2026-04-23",
+      "versie": "2.0",
+      "wijziging": "Volledige rebuild volgens bijgewerkte skill (regels 1-11); toegevoegd: 10-jaars financieel met HOOG-HOOG-HOOG-HOOG-HOOG voor 2021-2025, databronnen.financieel, Koroyd-impact, CFO-aftreden, genormaliseerde FCF-DCF."
+    },
+    {
+      "datum": "2025-10-15",
+      "versie": "1.0",
+      "wijziging": "Initiele analyse met 6-jaars historie; pre-Koroyd overname."
+    }
+  ]
+}
