@@ -266,6 +266,24 @@ skill-bestand zelf zodat toekomstige ticker-analyses ze automatisch volgen.
        Disk-check (D) is het enige geldige bewijs.
     F. Eindrapportage: validator-output + disk-check-output beide plakken.
        "Write succeeded" als bewijs is onvoldoende.
+    G. FALLBACK voor extreem grote files (>45KB ook na compact):
+       sla de Write-tool over en schrijf via Python (geen Write-tool-limit):
+       ```python
+       import json, shutil
+       with open('data/TICKER.json', 'w', encoding='utf-8', newline='\n') as f:
+           json.dump(d, f, ensure_ascii=False, indent=2)
+           f.write('\n')
+       shutil.copyfile('data/TICKER.json',
+                       'platform/src/content/data/TICKER.json')
+       ```
+       Deze route werkt via OS-level IO en is immuun voor Write-tool-truncation.
+    H. Paden-eis (beide ALTIJD):
+       - `data/TICKER.json`                            (repo-root, voor git/CI)
+       - `platform/src/content/data/TICKER.json`       (bron voor Next.js render)
+       Beide moeten byte-identiek zijn. Controle via SHA256 (stap D).
+       Pad-basis = cwd van cowork sandbox-mount (`/sessions/<id>/mnt/`
+       = `C:\Users\janco\aandelenanalyse\`). Relatieve paden vanuit repo-root
+       werken — geen absolute paden nodig.
 
 11. IPO-carve-out en non-GAAP adjustments (IFRS-16 etc) altijd expliciet
     toelichten in `databronnen.non_gaap_toelichting`. Als non_gaap_gebruikt=true,
