@@ -20,14 +20,14 @@ export const CATEGORIES: Category[] = [
     slug: 'aex',
     naam: 'AEX Aandelen',
     beschrijving: 'Fundamentele analyses van aandelen genoteerd aan de Amsterdamse beurs.',
-    filter: (c) => AEX_TICKERS.includes(c.ticker) || c.exchange.includes('AEX') || c.exchange.includes('Euronext Amsterdam'),
+    filter: (c) => AEX_TICKERS.includes(c.ticker) || (c.exchange?.includes('AEX') ?? false) || (c.exchange?.includes('Euronext Amsterdam') ?? false),
   },
   {
     slug: 'europese-small-caps',
     naam: 'Europese Small Caps',
     beschrijving: 'Diepgaande analyses van Europese small- en midcap aandelen. Van Polen tot Portugal, van Scandinavie tot Spanje.',
     filter: (c) =>
-      !['NASDAQ', 'NYSE'].some((ex) => c.exchange.includes(ex)) &&
+      !['NASDAQ', 'NYSE'].some((ex) => c.exchange?.includes(ex) ?? false) &&
       (c.koers < 100 || ['ARP', 'ALTR', 'KPL', 'HUSCO', 'PUIG', 'PZU'].includes(c.ticker)),
   },
   {
@@ -36,8 +36,8 @@ export const CATEGORIES: Category[] = [
     beschrijving: 'Technologie- en groeiaandelen geanalyseerd op fundamentele waarde. Van halfgeleiders tot cybersecurity.',
     filter: (c) =>
       TECH_TICKERS.includes(c.ticker) ||
-      c.sector.toLowerCase().includes('tech') ||
-      c.sector.toLowerCase().includes('software'),
+      (c.sector?.toLowerCase().includes('tech') ?? false) ||
+      (c.sector?.toLowerCase().includes('software') ?? false),
   },
   {
     slug: 'scandinavie',
@@ -45,9 +45,9 @@ export const CATEGORIES: Category[] = [
     beschrijving: 'Fundamentele analyses van Scandinavische aandelen. Noorwegen, Zweden, Denemarken en Finland.',
     filter: (c) =>
       SCANDINAVIE_TICKERS.includes(c.ticker) ||
-      c.exchange.includes('Stockholm') ||
-      c.exchange.includes('Oslo') ||
-      c.exchange.includes('Copenhagen'),
+      (c.exchange?.includes('Stockholm') ?? false) ||
+      (c.exchange?.includes('Oslo') ?? false) ||
+      (c.exchange?.includes('Copenhagen') ?? false),
   },
 ]
 

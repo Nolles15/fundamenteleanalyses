@@ -34,7 +34,7 @@ TOP_LEVEL_KEYS = [
     "fair_value", "scorekaart", "databronnen", "bronnen", "update_historie",
 ]
 
-META_REQUIRED = ["ticker", "naam", "koers", "valuta", "peildatum", "yahoo_symbol", "exchange"]
+META_REQUIRED = ["ticker", "naam", "koers", "valuta", "peildatum", "yahoo_symbol", "exchange", "sector"]
 
 EXEC_SUMMARY_REQUIRED = [
     "kernthese", "oordeel", "koers", "valuta",
