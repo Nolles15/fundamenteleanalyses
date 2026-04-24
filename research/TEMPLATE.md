@@ -3,6 +3,52 @@
 > **DIT BESTAND IS HET ENIGE OUTPUT-ARTEFACT VAN JE WERK.**
 > Geen JSON. Geen platform-files. Geen validator-scripts. Alleen deze markdown.
 > Claude Code leest dit, converteert het naar JSON, valideert en pusht.
+>
+> **Vóór invullen: lees `research/METHODE.md`.** Die bevat de scoring-rubrics,
+> WACC-regels, cyclus-normalisatie, pre-IPO checks, management-analyse-rubrics,
+> woordentellingen per sectie en bronverificatie-eisen. Dit template is alleen
+> de structuur — METHODE.md bepaalt HOE je elke sectie invult.
+>
+> **Daarvóór: lever de VERPLICHTE bronnen-inventaris op volgens METHODE.md
+> Stap 0.5.** Pas als die inventaris er ligt mag je tabellen invullen.
+
+---
+
+## HOE OM TE GAAN MET ONTBREKENDE DATA (BELANGRIJK — LEES VOOR JE BEGINT)
+
+Dit template bevat tabellen die suggereren dat je elke cel moet invullen.
+Dat is **uitdrukkelijk niet het geval**. Een cel blijft leeg wanneer je
+geen geverifieerde bron hebt. Een halfvolle tabel met bronvermelding is
+beter dan een volle tabel met verzonnen getallen. Die laatste veroorzaakt
+direct een hard fail in stage 2.
+
+**Correcte conventie bij ontbrekende data:**
+
+1. **Numerieke cel zonder bron** → laat leeg of zet `—`. Niet "circa X",
+   niet "~Y", niet een range ("25-35%"). Die vormen zijn allemaal
+   verzinnen tenzij je een bron met exact die range kunt overleggen.
+2. **Hele rij zonder bron** (bv een jaar waarvoor geen jaarverslag
+   beschikbaar is) → laat de hele rij leeg EN noteer het jaar in
+   de ontbrekende_data-sectie van Hoofdstuk 13.
+3. **Kwalitatief veld zonder bron** (bv "marktaandeel top-3 concurrenten")
+   → laat weg uit het rapport. Niet vervangen door een gokje.
+
+**Voorbeeld van een CORRECTE halfvolle tabel** (jaren 2015-2017 geen PDF
+beschikbaar, aggregators hebben geen pre-2018 data voor deze ticker):
+
+| Jaar | Omzet | EBIT | EBITDA | Nettowinst | FCF | Bron |
+|---|---|---|---|---|---|---|
+| 2015 | — | — | — | — | — | — |
+| 2016 | — | — | — | — | — | — |
+| 2017 | — | — | — | — | — | — |
+| 2018 | 3.158 | 145 | 260 | 67 | 84 | AR 2018 (URL) |
+| ... | | | | | | |
+| 2024 | 3.434 | 210 | 298 | 132 | 155 | AR 2024 (URL) |
+| TTM | 3.197 | 45 | 28 | -12 | -85 | FY2025 preliminary (URL) |
+
+Drie lege rijen boven is methodisch correct. Een analyse van 8 jaar met
+bronnen is een volwaardige analyse; een analyse van 10 jaar waarvan 3
+verzonnen is geen analyse.
 
 ---
 

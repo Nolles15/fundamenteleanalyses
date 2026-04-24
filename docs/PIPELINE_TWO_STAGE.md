@@ -5,7 +5,7 @@ fundamentele aandelen-analyse van research tot gepusht-op-Vercel komt.
 
 ## Waarom twee stages
 
-Cowork (Manus/ander research-agent) is sterk in diep onderzoek maar maakt
+Claude cowork is sterk in diep onderzoek maar maakt
 systematisch fouten op infra-niveau: Read-tool cache-divergentie, validator-
 hallucinaties, enum-varianten, null-velden die UI crashen.
 

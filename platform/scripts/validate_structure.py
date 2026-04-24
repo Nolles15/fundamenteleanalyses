@@ -89,12 +89,22 @@ DATABRONNEN_REQUIRED = [
 # databronnen.financieel: elke entry moet deze velden hebben
 FINANCIEEL_BRON_KEYS = {"jaar", "bron", "url", "betrouwbaarheid"}
 FINANCIEEL_BETROUWBAARHEID_ENUM = {"HOOG", "AGGREGATOR"}
-# Minimaal 10 entries totaal (10-jaars financieel-historie)
-FINANCIEEL_BRON_MIN_TOTAL = 10
+# Minimaal 5 entries (was 10; verlaagd 2026-04-24 omdat sommige bedrijven
+# pas recent noteren of pre-IPO data simpelweg niet verifieerbaar is — dan
+# is "geen bron = leeg laten" correct gedrag, zie METHODE.md STAP 0.5).
+# De recente 5 jaren blijven verplicht HOOG. Ontbrekende oudere jaren
+# horen in databronnen.ontbrekende_data te staan.
+FINANCIEEL_BRON_MIN_TOTAL = 5
 # De 5 meest recente jaren moeten allemaal HOOG zijn (jaarverslagen)
 FINANCIEEL_BRON_RECENT_HOOG_YEARS = 5
-# HOOG-URLs moeten lijken op jaarverslag-bron
-FINANCIEEL_HOOG_URL_PATTERN = re.compile(r"(jaarverslag|annual|investor|\.pdf$)", re.IGNORECASE)
+# HOOG-URLs moeten lijken op jaarverslag-bron.
+# Uitgebreid 2026-04-24 met IR-distributie-platforms (mfn.se, cision.com,
+# globenewswire.com, nasdaq-news) die Zweedse small/mid-caps standaard
+# gebruiken voor persberichten + jaarverslag-PDF's.
+FINANCIEEL_HOOG_URL_PATTERN = re.compile(
+    r"(jaarverslag|annual|investor|\.pdf$|mfn\.se|cision\.com|globenewswire\.com|news\.eu\.nasdaq)",
+    re.IGNORECASE,
+)
 
 ENUM_KANS = {"LAAG", "MIDDEN", "HOOG"}
 ENUM_IMPACT = {"KLEIN", "MIDDEL", "GROOT"}
