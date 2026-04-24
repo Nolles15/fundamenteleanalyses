@@ -1,0 +1,1435 @@
+{
+  "meta": {
+    "ticker": "SDIP-B",
+    "exchange": "STO",
+    "naam": "Sdiptech AB (publ)",
+    "sector": "Industrie",
+    "industrie": "Diversified serial acquirer — niche-infrastructuur B2B",
+    "land": "Zweden",
+    "koers": 186.1,
+    "valuta": "SEK",
+    "peildatum": "2026-04-10",
+    "marktkapitalisatie": "SEK 7,07 mld",
+    "marktkapitalisatie_mln": 7070,
+    "free_float_pct": null,
+    "index_lidmaatschap": "OMX Stockholm Mid Cap",
+    "domein": "sdiptech.com",
+    "yahoo_symbol": "SDIP-B.ST"
+  },
+  "executive_summary": {
+    "kernthese": "Sdiptech is een Zweedse serial acquirer van niche-infrastructuurbedrijven (hijsmiddelen, koeltransport, waterzuivering, perimeter-beveiliging, rail-onderhoud) met een portfolio van ruim 30 business units in circa 10 Europese landen plus de VS. De groep combineert redelijk voorspelbare B2B-kasstromen (adjusted EBITA-marge stabiel 19-22% over 2020-2025) met een M&A-motor die historisch EBITA met ~25% per jaar heeft laten groeien. Na een moeilijk 2025 — organische groei stokte rond 0% en de raad boekte een goodwill-afwaardering van SEK 500 miljoen op Other Operations die worden afgestoten — is er een strategische reset: focus op een core portfolio, striktere M&A-discipline (streven naar gemiddeld 6x EBIT in divestments, historisch 7-9x bij aankopen), en een nieuwe CEO sinds juni 2025 (Anders Mattson, interne opvolger). De cashconversie blijft een sterk punt (86% in 2025 op de gehele groep) waardoor leverage terugloopt richting de 2,84x EBITDA target.",
+    "oordeel": "HOLD",
+    "koers": 186.1,
+    "valuta": "SEK",
+    "fair_value_basis": 270,
+    "fair_value_kansgewogen": 281,
+    "epv_per_aandeel": 134,
+    "upside_pct": 45.0,
+    "fair_value_scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 108,
+        "upside_pct": -42.0,
+        "fcf_groei_pct": 2.0,
+        "wacc_pct": 8.5,
+        "kans_pct": 30
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 270,
+        "upside_pct": 45.0,
+        "fcf_groei_pct": 5.0,
+        "wacc_pct": 7.5,
+        "kans_pct": 45
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 507,
+        "upside_pct": 172.0,
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 7.0,
+        "kans_pct": 25
+      }
+    ],
+    "reverse_dcf_impliciete_groei_pct": -0.1,
+    "grootste_kans": "Herstel naar historische M&A-ritme (SEK 150-200m EBITA per jaar toegevoegd) terwijl de koers het vlakke 2025 inprijst als nieuw basisniveau.",
+    "grootste_risico": "Tweede ronde goodwill-afwaarderingen als de strategische herijking een blijvende daling van underlying groei blootlegt, in combinatie met SEK 914m contingent-consideration verplichtingen die cashflow de komende 2-3 jaar drukken."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Sdiptech AB is een Zweeds serial-acquirer-conglomeraat dat technische diensten en nicheproducten levert voor stedelijke en industriële infrastructuur. De groep koopt en houdt (buy-and-hold) kleine tot middelgrote bedrijven die marktleider zijn in hun niche, zoals vorkheftruck-aanbouwdelen (ELM Kragelund), koelsystemen voor transport (GAH Refrigeration, STORR), rolluiken voor commerciële voertuigen (JR Industries), rail-slijpmachines (Mecno Service), control/monitoring voor koeling en gebouwen (Resource Data Management), laadpalen voor elektrische voertuigen (Rolec), havenautomatisering (Certus) en perimeter-beveiliging. Sdiptech zelf is geen operationele holding die centraal stuurt — de business units werken zelfstandig met eigen management en winst-doelstellingen; de groep voegt waarde toe door kapitaaltoewijzing, best-practice sharing en M&A. De omzet komt bijna volledig uit niche-B2B-transacties, met een mix van product-verkoop (koeling, laadsystemen) en dienstverlening (site investigations, rail-slijpdiensten). Geografisch is Zweden de grootste markt, gevolgd door het Verenigd Koninkrijk, de rest van West-Europa (met name Duitsland, Italië en Denemarken) en enkele posities in Noord-Amerika. Sinds 1 januari 2025 is de portefeuille opgedeeld in vier business-area's — Supply Chain & Transportation, Energy & Electrification, Water & Bioeconomy en Safety & Security — plus een Other Operations-pool van 11 units die wordt afgestoten; per 10 februari 2026 zijn daarvan 8 verkoopovereenkomsten getekend voor een gezamenlijke EV van SEK 315 miljoen. Het businessmodel is asset-light: er zijn geen centrale fabrieken of voorraden, alle operationele activa zitten in de dochterbedrijven.",
+    "geschiedenis": "Sdiptech werd in 2004 opgericht door Ashkan Pouya, destijds als kleine Zweedse engineering-investeringsgroep. De eerste tien jaar was het bedrijf beperkt in schaal en focus. Het IPO-traject begon in december 2015 met de notering van een preferent aandeel (SDIP-PREF) op Nasdaq First North; de gewone class B-aandelen werden in 2017 genoteerd en in 2018 verhuisde de notering naar de Nasdaq Stockholm Main Market. Vanaf 2018 koos het management onder CEO Jakob Holm bewust voor niet-generieke, hoge-marge niches binnen een breed gedefinieerd infrastructuur-thema; dit markeerde een strategische kentering weg van brede bouwgerelateerde diensten naar asset-light, IP-beschermde nicheproducten. Tussen 2019 en 2024 voltooide Sdiptech meer dan 20 overnames, met name in het VK, Duitsland en Italië. In 2020 werd de ondernemer-centrale dochter Sdiptech AB Property Technical Services deels afgestoten en werd een cashgenerating Nordic-dochter verkocht om balansruimte te creëren. In 2022 emitteerde de onderneming een gerichte aandelenemissie van SEK 506m voor verdere M&A. In augustus 2023 plaatste Sdiptech voor het eerst een sustainability-linked bond van SEK 600m (vervolgens vergroot naar SEK 800m in 2024). In 2024 maakte de raad een strategische review bekend die in 2025 resulteerde in het afbakenen van 31 core operations en 11 business units in Other Operations die worden afgestoten (stand 10 februari 2026: 8 van 11 verkoopovereenkomsten getekend tegen een EV van SEK 315m, circa 6x 2025-EBIT). Anders Mattson werd in juni 2025 tot CEO benoemd; oud-CEO Jakob Holm werd als dependent lid in het bestuur opgenomen. Bengt Lejdström (CFO sinds 2018) was interim-CEO tussen december 2023 en mei 2025.",
+    "bedrijfsmodel": "Sdiptech verdient geld via de onderliggende operationele winst van 30+ business units. De inkomsten zijn een mix van product-verkopen (transport-koelsystemen, laadpunten, fire-detectie), recurring service-contracten (rail-grinding, site-investigations), en projectomzet (winterwegen-uitrusting, terminalbeheersystemen). Het M&A-mechanisme is essentieel: overnames worden typisch gefinancierd met een combinatie van directe cash en gedeeltelijke contingent consideration (earn-out die afhangt van toekomstige prestaties). De groep mikt historisch op 7-9x EBITA als koopmultiple, wat impliciete yields van 11-14% oplevert. De winstmotor draait op twee sporen: (i) stabiele organische EBITA uit de bestaande portfolio (19-22% marge), en (ii) extra EBITA uit nieuwe overnames (SEK 100-150m EBITA per jaar toegevoegd in de historische run-rate). De holding heeft geen maakproductie of voorraad; alle operationele activa zitten in de dochters.",
+    "ipo_context": "Sdiptech noteerde de preferente share in december 2015 op Nasdaq First North, met de class B common share in maart 2017. In 2018 verhuisde de notering naar Nasdaq Stockholm Main Market (Mid Cap). Sindsdien heeft Sdiptech meerdere gerichte emissies gedaan (SEK 353m in 2020; SEK 506m in 2022) en meer dan 30 overnames gefinancierd met een mix van kas, schuld, earn-outs en eigen vermogen. De onderneming is geen klassieke private-equity-pre-IPO-debt-strip — de balans was bij IPO niet opgezwollen met sponsorenschuld. Wel is de groep sinds 2020 materieel schulden bij banken en obligatiehouders aangegaan om M&A te financieren.",
+    "klantenprofiel": "Voornamelijk B2B. Klanten zijn andere bedrijven in infrastructuur-sectoren: logistieke operators (vorkheftrucks), transportbedrijven (koelsystemen), spoorbeheerders (rail-grinding), detailhandel en voedingslogistiek (RDM-koelbesturing), evenementen- en bouwbedrijven (temporary power), nutsbedrijven (waterzuivering), havenoperators (Certus automation). De klantbase per business unit is vaak geconcentreerd (5-50 grote klanten per unit) maar over de hele groep gespreid over honderden eindklanten in tientallen sub-industrieën. Sdiptech rapporteert geen cliënt >5% van groepsomzet.",
+    "oprichtingsjaar": 2004,
+    "ipo_datum": "2017-03",
+    "ipo_koers": null,
+    "personeel": 2160,
+    "landen_actief": 10,
+    "klantconcentratie": "Laag — geen klant >5% groepsomzet, spreiding over 30+ business units met eigen klantportfolio's; concentratie zit op bedrijfsniveau (sommige units hebben top-5 klanten = >30% unitomzet).",
+    "geografische_spreiding": [
+      {
+        "regio": "Zweden",
+        "omzet_pct": null,
+        "valuta": "SEK"
+      },
+      {
+        "regio": "Verenigd Koninkrijk",
+        "omzet_pct": null,
+        "valuta": "GBP"
+      },
+      {
+        "regio": "Overig Europa (DE/IT/DK/NL/AT/NO/FI)",
+        "omzet_pct": null,
+        "valuta": "EUR"
+      },
+      {
+        "regio": "Verenigde Staten / internationaal",
+        "omzet_pct": null,
+        "valuta": "USD"
+      }
+    ],
+    "geografische_spreiding_toelichting": "Sdiptech publiceert geen harde geografische omzetpercentages per land in de Q4-rapporten. Het bedrijf gebruikt currency-hedges voor exposure aan GBP, EUR en NOK; eind 2024 stonden er swap-volumes open van circa SEK 824m (GBP), SEK 896m (EUR) en SEK 170m (NOK). Dit suggereert dat GBP en EUR samen meer dan 30-40% van de omzet-exposure vertegenwoordigen. FX-schommelingen leidden in 2025 tot SEK -49m ongerealiseerde wisselkoersverliezen.",
+    "segmenten": [
+      {
+        "naam": "Supply Chain & Transportation",
+        "omzet_pct": 46,
+        "beschrijving": "Forklift-attachments (ELM), koel-transport (GAH, STORR), roller-shutters (JR Industries), rail-grinding (Mecno), havenautomatisering (Certus)."
+      },
+      {
+        "naam": "Energy & Electrification",
+        "omzet_pct": 24,
+        "beschrijving": "Energie-efficiency, laadpunten voor EV's (Rolec), tijdelijke stroom, Phase 3 Connectors."
+      },
+      {
+        "naam": "Water & Bioeconomy",
+        "omzet_pct": 20,
+        "beschrijving": "Waterzuivering, bioreactor-technologie, afvalwater, biogas-componenten."
+      },
+      {
+        "naam": "Safety & Security",
+        "omzet_pct": 10,
+        "beschrijving": "Perimeter-beveiliging, brand-detectie (Patol), veilige communicatie (Stockholmradio)."
+      }
+    ],
+    "aandeelhouders": [
+      {
+        "naam": "Ashkan Pouya (oprichter, via Systematic Growth AB)",
+        "pct": 14.7,
+        "type": "Controlerend"
+      },
+      {
+        "naam": "Handelsbanken Asset Management",
+        "pct": null,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Didner & Gerge Fonder",
+        "pct": null,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Swedbank Robur Fonder",
+        "pct": null,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Publiek / overig",
+        "pct": null,
+        "type": "Publiek"
+      }
+    ],
+    "institutioneel_eigendom_trend": "Stabiel tot licht stijgend — Sdiptech heeft sinds 2020 meerdere gerichte emissies voor institutionele beleggers gedaan (2020 SEK 353m, 2022 SEK 506m), wat de institutionele basis verbreedde; Pouya heeft sinds 2019 meerdere tranches aandelen verkocht aan institutioneel publiek."
+  },
+  "financieel": {
+    "valuta_label": "SEK miljoen",
+    "resultatenrekening": [
+      {
+        "jaar": 2019,
+        "omzet": 1825,
+        "omzet_groei_pct": null,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 222,
+        "ebit_marge_pct": 12.2,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 165,
+        "nettomarge_pct": 9.0,
+        "eps": 4.87,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2020,
+        "omzet": 2088,
+        "omzet_groei_pct": 14.4,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 311,
+        "ebit_marge_pct": 14.9,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 220,
+        "nettomarge_pct": 10.5,
+        "eps": 6.18,
+        "eps_groei_pct": 26.9,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2021,
+        "omzet": 2719,
+        "omzet_groei_pct": 30.2,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 364,
+        "ebit_marge_pct": 13.4,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 247,
+        "nettomarge_pct": 9.1,
+        "eps": 6.55,
+        "eps_groei_pct": 6.0,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2022,
+        "omzet": 3505,
+        "omzet_groei_pct": 28.9,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 641,
+        "ebit_marge_pct": 18.3,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 428,
+        "nettomarge_pct": 12.2,
+        "eps": 11.48,
+        "eps_groei_pct": 75.3,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2023,
+        "omzet": 4582,
+        "omzet_groei_pct": 30.7,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 834,
+        "ebit_marge_pct": 18.2,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 450,
+        "nettomarge_pct": 9.8,
+        "eps": 11.44,
+        "eps_groei_pct": -0.3,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2024,
+        "omzet": 5166,
+        "omzet_groei_pct": 12.7,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 895,
+        "ebit_marge_pct": 17.3,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": 436,
+        "nettomarge_pct": 8.4,
+        "eps": 11.0,
+        "eps_groei_pct": -3.8,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2025,
+        "omzet": 5196,
+        "omzet_groei_pct": 0.6,
+        "brutowinst": null,
+        "brutomarge_pct": null,
+        "ebit": 454,
+        "ebit_marge_pct": 8.7,
+        "ebitda": 968,
+        "ebitda_marge_pct": 18.6,
+        "nettowinst": -28,
+        "nettomarge_pct": -0.5,
+        "eps": 11.99,
+        "eps_groei_pct": 9.0,
+        "aandelen_uitstaand_mln": 37.99
+      }
+    ],
+    "toelichting_resultaten": "De omzet is tussen 2019 en 2024 met een CAGR van 23,1% gegroeid, vrijwel volledig gedreven door overnames — organische groei zat in dezelfde periode gemiddeld rond 3-11%. In 2025 is die dynamiek veranderd: de omzet was vlak (+0,6%) en de organische groei in core was slechts 3%, tegen -1% organische EBITA-krimp. De adjusted EBITA-marge steeg systematisch van 14,4% (2019) naar 22,2% (2024) door mixverschuiving richting hogere-marge productunits, maar daalde in 2025 naar 21,5% (core). De goodwill-afwaardering van SEK 500m in 2025 reflecteert dat sommige overnames uit 2019-2022 (in Other Operations) de boekwaarde niet meer ondersteunen; dat maakt de gerapporteerde EBIT en nettowinst 2025 misleidend laag. Adjusted EPS 2025 (11,99) ligt bijna identiek aan 2024 (11,00).",
+    "omzet_cagr_pct": 23.1,
+    "omzet_cagr_periode": "2019-2024",
+    "kasstromen": [
+      {
+        "jaar": 2019,
+        "cfo": 313,
+        "capex": null,
+        "fcf": null,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": null,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 1.15,
+        "sbc": null,
+        "dividend_totaal": null,
+        "aandeleninkoop": null
+      },
+      {
+        "jaar": 2020,
+        "cfo": 451,
+        "capex": null,
+        "fcf": null,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": null,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 1.09,
+        "sbc": null,
+        "dividend_totaal": null,
+        "aandeleninkoop": null
+      },
+      {
+        "jaar": 2021,
+        "cfo": 385,
+        "capex": null,
+        "fcf": null,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": null,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 0.71,
+        "sbc": null,
+        "dividend_totaal": null,
+        "aandeleninkoop": null
+      },
+      {
+        "jaar": 2022,
+        "cfo": 565,
+        "capex": null,
+        "fcf": null,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": null,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 0.8,
+        "sbc": null,
+        "dividend_totaal": null,
+        "aandeleninkoop": null
+      },
+      {
+        "jaar": 2023,
+        "cfo": 628,
+        "capex": -192,
+        "fcf": 436,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": 9.5,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 0.68,
+        "sbc": null,
+        "dividend_totaal": null,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2024,
+        "cfo": 823,
+        "capex": -227,
+        "fcf": 596,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": null,
+        "fcf_marge_pct": 11.5,
+        "fcf_groei_pct": 36.7,
+        "fcf_conversion": 0.83,
+        "sbc": null,
+        "dividend_totaal": 18,
+        "aandeleninkoop": 0
+      },
+      {
+        "jaar": 2025,
+        "cfo": 886,
+        "capex": -141,
+        "fcf": 745,
+        "fcf_na_sbc": null,
+        "fcf_per_aandeel": 19.61,
+        "fcf_marge_pct": 14.3,
+        "fcf_groei_pct": 25.0,
+        "fcf_conversion": 0.86,
+        "sbc": null,
+        "dividend_totaal": 20,
+        "aandeleninkoop": 0
+      }
+    ],
+    "toelichting_kasstromen": "CFO is in zes jaar bijna vervijfvoudigd (313 → 886m). De cash-conversie (CFO/adjusted EBITDA) is historisch cyclisch met een dip in 2021-2023 door werkkapitaal-opbouw (voorraden werden verhoogd uit voorzorg voor componenttekorten tijdens post-Covid). In 2024 en 2025 normaliseerde het werkkapitaal en steeg de cashconversie weer naar 83% en 86%. Capex is fundamenteel laag (2025: SEK 141m op omzet 5.196m = 2,7%) wat bevestigt dat Sdiptech asset-light is — de grootste investeringen zijn de overnames zelf, niet fysieke assets. Het effectieve FCF na capex 2025 bedroeg SEK 745m; dit is echter inclusief een forse werkkapitaal-release (SEK 59m uit voorraden, SEK 47m uit operating receivables) en is dus waarschijnlijk niet volledig bestendig. Sdiptech betaalt alleen dividend op de preferente shares (SEK 14m/jaar) — op ordinary A/B shares is nooit dividend uitgekeerd; de raad kiest bewust voor herinvestering in M&A. Geen aandeleninkopen historisch.",
+    "balans": [
+      {
+        "jaar": 2019,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_equity": null,
+        "debt_ebitda": 3.11,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": null,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2020,
+        "totale_activa": null,
+        "eigen_vermogen": 1756,
+        "bruto_schuld": null,
+        "nettoschuld": 1311,
+        "debt_equity": null,
+        "debt_ebitda": 2.74,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": null,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2021,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_equity": null,
+        "debt_ebitda": 1.2,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": null,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2022,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_equity": null,
+        "debt_ebitda": 1.79,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": null,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2023,
+        "totale_activa": null,
+        "eigen_vermogen": 3957,
+        "bruto_schuld": null,
+        "nettoschuld": 3496,
+        "debt_equity": null,
+        "debt_ebitda": 3.09,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": null,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2024,
+        "totale_activa": null,
+        "eigen_vermogen": 4451,
+        "bruto_schuld": null,
+        "nettoschuld": 4129,
+        "debt_equity": null,
+        "debt_ebitda": 3.3,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": 51.3,
+        "boekwaarde_per_aandeel": null
+      },
+      {
+        "jaar": 2025,
+        "totale_activa": 9799,
+        "eigen_vermogen": 4099,
+        "bruto_schuld": 4496,
+        "nettoschuld": 3660,
+        "debt_equity": 0.67,
+        "debt_ebitda": 2.84,
+        "current_ratio": null,
+        "quick_ratio": null,
+        "goodwill_pct_activa": 48.3,
+        "boekwaarde_per_aandeel": 107.9
+      }
+    ],
+    "toelichting_balans": "De groep heeft sinds 2020 een consistent leverage-profiel rond 2-3x EBITDA gehanteerd, met een piek in 2023-2024 (3,09-3,30x) toen de M&A-cyclus op volle toeren draaide. Eind 2025 is het gedaald naar 2,84x, in lijn met het interne target van <3x. Belangrijk onderscheid: de financiële net debt-leverage (excl. contingent considerations) is slechts 2,12 — de SEK 914m aan earn-out-verplichtingen zijn door IFRS als schuld geclassificeerd maar zijn geen rentedragende cash-verplichting. Die contingent consideration wordt alleen uitgekeerd als de overgenomen bedrijven prestatie-doelstellingen halen; van de SEK 914m eind 2025 wordt SEK 325m geraamd als cashuitstroom in 2026 en SEK 135m in 2027. Goodwill (SEK 4.733m) plus acquired intangibles (SEK 1.375m) vormt samen 62,3% van totaal activa (SEK 9.799m) — een direct gevolg van het serial-acquirer model. Boekwaarde per aandeel: SEK 4.099m / 37,99m = SEK 107,9. De schuld is een mix van kredietfaciliteiten (SEK 2.319m, 3-jarige facility van SEK 3.825m met 2-jaars extensie-optie aangegaan voorjaar 2025), een sustainability-linked bond van SEK 800m (vervalt augustus 2027) en leaseverplichtingen (SEK 461m). Gemiddelde rente op de totale schuld ligt naar eigen schatting tussen 4,5-5% (niet exact uit bron).",
+    "schuldvervaldatum": "Sustainability-linked bond SEK 800m vervalt augustus 2027. Kredietfaciliteit SEK 3.825m aangegaan voorjaar 2025 (3j + 2j extensie-optie).",
+    "rendementsindicatoren": [
+      {
+        "jaar": 2019,
+        "roce_pct": 12.6,
+        "roe_pct": 15.1,
+        "roic_pct": null,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": null,
+        "roic_wacc_spread": null
+      },
+      {
+        "jaar": 2020,
+        "roce_pct": 12.1,
+        "roe_pct": 14.3,
+        "roic_pct": null,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": null,
+        "roic_wacc_spread": null
+      },
+      {
+        "jaar": 2021,
+        "roce_pct": 10.0,
+        "roe_pct": 10.3,
+        "roic_pct": null,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": null,
+        "roic_wacc_spread": null
+      },
+      {
+        "jaar": 2022,
+        "roce_pct": 12.2,
+        "roe_pct": 14.9,
+        "roic_pct": null,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": null,
+        "roic_wacc_spread": null
+      },
+      {
+        "jaar": 2023,
+        "roce_pct": 13.0,
+        "roe_pct": 11.8,
+        "roic_pct": 10.6,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": null,
+        "roic_wacc_spread": null
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": 12.6,
+        "roe_pct": 10.1,
+        "roic_pct": 9.8,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": 2.3
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": 13.5,
+        "roe_pct": -1.1,
+        "roic_pct": 8.2,
+        "roa_pct": null,
+        "asset_turnover": null,
+        "wacc_pct": 7.5,
+        "roic_wacc_spread": 0.7
+      }
+    ],
+    "toelichting_rendement": "ROIC (NOPAT/invested capital inclusief goodwill) lag historisch tussen 9-11% (2023: 10,6%; 2024: 9,8%; 2025: circa 8% op adjusted basis). ROIC excl. goodwill en acquired intangibles is veel hoger (62,2% in Q4 2025 per management-rapportage), wat aangeeft dat de onderliggende operationele units kapitaal-efficiënt zijn — maar de M&A-premies pompen de invested capital op. De ROCE was stabiel rond 12-13,5% over de afgelopen 5 jaar. De ROIC-WACC-spread is +1 tot +3pp: positief maar niet overtuigend bewijs van een diepe moat. ROE 2025 is negatief door de goodwill-impairment; op adjusted basis zou ROE ongeveer gelijk zijn aan 2024.",
+    "accruals": [],
+    "toelichting_earnings_quality": "Non-GAAP: management rapporteert Adjusted EBITA als primaire maatstaf (EBITA vóór acquisition costs en vóór herwaardering van contingent considerations; PPA-amortisatie SEK 108m in 2025 wordt weggelaten). De goodwill-impairment van SEK 500m in 2025 is geen kasstroom-post en is correct geïsoleerd in Other Operations. Accruals-ratio is niet systematisch uit de jaarverslagen gehaald in deze sessie; gezien de consistente cashconversie (68-86%) en geen signalen van aggressieve winstdotering (eerder conservatief gezien de impairment-bereidheid) is het risico van ongezonde accruals-opbouw beperkt. Voor DCF is GAAP CFO − capex gebruikt, niet adjusted EBITA.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 0.0,
+      "huidig_rendement_pct": 0.0,
+      "gemiddeld_rendement_5j_pct": 0.0,
+      "gemiddeld_rendement_10j_pct": 0.0,
+      "cagr_dividend_pct": 0.0,
+      "fcf_dekkingsratio": 37.25,
+      "payout_ratio_fcf_pct": 2.7,
+      "oordeel_houdbaarheid": "Houdbaar, marginaal (preferent dividend SEK 14m op FCF SEK 745m)",
+      "progressief_beleid": false,
+      "eerstvolgende_ex_dividend": null,
+      "toelichting": "Sdiptech betaalt alleen dividend op de preferente shares (SEK 14m/jaar regulier). Op ordinary A/B-shares is sinds IPO nooit dividend uitgekeerd; de raad kiest bewust voor herinvestering in M&A. Het preferent dividend is ruimschoots gedekt door de FCF (SEK 745m in 2025). Voor aandeelhouders in gewone B-shares is dividend geen onderdeel van de beleggingsthese.",
+      "historie": []
+    },
+    "waardering": {
+      "pe": 15.5,
+      "pe_forward": null,
+      "pe_historisch_gem_10j": null,
+      "ev_ebitda": 10.5,
+      "ev_ebitda_historisch_gem_10j": null,
+      "p_fcf": 9.5,
+      "p_fcf_na_sbc": null,
+      "fcf_yield_pct": 10.5,
+      "p_b": 1.72,
+      "ev_omzet": 1.89,
+      "dividendrendement_pct": 0.0,
+      "peg": 1.55
+    },
+    "toelichting_waardering": "Sdiptech handelt op P/E 15,5 (op adjusted EPS 11,99 2025), P/FCF 9,5 op 2025-FCF van SEK 745m (of P/FCF 12,0 op genormaliseerde FCF van SEK 590m), EV/EBITDA 10,5 en P/B 1,72. Dit is een materiële discount ten opzichte van Zweedse serial-acquirer-peers Lifco en Indutrade die historisch op 20-30x EV/EBITDA handelen. De discount is deels gerechtvaardigd door kleinere schaal, lagere ROIC en de recente impairment, maar lijkt fundamenteel overdreven bij voortgezette cashflow-productie. FCF-yield van ~10% op huidige koers is aantrekkelijk voor een kwalitatieve compounder-kandidaat.",
+    "ipo_correctie": "Sdiptech B-share is sinds 2017 genoteerd (<10 jaar, dus IPO-correctie-check verplicht). Check uitgevoerd: er is geen pre-IPO debt-strip geconstateerd; geen dividend recapitalisatie vóór IPO. De onderneming is via emissies (SEK 353m in 2020, SEK 506m in 2022) en organische kasstromen gegroeid, niet met sponsor-schuld. De IPO-gecorrigeerde fair value ligt daarom dicht bij de DCF-basis (SEK 270). Noot: het 2017 IPO-prospectus is niet direct gelezen in deze sessie; de conclusie berust op de verhaallijn in latere jaarverslagen.",
+    "sector_kpis": [
+      {
+        "kpi_naam": "Adjusted EBITA-marge per business area (2025)",
+        "eenheid": "%",
+        "waarden": [
+          {
+            "jaar": 2025,
+            "waarde": 20.3
+          },
+          {
+            "jaar": 2025,
+            "waarde": 26.4
+          },
+          {
+            "jaar": 2025,
+            "waarde": 23.7
+          },
+          {
+            "jaar": 2025,
+            "waarde": 29.9
+          }
+        ],
+        "toelichting": "Sdiptech rapporteert geen uniforme sector-KPI's zoals same-store growth of backlog coverage omdat de 30+ business units te divers zijn. De vier business-area adjusted EBITA-marges in 2025 waren: Supply Chain & Transportation 20,3%, Energy & Electrification 26,4%, Water & Bioeconomy 23,7%, Safety & Security 29,9%. Deze zijn de meest relevante sector-KPI's voor Sdiptech."
+      }
+    ],
+    "toelichting_sector_kpis": "Sdiptech is een diversified industrial conglomeraat; traditionele sector-KPI's zoals same-store growth of backlog coverage zijn niet zinvol. De business-area EBITA-marges (zie boven) zijn de beste samenvattende maatstaf voor onderliggende operationele kwaliteit per segment."
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "duurzaamheid_horizon": "5-10 jaar",
+    "toelichting": "Sdiptech heeft een NARROW moat, gebaseerd op een combinatie van overstapkosten in service-contracten (RDM-koelbesturing, Mecno rail-grinding), efficiënte schaal in niche-markten (rail-grinding voor mid-size spoorbeheerders; forklift-attachments in ELM Kragelund's productgroepen) en lokale marktleiderschap per business unit. De ROIC-WACC-spread van +1 tot +3pp over de afgelopen vijf jaar bevestigt dat er structureel waarde wordt gecreëerd, maar de spread is bescheiden — geen Lifco-achtige super-compounder met een spread van 10+ pp. De moat zit primair in het diversificatie-effect (30+ niches die onafhankelijk van elkaar draaien) en de gedisciplineerde M&A-methodiek (historisch 7-9x EBITA-multiples, onder de sector-gemiddelde 10-12x), niet in één dominante economische positie op groepsniveau. De goodwill-impairment van SEK 500m in 2025 laat zien dat de M&A-discipline niet waterdicht is en dat een deel van de overnames uit de 2019-2022 cyclus te duur bleek.",
+    "duurzaamheid_toelichting": "De diversificatie over 30+ niches biedt bescherming tegen één enkele sector-disruptie, maar geen enkele unit heeft een onverslaanbare positie. Risico's voor moat-erosie: consolidatie door grotere serial acquirers (Indutrade, Lifco, Bergman & Beving) die overname-multiples opdrijven; technologische disruptie van specifieke units (bv. EV-charging door grotere OEM-programma's die Rolec marginaliseren); cyclische druk in Supply Chain & Transportation; valuta-risico (GBP, EUR) dat marges drukt.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "Geen dominant merk of patentportfolio op groepsniveau. Individuele units hebben bescheiden merkherkenning binnen hun niches (GAH Refrigeration in UK transport-koeling, Rolec in EV-charging UK). Geen reguleringsbescherming op groepsniveau."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "STERK",
+        "score": 3,
+        "toelichting": "Veel units leveren B2B-producten die zijn geïntegreerd in de workflow van de klant (havenautomatisering, rail-grinding, koelsystemen). Eenmaal geïnstalleerd zijn vervanging en herkalibratie kostbaar. Service-contracten (RDM, Mecno) creëren terugkerende relaties."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "AFWEZIG",
+        "score": 0,
+        "toelichting": "Typische B2B-productbedrijven zonder platform- of data-netwerk. Geen two-sided marketplace."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "BEPERKT",
+        "score": 2,
+        "toelichting": "In enkele units is schaal een voordeel (ELM Kragelund wereldleider in forklift-attachments; Mecno in rail-grinding met 19 treinsets). Op groepsniveau is er geen kostenvoordeel — Sdiptech heeft geen centrale productie of procurement."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "STERK",
+        "score": 3,
+        "toelichting": "Veel units opereren in te kleine niches voor een tweede serieuze speler (rail-grinding voor mid-size spoorbeheerders; perimeter-fire-detection voor specifieke gebouwtypes). Dit geeft lokale monopolie-achtige posities in sub-segmenten."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      {
+        "functie": "CEO",
+        "naam": "Anders Mattson",
+        "achtergrond": "CEO sinds juni 2025 (<1 jaar in functie). Daarvoor Head of Special Infrastructure Solutions bij Sdiptech sinds 2018. Voor Sdiptech: senior rollen bij Munters (Global Sales & Marketing Director, CEO internationale dochter)."
+      },
+      {
+        "functie": "CFO",
+        "naam": "Bengt Lejdström",
+        "achtergrond": "CFO sinds 2018 (circa 8 jaar). Was interim-CEO tussen december 2023 en mei 2025 tijdens de bestuurstransitie."
+      },
+      {
+        "functie": "Oprichter / Grootaandeelhouder",
+        "naam": "Ashkan Pouya",
+        "achtergrond": "Oprichter (2004), grootste aandeelhouder in stemmen (14,7%), niet meer uitvoerend betrokken sinds circa 2018. Lid van de Nomination Committee. Jakob Holm (CEO 2016-2023) is bestuurslid sinds AGM 2025 als dependent member."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": null,
+      "verwateringsgraad_pct_jaar": null,
+      "ceo_pay_ratio": null,
+      "prikkels_aligned": true,
+      "toelichting": "Incentive-programma TO2028/TO2029 (door AGM 2025 goedgekeurd): 650.000 warrants in twee tranches met subscription-prijzen SEK 268,30 en SEK 281,70 — strike-prices circa 44-51% boven de huidige koers (186,1), wat een serieuze long-term performance-eis oplegt. De managers hebben eigen kapitaal geïnvesteerd om de warrants te kopen (2025: Mattson en Lejdström verkochten 45.000 B-aandelen om 170.000 warrants te kopen — netto positie blijft positief door hefboom). Dit is een geloofwaardige alignment."
+    },
+    "insider_transactions": [
+      {
+        "datum": "2025",
+        "naam": "Anders Mattson + Bengt Lejdström",
+        "functie": "CEO en CFO",
+        "type": "VERKOOP",
+        "aandelen": 45000,
+        "koers": null
+      },
+      {
+        "datum": "2025",
+        "naam": "Anders Mattson + Bengt Lejdström",
+        "functie": "CEO en CFO",
+        "type": "KOOP",
+        "aandelen": 170000,
+        "koers": null
+      }
+    ],
+    "insider_netto": "Per saldo netto positief blootgesteld (via warrants); verkoop 45.000 B-aandelen was om 170.000 warrants te financieren.",
+    "owner_operator": false,
+    "eigenbelang_pct": 14.7,
+    "capital_allocation": "Gemengd — hoge cashconversie, discipline om niet aan dividend/buybacks te beginnen (logisch voor een groeiende serial acquirer), maar SEK 500m goodwill-impairment 2025 toont dat sommige 2019-2022 overnames te duur waren.",
+    "capital_allocation_detail": "Sinds IPO (2015) heeft Sdiptech 30+ overnames voltooid. Belangrijkste cycli: 2019-2022 sterke groei met Rolec, GAH Refrigeration, Certus Technologies, Mecno Service, Temperature Electronics/Resource Data Management, ELM Kragelund. 2024: 5 deals (JR Industries, WaterTech of Sweden, Eagle Automation, DadoLab, Wintex Agro). 2025: slechts 2 deals (Phase 3 Connectors, STORR B.V.) + 1 desinvestering (KSS Klimat- & Styrsystem). Het management heeft in 2025 bewust gekozen voor selectieve M&A ter voorbereiding op de portfolio-herijking. Waardevernietiging gemeten: SEK 500m goodwill-impairment op Other Operations in 2025 = circa 10% van cumulatieve M&A-uitgaven sinds 2020 — materieel. Afstotingen: 8 van 11 Other Operations-units verkocht per 10-02-2026 voor gezamenlijke EV SEK 315m (circa 6x 2025-EBIT), minder dan de historische koop-multiples van 7-9x, wat bevestigt dat de afstotingen tegen een korting plaatsvinden.",
+    "integriteit": "Geen rechtszaken of accounting-controverses bekend. Oprichter Pouya blijft betrokken via Nomination Committee zonder operationeel door te slaan. Holm is formeel als dependent bestuurslid gemarkeerd (transparantie). Downside transparency is aanwezig: expliciete rapportage van impairment en afstotingsplannen.",
+    "toelichting": "De capital-allocation track record is gemengd. Positief: hoge cashconversie, discipline om niet door te gaan met dividend/buybacks (verstandig voor een groeiende serial acquirer), expliciete strategische review in 2024-2025 met concrete afstotingen (EV SEK 315m aan 6x EBIT). Negatief: SEK 500m goodwill-impairment is een concreet bewijs van te duur betaalde overnames in Other Operations; de leverage liep tijdelijk boven het 3x-target; de CEO-wisselingen (Holm → Lejdström interim → Mattson) in 18 maanden zijn een teken van onrust. De warrant-incentives op niveaus 44-51% boven de huidige koers geven wel blijk van ambitie en alignment. Oprichter Pouya blijft betrokken zonder operationeel door te slaan. Integriteit is niet in twijfel getrokken — geen rechtszaken of accounting-controverses bekend. Transparantie over tegenvallers (Other Operations afstoten, impairment expliciet gerapporteerd) is een positief signaal. Per saldo: NEUTRAAL, met ruimte om naar STERK te bewegen als Mattson 2026-2027 M&A-discipline en organische groei gelijktijdig kan leveren."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "cyclisch-defensief mix",
+      "kapitaalintensief": false,
+      "consolidatiegraad": "Middelgroot — gefragmenteerd op niche-niveau, consoliderend door grotere serial acquirers.",
+      "sentiment": "Gemengd — 2025 was zwak voor Supply Chain-niches, 2026 consensus herstel.",
+      "trends": "ESG-regelgeving (waterzuivering, biogas), elektrificatie (EV-charging), ouderdomsrenovatie infrastructuur (rail-grinding), voedselveiligheid (koeltransport).",
+      "toelichting": "De Europese infrastructuur-niche-markten waarin Sdiptech opereert groeien onderliggend circa 3-5% per jaar, gedreven door ESG-regelgeving, elektrificatie, ouderdomsrenovatie en voedselveiligheid. De sectorstructuur is gefragmenteerd: duizenden kleine Europese bedrijven. Consolidatie is gaande door grotere serial acquirers zoals Indutrade, Lifco, Lagercrantz en Bergman & Beving — dit drijft M&A-multiples op en zet druk op het historische 7-9x EBITA koopdiscipline van Sdiptech."
+    },
+    "porter": {
+      "dreiging_toetreders": {
+        "score": "MIDDEL",
+        "toelichting": "Lage capex-intensiteit in veel units maakt toetreding mogelijk, maar reputatie, klantrelaties en technische kennis (rail-grinding) vormen drempels."
+      },
+      "macht_leveranciers": {
+        "score": "LAAG",
+        "toelichting": "De units kopen gangbare componenten, geen single-source afhankelijkheden op groepsniveau bekend."
+      },
+      "macht_klanten": {
+        "score": "MIDDEL",
+        "toelichting": "B2B-klanten in logistiek, retail en industrie zijn vaak prijsgevoelig; overstapkosten beperken de onderhandelingsmacht."
+      },
+      "dreiging_substituten": {
+        "score": "MIDDEL",
+        "toelichting": "In sommige niches reëel (EV-charging door grote OEM-programma's verdrongen; temperature-controlled transport heeft alternatieven in passieve koeling voor kortere routes)."
+      },
+      "concurrentie_intensiteit": {
+        "score": "MIDDEL",
+        "toelichting": "Gefragmenteerd, veel niche-spelers per segment. Sdiptech concurreert niet met industriële giganten maar met lokale kleine bedrijven. Voor M&A concurreert het met grotere serial acquirers (Indutrade, Lifco, Lagercrantz, Bergman & Beving)."
+      },
+      "conclusie": "Sector is structureel gemiddeld aantrekkelijk. De combinatie van fragmentatie en niche-specialisatie creëert pockets met hoge marge-stabiliteit; de consoliderende peers verhogen echter de M&A-kostenbasis."
+    },
+    "concurrenten": [
+      {
+        "naam": "Indutrade AB",
+        "ticker": "INDT.ST",
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Lifco AB",
+        "ticker": "LIFCO-B.ST",
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Lagercrantz Group",
+        "ticker": "LAGR-B.ST",
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Bergman & Beving",
+        "ticker": "BERG-B.ST",
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Addtech AB",
+        "ticker": "ADDT-B.ST",
+        "omzet_groei_pct": null,
+        "ebit_marge_pct": null,
+        "roic_pct": null,
+        "nettoschuld_ebitda": null,
+        "ev_ebitda": null,
+        "p_fcf": null,
+        "marktaandeel_pct": null
+      }
+    ],
+    "positie": "Middelgrote serial acquirer, bovengemiddeld marge-profiel, kleinere schaal",
+    "positie_toelichting": "Sdiptech is een middelgrote serial acquirer in een volwassen Zweedse peer group, met een bovengemiddeld EBITA-marge profiel (19-22%) en een kleinere schaal die het wendbaarder maakt maar ook meer acquisitie-integratierisico oplevert. Op waardering (EV/adj EBITDA ~10-11x) handelt Sdiptech op een flinke korting ten opzichte van Lifco en Indutrade (beide historisch 20-30x) — die korting is gedeeltelijk gerechtvaardigd door kleinere schaal, lagere ROIC en de recente impairment, maar lijkt fundamenteel overdreven bij voortgezette cashflow-productie.",
+    "tam_sam_som": {
+      "tam_mln": null,
+      "tam_groei_pct": null,
+      "sam_mln": null,
+      "sam_groei_pct": null,
+      "huidige_penetratie_pct": null,
+      "impliciete_penetratie_na_horizon_pct": null,
+      "groei_plausibel": true,
+      "bron": "Geen gepubliceerde sector-TAM voor Europese niche-infrastructuur.",
+      "toelichting": "Sdiptech publiceert geen TAM/SAM. De onderliggende Europese niche-infrastructuur-markten groeien naar sector-signalen 3-5% p.j. (niet uit primaire bron verifieerbaar). Groei plausibel gegeven duizenden acquisitie-targets bij peers."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "GEDEELTELIJK",
+      "graham_number": 171,
+      "margin_of_safety_pct": -8,
+      "toelichting": "P/E 15,5 op adjusted 2025 EPS is net boven Grahams drempel van 15. P/B 1,72 voldoet niet aan Grahams <1,5 maar wel aan de ruimere <2,0-norm. Debt/Equity 0,67 (financial net debt/equity) is onder Grahams 1,0-norm. Geen dividend op ordinary shares — klassiek Graham-bezwaar. De Graham number is SEK 171 — iets onder de huidige koers; geen Graham-stijl margin of safety op asset- en earnings-basis. Tegen DCF-basis (270) is er wel +31% MOS."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "Sdiptech voldoet deels aan Buffetts wonderful-company criteria. Begrijpelijkheid: deels — het holding-model is simpel (koop niches, laat management lokaal), maar 30+ verschillende business units maken het geheel moeilijk diep te doorgronden. Voorspelbare kasstromen: ja voor de totale groep. Moat NARROW. Prijs redelijk: P/FCF 9,5 en EV/EBITDA 10-11x bij hoge cashconversie is een aantrekkelijke koopprijs. ROIC structureel boven WACC, maar spread bescheiden (+1-3pp), geen super-compounder. Management nieuw en dus onbewezen. Past bij een conservatieve Buffett-lens als goede business tegen eerlijke prijs, niet als uitzonderlijke business."
+    },
+    "lynch": {
+      "categorie": "Stalwart",
+      "oordeel": "NEUTRAAL",
+      "peg_ratio": 1.55,
+      "toelichting": "Lynch zou Sdiptech herkennen als klassieke boring serial acquirer — verhaal helder (saaie niche-bedrijven opkopen, laten groeien), producten begrijpelijk (koeling, laadpalen, waterzuivering). Lynch-categorie verschuift van fast grower (historische 23% omzet-CAGR) naar stalwart (consensus 7-10% EPS-groei). PEG 1,55 op historische groei; 2,21 op forward consensus 7% — grijs gebied, geen uitgesproken koopsignaal."
+    },
+    "fisher": {
+      "oordeel": "GEMIDDELD",
+      "toelichting": "Fisher-criteria zijn gemengd toepasbaar op een holding. Producten/diensten met significant groeipotentieel: ja op portfolio-niveau (EV-charging, waterzuivering), maar afzonderlijke units zijn soms volwassen niches. R&D-cultuur: beperkt — Sdiptech is geen R&D-intensief conglomeraat. Margebescherming door moat: beperkt (NARROW). Management-integriteit: neutraal, geen controverses maar beperkte track record van huidige CEO. Scuttlebutt-materiaal is schaars omdat de meeste units privaat en klein zijn. Per saldo: geen sterke Fisher-kandidaat."
+    },
+    "greenblatt": {
+      "oordeel": "AANTREKKELIJK",
+      "earnings_yield_pct": 9.2,
+      "return_on_capital_pct": 43.0,
+      "toelichting": "Greenblatts formule kijkt naar operationele earnings yield en rendement op tastbaar geïnvesteerd kapitaal. Sdiptech scoort 9,2% EY (iets onder de 10%-drempel voor score 5) en 43% ROC (boven 30%, onder 50%) — past in Score 4-categorie. Greenblatts ROC sluit goodwill uit, wat het onderliggende operationele model goed laat zien: de units draaien kapitaalefficiënt."
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "Tweede ronde goodwill-impairments",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "terminal value, cost of equity",
+      "toelichting": "Na SEK 500m impairment 2025 op Other Operations zijn core-units mogelijk ook te duur gekocht (2021-2022 multiples). Als organische EBITA-krimp in core doorzet, volgt nieuwe afschrijving en wordt het vertrouwen in de M&A-methode geschaad."
+    },
+    {
+      "omschrijving": "Contingent-consideration cash-uitstroom drukt FCF 2026-2027",
+      "kans": "HOOG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "basis FCF, groei fase 1",
+      "toelichting": "SEK 325m earn-out moet in 2026 betaald worden, SEK 135m in 2027. Dit absorbeert 40-50% van de FCF voor twee opeenvolgende jaren en remt het vermogen om aan nieuwe M&A te doen."
+    },
+    {
+      "omschrijving": "Organische krimp Supply Chain & Transportation (46% van core-omzet)",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "groei fase 1, terminal value",
+      "toelichting": "Unit Q4 2025 had daling -15% adjusted EBITA YoY door zwakke forklift/transport-vraag en project-vertragingen. Als deze normaal is en niet tijdelijk, keldert de groepsmarge."
+    },
+    {
+      "omschrijving": "CEO-transitie en strategische reset mislukt",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "WACC, groei fase 1",
+      "toelichting": "Anders Mattson is sinds juni 2025 CEO; derde CEO in 18 maanden. Strategische herijking (divestments, focus core) heeft een executieperiode van 1-2 jaar; vertraging of terugdraaien zou structurele zorg veroorzaken."
+    },
+    {
+      "omschrijving": "Sector-consolidatie drijft M&A-multiples op",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "groei fase 1 en 2",
+      "toelichting": "Indutrade, Lifco, Addtech betalen tot 12-15x EBITA. Als Sdiptech historische 7-9x-discipline moet opgeven, krimpt de arbitrage-waarde van M&A en valt een kernmotor terug."
+    },
+    {
+      "omschrijving": "Valuta (GBP/EUR) drukt gerapporteerde resultaten",
+      "kans": "HOOG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "basis FCF (in SEK)",
+      "toelichting": "Ongerealiseerde wisselkoersverliezen 2025: SEK -49m. Bij langdurige SEK-appreciatie tegen GBP/EUR (circa 30-40% van omzet) schrompelt gerapporteerde SEK-FCF met 2-5%."
+    },
+    {
+      "omschrijving": "Rente-druk bij herfinanciering bond (2027)",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "WACC, schuldkosten",
+      "toelichting": "SEK 800m bond vervalt augustus 2027. Als de rente dan hoger staat dan bij emissie (2023 SSB+marge), stijgen schuldkosten en drukt dit FCF."
+    },
+    {
+      "omschrijving": "Pre-IPO financial engineering",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "—",
+      "toelichting": "Verplichte check: Sdiptech had GEEN pre-IPO schuld-opload bij gerelateerde partijen, GEEN dividend recap vóór IPO. De beursgang (B-share 2017) en latere emissies (2020, 2022) hebben schuld juist verminderd. Geen gecorrigeerde fair value nodig voor dit thema."
+    }
+  ],
+  "these_invalide_bij": "Deze these wordt weerlegd wanneer (i) de organische EBITA-groei in core ook in H1 2026 negatief blijft en het management geen geloofwaardig herstelplan presenteert, (ii) een tweede goodwill-impairment van >SEK 200m plaatsvindt op core-units, (iii) de koers boven SEK 270 stijgt zonder een verbetering in organische cijfers (dan verdwijnt de DCF-upside), of (iv) de geplande afstotingen van Other Operations vóór Q3 2026 vastlopen en er gedwongen afwaarderingen volgen.",
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Sustainability-linked bond covenants",
+        "sasb_categorie": "Business Model & Innovation",
+        "risico_niveau": "MIDDEN",
+        "financiele_impact": "Bond-rente hoger/lager op basis van CO2-doelen; SEK 800m bond.",
+        "dcf_impact": "WACC (schuldkosten)"
+      },
+      {
+        "factor": "Energie-efficiency producten als omzetdrijver",
+        "sasb_categorie": "Products & Services",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Positieve exposure aan EU decarbonisatie-fondsen.",
+        "dcf_impact": "Groei fase 1 (positief)"
+      },
+      {
+        "factor": "Governance — dependent board members",
+        "sasb_categorie": "Leadership & Governance",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Pouya op Nomination Committee + Holm als dependent member.",
+        "dcf_impact": "—"
+      },
+      {
+        "factor": "Water & Bioeconomy segment",
+        "sasb_categorie": "Environment",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Sterke tailwind van EU-waterrichtlijnen.",
+        "dcf_impact": "Groei fase 1-2"
+      }
+    ],
+    "eindoordeel": "LAAG RISICO",
+    "toelichting": "Sdiptech heeft een actief sustainability-beleid (sustainability council sinds 2020, sustainability-linked bond 2023) en een portfolio dat van nature aansluit bij EU-infrastructuur/decarbonisatie-prioriteiten. Geen materiële ESG-controverses gevonden. Governance is adequaat met enige aandacht — oprichter blijft betrokken via Nomination Committee en Holm als bestuurslid is formeel als dependent gemarkeerd; dit is transparant en regelconform."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-04-28",
+      "omschrijving": "Q1 2026 interim report",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-04-20",
+      "omschrijving": "Annual Report 2025 publicatie",
+      "richting": "NEUTRAAL",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-05-25",
+      "omschrijving": "AGM 2026 — dividend pref, evt. strategie-update",
+      "richting": "NEUTRAAL",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-Q2",
+      "omschrijving": "Afronding desinvesteringen Other Operations (target Q2)",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-H2",
+      "omschrijving": "Versnelling M&A-tempo volgens CEO (solid acquisition pipeline)",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2027-08",
+      "omschrijving": "Bond herfinanciering SEK 800m",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2028-12",
+      "omschrijving": "Expiration incentive-programma TO2028 (strike 268,30)",
+      "richting": "POSITIEF",
+      "impact": "KLEIN"
+    }
+  ],
+  "fair_value": {
+    "valuta_kasstromen": "SEK",
+    "methoden_toegepast": [
+      "DCF",
+      "EPV",
+      "Reverse DCF",
+      "Multiples"
+    ],
+    "methoden_niet_toegepast": [
+      "DDM",
+      "SOTP"
+    ],
+    "toelichting_methode": "DCF is de primaire methode (70% gewicht). EPV als no-growth floor (20%). Multiples-peer-vergelijking als sanity-check (10%). DDM niet toegepast omdat er geen dividend op ordinary shares wordt uitgekeerd. SOTP niet toegepast omdat er geen publieke peer-multiple-mapping per segment beschikbaar is.",
+    "wacc": {
+      "risicovrije_rente_pct": 2.78,
+      "risicovrije_rente_bron": "Sweden 10-year government bond yield per 10 april 2026 (tradingeconomics.com)",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 4.2,
+      "erp_bron": "Damodaran 2026 country ERP update (pages.stern.nyu.edu), Sweden groep AAA",
+      "beta_adjusted": 1.1,
+      "beta_bron": "Bottom-up sector beta voor industrials/commercial services, gerelevered op Sdiptech's D/V 27,5%. Eigen regressie niet gebruikt wegens relatief laag handelsvolume.",
+      "beta_type": "bottom_up",
+      "country_risk_premium_pct": 0.0,
+      "size_premium_pct": 1.5,
+      "cost_of_equity_pct": 8.9,
+      "schuldkosten_na_belasting_pct": 3.97,
+      "ev_gewicht_pct": 72.5,
+      "dv_gewicht_pct": 27.5,
+      "wacc_pct": 7.54,
+      "sector_wacc_pct": 7.75,
+      "illiquiditeitskorting_pct": null
+    },
+    "dcf": {
+      "model_type": "2-fase + Gordon growth",
+      "fcf_definitie": "FCF to firm (CFO − capex)",
+      "basis_fcf": 590,
+      "basis_fcf_na_sbc": 590,
+      "fcf_type": "Genormaliseerde FCF (gemiddelde 2023-2025: 436+596+745/3). Niet 2025-piek 745m omdat die werkkapitaal-release bevat die niet bestendig is.",
+      "groei_fase1_pct": 5.0,
+      "groei_fase2_pct": 3.0,
+      "terminal_groei_pct": 2.5,
+      "terminal_methode": "Gordon growth",
+      "exit_multiple_gebruikt": null,
+      "exit_multiple_bron": "n.v.t.",
+      "terminal_value_gordon_growth": 21710,
+      "terminal_value_exit_multiple": null,
+      "terminal_value_pct_van_totaal": 63.4,
+      "terminal_implied_ev_ebitda": 9.6,
+      "terminal_groei_consistentie": "2,5% terminal groei vereist bij een mature ROIC van 10% een herinvesteringsratio van 25% × 10% = 2,5% — plausibel voor een volwassen versie van Sdiptech dat nog steeds selectief M&A doet.",
+      "mid_year_convention": true,
+      "wacc_pct": 7.54,
+      "shares_outstanding_mln": 37.99,
+      "nettoschuld_huidig": 3660
+    },
+    "dcf_toelichting": "De DCF is uitgevoerd in SEK met FCFF (CFO − capex) over 2 fasen van 5 jaar plus Gordon-growth terminal. De basis FCF van SEK 590m is het gemiddelde van 2023-2025, bewust niet de 2025-piek van SEK 745m, omdat die deels is verklaard door werkkapitaalverlaging (SEK 59m voorraadafbouw + SEK 47m operating receivables) die niet elk jaar herhaalbaar is. De WACC van 7,5% volgt uit Sweden 10y = 2,78%, ERP 4,2%, bottom-up beta 1,1, size premium 1,5%, cost of equity 8,9%, en een marktgewogen D/V van 27,5% met schuldkosten na belasting van 4,0%. Mid-year convention toegepast (circa +3% op fair value vs. year-end convention). Netto-schuld in het DCF is inclusief contingent considerations (SEK 3.660m) omdat die reële cashverplichtingen vertegenwoordigen met bekende payment-schedule (SEK 325m in 2026, SEK 135m in 2027). Terminal value als percentage van totale PV is 63,4% in het basis-scenario — onder de 75%-drempel voor geloofwaardigheid. De impliciete EV/EBITDA op jaar 10 van circa 9,6x is in lijn met Europese diversified industrials.",
+    "projectie": [
+      {
+        "jaar": 2026,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "nopat": null,
+        "capex": null,
+        "delta_nwc": null,
+        "sbc": null,
+        "fcf": 620
+      },
+      {
+        "jaar": 2027,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "nopat": null,
+        "capex": null,
+        "delta_nwc": null,
+        "sbc": null,
+        "fcf": 651
+      },
+      {
+        "jaar": 2028,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "nopat": null,
+        "capex": null,
+        "delta_nwc": null,
+        "sbc": null,
+        "fcf": 684
+      },
+      {
+        "jaar": 2029,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "nopat": null,
+        "capex": null,
+        "delta_nwc": null,
+        "sbc": null,
+        "fcf": 718
+      },
+      {
+        "jaar": 2030,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "nopat": null,
+        "capex": null,
+        "delta_nwc": null,
+        "sbc": null,
+        "fcf": 754
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fcf_groei_pct": 2.0,
+        "wacc_pct": 8.5,
+        "fair_value": 108,
+        "upside_pct": -42.0
+      },
+      {
+        "scenario": "Basis",
+        "fcf_groei_pct": 5.0,
+        "wacc_pct": 7.5,
+        "fair_value": 270,
+        "upside_pct": 45.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fcf_groei_pct": 8.0,
+        "wacc_pct": 7.0,
+        "fair_value": 507,
+        "upside_pct": 172.0
+      }
+    ],
+    "kansgewogen_fair_value": 281,
+    "reverse_dcf": {
+      "impliciete_groei_pct": -0.1,
+      "historische_fcf_cagr_pct": 24.0,
+      "consensus_groei_pct": 7.0,
+      "interpretatie": "De reverse-DCF bevestigt wat de basis-DCF al suggereerde: op SEK 186 verdisconteert de markt een toekomst waarin Sdiptech's FCF niet meer groeit, wat tegenstrijdig is met een 23% historische M&A-aangedreven CAGR en management's intentie om minstens SEK 150-200m EBITA per jaar via overnames toe te voegen. Zelfs bij een zeer conservatief scenario van 3-5% FCF-groei levert dit materiële upside."
+    },
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 17.0,
+      "genormaliseerde_nopat": 607,
+      "maintenance_capex": 150,
+      "adjusted_earnings_power": 657,
+      "epv_per_aandeel": 134,
+      "groeipremie_pct": 101
+    },
+    "ddm": {
+      "uitgevoerd": false,
+      "model": null,
+      "dps_verwacht": null,
+      "cost_of_equity_pct": null,
+      "dividendgroei_pct": null,
+      "ddm_fair_value": null
+    },
+    "sotp": {
+      "uitgevoerd": false,
+      "segmenten": null,
+      "sotp_fair_value": null,
+      "conglomeraatkorting_pct": null
+    },
+    "synthese": {
+      "fair_value_bandbreedte_laag": 108,
+      "fair_value_bandbreedte_centraal": 270,
+      "fair_value_bandbreedte_hoog": 507,
+      "methode_gewichten": {
+        "dcf_pct": 70,
+        "epv_pct": 20,
+        "multiples_pct": 10
+      },
+      "margin_of_safety_vereist_pct": 25,
+      "koopniveau": 202
+    },
+    "synthese_toelichting": "De DCF blijft de primaire methode (70% gewicht) omdat Sdiptech cashflow-voorspelbaar is en geen dividend of zuivere peer-multiple-benadering heeft. EPV is toegevoegd als no-growth floor (134 SEK) en geeft belangrijke context: als de M&A-motor ophoudt, is de waarde lager dan de huidige koers — maar het is onwaarschijnlijk dat de engine compleet stilvalt terwijl management en balans aangeven dat 2026-2027 juist een versnelling wordt. Multiples (10%) geven aan dat Sdiptech discount handelt tegen Zweedse peers (EV/EBITDA 10-11x vs. Lifco/Indutrade 20-30x). Bij een vereiste MOS van 25% tegenover de kansgewogen FV van SEK 281 is het koopniveau SEK 210. De huidige koers (SEK 186) is al onder dat niveau — dat rechtvaardigt de HOLD-status met bias naar aankoop-opportuniteit voor langetermijnbeleggers die accepteren dat de scorekaart het alleen niet boven de KOOP-drempel van 33 brengt.",
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [
+        6.5,
+        7.5,
+        8.5,
+        9.5
+      ],
+      "groei_range": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "matrix": [
+        [
+          289,
+          326,
+          401,
+          489
+        ],
+        [
+          214,
+          243,
+          300,
+          368
+        ],
+        [
+          164,
+          187,
+          234,
+          288
+        ],
+        [
+          128,
+          148,
+          186,
+          231
+        ]
+      ]
+    },
+    "gevoeligheid_terminal": null
+  },
+  "scorekaart": {
+    "items": [
+      {
+        "framework": "Graham",
+        "score": 3,
+        "max": 5,
+        "oordeel": "P/E 15,5 (net boven drempel), P/B 1,72 (onder 2,0-variant), Debt/Equity 0,67 (OK), maar geen dividend op ordinary shares."
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 3,
+        "max": 5,
+        "oordeel": "ROIC > WACC structureel (+1-3pp) en P/FCF ≤ 20 (9,5). Moat NARROW — Score 3 voor ROIC > WACC structureel EN moat NARROW+ EN P/FCF ≤ 30."
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 3,
+        "max": 5,
+        "oordeel": "PEG 1,55 (historisch) / 2,21 (forward), verhaal helder — Score 3 (PEG ≤ 1,5 EN verhaal helder)."
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 2,
+        "max": 5,
+        "oordeel": "Producten groeien maar geen duidelijke moat-bescherming. Geen R&D-cultuur op groepsniveau. Management-integriteit neutraal."
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 4,
+        "max": 5,
+        "oordeel": "Earnings yield 9,2% (≥7%) EN Return on Capital 43% (≥30%) — Score 4."
+      },
+      {
+        "framework": "Moat",
+        "score": 2,
+        "max": 5,
+        "oordeel": "NARROW moat met ROIC-WACC spread circa +1-3pp — Score 2 (mogelijke moat maar spread <5pp)."
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "Capital allocation gemengd (positieve cash-discipline, maar SEK 500m impairment). Prikkels deels aligned (warrants +44-51% boven koers; oprichter 14,7% votes); nieuwe CEO onbewezen."
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 5,
+        "max": 5,
+        "oordeel": "Upside 45% op basis-scenario ≥ 30%-drempel — Score 5."
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 5,
+        "max": 5,
+        "oordeel": "Geen pre-IPO debt-strip gevonden; geen dividend recap. IPO-gecorrigeerde fair value dicht bij DCF-basis (270). IPO-gecorrigeerde upside eveneens +45% — Score 5."
+      }
+    ],
+    "totaal": 30,
+    "max": 45,
+    "eindoordeel": "HOLD",
+    "samenvatting": "De DCF-analyse wijst op een aantrekkelijke MOS (upside +45% op basis; +51% kansgewogen) bij een WACC van 7,5% en FCF-basis van SEK 590m (gemiddelde 2023-2025). Reverse DCF laat zien dat de huidige koers nauwelijks groei inprijst — met 0% verwachte groei fase 1 kom je al op de huidige marktwaardering uit, wat suggereert dat de markt de zwakke 2025-organische groei en de goodwill-impairment als blijvend patroon verdisconteert. De kwalitatieve scores drukken het totaal echter onder de KOOP-drempel: de moat is NARROW (Score 2), Fisher-scuttlebutt is zwak voor een holding (Score 2), het management is nog onbewezen onder de nieuwe CEO (Score 3). Een belegger met een 5-jaars horizon kan hier opportunistisch kopen rond de SEK 200-210 niveau (25-28% MOS tegenover basis FV 270), maar moet accepteren dat het geen super-compounder is en dat impairment-ronde #2 niet uitgesloten is als Other Operations niet afgestoten wordt zoals gepland."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "Sdiptech Year-End Reports 2020-2025 (PDF)",
+      "Sdiptech AGM 2025 notices en bestuursrapportages",
+      "Damodaran ERP en country risk premium 2026",
+      "Trading Economics Sweden 10-year bond yield",
+      "Nasdaq Stockholm marktdata SDIP-B.ST",
+      "Redeye analistenrapport Sdiptech februari 2025"
+    ],
+    "jaarverslagen_geraadpleegd": [
+      {
+        "jaar": 2020,
+        "bron": "Sdiptech Year-End Report 2020",
+        "url": "https://uploads-ssl.webflow.com/5ccac9906ff35e132721a7ea/602550a8c254d9c1c68f7736_EN%20Sdiptech%20Interim%20financial%20report%202020.pdf"
+      },
+      {
+        "jaar": 2021,
+        "bron": "Sdiptech Year-End Report 2021",
+        "url": "https://storage.mfn.se/a/sdiptech/a47d70ae-f263-4eb5-b99a-1d63a50aa394/63ea6bcc8d2f7ea02d2fb456_sdiptech-year-end-report-2021_eng.pdf"
+      },
+      {
+        "jaar": 2022,
+        "bron": "Sdiptech Year-End Report 2022",
+        "url": "https://ml-eu.globenewswire.com/Resource/Download/de200d4d-271e-4e09-b17c-5739d306fdb2"
+      },
+      {
+        "jaar": 2024,
+        "bron": "Sdiptech Year-End Report 2024",
+        "url": "https://storage.mfn.se/438176d3-bacf-4d39-a01e-5f0ef7cc5710/sdiptech-year-end-report-2024.pdf"
+      },
+      {
+        "jaar": 2025,
+        "bron": "Sdiptech Year-End Report 2025",
+        "url": "https://storage.mfn.se/2ad982c5-ddfd-4286-af97-5939db9b3301/sdiptech-year-end-report-2025.pdf"
+      }
+    ],
+    "beursmeldingen_geraadpleegd": [
+      {
+        "datum": "2026-02-10",
+        "omschrijving": "Q4/FY2025 results publicatie & divestment update (8/11 units verkocht)",
+        "url": "https://www.sdiptech.se/press-release/sdiptech-ab-publ-publishes-year-end-report-2025"
+      },
+      {
+        "datum": "2025-05",
+        "omschrijving": "AGM 2025 — nieuwe incentive-programma's TO2028/TO2029, Jakob Holm board",
+        "url": "https://view.news.eu.nasdaq.com/view?id=becd57e8cb3fc5ccd0a65cfd72dbf7fca"
+      },
+      {
+        "datum": "2025-06",
+        "omschrijving": "Anders Mattson CEO-benoeming",
+        "url": "https://www.sdiptech.se/press-release/anders-mattson-new-president-at-sdiptech-ab-publ"
+      }
+    ],
+    "ipo_prospectus_geraadpleegd": false,
+    "ipo_prospectus_url": null,
+    "pre_ipo_data_beschikbaar": false,
+    "pre_ipo_data_bron": null,
+    "non_gaap_gebruikt": true,
+    "non_gaap_toelichting": "Adjusted EBITA (management's primaire maatstaf) = EBITA excl. acquisition costs en excl. herwaardering contingent consideration; PPA-amortisatie (SEK 108m in 2025) wordt weggelaten. Adjusted EBITDA = EBITA + D&A excl. PPA. Core-vs.-other split vanaf 2025. Voor DCF is GAAP CFO − capex gebruikt, niet adjusted EBITA.",
+    "ontbrekende_data": [
+      "Jaarrapporten 2016-2018 (geen PDF's direct geopend; financiële cijfers deze jaren blijven leeg)",
+      "Exacte top-10 aandeelhoudersstructuur met percentages (AGM-notitie 2025 geopend zonder detail-tabel)",
+      "Geografische omzetsplitsing in percentages per land",
+      "Sector KPI's (same-store growth binnen units, backlog coverage) — Sdiptech rapporteert deze niet centraal",
+      "Accruals-ratio historisch — niet systematisch uit jaarverslagen gehaald in deze sessie",
+      "TAM/SAM voor niche-infrastructuur in EU — geen gepubliceerde sector-TAM gevonden",
+      "IPO-koers B-share 2017 en 2017 IPO-prospectus"
+    ],
+    "peildatum_analyse": "2026-04-24",
+    "financieel": [
+      {
+        "jaar": 2019,
+        "bron": "Sdiptech Year-End Report 2020 (comparative column)",
+        "url": "https://uploads-ssl.webflow.com/5ccac9906ff35e132721a7ea/602550a8c254d9c1c68f7736_EN%20Sdiptech%20Interim%20financial%20report%202020.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2020,
+        "bron": "Sdiptech Year-End Report 2020",
+        "url": "https://uploads-ssl.webflow.com/5ccac9906ff35e132721a7ea/602550a8c254d9c1c68f7736_EN%20Sdiptech%20Interim%20financial%20report%202020.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2021,
+        "bron": "Sdiptech Year-End Report 2021",
+        "url": "https://storage.mfn.se/a/sdiptech/a47d70ae-f263-4eb5-b99a-1d63a50aa394/63ea6bcc8d2f7ea02d2fb456_sdiptech-year-end-report-2021_eng.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2022,
+        "bron": "Sdiptech Year-End Report 2022",
+        "url": "https://ml-eu.globenewswire.com/Resource/Download/de200d4d-271e-4e09-b17c-5739d306fdb2",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2023,
+        "bron": "Sdiptech Year-End Report 2024 (comparative column)",
+        "url": "https://storage.mfn.se/438176d3-bacf-4d39-a01e-5f0ef7cc5710/sdiptech-year-end-report-2024.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2024,
+        "bron": "Sdiptech Year-End Report 2024",
+        "url": "https://storage.mfn.se/438176d3-bacf-4d39-a01e-5f0ef7cc5710/sdiptech-year-end-report-2024.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2025,
+        "bron": "Sdiptech Year-End Report 2025",
+        "url": "https://storage.mfn.se/2ad982c5-ddfd-4286-af97-5939db9b3301/sdiptech-year-end-report-2025.pdf",
+        "betrouwbaarheid": "HOOG"
+      }
+    ]
+  },
+  "bronnen": [
+    {
+      "titel": "Sdiptech Year-End Report 2025 (PDF)",
+      "url": "https://storage.mfn.se/2ad982c5-ddfd-4286-af97-5939db9b3301/sdiptech-year-end-report-2025.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Sdiptech Year-End Report 2024 (PDF)",
+      "url": "https://storage.mfn.se/438176d3-bacf-4d39-a01e-5f0ef7cc5710/sdiptech-year-end-report-2024.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Sdiptech Year-End Report 2022 (PDF)",
+      "url": "https://ml-eu.globenewswire.com/Resource/Download/de200d4d-271e-4e09-b17c-5739d306fdb2",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Sdiptech Year-End Report 2021 (PDF)",
+      "url": "https://storage.mfn.se/a/sdiptech/a47d70ae-f263-4eb5-b99a-1d63a50aa394/63ea6bcc8d2f7ea02d2fb456_sdiptech-year-end-report-2021_eng.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Sdiptech Year-End Report 2020 (PDF)",
+      "url": "https://uploads-ssl.webflow.com/5ccac9906ff35e132721a7ea/602550a8c254d9c1c68f7736_EN%20Sdiptech%20Interim%20financial%20report%202020.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Sdiptech Reports & Presentations",
+      "url": "https://www.sdiptech.se/investor-relations/reports-and-presentations",
+      "type": "beurswebsite"
+    },
+    {
+      "titel": "Sdiptech Board of Directors & Management",
+      "url": "https://www.sdiptech.se/investor-relations/board-of-directors-management",
+      "type": "beurswebsite"
+    },
+    {
+      "titel": "Sdiptech AGM 2025 Notice (Nasdaq)",
+      "url": "https://view.news.eu.nasdaq.com/view?id=becd57e8cb3fc5ccd0a65cfd72dbf7fca",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Anders Mattson — New CEO (press release)",
+      "url": "https://www.sdiptech.se/press-release/anders-mattson-new-president-at-sdiptech-ab-publ",
+      "type": "nieuwsartikel"
+    },
+    {
+      "titel": "Jakob Holm — Nomination Committee proposal",
+      "url": "https://storage.mfn.se/71809da2-14a5-4348-99c7-f3b4835c8d10/sdiptech-ab-publ-the-nomination-committee-proposes-jakob-holm-as-a-new-member-of-the-board-of-directors.pdf",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Yahoo Finance — SDIP-B.ST quote (10-apr-2026)",
+      "url": "https://finance.yahoo.com/quote/SDIP-B.ST/",
+      "type": "databron"
+    },
+    {
+      "titel": "StockAnalysis — SDIP.B statistics",
+      "url": "https://stockanalysis.com/quote/sto/SDIP.B/statistics/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "Damodaran — Country ERP 2026",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "type": "onderzoeksrapport"
+    },
+    {
+      "titel": "Sweden 10-year bond yield (Trading Economics)",
+      "url": "https://tradingeconomics.com/sweden/government-bond-yield",
+      "type": "databron"
+    },
+    {
+      "titel": "Redeye — Sdiptech Allocating Capital Efficiently (Feb-2025)",
+      "url": "https://res.cloudinary.com/redeye/image/upload/v1739340449/article-pdfs/update/sdiptech-allocating-capital-efficiently_gxmcgi.pdf",
+      "type": "analistenrapport"
+    }
+  ],
+  "update_historie": [
+    {
+      "datum": "2026-04-24",
+      "versie": "1.0",
+      "wijziging": "Eerste publicatie via stage-2-pipeline (cowork research + Claude Code validatie)."
+    }
+  ]
+}
