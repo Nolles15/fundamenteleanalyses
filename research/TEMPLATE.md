@@ -27,18 +27,18 @@
 ## 1. Executive summary
 
 - **Kernthese** (2-3 zinnen, waarom dit interessant of niet):
-- **Oordeel** (enum: **KOOP** | **HOUDEN** | **MIJDEN** | **OVERWEEG BIJ DIP**):
+- **Oordeel** (enum **UITSLUITEND**: **KOOP** | **HOLD** | **PASS** — geen NL-varianten zoals HOUDEN/MIJDEN):
 - **Fair value basis** (kansgewogen, lokale valuta): [getal]
 - **Fair value kansgewogen**: [getal]
 - **EPV per aandeel** (Earnings Power Value, zonder groeipremie): [getal]
 - **Upside pct**: [%]
-- **Fair value scenarios** (3 stuks — BEAR / BASE / BULL met kans_pct die optelt tot 100):
+- **Fair value scenarios** (3 stuks — **Pessimistisch / Basis / Optimistisch** — exact deze labels, met kans_pct die optelt tot 100):
 
 | Scenario | Fair value | Upside % | FCF groei % | WACC % | Kans % |
 |---|---|---|---|---|---|
-| BEAR | | | | | |
-| BASE | | | | | |
-| BULL | | | | | |
+| Pessimistisch | | | | | |
+| Basis | | | | | |
+| Optimistisch | | | | | |
 
 - **Reverse-DCF impliciete groei pct** (wat moet FCF groeien om huidige koers te rechtvaardigen):
 - **Grootste kans** (1 zin):
@@ -131,11 +131,15 @@ Bron-eis: **recente 5 jaren moeten uit jaarverslagen/IR komen** (betrouwbaarheid
 ## 4. Moat (concurrentievoordeel)
 
 - **Oordeel** (enum **UITSLUITEND**: **WIDE MOAT** | **NARROW MOAT** | **NO MOAT** — geen Nederlandstalige varianten):
-- **Bronnen van moat** (kies uit: netwerk-effecten / schaal / switching costs / immateriële activa / kostenvoordeel / efficiëntieschaal):
+- **Moat-categorieën** (PRECIES deze 5 namen letterlijk, één rij per categorie — ook "GEEN" is een geldig sterkte-antwoord):
 
-| Bron | Sterkte (sterk/middel/zwak) | Toelichting |
+| Naam | Sterkte (sterk/middel/zwak/geen) | Toelichting |
 |---|---|---|
-| | | |
+| Immateriële activa | | |
+| Overstapkosten | | |
+| Netwerkeffecten | | |
+| Kostenvoordeel | | |
+| Efficiënte schaal | | |
 
 - **Kwantitatief bewijs** (ROIC-historie, marge-stabiliteit, marktaandeel-ontwikkeling):
 - **Duurzaamheid** (5 jaar / 10 jaar / 20 jaar + waarom):
@@ -157,7 +161,7 @@ Bron-eis: **recente 5 jaren moeten uit jaarverslagen/IR komen** (betrouwbaarheid
 
 - **M&A-track-record** (aantal deals, belangrijkste, succes/mislukking):
 - **Beloning** (bonus-KPIs, LTI-structuur, alignement met aandeelhouders):
-- **Oordeel management** (enum: **UITSTEKEND** | **GOED** | **GEMIDDELD** | **ZWAK**):
+- **Oordeel management** (enum **UITSLUITEND**: **STERK** | **NEUTRAAL** | **ZORGWEKKEND** — geen andere varianten):
 - **Toelichting**:
 
 ---
@@ -192,58 +196,61 @@ Bron-eis: **recente 5 jaren moeten uit jaarverslagen/IR komen** (betrouwbaarheid
 
 ---
 
-## 7. Analyse-frameworks (9 frameworks, SCORES 0-10)
+## 7. Analyse-frameworks (9 frameworks, SCORES 0-5)
 
-Scores zijn integer 0-10 per framework, behalve waar anders aangegeven. Framework-namen moeten LETTERLIJK zo staan:
+Scores zijn integer **0-5** per framework (max per framework = 5, totaal max = 45). Framework-namen moeten LETTERLIJK zo staan (incl. spaties en punt):
 
 ### Graham
 - **Oordeel**: [tekst]
 - **Graham number**: [getal]
 - **Margin of safety %** (t.o.v. huidige koers):
 - **Toelichting**:
-- **Score (0-10)**:
+- **Score (0-5)**:
 
 ### Buffett / Munger  *(let op: spaties rond de schuine streep)*
 - **Oordeel**:
 - **ROIC structureel boven WACC?** (true/false):
 - **Toelichting**:
-- **Score (0-10)**:
+- **Score (0-5)**:
 
 ### Peter Lynch
 - **Categorie** (Slow grower / Stalwart / Fast grower / Cyclical / Turnaround / Asset play):
 - **Oordeel**:
 - **PEG-ratio**:
 - **Toelichting**:
-- **Score (0-10)**:
+- **Score (0-5)**:
 
 ### Phil Fisher
 - **Oordeel**:
 - **Toelichting** (kwalitatief, 15 punten Fisher):
-- **Score (0-10)**:
+- **Score (0-5)**:
 
 ### Magic Formula (Greenblatt)
 - **Oordeel**:
 - **Earnings yield %**:
 - **Return on capital %**:
 - **Toelichting**:
-- **Score (0-10)**:
+- **Score (0-5)**:
 
 ### Moat
-- **Score (0-10)** — zelfde oordeel als sectie 4 maar gescoord:
+- **Score (0-5)** — zelfde oordeel als sectie 4 maar gescoord:
 
 ### Management
-- **Score (0-10)** — zelfde oordeel als sectie 5 maar gescoord:
+- **Score (0-5)** — zelfde oordeel als sectie 5 maar gescoord:
 
 ### Fair Value DCF
-- **Score (0-10)** — hoeveel MOS heeft het aandeel op de DCF-basis?:
+- **Score (0-5)** — hoeveel MOS heeft het aandeel op de DCF-basis?:
 
 ### Fair Value IPO-gecorr.
-- **Score (0-10)** — specifiek voor post-IPO bedrijven met beperkte historie:
+- **Score (0-5)** — specifiek voor post-IPO bedrijven met beperkte historie:
 
 ### Scorekaart totaal
-- **Totaalscore**: [som]
-- **Max**: [som van maxes = 90 als alle 9 meetellen]
-- **Eindoordeel** (enum: **STERKE KOOP** | **KOOP** | **HOUDEN** | **MIJDEN**):
+- **Totaalscore**: [som, integer]
+- **Max**: 45 (9 × 5)
+- **Eindoordeel** (enum **UITSLUITEND**: **KOOP** | **HOLD** | **PASS** — volgt deze deterministische regel):
+  - `totaal >= 33` EN `Fair Value DCF-score >= 3` → **KOOP**
+  - `totaal < 24` OF `Fair Value DCF-score == 1` → **PASS**
+  - anders → **HOLD**
 - **Samenvatting** (2-3 zinnen):
 
 ---
@@ -344,15 +351,15 @@ Per katalysator: datum circa, omschrijving, richting (**POSITIEF** | **NEGATIEF*
 | 2028 | | | | | | | | | |
 | 2029 | | | | | | | | | |
 
-### Scenarios (4 stuks: BEAR / BASE / BULL + huidige koers impliciet)
+### Scenarios (3 stuks — exact deze labels)
 
-| Scenario | FCF-groei % | WACC % | Fair value | Upside % |
-|---|---|---|---|---|
-| BEAR | | | | |
-| BASE | | | | |
-| BULL | | | | |
+| Scenario | FCF-groei % | WACC % | Fair value | Upside % | Kans % |
+|---|---|---|---|---|---|
+| Pessimistisch | | | | | |
+| Basis | | | | | |
+| Optimistisch | | | | | |
 
-- **Kansgewogen fair value**:
+- **Kansgewogen fair value** (kans_pct moet optellen tot 100):
 
 ### Reverse DCF
 - **Impliciete groei %** (wat moet FCF groeien voor huidige koers):

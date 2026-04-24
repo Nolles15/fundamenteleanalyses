@@ -48,16 +48,24 @@ BRONNEN-REGIME:
 - Jaren 6-10 geleden: mogen AGGREGATOR zijn (MacroTrends / StockAnalysis / Yahoo)
 - Geef URL per jaar in sectie 13 van de template
 
-ENUM-DISCIPLINE (alleen deze waarden — geen varianten):
-- Moat: WIDE MOAT | NARROW MOAT | NO MOAT
+ENUM-DISCIPLINE (alleen deze waarden — geen varianten, geen NL-synoniemen):
+- Executive summary oordeel: KOOP | HOLD | PASS  (NIET HOUDEN/MIJDEN/KOPEN)
+- Scorekaart eindoordeel: KOOP | HOLD | PASS  (zelfde lijst)
+  Regel: totaal>=33 EN Fair Value DCF-score>=3 => KOOP; totaal<24 OF DCF==1 => PASS; anders HOLD
+- Moat: WIDE MOAT | NARROW MOAT | NO MOAT  (NIET BEPERKTE MOAT o.i.d.)
+- Moat-categorieen (exact deze 5 namen, alle 5 verplicht):
+    Immateriële activa | Overstapkosten | Netwerkeffecten | Kostenvoordeel | Efficiënte schaal
+- Management oordeel: STERK | NEUTRAAL | ZORGWEKKEND  (NIET UITSTEKEND/GOED/ZWAK)
 - Risico kans: LAAG | MIDDEN | HOOG
 - Risico impact: KLEIN | MIDDEL | GROOT
 - Katalysator richting: POSITIEF | NEGATIEF | NEUTRAAL | BINAIR
 - Katalysator impact: GROOT | MIDDEL | KLEIN
 - Betrouwbaarheid bron: HOOG | AGGREGATOR
-- Framework-namen LETTERLIJK: Graham | Buffett / Munger | Peter Lynch |
-  Phil Fisher | Magic Formula | Moat | Management | Fair Value DCF |
-  Fair Value IPO-gecorr.
+- Scenario-labels (exact): Pessimistisch | Basis | Optimistisch  (NIET BEAR/BASE/BULL)
+- Framework-namen LETTERLIJK (incl. spaties en punt):
+    Graham | Buffett / Munger | Peter Lynch | Phil Fisher | Magic Formula |
+    Moat | Management | Fair Value DCF | Fair Value IPO-gecorr.
+- Scorekaart-scores: integer 0-5 per framework (max 5, totaal max 45)
 
 OPLEVERING:
 - Eén Write-call met research/[TICKER].md volledig ingevuld
