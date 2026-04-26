@@ -1,0 +1,1205 @@
+{
+  "meta": {
+    "ticker": "SALM",
+    "exchange": "OSL",
+    "naam": "SalMar ASA",
+    "sector": "Consumentengoederen",
+    "industrie": "Aquacultuur / zalmkweek",
+    "land": "Noorwegen",
+    "koers": 537.0,
+    "valuta": "NOK",
+    "peildatum": "2026-04-26",
+    "marktkapitalisatie": "NOK 71,9 mld",
+    "marktkapitalisatie_mln": 71958,
+    "free_float_pct": 52.0,
+    "index_lidmaatschap": "OBX",
+    "domein": "salmar.no",
+    "yahoo_symbol": "SALM.OL"
+  },
+  "executive_summary": {
+    "kernthese": "SalMar is Noorwegens nummer-twee zalmkweker met een vertikaal geïntegreerd model van smolt tot harvesting in Centraal- en Noord-Noorwegen, aangevuld met Scottish Sea Farms (50/50 met Lerøy) en Aker Ocean voor offshore productie. Het bedrijf opereert in een structureel groeiende eiwit-categorie maar in een zwaar cyclische sector waar zalm-spotprijzen, biologische schade (sea lice, ziekte) en de Noorse resource-rent-tax (25% sinds 2023) de kasstromen jaar-op-jaar fors laten variëren. De huidige beurskoers prijst een herstel naar piek-marges en hoge volumegroei in. Op een methodisch genormaliseerde mid-cycle FCF zien wij een aanzienlijke overprijzing.",
+    "oordeel": "PASS",
+    "koers": 537.0,
+    "valuta": "NOK",
+    "fair_value_basis": 230,
+    "fair_value_kansgewogen": 226,
+    "epv_per_aandeel": 167,
+    "upside_pct": -57.1,
+    "fair_value_scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 122,
+        "upside_pct": -77.3,
+        "fcf_groei_pct": 0.0,
+        "wacc_pct": 9.09,
+        "kans_pct": 30.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 230,
+        "upside_pct": -57.1,
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 8.59,
+        "kans_pct": 50.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 372,
+        "upside_pct": -30.7,
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 8.09,
+        "kans_pct": 20.0
+      }
+    ],
+    "reverse_dcf_impliciete_groei_pct": 11.05,
+    "grootste_kans": "Structureel hogere zalmprijs gedreven door Noorse productie-cap (vergunningenstop) en wereldwijde stagnerende supply-groei.",
+    "grootste_risico": "Combinatie van resource-rent-tax 25%, biologische tegenslag (sea lice, ziekte) en spotprijs-druk drukt mid-cycle FCF naar onderkant van de range."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "SalMar ASA is een vertikaal geïntegreerde producent van Atlantische zalm met operaties in Noorwegen (segmenten Centraal-Noorwegen en Noord-Noorwegen), Schotland (Scottish Sea Farms, 50/50 joint venture met Lerøy), IJsland (Icelandic Salmon, een meerderheidsbelang) en offshore-aquacultuur via SalMar Aker Ocean. De waardeketen omvat smolt-productie (juveniele zalm), zee-fase grow-out in vergunde locaties langs de Noorse kust, harvesting, primary processing en in beperkte mate value-added secondary processing en sales/distributie. Klanten zijn Europese en Aziatische verwerkers, retailers en horeca. De omzet ontstaat hoofdzakelijk uit verkoop van versgekoelde hele zalm (gutted weight) tegen marktprijs, met een klein hedge-deel via Fish Pool-futures. SalMar's onderscheid is een zeer gunstige kostenpositie in Centraal-Noorwegen (de InnovaMar-fabriek in Frøya is sectorbenchmark) en een hoge superior-share van geoogste vis (geclaimd: hoogste in een decennium in 2025). De kostenbasis bestaat voor circa 50% uit voer (geleverd door Skretting/Nutreco, Cargill en BioMar), met daarnaast lonen, smolt-opfok-kosten en harvesting-kosten. Marges schommelen sterk met (a) zalm-spotprijs op Fish Pool Index, (b) productiekosten per kg, (c) biologische incidenten en (d) het Noorse belastingregime inclusief resource-rent-tax van 25% boven op reguliere 22% vennootschapsbelasting.",
+    "geschiedenis": "SalMar werd in 1991 opgericht door Gustav Magnar Witzøe in Frøya, Centraal-Noorwegen. Witzøe begon met één enkele licentie en groeide door consolidatie, eigen smolt-productie en vroege investeringen in geïntegreerde harvesting/processing. In 2007 noteerde het bedrijf op de Oslo Børs (8 mei 2007) tegen een initiële marktkap van circa NOK 4 mld. In 2010 opende SalMar de InnovaMar-fabriek in Frøya, destijds 's werelds modernste zalm-verwerkingscomplex. In 2018 deed SalMar een aanbod op Norway Royal Salmon (NRS); in 2022 werd dit definitief afgerond, wat SalMar's positie in Noord-Noorwegen significant versterkte. In 2022 trad Linda Aase aan als CEO maar trok zich na vijf maanden terug; Frode Arntsen (intern doorgegroeid sinds 2017 als COO Industry & Sales) volgde haar in oktober 2022 op. In 2023 keurde het Noorse parlement de resource-rent-tax goed (25%, met terugwerkende kracht vanaf 1 januari 2023), wat de winst materieel aantastte. In 2024 startte SalMar Aker Ocean met de eerste oogst uit offshore-locatie Ocean Farm 1. In 2025 bereikte de groep voor het eerst 300.000 ton geoogste zalm (incl. geassocieerde bedrijven); de gerapporteerde nettowinst daalde echter tot NOK 1,1 mld (vs. NOK 3,0 mld in 2024) door zwakke spotprijzen in H1.",
+    "bedrijfsmodel": "Verkoop van verse Atlantische zalm tegen spotprijs; minderheid via langlopende contracten en hedges. Inkomsten zijn niet recurring in abonnement-zin, maar wel structureel in volume omdat klanten (Europese supermarkten en verwerkers) jaar-op-jaar leveringscontracten hernieuwen. De marge is een functie van (a) wereldspotprijs, (b) productiekosten per kg (voer is ~50% van COGS), (c) biologische incidenten (sea lice, ziekte, mortaliteit), en (d) het Noorse belastingregime.",
+    "ipo_context": "8 mei 2007 op Oslo Børs. Initiële marktkap ca. NOK 4 mld; sinds IPO is de marktkap met meer dan 17x vermenigvuldigd. Sinds de IPO zijn er meerdere kapitaalverhogingen geweest (deels gerelateerd aan acquisities zoals NRS in 2022). Witzøe-familie behield via Kverva een controlerend belang van 44,3%.",
+    "klantenprofiel": "Voornamelijk B2B (retailers, horeca-distributeurs, verwerkers) verspreid over Europa, Azië en Noord-Amerika. Geen extreme klantconcentratie gerapporteerd; specifieke top-5 klantaandeel niet publiek bevestigd.",
+    "oprichtingsjaar": 1991,
+    "ipo_datum": "2007-05-08",
+    "ipo_koers": null,
+    "personeel": 2000,
+    "landen_actief": 3,
+    "klantconcentratie": "Niet publiek beschikbaar — geen specifiek top-5-klantaandeel gerapporteerd in geverifieerde bronnen op peildatum.",
+    "geografische_spreiding": [],
+    "geografische_spreiding_toelichting": "SalMar's productie staat primair in Noorwegen, maar de zalmverkoop loopt in EUR en USD via Europese en Aziatische afnemers; daardoor is er een natural hedge tegen NOK-zwakte. De resource-rent-tax raakt alleen Noorse productie. Scottish Sea Farms en Icelandic Salmon dragen bij aan diversificatie maar zijn relatief kleine bijdragen aan groeps-EBIT. Exacte omzetverdeling per geografie niet publiek per peildatum — niet in JSON opgenomen.",
+    "segmenten": [
+      {
+        "naam": "Fish Farming Central Norway",
+        "omzet_pct": 0,
+        "beschrijving": "Kernoperatie rond Frøya/Hitra; laagste kostenbasis. InnovaMar-fabriek is sectorbenchmark voor verticale efficiëntie."
+      },
+      {
+        "naam": "Fish Farming Northern Norway",
+        "omzet_pct": 0,
+        "beschrijving": "Inclusief NRS-acquisitie (2022); hogere groeipotentie maar koudere wateren."
+      },
+      {
+        "naam": "Sales & Industry",
+        "omzet_pct": 0,
+        "beschrijving": "Processing, sales en distributie; primary processing dominant, value-added secondary in beperkte mate."
+      },
+      {
+        "naam": "Icelandic Salmon (Arnarlax)",
+        "omzet_pct": 0,
+        "beschrijving": "Meerderheidsbelang met aparte beurslisting; bijdrage aan groei via Atlantische zalm-productie in IJsland."
+      },
+      {
+        "naam": "SalMar Aker Ocean",
+        "omzet_pct": 0,
+        "beschrijving": "Offshore-aquacultuur via Ocean Farm 1 (eerste oogst 2024); pilotstadium met lange terugverdientijd."
+      },
+      {
+        "naam": "Scottish Sea Farms (50/50)",
+        "omzet_pct": 0,
+        "beschrijving": "Geassocieerd, niet geconsolideerd; 50/50 JV met Lerøy in Schotland."
+      }
+    ],
+    "aandeelhouders": [
+      {
+        "naam": "Kverva Industrier AS (Gustav Witzøe)",
+        "pct": 44.3,
+        "type": "Oprichter (indirect)"
+      },
+      {
+        "naam": "Folketrygdfondet",
+        "pct": 0,
+        "type": "Institutioneel (Noors staatspensioenfonds)"
+      },
+      {
+        "naam": "BlackRock funds",
+        "pct": 0,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Vanguard funds",
+        "pct": 0,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Andere institutionele",
+        "pct": 0,
+        "type": "Diverse"
+      }
+    ],
+    "institutioneel_eigendom_trend": "Stabiel — Kverva blijft dominant aandeelhouder met onveranderd belang sinds NRS-deal 2022; institutionele fondsen wisselen aan de marges maar geen structurele verschuiving zichtbaar."
+  },
+  "financieel": {
+    "valuta_label": "NOK mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2017,
+        "omzet": 10800,
+        "omzet_groei_pct": null,
+        "ebit": 3100,
+        "ebit_marge_pct": 28.7,
+        "ebitda": null,
+        "ebitda_marge_pct": null,
+        "nettowinst": null,
+        "nettomarge_pct": null,
+        "eps": null,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2021,
+        "omzet": 15044,
+        "omzet_groei_pct": 16.5,
+        "ebit": 3451,
+        "ebit_marge_pct": 22.9,
+        "ebitda": 4258,
+        "ebitda_marge_pct": 28.3,
+        "nettowinst": 2617,
+        "nettomarge_pct": 17.4,
+        "eps": 22.57,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": 117.7
+      },
+      {
+        "jaar": 2022,
+        "omzet": 20158,
+        "omzet_groei_pct": 34.0,
+        "ebit": 4738,
+        "ebit_marge_pct": 23.5,
+        "ebitda": 5776,
+        "ebitda_marge_pct": 28.7,
+        "nettowinst": 3312,
+        "nettomarge_pct": 16.4,
+        "eps": 27.6,
+        "eps_groei_pct": 22.3,
+        "aandelen_uitstaand_mln": 131.4
+      },
+      {
+        "jaar": 2023,
+        "omzet": 28219,
+        "omzet_groei_pct": 40.0,
+        "ebit": 8509,
+        "ebit_marge_pct": 30.2,
+        "ebitda": 9961,
+        "ebitda_marge_pct": 35.3,
+        "nettowinst": 3203,
+        "nettomarge_pct": 11.4,
+        "eps": 24.33,
+        "eps_groei_pct": -11.9,
+        "aandelen_uitstaand_mln": 131.8
+      },
+      {
+        "jaar": 2024,
+        "omzet": 26426,
+        "omzet_groei_pct": -6.4,
+        "ebit": 5292,
+        "ebit_marge_pct": 20.0,
+        "ebitda": 7051,
+        "ebitda_marge_pct": 26.7,
+        "nettowinst": 2969,
+        "nettomarge_pct": 11.2,
+        "eps": 22.49,
+        "eps_groei_pct": -7.6,
+        "aandelen_uitstaand_mln": 131.9
+      },
+      {
+        "jaar": 2025,
+        "omzet": 27394,
+        "omzet_groei_pct": 3.7,
+        "ebit": 2916,
+        "ebit_marge_pct": 10.6,
+        "ebitda": 4870,
+        "ebitda_marge_pct": 17.8,
+        "nettowinst": 1105,
+        "nettomarge_pct": 4.0,
+        "eps": 8.24,
+        "eps_groei_pct": -63.4,
+        "aandelen_uitstaand_mln": 134.1
+      }
+    ],
+    "toelichting_resultaten": "SalMar's omzet is in vijf jaar bijna verdubbeld (2021: 15 mld → 2025: 27 mld) via een combinatie van volume-groei (vooral via NRS-acquisitie 2022) en hogere zalmprijzen. EBIT-marges piekten in 2023 op 30,2% bij record-hoge zalmprijzen, maar zijn in 2025 naar 10,6% gezakt door (a) een fors lagere spotprijs gemiddeld in 2025 (NOK ~78–86/kg vs. ~94 in 2024), (b) volledige doorwerking van de Noorse resource-rent-tax (25% effectief op grondrentebasis bovenop reguliere 22% vennootschapsbelasting), en (c) hogere voer- en personeelskosten. De effectieve belastingvoet schommelde in 2023–2025 sterk (62%, 20%, 16%) door de wisselende werking van resource-rent-tax-grondslagen vs. uitgestelde belastingactiva — een structurele complicatie voor consistente winstvoorspelling.",
+    "omzet_cagr_pct": 16.2,
+    "omzet_cagr_periode": "2021-2025",
+    "kasstromen": [
+      {
+        "jaar": 2021,
+        "cfo": null,
+        "capex": null,
+        "fcf": 684,
+        "fcf_per_aandeel": 5.9,
+        "fcf_marge_pct": 4.5,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 0.261
+      },
+      {
+        "jaar": 2022,
+        "cfo": null,
+        "capex": null,
+        "fcf": 1768,
+        "fcf_per_aandeel": 14.73,
+        "fcf_marge_pct": 8.8,
+        "fcf_groei_pct": 158.4,
+        "fcf_conversion": 0.534,
+        "dividend_totaal": 2628
+      },
+      {
+        "jaar": 2023,
+        "cfo": null,
+        "capex": null,
+        "fcf": 6622,
+        "fcf_per_aandeel": 50.31,
+        "fcf_marge_pct": 23.5,
+        "fcf_groei_pct": 274.6,
+        "fcf_conversion": 2.067,
+        "dividend_totaal": 4613
+      },
+      {
+        "jaar": 2024,
+        "cfo": null,
+        "capex": null,
+        "fcf": 2799,
+        "fcf_per_aandeel": 21.2,
+        "fcf_marge_pct": 10.6,
+        "fcf_groei_pct": -57.7,
+        "fcf_conversion": 0.943,
+        "dividend_totaal": 2902
+      },
+      {
+        "jaar": 2025,
+        "cfo": null,
+        "capex": null,
+        "fcf": 1310,
+        "fcf_per_aandeel": 9.76,
+        "fcf_marge_pct": 4.8,
+        "fcf_groei_pct": -53.2,
+        "fcf_conversion": 1.186,
+        "dividend_totaal": 1341
+      }
+    ],
+    "toelichting_kasstromen": "FCF bewoog tussen NOK 0,7 mld (2021, dal) en NOK 6,6 mld (2023, piek) — een factor 9,7 verschil binnen vijf jaar onderstreept de cyclische aard. De FCF-conversie (FCF/nettowinst) ligt structureel rond 100%–200% bij positieve marktprijzen (FCF werkkapitaal-positief in goede jaren) maar zakt bij prijsdruk plus kapex-pieken. SBC is bij SalMar historisch verwaarloosbaar (insider-georiënteerde Witzøe-controlecultuur, niet aandelen-incentivegedreven Amerikaans model); SBC-correctie heeft daarom geen materiële impact op FCF. CFO en capex per jaar zijn niet apart in de aggregator-bron getoond zonder PDF-verificatie; cellen leeg gelaten. Groei capex was hoog in 2023–2024 voor SalMar Aker Ocean (offshore Ocean Farm) en NRS-integratie; in 2025 verschuift de mix richting maintenance.",
+    "balans": [
+      {
+        "jaar": 2021,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_ebitda": null,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2022,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_ebitda": null,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2023,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": 14900,
+        "debt_ebitda": 1.5,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2024,
+        "totale_activa": 57900,
+        "eigen_vermogen": 20100,
+        "bruto_schuld": null,
+        "nettoschuld": 14400,
+        "debt_ebitda": 2.0,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2025,
+        "totale_activa": null,
+        "eigen_vermogen": 20100,
+        "bruto_schuld": 25000,
+        "nettoschuld": 21600,
+        "debt_ebitda": 4.3,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      }
+    ],
+    "toelichting_balans": "De NIBD steeg van NOK 14,4 mld eind 2024 naar NOK 21,6 mld in Q3 2025. Twee bewegingen verklaren dit: (a) zware capex op offshore-projecten (Aker Ocean) en biologische investeringen (smolt-capaciteit), en (b) een flink lagere EBITDA in 2025 die werkkapitaal-druk veroorzaakt. De solvabiliteitsratio (equity ratio) zakte van 46% (2024) naar 33,2% (Q3 2025), wat een substantiële verzwakking van de balans signaleert. NIBD/EBITDA TTM van 4,3x overschrijdt de comfortzone voor cyclische bedrijven (≤ 2,5x mid-cycle) en zet druk op herfinanciering en dividendcapaciteit. SalMar heeft een Nordic Credit Rating BBB+ (stable) van april 2023; deze kan bij voortzetting van huidige NIBD-niveaus onder druk komen. Detailbalans-cellen pre-2024 leeg gelaten omdat aggregator zonder PDF-toegang niet betrouwbaar is.",
+    "rendementsindicatoren": [
+      {
+        "jaar": 2024,
+        "roce_pct": null,
+        "roe_pct": 15.0,
+        "roic_pct": 14.0,
+        "roa_pct": null,
+        "wacc_pct": 8.59,
+        "roic_wacc_spread": 5.41
+      }
+    ],
+    "toelichting_rendement": "Mid-cycle ROIC ~ 15% (geschat op basis van gemiddelde NOPAT/invested-capital 2021–2025), structureel boven WACC ~ 8,6%. ROIC-WACC-spread ~ 6–7 pp in mid-cycle. In dal-jaar 2025 zakt ROIC onder WACC; structurele waarde-creatie blijft afhankelijk van zalmprijs-cycli.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 10.0,
+      "huidig_rendement_pct": 1.9,
+      "payout_ratio_fcf_pct": 102.0,
+      "fcf_dekkingsratio": 0.98,
+      "oordeel_houdbaarheid": "Onder druk: DPS al verlaagd van 35 (2023) → 22 (2024) → 10 (2025) bij wegzakkende winstgevendheid en oplopende NIBD/EBITDA naar 4,3x.",
+      "progressief_beleid": false,
+      "eerstvolgende_ex_dividend": null,
+      "toelichting": "Dividend gekoppeld aan winstgevendheid. DPS halveerde in 2025 met EPS-daling. Bij voortgaande capex en hoge NIBD blijft dividend-cut-risico aanwezig.",
+      "historie": [
+        {
+          "jaar": 2021,
+          "dps": 20.0
+        },
+        {
+          "jaar": 2022,
+          "dps": 20.0
+        },
+        {
+          "jaar": 2023,
+          "dps": 35.0
+        },
+        {
+          "jaar": 2024,
+          "dps": 22.0
+        },
+        {
+          "jaar": 2025,
+          "dps": 10.0
+        }
+      ]
+    },
+    "waardering": {
+      "pe": 65.1,
+      "pe_historisch_gem_10j": 18.0,
+      "ev_ebitda": 19.2,
+      "ev_ebitda_historisch_gem_10j": 9.0,
+      "p_fcf": 54.9,
+      "fcf_yield_pct": 1.8,
+      "p_b": 3.58,
+      "ev_omzet": 3.4,
+      "dividendrendement_pct": 1.9,
+      "peg": 13.0
+    },
+    "toelichting_waardering": "TTM P/E 65 is sterk vertekend door 2025-dal-jaar; mid-cycle P/E ~ 24 op genormaliseerde EPS ~22 is nog steeds hoog. EV/EBITDA 19x op TTM is fors; mid-cycle EV/EBITDA ~ 13x peer-mediaan. P/FCF 55x op TTM-FCF illustreert hoe diep 2025 in de cyclus zit.",
+    "ipo_correctie": "n.v.t. — IPO mei 2007, 19 jaar geleden, ruim buiten de 10-jaarsregel."
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "duurzaamheid_horizon": "10–20 jaar",
+    "toelichting": "SalMar's moat berust op twee sterke pijlers: kostenvoordeel via geïntegreerde Centraal-Noorse operaties (Frøya/Hitra) en de InnovaMar-fabriek die productiekosten per kg structureel onder sectorgemiddelde houdt, en efficiënte schaal door de Noorse vergunningstop (top-5 spelers controleren >70% van Noorse productie). De Noorse aquacultuurvergunningen zijn schaars en alleen via overheid uitgegeven; het 'trafikklys-systeem' beperkt productie-uitbreiding effectief. Mid-cycle ROIC ~ 15% versus WACC ~ 8,6% geeft een spread van zes tot zeven procentpunten — voldoende voor narrow moat. De marge-stabiliteit is echter volatiel: EBIT-marge varieerde 10,6%–30,2% over 2021–2025. Klanten kunnen vrij wisselen tussen Mowi, SalMar, Lerøy en Bakkafrost (zwakke overstapkosten); commodity-product-karakter beperkt pricing power. Op horizon van 20 jaar dreigt land-based RAS en zee-cage-alternatieven in andere landen de moat te eroderen.",
+    "duurzaamheid_toelichting": "Op 20-jaars horizon dreigt land-based RAS (recirculating aquaculture systems) en zee-cage-alternatieven (offshore, aquaculture-zones in andere landen) de moat te eroderen. Atlantic Sapphire (Florida) en Salmon Evolution (Noorwegen) zijn pilots; Atlantic Sapphire boekte in 2024 nog verliezen, maar de technologie evolueert.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "middel",
+        "score": 3,
+        "toelichting": "Noorse aquacultuurvergunningen zijn schaars en alleen via overheid uitgegeven; trafikklys-systeem beperkt productie-uitbreiding. Vergunningen vertegenwoordigen significante immateriële waarde maar bieden geen pricing power omdat zalm een commodity blijft."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "zwak",
+        "score": 1,
+        "toelichting": "Klanten (retailers) kunnen vrij wisselen tussen Mowi, SalMar, Lerøy en Bakkafrost. Gevormde supply-relaties zijn lang maar contractueel kort (jaarlijkse hercommitments)."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "geen",
+        "score": 0,
+        "toelichting": "Niet van toepassing in commodity-aquacultuur."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "sterk",
+        "score": 4,
+        "toelichting": "SalMar's Centraal-Noorse operaties (Frøya/Hitra) zijn structureel onder sectorgemiddelde productiekosten per kg. InnovaMar-fabriek levert verticale efficiëntie (smolt → harvest → primary processing onder één dak). Schaalvoordeel in voer-inkoop."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "sterk",
+        "score": 4,
+        "toelichting": "Noorse coast capacity is gereguleerd-vergrendeld; nieuwe MAB (Maximum Allowed Biomass) wordt zelden uitgegeven. Top-5 spelers (Mowi, SalMar, Lerøy, Cermaq, Grieg) bezitten >70% van Noorse productie. Nieuwkomers worden geblokkeerd door regulatie en kapitaalintensiteit."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "NEUTRAAL",
+    "personen": [
+      {
+        "functie": "CEO",
+        "naam": "Frode Arntsen",
+        "achtergrond": "In functie sinds oktober 2022 (~3,5 jaar als CEO). Daarvoor sinds 2017 COO Industry & Sales. Volgde Linda Aase op die zich na 5 maanden terugtrok."
+      },
+      {
+        "functie": "Voorzitter / oprichter",
+        "naam": "Gustav Witzøe",
+        "achtergrond": "Oprichter (1991), voorzitter van de raad van bestuur. Houdt indirect via Kverva Industrier 44,3% van de aandelen. Zoon Gustav Magnar Witzøe Jr. is grootaandeelhouder."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0,
+      "verwateringsgraad_pct_jaar": null,
+      "prikkels_aligned": true,
+      "toelichting": "SBC is bij SalMar historisch verwaarloosbaar (insider-georiënteerde Witzøe-controlecultuur, niet aandelen-incentivegedreven Amerikaans model). Specifieke remuneratie-KPI's CEO/CFO niet apart geverifieerd zonder AR-PDF toegang."
+    },
+    "owner_operator": true,
+    "eigenbelang_pct": 44.3,
+    "capital_allocation": "Gemengd: NRS strategisch verstandig maar duur; Aker Ocean speculatief.",
+    "capital_allocation_detail": "De grootste deal was de overname van Norway Royal Salmon (NRS) in 2018–2022 (definitieve afronding 2022). Dit was een transformatieve deal die SalMar in Noord-Noorwegen positioneerde. NRS-synergie-realisatie is gemixt: het integratieproces heeft langer geduurd dan gepland en heeft de balans verzwaard. Ook is er strategische investering in SalMar Aker Ocean (offshore JV met Aker, sinds ~2022) — kapitaalintensief, lange terugverdientijd. April 2026: Kverva (eigenaar SalMar) nam een 8,7%-belang in Måsøval — een teken dat de Witzøe-familie sectorconsolidatie blijft bevorderen, maar dit is op holding-niveau (niet via SalMar-balans). Dividend wordt gekoppeld aan winstgevendheid (DPS gehalveerd in 2025 met winst-daling) — een conservatieve houding die voorkomt dat dividend de balans verder onder druk zet.",
+    "integriteit": "Geen materiële controverses of fraude-incidenten; familie-controle creëert wel related-party-risico voor minderheidsaandeelhouders.",
+    "toelichting": "De Witzøe-familie's hoge insider-belang (44%) is een sterke alignment-signaal — zij dragen materieel risico bij waardevernietigende beslissingen. Tegelijkertijd creëert de controlerende-aandeelhouder-structuur risico op related-party transactions en op afgewogenheid van minderheids-belangen. Het CEO-verloop in 2022 (Linda Aase 5 maanden, gevolgd door Arntsen) signaleert een onbestendige top in een kritieke transformatie-periode. Capital allocation is gemengd: NRS-deal was strategisch verstandig maar duur; Aker Ocean is een speculatieve langetermijn-wedde; dividend wordt gekoppeld aan winstgevendheid (DPS gehalveerd in 2025 met winst-daling) — een conservatieve houding die voorkomt dat dividend de balans verder onder druk zet. Geen materiële controverses of fraude-incidenten. Op netto-saldo: redelijk maar niet uitzonderlijk; oordeel NEUTRAAL is passend gegeven het mix-beeld."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "Aquacultuur / commodity-zalm",
+      "kapitaalintensief": true,
+      "consolidatiegraad": "geconsolideerd",
+      "sentiment": "negatief",
+      "trends": "Stagnerende supply-groei door Noorse vergunningstop, opkomst land-based RAS, druk van resource-rent-tax 25%.",
+      "toelichting": "~3–4% volume-CAGR wereldwijd over 2025–2030 volgens diverse sectorrapporten (Atlantische zalm-markt USD 19,9 mld in 2023 → ~USD 26,5 mld in 2030 cf. Yahoo/GlobeNewswire 2025). Volumegroei is structureel beperkt door biologische capaciteit; prijsgroei volgt vraag-aanbod-evenwicht."
+    },
+    "porter": {
+      "dreiging_toetreders": {
+        "score": "laag",
+        "toelichting": "Vergunningstop in Noorwegen, hoge kapitaalintensiteit, langer dan 3 jaar smolt-naar-harvest cyclus. Land-based RAS is potentiële disruptie maar tot dusver niet schaalbaar gebleken (Atlantic Sapphire 2024 boekverliezen)."
+      },
+      "macht_leveranciers": {
+        "score": "middel",
+        "toelichting": "Voer is 50%+ van COGS, geleverd door geconcentreerde voerproducenten (Skretting/Nutreco, Cargill, BioMar). Voerprijzen volgen soja/vismeel-markten."
+      },
+      "macht_klanten": {
+        "score": "middel-hoog",
+        "toelichting": "Grote retailers (Aldi, Lidl, Walmart, Carrefour) onderhandelen agressief; foodservice gefragmenteerder."
+      },
+      "dreiging_substituten": {
+        "score": "middel",
+        "toelichting": "Andere visproducten (kabeljauw, tilapia), kip/varkensvlees, plant-based proteïnen op langere termijn."
+      },
+      "concurrentie_intensiteit": {
+        "score": "middel",
+        "toelichting": "Top-5 spelers (Mowi, SalMar, Lerøy, Cermaq, Bakkafrost) controleren grootste deel; commodity-product, dus prijsconcurrentie via efficiency."
+      },
+      "conclusie": "Sector heeft sterke toetredingsbarrières door vergunningen maar commodity-karakter en klantmacht beperken pricing power; Noorse regulatie (resource-rent-tax) is structurele tegenwind."
+    },
+    "concurrenten": [
+      {
+        "naam": "Mowi",
+        "ticker": "MOWI",
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Lerøy Seafood",
+        "ticker": "LSG",
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Cermaq (privately held, Mitsubishi)",
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Bakkafrost",
+        "ticker": "BAKKA",
+        "marktaandeel_pct": null
+      },
+      {
+        "naam": "Grieg Seafood",
+        "ticker": "GSF",
+        "marktaandeel_pct": null
+      }
+    ],
+    "positie": "#2-speler wereldwijd (incl. associaties) na Mowi; leider in operationele efficiency en kostenpositie in Centraal-Noorwegen.",
+    "positie_toelichting": "Strategisch goed gepositioneerd, maar afhankelijk van Noors klimaat en regulatie. ~301 kt 2025 harvest incl. associaties; Mowi grootste met ~558 kt.",
+    "tam_sam_som": {
+      "tam_mln": 270000,
+      "tam_groei_pct": 4.0,
+      "sam_mln": null,
+      "sam_groei_pct": null,
+      "huidige_penetratie_pct": 10.0,
+      "groei_plausibel": true,
+      "bron": "GlobeNewswire 2025 (Atlantic Salmon Market $26.5B by 2030)",
+      "toelichting": "TAM-projectie veronderstelt zowel volume- als prijsgroei; bij stagnerende spotprijzen zou TAM lager uitvallen. Volumegroei via Aker Ocean offshore en NRS-integratie blijft plausibel."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "VOLDOET NIET",
+      "graham_number": 272,
+      "margin_of_safety_pct": -50,
+      "toelichting": "P/E TTM is 65,1 (537/8,24), ver boven Graham-drempel van 15. P/B ≈ 3,58 (537 vs. BVPS ~ 150), boven drempel van 1,5. Schuldratio (NIBD/EBITDA 4,3x) is hoog. Slecht jaar voor EPS maakt P/E onzinnig op TTM-basis, maar zelfs op mid-cycle EPS van ~22 (gemiddeld 2021–2024) is P/E ~24, nog boven Graham-norm. Dividendrendement (DPS 2025 = 10/koers 537 = 1,9%) is zwak."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "SalMar is een begrijpelijk bedrijf in een commodity-sector met enige moat (kostenvoordeel, vergunningen). Echter: de kasstromen zijn niet voorspelbaar (factor 9,7 verschil tussen FCF-piek 2023 en FCF-dal 2021). Moat is NARROW, niet WIDE. ROIC ligt boven WACC mid-cycle maar de spread is niet zeer breed. Op huidige P/FCF van ~55x is de prijs niet 'redelijk' volgens Buffett-criteria. Management heeft hoog insider-belang (alignment goed), maar geen track record van Buffett-niveau capital allocation."
+    },
+    "lynch": {
+      "categorie": "Cyclical",
+      "oordeel": "ONINTERESSANT",
+      "peg_ratio": 13.0,
+      "toelichting": "Voor een cyclical wil Lynch het aandeel kopen aan de bodem van de cyclus, niet op de top. Huidige FY-marge is 10,6% (lage punt cyclus) maar de koers prijst meer dan een terugkeer naar 2023-piekmarges in. Lynch zou pas instappen als P/E sterk omhoog stijgt door winsterosie maar de markt dit nog niet erkend heeft. Op huidige niveaus is de cyclical te duur ingeprijsd. Verhaal helder ja (zalmkweek, Noorwegen, kostenleider), maar PEG > 2 op vrijwel elke realistische groei-aanname."
+    },
+    "fisher": {
+      "oordeel": "GEMIDDELD",
+      "toelichting": "SalMar opereert in een sector met groei-potentie (eiwit-vraag, premium-zalm), heeft een herkenbare innovatie-cultuur (InnovaMar-fabriek 2010, SalMar Aker Ocean offshore-pilot), en margebescherming via kostenvoordeel en vergunningen. Echter: R&D als % van omzet is laag (commodity-sector); margebescherming is partieel (sterk bij hoge prijzen, fragiel bij lage); management-integriteit NEUTRAAL (geen controverses maar CEO-verloop 2022). Op de Fisher-criteria scoort SalMar middelmatig: wel uitzicht op volumegroei via Aker Ocean en NRS, maar niet de Fisher-prototype-kwaliteit."
+    },
+    "greenblatt": {
+      "oordeel": "GEMIDDELD",
+      "earnings_yield_pct": 3.1,
+      "return_on_capital_pct": 18.0,
+      "toelichting": "Op TTM-basis is de earnings yield laag (3,1%) door het zwakke 2025-jaar. Op mid-cycle EBIT (~6 mld) zou de earnings yield ~ 6,4% zijn — beter maar nog steeds onder Greenblatt's 7%-drempel voor score 4. Return on capital is solide rond 18% mid-cycle. Magic Formula werkt slecht voor cyclische bedrijven omdat het TTM-EBIT gebruikt; mid-cycle aanpassing geeft beter beeld."
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "Verhoging Noorse resource-rent-tax (boven 25%)",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Belastingvoet, NOPAT, terminal FCF",
+      "toelichting": "Politieke discussie blijft levend; in 2023 is initiële 40% voorstel verlaagd naar 25%, maar bij toekomstig links kabinet kan tarief omhoog. Direct effect op terminal NOPAT van 5–10%."
+    },
+    {
+      "omschrijving": "Sea lice-uitbraak / fish disease in een productieregio",
+      "kans": "HOOG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Volume jaar 1–3, EBIT-marge",
+      "toelichting": "Cyclische biologische risico's zijn structureel. Eén regio-stop kan harvestvolume met 10–15% drukken voor een jaar."
+    },
+    {
+      "omschrijving": "Aanhoudend lage zalmprijs (< NOK 70/kg gemiddeld jaar)",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "EBIT-marge basis_fcf",
+      "toelichting": "Zalmprijs in 2025 al op laagste niveau in 3 jaar; verdere daling drukt FCF naar pessimistisch scenario (122 NOK FV)."
+    },
+    {
+      "omschrijving": "NIBD/EBITDA blijft > 4x bij voortgaande capex",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "WACC, dividend continuity",
+      "toelichting": "Kredietratingverlaging zou kosten van schuld omhoogstuwen; dividend-cut-risico (al van 35 → 22 → 10 NOK/aandeel)."
+    },
+    {
+      "omschrijving": "Aker Ocean offshore-project levert geen rendement",
+      "kans": "MIDDEN",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Capex-ROIC",
+      "toelichting": "Pilot Ocean Farm 1 geoogst in 2024; commerciële schaalbaarheid en cost-curve nog onbewezen. Sunk cost ~ NOK 5+ mld geïnvesteerd."
+    },
+    {
+      "omschrijving": "Pre-IPO financial engineering",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "n.v.t.",
+      "toelichting": "SalMar IPO in 2007 — al ~19 jaar publiek; geen recente IPO-correctiebehoefte. Pre-IPO schuldpositie en eventuele dividend recapitalisaties zijn niet meer relevant voor huidige analyse. Specifieke pre-IPO check: niet geconstateerd."
+    },
+    {
+      "omschrijving": "Land-based RAS-disruptie op middellange termijn",
+      "kans": "LAAG",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Terminal groei, marktaandeel",
+      "toelichting": "Atlantic Sapphire en Salmon Evolution kunnen op 5–10 jaar significante volumes leveren dichter bij eindmarkten, met lagere transportkosten en hogere ESG-score."
+    },
+    {
+      "omschrijving": "Witzøe-familie liquideert belang",
+      "kans": "LAAG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Aandelen-overhang",
+      "toelichting": "Hoge insider-positie geeft alignment maar ook overhang-risico bij eventuele family-office-herstructurering."
+    }
+  ],
+  "these_invalide_bij": "Deze these (PASS op fundamentele overprijzing) is weerlegd wanneer (a) zalm-spotprijs structureel terugkeert naar NOK 100+/kg gedurende ≥ 12 maanden waardoor mid-cycle FCF herijkt wordt naar ≥ 5 mld NOK, (b) Noorse regering de resource-rent-tax verlaagt of afschaft (politiek momentum hiervoor is laag), of (c) Aker Ocean offshore-productie een schaalbare kostprijs onder NOK 40/kg aantoont en daardoor het volume- en margeprofiel structureel verbetert.",
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Sea lice / fish welfare",
+        "sasb_categorie": "Animal Husbandry & Welfare",
+        "risico_niveau": "HOOG",
+        "financiele_impact": "Mortaliteit, harvesting-uitstel, regulatoire boetes",
+        "dcf_impact": "Volume jaar 1–3"
+      },
+      {
+        "factor": "Vervuiling lokale fjorden",
+        "sasb_categorie": "Ecological Impacts",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Vergunningsverlies regionaal, herstelkosten",
+        "dcf_impact": "EBIT-marge"
+      },
+      {
+        "factor": "Voer-supply chain (sojabronnen)",
+        "sasb_categorie": "Supply Chain Mgmt",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Voerkosten, deforestatie-claims",
+        "dcf_impact": "COGS"
+      },
+      {
+        "factor": "Water gebruik / energie smolt-RAS",
+        "sasb_categorie": "Water & Energy Mgmt",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Energiekosten, capex",
+        "dcf_impact": "Capex"
+      },
+      {
+        "factor": "Klimaatverandering (warmer water)",
+        "sasb_categorie": "Physical Climate Risk",
+        "risico_niveau": "MIDDEL-HOOG",
+        "financiele_impact": "Fjord-verschuiving, productie-disruptie",
+        "dcf_impact": "Volume terminal"
+      }
+    ],
+    "eindoordeel": "GEMIDDELD RISICO",
+    "toelichting": "SalMar publiceert sinds 2025 een geïntegreerd verslag met CSRD-rapportage. ESG-risico's zijn materieel (biologisch welzijn, fjord-impact) maar het bedrijf rapporteert proactief. Score op ESG-ratings (Sustainalytics, MSCI) niet apart op peildatum geverifieerd."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-Q2",
+      "omschrijving": "Q1 2026 resultaten — eerste kwartaal na zwak 2025",
+      "richting": "NEUTRAAL",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-06",
+      "omschrijving": "AGM 2026 — finale dividend 2025 (DPS verlaagd naar 10)",
+      "richting": "NEGATIEF",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-08",
+      "omschrijving": "Q2 2026 resultaten — zomerkwartaal, hoge harvest",
+      "richting": "POSITIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-H2",
+      "omschrijving": "Aker Ocean Ocean Farm 2 commissioning update",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "Lopend",
+      "omschrijving": "Zalm-spotprijs ontwikkeling (Fish Pool Index weekly)",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-2027",
+      "omschrijving": "Mogelijke aanpassing resource-rent-tax (post-2025-verkiezing)",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2027",
+      "omschrijving": "NIBD-piek: covenant-druk bij blijvende lage EBITDA",
+      "richting": "NEGATIEF",
+      "impact": "GROOT"
+    }
+  ],
+  "fair_value": {
+    "methoden_toegepast": [
+      "DCF",
+      "EPV",
+      "Multiples (cross-check)"
+    ],
+    "methoden_niet_toegepast": [
+      {
+        "methode": "DDM",
+        "reden": "DPS te volatiel in cyclische sector om als primaire valuation te dienen"
+      },
+      {
+        "methode": "SOTP",
+        "reden": "SalMar is niet conglomeraat-genoeg; segment-aandelen wel relevant maar niet als gescheiden-business gewaardeerd"
+      }
+    ],
+    "toelichting_methode": "DCF FCFF tegen WACC, met mid-year convention. EPV als no-growth baseline; multiples als sanity-check. DDM en SOTP niet zinvol voor deze cyclische case.",
+    "valuta_kasstromen": "NOK",
+    "wacc": {
+      "risicovrije_rente_pct": 4.4,
+      "risicovrije_rente_bron": "Norway 10-year Government Bond Yield, 10 april 2026 (TradingEconomics)",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 5.5,
+      "erp_bron": "Damodaran Implied ERP (mature market, jaar 2026; standaardwaarde gebruikt)",
+      "beta_adjusted": 1.05,
+      "beta_bron": "Bottom-up sector-beta voor Noorse aquacultuur (sector unlevered ~ 0,8, relevered op SalMar-D/V 23%)",
+      "beta_type": "bottom_up",
+      "country_risk_premium_pct": 0,
+      "size_premium_pct": 0,
+      "cost_of_equity_pct": 10.18,
+      "schuldkosten_na_belasting_pct": 3.3,
+      "ev_gewicht_pct": 76.9,
+      "dv_gewicht_pct": 23.1,
+      "wacc_pct": 8.59,
+      "sector_wacc_pct": 7.0,
+      "illiquiditeitskorting_pct": 0
+    },
+    "dcf": {
+      "model_type": "2-fase (5 jaar fase 1 + 5 jaar fase 2 + Gordon terminal)",
+      "basis_fcf": 3000,
+      "basis_fcf_na_sbc": 3000,
+      "fcf_type": "Genormaliseerde mid-cycle FCF",
+      "fcf_definitie": "FCFF",
+      "groei_fase1_pct": 4.0,
+      "groei_fase2_pct": 2.5,
+      "terminal_groei_pct": 2.0,
+      "terminal_methode": "Gordon Growth (primair); exit-multiple cross-check",
+      "exit_multiple_gebruikt": 9.5,
+      "exit_multiple_bron": "Peer-mediaan over 2018–2024 voor Mowi, SalMar, Lerøy, Bakkafrost (typisch 9–11x mid-cycle)",
+      "terminal_value_gordon_growth": 24800,
+      "terminal_value_exit_multiple": 31000,
+      "terminal_value_pct_van_totaal": 53.5,
+      "terminal_implied_ev_ebitda": 5.0,
+      "terminal_groei_consistentie": "2% past bij langetermijn nominale BBP-groei Noorwegen (~2,5%) en globale food-CAGR; herinvesteringsvoet ≈ 13% bij 15% mid-cycle ROIC = 2,0% groei.",
+      "mid_year_convention": true,
+      "wacc_pct": 8.59,
+      "shares_outstanding_mln": 134.0,
+      "nettoschuld_huidig": 21600
+    },
+    "dcf_toelichting": "SalMar opereert in een cyclische sector (zalmkweek, commoditygevoelig); de verplichte cycliciteitscheck van METHODE.md REGEL 1 dwingt mid-cycle FCF-normalisatie. Over 2021–2025 varieerde FCF van NOK 684 mln (2021, dal) tot NOK 6.622 mln (2023, piek), met mediaan 1.768 en gemiddelde 2.637. De gewogen mediaan-FCF-marge × huidige omzet methode geeft 2.403 NOK; gemiddelde-marge × omzet geeft 2.858 NOK. Gekozen mid-cycle FCF: 3.000 NOK mln, iets boven mediaan om recht te doen aan structurele volume-groei van NRS-acquisitie (volledige run-rate effect pas vanaf 2024) en omdat 2025 een uitzonderlijk slecht jaar was (zalmprijs 30% onder 5y-gemiddelde). Het verschil met meest recente FCF (1.310 in 2025) is +129% — gerechtvaardigd omdat 2025 een dal-jaar is. Sanity check: norm EBIT-marge 22,9% × omzet 27.394 = 6.284 EBIT; na 40% blended tax (incl. resource-rent) = 3.770 NOPAT; minus reinvestering capex-D&A-spread (~700–800) en delta NWC ≈ 3.000 mid-cycle FCF.",
+    "projectie": [
+      {
+        "jaar": 2026,
+        "omzet": 28490,
+        "omzet_groei_pct": 4.0,
+        "ebit": 5413,
+        "ebit_marge_pct": 19.0,
+        "nopat": 3248,
+        "capex": 1800,
+        "delta_nwc": -200,
+        "sbc": 0,
+        "fcf": 3120
+      },
+      {
+        "jaar": 2027,
+        "omzet": 29630,
+        "omzet_groei_pct": 4.0,
+        "ebit": 5926,
+        "ebit_marge_pct": 20.0,
+        "nopat": 3555,
+        "capex": 1900,
+        "delta_nwc": -200,
+        "sbc": 0,
+        "fcf": 3245
+      },
+      {
+        "jaar": 2028,
+        "omzet": 30815,
+        "omzet_groei_pct": 4.0,
+        "ebit": 6471,
+        "ebit_marge_pct": 21.0,
+        "nopat": 3883,
+        "capex": 2000,
+        "delta_nwc": -200,
+        "sbc": 0,
+        "fcf": 3375
+      },
+      {
+        "jaar": 2029,
+        "omzet": 32048,
+        "omzet_groei_pct": 4.0,
+        "ebit": 6730,
+        "ebit_marge_pct": 21.0,
+        "nopat": 4038,
+        "capex": 2100,
+        "delta_nwc": -200,
+        "sbc": 0,
+        "fcf": 3510
+      },
+      {
+        "jaar": 2030,
+        "omzet": 33330,
+        "omzet_groei_pct": 4.0,
+        "ebit": 7000,
+        "ebit_marge_pct": 21.0,
+        "nopat": 4200,
+        "capex": 2200,
+        "delta_nwc": -200,
+        "sbc": 0,
+        "fcf": 3650
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 122,
+        "upside_pct": -77.3,
+        "fcf_groei_pct": 0.0,
+        "wacc_pct": 9.09,
+        "kans_pct": 30.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 230,
+        "upside_pct": -57.1,
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 8.59,
+        "kans_pct": 50.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 372,
+        "upside_pct": -30.7,
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 8.09,
+        "kans_pct": 20.0
+      }
+    ],
+    "kansgewogen_fair_value": 226,
+    "reverse_dcf": {
+      "impliciete_groei_pct": 11.05,
+      "historische_fcf_cagr_pct": 18.0,
+      "consensus_groei_pct": 6.0,
+      "interpretatie": "Een impliciete groei van 11% per jaar gedurende tien jaar voor een NARROW-moat cyclical-commodity is hoogonwaarschijnlijk. Volume-CAGR limiet is ~3–5% gegeven Noorse vergunningstop; resterend 6%+ moet uit prijsgroei komen. Zalmprijs is grotendeels een functie van wereldwijde supply (gereguleerd) versus vraag (food-trend); een structureel 6% reële prijsgroei is niet historisch geprecedenteerd."
+    },
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 22.9,
+      "genormaliseerde_nopat": 3770,
+      "maintenance_capex": 1900,
+      "adjusted_earnings_power": 3770,
+      "epv_per_aandeel": 167,
+      "groeipremie_pct": 38
+    },
+    "ddm": {
+      "uitgevoerd": false
+    },
+    "sotp": {
+      "uitgevoerd": false
+    },
+    "synthese": {
+      "fair_value_bandbreedte_laag": 122,
+      "fair_value_bandbreedte_centraal": 230,
+      "fair_value_bandbreedte_hoog": 372,
+      "methode_gewichten": "DCF 60%, EPV 25%, Multiples 15%",
+      "margin_of_safety_vereist_pct": 25,
+      "koopniveau": 173
+    },
+    "synthese_toelichting": "DCF krijgt grootste gewicht omdat het scenario-gebaseerd cyclische normalisatie integreert. EPV als no-growth-baseline corrigeert voor over-optimistische groei-aannames. Multiples-cross-check (mid-cycle EV/EBITDA ~10x peer-mediaan) bevestigt FV-range. MOS van 25% voor cyclische small-data; koopniveau 173 (basis FV 230 × 0,75) betekent een correctie van -68% op huidige koers.",
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "groei_range": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "matrix": [
+        [
+          252,
+          218,
+          190,
+          166,
+          145,
+          127
+        ],
+        [
+          281,
+          244,
+          214,
+          188,
+          165,
+          145
+        ],
+        [
+          312,
+          272,
+          239,
+          211,
+          186,
+          165
+        ],
+        [
+          345,
+          302,
+          266,
+          236,
+          209,
+          186
+        ],
+        [
+          380,
+          334,
+          295,
+          262,
+          233,
+          208
+        ]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      {
+        "framework": "Graham",
+        "score": 1,
+        "max": 5,
+        "oordeel": "VOLDOET NIET"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 2,
+        "max": 5,
+        "oordeel": "GEDEELTELIJK"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 1,
+        "max": 5,
+        "oordeel": "ONINTERESSANT"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 2,
+        "max": 5,
+        "oordeel": "GEMIDDELD"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 2,
+        "max": 5,
+        "oordeel": "GEMIDDELD"
+      },
+      {
+        "framework": "Moat",
+        "score": 3,
+        "max": 5,
+        "oordeel": "NARROW MOAT"
+      },
+      {
+        "framework": "Management",
+        "score": 3,
+        "max": 5,
+        "oordeel": "NEUTRAAL"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Downside -57% (>15%)"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 1,
+        "max": 5,
+        "oordeel": "IPO 2007 (>10 jaar), gelijk aan DCF score"
+      }
+    ],
+    "totaal": 16,
+    "max": 45,
+    "eindoordeel": "PASS",
+    "samenvatting": "SalMar is operationeel een sterk geleid Noors zalmbedrijf met een #2-positie wereldwijd, een NARROW moat gebaseerd op kostenvoordeel en vergunningen, en een mid-cycle ROIC-WACC-spread van zes tot zeven procentpunten. De huidige beurskoers van NOK 537 prijst echter een te optimistisch toekomstscenario in: het reverse-DCF impliceert een vereiste FCF-groei van 11% per jaar gedurende tien jaar, wat structureel boven het management-guidance-volume (6%) en boven de historische FCF-CAGR ligt. Op een methodisch genormaliseerde mid-cycle FCF van NOK 3,0 mld komt de fair value op NOK 230 (-57% versus huidige koers). Zelfs in het optimistische scenario (NOK 372) blijft er geen margin-of-safety. De resource-rent-tax van 25% en de oplopende NIBD/EBITDA naar 4,3x maken het balans-profiel kwetsbaar."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "SalMar Integrated Annual Report 2025",
+      "SalMar Integrated Annual Report 2024",
+      "SalMar Annual Report 2023 (PDF)",
+      "SalMar Annual Report 2022 (PDF)",
+      "SalMar Q4 2025 Trading Update",
+      "SalMar Q4 2025 Earnings (mirror)",
+      "SalMar Q3 2025 (Investing.com transcript)",
+      "SalMar Q4 2020 Results",
+      "StockAnalysis.com SalMar Financials",
+      "StockAnalysis.com SalMar Dividend",
+      "CompaniesMarketCap.com SalMar Revenue",
+      "Yahoo Finance SALM.OL",
+      "Norway 10y Bond Yield",
+      "Atlantic salmon spot price (Norway)",
+      "Norway resource rent tax 25%",
+      "SalMar 20 largest shareholders",
+      "Witzøe / Kverva 44,3% belang",
+      "SalMar IPO 8 mei 2007",
+      "Frode Arntsen CEO benoeming 2022",
+      "SalMar BBB+ Nordic Credit Rating (2023)",
+      "Atlantic Salmon market $26.5B by 2030"
+    ],
+    "financieel": [
+      {
+        "jaar": 2017,
+        "bron": "Web-snippet (revenue + op-EBIT)",
+        "url": "https://stockanalysis.com/quote/osl/SALM/financials/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2018,
+        "bron": "CompaniesMarketCap (revenue) + AR2018 PDF (niet gefetcht)",
+        "url": "https://companiesmarketcap.com/salmar/revenue/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2019,
+        "bron": "CompaniesMarketCap (revenue)",
+        "url": "https://companiesmarketcap.com/salmar/revenue/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2020,
+        "bron": "SalMar Q4 2020 persbericht",
+        "url": "https://www.globenewswire.com/news-release/2021/02/25/2182013/0/en/SalMar-posts-satisfactory-results-in-the-fourth-quarter-2020-and-recommends-a-dividend-of-NOK-20-per-share.html",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2021,
+        "bron": "SalMar Annual Report 2021 (PDF) + StockAnalysis cross-check",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/salmar-asa_2021.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2022,
+        "bron": "SalMar AR 2022 (PDF op AnnualReports.com)",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/salmar-asa_2022.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2023,
+        "bron": "SalMar AR 2023 (PDF op AnnualReports.com)",
+        "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/salmar-asa_2023.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2024,
+        "bron": "SalMar Integrated Annual Report 2024 (gepubliceerd april 2025)",
+        "url": "https://www.globenewswire.com/news-release/2025/04/09/3058806/0/en/SalMar-Integrated-annual-report-2024.html",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2025,
+        "bron": "SalMar Integrated Annual Report 2025 + Q4 2025 trading update",
+        "url": "https://www.globenewswire.com/news-release/2026/03/27/3263570/0/en/SalMar-Integrated-annual-report-2025.html",
+        "betrouwbaarheid": "HOOG"
+      }
+    ],
+    "pre_ipo_data_beschikbaar": false,
+    "ontbrekende_data": "Pre-2021 financiële cijfers: revenue alleen op aggregator-niveau (companiesmarketcap), geen gedetailleerde balans / kasstromen / dividend-historie geverifieerd voor 2015–2019. Top-5 klantconcentratie (in %). Exacte CFO en capex per jaar 2021–2025 (FCF wel beschikbaar maar niet uitgesplitst zonder PDF-toegang). Specifieke remuneratie-KPI's CEO/CFO. Insider transactions in laatste 24 maanden. Marktaandeel-percentages concurrenten (Mowi, Lerøy, Bakkafrost). Damodaran ERP voor exacte peildatum 2026-04 — standaardwaarde 5,5% gebruikt. Brutomarge per jaar (rapportagestructuur SalMar maakt brutomarge in IFRS-vorm niet betekenisvol). ESG-rating Sustainalytics / MSCI op exacte peildatum. ROIC en ROE per jaar voor de hele 10-jaars-reeks. IPO-prijs 2007 in NOK.",
+    "non_gaap_gebruikt": true,
+    "non_gaap_toelichting": "SalMar rapporteert 'operational EBIT' naast IFRS EBIT, exclusief fair-value-aanpassingen biologische voorraden. Voor de DCF is IFRS EBITDA en FCF gebruikt; voor de cycliciteitscheck is operational EBIT als referentie meegenomen omdat het de cash-earnings-power beter weergeeft dan IFRS EBIT die door fair-value-revaluaties op voorraden wordt vertekend."
+  },
+  "bronnen": [
+    {
+      "titel": "SalMar Integrated Annual Report 2025",
+      "url": "https://www.salmar.no/en/news/salmar-integrated-annual-report-2025/",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "SalMar Integrated Annual Report 2024",
+      "url": "https://www.salmar.no/en/news/salmar-integrated-annual-report-2024/",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "SalMar Annual Report 2023 (PDF)",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/salmar-asa_2023.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "SalMar Annual Report 2022 (PDF)",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/s/salmar-asa_2022.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "SalMar Q4 2025 Trading Update",
+      "url": "https://www.globenewswire.com/news-release/2026/01/06/3213971/0/en/SalMar-Q4-2025-Trading-update.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "SalMar Q4 2025 Earnings (mirror)",
+      "url": "https://www.manilatimes.net/2026/02/10/tmt-newswire/globenewswire/salmar-strong-operational-performance-with-recordhigh-harvest-volume-and-lower-cost-level/2274875",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "SalMar Q3 2025 (Investing.com transcript)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-salmars-q3-2025-shows-growth-in-ebit-and-harvest-volume-93CH-4336631",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "SalMar Q4 2020 Results",
+      "url": "https://www.globenewswire.com/news-release/2021/02/25/2182013/0/en/SalMar-posts-satisfactory-results-in-the-fourth-quarter-2020-and-recommends-a-dividend-of-NOK-20-per-share.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "StockAnalysis.com SalMar Financials",
+      "url": "https://stockanalysis.com/quote/osl/SALM/financials/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "StockAnalysis.com SalMar Dividend",
+      "url": "https://stockanalysis.com/quote/osl/SALM/dividend/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "CompaniesMarketCap.com SalMar Revenue",
+      "url": "https://companiesmarketcap.com/salmar/revenue/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "Yahoo Finance SALM.OL",
+      "url": "https://finance.yahoo.com/quote/SALM.OL/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "Norway 10y Bond Yield",
+      "url": "https://tradingeconomics.com/norway/government-bond-yield",
+      "type": "macro"
+    },
+    {
+      "titel": "Atlantic salmon spot price (Norway, week 15 NOK 81.84/kg)",
+      "url": "https://www.fishfarmingexpert.com/farmed-cod-norwegian-salmon-norwegian-seafood-council/decrease-in-salmon-spot-price/2104486",
+      "type": "sectornieuws"
+    },
+    {
+      "titel": "Norway resource rent tax 25%",
+      "url": "https://www.undercurrentnews.com/2023/06/01/norwegian-parliament-passes-new-25-resource-rent-tax-on-salmon-farming/",
+      "type": "regulatie"
+    },
+    {
+      "titel": "SalMar 20 largest shareholders",
+      "url": "https://www.salmar.no/en/20-largest-shareholders/",
+      "type": "bedrijfsinfo"
+    },
+    {
+      "titel": "Witzøe / Kverva 44,3% belang",
+      "url": "https://en.wikipedia.org/wiki/Gustav_Magnar_Witz%C3%B8e",
+      "type": "bedrijfsinfo"
+    },
+    {
+      "titel": "SalMar IPO 8 mei 2007",
+      "url": "https://www.salmar.no/en/investor/share-bond/share-information/",
+      "type": "bedrijfsinfo"
+    },
+    {
+      "titel": "Frode Arntsen CEO benoeming 2022",
+      "url": "https://www.globenewswire.com/news-release/2022/10/24/2539662/0/en/SalMar-Linda-Aase-steps-down-as-SalMar-CEO.html",
+      "type": "bedrijfsinfo"
+    },
+    {
+      "titel": "SalMar BBB+ Nordic Credit Rating (2023)",
+      "url": "https://nordiccreditrating.com/uploads/2023-04/NCR%20-%20SalMar_ASA%20-%20Full%20Rating%20Report%2024%20Apr.%202023.pdf",
+      "type": "rating"
+    },
+    {
+      "titel": "Atlantic Salmon market $26.5B by 2030",
+      "url": "https://www.globenewswire.com/news-release/2025/01/13/3008359/0/en/Atlantic-Salmon-Market-Eyes-26-5-Billion-Valuation-by-2030-Mowi-SalMar-AquaChile-Leroy-Seafood-Group-and-Cermaq-Group-Dominate.html",
+      "type": "onderzoeksrapport"
+    }
+  ],
+  "update_historie": [
+    {
+      "datum": "2026-04-26",
+      "type": "Eerste publicatie",
+      "koers_bij_update": 537.0,
+      "fair_value_bij_update": 230,
+      "oordeel_bij_update": "PASS",
+      "samenvatting": "Eerste analyse — basis fair value NOK 230, kansgewogen NOK 226 vs koers NOK 537. PASS-oordeel; markt prijst ~11% FCF-groei in tegen plausibele 4-5%."
+    }
+  ]
+}
