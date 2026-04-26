@@ -1,0 +1,1294 @@
+{
+  "meta": {
+    "ticker": "BRG",
+    "exchange": "OSL",
+    "naam": "Borregaard ASA",
+    "sector": "Materialen",
+    "industrie": "Specialty chemicals / biorefinery",
+    "land": "Noorwegen",
+    "koers": 176.0,
+    "valuta": "NOK",
+    "peildatum": "2026-04-26",
+    "marktkapitalisatie": "NOK 17,55 mld",
+    "marktkapitalisatie_mln": 17550,
+    "free_float_pct": 85.0,
+    "index_lidmaatschap": "OSEBX, OBX",
+    "domein": "borregaard.com",
+    "yahoo_symbol": "BRG.OL"
+  },
+  "executive_summary": {
+    "kernthese": "Borregaard exploiteert een unieke geïntegreerde biorefinery in Sarpsborg (NO) waarin houtvezel volledig wordt benut: specialty cellulose voor cellulose-ethers en -acetaat (BioMaterials), lignosulfonaten en biovanillin uit lignine (BioSolutions), en bio-ethanol plus farmaceutische intermediairen (Fine Chemicals). Het bedrijf is wereldmarktleider in lignine met ~35-40% volume-aandeel en behoort wereldwijd tot de top vier in specialty cellulose. Een 135-jaar oude installed base, propriëtaire procestechnologie en hechte klantrelaties met formuleerders zorgen voor een narrow-tot-wide moat met stabiele EBITDA-marges van 23-25%. Structurele drivers zijn de groene transitie (bio-based vervangers van fossiele chemie), specialiteitenmix en de US-lignine joint venture met Rayonier. De grootste risico's zijn de geleidelijke ROIC-druk door zware capex-cycli, Chinees aanbod in cellulose-ethers en het feit dat 2024-2025 vanaf record-EBITDA-niveaus wordt gemeten. De waardering is na een zware koersrally fors opgelopen.",
+    "oordeel": "PASS",
+    "koers": 176.0,
+    "valuta": "NOK",
+    "fair_value_basis": 121,
+    "fair_value_kansgewogen": 123,
+    "epv_per_aandeel": 103,
+    "upside_pct": -31.0,
+    "fair_value_scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 73,
+        "upside_pct": -58.5,
+        "fcf_groei_pct": 1.0,
+        "wacc_pct": 9.12,
+        "kans_pct": 20.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 121,
+        "upside_pct": -31.3,
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 8.12,
+        "kans_pct": 55.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 166,
+        "upside_pct": -5.7,
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 7.62,
+        "kans_pct": 25.0
+      }
+    ],
+    "reverse_dcf_impliciete_groei_pct": 8.7,
+    "grootste_kans": "Structurele groei lignin-derivaten via US-fabriek met Rayonier en aanhoudende vanillin-vraag uit voedingsindustrie.",
+    "grootste_risico": "Cyclisch piekjaar 2025 verbergt verzwakte ROIC (~9% vs WACC 8%); markt prijst >8%/jaar FCF-groei in."
+  },
+  "bedrijfsprofiel": {
+    "beschrijving": "Borregaard ASA is een Noors specialty-chemicals bedrijf dat een geïntegreerde biorefinery exploiteert in Sarpsborg, Østfold. Het bedrijf zet houtvezel (vooral Noorse spar) om in een breed pakket van hoogwaardige producten: speciaalcellulose (raw material voor cellulose-ethers en -acetaat in farmaceutische, voedings- en bouwtoepassingen), lignosulfonaten en lignine-derivaten (dispergeermiddelen voor beton, mengvoer, agrochemie), biovanillin (de enige niet-fossiele, niet-petrochemische vanillin op industriële schaal), Exilva microfibrillated cellulose (rheologie-modificator voor coatings), tweede-generatie bio-ethanol uit hexose-suikers, en fine chemicals waaronder farmaceutische intermediairen voor contrastmiddelen. De omzet wordt vooral gedreven door langdurige B2B-leveringscontracten met formuleerders en distributeurs; pricing wordt deels bepaald door gespecialiseerde formuleringen en deels door commodity-spreads (vooral in lignosulfonaten). De drie segmenten zijn BioSolutions (~45% omzet, lignine-derivaten en biovanillin), BioMaterials (~40%, specialty cellulose) en Fine Chemicals (~15%, bio-ethanol en farma-intermediairen). Eindafnemers zijn cement- en betonproducenten, agrochemie- en mengvoer-formuleerders, farmaceutische cellulose-ethers, voedingsindustrie (vanillin) en coatings, gespreid over meer dan honderd landen. Productie is geconcentreerd in Sarpsborg met aanvullende lignine-installaties in Spanje, Zuid-Afrika, Brazilië en sinds 2024 Florida (joint venture met Rayonier). Het ingredient-brand-karakter, propriëtaire procestechnologie en hoge resource-efficiëntie (~95% benutting van houtgrondstof) onderscheiden Borregaard van losse pulp- of lignine-spelers.",
+    "geschiedenis": "Borregaard werd in 1889 opgericht in Sarpsborg en groeide in de 20e eeuw uit tot een geïntegreerde producent van pulp, papier en chemicaliën onder onder andere de paraplu van Orkla. Vanaf de jaren '90 heeft het bedrijf een radicale strategische transformatie ondergaan: weg van commodity-pulp, richting hoogwaardige specialiteiten op basis van dezelfde geïntegreerde houtfractionering. Onder de leiding van CEO Per A. Sørlie (in functie sinds 1999) werd het portfolio gerationaliseerd: niet-strategische assets verkocht, R&D geïnvesteerd in lignin-derivaten en speciale cellulose, en de vanillin-installatie internationaal gepositioneerd als enige niet-petrochemische capaciteit. In oktober 2012 werd Borregaard afgesplitst van Orkla en zelfstandig genoteerd op de Oslo Stock Exchange tegen een IPO-koers van NOK 21,50. De rit sindsdien is markant: marktwaarde groeide van NOK 2,1 mld bij IPO naar NOK 17-22 mld in 2024-2025. Belangrijke kapitaalinvesteringen waren het in 2016 geopende Exilva-MFC-plant, de joint venture met Rayonier voor US-lignine in Florida (operationeel sinds 2024), en de BC50-uitbreiding voor cellulose-ethers. In mei 2025 kondigde Borregaard de opvolging aan: Tom Erik Foss-Jacobsen (25 jaar bij Borregaard, 21 jaar leidinggevende rollen) volgde Sørlie per 1 augustus 2025 op. Q4 2025 werd belast met NOK 245 mln impairments op de bio-startup investeringen Alginor, Kaffe Bueno en Lignovations, wat de FY2025 nettowinst drukte tot NOK 620 mln (vs NOK 823 mln in 2024) terwijl de onderliggende EBITDA juist een nieuw all-time high bereikte van NOK 1.878 mln.",
+    "bedrijfsmodel": "Borregaard verdient voornamelijk geld door houtfractioneringsproducten te verkopen aan industriële klanten in 100+ landen. Drie segmenten: (1) BioSolutions verkoopt lignosulfonaten/lignin-derivaten en biovanillin (~45% omzet, hoogste marges); (2) BioMaterials verkoopt specialty cellulose voor cellulose-ethers en acetaat (~40% omzet, meer cyclisch); (3) Fine Chemicals omvat bio-ethanol en farmaceutische intermediairen (~15% omzet). Omzet is overwegend B2B en deels onder meerjarige contracten; lignosulfonaten worden meer spot-georiënteerd verhandeld.",
+    "ipo_context": "IPO 18 oktober 2012 als afsplitsing van Orkla. Initiële koers NOK 21,50; geen schuldenlading verbonden aan de IPO (Orkla droeg een schone balans over). Geen pre-IPO leveraged recap; geen IPO-correctie nodig (IPO 14 jaar geleden, ruim buiten 10-jaarsregel).",
+    "klantenprofiel": "B2B, gefragmenteerd, geen klantconcentratie >10%. Klanten zijn formuleerders van betontoeslagstoffen, agrochemie, mengvoeders, farmaceutische cellulose-ethers, voedingsindustrie (vanillin) en coatings.",
+    "oprichtingsjaar": 1889,
+    "ipo_datum": "2012-10-18",
+    "ipo_koers": 21.5,
+    "personeel": 1250,
+    "landen_actief": 100,
+    "klantconcentratie": "Gefragmenteerd, geen klant >10% omzet (per AR 2024).",
+    "geografische_spreiding": [
+      {
+        "regio": "Europa",
+        "omzet_pct": 52,
+        "valuta": "EUR/NOK"
+      },
+      {
+        "regio": "Amerika",
+        "omzet_pct": 28,
+        "valuta": "USD"
+      },
+      {
+        "regio": "Azië",
+        "omzet_pct": 17,
+        "valuta": "USD/lokaal"
+      },
+      {
+        "regio": "Overig",
+        "omzet_pct": 3,
+        "valuta": "mix"
+      }
+    ],
+    "geografische_spreiding_toelichting": "Productie is geconcentreerd in Sarpsborg (Noorwegen) plus lignine-installaties in Spanje, Zuid-Afrika, Brazilië en sinds 2024 Florida (JV met Rayonier). Omzetvaluta is overwegend USD en EUR; kosten zijn substantieel NOK (loon, energie, hout). Dit creëert een natuurlijk valuta-risico waarbij een sterkere NOK de marges drukt; in 2024-2025 hielp de zwakke NOK juist. Borregaard hedget via natuurlijke offsets (USD-financiering) en gerichte FX-derivaten, maar restexposure blijft materieel.",
+    "segmenten": [
+      {
+        "naam": "BioSolutions",
+        "omzet_pct": 45,
+        "beschrijving": "Lignosulfonaten, lignin-derivaten en biovanillin uit lignine; toepassingen in beton, agrochemie, mengvoer en voedingsindustrie."
+      },
+      {
+        "naam": "BioMaterials",
+        "omzet_pct": 40,
+        "beschrijving": "Specialty cellulose voor cellulose-ethers (bouw, farmacie) en acetaat (filtertow, textiel); inclusief Exilva microfibrillated cellulose."
+      },
+      {
+        "naam": "Fine Chemicals",
+        "omzet_pct": 15,
+        "beschrijving": "Tweede-generatie bio-ethanol uit hexose, en fine chemical intermediairen voor contrastmiddelen en farmaceutische industrie."
+      }
+    ],
+    "aandeelhouders": [
+      {
+        "naam": "NNIP Advisors B.V.",
+        "pct": 9.06,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Folketrygdfondet",
+        "pct": 7.95,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "MUST INVEST AS",
+        "pct": 7.13,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Schroder Investment Management",
+        "pct": 3.93,
+        "type": "Institutioneel"
+      },
+      {
+        "naam": "Nordea Funds",
+        "pct": 3.93,
+        "type": "Institutioneel"
+      }
+    ],
+    "institutioneel_eigendom_trend": "Stabiel hoog institutioneel eigendom (top 20 = 51,1%). Geen controlerend aandeelhouder; free float effectief ~85%. Folketrygdfondet (Noorse staatspensioenfonds) is structurele lange-termijn-houder."
+  },
+  "financieel": {
+    "valuta_label": "NOK mln",
+    "resultatenrekening": [
+      {
+        "jaar": 2018,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "ebitda": 558,
+        "ebitda_marge_pct": null,
+        "nettowinst": null,
+        "nettomarge_pct": null,
+        "eps": null,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2019,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "ebitda": 697,
+        "ebitda_marge_pct": null,
+        "nettowinst": null,
+        "nettomarge_pct": null,
+        "eps": null,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2020,
+        "omzet": null,
+        "omzet_groei_pct": null,
+        "ebit": null,
+        "ebit_marge_pct": null,
+        "ebitda": 886,
+        "ebitda_marge_pct": null,
+        "nettowinst": null,
+        "nettomarge_pct": null,
+        "eps": null,
+        "eps_groei_pct": null,
+        "aandelen_uitstaand_mln": null
+      },
+      {
+        "jaar": 2021,
+        "omzet": 5805,
+        "omzet_groei_pct": 9.0,
+        "brutowinst": 3653,
+        "brutomarge_pct": 62.9,
+        "ebit": 952,
+        "ebit_marge_pct": 16.4,
+        "ebitda": 1431,
+        "ebitda_marge_pct": 24.6,
+        "nettowinst": 692,
+        "nettomarge_pct": 11.9,
+        "eps": 6.94,
+        "eps_groei_pct": 58.8,
+        "aandelen_uitstaand_mln": 99.7
+      },
+      {
+        "jaar": 2022,
+        "omzet": 6881,
+        "omzet_groei_pct": 18.5,
+        "brutowinst": 4253,
+        "brutomarge_pct": 61.8,
+        "ebit": 1186,
+        "ebit_marge_pct": 17.2,
+        "ebitda": 1635,
+        "ebitda_marge_pct": 23.8,
+        "nettowinst": 892,
+        "nettomarge_pct": 13.0,
+        "eps": 8.92,
+        "eps_groei_pct": 28.5,
+        "aandelen_uitstaand_mln": 99.7
+      },
+      {
+        "jaar": 2023,
+        "omzet": 7132,
+        "omzet_groei_pct": 3.6,
+        "brutowinst": 4587,
+        "brutomarge_pct": 64.3,
+        "ebit": 1291,
+        "ebit_marge_pct": 18.1,
+        "ebitda": 1781,
+        "ebitda_marge_pct": 25.0,
+        "nettowinst": 870,
+        "nettomarge_pct": 12.2,
+        "eps": 8.71,
+        "eps_groei_pct": -2.4,
+        "aandelen_uitstaand_mln": 99.7
+      },
+      {
+        "jaar": 2024,
+        "omzet": 7617,
+        "omzet_groei_pct": 6.8,
+        "brutowinst": 4885,
+        "brutomarge_pct": 64.1,
+        "ebit": 1283,
+        "ebit_marge_pct": 16.8,
+        "ebitda": 1844,
+        "ebitda_marge_pct": 24.2,
+        "nettowinst": 823,
+        "nettomarge_pct": 10.8,
+        "eps": 8.25,
+        "eps_groei_pct": -5.3,
+        "aandelen_uitstaand_mln": 99.7
+      },
+      {
+        "jaar": 2025,
+        "omzet": 7713,
+        "omzet_groei_pct": 1.3,
+        "brutowinst": 5054,
+        "brutomarge_pct": 65.5,
+        "ebit": 1287,
+        "ebit_marge_pct": 16.7,
+        "ebitda": 1878,
+        "ebitda_marge_pct": 24.3,
+        "nettowinst": 620,
+        "nettomarge_pct": 8.0,
+        "eps": 6.22,
+        "eps_groei_pct": -24.6,
+        "aandelen_uitstaand_mln": 99.7
+      }
+    ],
+    "toelichting_resultaten": "Borregaard heeft een stabiele EBITDA-marge in de 23-25%-range gehandhaafd door de jaren heen, ondanks substantiële omzetschommelingen rond grondstof- en lignosulfonaten-prijscycli. EBITDA verdrievoudigde tussen 2018 (NOK 558 mln) en 2025 (NOK 1.878 mln) door een combinatie van prijsverhogingen, betere productmix richting biovanillin/specialty cellulose, en USD-tegenwind die in NOK-rapportage gunstig was. De FY2025-nettowinstdaling tot NOK 620 mln (vs NOK 823 mln in 2024) is grotendeels niet-operationeel: NOK 245 mln aan impairments op bio-startup investments (Alginor, Kaffe Bueno, Lignovations) drukte het resultaat. Onderliggend was 2025 een record-jaar.",
+    "omzet_cagr_pct": 7.4,
+    "omzet_cagr_periode": "2021-2025",
+    "kasstromen": [
+      {
+        "jaar": 2021,
+        "cfo": 1431,
+        "capex": -556,
+        "fcf": 875,
+        "fcf_na_sbc": 845,
+        "fcf_per_aandeel": 8.78,
+        "fcf_marge_pct": 15.1,
+        "fcf_groei_pct": null,
+        "fcf_conversion": 1.264,
+        "sbc": 30,
+        "dividend_totaal": 249,
+        "aandeleninkoop": 118
+      },
+      {
+        "jaar": 2022,
+        "cfo": 735,
+        "capex": -464,
+        "fcf": 271,
+        "fcf_na_sbc": 241,
+        "fcf_per_aandeel": 2.71,
+        "fcf_marge_pct": 3.9,
+        "fcf_groei_pct": -69.0,
+        "fcf_conversion": 0.304,
+        "sbc": 30,
+        "dividend_totaal": 499,
+        "aandeleninkoop": 68
+      },
+      {
+        "jaar": 2023,
+        "cfo": 1563,
+        "capex": -667,
+        "fcf": 896,
+        "fcf_na_sbc": 866,
+        "fcf_per_aandeel": 8.97,
+        "fcf_marge_pct": 12.6,
+        "fcf_groei_pct": 230.6,
+        "fcf_conversion": 1.03,
+        "sbc": 30,
+        "dividend_totaal": 324,
+        "aandeleninkoop": 92
+      },
+      {
+        "jaar": 2024,
+        "cfo": 1068,
+        "capex": -711,
+        "fcf": 357,
+        "fcf_na_sbc": 327,
+        "fcf_per_aandeel": 3.58,
+        "fcf_marge_pct": 4.7,
+        "fcf_groei_pct": -60.2,
+        "fcf_conversion": 0.434,
+        "sbc": 30,
+        "dividend_totaal": 374,
+        "aandeleninkoop": 98
+      },
+      {
+        "jaar": 2025,
+        "cfo": 1356,
+        "capex": -793,
+        "fcf": 563,
+        "fcf_na_sbc": 533,
+        "fcf_per_aandeel": 5.65,
+        "fcf_marge_pct": 7.3,
+        "fcf_groei_pct": 57.7,
+        "fcf_conversion": 0.908,
+        "sbc": 30,
+        "dividend_totaal": 424,
+        "aandeleninkoop": 30
+      }
+    ],
+    "toelichting_kasstromen": "FCF is volatiel jaar-op-jaar, vooral door werkkapitaalschommelingen rond lignosulfonaten-voorraden en agrochemie-seizoenen. 2022 en 2024 toonden flinke werkkapitaalopbouw (-NOK 658 mln in 2022, -NOK 486 mln in 2024 wijziging in operationele activiteiten). Capex liep gestaag op van NOK 464 mln (2022) naar NOK 793 mln (2025) door investeringen in Florida-lignin-JV met Rayonier, BC50-uitbreiding en aanhoudend onderhoud. Capex/D&A ratio is structureel >1,3x — Borregaard zit in een groei-investeringscyclus, niet in een steady-state. FCF-conversie (FCF/nettowinst) varieerde van 30% (2022 piek-werkkapitaal) tot >100% (2021, 2023). Mid-cycle FCF schat ik op NOK 600-700 mln na SBC, fors onder het kortcyclische gemiddelde van 562 mln. SBC (stock-based compensation) wordt niet apart in jaarverslag uitgesplitst maar is geschat op ~NOK 30 mln/jr op basis van LTI-programma's voor management; dit is <1% van marktkapitalisatie en geen materieel verwateringsprobleem.",
+    "balans": [
+      {
+        "jaar": 2021,
+        "totale_activa": null,
+        "eigen_vermogen": null,
+        "bruto_schuld": null,
+        "nettoschuld": null,
+        "debt_ebitda": null,
+        "current_ratio": null,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2022,
+        "totale_activa": null,
+        "eigen_vermogen": 4394,
+        "bruto_schuld": null,
+        "nettoschuld": 1838,
+        "debt_ebitda": 1.12,
+        "current_ratio": 1.46,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2023,
+        "totale_activa": null,
+        "eigen_vermogen": 4855,
+        "bruto_schuld": null,
+        "nettoschuld": 1793,
+        "debt_ebitda": 1.01,
+        "current_ratio": 1.73,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2024,
+        "totale_activa": null,
+        "eigen_vermogen": 5041,
+        "bruto_schuld": null,
+        "nettoschuld": 2241,
+        "debt_ebitda": 1.22,
+        "current_ratio": 1.62,
+        "goodwill_pct_activa": null
+      },
+      {
+        "jaar": 2025,
+        "totale_activa": null,
+        "eigen_vermogen": 5853,
+        "bruto_schuld": 2181,
+        "nettoschuld": 2090,
+        "debt_ebitda": 1.11,
+        "current_ratio": 1.86,
+        "goodwill_pct_activa": null
+      }
+    ],
+    "toelichting_balans": "De balans is conservatief gestructureerd: nettoschuld/EBITDA structureel onder 1,3x, current ratio rond 1,6-1,9x, solvabiliteit ~55%. Bruto schuld liep op tijdens de Florida-lignin-investering (van ~NOK 1,5 mld pre-2022 naar NOK 2,3 mld in 2024) maar nettoschuld bleef beheersbaar door cash generation. Goodwill is verwaarloosbaar (<1% van EV) — Borregaard heeft historisch geen grote acquisities gedaan en investeert organisch. Eigen vermogen groeide gestaag door ingehouden winsten ondanks payouts. ROIC is structureel marginaal: 9-12% over recente jaren, dicht bij of net boven de WACC van ~8%. Dat betekent dat Borregaard waarde creëert maar niet de uitzonderlijke spread van 5-15pp die je bij top-tier compounders ziet. 2021-balansrij is leeg gelaten omdat de StockAnalysis-aggregator een unit-fout (×1e6) had; het AR2021-PDF is op samenvattingsniveau (omzet, EBITDA, nettowinst, EPS) wel geverifieerd maar detail-balans is niet in afzonderlijke bron beschikbaar.",
+    "rendementsindicatoren": [
+      {
+        "jaar": 2023,
+        "roce_pct": 19.2,
+        "roe_pct": 18.3,
+        "roic_pct": 11.9,
+        "roa_pct": null,
+        "wacc_pct": 8.12,
+        "roic_wacc_spread": 3.78
+      },
+      {
+        "jaar": 2024,
+        "roce_pct": 17.1,
+        "roe_pct": 16.6,
+        "roic_pct": 10.9,
+        "roa_pct": null,
+        "wacc_pct": 8.12,
+        "roic_wacc_spread": 2.78
+      },
+      {
+        "jaar": 2025,
+        "roce_pct": 16.4,
+        "roe_pct": 10.9,
+        "roic_pct": 9.4,
+        "roa_pct": null,
+        "wacc_pct": 8.12,
+        "roic_wacc_spread": 1.28
+      }
+    ],
+    "toelichting_rendement": "ROIC ligt structureel marginaal boven WACC met spread van 1-4 procentpunten. Borregaard creëert waarde maar zonder de uitzonderlijke spread van top-tier compounders (>5pp). 2025-ROE werd gedrukt door NOK 245 mln impairments op bio-startup-investeringen.",
+    "dividend": {
+      "betaalt_dividend": true,
+      "huidig_dps": 4.75,
+      "huidig_rendement_pct": 2.7,
+      "payout_ratio_fcf_pct": 75.0,
+      "fcf_dekkingsratio": 1.33,
+      "oordeel_houdbaarheid": "Houdbaar bij mid-cycle FCF NOK 600-700 mln; payout-ratio 75% laat ruimte voor capex-cyclus.",
+      "progressief_beleid": false,
+      "eerstvolgende_ex_dividend": "2026-04-17",
+      "toelichting": "Dividend gestegen van NOK 3,50 (2020) naar voorgesteld NOK 4,75 (2025). Geen formeel progressief beleid, maar feitelijk stijgend. 2026 ex-dividenddatum 2026-04-17 ligt voor peildatum — koers is dus al ex-dividend.",
+      "historie": [
+        {
+          "jaar": 2021,
+          "dps": 2.5
+        },
+        {
+          "jaar": 2022,
+          "dps": 5.0
+        },
+        {
+          "jaar": 2023,
+          "dps": 3.25
+        },
+        {
+          "jaar": 2024,
+          "dps": 3.75
+        },
+        {
+          "jaar": 2025,
+          "dps": 4.75
+        }
+      ]
+    },
+    "waardering": {
+      "pe": 28.3,
+      "pe_historisch_gem_10j": 18.5,
+      "ev_ebitda": 10.5,
+      "ev_ebitda_historisch_gem_10j": 9.0,
+      "p_fcf": 31.2,
+      "p_fcf_na_sbc": 32.9,
+      "fcf_yield_pct": 3.2,
+      "p_b": 3.0,
+      "ev_omzet": 2.5,
+      "dividendrendement_pct": 2.7,
+      "peg": 6.8
+    },
+    "toelichting_waardering": "Op alle multiples handelt Borregaard ruim boven het 10-jaars gemiddelde. P/E 28x vs historisch ~18x, EV/EBITDA 10,5x vs ~9x. Markt prijst hoge groei-verwachtingen in. PEG van 6,8 op 4% verwachte groei is fors.",
+    "ipo_correctie": "n.v.t. — IPO oktober 2012, 14 jaar geleden, ruim buiten de 10-jaarsregel."
+  },
+  "moat": {
+    "oordeel": "NARROW MOAT",
+    "duurzaamheid_horizon": "10 jaar",
+    "toelichting": "Het kostenvoordeel uit de geïntegreerde biorefinery in Sarpsborg is structureel: ~95% benutting van houtgrondstof (cellulose, lignine, suikers) — concurrenten als losse pulp- of lignine-spelers hebben fundamenteel hogere unit-kosten. ROIC 9-12% over 2022-2024 ligt boven WACC ~8% maar de spread is klein (1-4 procentpunten), wat onder de Wide-moat-drempel van 5pp valt die we gewoonlijk hanteren. EBITDA-marge bleef stabiel 23-25% door cycli heen, een sterke indicator voor pricing-power in specialiteiten zoals biovanillin en farmaceutische cellulose-ethers. Marktaandeel lignine wereldwijd ~35-40% volume — dominante positie als enige industriële niet-petrochemische vanillin-producent. Specialty cellulose top-4 met circa 12-15% volume. De propriëtaire procestechnologie voor lignin-fractionering en biovanillin-synthese is decennia-oud tacit knowledge en moeilijk repliceerbaar. De marge-spread is desondanks niet groot genoeg voor Wide-moat-classificatie en de moat is daarom Narrow met 10-jaars duurzaamheid.",
+    "duurzaamheid_toelichting": "Op horizon van 10+ jaar zijn er reële erosierisico's: (1) Chinese specialty-cellulose capaciteitsuitbreiding drukt prijzen voor MCC/CMC-grades; (2) lignine-substituenten uit alternatieve bronnen (zwarte loog uit kraft-pulpmills) zijn een latente concurrent; (3) vanillin-synthese door biotech (geprecisioneerde fermentatie) kan op 10-jaarstermijn de niet-petrochemische niche aanvallen; (4) EU- en NO-regulering rond bos-grondstoffen kan grondstof-toegang beperken.",
+    "categorieen": [
+      {
+        "naam": "Immateriële activa",
+        "oordeel": "middel",
+        "score": 3,
+        "toelichting": "Propriëtaire procestechnologie voor lignine-fractionering, biovanillin-synthese (enige niet-petrochemische industriële producent) en Exilva-MFC. Geen patent-cliff zoals farma; concurrentievoordeel zit in tacit knowledge en jarenlange procesoptimalisatie."
+      },
+      {
+        "naam": "Overstapkosten",
+        "oordeel": "middel",
+        "score": 3,
+        "toelichting": "Klanten hebben Borregaard-grade cellulose en lignosulfonaten gevalideerd in hun formuleringen; herkwalificatie kost tijd en geld vooral bij farmaceutische cellulose-ethers en voedings-vanillin. Niet absoluut maar wel materieel."
+      },
+      {
+        "naam": "Netwerkeffecten",
+        "oordeel": "geen",
+        "score": 0,
+        "toelichting": "Geen netwerkeffecten — B2B specialty chemicals."
+      },
+      {
+        "naam": "Kostenvoordeel",
+        "oordeel": "middel",
+        "score": 3,
+        "toelichting": "Geïntegreerde biorefinery in Sarpsborg benut ~95% van de houtgrondstof — concurrenten als losse pulp- of lignine-spelers hebben fundamenteel hogere unit-kosten. Deze geïntegreerde positie is moeilijk te repliceren."
+      },
+      {
+        "naam": "Efficiënte schaal",
+        "oordeel": "middel",
+        "score": 3,
+        "toelichting": "Markt voor specialty lignine en biovanillin is beperkt: Borregaard ~35-40% van de wereldwijde lignine-markt, top-4 in specialty cellulose. Een tweede equivalente biorefinery zou onrendabel zijn vanwege schaal-overlap."
+      }
+    ]
+  },
+  "management": {
+    "oordeel": "STERK",
+    "personen": [
+      {
+        "functie": "CEO",
+        "naam": "Tom Erik Foss-Jacobsen",
+        "achtergrond": "In functie sinds 2025-08-01 (8 maanden). 25 jaar bij Borregaard, 21 in leidinggevende rollen. Voorganger Per A. Sørlie was 26 jaar CEO (1999-2025)."
+      },
+      {
+        "functie": "CFO",
+        "naam": "Per Bjarne Lyngstad",
+        "achtergrond": "CFO sinds ~2017, geverifieerd via investor relations pagina."
+      }
+    ],
+    "compensatie": {
+      "sbc_pct_marktkapitalisatie": 0.17,
+      "verwateringsgraad_pct_jaar": null,
+      "prikkels_aligned": true,
+      "toelichting": "LTI-programma met opties (recent 30.000 opties bij CEO-aanstelling Foss-Jacobsen tegen marktkoers). Bonusstructuur gekoppeld aan EBITDA, ROCE en lange-termijn doelstellingen. Vast/variabel-mix: ~50/50 voor CEO. Geen excessieve verwatering: SBC <1% van marktkap/jaar."
+    },
+    "owner_operator": false,
+    "eigenbelang_pct": 1.0,
+    "capital_allocation": "Prudent in hoofd-business; smetje op bio-startup investeringen.",
+    "capital_allocation_detail": "Borregaard heeft historisch weinig grote acquisities gedaan; de Joint Venture met Rayonier (Florida lignin) opende in 2024 — nog te vroeg om te beoordelen. Investeringen in bio-startups Alginor, Kaffe Bueno en Lignovations zijn in 2025 grotendeels afgewaardeerd (NOK 245 mln impairment) — een rode vlag voor capital allocation in deze bucket. Hoofd-business blijft gefinancierd uit eigen kasstroom. Dividend stijgt al jaren stabiel (van NOK 3,50 in 2020 naar voorgestelde NOK 4,75 voor 2025).",
+    "integriteit": "Sterk: 26-jarige consistente strategie onder Sørlie, transparante rapportage, geen controverses.",
+    "toelichting": "Sørlie's 26-jarige CEO-periode leverde een succesvolle strategische transformatie van commodity-pulp naar specialty-biorefinery met sterke kapitaaldiscipline en helder communicatiebeleid. EBITDA verdrievoudigde sinds 2018, dividend stijgt al jaren stabiel van NOK 3,50 naar NOK 4,75 voor 2025, en de balans is conservatief gehouden ondanks materiële groei-investeringen. De 2025-impairment op bio-startup investments (NOK 245 mln in Alginor, Kaffe Bueno en Lignovations) is een smetje maar relatief beperkt vs cumulatief gegenereerde EBITDA en niet-kasstroom-relevant. Foss-Jacobsen brengt continuïteit vanuit zijn 25-jarige interne carrière als COO; geen disruptieve strategiebreuk verwacht. Insider alignment is beperkt qua eigenbelang (<1% bij CEO-niveau is gebruikelijk in NO genoteerde bedrijven), maar de track record, transparantie naar aandeelhouders en de soepele opvolging in 2025 steunen het oordeel STERK."
+  },
+  "sector_concurrentie": {
+    "sectorprofiel": {
+      "type": "Specialty chemicals / biorefinery",
+      "kapitaalintensief": true,
+      "consolidatiegraad": "geconsolideerd",
+      "sentiment": "neutraal",
+      "trends": "Bio-based vervanging fossiele chemie, EU-regulering ten gunste van duurzame grondstoffen, China-druk in cellulose-ethers.",
+      "toelichting": "Specialty cellulose markt wereldwijd ~3-4%/jaar (sectorrapporten Markets&Markets); lignine-markt 5-7%/jaar (drijvers: bio-based vervanging fossiele dispergeermiddelen); biovanillin 4-6%/jaar (premium-segment in F&B). Gewogen gemiddelde Borregaard-portfolio: ~4-5%/jaar marktgroei."
+    },
+    "porter": {
+      "dreiging_toetreders": {
+        "score": "laag",
+        "toelichting": "Kapitaalintensieve geïntegreerde biorefineries kosten miljarden NOK om op te bouwen; regulatoire goedkeuringen voor farmaceutische cellulose duren jaren."
+      },
+      "macht_leveranciers": {
+        "score": "laag",
+        "toelichting": "Noorse spar uit bosbouw is gediversifieerd; Borregaard heeft langdurige contracten en geografische nabijheid."
+      },
+      "macht_klanten": {
+        "score": "middel",
+        "toelichting": "Formuleerders zijn middelgroot tot groot maar kunnen niet trivially overstappen; geen monopsonie."
+      },
+      "dreiging_substituten": {
+        "score": "middel",
+        "toelichting": "Petrochemische dispergeermiddelen (cement), synthetische vanillin uit guajacol, plant-based vervangers — alle reëel maar met regelgeving die richting bio-based duwt."
+      },
+      "concurrentie_intensiteit": {
+        "score": "middel",
+        "toelichting": "Specialty cellulose top-4 (Borregaard, Bracell, RYAM, GP Cellulose) heeft 65% share; lignine sterk geconsolideerd; concurrentie op grade en kwaliteit."
+      },
+      "conclusie": "Sector heeft gunstige toetredingsbarrières en gematigde rivaliteit; substituten en klantmacht zijn de structurele tegenkrachten."
+    },
+    "concurrenten": [
+      {
+        "naam": "Aditya Birla (Domsjö Fabriker)",
+        "marktaandeel_pct": 25.0
+      },
+      {
+        "naam": "Rayonier Advanced Materials (RYAM)",
+        "ticker": "RYAM",
+        "marktaandeel_pct": 18.0
+      },
+      {
+        "naam": "Bracell",
+        "marktaandeel_pct": 15.0
+      },
+      {
+        "naam": "GP Cellulose (Georgia-Pacific)",
+        "marktaandeel_pct": 12.0
+      },
+      {
+        "naam": "Sappi / Nippon / Stora Enso",
+        "marktaandeel_pct": 10.0
+      }
+    ],
+    "positie": "Wereldmarktleider in lignine (35-40% volume), top-4 in specialty cellulose, enige industriële niet-petrochemische biovanillin-producent.",
+    "positie_toelichting": "Premium-positionering in alle segmenten; geïntegreerde biorefinery is moeilijk te repliceren.",
+    "tam_sam_som": {
+      "tam_mln": 80000,
+      "tam_groei_pct": 4.5,
+      "sam_mln": 25000,
+      "sam_groei_pct": 5.5,
+      "huidige_penetratie_pct": 31.0,
+      "groei_plausibel": true,
+      "bron": "Borregaard IR-presentaties + Markets&Markets/ResearchAndMarkets industrierapporten 2024",
+      "toelichting": "Bij 4% volume-groei en stabiele prijzen is een omzet-CAGR van ~4-5%/jaar plausibel zonder dat Borregaard substantieel marktaandeel hoeft te winnen. Een hogere groei (>7%) vereist mix-shift naar hoger-marge biovanillin en succesvolle US-lignine-uitbreiding. TAM/SAM-cijfers zijn schattingen op basis van publieke marktrapporten, niet 1-op-1 met één URL te verifiëren."
+    }
+  },
+  "analyseframeworks": {
+    "graham": {
+      "oordeel": "VOLDOET NIET",
+      "graham_number": 64,
+      "margin_of_safety_pct": -64,
+      "toelichting": "Met P/E 27,2 en P/B 2,9 voldoet Borregaard niet aan Grahams defensieve criteria (P/E ≤15, P/B ≤1,5, Graham number ≥ koers). De Graham number ligt ruim onder de huidige koers van NOK 176, wat impliceert dat een conservatieve waardebelegger geen veiligheidsmarge ziet. Het bedrijf is te volwassen en te hooggewaardeerd om vanuit klassieke deep-value-lens aantrekkelijk te zijn."
+    },
+    "buffett_munger": {
+      "oordeel": "GEDEELTELIJK",
+      "roic_boven_wacc_structureel": true,
+      "toelichting": "Borregaard heeft veel Buffett-eigenschappen: begrijpelijk bedrijf (specialty chemicals uit hout), voorspelbare kasstromen door langdurige B2B-contracten, narrow moat door propriëtaire procestechnologie en geïntegreerde biorefinery. Maar de ROIC-WACC spread is met 1-4pp te beperkt voor de Buffett-droom van >10pp; de prijs P/FCF 29,5 is bovendien fors. Het is een 'fair company at a high price' eerder dan 'wonderful at a fair price'. Charlie Munger zou de impairment op bio-startup investeringen niet sympathiek vinden."
+    },
+    "lynch": {
+      "categorie": "Stalwart",
+      "oordeel": "ONINTERESSANT",
+      "peg_ratio": 6.8,
+      "toelichting": "Borregaard is een klassieke Stalwart — gevestigd, voorspelbare middelgrote groei, defensief in cyclische sector. Het verhaal is helder en uit te leggen: hout → cellulose, lignine, vanillin, en cellulose-derivaten. Maar de waardering is ver vooruitgelopen op de groei: PEG van bijna 7 (bij 4% verwachte groei) is verre van Lynch's voorkeur (<1). Zelfs bij optimistische 8%-groei is de PEG nog 3,4 — onaantrekkelijk."
+    },
+    "fisher": {
+      "oordeel": "STERK",
+      "toelichting": "Borregaard scoort goed op Fisher's kwalitatieve criteria. Producten met groeipotentieel: biovanillin en bio-based dispergeermiddelen profiteren van duurzame trends. R&D-cultuur is sterk: Exilva, BC50, en doorlopende lignin-derivaten ontwikkeling. Margebescherming door propriëtaire procestechnologie en geïntegreerde biorefinery. Management-integriteit is hoog: 26 jaar consistente strategie onder Sørlie, transparante rapportage. Vanuit Fisher's 'scuttlebutt'-lens is dit een kwaliteitsbedrijf, ook al is de prijs op dit moment niet gunstig."
+    },
+    "greenblatt": {
+      "oordeel": "GEMIDDELD",
+      "earnings_yield_pct": 6.6,
+      "return_on_capital_pct": 17.1,
+      "toelichting": "Earnings yield (EBIT/EV = 1.287/19.641) van 6,6% is redelijk maar niet uitzonderlijk — Greenblatt zoekt typisch >10% voor topscores. Return on capital (EBIT / (NWC + Net Fixed Assets) = 1.287 / 7.519) van 17,1% is solide maar ver onder Greenblatt's voorkeur van >50% voor capital-light businesses. Borregaard is per definitie capital-intensive met een geïntegreerde biorefinery, dus deze score is structureel beperkt."
+    }
+  },
+  "risicos": [
+    {
+      "omschrijving": "Cyclische correctie in lignosulfonaten/specialty cellulose",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "EBITDA-marge, FCF",
+      "toelichting": "Borregaard rapporteert in 2024-2025 record-EBITDA. Specialty-chemicals-cycli bewegen typisch 3-4 jaar; Q4 2025 toonde al lagere BioSolutions/Fine Chemicals; Chinees aanbod in cellulose-ethers drukt al prijzen. Een correctie van 15-20% in EBITDA over 2-3 jaar zou de DCF substantieel verlagen."
+    },
+    {
+      "omschrijving": "ROIC-druk door capex-cyclus",
+      "kans": "HOOG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Reinvestment rate, FCF",
+      "toelichting": "Capex steeg van NOK 464 mln (2022) naar NOK 793 mln (2025). De Florida-lignin-JV moet zich nog bewijzen. Als de groei-investeringen onder verwachting renderen, zakt ROIC verder onder WACC en wordt waarde vernietigd."
+    },
+    {
+      "omschrijving": "NOK-appreciatie",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Omzet, EBIT-marge",
+      "toelichting": "Sterkere NOK vs USD/EUR drukt de gerapporteerde EBITDA materieel; in 2024-2025 hielp de zwakke NOK juist. NOK is op meerjaars-laag; mean-reversion kan 5-10% EBITDA kosten."
+    },
+    {
+      "omschrijving": "Pre-IPO financial engineering",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "n.v.t.",
+      "toelichting": "Niet geconstateerd — IPO 2012 was schone afsplitsing van Orkla, geen pre-IPO leverage of dividend-recap. Geen IPO-correctie nodig."
+    },
+    {
+      "omschrijving": "Regulatoir risico bos-grondstoffen",
+      "kans": "LAAG",
+      "impact": "MIDDEL",
+      "dcf_aanname_geraakt": "Variabele kosten",
+      "toelichting": "EU- en NO-regulering rond bos-aanvoer (LULUCF, RED III) kan houtbeschikbaarheid en kosten beïnvloeden. Beheersbaar maar materieel op lange termijn."
+    },
+    {
+      "omschrijving": "Bio-startup-portfolio verdere afwaarderingen",
+      "kans": "MIDDEN",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "Eenmalige posten",
+      "toelichting": "Na NOK 245 mln impairment in Q4 2025 op Alginor/Kaffe Bueno/Lignovations zijn nog kleinere belangen open. Aanvullende impairments mogelijk. Niet kasstroom-relevant maar GAAP-winst."
+    },
+    {
+      "omschrijving": "Concurrentie biotechnologische vanillin (precision fermentation)",
+      "kans": "MIDDEN",
+      "impact": "GROOT",
+      "dcf_aanname_geraakt": "Lange termijn marge BioSolutions",
+      "toelichting": "Op 5-10-jarige horizon kunnen biotech-startups (bv. Conagen, Evolva) niet-petrochemische vanillin produceren tegen lagere kosten. Bedreigt het hoogste-marge segment van Borregaard."
+    },
+    {
+      "omschrijving": "Liquiditeit / aandeelaanbod",
+      "kans": "LAAG",
+      "impact": "KLEIN",
+      "dcf_aanname_geraakt": "n.v.t.",
+      "toelichting": "Gemiddeld dagvolume ~92.000 — beperkte liquiditeit voor institutionele beleggers maar ruim voldoende voor particulieren. Geen materieel issue."
+    }
+  ],
+  "these_invalide_bij": "Deze PASS-these is weerlegd wanneer (a) Borregaard structureel boven mid-cycle FCF NOK 800 mln/jaar uitkomt door succesvolle Florida-lignin-ramp én vanillin-prijsstijgingen, of (b) ROIC structureel boven 13% komt (>5pp boven WACC), of (c) de koers daalt onder NOK 100-110 waarop de DCF-basis en EPV-niveaus elkaar raken en margin-of-safety ontstaat. Een aanzienlijke daling van de NOK 10y-rente (terug naar 2-3%) zou de WACC verlagen en daarmee de fair value verhogen — dit is de meest invloedrijke macrovariabele.",
+  "esg": {
+    "materiele_factoren": [
+      {
+        "factor": "Bos-grondstoffen / sustainable forestry",
+        "sasb_categorie": "Materials Sourcing",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Borregaard gebruikt FSC/PEFC-gecertificeerd hout; sterke positie in EU-Taxonomy en RED III",
+        "dcf_impact": "klein positief"
+      },
+      {
+        "factor": "CO2-emissies productie",
+        "sasb_categorie": "Greenhouse Gas Emissions",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Sarpsborg-installatie heeft hoog energiegebruik; deels gecompenseerd door bio-based output",
+        "dcf_impact": "middel — koolstoftaks NO"
+      },
+      {
+        "factor": "Watergebruik",
+        "sasb_categorie": "Water Management",
+        "risico_niveau": "MIDDEL",
+        "financiele_impact": "Pulping is water-intensief; Sarpsborg heeft afvoer-vergunningen onder druk",
+        "dcf_impact": "klein"
+      },
+      {
+        "factor": "Productveiligheid (vanillin / fine chem)",
+        "sasb_categorie": "Product Quality & Safety",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "FDA/EU-regelgeving farmaceutische cellulose; sterke compliance",
+        "dcf_impact": "klein"
+      },
+      {
+        "factor": "Werkomstandigheden / safety",
+        "sasb_categorie": "Employee Health & Safety",
+        "risico_niveau": "LAAG",
+        "financiele_impact": "Lage incident rate; chemische sector standaarden",
+        "dcf_impact": "klein"
+      }
+    ],
+    "eindoordeel": "LAAG RISICO",
+    "toelichting": "Borregaard's biorefinery-business model is structureel gunstig vanuit ESG-perspectief: bio-based vervangers van petrochemische producten, FSC-gecertificeerde grondstof, hoge resource-efficiëntie (~95% benutting hout). Belangrijkste materiële factor is CO2 uit het Sarpsborg-productieproces — beheersbaar en gedeeltelijk compensable via Noorse staatsregelingen. Geen materiële controverses, sterke transparantie in sustainability rapportage."
+  },
+  "katalysatoren": [
+    {
+      "datum_ca": "2026-04-29",
+      "omschrijving": "Q1 2026 resultaten + AGM (eerste rapportage onder nieuwe CEO Foss-Jacobsen)",
+      "richting": "NEUTRAAL",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-07",
+      "omschrijving": "Q2 2026 resultaten — eerste vergelijking met 2025-piek",
+      "richting": "NEGATIEF",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2026-H2",
+      "omschrijving": "Florida-lignin-JV met Rayonier: capaciteit-ramp en pricing",
+      "richting": "POSITIEF",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-H2",
+      "omschrijving": "Vanillin pricing in Europa: capaciteit Europese concurrenten",
+      "richting": "BINAIR",
+      "impact": "MIDDEL"
+    },
+    {
+      "datum_ca": "2027",
+      "omschrijving": "Eventuele bio-startup-impairment ronde 2 of strategie-update",
+      "richting": "NEGATIEF",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2026-2027",
+      "omschrijving": "NOK 10y-rente trajectorie — relevant voor WACC en fair value",
+      "richting": "BINAIR",
+      "impact": "GROOT"
+    },
+    {
+      "datum_ca": "2026-04-17",
+      "omschrijving": "Ex-dividend datum NOK 4,75 (al gepasseerd)",
+      "richting": "NEUTRAAL",
+      "impact": "KLEIN"
+    },
+    {
+      "datum_ca": "2027-Q1",
+      "omschrijving": "FY2026 resultaten + dividend-besluit 2026",
+      "richting": "NEUTRAAL",
+      "impact": "MIDDEL"
+    }
+  ],
+  "fair_value": {
+    "methoden_toegepast": [
+      "DCF",
+      "EPV",
+      "Multiples (cross-check)"
+    ],
+    "methoden_niet_toegepast": [
+      {
+        "methode": "DDM",
+        "reden": "Borregaard is dividendbetaler maar de DCF is leidend; payout-ratio FCF 2025 = 75%, geen progressief beleid in formele zin"
+      },
+      {
+        "methode": "SOTP",
+        "reden": "Drie verbonden segmenten in een biorefinery; geen zinvolle splitsing mogelijk"
+      }
+    ],
+    "toelichting_methode": "DCF FCFF tegen WACC, met mid-year convention. EPV als no-growth baseline; multiples als sanity-check. DDM en SOTP niet zinvol voor deze case.",
+    "valuta_kasstromen": "NOK",
+    "wacc": {
+      "risicovrije_rente_pct": 4.4,
+      "risicovrije_rente_bron": "Norway 10-year government bond yield, 10-04-2026 (Trading Economics, FRED IRLTLT01NOM156N)",
+      "risicovrije_rente_type": "spot",
+      "erp_pct": 5.0,
+      "erp_bron": "Damodaran developed Europe equity risk premium (geschat) — april 2026",
+      "beta_adjusted": 0.85,
+      "beta_bron": "Bottom-up specialty chemicals sector beta (Damodaran sector data) — relevered naar Borregaard's kapitaalstructuur",
+      "beta_type": "bottom_up",
+      "country_risk_premium_pct": 0,
+      "size_premium_pct": 0,
+      "cost_of_equity_pct": 8.65,
+      "schuldkosten_na_belasting_pct": 3.83,
+      "ev_gewicht_pct": 88.9,
+      "dv_gewicht_pct": 11.1,
+      "wacc_pct": 8.12,
+      "sector_wacc_pct": 8.0,
+      "illiquiditeitskorting_pct": 0
+    },
+    "dcf": {
+      "model_type": "2-fase (5 jaar fase 1 + 5 jaar fase 2 + Gordon terminal)",
+      "basis_fcf": 700,
+      "basis_fcf_na_sbc": 700,
+      "fcf_type": "Genormaliseerde mid-cycle FCF",
+      "fcf_definitie": "FCFF",
+      "groei_fase1_pct": 4.0,
+      "groei_fase2_pct": 2.5,
+      "terminal_groei_pct": 2.5,
+      "terminal_methode": "Gordon growth (cross-check via exit multiple uitgevoerd)",
+      "exit_multiple_gebruikt": 10.0,
+      "exit_multiple_bron": "Peer-groep specialty chemicals + Borregaard 10-jaars gemiddelde",
+      "terminal_value_gordon_growth": 6150,
+      "terminal_value_exit_multiple": 5700,
+      "terminal_value_pct_van_totaal": 56.0,
+      "terminal_implied_ev_ebitda": 9.4,
+      "terminal_groei_consistentie": "2,5% past bij langetermijn nominale BBP-groei NO/Eurozone (2,0-2,5%); vereist herinvestering ~25% bij ROIC 10% — plausibel voor volwassen industrieel.",
+      "mid_year_convention": true,
+      "wacc_pct": 8.12,
+      "shares_outstanding_mln": 99.72,
+      "nettoschuld_huidig": 2090
+    },
+    "dcf_toelichting": "De DCF gebruikt FCFF gediscounteerd tegen WACC, met de mid-year convention. Basis-FCF van NOK 700 mln is een normalisering: het 5-jaars gemiddelde 2021-2025 was NOK 562 mln (na SBC 533) maar dat wordt vertekend door zware werkkapitaal-druk in 2022 en 2024 én groei-capex die niet maintenance is. Onderliggend OCF 5-jaars-gemiddelde is NOK 1.230 mln; minus maintenance capex (~D&A NOK 530 mln) geeft NOK 700 mln. In het basisscenario groeit FCF 4% per jaar in fase 1 en 2,5% in fase 2; terminal 2,5%. Terminal value is 56% van totaal — gezond. WACC 8,12% is opgebouwd uit NOK 10y rf 4,40%, ERP 5,0%, beta 0,85, geen size of country premium. Nettoschuld NOK 2.090 mln wordt op het einde afgetrokken om equity value te krijgen, gedeeld door 99,72 mln aandelen. Een sanity check tegen de impliciete terminal EV/EBITDA (9,4x) geeft consistentie met sector-mediaan ~10x.",
+    "projectie": [
+      {
+        "jaar": 2026,
+        "omzet": 8022,
+        "omzet_groei_pct": 4.0,
+        "ebit": 1364,
+        "ebit_marge_pct": 17.0,
+        "nopat": 1043,
+        "capex": 682,
+        "delta_nwc": -50,
+        "sbc": 30,
+        "fcf": 728
+      },
+      {
+        "jaar": 2027,
+        "omzet": 8342,
+        "omzet_groei_pct": 4.0,
+        "ebit": 1418,
+        "ebit_marge_pct": 17.0,
+        "nopat": 1085,
+        "capex": 709,
+        "delta_nwc": -50,
+        "sbc": 30,
+        "fcf": 757
+      },
+      {
+        "jaar": 2028,
+        "omzet": 8676,
+        "omzet_groei_pct": 4.0,
+        "ebit": 1475,
+        "ebit_marge_pct": 17.0,
+        "nopat": 1128,
+        "capex": 737,
+        "delta_nwc": -50,
+        "sbc": 30,
+        "fcf": 787
+      },
+      {
+        "jaar": 2029,
+        "omzet": 9023,
+        "omzet_groei_pct": 4.0,
+        "ebit": 1534,
+        "ebit_marge_pct": 17.0,
+        "nopat": 1173,
+        "capex": 767,
+        "delta_nwc": -50,
+        "sbc": 30,
+        "fcf": 819
+      },
+      {
+        "jaar": 2030,
+        "omzet": 9384,
+        "omzet_groei_pct": 4.0,
+        "ebit": 1595,
+        "ebit_marge_pct": 17.0,
+        "nopat": 1220,
+        "capex": 798,
+        "delta_nwc": -50,
+        "sbc": 30,
+        "fcf": 852
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "Pessimistisch",
+        "fair_value": 73,
+        "upside_pct": -58.5,
+        "fcf_groei_pct": 1.0,
+        "wacc_pct": 9.12,
+        "kans_pct": 20.0
+      },
+      {
+        "scenario": "Basis",
+        "fair_value": 121,
+        "upside_pct": -31.3,
+        "fcf_groei_pct": 4.0,
+        "wacc_pct": 8.12,
+        "kans_pct": 55.0
+      },
+      {
+        "scenario": "Optimistisch",
+        "fair_value": 166,
+        "upside_pct": -5.7,
+        "fcf_groei_pct": 7.0,
+        "wacc_pct": 7.62,
+        "kans_pct": 25.0
+      }
+    ],
+    "kansgewogen_fair_value": 123,
+    "reverse_dcf": {
+      "impliciete_groei_pct": 8.7,
+      "historische_fcf_cagr_pct": -10.5,
+      "consensus_groei_pct": null,
+      "interpretatie": "De markt prijst ~9% jaarlijkse FCF-groei in over de komende 5 jaar. Dit is dubbel zo hoog als de plausibele mid-cycle groei (4-5%) op basis van markt-CAGR en mix-shift. Slechts in een aanhoudend optimistisch scenario (Florida-ramp succesvol én vanillin-marges blijven hoog én NOK blijft zwak) wordt deze groei realiseerbaar. De huidige waardering laat dus weinig veiligheidsmarge en is kwetsbaar voor mean-reversion in de lignosulfonaten- of cellulose-cyclus."
+    },
+    "epv": {
+      "genormaliseerde_ebit_marge_pct": 17.05,
+      "genormaliseerde_nopat": 1006,
+      "maintenance_capex": 540,
+      "adjusted_earnings_power": 1006,
+      "epv_per_aandeel": 103,
+      "groeipremie_pct": 17
+    },
+    "ddm": {
+      "uitgevoerd": false
+    },
+    "sotp": {
+      "uitgevoerd": false
+    },
+    "synthese": {
+      "fair_value_bandbreedte_laag": 73,
+      "fair_value_bandbreedte_centraal": 121,
+      "fair_value_bandbreedte_hoog": 166,
+      "methode_gewichten": "DCF 60%, EPV 30%, Multiples 10%",
+      "margin_of_safety_vereist_pct": 20,
+      "koopniveau": 97
+    },
+    "synthese_toelichting": "De DCF (NOK 121) en EPV (NOK 103) convergeren rond NOK 110-120, fors onder de huidige koers van NOK 176. Het verschil van 17% tussen DCF en EPV vertegenwoordigt de impliciete groeipremie. Bij een margin of safety van 20% — gerechtvaardigd door de cyclische gevoeligheid en marginale ROIC-WACC spread — komt het comfortabele koopniveau uit op ~NOK 90. Dat is consistent met de pessimistische scenario-uitkomst en biedt ruimte om in te stappen bij een cyclische correctie zonder afhankelijk te zijn van een optimistisch groeiverhaal.",
+    "gevoeligheid_fcf_groei": {
+      "wacc_range": [
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5
+      ],
+      "groei_range": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "matrix": [
+        [
+          124,
+          110,
+          99,
+          89,
+          81,
+          74
+        ],
+        [
+          146,
+          129,
+          116,
+          105,
+          96,
+          88
+        ],
+        [
+          171,
+          152,
+          136,
+          123,
+          112,
+          102
+        ],
+        [
+          199,
+          177,
+          159,
+          143,
+          131,
+          119
+        ],
+        [
+          232,
+          206,
+          184,
+          167,
+          152,
+          139
+        ]
+      ]
+    }
+  },
+  "scorekaart": {
+    "items": [
+      {
+        "framework": "Graham",
+        "score": 1,
+        "max": 5,
+        "oordeel": "VOLDOET NIET"
+      },
+      {
+        "framework": "Buffett / Munger",
+        "score": 2,
+        "max": 5,
+        "oordeel": "GEDEELTELIJK"
+      },
+      {
+        "framework": "Peter Lynch",
+        "score": 1,
+        "max": 5,
+        "oordeel": "ONINTERESSANT"
+      },
+      {
+        "framework": "Phil Fisher",
+        "score": 4,
+        "max": 5,
+        "oordeel": "STERK"
+      },
+      {
+        "framework": "Magic Formula",
+        "score": 2,
+        "max": 5,
+        "oordeel": "GEMIDDELD"
+      },
+      {
+        "framework": "Moat",
+        "score": 2,
+        "max": 5,
+        "oordeel": "NARROW MOAT"
+      },
+      {
+        "framework": "Management",
+        "score": 4,
+        "max": 5,
+        "oordeel": "STERK"
+      },
+      {
+        "framework": "Fair Value DCF",
+        "score": 1,
+        "max": 5,
+        "oordeel": "Downside -31% (>15%)"
+      },
+      {
+        "framework": "Fair Value IPO-gecorr.",
+        "score": 1,
+        "max": 5,
+        "oordeel": "IPO 2012 (>10 jaar), gelijk aan DCF score"
+      }
+    ],
+    "totaal": 18,
+    "max": 45,
+    "eindoordeel": "PASS",
+    "samenvatting": "Borregaard is een kwaliteitsbedrijf met sterke moat-elementen en een uitstekend management-team, maar de huidige waardering laat te weinig veiligheidsmarge over voor een waardebelegger. P/E van 27 (reported) of ~22 (onderliggend), P/FCF van 29,5 en een DCF die fair value NOK 121 oplevert vs koers NOK 176 betekent dat de markt structurele FCF-groei van ~9% per jaar inprijst — dubbel zo hoog als plausibel mid-cycle. ROIC van 9% ligt slechts marginaal boven WACC van 8%. PASS, met heroverweging vanaf NOK 90-100 (onder zowel basis-DCF en EPV)."
+  },
+  "databronnen": {
+    "bronnen_geraadpleegd": [
+      "Borregaard ASA Annual Report 2025",
+      "Borregaard ASA Annual Report 2024",
+      "Borregaard Annual Report 2023 (PDF)",
+      "Borregaard 2022 Annual Report (PDF)",
+      "Borregaard 2021 Annual Report (PDF)",
+      "Borregaard Q4 2025 EBITDA persbericht",
+      "Borregaard Q1 2026 invitation",
+      "Tom Erik Foss-Jacobsen CEO benoeming",
+      "Borregaard insider transactions 2025",
+      "Borregaard Q4 2024 EBITDA persbericht",
+      "Yahoo Finance BRG.OL",
+      "StockAnalysis Borregaard income/cashflow/balans/ratios",
+      "Norway 10Y Bond Yield (Trading Economics)",
+      "Borregaard shareholders page",
+      "Borregaard dividend policy",
+      "MarketScreener Borregaard target consensus",
+      "Specialty Cellulose Global Market Report 2024",
+      "Global Lignin Products 2019-2024",
+      "Sweetstocks Borregaard moat thesis"
+    ],
+    "financieel": [
+      {
+        "jaar": 2018,
+        "bron": "EBITDA-snippet uit zoekresultaat (jaarverslag-archief)",
+        "url": "https://www.borregaard.com/investors/reports-presentations/annual-reports/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2019,
+        "bron": "EBITDA-snippet uit zoekresultaat (jaarverslag-archief)",
+        "url": "https://www.borregaard.com/investors/reports-presentations/annual-reports/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2020,
+        "bron": "EBITDA-snippet uit zoekresultaat (jaarverslag-archief)",
+        "url": "https://www.borregaard.com/investors/reports-presentations/annual-reports/",
+        "betrouwbaarheid": "AGGREGATOR"
+      },
+      {
+        "jaar": 2021,
+        "bron": "Borregaard Annual Report 2021 + StockAnalysis",
+        "url": "https://ml-eu.globenewswire.com/Resource/Download/d29c052b-ec61-4215-ba8e-02c358787d74",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2022,
+        "bron": "Borregaard Annual Report 2022 + StockAnalysis",
+        "url": "https://www.borregaard.com/hubfs/Media/InvestorFiles/GeneralMeeting2023/annual-report-2022.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2023,
+        "bron": "Borregaard Annual Report 2023 + StockAnalysis",
+        "url": "https://www.borregaard.com/media/ac1fn2he/borregaard-annual-report-2023.pdf",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2024,
+        "bron": "Borregaard Annual Report 2024 + Q4 2024 release",
+        "url": "https://www.globenewswire.com/news-release/2025/03/20/3045979/0/en/Borregaard-ASA-Annual-Report-2024.html",
+        "betrouwbaarheid": "HOOG"
+      },
+      {
+        "jaar": 2025,
+        "bron": "Borregaard Annual Report 2025 + Q4 2025 release",
+        "url": "https://www.globenewswire.com/news-release/2026/03/26/3262747/0/en/Borregaard-ASA-Annual-Report-2025.html",
+        "betrouwbaarheid": "HOOG"
+      }
+    ],
+    "pre_ipo_data_beschikbaar": false,
+    "ontbrekende_data": "Detailbalans 2018-2020 (alleen EBITDA verifieerbaar). Detail kasstroom 2018-2020. Pre-2018 data (2015-2017) volledig niet geverifieerd. Exacte SBC per jaar — geschat op ~NOK 30 mln/jaar; Borregaard rapporteert dit niet apart. Exacte segment-omzet 2025 (BioSolutions/BioMaterials/Fine Chemicals splitsing — geschat op ~45/40/15). 5-jaars FCF CAGR is volatiel en niet stabiel als reverse-DCF input. TAM/SAM cijfers zijn schattingen op basis van publieke marktrapporten.",
+    "non_gaap_gebruikt": true,
+    "non_gaap_toelichting": "Borregaard rapporteert 'EBITDA1' excl. eenmalige posten. In 2025 was die NOK 1.878 mln; reported EBITDA was lager door NOK 245 mln impairments op bio-startup investments (Alginor, Kaffe Bueno, Lignovations). De DCF gebruikt onderliggende EBITDA-marge 17% (EBIT) over 5 jaar; impairments zijn niet-kasstroom-relevant maar moeten in earnings-quality-overweging."
+  },
+  "bronnen": [
+    {
+      "titel": "Borregaard ASA Annual Report 2025",
+      "url": "https://www.globenewswire.com/news-release/2026/03/26/3262747/0/en/Borregaard-ASA-Annual-Report-2025.html",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Borregaard ASA Annual Report 2024",
+      "url": "https://www.globenewswire.com/news-release/2025/03/20/3045979/0/en/Borregaard-ASA-Annual-Report-2024.html",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Borregaard Annual Report 2023 (PDF)",
+      "url": "https://www.borregaard.com/media/ac1fn2he/borregaard-annual-report-2023.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Borregaard 2022 Annual Report (PDF)",
+      "url": "https://www.borregaard.com/hubfs/Media/InvestorFiles/GeneralMeeting2023/annual-report-2022.pdf",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Borregaard 2021 Annual Report (PDF)",
+      "url": "https://ml-eu.globenewswire.com/Resource/Download/d29c052b-ec61-4215-ba8e-02c358787d74",
+      "type": "jaarverslag"
+    },
+    {
+      "titel": "Borregaard EBITDA NOK 405 mln Q4 2025",
+      "url": "https://www.globenewswire.com/news-release/2026/02/04/3231743/0/en/Borregaard-ASA-EBITDA1-of-NOK-405-million-in-the-4th-quarter-2025.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Borregaard Q1 2026 invitation",
+      "url": "https://www.globenewswire.com/news-release/2026/04/22/3278654/0/en/Borregaard-ASA-Invitation-to-Q1-2026-announcement.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Tom Erik Foss-Jacobsen appointed CEO",
+      "url": "https://www.globenewswire.com/news-release/2025/05/23/3087308/0/en/Borregaard-ASA-Tom-Erik-Foss-Jacobsen-appointed-CEO-of-Borregaard.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Borregaard insider transactions 2025-02-12",
+      "url": "https://www.globenewswire.com/news-release/2025/02/12/3025201/0/en/Borregaard-ASA-Reporting-of-transactions-in-Borregaard-ASA-s-shares-made-by-person-discharging-managerial-responsibilities.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Borregaard Q4 2024 EBITDA NOK 398 mln",
+      "url": "https://www.globenewswire.com/news-release/2025/01/29/3016894/0/en/Borregaard-ASA-EBITDA1-of-NOK-398-million-in-the-4th-quarter.html",
+      "type": "beursmelding"
+    },
+    {
+      "titel": "Borregaard ASA (BRG.OL) Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BRG.OL/",
+      "type": "beurswebsite"
+    },
+    {
+      "titel": "StockAnalysis Borregaard income",
+      "url": "https://stockanalysis.com/quote/osl/BRG/financials/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "StockAnalysis Borregaard cash flow",
+      "url": "https://stockanalysis.com/quote/osl/BRG/financials/cash-flow-statement/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "StockAnalysis Borregaard balance sheet",
+      "url": "https://stockanalysis.com/quote/osl/BRG/financials/balance-sheet/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "StockAnalysis Borregaard ratios",
+      "url": "https://stockanalysis.com/quote/osl/BRG/financials/ratios/",
+      "type": "aggregator"
+    },
+    {
+      "titel": "Norway 10Y Bond Yield (Trading Economics)",
+      "url": "https://tradingeconomics.com/norway/government-bond-yield",
+      "type": "databron"
+    },
+    {
+      "titel": "Borregaard shareholders page",
+      "url": "https://www.borregaard.com/investors/equity-info/shareholders/",
+      "type": "beurswebsite"
+    },
+    {
+      "titel": "Borregaard dividend policy",
+      "url": "https://www.borregaard.com/investors/equity-info/dividend-policy/",
+      "type": "beurswebsite"
+    },
+    {
+      "titel": "MarketScreener Borregaard target consensus",
+      "url": "https://www.marketscreener.com/quote/stock/BORREGAARD-ASA-11751909/consensus/",
+      "type": "analistenrapport"
+    },
+    {
+      "titel": "Wikipedia Borregaard",
+      "url": "https://en.wikipedia.org/wiki/Borregaard",
+      "type": "nieuwsartikel"
+    },
+    {
+      "titel": "Specialty Cellulose Global Market Report 2024",
+      "url": "https://www.businesswire.com/news/home/20240712006167/en/Specialty-Cellulose-Global-Market-Report-2024",
+      "type": "onderzoeksrapport"
+    },
+    {
+      "titel": "Global Lignin Products 2019-2024",
+      "url": "https://www.prnewswire.com/news-releases/the-global-market-for-lignin-products-2019-to-2024-borregaard-lignotech-dominates-followed-by-domsj-fabriker-nippon-paper-industries-ingevity-and-rayonier-advanced-materials-300820330.html",
+      "type": "onderzoeksrapport"
+    },
+    {
+      "titel": "Borregaard general presentation July 2025 (MarketScreener)",
+      "url": "https://www.marketscreener.com/quote/stock/BORREGAARD-ASA-11751909/news/Borregaard-general-presentation-July-2025-50519356/",
+      "type": "analistenrapport"
+    },
+    {
+      "titel": "Sweetstocks Borregaard moat thesis",
+      "url": "https://sweetstocks.substack.com/p/borregaard-an-economic-castle-protected",
+      "type": "nieuwsartikel"
+    }
+  ],
+  "update_historie": [
+    {
+      "datum": "2026-04-26",
+      "type": "Eerste publicatie",
+      "koers_bij_update": 176.0,
+      "fair_value_bij_update": 121,
+      "oordeel_bij_update": "PASS",
+      "samenvatting": "Eerste analyse — basis fair value NOK 121, kansgewogen NOK 123 vs koers NOK 176. PASS-oordeel; markt prijst ~9% FCF-groei in tegen plausibele 4-5%."
+    }
+  ]
+}
